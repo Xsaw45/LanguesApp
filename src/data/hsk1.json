@@ -1,0 +1,3306 @@
+[
+  {
+    "id": "hsk1_0001",
+    "level": 1,
+    "simplified": "爱",
+    "pinyin": "ài",
+    "definition": "to love; to be fond of; to like; affection; to be inclined (to do sth); to tend to (happen)"
+  },
+  {
+    "id": "hsk1_0002",
+    "level": 1,
+    "simplified": "爱好",
+    "pinyin": "ài hào",
+    "definition": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby"
+  },
+  {
+    "id": "hsk1_0003",
+    "level": 1,
+    "simplified": "八",
+    "pinyin": "bā",
+    "definition": "eight; 8"
+  },
+  {
+    "id": "hsk1_0004",
+    "level": 1,
+    "simplified": "爸",
+    "pinyin": "bà",
+    "definition": "father; dad; pa; papa"
+  },
+  {
+    "id": "hsk1_0005",
+    "level": 1,
+    "simplified": "爸爸",
+    "pinyin": "bà ba",
+    "definition": "(coll.) father; dad"
+  },
+  {
+    "id": "hsk1_0006",
+    "level": 1,
+    "simplified": "吧",
+    "pinyin": "bā",
+    "definition": "bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang; abbr. for 贴吧"
+  },
+  {
+    "id": "hsk1_0008",
+    "level": 1,
+    "simplified": "白天",
+    "pinyin": "bái tiān",
+    "definition": "daytime; during the day; day"
+  },
+  {
+    "id": "hsk1_0011",
+    "level": 1,
+    "simplified": "半",
+    "pinyin": "bàn",
+    "definition": "half; semi-; incomplete; (after a number) and a half"
+  },
+  {
+    "id": "hsk1_0012",
+    "level": 1,
+    "simplified": "半年",
+    "pinyin": "bàn nián",
+    "definition": "half a year"
+  },
+  {
+    "id": "hsk1_0013",
+    "level": 1,
+    "simplified": "半天",
+    "pinyin": "bàn tiān",
+    "definition": "half of the day; a long time; quite a while; midair"
+  },
+  {
+    "id": "hsk1_0014",
+    "level": 1,
+    "simplified": "帮",
+    "pinyin": "bāng",
+    "definition": "old variant of 帮"
+  },
+  {
+    "id": "hsk1_0015",
+    "level": 1,
+    "simplified": "帮忙",
+    "pinyin": "bāng máng",
+    "definition": "to help; to lend a hand; to do a favor; to do a good turn"
+  },
+  {
+    "id": "hsk1_0017",
+    "level": 1,
+    "simplified": "包子",
+    "pinyin": "bāo zi",
+    "definition": "bao (steamed stuffed bun)"
+  },
+  {
+    "id": "hsk1_0018",
+    "level": 1,
+    "simplified": "杯",
+    "pinyin": "bēi",
+    "definition": "cup; trophy cup; classifier for certain containers of liquids: glass, cup"
+  },
+  {
+    "id": "hsk1_0019",
+    "level": 1,
+    "simplified": "杯子",
+    "pinyin": "bēi zi",
+    "definition": "cup; glass"
+  },
+  {
+    "id": "hsk1_0020",
+    "level": 1,
+    "simplified": "北",
+    "pinyin": "běi",
+    "definition": "north; (classical) to be defeated"
+  },
+  {
+    "id": "hsk1_0021",
+    "level": 1,
+    "simplified": "北边",
+    "pinyin": "běi biān",
+    "definition": "north; north side; northern part; to the north of"
+  },
+  {
+    "id": "hsk1_0022",
+    "level": 1,
+    "simplified": "北京",
+    "pinyin": "Běi jīng",
+    "definition": "Beijing, capital of the People's Republic of China"
+  },
+  {
+    "id": "hsk1_0023",
+    "level": 1,
+    "simplified": "本",
+    "pinyin": "běn",
+    "definition": "root; stem; origin; source; this; the current; original; inherent; originally; classifier for books, periodicals, files etc"
+  },
+  {
+    "id": "hsk1_0024",
+    "level": 1,
+    "simplified": "本子",
+    "pinyin": "běn zi",
+    "definition": "book; notebook; Japanese-style self-published comic (esp. an erotic one), aka \"dōjinshi\"; edition"
+  },
+  {
+    "id": "hsk1_0025",
+    "level": 1,
+    "simplified": "比",
+    "pinyin": "Bǐ",
+    "definition": "Belgium; Belgian; abbr. for 比利时"
+  },
+  {
+    "id": "hsk1_0027",
+    "level": 1,
+    "simplified": "别的",
+    "pinyin": "bié de",
+    "definition": "else; other"
+  },
+  {
+    "id": "hsk1_0028",
+    "level": 1,
+    "simplified": "别人",
+    "pinyin": "bié ren",
+    "definition": "other people; others; other person"
+  },
+  {
+    "id": "hsk1_0029",
+    "level": 1,
+    "simplified": "病",
+    "pinyin": "bìng",
+    "definition": "illness; disease; to fall ill; defect"
+  },
+  {
+    "id": "hsk1_0030",
+    "level": 1,
+    "simplified": "病人",
+    "pinyin": "bìng rén",
+    "definition": "sick person; patient; invalid"
+  },
+  {
+    "id": "hsk1_0031",
+    "level": 1,
+    "simplified": "不",
+    "pinyin": "bù",
+    "definition": "no; not so; (bound form) not; un-"
+  },
+  {
+    "id": "hsk1_0032",
+    "level": 1,
+    "simplified": "不大",
+    "pinyin": "bù dà",
+    "definition": "not very; not too; not often"
+  },
+  {
+    "id": "hsk1_0033",
+    "level": 1,
+    "simplified": "不对",
+    "pinyin": "bù duì",
+    "definition": "incorrect; wrong; amiss; abnormal; queer"
+  },
+  {
+    "id": "hsk1_0034",
+    "level": 1,
+    "simplified": "不客气",
+    "pinyin": "bù kè qi",
+    "definition": "you're welcome; don't mention it; impolite; rude; blunt"
+  },
+  {
+    "id": "hsk1_0035",
+    "level": 1,
+    "simplified": "不用",
+    "pinyin": "bù yòng",
+    "definition": "need not"
+  },
+  {
+    "id": "hsk1_0036",
+    "level": 1,
+    "simplified": "菜",
+    "pinyin": "cài",
+    "definition": "dish (type of food); vegetable; cuisine; (coll.) (one's) type; (of one's skills etc) weak; poor"
+  },
+  {
+    "id": "hsk1_0037",
+    "level": 1,
+    "simplified": "茶",
+    "pinyin": "chá",
+    "definition": "tea; tea plant"
+  },
+  {
+    "id": "hsk1_0038",
+    "level": 1,
+    "simplified": "差",
+    "pinyin": "chā",
+    "definition": "difference; discrepancy; (math.) difference (amount remaining after a subtraction); (literary) a little; somewhat; slightly"
+  },
+  {
+    "id": "hsk1_0040",
+    "level": 1,
+    "simplified": "常常",
+    "pinyin": "cháng cháng",
+    "definition": "frequently; often"
+  },
+  {
+    "id": "hsk1_0041",
+    "level": 1,
+    "simplified": "唱",
+    "pinyin": "chàng",
+    "definition": "to sing; to call loudly; to chant"
+  },
+  {
+    "id": "hsk1_0042",
+    "level": 1,
+    "simplified": "唱歌",
+    "pinyin": "chàng gē",
+    "definition": "to sing a song"
+  },
+  {
+    "id": "hsk1_0044",
+    "level": 1,
+    "simplified": "车票",
+    "pinyin": "chē piào",
+    "definition": "ticket (for a bus or train)"
+  },
+  {
+    "id": "hsk1_0045",
+    "level": 1,
+    "simplified": "车上",
+    "pinyin": "chē shàng",
+    "definition": "Car"
+  },
+  {
+    "id": "hsk1_0046",
+    "level": 1,
+    "simplified": "车站",
+    "pinyin": "chē zhàn",
+    "definition": "rail station; bus stop"
+  },
+  {
+    "id": "hsk1_0047",
+    "level": 1,
+    "simplified": "吃",
+    "pinyin": "chī",
+    "definition": "to eat; to consume; to eat at (a cafeteria etc); to eradicate; to destroy; to absorb; to suffer (shock, injury, defeat etc)"
+  },
+  {
+    "id": "hsk1_0048",
+    "level": 1,
+    "simplified": "吃饭",
+    "pinyin": "chī fàn",
+    "definition": "to have a meal; to eat; to make a living"
+  },
+  {
+    "id": "hsk1_0049",
+    "level": 1,
+    "simplified": "出",
+    "pinyin": "chū",
+    "definition": "to go out; to come out; to occur; to produce; to go beyond; to rise; to put forth; to happen; (used after a verb to indicate an outward direction or a positive result); classifier for dramas, plays, operas etc"
+  },
+  {
+    "id": "hsk1_0050",
+    "level": 1,
+    "simplified": "出来",
+    "pinyin": "chū lái",
+    "definition": "to come out; to appear; to arise"
+  },
+  {
+    "id": "hsk1_0051",
+    "level": 1,
+    "simplified": "出去",
+    "pinyin": "chū qù",
+    "definition": "to go out"
+  },
+  {
+    "id": "hsk1_0052",
+    "level": 1,
+    "simplified": "穿",
+    "pinyin": "chuān",
+    "definition": "to wear; to put on; to dress; to bore through; to pierce; to perforate; to penetrate; to pass through; to thread"
+  },
+  {
+    "id": "hsk1_0053",
+    "level": 1,
+    "simplified": "床",
+    "pinyin": "chuáng",
+    "definition": "bed; couch; classifier for beds"
+  },
+  {
+    "id": "hsk1_0054",
+    "level": 1,
+    "simplified": "次",
+    "pinyin": "cì",
+    "definition": "next in sequence; second; the second (day, time etc); secondary; vice-; sub-; infra-; inferior quality; substandard; order; sequence; hypo- (chemistry); classifier for enumerated events: time"
+  },
+  {
+    "id": "hsk1_0055",
+    "level": 1,
+    "simplified": "从",
+    "pinyin": "cóng",
+    "definition": "variant of 从"
+  },
+  {
+    "id": "hsk1_0057",
+    "level": 1,
+    "simplified": "打",
+    "pinyin": "dá",
+    "definition": "dozen (loanword)"
+  },
+  {
+    "id": "hsk1_0058",
+    "level": 1,
+    "simplified": "打车",
+    "pinyin": "dǎ chē",
+    "definition": "to take a taxi (in town); to hitch a lift"
+  },
+  {
+    "id": "hsk1_0059",
+    "level": 1,
+    "simplified": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "definition": "to make a telephone call"
+  },
+  {
+    "id": "hsk1_0060",
+    "level": 1,
+    "simplified": "打开",
+    "pinyin": "dǎ kāi",
+    "definition": "to open; to show (a ticket); to turn on; to switch on"
+  },
+  {
+    "id": "hsk1_0061",
+    "level": 1,
+    "simplified": "打球",
+    "pinyin": "dǎ qiú",
+    "definition": "to play ball; to play with a ball"
+  },
+  {
+    "id": "hsk1_0062",
+    "level": 1,
+    "simplified": "大",
+    "pinyin": "dà",
+    "definition": "big; large; great; older (than another person); eldest (as in 姐); greatly; freely; fully; (dialect) father; (dialect) uncle (father's brother)"
+  },
+  {
+    "id": "hsk1_0063",
+    "level": 1,
+    "simplified": "大学",
+    "pinyin": "Dà xué",
+    "definition": "the Great Learning, one of the Four Books 四书 in Confucianism"
+  },
+  {
+    "id": "hsk1_0064",
+    "level": 1,
+    "simplified": "大学生",
+    "pinyin": "dà xué shēng",
+    "definition": "university student; college student"
+  },
+  {
+    "id": "hsk1_0065",
+    "level": 1,
+    "simplified": "到",
+    "pinyin": "dào",
+    "definition": "to reach; to arrive; to leave for; to go to; to (a place); until (a time); up to (a point); (verb complement indicating arriving at a place or reaching a point); considerate; thoughtful; thorough"
+  },
+  {
+    "id": "hsk1_0066",
+    "level": 1,
+    "simplified": "地",
+    "pinyin": "de",
+    "definition": "-ly; structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct"
+  },
+  {
+    "id": "hsk1_0067",
+    "level": 1,
+    "simplified": "地点",
+    "pinyin": "dì diǎn",
+    "definition": "place; site; location; venue"
+  },
+  {
+    "id": "hsk1_0068",
+    "level": 1,
+    "simplified": "地方",
+    "pinyin": "dì fāng",
+    "definition": "region; regional (away from the central administration); local"
+  },
+  {
+    "id": "hsk1_0069",
+    "level": 1,
+    "simplified": "地上",
+    "pinyin": "dì shang",
+    "definition": "on the ground; on the floor"
+  },
+  {
+    "id": "hsk1_0070",
+    "level": 1,
+    "simplified": "地图",
+    "pinyin": "dì tú",
+    "definition": "map"
+  },
+  {
+    "id": "hsk1_0071",
+    "level": 1,
+    "simplified": "的",
+    "pinyin": "de",
+    "definition": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression); (used at the end of a declarative sentence for emphasis); also pr. [dì] or [di] in poetry and songs"
+  },
+  {
+    "id": "hsk1_0072",
+    "level": 1,
+    "simplified": "得到",
+    "pinyin": "dé dào",
+    "definition": "to get; to obtain; to receive"
+  },
+  {
+    "id": "hsk1_0073",
+    "level": 1,
+    "simplified": "等",
+    "pinyin": "děng",
+    "definition": "class; rank; grade; equal to; same as; to wait for; to await; et cetera; and so on; et al. (and other authors); after; as soon as; once"
+  },
+  {
+    "id": "hsk1_0074",
+    "level": 1,
+    "simplified": "弟",
+    "pinyin": "dì",
+    "definition": "younger brother; junior male; I (modest word in letter)"
+  },
+  {
+    "id": "hsk1_0075",
+    "level": 1,
+    "simplified": "弟弟",
+    "pinyin": "dì di",
+    "definition": "younger brother"
+  },
+  {
+    "id": "hsk1_0076",
+    "level": 1,
+    "simplified": "第",
+    "pinyin": "dì",
+    "definition": "(prefix indicating ordinal number, as in 六 \"sixth\"); (literary) grades in which successful candidates in the imperial examinations were placed; (old) residence of a high official; (literary) but; however; (literary) only; just"
+  },
+  {
+    "id": "hsk1_0077",
+    "level": 1,
+    "simplified": "第二",
+    "pinyin": "dì èr",
+    "definition": "second; number two; next; secondary"
+  },
+  {
+    "id": "hsk1_0078",
+    "level": 1,
+    "simplified": "点",
+    "pinyin": "diǎn",
+    "definition": "point; dot; drop; speck; o'clock; point (in space or time); to draw a dot; to check on a list; to choose; to order (food in a restaurant); to touch briefly; to hint; to light; to ignite; to pour a liquid drop by drop; (old) one fifth of a two-hour watch 更; dot stroke in Chinese characters; classifier for items"
+  },
+  {
+    "id": "hsk1_0079",
+    "level": 1,
+    "simplified": "电",
+    "pinyin": "diàn",
+    "definition": "lightning; electricity; electric (bound form); to get (or give) an electric shock; phone call or telegram etc; to send via telephone or telegram etc"
+  },
+  {
+    "id": "hsk1_0080",
+    "level": 1,
+    "simplified": "电话",
+    "pinyin": "diàn huà",
+    "definition": "telephone; phone call; phone number"
+  },
+  {
+    "id": "hsk1_0081",
+    "level": 1,
+    "simplified": "电脑",
+    "pinyin": "diàn nǎo",
+    "definition": "computer"
+  },
+  {
+    "id": "hsk1_0082",
+    "level": 1,
+    "simplified": "电视",
+    "pinyin": "diàn shì",
+    "definition": "television; TV"
+  },
+  {
+    "id": "hsk1_0083",
+    "level": 1,
+    "simplified": "电视机",
+    "pinyin": "diàn shì jī",
+    "definition": "television set"
+  },
+  {
+    "id": "hsk1_0084",
+    "level": 1,
+    "simplified": "电影",
+    "pinyin": "diàn yǐng",
+    "definition": "movie; film"
+  },
+  {
+    "id": "hsk1_0085",
+    "level": 1,
+    "simplified": "电影院",
+    "pinyin": "diàn yǐng yuàn",
+    "definition": "cinema; movie theater"
+  },
+  {
+    "id": "hsk1_0087",
+    "level": 1,
+    "simplified": "东边",
+    "pinyin": "dōng bian",
+    "definition": "east; east side; eastern part; to the east of"
+  },
+  {
+    "id": "hsk1_0088",
+    "level": 1,
+    "simplified": "东西",
+    "pinyin": "dōng xī",
+    "definition": "east and west"
+  },
+  {
+    "id": "hsk1_0089",
+    "level": 1,
+    "simplified": "动",
+    "pinyin": "dòng",
+    "definition": "(of sth) to move; to set in movement; to displace; to touch; to make use of; to stir (emotions); to alter; abbr. for 动词, verb"
+  },
+  {
+    "id": "hsk1_0090",
+    "level": 1,
+    "simplified": "动作",
+    "pinyin": "dòng zuò",
+    "definition": "movement; motion; action; to act; to move"
+  },
+  {
+    "id": "hsk1_0092",
+    "level": 1,
+    "simplified": "读",
+    "pinyin": "dòu",
+    "definition": "comma; phrase marked by pause"
+  },
+  {
+    "id": "hsk1_0093",
+    "level": 1,
+    "simplified": "读书",
+    "pinyin": "dú shū",
+    "definition": "to read a book; to study; to attend school"
+  },
+  {
+    "id": "hsk1_0094",
+    "level": 1,
+    "simplified": "对",
+    "pinyin": "duì",
+    "definition": "right; correct; towards; at; for; concerning; regarding; to treat (sb a certain way); to face; (bound form) opposite; facing; matching; to match together; to adjust; to fit; to suit; to answer; to reply; to add; to pour in (a fluid); to check; to compare; classifier: couple; pair"
+  },
+  {
+    "id": "hsk1_0095",
+    "level": 1,
+    "simplified": "对不起",
+    "pinyin": "duì bu qǐ",
+    "definition": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint"
+  },
+  {
+    "id": "hsk1_0096",
+    "level": 1,
+    "simplified": "多",
+    "pinyin": "duō",
+    "definition": "many; much; too many; in excess; (after a numeral) ... odd; how (to what extent) (Taiwan pr. [duó]); (bound form) multi-; poly-"
+  },
+  {
+    "id": "hsk1_0097",
+    "level": 1,
+    "simplified": "多少",
+    "pinyin": "duō shǎo",
+    "definition": "number; amount; somewhat"
+  },
+  {
+    "id": "hsk1_0098",
+    "level": 1,
+    "simplified": "饿",
+    "pinyin": "è",
+    "definition": "to be hungry; hungry; to starve (sb)"
+  },
+  {
+    "id": "hsk1_0099",
+    "level": 1,
+    "simplified": "儿子",
+    "pinyin": "ér zi",
+    "definition": "son"
+  },
+  {
+    "id": "hsk1_0100",
+    "level": 1,
+    "simplified": "二",
+    "pinyin": "èr",
+    "definition": "two; 2; (Beijing dialect) stupid"
+  },
+  {
+    "id": "hsk1_0101",
+    "level": 1,
+    "simplified": "饭",
+    "pinyin": "fàn",
+    "definition": "cooked rice; meal; (loanword) fan; devotee"
+  },
+  {
+    "id": "hsk1_0102",
+    "level": 1,
+    "simplified": "饭店",
+    "pinyin": "fàn diàn",
+    "definition": "restaurant; hotel"
+  },
+  {
+    "id": "hsk1_0103",
+    "level": 1,
+    "simplified": "房间",
+    "pinyin": "fáng jiān",
+    "definition": "room"
+  },
+  {
+    "id": "hsk1_0104",
+    "level": 1,
+    "simplified": "房子",
+    "pinyin": "fáng zi",
+    "definition": "house; building (single- or two-story); apartment; room"
+  },
+  {
+    "id": "hsk1_0105",
+    "level": 1,
+    "simplified": "放",
+    "pinyin": "fàng",
+    "definition": "to put; to place; to release; to free; to let go; to let out; to set off (fireworks)"
+  },
+  {
+    "id": "hsk1_0106",
+    "level": 1,
+    "simplified": "放假",
+    "pinyin": "fàng jià",
+    "definition": "to have a holiday or vacation"
+  },
+  {
+    "id": "hsk1_0107",
+    "level": 1,
+    "simplified": "放学",
+    "pinyin": "fàng xué",
+    "definition": "to dismiss students at the end of the school day"
+  },
+  {
+    "id": "hsk1_0108",
+    "level": 1,
+    "simplified": "飞",
+    "pinyin": "fēi",
+    "definition": "to fly"
+  },
+  {
+    "id": "hsk1_0109",
+    "level": 1,
+    "simplified": "飞机",
+    "pinyin": "fēi jī",
+    "definition": "airplane"
+  },
+  {
+    "id": "hsk1_0110",
+    "level": 1,
+    "simplified": "非常",
+    "pinyin": "fēi cháng",
+    "definition": "very; really; unusual; extraordinary"
+  },
+  {
+    "id": "hsk1_0111",
+    "level": 1,
+    "simplified": "分",
+    "pinyin": "fēn",
+    "definition": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad); (bound form) branch of (an organization); sub- (as in 局); fraction; one tenth (of certain units); unit of length equivalent to 0.33 cm; minute (unit of time); minute (angular measurement unit); a point (in sports or games); 0.01 yuan (unit of money)"
+  },
+  {
+    "id": "hsk1_0112",
+    "level": 1,
+    "simplified": "风",
+    "pinyin": "fēng",
+    "definition": "wind; news; style; custom; manner"
+  },
+  {
+    "id": "hsk1_0113",
+    "level": 1,
+    "simplified": "干",
+    "pinyin": "gān",
+    "definition": "old variant of 干"
+  },
+  {
+    "id": "hsk1_0114",
+    "level": 1,
+    "simplified": "干净",
+    "pinyin": "gān jìng",
+    "definition": "clean; neat"
+  },
+  {
+    "id": "hsk1_0115",
+    "level": 1,
+    "simplified": "干什么",
+    "pinyin": "gàn shén me",
+    "definition": "what are you doing?; what's he up to?"
+  },
+  {
+    "id": "hsk1_0117",
+    "level": 1,
+    "simplified": "高兴",
+    "pinyin": "gāo xìng",
+    "definition": "happy; glad; willing (to do sth); in a cheerful mood"
+  },
+  {
+    "id": "hsk1_0118",
+    "level": 1,
+    "simplified": "告诉",
+    "pinyin": "gào sù",
+    "definition": "to press charges; to file a complaint"
+  },
+  {
+    "id": "hsk1_0119",
+    "level": 1,
+    "simplified": "哥",
+    "pinyin": "gē",
+    "definition": "elder brother"
+  },
+  {
+    "id": "hsk1_0120",
+    "level": 1,
+    "simplified": "哥哥",
+    "pinyin": "gē ge",
+    "definition": "older brother"
+  },
+  {
+    "id": "hsk1_0121",
+    "level": 1,
+    "simplified": "歌",
+    "pinyin": "gē",
+    "definition": "song; to sing"
+  },
+  {
+    "id": "hsk1_0122",
+    "level": 1,
+    "simplified": "个",
+    "pinyin": "gě",
+    "definition": "used in 自个儿"
+  },
+  {
+    "id": "hsk1_0123",
+    "level": 1,
+    "simplified": "给",
+    "pinyin": "gěi",
+    "definition": "to; for; for the benefit of; to give; to allow; to do sth (for sb); (grammatical equivalent of 被); (grammatical equivalent of 把); (sentence intensifier)"
+  },
+  {
+    "id": "hsk1_0124",
+    "level": 1,
+    "simplified": "跟",
+    "pinyin": "gēn",
+    "definition": "heel; to follow closely; to go with; (of a woman) to marry sb; with; compared with; to; towards; and (joining two nouns)"
+  },
+  {
+    "id": "hsk1_0125",
+    "level": 1,
+    "simplified": "工人",
+    "pinyin": "gōng rén",
+    "definition": "worker"
+  },
+  {
+    "id": "hsk1_0126",
+    "level": 1,
+    "simplified": "工作",
+    "pinyin": "gōng zuò",
+    "definition": "to work; (of a machine) to operate; job; work; task"
+  },
+  {
+    "id": "hsk1_0128",
+    "level": 1,
+    "simplified": "关上",
+    "pinyin": "guān shàng",
+    "definition": "to close (a door); to turn off (light, electrical equipment etc)"
+  },
+  {
+    "id": "hsk1_0129",
+    "level": 1,
+    "simplified": "贵",
+    "pinyin": "guì",
+    "definition": "expensive; noble; precious; (honorific) your"
+  },
+  {
+    "id": "hsk1_0131",
+    "level": 1,
+    "simplified": "国家",
+    "pinyin": "guó jiā",
+    "definition": "country; nation; state"
+  },
+  {
+    "id": "hsk1_0132",
+    "level": 1,
+    "simplified": "国外",
+    "pinyin": "guó wài",
+    "definition": "abroad; external (affairs); overseas; foreign"
+  },
+  {
+    "id": "hsk1_0135",
+    "level": 1,
+    "simplified": "还是",
+    "pinyin": "hái shi",
+    "definition": "still (as before); had better; unexpectedly; or"
+  },
+  {
+    "id": "hsk1_0136",
+    "level": 1,
+    "simplified": "还有",
+    "pinyin": "hái yǒu",
+    "definition": "furthermore; in addition; still; also"
+  },
+  {
+    "id": "hsk1_0137",
+    "level": 1,
+    "simplified": "孩子",
+    "pinyin": "hái zi",
+    "definition": "child"
+  },
+  {
+    "id": "hsk1_0138",
+    "level": 1,
+    "simplified": "汉语",
+    "pinyin": "Hàn yǔ",
+    "definition": "Chinese language"
+  },
+  {
+    "id": "hsk1_0139",
+    "level": 1,
+    "simplified": "汉字",
+    "pinyin": "hàn zì",
+    "definition": "Chinese character; Japanese: kanji; Korean: hanja; Vietnamese: hán tự"
+  },
+  {
+    "id": "hsk1_0140",
+    "level": 1,
+    "simplified": "好",
+    "pinyin": "hǎo",
+    "definition": "good; appropriate; proper; all right!; (before a verb) easy to; (before a verb) good to; (before an adjective for exclamatory effect) so; (verb complement indicating completion); (of two people) close; on intimate terms; (after a personal pronoun) hello"
+  },
+  {
+    "id": "hsk1_0141",
+    "level": 1,
+    "simplified": "好吃",
+    "pinyin": "hǎo chī",
+    "definition": "tasty; delicious"
+  },
+  {
+    "id": "hsk1_0142",
+    "level": 1,
+    "simplified": "好看",
+    "pinyin": "hǎo kàn",
+    "definition": "good-looking; nice-looking; good (of a movie, book, TV show etc); embarrassed; humiliated"
+  },
+  {
+    "id": "hsk1_0143",
+    "level": 1,
+    "simplified": "好听",
+    "pinyin": "hǎo tīng",
+    "definition": "pleasant to hear"
+  },
+  {
+    "id": "hsk1_0144",
+    "level": 1,
+    "simplified": "好玩儿",
+    "pinyin": "hǎo wán r",
+    "definition": "erhua variant of 好玩; amusing; fun; interesting"
+  },
+  {
+    "id": "hsk1_0145",
+    "level": 1,
+    "simplified": "号",
+    "pinyin": "háo",
+    "definition": "roar; cry"
+  },
+  {
+    "id": "hsk1_0146",
+    "level": 1,
+    "simplified": "喝",
+    "pinyin": "hē",
+    "definition": "to drink; variant of 嗬"
+  },
+  {
+    "id": "hsk1_0147",
+    "level": 1,
+    "simplified": "和",
+    "pinyin": "hé",
+    "definition": "old variant of 和"
+  },
+  {
+    "id": "hsk1_0148",
+    "level": 1,
+    "simplified": "很",
+    "pinyin": "hěn",
+    "definition": "(adverb of degree); quite; very; awfully"
+  },
+  {
+    "id": "hsk1_0150",
+    "level": 1,
+    "simplified": "后边",
+    "pinyin": "hòu bian",
+    "definition": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards"
+  },
+  {
+    "id": "hsk1_0151",
+    "level": 1,
+    "simplified": "后天",
+    "pinyin": "hòu tiān",
+    "definition": "the day after tomorrow; life after birth (the period in which one develops through experiences, contrasted with 天); acquired (not innate or congenital); a posteriori"
+  },
+  {
+    "id": "hsk1_0153",
+    "level": 1,
+    "simplified": "话",
+    "pinyin": "huà",
+    "definition": "dialect; language; spoken words; speech; talk; words; conversation; what sb said"
+  },
+  {
+    "id": "hsk1_0154",
+    "level": 1,
+    "simplified": "坏",
+    "pinyin": "huài",
+    "definition": "bad; spoiled; broken; to break down; (suffix) to the utmost"
+  },
+  {
+    "id": "hsk1_0155",
+    "level": 1,
+    "simplified": "回",
+    "pinyin": "huí",
+    "definition": "to circle; to go back; to turn around; to answer; to return; to revolve; Hui ethnic group (Chinese Muslims); time; classifier for acts of a play; section or chapter (of a classic book)"
+  },
+  {
+    "id": "hsk1_0156",
+    "level": 1,
+    "simplified": "回答",
+    "pinyin": "huí dá",
+    "definition": "to reply; to answer; reply; answer"
+  },
+  {
+    "id": "hsk1_0157",
+    "level": 1,
+    "simplified": "回到",
+    "pinyin": "huí dào",
+    "definition": "to return to"
+  },
+  {
+    "id": "hsk1_0158",
+    "level": 1,
+    "simplified": "回家",
+    "pinyin": "huí jiā",
+    "definition": "to return home"
+  },
+  {
+    "id": "hsk1_0159",
+    "level": 1,
+    "simplified": "回来",
+    "pinyin": "huí lai",
+    "definition": "to return; to come back"
+  },
+  {
+    "id": "hsk1_0160",
+    "level": 1,
+    "simplified": "回去",
+    "pinyin": "huí qu",
+    "definition": "to return; to go back"
+  },
+  {
+    "id": "hsk1_0161",
+    "level": 1,
+    "simplified": "会",
+    "pinyin": "huì",
+    "definition": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together; meeting; gathering; (suffix) union; group; association; (bound form) a moment (Taiwan pr. [huǐ])"
+  },
+  {
+    "id": "hsk1_0162",
+    "level": 1,
+    "simplified": "火车",
+    "pinyin": "huǒ chē",
+    "definition": "train"
+  },
+  {
+    "id": "hsk1_0163",
+    "level": 1,
+    "simplified": "机场",
+    "pinyin": "jī chǎng",
+    "definition": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship"
+  },
+  {
+    "id": "hsk1_0164",
+    "level": 1,
+    "simplified": "机票",
+    "pinyin": "jī piào",
+    "definition": "air ticket; passenger ticket"
+  },
+  {
+    "id": "hsk1_0165",
+    "level": 1,
+    "simplified": "鸡蛋",
+    "pinyin": "jī dàn",
+    "definition": "(chicken) egg; hen's egg"
+  },
+  {
+    "id": "hsk1_0166",
+    "level": 1,
+    "simplified": "几",
+    "pinyin": "jī",
+    "definition": "small table"
+  },
+  {
+    "id": "hsk1_0167",
+    "level": 1,
+    "simplified": "记",
+    "pinyin": "jì",
+    "definition": "to record; to note; to memorize; to remember; mark; sign; classifier for blows, kicks, shots"
+  },
+  {
+    "id": "hsk1_0168",
+    "level": 1,
+    "simplified": "记得",
+    "pinyin": "jì de",
+    "definition": "to remember"
+  },
+  {
+    "id": "hsk1_0169",
+    "level": 1,
+    "simplified": "记住",
+    "pinyin": "jì zhu",
+    "definition": "to remember; to bear in mind; to learn by heart"
+  },
+  {
+    "id": "hsk1_0170",
+    "level": 1,
+    "simplified": "家",
+    "pinyin": "jiā",
+    "definition": "used in 家伙 and 家俱"
+  },
+  {
+    "id": "hsk1_0171",
+    "level": 1,
+    "simplified": "家里",
+    "pinyin": "jiā lǐ",
+    "definition": "home"
+  },
+  {
+    "id": "hsk1_0172",
+    "level": 1,
+    "simplified": "家人",
+    "pinyin": "jiā rén",
+    "definition": "family member; (old) servant"
+  },
+  {
+    "id": "hsk1_0173",
+    "level": 1,
+    "simplified": "间",
+    "pinyin": "jiān",
+    "definition": "between; among; within a definite time or space; room; section of a room or lateral space between two pairs of pillars; classifier for rooms"
+  },
+  {
+    "id": "hsk1_0174",
+    "level": 1,
+    "simplified": "见",
+    "pinyin": "jiàn",
+    "definition": "to see; to meet; to appear (to be sth); to interview; opinion; view"
+  },
+  {
+    "id": "hsk1_0175",
+    "level": 1,
+    "simplified": "见面",
+    "pinyin": "jiàn miàn",
+    "definition": "to meet; to see each other"
+  },
+  {
+    "id": "hsk1_0176",
+    "level": 1,
+    "simplified": "叫",
+    "pinyin": "jiào",
+    "definition": "to shout; to call; to order; to ask; to be called; by (indicates agent in the passive mood)"
+  },
+  {
+    "id": "hsk1_0178",
+    "level": 1,
+    "simplified": "教学楼",
+    "pinyin": "jiào xué lóu",
+    "definition": "teaching block; school building"
+  },
+  {
+    "id": "hsk1_0179",
+    "level": 1,
+    "simplified": "介绍",
+    "pinyin": "jiè shào",
+    "definition": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc); introduction"
+  },
+  {
+    "id": "hsk1_0180",
+    "level": 1,
+    "simplified": "姐",
+    "pinyin": "jiě",
+    "definition": "older sister"
+  },
+  {
+    "id": "hsk1_0181",
+    "level": 1,
+    "simplified": "姐姐",
+    "pinyin": "jiě jie",
+    "definition": "older sister"
+  },
+  {
+    "id": "hsk1_0182",
+    "level": 1,
+    "simplified": "今年",
+    "pinyin": "jīn nián",
+    "definition": "this year"
+  },
+  {
+    "id": "hsk1_0183",
+    "level": 1,
+    "simplified": "今天",
+    "pinyin": "jīn tiān",
+    "definition": "today; at the present; now"
+  },
+  {
+    "id": "hsk1_0184",
+    "level": 1,
+    "simplified": "进",
+    "pinyin": "jìn",
+    "definition": "to go forward; to advance; to go in; to enter; to put in; to submit; to take in; to admit; (math.) base of a number system; classifier for sections in a building or residential compound"
+  },
+  {
+    "id": "hsk1_0185",
+    "level": 1,
+    "simplified": "进来",
+    "pinyin": "jìn lái",
+    "definition": "to come in"
+  },
+  {
+    "id": "hsk1_0186",
+    "level": 1,
+    "simplified": "进去",
+    "pinyin": "jìn qù",
+    "definition": "to go in"
+  },
+  {
+    "id": "hsk1_0187",
+    "level": 1,
+    "simplified": "九",
+    "pinyin": "jiǔ",
+    "definition": "nine; 9"
+  },
+  {
+    "id": "hsk1_0188",
+    "level": 1,
+    "simplified": "就",
+    "pinyin": "jiù",
+    "definition": "(after a suppositional clause) in that case; then; (after a clause of action) as soon as; immediately after; (same as 是) merely; nothing else but; simply; just; precisely; exactly; only; as little as; as much as; as many as; to approach; to move towards; to undertake; to engage in; (often followed by 着) taking advantage of; (of food) to go with; with regard to; concerning; (pattern: 就 ... 也 ...) even if ... still ...; (pattern: 不 ... 就 ...) if not ... then must be ..."
+  },
+  {
+    "id": "hsk1_0189",
+    "level": 1,
+    "simplified": "觉得",
+    "pinyin": "jué de",
+    "definition": "to think that ...; to feel that ...; to feel (uncomfortable etc)"
+  },
+  {
+    "id": "hsk1_0190",
+    "level": 1,
+    "simplified": "开",
+    "pinyin": "kāi",
+    "definition": "to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on; to put in operation; to operate; to run; to boil; to write out (a prescription, check, invoice etc); (directional complement) away; off; carat (gold); abbr. for Kelvin, 开尔文; abbr. for 开本, book format"
+  },
+  {
+    "id": "hsk1_0191",
+    "level": 1,
+    "simplified": "开车",
+    "pinyin": "kāi chē",
+    "definition": "to drive a car"
+  },
+  {
+    "id": "hsk1_0192",
+    "level": 1,
+    "simplified": "开会",
+    "pinyin": "kāi huì",
+    "definition": "to hold a meeting; to attend a meeting"
+  },
+  {
+    "id": "hsk1_0193",
+    "level": 1,
+    "simplified": "开玩笑",
+    "pinyin": "kāi wán xiào",
+    "definition": "to play a joke; to make fun of; to joke"
+  },
+  {
+    "id": "hsk1_0194",
+    "level": 1,
+    "simplified": "看",
+    "pinyin": "kān",
+    "definition": "to look after; to take care of; to watch; to guard"
+  },
+  {
+    "id": "hsk1_0195",
+    "level": 1,
+    "simplified": "看病",
+    "pinyin": "kàn bìng",
+    "definition": "to visit a doctor; to see a patient"
+  },
+  {
+    "id": "hsk1_0196",
+    "level": 1,
+    "simplified": "看到",
+    "pinyin": "kàn dào",
+    "definition": "to see"
+  },
+  {
+    "id": "hsk1_0197",
+    "level": 1,
+    "simplified": "看见",
+    "pinyin": "kàn jiàn",
+    "definition": "to see; to catch sight of"
+  },
+  {
+    "id": "hsk1_0198",
+    "level": 1,
+    "simplified": "考",
+    "pinyin": "kǎo",
+    "definition": "to beat; to hit; variant of 考; to inspect; to test; to take an exam"
+  },
+  {
+    "id": "hsk1_0199",
+    "level": 1,
+    "simplified": "考试",
+    "pinyin": "kǎo shì",
+    "definition": "to take an exam; exam"
+  },
+  {
+    "id": "hsk1_0200",
+    "level": 1,
+    "simplified": "渴",
+    "pinyin": "kě",
+    "definition": "thirsty"
+  },
+  {
+    "id": "hsk1_0201",
+    "level": 1,
+    "simplified": "课",
+    "pinyin": "kè",
+    "definition": "subject; course; class; lesson; to levy; tax; form of divination"
+  },
+  {
+    "id": "hsk1_0202",
+    "level": 1,
+    "simplified": "课本",
+    "pinyin": "kè běn",
+    "definition": "textbook"
+  },
+  {
+    "id": "hsk1_0203",
+    "level": 1,
+    "simplified": "课文",
+    "pinyin": "kè wén",
+    "definition": "text"
+  },
+  {
+    "id": "hsk1_0204",
+    "level": 1,
+    "simplified": "口",
+    "pinyin": "kǒu",
+    "definition": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls"
+  },
+  {
+    "id": "hsk1_0205",
+    "level": 1,
+    "simplified": "块",
+    "pinyin": "kuài",
+    "definition": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units"
+  },
+  {
+    "id": "hsk1_0206",
+    "level": 1,
+    "simplified": "快",
+    "pinyin": "kuài",
+    "definition": "rapid; quick; speed; rate; soon; almost; to make haste; clever; sharp (of knives or wits); forthright; plainspoken; gratified; pleased; pleasant"
+  },
+  {
+    "id": "hsk1_0207",
+    "level": 1,
+    "simplified": "来",
+    "pinyin": "lái",
+    "definition": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来); ever since (as in 自古以来); for the past (amount of time); (prefix) the coming ...; the next ... (as in 来世); (between two verbs) in order to; (after a round number) approximately; (used after 得 to indicate possibility, as in 谈得来, or after 不 to indicate impossibility, as in 吃不来)"
+  },
+  {
+    "id": "hsk1_0208",
+    "level": 1,
+    "simplified": "来到",
+    "pinyin": "lái dào",
+    "definition": "to arrive; to come"
+  },
+  {
+    "id": "hsk1_0209",
+    "level": 1,
+    "simplified": "老",
+    "pinyin": "lǎo",
+    "definition": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person); experienced; of long standing; always; all the time; of the past; very; outdated; (of meat etc) tough"
+  },
+  {
+    "id": "hsk1_0210",
+    "level": 1,
+    "simplified": "老人",
+    "pinyin": "lǎo rén",
+    "definition": "old man or woman; the elderly; one's aged parents or grandparents"
+  },
+  {
+    "id": "hsk1_0211",
+    "level": 1,
+    "simplified": "老师",
+    "pinyin": "lǎo shī",
+    "definition": "teacher"
+  },
+  {
+    "id": "hsk1_0212",
+    "level": 1,
+    "simplified": "了",
+    "pinyin": "le",
+    "definition": "(completed action marker); (modal particle indicating change of state, situation now); (modal particle intensifying preceding clause)"
+  },
+  {
+    "id": "hsk1_0213",
+    "level": 1,
+    "simplified": "累",
+    "pinyin": "lěi",
+    "definition": "to accumulate; to involve or implicate (Taiwan pr. [lèi]); continuous; repeated"
+  },
+  {
+    "id": "hsk1_0215",
+    "level": 1,
+    "simplified": "里",
+    "pinyin": "lǐ",
+    "definition": "variant of 里"
+  },
+  {
+    "id": "hsk1_0216",
+    "level": 1,
+    "simplified": "里边",
+    "pinyin": "lǐ bian",
+    "definition": "inside"
+  },
+  {
+    "id": "hsk1_0217",
+    "level": 1,
+    "simplified": "两",
+    "pinyin": "liǎng",
+    "definition": "two; both; some; a few; tael, unit of weight equal to 50 grams (modern) or 1⁄16 of a catty 斤 (old)"
+  },
+  {
+    "id": "hsk1_0218",
+    "level": 1,
+    "simplified": "零",
+    "pinyin": "líng",
+    "definition": "zero; nought; zero sign; fractional; fragmentary; odd (of numbers); (placed between two numbers to indicate a smaller quantity followed by a larger one); fraction; (in mathematics) remainder (after division); extra; to wither and fall; to wither"
+  },
+  {
+    "id": "hsk1_0219",
+    "level": 1,
+    "simplified": "六",
+    "pinyin": "liù",
+    "definition": "six; 6"
+  },
+  {
+    "id": "hsk1_0221",
+    "level": 1,
+    "simplified": "楼上",
+    "pinyin": "lóu shàng",
+    "definition": "upstairs; (Internet slang) previous poster in a forum thread"
+  },
+  {
+    "id": "hsk1_0222",
+    "level": 1,
+    "simplified": "楼下",
+    "pinyin": "lóu xià",
+    "definition": "downstairs"
+  },
+  {
+    "id": "hsk1_0224",
+    "level": 1,
+    "simplified": "路口",
+    "pinyin": "lù kǒu",
+    "definition": "crossing; intersection (of roads)"
+  },
+  {
+    "id": "hsk1_0225",
+    "level": 1,
+    "simplified": "路上",
+    "pinyin": "lù shang",
+    "definition": "on the road; on a journey; road surface"
+  },
+  {
+    "id": "hsk1_0226",
+    "level": 1,
+    "simplified": "妈",
+    "pinyin": "mā",
+    "definition": "ma; mom; mother"
+  },
+  {
+    "id": "hsk1_0227",
+    "level": 1,
+    "simplified": "妈妈",
+    "pinyin": "mā ma",
+    "definition": "mama; mommy; mother"
+  },
+  {
+    "id": "hsk1_0228",
+    "level": 1,
+    "simplified": "马路",
+    "pinyin": "mǎ lù",
+    "definition": "street; road"
+  },
+  {
+    "id": "hsk1_0229",
+    "level": 1,
+    "simplified": "马上",
+    "pinyin": "mǎ shàng",
+    "definition": "at once; right away; immediately; on horseback (i.e. by military force)"
+  },
+  {
+    "id": "hsk1_0230",
+    "level": 1,
+    "simplified": "吗",
+    "pinyin": "má",
+    "definition": "(coll.) what?"
+  },
+  {
+    "id": "hsk1_0231",
+    "level": 1,
+    "simplified": "买",
+    "pinyin": "mǎi",
+    "definition": "to buy; to purchase"
+  },
+  {
+    "id": "hsk1_0232",
+    "level": 1,
+    "simplified": "慢",
+    "pinyin": "màn",
+    "definition": "slow"
+  },
+  {
+    "id": "hsk1_0233",
+    "level": 1,
+    "simplified": "忙",
+    "pinyin": "máng",
+    "definition": "busy; hurriedly; to hurry; to rush"
+  },
+  {
+    "id": "hsk1_0235",
+    "level": 1,
+    "simplified": "没",
+    "pinyin": "méi",
+    "definition": "(negative prefix for verbs) have not; not"
+  },
+  {
+    "id": "hsk1_0236",
+    "level": 1,
+    "simplified": "没关系",
+    "pinyin": "méi guān xi",
+    "definition": "it doesn't matter"
+  },
+  {
+    "id": "hsk1_0237",
+    "level": 1,
+    "simplified": "没什么",
+    "pinyin": "méi shén me",
+    "definition": "nothing; it doesn't matter; it's nothing; never mind"
+  },
+  {
+    "id": "hsk1_0238",
+    "level": 1,
+    "simplified": "没事儿",
+    "pinyin": "méi shì r",
+    "definition": "to have spare time; free from work; it's not important; it's nothing; never mind"
+  },
+  {
+    "id": "hsk1_0239",
+    "level": 1,
+    "simplified": "没有",
+    "pinyin": "méi yǒu",
+    "definition": "haven't; hasn't; doesn't exist; to not have; to not be"
+  },
+  {
+    "id": "hsk1_0240",
+    "level": 1,
+    "simplified": "妹",
+    "pinyin": "mèi",
+    "definition": "younger sister"
+  },
+  {
+    "id": "hsk1_0241",
+    "level": 1,
+    "simplified": "妹妹",
+    "pinyin": "mèi mei",
+    "definition": "younger sister; young woman"
+  },
+  {
+    "id": "hsk1_0243",
+    "level": 1,
+    "simplified": "门口",
+    "pinyin": "mén kǒu",
+    "definition": "doorway; gate"
+  },
+  {
+    "id": "hsk1_0244",
+    "level": 1,
+    "simplified": "门票",
+    "pinyin": "mén piào",
+    "definition": "ticket (for theater, cinema etc)"
+  },
+  {
+    "id": "hsk1_0245",
+    "level": 1,
+    "simplified": "们",
+    "pinyin": "men",
+    "definition": "plural marker for pronouns, and nouns referring to individuals"
+  },
+  {
+    "id": "hsk1_0246",
+    "level": 1,
+    "simplified": "米饭",
+    "pinyin": "mǐ fàn",
+    "definition": "(cooked) rice"
+  },
+  {
+    "id": "hsk1_0247",
+    "level": 1,
+    "simplified": "面包",
+    "pinyin": "miàn bāo",
+    "definition": "bread"
+  },
+  {
+    "id": "hsk1_0248",
+    "level": 1,
+    "simplified": "面条儿",
+    "pinyin": "miàn tiáo r",
+    "definition": "erhua variant of 面条; noodles"
+  },
+  {
+    "id": "hsk1_0249",
+    "level": 1,
+    "simplified": "名字",
+    "pinyin": "míng zi",
+    "definition": "name (of a person or thing)"
+  },
+  {
+    "id": "hsk1_0250",
+    "level": 1,
+    "simplified": "明白",
+    "pinyin": "míng bai",
+    "definition": "clear; obvious; unequivocal; to understand; to realize"
+  },
+  {
+    "id": "hsk1_0251",
+    "level": 1,
+    "simplified": "明年",
+    "pinyin": "míng nián",
+    "definition": "next year"
+  },
+  {
+    "id": "hsk1_0252",
+    "level": 1,
+    "simplified": "明天",
+    "pinyin": "míng tiān",
+    "definition": "tomorrow"
+  },
+  {
+    "id": "hsk1_0253",
+    "level": 1,
+    "simplified": "拿",
+    "pinyin": "ná",
+    "definition": "old variant of 拿"
+  },
+  {
+    "id": "hsk1_0254",
+    "level": 1,
+    "simplified": "哪",
+    "pinyin": "nǎ",
+    "definition": "how; which"
+  },
+  {
+    "id": "hsk1_0255",
+    "level": 1,
+    "simplified": "哪儿",
+    "pinyin": "nǎ r",
+    "definition": "where?; wherever; anywhere; somewhere; (used in rhetorical questions) how can ...?; how could ...?"
+  },
+  {
+    "id": "hsk1_0256",
+    "level": 1,
+    "simplified": "哪里",
+    "pinyin": "nǎ lǐ",
+    "definition": "where?; somewhere; anywhere; wherever; nowhere (negative answer to question); humble expression denying compliment; also written 哪里"
+  },
+  {
+    "id": "hsk1_0257",
+    "level": 1,
+    "simplified": "哪些",
+    "pinyin": "nǎ xiē",
+    "definition": "which ones?; who?; what?"
+  },
+  {
+    "id": "hsk1_0259",
+    "level": 1,
+    "simplified": "那边",
+    "pinyin": "nà bian",
+    "definition": "over there; yonder"
+  },
+  {
+    "id": "hsk1_0260",
+    "level": 1,
+    "simplified": "那儿",
+    "pinyin": "nà r",
+    "definition": "there"
+  },
+  {
+    "id": "hsk1_0261",
+    "level": 1,
+    "simplified": "那里",
+    "pinyin": "nà li",
+    "definition": "there; that place"
+  },
+  {
+    "id": "hsk1_0262",
+    "level": 1,
+    "simplified": "那些",
+    "pinyin": "nà xiē",
+    "definition": "those"
+  },
+  {
+    "id": "hsk1_0263",
+    "level": 1,
+    "simplified": "奶",
+    "pinyin": "nǎi",
+    "definition": "breast; milk; to breastfeed"
+  },
+  {
+    "id": "hsk1_0264",
+    "level": 1,
+    "simplified": "奶奶",
+    "pinyin": "nǎi nai",
+    "definition": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; (coll.) boobies; breasts"
+  },
+  {
+    "id": "hsk1_0265",
+    "level": 1,
+    "simplified": "男",
+    "pinyin": "nán",
+    "definition": "male; Baron, lowest of five orders of nobility 位"
+  },
+  {
+    "id": "hsk1_0266",
+    "level": 1,
+    "simplified": "男孩儿",
+    "pinyin": "nán hái r",
+    "definition": "erhua variant of 男孩; boy"
+  },
+  {
+    "id": "hsk1_0267",
+    "level": 1,
+    "simplified": "男朋友",
+    "pinyin": "nán péng you",
+    "definition": "boyfriend"
+  },
+  {
+    "id": "hsk1_0268",
+    "level": 1,
+    "simplified": "男人",
+    "pinyin": "nán rén",
+    "definition": "a man; a male; men"
+  },
+  {
+    "id": "hsk1_0269",
+    "level": 1,
+    "simplified": "男生",
+    "pinyin": "nán shēng",
+    "definition": "schoolboy; male student; boy; guy (young adult male)"
+  },
+  {
+    "id": "hsk1_0271",
+    "level": 1,
+    "simplified": "南边",
+    "pinyin": "nán bian",
+    "definition": "south; south side; southern part; to the south of"
+  },
+  {
+    "id": "hsk1_0272",
+    "level": 1,
+    "simplified": "难",
+    "pinyin": "nán",
+    "definition": "difficult (to...); problem; difficulty; difficult; not good"
+  },
+  {
+    "id": "hsk1_0273",
+    "level": 1,
+    "simplified": "呢",
+    "pinyin": "ne",
+    "definition": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\"); particle for inquiring about location (\"Where is ...?\"); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\"); (at the end of a declarative sentence) particle indicating continuation of a state or action; particle indicating strong affirmation"
+  },
+  {
+    "id": "hsk1_0275",
+    "level": 1,
+    "simplified": "你",
+    "pinyin": "nǐ",
+    "definition": "you (informal, as opposed to courteous 您)"
+  },
+  {
+    "id": "hsk1_0276",
+    "level": 1,
+    "simplified": "你们",
+    "pinyin": "nǐ men",
+    "definition": "you (plural)"
+  },
+  {
+    "id": "hsk1_0278",
+    "level": 1,
+    "simplified": "您",
+    "pinyin": "nín",
+    "definition": "you (courteous, as opposed to informal 你)"
+  },
+  {
+    "id": "hsk1_0279",
+    "level": 1,
+    "simplified": "牛奶",
+    "pinyin": "niú nǎi",
+    "definition": "cow's milk"
+  },
+  {
+    "id": "hsk1_0280",
+    "level": 1,
+    "simplified": "女",
+    "pinyin": "nǚ",
+    "definition": "female; woman; daughter"
+  },
+  {
+    "id": "hsk1_0281",
+    "level": 1,
+    "simplified": "女儿",
+    "pinyin": "nǚ ér",
+    "definition": "daughter"
+  },
+  {
+    "id": "hsk1_0282",
+    "level": 1,
+    "simplified": "女孩儿",
+    "pinyin": "nǚ hái r",
+    "definition": "erhua variant of 女孩; girl"
+  },
+  {
+    "id": "hsk1_0283",
+    "level": 1,
+    "simplified": "女朋友",
+    "pinyin": "nǚ péng you",
+    "definition": "girlfriend"
+  },
+  {
+    "id": "hsk1_0284",
+    "level": 1,
+    "simplified": "女人",
+    "pinyin": "nǚ rén",
+    "definition": "woman"
+  },
+  {
+    "id": "hsk1_0285",
+    "level": 1,
+    "simplified": "女生",
+    "pinyin": "nǚ shēng",
+    "definition": "schoolgirl; female student; girl"
+  },
+  {
+    "id": "hsk1_0286",
+    "level": 1,
+    "simplified": "旁边",
+    "pinyin": "páng biān",
+    "definition": "side; adjacent place"
+  },
+  {
+    "id": "hsk1_0287",
+    "level": 1,
+    "simplified": "跑",
+    "pinyin": "páo",
+    "definition": "(of an animal) to paw (the ground)"
+  },
+  {
+    "id": "hsk1_0288",
+    "level": 1,
+    "simplified": "朋友",
+    "pinyin": "péng you",
+    "definition": "friend"
+  },
+  {
+    "id": "hsk1_0289",
+    "level": 1,
+    "simplified": "票",
+    "pinyin": "piào",
+    "definition": "ticket; ballot; banknote; person held for ransom; amateur performance of Chinese opera; classifier for groups, batches, business transactions"
+  },
+  {
+    "id": "hsk1_0290",
+    "level": 1,
+    "simplified": "七",
+    "pinyin": "qī",
+    "definition": "seven; 7"
+  },
+  {
+    "id": "hsk1_0291",
+    "level": 1,
+    "simplified": "起",
+    "pinyin": "qǐ",
+    "definition": "to rise; to raise; to get up; to set out; to start; to appear; to launch; to initiate (action); to draft; to establish; to get (from a depot or counter); verb suffix, to start; starting from (a time, place, price etc); classifier for occurrences or unpredictable events: case, instance; classifier for groups: batch, group"
+  },
+  {
+    "id": "hsk1_0292",
+    "level": 1,
+    "simplified": "起床",
+    "pinyin": "qǐ chuáng",
+    "definition": "to get out of bed; to get up"
+  },
+  {
+    "id": "hsk1_0293",
+    "level": 1,
+    "simplified": "起来",
+    "pinyin": "qǐ lai",
+    "definition": "to stand up; to get up; also pr. [qǐ lái]"
+  },
+  {
+    "id": "hsk1_0294",
+    "level": 1,
+    "simplified": "汽车",
+    "pinyin": "qì chē",
+    "definition": "car; automobile; bus"
+  },
+  {
+    "id": "hsk1_0295",
+    "level": 1,
+    "simplified": "前",
+    "pinyin": "qián",
+    "definition": "front; forward; ahead; first; top (followed by a number); future; ago; before; BC (e.g. 前293年); former; formerly"
+  },
+  {
+    "id": "hsk1_0296",
+    "level": 1,
+    "simplified": "前边",
+    "pinyin": "qián bian",
+    "definition": "front; the front side; in front of"
+  },
+  {
+    "id": "hsk1_0297",
+    "level": 1,
+    "simplified": "前天",
+    "pinyin": "qián tiān",
+    "definition": "the day before yesterday"
+  },
+  {
+    "id": "hsk1_0299",
+    "level": 1,
+    "simplified": "钱包",
+    "pinyin": "qián bāo",
+    "definition": "purse; wallet"
+  },
+  {
+    "id": "hsk1_0300",
+    "level": 1,
+    "simplified": "请",
+    "pinyin": "qǐng",
+    "definition": "to ask; to invite; please (do sth); to treat (to a meal etc); to request"
+  },
+  {
+    "id": "hsk1_0301",
+    "level": 1,
+    "simplified": "请假",
+    "pinyin": "qǐng jià",
+    "definition": "to request leave of absence"
+  },
+  {
+    "id": "hsk1_0302",
+    "level": 1,
+    "simplified": "请进",
+    "pinyin": "qǐng jìn",
+    "definition": "\"please come in\""
+  },
+  {
+    "id": "hsk1_0303",
+    "level": 1,
+    "simplified": "请问",
+    "pinyin": "qǐng wèn",
+    "definition": "Excuse me, may I ask...?"
+  },
+  {
+    "id": "hsk1_0304",
+    "level": 1,
+    "simplified": "请坐",
+    "pinyin": "qǐng zuò",
+    "definition": "please, have a seat"
+  },
+  {
+    "id": "hsk1_0305",
+    "level": 1,
+    "simplified": "球",
+    "pinyin": "qiú",
+    "definition": "ball; sphere; globe; ball game; match"
+  },
+  {
+    "id": "hsk1_0306",
+    "level": 1,
+    "simplified": "去",
+    "pinyin": "qù",
+    "definition": "to go; to go to (a place); (of a time etc) last; just passed; to send; to remove; to get rid of; to reduce; to be apart from in space or time; to die (euphemism); to play (a part); (when used either before or after a verb) to go in order to do sth; (after a verb of motion indicates movement away from the speaker); (used after certain verbs to indicate detachment or separation)"
+  },
+  {
+    "id": "hsk1_0307",
+    "level": 1,
+    "simplified": "去年",
+    "pinyin": "qù nián",
+    "definition": "last year"
+  },
+  {
+    "id": "hsk1_0308",
+    "level": 1,
+    "simplified": "热",
+    "pinyin": "rè",
+    "definition": "to warm up; to heat up; hot (of weather); heat; fervent"
+  },
+  {
+    "id": "hsk1_0309",
+    "level": 1,
+    "simplified": "人",
+    "pinyin": "rén",
+    "definition": "person; people"
+  },
+  {
+    "id": "hsk1_0310",
+    "level": 1,
+    "simplified": "认识",
+    "pinyin": "rèn shi",
+    "definition": "to know; to recognize; to be familiar with; to get acquainted with sb; knowledge; understanding; awareness; cognition"
+  },
+  {
+    "id": "hsk1_0311",
+    "level": 1,
+    "simplified": "认真",
+    "pinyin": "rèn zhēn",
+    "definition": "conscientious; earnest; serious; to take seriously; to take to heart"
+  },
+  {
+    "id": "hsk1_0312",
+    "level": 1,
+    "simplified": "日",
+    "pinyin": "Rì",
+    "definition": "abbr. for 本, Japan"
+  },
+  {
+    "id": "hsk1_0313",
+    "level": 1,
+    "simplified": "日期",
+    "pinyin": "rì qī",
+    "definition": "date"
+  },
+  {
+    "id": "hsk1_0314",
+    "level": 1,
+    "simplified": "肉",
+    "pinyin": "ròu",
+    "definition": "meat; flesh; pulp (of a fruit); (coll.) (of a fruit) squashy; (of a person) flabby; irresolute; Kangxi radical 130"
+  },
+  {
+    "id": "hsk1_0317",
+    "level": 1,
+    "simplified": "商场",
+    "pinyin": "shāng chǎng",
+    "definition": "shopping mall; shopping center; department store; emporium; the business world"
+  },
+  {
+    "id": "hsk1_0318",
+    "level": 1,
+    "simplified": "商店",
+    "pinyin": "shāng diàn",
+    "definition": "store; shop"
+  },
+  {
+    "id": "hsk1_0319",
+    "level": 1,
+    "simplified": "上",
+    "pinyin": "shǎng",
+    "definition": "used in 上声"
+  },
+  {
+    "id": "hsk1_0320",
+    "level": 1,
+    "simplified": "上班",
+    "pinyin": "shàng bān",
+    "definition": "to go to work; to be on duty; to start work; to go to the office"
+  },
+  {
+    "id": "hsk1_0321",
+    "level": 1,
+    "simplified": "上边",
+    "pinyin": "shàng bian",
+    "definition": "the top; above; overhead; upwards; the top margin; above-mentioned; those higher up"
+  },
+  {
+    "id": "hsk1_0322",
+    "level": 1,
+    "simplified": "上车",
+    "pinyin": "shàng chē",
+    "definition": "to get on or into (a bus, train, car etc)"
+  },
+  {
+    "id": "hsk1_0323",
+    "level": 1,
+    "simplified": "上次",
+    "pinyin": "shàng cì",
+    "definition": "last time"
+  },
+  {
+    "id": "hsk1_0324",
+    "level": 1,
+    "simplified": "上课",
+    "pinyin": "shàng kè",
+    "definition": "to go to class; to attend class; to go to teach a class"
+  },
+  {
+    "id": "hsk1_0325",
+    "level": 1,
+    "simplified": "上网",
+    "pinyin": "shàng wǎng",
+    "definition": "to go online; to connect to the Internet; (of a document etc) to be uploaded to the Internet; (tennis, volleyball etc) to move in close to the net"
+  },
+  {
+    "id": "hsk1_0326",
+    "level": 1,
+    "simplified": "上午",
+    "pinyin": "shàng wǔ",
+    "definition": "morning"
+  },
+  {
+    "id": "hsk1_0327",
+    "level": 1,
+    "simplified": "上学",
+    "pinyin": "shàng xué",
+    "definition": "to go to school; to attend school"
+  },
+  {
+    "id": "hsk1_0328",
+    "level": 1,
+    "simplified": "少",
+    "pinyin": "shǎo",
+    "definition": "few; less; to lack; to be missing; to stop (doing sth); seldom"
+  },
+  {
+    "id": "hsk1_0329",
+    "level": 1,
+    "simplified": "身上",
+    "pinyin": "shēn shang",
+    "definition": "on the body; at hand; among"
+  },
+  {
+    "id": "hsk1_0330",
+    "level": 1,
+    "simplified": "身体",
+    "pinyin": "shēn tǐ",
+    "definition": "the body; one's health; in person"
+  },
+  {
+    "id": "hsk1_0331",
+    "level": 1,
+    "simplified": "什么",
+    "pinyin": "shén me",
+    "definition": "what?; something; anything"
+  },
+  {
+    "id": "hsk1_0332",
+    "level": 1,
+    "simplified": "生病",
+    "pinyin": "shēng bìng",
+    "definition": "to fall ill"
+  },
+  {
+    "id": "hsk1_0333",
+    "level": 1,
+    "simplified": "生气",
+    "pinyin": "shēng qì",
+    "definition": "to get angry; to take offense; angry; vitality; liveliness"
+  },
+  {
+    "id": "hsk1_0334",
+    "level": 1,
+    "simplified": "生日",
+    "pinyin": "shēng rì",
+    "definition": "birthday"
+  },
+  {
+    "id": "hsk1_0335",
+    "level": 1,
+    "simplified": "十",
+    "pinyin": "shí",
+    "definition": "ten; 10"
+  },
+  {
+    "id": "hsk1_0336",
+    "level": 1,
+    "simplified": "时候",
+    "pinyin": "shí hou",
+    "definition": "time; length of time; moment; period"
+  },
+  {
+    "id": "hsk1_0337",
+    "level": 1,
+    "simplified": "时间",
+    "pinyin": "shí jiān",
+    "definition": "time; period"
+  },
+  {
+    "id": "hsk1_0338",
+    "level": 1,
+    "simplified": "事",
+    "pinyin": "shì",
+    "definition": "matter; thing; item; work; affair"
+  },
+  {
+    "id": "hsk1_0339",
+    "level": 1,
+    "simplified": "试",
+    "pinyin": "shì",
+    "definition": "to test; to try; experiment; examination; test"
+  },
+  {
+    "id": "hsk1_0340",
+    "level": 1,
+    "simplified": "是",
+    "pinyin": "shì",
+    "definition": "to be (followed by substantives only); correct; right; true; (respectful acknowledgement of a command) very well; (adverb for emphatic assertion)"
+  },
+  {
+    "id": "hsk1_0341",
+    "level": 1,
+    "simplified": "是不是",
+    "pinyin": "shì bù shì",
+    "definition": "is or isn't; yes or no; whether or not"
+  },
+  {
+    "id": "hsk1_0342",
+    "level": 1,
+    "simplified": "手",
+    "pinyin": "shǒu",
+    "definition": "hand; (formal) to hold; person engaged in certain types of work; person skilled in certain types of work; personal(ly); convenient; classifier for skill"
+  },
+  {
+    "id": "hsk1_0343",
+    "level": 1,
+    "simplified": "手机",
+    "pinyin": "shǒu jī",
+    "definition": "cell phone; mobile phone"
+  },
+  {
+    "id": "hsk1_0344",
+    "level": 1,
+    "simplified": "书",
+    "pinyin": "Shū",
+    "definition": "abbr. for 书经"
+  },
+  {
+    "id": "hsk1_0345",
+    "level": 1,
+    "simplified": "书包",
+    "pinyin": "shū bāo",
+    "definition": "schoolbag; satchel; bookbag"
+  },
+  {
+    "id": "hsk1_0346",
+    "level": 1,
+    "simplified": "书店",
+    "pinyin": "shū diàn",
+    "definition": "bookstore"
+  },
+  {
+    "id": "hsk1_0347",
+    "level": 1,
+    "simplified": "树",
+    "pinyin": "shù",
+    "definition": "tree; to cultivate; to set up"
+  },
+  {
+    "id": "hsk1_0348",
+    "level": 1,
+    "simplified": "谁",
+    "pinyin": "shéi",
+    "definition": "who; also pr. [shuí]"
+  },
+  {
+    "id": "hsk1_0350",
+    "level": 1,
+    "simplified": "水果",
+    "pinyin": "shuǐ guǒ",
+    "definition": "fruit"
+  },
+  {
+    "id": "hsk1_0351",
+    "level": 1,
+    "simplified": "睡",
+    "pinyin": "shuì",
+    "definition": "to sleep; to lie down"
+  },
+  {
+    "id": "hsk1_0352",
+    "level": 1,
+    "simplified": "睡觉",
+    "pinyin": "shuì jiào",
+    "definition": "to go to bed; to sleep"
+  },
+  {
+    "id": "hsk1_0353",
+    "level": 1,
+    "simplified": "说",
+    "pinyin": "shuì",
+    "definition": "to persuade"
+  },
+  {
+    "id": "hsk1_0354",
+    "level": 1,
+    "simplified": "说话",
+    "pinyin": "shuō huà",
+    "definition": "to speak; to say; to talk; to gossip; to tell stories; talk; word"
+  },
+  {
+    "id": "hsk1_0355",
+    "level": 1,
+    "simplified": "四",
+    "pinyin": "sì",
+    "definition": "four; 4"
+  },
+  {
+    "id": "hsk1_0356",
+    "level": 1,
+    "simplified": "送",
+    "pinyin": "sòng",
+    "definition": "to send; to deliver; to transmit; to give (as a present); to see (sb) off; to accompany; to go along with"
+  },
+  {
+    "id": "hsk1_0357",
+    "level": 1,
+    "simplified": "岁",
+    "pinyin": "suì",
+    "definition": "variant of 岁, year; years old"
+  },
+  {
+    "id": "hsk1_0358",
+    "level": 1,
+    "simplified": "他",
+    "pinyin": "tā",
+    "definition": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object); (literary) other"
+  },
+  {
+    "id": "hsk1_0359",
+    "level": 1,
+    "simplified": "他们",
+    "pinyin": "tā men",
+    "definition": "they"
+  },
+  {
+    "id": "hsk1_0360",
+    "level": 1,
+    "simplified": "她",
+    "pinyin": "tā",
+    "definition": "she"
+  },
+  {
+    "id": "hsk1_0361",
+    "level": 1,
+    "simplified": "她们",
+    "pinyin": "tā men",
+    "definition": "they; them (for females)"
+  },
+  {
+    "id": "hsk1_0362",
+    "level": 1,
+    "simplified": "太",
+    "pinyin": "tài",
+    "definition": "highest; greatest; too (much); very; extremely"
+  },
+  {
+    "id": "hsk1_0363",
+    "level": 1,
+    "simplified": "天",
+    "pinyin": "tiān",
+    "definition": "day; sky; heaven"
+  },
+  {
+    "id": "hsk1_0364",
+    "level": 1,
+    "simplified": "天气",
+    "pinyin": "tiān qì",
+    "definition": "weather"
+  },
+  {
+    "id": "hsk1_0365",
+    "level": 1,
+    "simplified": "听",
+    "pinyin": "yǐn",
+    "definition": "smile (archaic)"
+  },
+  {
+    "id": "hsk1_0366",
+    "level": 1,
+    "simplified": "听到",
+    "pinyin": "tīng dào",
+    "definition": "to hear"
+  },
+  {
+    "id": "hsk1_0367",
+    "level": 1,
+    "simplified": "听见",
+    "pinyin": "tīng jiàn",
+    "definition": "to hear"
+  },
+  {
+    "id": "hsk1_0368",
+    "level": 1,
+    "simplified": "听写",
+    "pinyin": "tīng xiě",
+    "definition": "(of a pupil) to write down (in a dictation exercise); dictation; (music) to transcribe by ear"
+  },
+  {
+    "id": "hsk1_0369",
+    "level": 1,
+    "simplified": "同学",
+    "pinyin": "tóng xué",
+    "definition": "to study at the same school; fellow student; classmate"
+  },
+  {
+    "id": "hsk1_0370",
+    "level": 1,
+    "simplified": "图书馆",
+    "pinyin": "tú shū guǎn",
+    "definition": "library"
+  },
+  {
+    "id": "hsk1_0371",
+    "level": 1,
+    "simplified": "外",
+    "pinyin": "wài",
+    "definition": "outside; in addition; foreign; external"
+  },
+  {
+    "id": "hsk1_0372",
+    "level": 1,
+    "simplified": "外边",
+    "pinyin": "wài bian",
+    "definition": "outside; outer surface; abroad; place other than one's home"
+  },
+  {
+    "id": "hsk1_0373",
+    "level": 1,
+    "simplified": "外国",
+    "pinyin": "wài guó",
+    "definition": "foreign (country)"
+  },
+  {
+    "id": "hsk1_0374",
+    "level": 1,
+    "simplified": "外语",
+    "pinyin": "wài yǔ",
+    "definition": "foreign language"
+  },
+  {
+    "id": "hsk1_0375",
+    "level": 1,
+    "simplified": "玩儿",
+    "pinyin": "wán r",
+    "definition": "to play; to have fun; to hang out"
+  },
+  {
+    "id": "hsk1_0376",
+    "level": 1,
+    "simplified": "晚",
+    "pinyin": "wǎn",
+    "definition": "evening; night; late"
+  },
+  {
+    "id": "hsk1_0377",
+    "level": 1,
+    "simplified": "晚饭",
+    "pinyin": "wǎn fàn",
+    "definition": "evening meal; dinner; supper"
+  },
+  {
+    "id": "hsk1_0378",
+    "level": 1,
+    "simplified": "晚上",
+    "pinyin": "wǎn shang",
+    "definition": "evening; night; in the evening"
+  },
+  {
+    "id": "hsk1_0379",
+    "level": 1,
+    "simplified": "网上",
+    "pinyin": "wǎng shàng",
+    "definition": "online"
+  },
+  {
+    "id": "hsk1_0380",
+    "level": 1,
+    "simplified": "网友",
+    "pinyin": "wǎng yǒu",
+    "definition": "online friend; Internet user"
+  },
+  {
+    "id": "hsk1_0381",
+    "level": 1,
+    "simplified": "忘",
+    "pinyin": "wàng",
+    "definition": "to forget; to overlook; to neglect"
+  },
+  {
+    "id": "hsk1_0382",
+    "level": 1,
+    "simplified": "忘记",
+    "pinyin": "wàng jì",
+    "definition": "to forget"
+  },
+  {
+    "id": "hsk1_0383",
+    "level": 1,
+    "simplified": "问",
+    "pinyin": "wèn",
+    "definition": "to ask; to inquire"
+  },
+  {
+    "id": "hsk1_0384",
+    "level": 1,
+    "simplified": "我",
+    "pinyin": "wǒ",
+    "definition": "I; me; my"
+  },
+  {
+    "id": "hsk1_0385",
+    "level": 1,
+    "simplified": "我们",
+    "pinyin": "wǒ men",
+    "definition": "we; us; ourselves; our"
+  },
+  {
+    "id": "hsk1_0386",
+    "level": 1,
+    "simplified": "五",
+    "pinyin": "wǔ",
+    "definition": "five; 5"
+  },
+  {
+    "id": "hsk1_0387",
+    "level": 1,
+    "simplified": "午饭",
+    "pinyin": "wǔ fàn",
+    "definition": "lunch"
+  },
+  {
+    "id": "hsk1_0388",
+    "level": 1,
+    "simplified": "洗",
+    "pinyin": "xǐ",
+    "definition": "to wash; to bathe; to develop (photographs); to shuffle (cards etc); to erase (a recording)"
+  },
+  {
+    "id": "hsk1_0389",
+    "level": 1,
+    "simplified": "洗手间",
+    "pinyin": "xǐ shǒu jiān",
+    "definition": "toilet; lavatory; washroom"
+  },
+  {
+    "id": "hsk1_0390",
+    "level": 1,
+    "simplified": "喜欢",
+    "pinyin": "xǐ huan",
+    "definition": "to like; to be fond of"
+  },
+  {
+    "id": "hsk1_0391",
+    "level": 1,
+    "simplified": "西",
+    "pinyin": "Xī",
+    "definition": "the West; abbr. for Spain 牙; Spanish"
+  },
+  {
+    "id": "hsk1_0392",
+    "level": 1,
+    "simplified": "西边",
+    "pinyin": "xī biān",
+    "definition": "west; west side; western part; to the west of"
+  },
+  {
+    "id": "hsk1_0393",
+    "level": 1,
+    "simplified": "下",
+    "pinyin": "xià",
+    "definition": "down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down; to arrive at (a decision, conclusion etc); measure word to show the frequency of an action"
+  },
+  {
+    "id": "hsk1_0394",
+    "level": 1,
+    "simplified": "下班",
+    "pinyin": "xià bān",
+    "definition": "to finish work; to get off work"
+  },
+  {
+    "id": "hsk1_0395",
+    "level": 1,
+    "simplified": "下边",
+    "pinyin": "xià bian",
+    "definition": "under; the underside; below"
+  },
+  {
+    "id": "hsk1_0396",
+    "level": 1,
+    "simplified": "下车",
+    "pinyin": "xià chē",
+    "definition": "to get off or out of (a bus, train, car etc)"
+  },
+  {
+    "id": "hsk1_0397",
+    "level": 1,
+    "simplified": "下次",
+    "pinyin": "xià cì",
+    "definition": "next time"
+  },
+  {
+    "id": "hsk1_0398",
+    "level": 1,
+    "simplified": "下课",
+    "pinyin": "xià kè",
+    "definition": "to finish class; to get out of class; (fig.) (esp. of a sports coach) to be dismissed; to be fired"
+  },
+  {
+    "id": "hsk1_0399",
+    "level": 1,
+    "simplified": "下午",
+    "pinyin": "xià wǔ",
+    "definition": "afternoon; p.m."
+  },
+  {
+    "id": "hsk1_0400",
+    "level": 1,
+    "simplified": "下雨",
+    "pinyin": "xià yǔ",
+    "definition": "to rain"
+  },
+  {
+    "id": "hsk1_0401",
+    "level": 1,
+    "simplified": "先",
+    "pinyin": "xiān",
+    "definition": "early; prior; former; in advance; first"
+  },
+  {
+    "id": "hsk1_0402",
+    "level": 1,
+    "simplified": "先生",
+    "pinyin": "xiān sheng",
+    "definition": "teacher; gentleman; sir; mister (Mr.); husband; (dialect) doctor"
+  },
+  {
+    "id": "hsk1_0403",
+    "level": 1,
+    "simplified": "现在",
+    "pinyin": "xiàn zài",
+    "definition": "now; at present; at the moment; modern; current; nowadays"
+  },
+  {
+    "id": "hsk1_0404",
+    "level": 1,
+    "simplified": "想",
+    "pinyin": "xiǎng",
+    "definition": "to think (about); to think of; to devise; to think (that); to believe (that); to desire; to want (to); to miss (feel wistful about the absence of)"
+  },
+  {
+    "id": "hsk1_0405",
+    "level": 1,
+    "simplified": "小",
+    "pinyin": "xiǎo",
+    "definition": "small; tiny; few; young"
+  },
+  {
+    "id": "hsk1_0406",
+    "level": 1,
+    "simplified": "小孩儿",
+    "pinyin": "xiǎo hái r",
+    "definition": "erhua variant of 小孩; child"
+  },
+  {
+    "id": "hsk1_0407",
+    "level": 1,
+    "simplified": "小姐",
+    "pinyin": "xiǎo jie",
+    "definition": "young lady; miss; (slang) prostitute"
+  },
+  {
+    "id": "hsk1_0408",
+    "level": 1,
+    "simplified": "小朋友",
+    "pinyin": "xiǎo péng yǒu",
+    "definition": "child"
+  },
+  {
+    "id": "hsk1_0409",
+    "level": 1,
+    "simplified": "小时",
+    "pinyin": "xiǎo shí",
+    "definition": "hour"
+  },
+  {
+    "id": "hsk1_0410",
+    "level": 1,
+    "simplified": "小学",
+    "pinyin": "xiǎo xué",
+    "definition": "elementary school; primary school"
+  },
+  {
+    "id": "hsk1_0411",
+    "level": 1,
+    "simplified": "小学生",
+    "pinyin": "xiǎo xué shēng",
+    "definition": "primary school student; schoolchild; (fig.) beginner"
+  },
+  {
+    "id": "hsk1_0412",
+    "level": 1,
+    "simplified": "笑",
+    "pinyin": "xiào",
+    "definition": "old variant of 笑"
+  },
+  {
+    "id": "hsk1_0413",
+    "level": 1,
+    "simplified": "写",
+    "pinyin": "xiě",
+    "definition": "to write"
+  },
+  {
+    "id": "hsk1_0414",
+    "level": 1,
+    "simplified": "谢谢",
+    "pinyin": "xiè xie",
+    "definition": "to thank; thanks; thank you"
+  },
+  {
+    "id": "hsk1_0415",
+    "level": 1,
+    "simplified": "新",
+    "pinyin": "Xīn",
+    "definition": "abbr. for Xinjiang 疆 or Singapore 坡; surname Xin"
+  },
+  {
+    "id": "hsk1_0416",
+    "level": 1,
+    "simplified": "新年",
+    "pinyin": "xīn nián",
+    "definition": "New Year"
+  },
+  {
+    "id": "hsk1_0417",
+    "level": 1,
+    "simplified": "星期",
+    "pinyin": "xīng qī",
+    "definition": "week; day of the week; Sunday"
+  },
+  {
+    "id": "hsk1_0418",
+    "level": 1,
+    "simplified": "星期日",
+    "pinyin": "Xīng qī rì",
+    "definition": "Sunday"
+  },
+  {
+    "id": "hsk1_0419",
+    "level": 1,
+    "simplified": "星期天",
+    "pinyin": "Xīng qī tiān",
+    "definition": "Sunday"
+  },
+  {
+    "id": "hsk1_0420",
+    "level": 1,
+    "simplified": "行",
+    "pinyin": "háng",
+    "definition": "row; line; commercial firm; line of business; profession; to rank (first, second etc) among one's siblings (by age); (in data tables) row; (Tw) column"
+  },
+  {
+    "id": "hsk1_0421",
+    "level": 1,
+    "simplified": "休息",
+    "pinyin": "xiū xi",
+    "definition": "rest; to rest"
+  },
+  {
+    "id": "hsk1_0422",
+    "level": 1,
+    "simplified": "学",
+    "pinyin": "xué",
+    "definition": "to learn; to study; to imitate; science; -ology"
+  },
+  {
+    "id": "hsk1_0423",
+    "level": 1,
+    "simplified": "学生",
+    "pinyin": "xué sheng",
+    "definition": "student; schoolchild"
+  },
+  {
+    "id": "hsk1_0424",
+    "level": 1,
+    "simplified": "学习",
+    "pinyin": "xué xí",
+    "definition": "to learn; to study"
+  },
+  {
+    "id": "hsk1_0425",
+    "level": 1,
+    "simplified": "学校",
+    "pinyin": "xué xiào",
+    "definition": "school"
+  },
+  {
+    "id": "hsk1_0426",
+    "level": 1,
+    "simplified": "学院",
+    "pinyin": "xué yuàn",
+    "definition": "college; educational institute; school; faculty"
+  },
+  {
+    "id": "hsk1_0427",
+    "level": 1,
+    "simplified": "要",
+    "pinyin": "yāo",
+    "definition": "(bound form) to demand; to coerce"
+  },
+  {
+    "id": "hsk1_0429",
+    "level": 1,
+    "simplified": "页",
+    "pinyin": "xié",
+    "definition": "head"
+  },
+  {
+    "id": "hsk1_0430",
+    "level": 1,
+    "simplified": "爷爷",
+    "pinyin": "yé ye",
+    "definition": "(coll.) father's father; paternal grandfather"
+  },
+  {
+    "id": "hsk1_0431",
+    "level": 1,
+    "simplified": "一",
+    "pinyin": "yī",
+    "definition": "one; single; a (article); as soon as; entire; whole; all; throughout; \"one\" radical in Chinese characters (Kangxi radical 1); also pr. [yāo] for greater clarity when spelling out numbers digit by digit"
+  },
+  {
+    "id": "hsk1_0432",
+    "level": 1,
+    "simplified": "一半",
+    "pinyin": "yī bàn",
+    "definition": "half"
+  },
+  {
+    "id": "hsk1_0433",
+    "level": 1,
+    "simplified": "一边",
+    "pinyin": "yī biān",
+    "definition": "one side; either side; on the one hand; on the other hand; doing while"
+  },
+  {
+    "id": "hsk1_0434",
+    "level": 1,
+    "simplified": "一点儿",
+    "pinyin": "yī diǎn r",
+    "definition": "erhua variant of 一点; a bit; a little bit; (used in negative expressions) (not) the least bit; (after an adjective, used to form the comparative) a bit more"
+  },
+  {
+    "id": "hsk1_0435",
+    "level": 1,
+    "simplified": "一会儿",
+    "pinyin": "yī huì r",
+    "definition": "a moment; a while; in a moment; now...now...; also pr. [yī huǐ r]"
+  },
+  {
+    "id": "hsk1_0436",
+    "level": 1,
+    "simplified": "一块儿",
+    "pinyin": "yī kuài r",
+    "definition": "erhua variant of 一块; a piece; a chunk; (coll.) one yuan; one dollar"
+  },
+  {
+    "id": "hsk1_0437",
+    "level": 1,
+    "simplified": "一起",
+    "pinyin": "yī qǐ",
+    "definition": "in the same place; together; with; altogether (in total)"
+  },
+  {
+    "id": "hsk1_0438",
+    "level": 1,
+    "simplified": "一下儿",
+    "pinyin": "yī xià r",
+    "definition": "erhua variant of 一下; one time; once; all of sudden"
+  },
+  {
+    "id": "hsk1_0439",
+    "level": 1,
+    "simplified": "一些",
+    "pinyin": "yī xiē",
+    "definition": "some; a few; a little; (following an adjective) slightly ...er"
+  },
+  {
+    "id": "hsk1_0440",
+    "level": 1,
+    "simplified": "一样",
+    "pinyin": "yī yàng",
+    "definition": "same; like; equal to; the same as; just like"
+  },
+  {
+    "id": "hsk1_0441",
+    "level": 1,
+    "simplified": "衣服",
+    "pinyin": "yī fu",
+    "definition": "clothes"
+  },
+  {
+    "id": "hsk1_0442",
+    "level": 1,
+    "simplified": "医生",
+    "pinyin": "yī shēng",
+    "definition": "doctor"
+  },
+  {
+    "id": "hsk1_0443",
+    "level": 1,
+    "simplified": "医院",
+    "pinyin": "yī yuàn",
+    "definition": "hospital"
+  },
+  {
+    "id": "hsk1_0444",
+    "level": 1,
+    "simplified": "用",
+    "pinyin": "yòng",
+    "definition": "to use; to employ; to have to; to eat or drink; expense or outlay; usefulness; hence; therefore"
+  },
+  {
+    "id": "hsk1_0445",
+    "level": 1,
+    "simplified": "有",
+    "pinyin": "yǒu",
+    "definition": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)"
+  },
+  {
+    "id": "hsk1_0446",
+    "level": 1,
+    "simplified": "有的",
+    "pinyin": "yǒu de",
+    "definition": "(there are) some (who are...); some (exist)"
+  },
+  {
+    "id": "hsk1_0447",
+    "level": 1,
+    "simplified": "有名",
+    "pinyin": "yǒu míng",
+    "definition": "famous; well-known"
+  },
+  {
+    "id": "hsk1_0448",
+    "level": 1,
+    "simplified": "有时",
+    "pinyin": "yǒu shí",
+    "definition": "sometimes; now and then"
+  },
+  {
+    "id": "hsk1_0449",
+    "level": 1,
+    "simplified": "有时候",
+    "pinyin": "yǒu shí hou",
+    "definition": "sometimes"
+  },
+  {
+    "id": "hsk1_0450",
+    "level": 1,
+    "simplified": "有些",
+    "pinyin": "yǒu xiē",
+    "definition": "some; somewhat"
+  },
+  {
+    "id": "hsk1_0451",
+    "level": 1,
+    "simplified": "有一些",
+    "pinyin": "yǒu yī xiē",
+    "definition": "somewhat; rather; some"
+  },
+  {
+    "id": "hsk1_0452",
+    "level": 1,
+    "simplified": "有用",
+    "pinyin": "yǒu yòng",
+    "definition": "useful"
+  },
+  {
+    "id": "hsk1_0453",
+    "level": 1,
+    "simplified": "右",
+    "pinyin": "yòu",
+    "definition": "(bound form) right; right-hand side; (bound form) (politics) right of center; (bound form) (old) west; (literary) the right side as the side of precedence"
+  },
+  {
+    "id": "hsk1_0454",
+    "level": 1,
+    "simplified": "右边",
+    "pinyin": "yòu bian",
+    "definition": "right side; right, to the right"
+  },
+  {
+    "id": "hsk1_0455",
+    "level": 1,
+    "simplified": "雨",
+    "pinyin": "yǔ",
+    "definition": "rain"
+  },
+  {
+    "id": "hsk1_0456",
+    "level": 1,
+    "simplified": "元",
+    "pinyin": "Yuán",
+    "definition": "surname Yuan; the Yuan or Mongol dynasty (1279-1368)"
+  },
+  {
+    "id": "hsk1_0457",
+    "level": 1,
+    "simplified": "远",
+    "pinyin": "yuǎn",
+    "definition": "far; distant; remote; (intensifier in a comparison) by far; much (lower etc)"
+  },
+  {
+    "id": "hsk1_0458",
+    "level": 1,
+    "simplified": "月",
+    "pinyin": "yuè",
+    "definition": "moon; month; monthly"
+  },
+  {
+    "id": "hsk1_0459",
+    "level": 1,
+    "simplified": "再",
+    "pinyin": "zài",
+    "definition": "again; once more; re-; second; another; then (after sth, and not until then); no matter how ... (followed by an adjective or verb, and then (usually) 也 or 都 for emphasis)"
+  },
+  {
+    "id": "hsk1_0460",
+    "level": 1,
+    "simplified": "再见",
+    "pinyin": "zài jiàn",
+    "definition": "goodbye; see you again later"
+  },
+  {
+    "id": "hsk1_0461",
+    "level": 1,
+    "simplified": "在",
+    "pinyin": "zài",
+    "definition": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)"
+  },
+  {
+    "id": "hsk1_0462",
+    "level": 1,
+    "simplified": "在家",
+    "pinyin": "zài jiā",
+    "definition": "to be at home; (at a workplace) to be in (as opposed to being away on official business 差); (Buddhism etc) to remain a layman (as opposed to becoming a monk or a nun 家)"
+  },
+  {
+    "id": "hsk1_0463",
+    "level": 1,
+    "simplified": "早",
+    "pinyin": "zǎo",
+    "definition": "early; morning; Good morning!; long ago; prematurely"
+  },
+  {
+    "id": "hsk1_0464",
+    "level": 1,
+    "simplified": "早饭",
+    "pinyin": "zǎo fàn",
+    "definition": "breakfast"
+  },
+  {
+    "id": "hsk1_0465",
+    "level": 1,
+    "simplified": "早上",
+    "pinyin": "zǎo shang",
+    "definition": "early morning"
+  },
+  {
+    "id": "hsk1_0466",
+    "level": 1,
+    "simplified": "怎么",
+    "pinyin": "zěn me",
+    "definition": "how?; what?; why?"
+  },
+  {
+    "id": "hsk1_0467",
+    "level": 1,
+    "simplified": "站",
+    "pinyin": "zhàn",
+    "definition": "station; to stand; to halt; to stop; branch of a company or organization; website"
+  },
+  {
+    "id": "hsk1_0468",
+    "level": 1,
+    "simplified": "找",
+    "pinyin": "zhǎo",
+    "definition": "to try to find; to look for; to call on sb; to find; to seek; to return; to give change"
+  },
+  {
+    "id": "hsk1_0469",
+    "level": 1,
+    "simplified": "找到",
+    "pinyin": "zhǎo dào",
+    "definition": "to find"
+  },
+  {
+    "id": "hsk1_0470",
+    "level": 1,
+    "simplified": "这",
+    "pinyin": "zhè",
+    "definition": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)"
+  },
+  {
+    "id": "hsk1_0471",
+    "level": 1,
+    "simplified": "这边",
+    "pinyin": "zhè biān",
+    "definition": "this side; here"
+  },
+  {
+    "id": "hsk1_0472",
+    "level": 1,
+    "simplified": "这儿",
+    "pinyin": "zhè r",
+    "definition": "here"
+  },
+  {
+    "id": "hsk1_0473",
+    "level": 1,
+    "simplified": "这里",
+    "pinyin": "zhè lǐ",
+    "definition": "variant of 这里"
+  },
+  {
+    "id": "hsk1_0474",
+    "level": 1,
+    "simplified": "这些",
+    "pinyin": "zhè xiē",
+    "definition": "these"
+  },
+  {
+    "id": "hsk1_0475",
+    "level": 1,
+    "simplified": "着",
+    "pinyin": "zhāo",
+    "definition": "(chess) move; trick; all right!; (dialect) to add"
+  },
+  {
+    "id": "hsk1_0476",
+    "level": 1,
+    "simplified": "真",
+    "pinyin": "zhēn",
+    "definition": "really; truly; indeed; real; true; genuine"
+  },
+  {
+    "id": "hsk1_0477",
+    "level": 1,
+    "simplified": "真的",
+    "pinyin": "zhēn de",
+    "definition": "really, truly, indeed"
+  },
+  {
+    "id": "hsk1_0478",
+    "level": 1,
+    "simplified": "正",
+    "pinyin": "zhēng",
+    "definition": "first month of the lunar year"
+  },
+  {
+    "id": "hsk1_0479",
+    "level": 1,
+    "simplified": "正在",
+    "pinyin": "zhèng zài",
+    "definition": "just at (that time); right in (that place); right in the middle of (doing sth)"
+  },
+  {
+    "id": "hsk1_0480",
+    "level": 1,
+    "simplified": "知道",
+    "pinyin": "zhī dào",
+    "definition": "to know; to become aware of; also pr. [zhī dao]"
+  },
+  {
+    "id": "hsk1_0481",
+    "level": 1,
+    "simplified": "知识",
+    "pinyin": "zhī shi",
+    "definition": "knowledge; intellectual"
+  },
+  {
+    "id": "hsk1_0482",
+    "level": 1,
+    "simplified": "中",
+    "pinyin": "Zhōng",
+    "definition": "China; Chinese; surname Zhong"
+  },
+  {
+    "id": "hsk1_0483",
+    "level": 1,
+    "simplified": "中国",
+    "pinyin": "Zhōng guó",
+    "definition": "China"
+  },
+  {
+    "id": "hsk1_0484",
+    "level": 1,
+    "simplified": "中间",
+    "pinyin": "zhōng jiān",
+    "definition": "the middle; the inside; in the middle; within; between; among; during; in the meantime"
+  },
+  {
+    "id": "hsk1_0485",
+    "level": 1,
+    "simplified": "中文",
+    "pinyin": "Zhōng wén",
+    "definition": "Chinese language"
+  },
+  {
+    "id": "hsk1_0486",
+    "level": 1,
+    "simplified": "中午",
+    "pinyin": "zhōng wǔ",
+    "definition": "noon; midday"
+  },
+  {
+    "id": "hsk1_0487",
+    "level": 1,
+    "simplified": "中学",
+    "pinyin": "zhōng xué",
+    "definition": "middle school"
+  },
+  {
+    "id": "hsk1_0488",
+    "level": 1,
+    "simplified": "中学生",
+    "pinyin": "zhōng xué shēng",
+    "definition": "middle-school student; high school student"
+  },
+  {
+    "id": "hsk1_0489",
+    "level": 1,
+    "simplified": "重",
+    "pinyin": "chóng",
+    "definition": "to repeat; repetition; again; re-; classifier: layer"
+  },
+  {
+    "id": "hsk1_0490",
+    "level": 1,
+    "simplified": "重要",
+    "pinyin": "zhòng yào",
+    "definition": "important; significant; major"
+  },
+  {
+    "id": "hsk1_0491",
+    "level": 1,
+    "simplified": "住",
+    "pinyin": "zhù",
+    "definition": "to live; to dwell; to stay; to reside; to stop; (suffix indicating firmness, steadiness, or coming to a halt)"
+  },
+  {
+    "id": "hsk1_0492",
+    "level": 1,
+    "simplified": "准备",
+    "pinyin": "zhǔn bèi",
+    "definition": "preparation; to prepare; to intend; to be about to; reserve (fund)"
+  },
+  {
+    "id": "hsk1_0493",
+    "level": 1,
+    "simplified": "桌子",
+    "pinyin": "zhuō zi",
+    "definition": "table; desk"
+  },
+  {
+    "id": "hsk1_0494",
+    "level": 1,
+    "simplified": "字",
+    "pinyin": "zì",
+    "definition": "letter; symbol; character; word; courtesy or style name traditionally given to males aged 20 in dynastic China"
+  },
+  {
+    "id": "hsk1_0495",
+    "level": 1,
+    "simplified": "子",
+    "pinyin": "zǐ",
+    "definition": "son; child; seed; egg; small thing; 1st earthly branch: 11 p.m.-1 a.m., midnight, 11th solar month (7th December to 5th January), year of the Rat; Viscount, fourth of five orders of nobility 位; ancient Chinese compass point: 0° (north); subsidiary; subordinate; sub-"
+  },
+  {
+    "id": "hsk1_0496",
+    "level": 1,
+    "simplified": "走",
+    "pinyin": "zǒu",
+    "definition": "to walk; to go; to run; to move (of vehicle); to visit; to leave; to go away; to die (euph.); from; through; away (in compound verbs, such as 走); to change (shape, form, meaning)"
+  },
+  {
+    "id": "hsk1_0497",
+    "level": 1,
+    "simplified": "走路",
+    "pinyin": "zǒu lù",
+    "definition": "to walk; to go on foot"
+  },
+  {
+    "id": "hsk1_0498",
+    "level": 1,
+    "simplified": "最",
+    "pinyin": "zuì",
+    "definition": "variant of 最"
+  },
+  {
+    "id": "hsk1_0499",
+    "level": 1,
+    "simplified": "最好",
+    "pinyin": "zuì hǎo",
+    "definition": "best; (you) had better (do what we suggest)"
+  },
+  {
+    "id": "hsk1_0500",
+    "level": 1,
+    "simplified": "最后",
+    "pinyin": "zuì hòu",
+    "definition": "final; last; finally; ultimate"
+  },
+  {
+    "id": "hsk1_0501",
+    "level": 1,
+    "simplified": "昨天",
+    "pinyin": "zuó tiān",
+    "definition": "yesterday"
+  },
+  {
+    "id": "hsk1_0503",
+    "level": 1,
+    "simplified": "左边",
+    "pinyin": "zuǒ bian",
+    "definition": "left; the left side; to the left of"
+  },
+  {
+    "id": "hsk1_0505",
+    "level": 1,
+    "simplified": "坐下",
+    "pinyin": "zuò xia",
+    "definition": "to sit down"
+  },
+  {
+    "id": "hsk1_0506",
+    "level": 1,
+    "simplified": "做",
+    "pinyin": "zuò",
+    "definition": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc); (of a person) to be (an intermediary, a good student etc); to become (husband and wife, friends etc); (of a thing) to serve as; to be used for; to assume (an air or manner)"
+  }
+]

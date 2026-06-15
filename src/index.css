@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-200 min-h-screen m-0;
+  }
+}
+
+.chinese-text {
+  font-family: 'Noto Sans SC', 'Source Han Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
