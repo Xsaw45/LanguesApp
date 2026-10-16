@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "id": "4",
+    "title": "Il Nome",
+    "title_fr": "Le Nom",
+    "subtitle": "Classificazione dei nomi",
+    "subtitle_fr": "Classification des noms",
+    "source": "Loescher Editore - L'italiano per studiare"
+  },
+  "theory": {
+    "sections": [
+      {
+        "type": "intro",
+        "content": "I nomi sono le parole che servono per indicare quello che noi pensiamo e di cui parliamo: persone, animali, oggetti, pensieri, luoghi, idee, sensazioni, sentimenti...",
+        "content_fr": "Les noms sont les mots qui servent à désigner ce que nous pensons et dont nous parlons : personnes, animaux, objets, pensées, lieux, idées, sensations, sentiments..."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "compagno, cane, erba, pallone, cioccolato, libro, macchina, sole, giorno, malattia, Italia, libertà, fame, amicizia, matematica", "highlight": null }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "È possibile classificare i nomi in vari modi.",
+        "content_fr": "Il est possible de classer les noms de différentes manières."
+      },
+      {
+        "type": "heading",
+        "content": "Nomi comuni e nomi propri",
+        "content_fr": "Noms communs et noms propres"
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi comuni** indicano una persona, un animale o una cosa in generale e si scrivono con la lettera iniziale minuscola.",
+        "content_fr": "Les **noms communs** désignent une personne, un animal ou une chose en général et s'écrivent avec une lettre initiale minuscule."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "città, ragazzo, fiume, gatto, canarino", "highlight": null }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi propri** indicano una persona, un animale o una cosa in modo particolare e che lo distingue; si scrivono con la lettera iniziale maiuscola.",
+        "content_fr": "Les **noms propres** désignent une personne, un animal ou une chose de manière particulière et distinctive ; ils s'écrivent avec une lettre initiale majuscule."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "Torino, Francesco, Po, Ulisse", "highlight": null }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Nomi concreti e nomi astratti",
+        "content_fr": "Noms concrets et noms abstraits"
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi concreti** indicano una persona, un animale o una cosa reali, che si possono vedere, sentire o toccare.",
+        "content_fr": "Les **noms concrets** désignent une personne, un animal ou une chose réels, que l'on peut voir, sentir ou toucher."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "casa, tavolo, mamma, amico, sole, patata, ossigeno", "highlight": null }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi astratti** indicano idee, concetti, pensieri, sentimenti che si possono solo pensare ma non si possono vedere, sentire o toccare.",
+        "content_fr": "Les **noms abstraits** désignent des idées, des concepts, des pensées, des sentiments que l'on peut seulement penser mais que l'on ne peut pas voir, sentir ou toucher."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "allegria, amicizia, velocità, paura, vecchiaia", "highlight": null }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Nomi individuali e nomi collettivi",
+        "content_fr": "Noms individuels et noms collectifs"
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi individuali** indicano una sola persona o una sola cosa.",
+        "content_fr": "Les **noms individuels** désignent une seule personne ou une seule chose."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "studente, ladro, pecora, soldato, stella, isola", "highlight": null }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "I **nomi collettivi** indicano un insieme, un gruppo di persone o di cose.",
+        "content_fr": "Les **noms collectifs** désignent un ensemble, un groupe de personnes ou de choses."
+      },
+      {
+        "type": "example",
+        "items": [
+          { "italian": "classe, banda, gregge (= gruppo di pecore), esercito, costellazione (= gruppo di stelle), arcipelago (= gruppo di isole)", "highlight": null }
+        ]
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "4-ex1",
+      "number": 1,
+      "type": "sentence-completion",
+      "instruction": "Sottolinea nel brano i nomi comuni e metti la lettera maiuscola ai nomi propri. Riscrivi i nomi propri con la maiuscola.",
+      "items": [
+        {
+          "segments": [
+            { "text": "Il sindaco si mette alla guida dell'auto municipale per trasportare i concittadini non serviti dal trasporto pubblico. Sta succedendo a " },
+            { "blank": true, "answer": "Drezzo" },
+            { "text": " (" },
+            { "blank": true, "answer": "Como" },
+            { "text": "), comune di mille abitanti al confine con la " },
+            { "blank": true, "answer": "Svizzera" },
+            { "text": "." }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "E dal momento che la " },
+            { "blank": true, "answer": "Spt" },
+            { "text": ", la società che gestisce la linea, non ha istituito un servizio navetta, è intervenuto il primo cittadino, " },
+            { "blank": true, "answer": "Lorenzo" },
+            { "text": " " },
+            { "blank": true, "answer": "Canepa" },
+            { "text": "." }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "Ha messo a disposizione la " },
+            { "blank": true, "answer": "Fiat" },
+            { "text": " uno del comune." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4-ex2",
+      "number": 2,
+      "type": "matching",
+      "instruction": "Inserisci i nomi nella colonna giusta: nomi comuni o nomi propri. Ricorda la lettera maiuscola per i nomi propri.",
+      "items": [
+        { "term": "bottiglia", "definition": "nome comune" },
+        { "term": "ferro", "definition": "nome comune" },
+        { "term": "luce", "definition": "nome comune" },
+        { "term": "unghia", "definition": "nome comune" },
+        { "term": "statua", "definition": "nome comune" },
+        { "term": "gamba", "definition": "nome comune" },
+        { "term": "arancia", "definition": "nome comune" },
+        { "term": "giocattolo", "definition": "nome comune" },
+        { "term": "informazione", "definition": "nome comune" },
+        { "term": "papà", "definition": "nome comune" },
+        { "term": "dizionario", "definition": "nome comune" },
+        { "term": "Alessandro Manzoni", "definition": "nome proprio" },
+        { "term": "Milano", "definition": "nome proprio" },
+        { "term": "Londra", "definition": "nome proprio" },
+        { "term": "Roberto", "definition": "nome proprio" },
+        { "term": "Vittorio Emanuele", "definition": "nome proprio" },
+        { "term": "Berlusconi", "definition": "nome proprio" },
+        { "term": "Africa", "definition": "nome proprio" },
+        { "term": "Rio delle Amazzoni", "definition": "nome proprio" },
+        { "term": "Appennini", "definition": "nome proprio" },
+        { "term": "Bologna", "definition": "nome proprio" },
+        { "term": "Vasco Rossi", "definition": "nome proprio" },
+        { "term": "Ralph Schumacher", "definition": "nome proprio" }
+      ]
+    },
+    {
+      "id": "4-ex3",
+      "number": 3,
+      "type": "fill-in-blank",
+      "instruction": "Scrivi vicino a ogni nome proprio il nome comune che lo spiega.",
+      "items": [
+        { "before": "Alessandro Del Piero →", "blank": true, "after": "", "answer": "calciatore" },
+        { "before": "Giacomo Leopardi →", "blank": true, "after": "", "answer": "poeta" },
+        { "before": "Venezia →", "blank": true, "after": "", "answer": "città" },
+        { "before": "Ferrari →", "blank": true, "after": "", "answer": "automobile" },
+        { "before": "Juventus →", "blank": true, "after": "", "answer": "squadra" },
+        { "before": "Danubio →", "blank": true, "after": "", "answer": "fiume" },
+        { "before": "Sicilia →", "blank": true, "after": "", "answer": "isola" }
+      ]
+    },
+    {
+      "id": "4-ex4",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "Scrivi vicino a ogni nome collettivo da quali persone, animali o cose è formato.",
+      "items": [
+        { "before": "Lo sciame è un gruppo di", "blank": true, "after": "", "answer": "api" },
+        { "before": "La flotta è formata da", "blank": true, "after": "", "answer": "navi" },
+        { "before": "La squadra è formata da", "blank": true, "after": "", "answer": "giocatori" },
+        { "before": "La mandria è formata da", "blank": true, "after": "", "answer": "mucche" },
+        { "before": "La risma è un insieme di", "blank": true, "after": "", "answer": "fogli" },
+        { "before": "La clientela è formata da", "blank": true, "after": "", "answer": "clienti" },
+        { "before": "La giuria è un gruppo di", "blank": true, "after": "", "answer": "giudici" },
+        { "before": "Il fogliame è formato da", "blank": true, "after": "", "answer": "foglie" },
+        { "before": "Il bosco è formato da", "blank": true, "after": "", "answer": "alberi" },
+        { "before": "L'orchestra è un gruppo di", "blank": true, "after": "", "answer": "musicisti" }
+      ]
+    }
+  ]
+}
