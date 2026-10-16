@@ -1,0 +1,6659 @@
+[
+  {
+    "id": "hsk4_0001",
+    "level": 4,
+    "simplified": "阿姨",
+    "pinyin": "ā yí",
+    "definition": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child)"
+  },
+  {
+    "id": "hsk4_0002",
+    "level": 4,
+    "simplified": "矮",
+    "pinyin": "ǎi",
+    "definition": "low; short (in length)"
+  },
+  {
+    "id": "hsk4_0003",
+    "level": 4,
+    "simplified": "矮小",
+    "pinyin": "ǎi xiǎo",
+    "definition": "short and small; low and small; undersized"
+  },
+  {
+    "id": "hsk4_0004",
+    "level": 4,
+    "simplified": "爱国",
+    "pinyin": "ài guó",
+    "definition": "to love one's country; patriotic"
+  },
+  {
+    "id": "hsk4_0005",
+    "level": 4,
+    "simplified": "爱护",
+    "pinyin": "ài hù",
+    "definition": "to cherish; to treasure; to take care of; to love and protect"
+  },
+  {
+    "id": "hsk4_0007",
+    "level": 4,
+    "simplified": "安置",
+    "pinyin": "ān zhì",
+    "definition": "to find a place for; to help settle down; to arrange for; to get into bed; placement"
+  },
+  {
+    "id": "hsk4_0008",
+    "level": 4,
+    "simplified": "按时",
+    "pinyin": "àn shí",
+    "definition": "on time; before deadline; on schedule"
+  },
+  {
+    "id": "hsk4_0009",
+    "level": 4,
+    "simplified": "暗",
+    "pinyin": "àn",
+    "definition": "variant of 暗"
+  },
+  {
+    "id": "hsk4_0010",
+    "level": 4,
+    "simplified": "暗示",
+    "pinyin": "àn shì",
+    "definition": "to hint; to suggest; hint; suggestion"
+  },
+  {
+    "id": "hsk4_0011",
+    "level": 4,
+    "simplified": "巴士",
+    "pinyin": "bā shì",
+    "definition": "bus (loanword); motor coach"
+  },
+  {
+    "id": "hsk4_0012",
+    "level": 4,
+    "simplified": "百货",
+    "pinyin": "bǎi huò",
+    "definition": "general merchandise"
+  },
+  {
+    "id": "hsk4_0013",
+    "level": 4,
+    "simplified": "摆",
+    "pinyin": "bǎi",
+    "definition": "to arrange; to exhibit; to move to and fro; a pendulum"
+  },
+  {
+    "id": "hsk4_0014",
+    "level": 4,
+    "simplified": "摆动",
+    "pinyin": "bǎi dòng",
+    "definition": "to sway; to swing; to move back and forth; to oscillate"
+  },
+  {
+    "id": "hsk4_0015",
+    "level": 4,
+    "simplified": "摆脱",
+    "pinyin": "bǎi tuō",
+    "definition": "to break away from; to cast off (old ideas etc); to get rid of; to break away (from); to break out (of); to free oneself from; to extricate oneself"
+  },
+  {
+    "id": "hsk4_0016",
+    "level": 4,
+    "simplified": "败",
+    "pinyin": "bài",
+    "definition": "to defeat; to damage; to lose (to an opponent); to fail; to wither"
+  },
+  {
+    "id": "hsk4_0017",
+    "level": 4,
+    "simplified": "办事",
+    "pinyin": "bàn shì",
+    "definition": "to handle (affairs); to work"
+  },
+  {
+    "id": "hsk4_0018",
+    "level": 4,
+    "simplified": "包裹",
+    "pinyin": "bāo guǒ",
+    "definition": "to wrap up; to bind up; bundle; parcel; package"
+  },
+  {
+    "id": "hsk4_0019",
+    "level": 4,
+    "simplified": "包含",
+    "pinyin": "bāo hán",
+    "definition": "to contain; to embody; to include"
+  },
+  {
+    "id": "hsk4_0020",
+    "level": 4,
+    "simplified": "包括",
+    "pinyin": "bāo kuò",
+    "definition": "to comprise; to include; to involve; to incorporate; to consist of"
+  },
+  {
+    "id": "hsk4_0022",
+    "level": 4,
+    "simplified": "宝",
+    "pinyin": "bǎo",
+    "definition": "variant of 宝"
+  },
+  {
+    "id": "hsk4_0023",
+    "level": 4,
+    "simplified": "宝宝",
+    "pinyin": "bǎo bao",
+    "definition": "darling; baby"
+  },
+  {
+    "id": "hsk4_0024",
+    "level": 4,
+    "simplified": "宝贝",
+    "pinyin": "bǎo bèi",
+    "definition": "treasured object; treasure; darling; baby; cowry; good-for-nothing or queer character"
+  },
+  {
+    "id": "hsk4_0025",
+    "level": 4,
+    "simplified": "宝贵",
+    "pinyin": "bǎo guì",
+    "definition": "valuable; precious; to value; to treasure; to set store by"
+  },
+  {
+    "id": "hsk4_0026",
+    "level": 4,
+    "simplified": "宝石",
+    "pinyin": "bǎo shí",
+    "definition": "precious stone; gem"
+  },
+  {
+    "id": "hsk4_0027",
+    "level": 4,
+    "simplified": "保密",
+    "pinyin": "bǎo mì",
+    "definition": "to keep sth confidential; to maintain secrecy"
+  },
+  {
+    "id": "hsk4_0028",
+    "level": 4,
+    "simplified": "保守",
+    "pinyin": "bǎo shǒu",
+    "definition": "conservative; to guard; to keep"
+  },
+  {
+    "id": "hsk4_0029",
+    "level": 4,
+    "simplified": "抱",
+    "pinyin": "bào",
+    "definition": "to hold; to carry (in one's arms); to hug; to embrace; to surround; to cherish; (coll.) (of clothes) to fit nicely"
+  },
+  {
+    "id": "hsk4_0030",
+    "level": 4,
+    "simplified": "背景",
+    "pinyin": "bèi jǐng",
+    "definition": "background; backdrop; context; (fig.) powerful backer"
+  },
+  {
+    "id": "hsk4_0031",
+    "level": 4,
+    "simplified": "倍",
+    "pinyin": "bèi",
+    "definition": "(two, three etc) -fold; times (multiplier); double; to increase or multiply"
+  },
+  {
+    "id": "hsk4_0032",
+    "level": 4,
+    "simplified": "被迫",
+    "pinyin": "bèi pò",
+    "definition": "to be compelled; to be forced"
+  },
+  {
+    "id": "hsk4_0033",
+    "level": 4,
+    "simplified": "本科",
+    "pinyin": "běn kē",
+    "definition": "undergraduate course; undergraduate (attributive)"
+  },
+  {
+    "id": "hsk4_0034",
+    "level": 4,
+    "simplified": "笨",
+    "pinyin": "bèn",
+    "definition": "stupid; foolish; silly; slow-witted; clumsy"
+  },
+  {
+    "id": "hsk4_0035",
+    "level": 4,
+    "simplified": "比分",
+    "pinyin": "bǐ fēn",
+    "definition": "score"
+  },
+  {
+    "id": "hsk4_0036",
+    "level": 4,
+    "simplified": "毕业",
+    "pinyin": "bì yè",
+    "definition": "graduation; to graduate; to finish school"
+  },
+  {
+    "id": "hsk4_0037",
+    "level": 4,
+    "simplified": "毕业生",
+    "pinyin": "bì yè shēng",
+    "definition": "graduate"
+  },
+  {
+    "id": "hsk4_0038",
+    "level": 4,
+    "simplified": "避",
+    "pinyin": "bì",
+    "definition": "to avoid; to shun; to flee; to escape; to keep away from; to leave; to hide from"
+  },
+  {
+    "id": "hsk4_0039",
+    "level": 4,
+    "simplified": "避免",
+    "pinyin": "bì miǎn",
+    "definition": "to avert; to prevent; to avoid; to refrain from"
+  },
+  {
+    "id": "hsk4_0040",
+    "level": 4,
+    "simplified": "编",
+    "pinyin": "biān",
+    "definition": "to weave; to plait; to organize; to group; to arrange; to edit; to compile; to write; to compose; to fabricate; to make up"
+  },
+  {
+    "id": "hsk4_0041",
+    "level": 4,
+    "simplified": "辩论",
+    "pinyin": "biàn lùn",
+    "definition": "debate; argument; to argue over"
+  },
+  {
+    "id": "hsk4_0042",
+    "level": 4,
+    "simplified": "标志",
+    "pinyin": "biāo zhì",
+    "definition": "sign; mark; symbol; logo; to symbolize; to indicate; to mark"
+  },
+  {
+    "id": "hsk4_0043",
+    "level": 4,
+    "simplified": "表情",
+    "pinyin": "biǎo qíng",
+    "definition": "(facial) expression; to express one's feelings"
+  },
+  {
+    "id": "hsk4_0044",
+    "level": 4,
+    "simplified": "表扬",
+    "pinyin": "biǎo yáng",
+    "definition": "to praise; to commend"
+  },
+  {
+    "id": "hsk4_0045",
+    "level": 4,
+    "simplified": "冰",
+    "pinyin": "bīng",
+    "definition": "ice; to chill sth; (of an object or substance) to feel cold; (of a person) cold; unfriendly; (slang) methamphetamine"
+  },
+  {
+    "id": "hsk4_0046",
+    "level": 4,
+    "simplified": "冰箱",
+    "pinyin": "bīng xiāng",
+    "definition": "icebox; freezer cabinet; refrigerator"
+  },
+  {
+    "id": "hsk4_0047",
+    "level": 4,
+    "simplified": "冰雪",
+    "pinyin": "bīng xuě",
+    "definition": "ice and snow"
+  },
+  {
+    "id": "hsk4_0048",
+    "level": 4,
+    "simplified": "兵",
+    "pinyin": "bīng",
+    "definition": "soldiers; a force; an army; weapons; arms; military; warlike"
+  },
+  {
+    "id": "hsk4_0049",
+    "level": 4,
+    "simplified": "不管",
+    "pinyin": "bù guǎn",
+    "definition": "not to be concerned; regardless of; no matter"
+  },
+  {
+    "id": "hsk4_0050",
+    "level": 4,
+    "simplified": "不然",
+    "pinyin": "bù rán",
+    "definition": "not so; no; or else; otherwise; if not; How about ...?"
+  },
+  {
+    "id": "hsk4_0051",
+    "level": 4,
+    "simplified": "不要紧",
+    "pinyin": "bù yào jǐn",
+    "definition": "unimportant; not serious; it doesn't matter; never mind; it looks all right, but"
+  },
+  {
+    "id": "hsk4_0052",
+    "level": 4,
+    "simplified": "不在乎",
+    "pinyin": "bù zài hu",
+    "definition": "not to care"
+  },
+  {
+    "id": "hsk4_0053",
+    "level": 4,
+    "simplified": "布置",
+    "pinyin": "bù zhì",
+    "definition": "to put in order; to arrange; to decorate; to fix up; to deploy"
+  },
+  {
+    "id": "hsk4_0054",
+    "level": 4,
+    "simplified": "步行",
+    "pinyin": "bù xíng",
+    "definition": "to go on foot; to walk"
+  },
+  {
+    "id": "hsk4_0055",
+    "level": 4,
+    "simplified": "擦",
+    "pinyin": "cā",
+    "definition": "to rub; to scratch; to towel; to wipe with a towel; to apply (lipstick, lotion etc); to touch; to brush (past); to shred (vegetables etc)"
+  },
+  {
+    "id": "hsk4_0056",
+    "level": 4,
+    "simplified": "材料",
+    "pinyin": "cái liào",
+    "definition": "(raw) material; data; (fig.) person who has the potential to do the job"
+  },
+  {
+    "id": "hsk4_0057",
+    "level": 4,
+    "simplified": "财产",
+    "pinyin": "cái chǎn",
+    "definition": "property; assets; estate"
+  },
+  {
+    "id": "hsk4_0058",
+    "level": 4,
+    "simplified": "财富",
+    "pinyin": "cái fù",
+    "definition": "wealth; riches"
+  },
+  {
+    "id": "hsk4_0059",
+    "level": 4,
+    "simplified": "采访",
+    "pinyin": "cǎi fǎng",
+    "definition": "to interview; to gather news; to hunt for and collect; to cover"
+  },
+  {
+    "id": "hsk4_0060",
+    "level": 4,
+    "simplified": "参考",
+    "pinyin": "cān kǎo",
+    "definition": "consultation; reference; to consult; to refer"
+  },
+  {
+    "id": "hsk4_0061",
+    "level": 4,
+    "simplified": "参与",
+    "pinyin": "cān yù",
+    "definition": "to participate (in sth)"
+  },
+  {
+    "id": "hsk4_0062",
+    "level": 4,
+    "simplified": "操场",
+    "pinyin": "cāo chǎng",
+    "definition": "playground; sports field; drill ground"
+  },
+  {
+    "id": "hsk4_0063",
+    "level": 4,
+    "simplified": "操作",
+    "pinyin": "cāo zuò",
+    "definition": "to work; to operate; to manipulate"
+  },
+  {
+    "id": "hsk4_0064",
+    "level": 4,
+    "simplified": "测",
+    "pinyin": "cè",
+    "definition": "to survey; to measure; to conjecture"
+  },
+  {
+    "id": "hsk4_0065",
+    "level": 4,
+    "simplified": "测量",
+    "pinyin": "cè liáng",
+    "definition": "survey; to measure; to gauge; to determine"
+  },
+  {
+    "id": "hsk4_0066",
+    "level": 4,
+    "simplified": "测试",
+    "pinyin": "cè shì",
+    "definition": "to test (machinery etc); to test (a person's skill in a particular area); a test; (computing) beta (version of software)"
+  },
+  {
+    "id": "hsk4_0068",
+    "level": 4,
+    "simplified": "茶叶",
+    "pinyin": "chá yè",
+    "definition": "tea; tea leaves"
+  },
+  {
+    "id": "hsk4_0069",
+    "level": 4,
+    "simplified": "产品",
+    "pinyin": "chǎn pǐn",
+    "definition": "goods; merchandise; product"
+  },
+  {
+    "id": "hsk4_0070",
+    "level": 4,
+    "simplified": "常识",
+    "pinyin": "cháng shí",
+    "definition": "common sense; general knowledge"
+  },
+  {
+    "id": "hsk4_0071",
+    "level": 4,
+    "simplified": "唱片",
+    "pinyin": "chàng piàn",
+    "definition": "gramophone record; LP; music CD; musical album"
+  },
+  {
+    "id": "hsk4_0072",
+    "level": 4,
+    "simplified": "抄",
+    "pinyin": "chāo",
+    "definition": "to make a copy; to plagiarize; to search and seize; to raid; to grab; to go off with; to take a shortcut; to make a turning move; to fold one's arms"
+  },
+  {
+    "id": "hsk4_0073",
+    "level": 4,
+    "simplified": "抄写",
+    "pinyin": "chāo xiě",
+    "definition": "to copy; to transcribe"
+  },
+  {
+    "id": "hsk4_0074",
+    "level": 4,
+    "simplified": "潮",
+    "pinyin": "cháo",
+    "definition": "tide; damp; moist; humid; fashionable; trendy; (coll.) inferior; substandard"
+  },
+  {
+    "id": "hsk4_0075",
+    "level": 4,
+    "simplified": "潮流",
+    "pinyin": "cháo liú",
+    "definition": "tide; current; trend"
+  },
+  {
+    "id": "hsk4_0076",
+    "level": 4,
+    "simplified": "潮湿",
+    "pinyin": "cháo shī",
+    "definition": "damp; moist"
+  },
+  {
+    "id": "hsk4_0077",
+    "level": 4,
+    "simplified": "彻底",
+    "pinyin": "chè dǐ",
+    "definition": "thorough; thoroughly; complete"
+  },
+  {
+    "id": "hsk4_0078",
+    "level": 4,
+    "simplified": "沉",
+    "pinyin": "chén",
+    "definition": "to submerge; to immerse; to sink; to keep down; to lower; to drop; deep; profound; heavy"
+  },
+  {
+    "id": "hsk4_0079",
+    "level": 4,
+    "simplified": "沉默",
+    "pinyin": "chén mò",
+    "definition": "taciturn; uncommunicative; silent"
+  },
+  {
+    "id": "hsk4_0080",
+    "level": 4,
+    "simplified": "沉重",
+    "pinyin": "chén zhòng",
+    "definition": "heavy; hard; serious; critical"
+  },
+  {
+    "id": "hsk4_0081",
+    "level": 4,
+    "simplified": "称赞",
+    "pinyin": "chēng zàn",
+    "definition": "to praise; to acclaim; to commend; to compliment"
+  },
+  {
+    "id": "hsk4_0082",
+    "level": 4,
+    "simplified": "成人",
+    "pinyin": "chéng rén",
+    "definition": "adult"
+  },
+  {
+    "id": "hsk4_0083",
+    "level": 4,
+    "simplified": "承担",
+    "pinyin": "chéng dān",
+    "definition": "to undertake; to assume (responsibility etc)"
+  },
+  {
+    "id": "hsk4_0084",
+    "level": 4,
+    "simplified": "承认",
+    "pinyin": "chéng rèn",
+    "definition": "to admit; to concede; to recognize; recognition (diplomatic, artistic etc); to acknowledge"
+  },
+  {
+    "id": "hsk4_0085",
+    "level": 4,
+    "simplified": "承受",
+    "pinyin": "chéng shòu",
+    "definition": "to bear; to support; to inherit"
+  },
+  {
+    "id": "hsk4_0086",
+    "level": 4,
+    "simplified": "诚实",
+    "pinyin": "chéng shí",
+    "definition": "honest"
+  },
+  {
+    "id": "hsk4_0087",
+    "level": 4,
+    "simplified": "诚信",
+    "pinyin": "chéng xìn",
+    "definition": "genuine; honest; in good faith; honesty; integrity"
+  },
+  {
+    "id": "hsk4_0088",
+    "level": 4,
+    "simplified": "程序",
+    "pinyin": "chéng xù",
+    "definition": "procedures; sequence; order; computer program"
+  },
+  {
+    "id": "hsk4_0089",
+    "level": 4,
+    "simplified": "吃惊",
+    "pinyin": "chī jīng",
+    "definition": "to be startled; to be shocked; to be amazed"
+  },
+  {
+    "id": "hsk4_0090",
+    "level": 4,
+    "simplified": "迟到",
+    "pinyin": "chí dào",
+    "definition": "to arrive late"
+  },
+  {
+    "id": "hsk4_0091",
+    "level": 4,
+    "simplified": "尺",
+    "pinyin": "chě",
+    "definition": "one of the characters used to represent a musical note in gongche notation, 工尺谱"
+  },
+  {
+    "id": "hsk4_0092",
+    "level": 4,
+    "simplified": "尺寸",
+    "pinyin": "chǐ cun",
+    "definition": "size; dimensions; measurements (esp. of clothes); (coll.) propriety"
+  },
+  {
+    "id": "hsk4_0093",
+    "level": 4,
+    "simplified": "尺子",
+    "pinyin": "chǐ zi",
+    "definition": "ruler (measuring instrument)"
+  },
+  {
+    "id": "hsk4_0094",
+    "level": 4,
+    "simplified": "充电",
+    "pinyin": "chōng diàn",
+    "definition": "to recharge (a battery); (fig.) to recharge one's batteries (through leisure); to update one's skills and knowledge"
+  },
+  {
+    "id": "hsk4_0095",
+    "level": 4,
+    "simplified": "充电器",
+    "pinyin": "chōng diàn qì",
+    "definition": "battery charger"
+  },
+  {
+    "id": "hsk4_0096",
+    "level": 4,
+    "simplified": "充分",
+    "pinyin": "chōng fèn",
+    "definition": "ample; sufficient; adequate; full; fully; to the full"
+  },
+  {
+    "id": "hsk4_0097",
+    "level": 4,
+    "simplified": "冲",
+    "pinyin": "chōng",
+    "definition": "(of water) to dash against; to mix with water; to infuse; to rinse; to flush; to develop (a film); to rise in the air; to clash; to collide with"
+  },
+  {
+    "id": "hsk4_0098",
+    "level": 4,
+    "simplified": "虫子",
+    "pinyin": "chóng zi",
+    "definition": "insect; bug; worm"
+  },
+  {
+    "id": "hsk4_0099",
+    "level": 4,
+    "simplified": "抽",
+    "pinyin": "chōu",
+    "definition": "to draw out; to pull out from in between; to remove part of the whole; (of certain plants) to sprout or bud; to whip or thrash"
+  },
+  {
+    "id": "hsk4_0100",
+    "level": 4,
+    "simplified": "抽奖",
+    "pinyin": "chōu jiǎng",
+    "definition": "to draw a prize; a lottery; a raffle"
+  },
+  {
+    "id": "hsk4_0101",
+    "level": 4,
+    "simplified": "抽烟",
+    "pinyin": "chōu yān",
+    "definition": "to smoke (a cigarette, tobacco)"
+  },
+  {
+    "id": "hsk4_0102",
+    "level": 4,
+    "simplified": "出色",
+    "pinyin": "chū sè",
+    "definition": "remarkable; outstanding"
+  },
+  {
+    "id": "hsk4_0103",
+    "level": 4,
+    "simplified": "出售",
+    "pinyin": "chū shòu",
+    "definition": "to sell; to offer for sale; to put on the market"
+  },
+  {
+    "id": "hsk4_0104",
+    "level": 4,
+    "simplified": "出席",
+    "pinyin": "chū xí",
+    "definition": "to attend; to participate; present"
+  },
+  {
+    "id": "hsk4_0105",
+    "level": 4,
+    "simplified": "处",
+    "pinyin": "chǔ",
+    "definition": "to reside; to live; to dwell; to be in; to be situated at; to stay; to get along with; to be in a position of; to deal with; to discipline; to punish"
+  },
+  {
+    "id": "hsk4_0106",
+    "level": 4,
+    "simplified": "处于",
+    "pinyin": "chǔ yú",
+    "definition": "to be in (some state, position, or condition)"
+  },
+  {
+    "id": "hsk4_0107",
+    "level": 4,
+    "simplified": "穿上",
+    "pinyin": "chuān shang",
+    "definition": "to put on (clothes etc)"
+  },
+  {
+    "id": "hsk4_0108",
+    "level": 4,
+    "simplified": "传统",
+    "pinyin": "chuán tǒng",
+    "definition": "tradition; traditional; convention; conventional"
+  },
+  {
+    "id": "hsk4_0109",
+    "level": 4,
+    "simplified": "窗户",
+    "pinyin": "chuāng hu",
+    "definition": "window"
+  },
+  {
+    "id": "hsk4_0110",
+    "level": 4,
+    "simplified": "窗台",
+    "pinyin": "chuāng tái",
+    "definition": "window sill; window ledge"
+  },
+  {
+    "id": "hsk4_0111",
+    "level": 4,
+    "simplified": "窗子",
+    "pinyin": "chuāng zi",
+    "definition": "window"
+  },
+  {
+    "id": "hsk4_0112",
+    "level": 4,
+    "simplified": "春季",
+    "pinyin": "chūn jì",
+    "definition": "springtime"
+  },
+  {
+    "id": "hsk4_0113",
+    "level": 4,
+    "simplified": "纯",
+    "pinyin": "chún",
+    "definition": "pure; simple; unmixed; genuine"
+  },
+  {
+    "id": "hsk4_0114",
+    "level": 4,
+    "simplified": "纯净水",
+    "pinyin": "chún jìng shuǐ",
+    "definition": "purified water"
+  },
+  {
+    "id": "hsk4_0115",
+    "level": 4,
+    "simplified": "词汇",
+    "pinyin": "cí huì",
+    "definition": "variant of 词汇"
+  },
+  {
+    "id": "hsk4_0116",
+    "level": 4,
+    "simplified": "此",
+    "pinyin": "cǐ",
+    "definition": "this; these"
+  },
+  {
+    "id": "hsk4_0117",
+    "level": 4,
+    "simplified": "此外",
+    "pinyin": "cǐ wài",
+    "definition": "besides; in addition; moreover; furthermore"
+  },
+  {
+    "id": "hsk4_0118",
+    "level": 4,
+    "simplified": "刺",
+    "pinyin": "cī",
+    "definition": "(onom.) whoosh"
+  },
+  {
+    "id": "hsk4_0119",
+    "level": 4,
+    "simplified": "刺激",
+    "pinyin": "cì jī",
+    "definition": "to provoke; to irritate; to upset; to stimulate; to excite; irritant"
+  },
+  {
+    "id": "hsk4_0120",
+    "level": 4,
+    "simplified": "从此",
+    "pinyin": "cóng cǐ",
+    "definition": "from now on; since then; henceforth"
+  },
+  {
+    "id": "hsk4_0121",
+    "level": 4,
+    "simplified": "粗",
+    "pinyin": "cū",
+    "definition": "coarse; rough; thick (for cylindrical objects); unfinished; vulgar; rude; crude"
+  },
+  {
+    "id": "hsk4_0122",
+    "level": 4,
+    "simplified": "粗心",
+    "pinyin": "cū xīn",
+    "definition": "careless; thoughtless"
+  },
+  {
+    "id": "hsk4_0123",
+    "level": 4,
+    "simplified": "促进",
+    "pinyin": "cù jìn",
+    "definition": "to promote (an idea or cause); to advance; boost"
+  },
+  {
+    "id": "hsk4_0124",
+    "level": 4,
+    "simplified": "促使",
+    "pinyin": "cù shǐ",
+    "definition": "to induce; to promote; to urge; to impel; to bring about; to provoke; to drive (sb to do sth); to catalyze; to actuate; to contribute to (some development)"
+  },
+  {
+    "id": "hsk4_0125",
+    "level": 4,
+    "simplified": "促销",
+    "pinyin": "cù xiāo",
+    "definition": "to promote sales"
+  },
+  {
+    "id": "hsk4_0126",
+    "level": 4,
+    "simplified": "措施",
+    "pinyin": "cuò shī",
+    "definition": "measure; step"
+  },
+  {
+    "id": "hsk4_0127",
+    "level": 4,
+    "simplified": "答案",
+    "pinyin": "dá àn",
+    "definition": "answer; solution"
+  },
+  {
+    "id": "hsk4_0128",
+    "level": 4,
+    "simplified": "打败",
+    "pinyin": "dǎ bài",
+    "definition": "to defeat; to overpower; to beat; to be defeated"
+  },
+  {
+    "id": "hsk4_0129",
+    "level": 4,
+    "simplified": "打雷",
+    "pinyin": "dǎ léi",
+    "definition": "to rumble with thunder; clap of thunder"
+  },
+  {
+    "id": "hsk4_0130",
+    "level": 4,
+    "simplified": "打扫",
+    "pinyin": "dǎ sǎo",
+    "definition": "to clean; to sweep"
+  },
+  {
+    "id": "hsk4_0131",
+    "level": 4,
+    "simplified": "打折",
+    "pinyin": "dǎ zhé",
+    "definition": "to give a discount"
+  },
+  {
+    "id": "hsk4_0132",
+    "level": 4,
+    "simplified": "打针",
+    "pinyin": "dǎ zhēn",
+    "definition": "to give or have an injection"
+  },
+  {
+    "id": "hsk4_0133",
+    "level": 4,
+    "simplified": "大巴",
+    "pinyin": "dà bā",
+    "definition": "(coll.) large bus; coach; (abbr. for 大型巴士)"
+  },
+  {
+    "id": "hsk4_0134",
+    "level": 4,
+    "simplified": "大多",
+    "pinyin": "dà duō",
+    "definition": "for the most part; many; most; the greater part; mostly"
+  },
+  {
+    "id": "hsk4_0135",
+    "level": 4,
+    "simplified": "大方",
+    "pinyin": "dà fāng",
+    "definition": "expert; scholar; mother earth; a type of green tea"
+  },
+  {
+    "id": "hsk4_0136",
+    "level": 4,
+    "simplified": "大哥",
+    "pinyin": "dà gē",
+    "definition": "eldest brother; big brother (polite address for a man of about the same age as oneself); gang leader; boss"
+  },
+  {
+    "id": "hsk4_0137",
+    "level": 4,
+    "simplified": "大规模",
+    "pinyin": "dà guī mó",
+    "definition": "large scale; extensive; wide scale; broad scale"
+  },
+  {
+    "id": "hsk4_0138",
+    "level": 4,
+    "simplified": "大会",
+    "pinyin": "dà huì",
+    "definition": "general assembly; general meeting; convention"
+  },
+  {
+    "id": "hsk4_0139",
+    "level": 4,
+    "simplified": "大姐",
+    "pinyin": "dà jiě",
+    "definition": "big sister; elder sister; older sister (also polite term of address for a girl or woman slightly older than the speaker)"
+  },
+  {
+    "id": "hsk4_0140",
+    "level": 4,
+    "simplified": "大楼",
+    "pinyin": "dà lóu",
+    "definition": "building (a relatively large, multistory one)"
+  },
+  {
+    "id": "hsk4_0141",
+    "level": 4,
+    "simplified": "大陆",
+    "pinyin": "Dà lù",
+    "definition": "mainland China (reference to the PRC)"
+  },
+  {
+    "id": "hsk4_0142",
+    "level": 4,
+    "simplified": "大妈",
+    "pinyin": "dà mā",
+    "definition": "father's elder brother's wife; aunt (affectionate term for an elderly woman)"
+  },
+  {
+    "id": "hsk4_0143",
+    "level": 4,
+    "simplified": "大型",
+    "pinyin": "dà xíng",
+    "definition": "large; large-scale"
+  },
+  {
+    "id": "hsk4_0144",
+    "level": 4,
+    "simplified": "大爷",
+    "pinyin": "dà yé",
+    "definition": "arrogant idler; self-centered show-off"
+  },
+  {
+    "id": "hsk4_0145",
+    "level": 4,
+    "simplified": "大众",
+    "pinyin": "Dà zhòng",
+    "definition": "Volkswagen (automobile manufacturer)"
+  },
+  {
+    "id": "hsk4_0146",
+    "level": 4,
+    "simplified": "代替",
+    "pinyin": "dài tì",
+    "definition": "to replace; to take the place of"
+  },
+  {
+    "id": "hsk4_0147",
+    "level": 4,
+    "simplified": "待遇",
+    "pinyin": "dài yù",
+    "definition": "treatment; pay; salary; status; rank"
+  },
+  {
+    "id": "hsk4_0148",
+    "level": 4,
+    "simplified": "袋",
+    "pinyin": "dài",
+    "definition": "pouch; bag; sack; pocket"
+  },
+  {
+    "id": "hsk4_0151",
+    "level": 4,
+    "simplified": "单纯",
+    "pinyin": "dān chún",
+    "definition": "simple; pure; unsophisticated; merely; purely"
+  },
+  {
+    "id": "hsk4_0152",
+    "level": 4,
+    "simplified": "单调",
+    "pinyin": "dān diào",
+    "definition": "monotonous"
+  },
+  {
+    "id": "hsk4_0153",
+    "level": 4,
+    "simplified": "单独",
+    "pinyin": "dān dú",
+    "definition": "alone; by oneself; on one's own"
+  },
+  {
+    "id": "hsk4_0154",
+    "level": 4,
+    "simplified": "担保",
+    "pinyin": "dān bǎo",
+    "definition": "to guarantee; to vouch for"
+  },
+  {
+    "id": "hsk4_0155",
+    "level": 4,
+    "simplified": "担任",
+    "pinyin": "dān rèn",
+    "definition": "to hold a governmental office or post; to assume office of; to take charge of; to serve as"
+  },
+  {
+    "id": "hsk4_0156",
+    "level": 4,
+    "simplified": "担心",
+    "pinyin": "dān xīn",
+    "definition": "anxious; worried; uneasy; to worry; to be anxious"
+  },
+  {
+    "id": "hsk4_0157",
+    "level": 4,
+    "simplified": "淡",
+    "pinyin": "dàn",
+    "definition": "insipid; diluted; weak; mild; light in color; tasteless; indifferent; (variant of 氮) nitrogen"
+  },
+  {
+    "id": "hsk4_0158",
+    "level": 4,
+    "simplified": "导游",
+    "pinyin": "dǎo yóu",
+    "definition": "tour guide; guidebook; to conduct a tour"
+  },
+  {
+    "id": "hsk4_0159",
+    "level": 4,
+    "simplified": "导致",
+    "pinyin": "dǎo zhì",
+    "definition": "to lead to; to create; to cause; to bring about"
+  },
+  {
+    "id": "hsk4_0160",
+    "level": 4,
+    "simplified": "倒闭",
+    "pinyin": "dǎo bì",
+    "definition": "to go bankrupt; to close down"
+  },
+  {
+    "id": "hsk4_0161",
+    "level": 4,
+    "simplified": "倒车",
+    "pinyin": "dǎo chē",
+    "definition": "to change buses, trains etc"
+  },
+  {
+    "id": "hsk4_0162",
+    "level": 4,
+    "simplified": "地面",
+    "pinyin": "dì miàn",
+    "definition": "floor; ground; surface"
+  },
+  {
+    "id": "hsk4_0163",
+    "level": 4,
+    "simplified": "地位",
+    "pinyin": "dì wèi",
+    "definition": "position; status; place"
+  },
+  {
+    "id": "hsk4_0164",
+    "level": 4,
+    "simplified": "地下",
+    "pinyin": "dì xià",
+    "definition": "underground; subterranean; covert"
+  },
+  {
+    "id": "hsk4_0165",
+    "level": 4,
+    "simplified": "地址",
+    "pinyin": "dì zhǐ",
+    "definition": "address"
+  },
+  {
+    "id": "hsk4_0166",
+    "level": 4,
+    "simplified": "的确",
+    "pinyin": "dí què",
+    "definition": "really; indeed"
+  },
+  {
+    "id": "hsk4_0167",
+    "level": 4,
+    "simplified": "得意",
+    "pinyin": "dé yì",
+    "definition": "proud of oneself; pleased with oneself; complacent"
+  },
+  {
+    "id": "hsk4_0168",
+    "level": 4,
+    "simplified": "灯光",
+    "pinyin": "dēng guāng",
+    "definition": "(stage) lighting; light"
+  },
+  {
+    "id": "hsk4_0169",
+    "level": 4,
+    "simplified": "登",
+    "pinyin": "dēng",
+    "definition": "to scale (a height); to ascend; to mount; to publish or record; to enter (e.g. in a register); to press down with the foot; to step or tread on; to put on (shoes or trousers) (dialect); to be gathered and taken to the threshing ground (old)"
+  },
+  {
+    "id": "hsk4_0170",
+    "level": 4,
+    "simplified": "登记",
+    "pinyin": "dēng jì",
+    "definition": "to register (one's name)"
+  },
+  {
+    "id": "hsk4_0171",
+    "level": 4,
+    "simplified": "登录",
+    "pinyin": "dēng lù",
+    "definition": "to register; to log in"
+  },
+  {
+    "id": "hsk4_0172",
+    "level": 4,
+    "simplified": "登山",
+    "pinyin": "dēng shān",
+    "definition": "to climb a mountain; climbing; mountaineering"
+  },
+  {
+    "id": "hsk4_0173",
+    "level": 4,
+    "simplified": "敌人",
+    "pinyin": "dí rén",
+    "definition": "enemy"
+  },
+  {
+    "id": "hsk4_0174",
+    "level": 4,
+    "simplified": "底",
+    "pinyin": "de",
+    "definition": "(equivalent to 的 as possessive particle)"
+  },
+  {
+    "id": "hsk4_0175",
+    "level": 4,
+    "simplified": "典型",
+    "pinyin": "diǎn xíng",
+    "definition": "model; typical case; archetype; typical; representative"
+  },
+  {
+    "id": "hsk4_0176",
+    "level": 4,
+    "simplified": "点名",
+    "pinyin": "diǎn míng",
+    "definition": "roll call; to mention sb by name; (to call or praise or criticize sb) by name"
+  },
+  {
+    "id": "hsk4_0177",
+    "level": 4,
+    "simplified": "电灯",
+    "pinyin": "diàn dēng",
+    "definition": "electric light"
+  },
+  {
+    "id": "hsk4_0178",
+    "level": 4,
+    "simplified": "电动车",
+    "pinyin": "diàndòngchē",
+    "definition": "Electric vehicle"
+  },
+  {
+    "id": "hsk4_0179",
+    "level": 4,
+    "simplified": "电梯",
+    "pinyin": "diàn tī",
+    "definition": "elevator; escalator"
+  },
+  {
+    "id": "hsk4_0180",
+    "level": 4,
+    "simplified": "电源",
+    "pinyin": "diàn yuán",
+    "definition": "electric power source"
+  },
+  {
+    "id": "hsk4_0181",
+    "level": 4,
+    "simplified": "调皮",
+    "pinyin": "tiáo pí",
+    "definition": "naughty; mischievous; unruly"
+  },
+  {
+    "id": "hsk4_0182",
+    "level": 4,
+    "simplified": "顶",
+    "pinyin": "dǐng",
+    "definition": "apex; crown of the head; top; roof; most; to carry on the head; to push to the top; to go against; to replace; to substitute; to be subjected to (an aerial bombing, hailstorm etc); (slang) to \"bump\" a forum thread to raise its profile; classifier for headwear, hats, veils etc"
+  },
+  {
+    "id": "hsk4_0183",
+    "level": 4,
+    "simplified": "定",
+    "pinyin": "dìng",
+    "definition": "to set; to fix; to determine; to decide; to order"
+  },
+  {
+    "id": "hsk4_0184",
+    "level": 4,
+    "simplified": "冬季",
+    "pinyin": "dōng jì",
+    "definition": "winter"
+  },
+  {
+    "id": "hsk4_0185",
+    "level": 4,
+    "simplified": "动画片",
+    "pinyin": "dòng huà piàn",
+    "definition": "animated film"
+  },
+  {
+    "id": "hsk4_0186",
+    "level": 4,
+    "simplified": "动摇",
+    "pinyin": "dòng yáo",
+    "definition": "to sway; to waver; to rock; to rattle; to destabilize; to pose a challenge to"
+  },
+  {
+    "id": "hsk4_0187",
+    "level": 4,
+    "simplified": "豆腐",
+    "pinyin": "dòu fu",
+    "definition": "tofu; bean curd"
+  },
+  {
+    "id": "hsk4_0188",
+    "level": 4,
+    "simplified": "独立",
+    "pinyin": "dú lì",
+    "definition": "independent; independence; to stand alone"
+  },
+  {
+    "id": "hsk4_0189",
+    "level": 4,
+    "simplified": "独特",
+    "pinyin": "dú tè",
+    "definition": "unique; distinctive"
+  },
+  {
+    "id": "hsk4_0190",
+    "level": 4,
+    "simplified": "独自",
+    "pinyin": "dú zì",
+    "definition": "alone"
+  },
+  {
+    "id": "hsk4_0191",
+    "level": 4,
+    "simplified": "堵",
+    "pinyin": "dǔ",
+    "definition": "to block up (a road, pipe etc); to stop up (a hole); (fig.) (of a person) choked up with anxiety or stress; wall (literary); (classifier for walls)"
+  },
+  {
+    "id": "hsk4_0192",
+    "level": 4,
+    "simplified": "堵车",
+    "pinyin": "dǔ chē",
+    "definition": "traffic jam; (of traffic) to get congested"
+  },
+  {
+    "id": "hsk4_0193",
+    "level": 4,
+    "simplified": "肚子",
+    "pinyin": "dù zi",
+    "definition": "belly; abdomen; stomach"
+  },
+  {
+    "id": "hsk4_0194",
+    "level": 4,
+    "simplified": "度过",
+    "pinyin": "dù guò",
+    "definition": "to pass; to spend (time); to survive; to get through"
+  },
+  {
+    "id": "hsk4_0195",
+    "level": 4,
+    "simplified": "锻炼",
+    "pinyin": "duàn liàn",
+    "definition": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself"
+  },
+  {
+    "id": "hsk4_0196",
+    "level": 4,
+    "simplified": "对比",
+    "pinyin": "duì bǐ",
+    "definition": "to contrast; contrast; ratio"
+  },
+  {
+    "id": "hsk4_0197",
+    "level": 4,
+    "simplified": "对付",
+    "pinyin": "duì fu",
+    "definition": "to handle; to deal with; to tackle; to get by with; to make do; (dialect) (usu. used in the negative) to get along with (sb)"
+  },
+  {
+    "id": "hsk4_0198",
+    "level": 4,
+    "simplified": "对于",
+    "pinyin": "duì yú",
+    "definition": "regarding; as far as (sth) is concerned; with regard to"
+  },
+  {
+    "id": "hsk4_0199",
+    "level": 4,
+    "simplified": "多次",
+    "pinyin": "duō cì",
+    "definition": "many times; repeatedly"
+  },
+  {
+    "id": "hsk4_0200",
+    "level": 4,
+    "simplified": "多年",
+    "pinyin": "duō nián",
+    "definition": "many years; for many years; longstanding"
+  },
+  {
+    "id": "hsk4_0201",
+    "level": 4,
+    "simplified": "多样",
+    "pinyin": "duō yàng",
+    "definition": "diverse; diversity; manifold"
+  },
+  {
+    "id": "hsk4_0202",
+    "level": 4,
+    "simplified": "多种",
+    "pinyin": "duō zhǒng",
+    "definition": "many kinds of; multiple; diverse; multi-"
+  },
+  {
+    "id": "hsk4_0203",
+    "level": 4,
+    "simplified": "恶心",
+    "pinyin": "ě xīn",
+    "definition": "variant of 恶心"
+  },
+  {
+    "id": "hsk4_0204",
+    "level": 4,
+    "simplified": "儿童",
+    "pinyin": "ér tóng",
+    "definition": "child"
+  },
+  {
+    "id": "hsk4_0205",
+    "level": 4,
+    "simplified": "而",
+    "pinyin": "ér",
+    "definition": "and; as well as; and so; but (not); yet (not); (indicates causal relation); (indicates change of state); (indicates contrast)"
+  },
+  {
+    "id": "hsk4_0206",
+    "level": 4,
+    "simplified": "而是",
+    "pinyin": "ér shì",
+    "definition": "rather"
+  },
+  {
+    "id": "hsk4_0207",
+    "level": 4,
+    "simplified": "耳机",
+    "pinyin": "ěr jī",
+    "definition": "headphones; earphones; telephone receiver"
+  },
+  {
+    "id": "hsk4_0208",
+    "level": 4,
+    "simplified": "二手",
+    "pinyin": "èr shǒu",
+    "definition": "indirectly acquired; second-hand (information, equipment etc); assistant"
+  },
+  {
+    "id": "hsk4_0209",
+    "level": 4,
+    "simplified": "发挥",
+    "pinyin": "fā huī",
+    "definition": "to display; to exhibit; to bring out implicit or innate qualities; to express (a thought or moral); to develop (an idea); to elaborate (on a theme)"
+  },
+  {
+    "id": "hsk4_0210",
+    "level": 4,
+    "simplified": "发票",
+    "pinyin": "fā piào",
+    "definition": "invoice; receipt or bill for purchase"
+  },
+  {
+    "id": "hsk4_0211",
+    "level": 4,
+    "simplified": "发烧",
+    "pinyin": "fā shāo",
+    "definition": "to have a high temperature (from illness); to have a fever"
+  },
+  {
+    "id": "hsk4_0212",
+    "level": 4,
+    "simplified": "法",
+    "pinyin": "fǎ",
+    "definition": "variant of 法"
+  },
+  {
+    "id": "hsk4_0213",
+    "level": 4,
+    "simplified": "法官",
+    "pinyin": "fǎ guān",
+    "definition": "judge (in court)"
+  },
+  {
+    "id": "hsk4_0214",
+    "level": 4,
+    "simplified": "法律",
+    "pinyin": "fǎ lǜ",
+    "definition": "law"
+  },
+  {
+    "id": "hsk4_0215",
+    "level": 4,
+    "simplified": "法院",
+    "pinyin": "fǎ yuàn",
+    "definition": "court of law; court"
+  },
+  {
+    "id": "hsk4_0216",
+    "level": 4,
+    "simplified": "翻",
+    "pinyin": "fān",
+    "definition": "to turn over; to flip over; to overturn; to rummage through; to translate; to decode; to double; to climb over or into; to cross"
+  },
+  {
+    "id": "hsk4_0217",
+    "level": 4,
+    "simplified": "翻译",
+    "pinyin": "fān yì",
+    "definition": "to translate; to interpret; translator; interpreter; translation; interpretation"
+  },
+  {
+    "id": "hsk4_0218",
+    "level": 4,
+    "simplified": "烦",
+    "pinyin": "fán",
+    "definition": "to feel vexed; to bother; to trouble; superfluous and confusing; edgy"
+  },
+  {
+    "id": "hsk4_0219",
+    "level": 4,
+    "simplified": "反",
+    "pinyin": "fǎn",
+    "definition": "contrary; in reverse; inside out or upside down; to reverse; to return; to oppose; opposite; against; anti-; to rebel; to use analogy; instead; abbr. for 切 phonetic system"
+  },
+  {
+    "id": "hsk4_0220",
+    "level": 4,
+    "simplified": "反而",
+    "pinyin": "fǎn ér",
+    "definition": "on the contrary; instead"
+  },
+  {
+    "id": "hsk4_0221",
+    "level": 4,
+    "simplified": "反映",
+    "pinyin": "fǎn yìng",
+    "definition": "to mirror; to reflect; mirror image; reflection; (fig.) to report; to make known; to render"
+  },
+  {
+    "id": "hsk4_0223",
+    "level": 4,
+    "simplified": "方案",
+    "pinyin": "fāng àn",
+    "definition": "plan; program (for action etc); proposal; proposed bill"
+  },
+  {
+    "id": "hsk4_0224",
+    "level": 4,
+    "simplified": "方针",
+    "pinyin": "fāng zhēn",
+    "definition": "policy; guidelines"
+  },
+  {
+    "id": "hsk4_0225",
+    "level": 4,
+    "simplified": "放松",
+    "pinyin": "fàng sōng",
+    "definition": "to relax; to slacken; to loosen"
+  },
+  {
+    "id": "hsk4_0226",
+    "level": 4,
+    "simplified": "非",
+    "pinyin": "Fēi",
+    "definition": "abbr. for 洲, Africa"
+  },
+  {
+    "id": "hsk4_0227",
+    "level": 4,
+    "simplified": "肥",
+    "pinyin": "féi",
+    "definition": "fat; fertile; loose-fitting or large; to fertilize; to become rich by illegal means; fertilizer; manure"
+  },
+  {
+    "id": "hsk4_0228",
+    "level": 4,
+    "simplified": "分布",
+    "pinyin": "fēn bù",
+    "definition": "to scatter; to distribute; to be distributed (over an area etc); (statistical, geographic) distribution"
+  },
+  {
+    "id": "hsk4_0229",
+    "level": 4,
+    "simplified": "分散",
+    "pinyin": "fēn sàn",
+    "definition": "to scatter; to disperse; to distribute"
+  },
+  {
+    "id": "hsk4_0230",
+    "level": 4,
+    "simplified": "分手",
+    "pinyin": "fēn shǒu",
+    "definition": "to part company; to split up; to break up"
+  },
+  {
+    "id": "hsk4_0231",
+    "level": 4,
+    "simplified": "分为",
+    "pinyin": "fēn wéi",
+    "definition": "to divide sth into (parts); to subdivide"
+  },
+  {
+    "id": "hsk4_0232",
+    "level": 4,
+    "simplified": "分之",
+    "pinyin": "fēn zhī",
+    "definition": "(indicating a fraction)"
+  },
+  {
+    "id": "hsk4_0233",
+    "level": 4,
+    "simplified": "纷纷",
+    "pinyin": "fēn fēn",
+    "definition": "one after another; in succession; one by one; continuously; diverse; in profusion; numerous and confused; pell-mell"
+  },
+  {
+    "id": "hsk4_0234",
+    "level": 4,
+    "simplified": "奋斗",
+    "pinyin": "fèn dòu",
+    "definition": "to strive; to struggle"
+  },
+  {
+    "id": "hsk4_0235",
+    "level": 4,
+    "simplified": "风格",
+    "pinyin": "fēng gé",
+    "definition": "style"
+  },
+  {
+    "id": "hsk4_0236",
+    "level": 4,
+    "simplified": "风景",
+    "pinyin": "fēng jǐng",
+    "definition": "scenery; landscape"
+  },
+  {
+    "id": "hsk4_0237",
+    "level": 4,
+    "simplified": "风俗",
+    "pinyin": "fēng sú",
+    "definition": "social custom"
+  },
+  {
+    "id": "hsk4_0238",
+    "level": 4,
+    "simplified": "封闭",
+    "pinyin": "fēng bì",
+    "definition": "to close; to seal off; to close down (an illegal venue); closed (i.e. isolated from outside input)"
+  },
+  {
+    "id": "hsk4_0239",
+    "level": 4,
+    "simplified": "否则",
+    "pinyin": "fǒu zé",
+    "definition": "otherwise; if not; or (else)"
+  },
+  {
+    "id": "hsk4_0240",
+    "level": 4,
+    "simplified": "符号",
+    "pinyin": "fú hào",
+    "definition": "symbol; mark; sign"
+  },
+  {
+    "id": "hsk4_0241",
+    "level": 4,
+    "simplified": "符合",
+    "pinyin": "fú hé",
+    "definition": "in keeping with; in accordance with; tallying with; in line with; to agree with; to accord with; to conform to; to correspond with; to manage; to handle"
+  },
+  {
+    "id": "hsk4_0242",
+    "level": 4,
+    "simplified": "付出",
+    "pinyin": "fù chū",
+    "definition": "to pay; to expend; to invest (energy or time)"
+  },
+  {
+    "id": "hsk4_0243",
+    "level": 4,
+    "simplified": "负担",
+    "pinyin": "fù dān",
+    "definition": "to bear (an expense, a responsibility etc); burden"
+  },
+  {
+    "id": "hsk4_0244",
+    "level": 4,
+    "simplified": "附近",
+    "pinyin": "fù jìn",
+    "definition": "nearby; neighboring; (in the) vicinity (of); neighborhood"
+  },
+  {
+    "id": "hsk4_0245",
+    "level": 4,
+    "simplified": "复制",
+    "pinyin": "fù zhì",
+    "definition": "to duplicate; to make a copy of; to copy; to reproduce; to clone"
+  },
+  {
+    "id": "hsk4_0246",
+    "level": 4,
+    "simplified": "夫妇",
+    "pinyin": "fū fù",
+    "definition": "a (married) couple; husband and wife"
+  },
+  {
+    "id": "hsk4_0247",
+    "level": 4,
+    "simplified": "夫妻",
+    "pinyin": "fū qī",
+    "definition": "husband and wife; married couple"
+  },
+  {
+    "id": "hsk4_0248",
+    "level": 4,
+    "simplified": "夫人",
+    "pinyin": "fū ren",
+    "definition": "lady; madam; Mrs."
+  },
+  {
+    "id": "hsk4_0249",
+    "level": 4,
+    "simplified": "改善",
+    "pinyin": "gǎi shàn",
+    "definition": "to make better; to improve"
+  },
+  {
+    "id": "hsk4_0250",
+    "level": 4,
+    "simplified": "改正",
+    "pinyin": "gǎi zhèng",
+    "definition": "to correct; to amend; to put right; correction"
+  },
+  {
+    "id": "hsk4_0252",
+    "level": 4,
+    "simplified": "概括",
+    "pinyin": "gài kuò",
+    "definition": "to summarize; to generalize; briefly; in broad outline"
+  },
+  {
+    "id": "hsk4_0253",
+    "level": 4,
+    "simplified": "感兴趣",
+    "pinyin": "gǎn xìng qù",
+    "definition": "to be interested"
+  },
+  {
+    "id": "hsk4_0254",
+    "level": 4,
+    "simplified": "高潮",
+    "pinyin": "gāo cháo",
+    "definition": "high tide; high water; upsurge; peak of activity; climax (of a story, a competition etc); to have an orgasm"
+  },
+  {
+    "id": "hsk4_0255",
+    "level": 4,
+    "simplified": "高价",
+    "pinyin": "gāo jià",
+    "definition": "high price"
+  },
+  {
+    "id": "hsk4_0256",
+    "level": 4,
+    "simplified": "高尚",
+    "pinyin": "gāo shàng",
+    "definition": "noble; lofty; refined; exquisite"
+  },
+  {
+    "id": "hsk4_0257",
+    "level": 4,
+    "simplified": "高铁",
+    "pinyin": "gāo tiě",
+    "definition": "high speed rail"
+  },
+  {
+    "id": "hsk4_0258",
+    "level": 4,
+    "simplified": "格外",
+    "pinyin": "gé wài",
+    "definition": "especially; particularly"
+  },
+  {
+    "id": "hsk4_0259",
+    "level": 4,
+    "simplified": "隔",
+    "pinyin": "gé",
+    "definition": "to separate; to partition; to stand or lie between; at a distance from; after or at an interval of"
+  },
+  {
+    "id": "hsk4_0260",
+    "level": 4,
+    "simplified": "隔开",
+    "pinyin": "gé kāi",
+    "definition": "to separate"
+  },
+  {
+    "id": "hsk4_0261",
+    "level": 4,
+    "simplified": "个别",
+    "pinyin": "gè bié",
+    "definition": "individually; one by one; just one or two; exceptional; rare"
+  },
+  {
+    "id": "hsk4_0262",
+    "level": 4,
+    "simplified": "个体",
+    "pinyin": "gè tǐ",
+    "definition": "individual"
+  },
+  {
+    "id": "hsk4_0263",
+    "level": 4,
+    "simplified": "各个",
+    "pinyin": "gè gè",
+    "definition": "every; various; separately, one by one"
+  },
+  {
+    "id": "hsk4_0264",
+    "level": 4,
+    "simplified": "根",
+    "pinyin": "gēn",
+    "definition": "root; basis; classifier for long slender objects, e.g. cigarettes, guitar strings; radical (chemistry)"
+  },
+  {
+    "id": "hsk4_0265",
+    "level": 4,
+    "simplified": "根据",
+    "pinyin": "gēn jù",
+    "definition": "according to; based on; basis; foundation"
+  },
+  {
+    "id": "hsk4_0266",
+    "level": 4,
+    "simplified": "工程",
+    "pinyin": "gōng chéng",
+    "definition": "engineering; an engineering project; project; undertaking"
+  },
+  {
+    "id": "hsk4_0267",
+    "level": 4,
+    "simplified": "公元",
+    "pinyin": "gōng yuán",
+    "definition": "CE (Common Era); Christian Era; AD (Anno Domini)"
+  },
+  {
+    "id": "hsk4_0268",
+    "level": 4,
+    "simplified": "供应",
+    "pinyin": "gōng yìng",
+    "definition": "to supply; to provide; to offer"
+  },
+  {
+    "id": "hsk4_0269",
+    "level": 4,
+    "simplified": "共",
+    "pinyin": "gòng",
+    "definition": "common; general; to share; together; total; altogether; abbr. for 共产党, Communist party"
+  },
+  {
+    "id": "hsk4_0270",
+    "level": 4,
+    "simplified": "构成",
+    "pinyin": "gòu chéng",
+    "definition": "to constitute; to form; to compose; to make up; to configure (computing)"
+  },
+  {
+    "id": "hsk4_0271",
+    "level": 4,
+    "simplified": "构造",
+    "pinyin": "gòu zào",
+    "definition": "structure; composition; tectonic (geology)"
+  },
+  {
+    "id": "hsk4_0272",
+    "level": 4,
+    "simplified": "购买",
+    "pinyin": "gòu mǎi",
+    "definition": "to purchase; to buy"
+  },
+  {
+    "id": "hsk4_0273",
+    "level": 4,
+    "simplified": "购物",
+    "pinyin": "gòu wù",
+    "definition": "shopping"
+  },
+  {
+    "id": "hsk4_0274",
+    "level": 4,
+    "simplified": "骨头",
+    "pinyin": "gǔ tou",
+    "definition": "bone; moral character; bitterness; Taiwan pr. [gú tou]"
+  },
+  {
+    "id": "hsk4_0275",
+    "level": 4,
+    "simplified": "固定",
+    "pinyin": "gù dìng",
+    "definition": "to fix; to fasten; to set rigidly in place; fixed; set; regular"
+  },
+  {
+    "id": "hsk4_0276",
+    "level": 4,
+    "simplified": "瓜",
+    "pinyin": "guā",
+    "definition": "melon; gourd; squash"
+  },
+  {
+    "id": "hsk4_0277",
+    "level": 4,
+    "simplified": "怪",
+    "pinyin": "guài",
+    "definition": "bewildering; odd; strange; uncanny; devil; monster; to wonder at; to blame; quite; rather"
+  },
+  {
+    "id": "hsk4_0278",
+    "level": 4,
+    "simplified": "关闭",
+    "pinyin": "guān bì",
+    "definition": "to close; to shut (a window etc); (of a shop, school etc) to shut down"
+  },
+  {
+    "id": "hsk4_0279",
+    "level": 4,
+    "simplified": "关于",
+    "pinyin": "guān yú",
+    "definition": "pertaining to; concerning; with regard to; about; a matter of"
+  },
+  {
+    "id": "hsk4_0281",
+    "level": 4,
+    "simplified": "官方",
+    "pinyin": "guān fāng",
+    "definition": "government; official (approved or issued by an authority)"
+  },
+  {
+    "id": "hsk4_0282",
+    "level": 4,
+    "simplified": "光临",
+    "pinyin": "guāng lín",
+    "definition": "(formal) to honor with one's presence; to attend"
+  },
+  {
+    "id": "hsk4_0283",
+    "level": 4,
+    "simplified": "光盘",
+    "pinyin": "guāng pán",
+    "definition": "compact disc (CD); DVD; CD-ROM"
+  },
+  {
+    "id": "hsk4_0284",
+    "level": 4,
+    "simplified": "逛",
+    "pinyin": "guàng",
+    "definition": "to stroll; to visit"
+  },
+  {
+    "id": "hsk4_0286",
+    "level": 4,
+    "simplified": "规律",
+    "pinyin": "guī lǜ",
+    "definition": "rule (e.g. of science); law of behavior; regular pattern; rhythm; discipline"
+  },
+  {
+    "id": "hsk4_0287",
+    "level": 4,
+    "simplified": "规模",
+    "pinyin": "guī mó",
+    "definition": "scale; scope; extent"
+  },
+  {
+    "id": "hsk4_0288",
+    "level": 4,
+    "simplified": "规则",
+    "pinyin": "guī zé",
+    "definition": "rule; regulation; rules and regulations"
+  },
+  {
+    "id": "hsk4_0289",
+    "level": 4,
+    "simplified": "果实",
+    "pinyin": "guǒ shí",
+    "definition": "fruit (produced by a plant); (fig.) fruits (of success etc); results; gains"
+  },
+  {
+    "id": "hsk4_0290",
+    "level": 4,
+    "simplified": "过分",
+    "pinyin": "guò fèn",
+    "definition": "excessive; undue; overly"
+  },
+  {
+    "id": "hsk4_0291",
+    "level": 4,
+    "simplified": "海水",
+    "pinyin": "hǎi shuǐ",
+    "definition": "seawater"
+  },
+  {
+    "id": "hsk4_0292",
+    "level": 4,
+    "simplified": "海鲜",
+    "pinyin": "hǎi xiān",
+    "definition": "seafood"
+  },
+  {
+    "id": "hsk4_0293",
+    "level": 4,
+    "simplified": "含",
+    "pinyin": "hán",
+    "definition": "to keep in the mouth; to contain"
+  },
+  {
+    "id": "hsk4_0294",
+    "level": 4,
+    "simplified": "含量",
+    "pinyin": "hán liàng",
+    "definition": "content; quantity contained"
+  },
+  {
+    "id": "hsk4_0295",
+    "level": 4,
+    "simplified": "含义",
+    "pinyin": "hán yì",
+    "definition": "meaning (implicit in a phrase); implied meaning; hidden meaning; hint; connotation"
+  },
+  {
+    "id": "hsk4_0296",
+    "level": 4,
+    "simplified": "含有",
+    "pinyin": "hán yǒu",
+    "definition": "to contain; including"
+  },
+  {
+    "id": "hsk4_0297",
+    "level": 4,
+    "simplified": "寒假",
+    "pinyin": "hán jià",
+    "definition": "winter vacation"
+  },
+  {
+    "id": "hsk4_0298",
+    "level": 4,
+    "simplified": "寒冷",
+    "pinyin": "hán lěng",
+    "definition": "cold (climate); frigid; very cold"
+  },
+  {
+    "id": "hsk4_0299",
+    "level": 4,
+    "simplified": "航班",
+    "pinyin": "háng bān",
+    "definition": "(scheduled) flight; (scheduled) sailing"
+  },
+  {
+    "id": "hsk4_0300",
+    "level": 4,
+    "simplified": "航空",
+    "pinyin": "háng kōng",
+    "definition": "aviation"
+  },
+  {
+    "id": "hsk4_0301",
+    "level": 4,
+    "simplified": "毫米",
+    "pinyin": "háo mǐ",
+    "definition": "millimeter"
+  },
+  {
+    "id": "hsk4_0302",
+    "level": 4,
+    "simplified": "毫升",
+    "pinyin": "háo shēng",
+    "definition": "milliliter"
+  },
+  {
+    "id": "hsk4_0303",
+    "level": 4,
+    "simplified": "好友",
+    "pinyin": "hǎo yǒu",
+    "definition": "close friend; pal; (social networking website) friend"
+  },
+  {
+    "id": "hsk4_0304",
+    "level": 4,
+    "simplified": "号码",
+    "pinyin": "hào mǎ",
+    "definition": "number"
+  },
+  {
+    "id": "hsk4_0305",
+    "level": 4,
+    "simplified": "合同",
+    "pinyin": "hé tong",
+    "definition": "(business) contract"
+  },
+  {
+    "id": "hsk4_0306",
+    "level": 4,
+    "simplified": "黑暗",
+    "pinyin": "hēi àn",
+    "definition": "dark; darkly; darkness"
+  },
+  {
+    "id": "hsk4_0307",
+    "level": 4,
+    "simplified": "红包",
+    "pinyin": "hóng bāo",
+    "definition": "money wrapped in red as a gift; bonus payment; kickback; bribe"
+  },
+  {
+    "id": "hsk4_0308",
+    "level": 4,
+    "simplified": "后头",
+    "pinyin": "hòu tou",
+    "definition": "behind; the back; the rear; later; afterwards; (in) the future"
+  },
+  {
+    "id": "hsk4_0309",
+    "level": 4,
+    "simplified": "厚",
+    "pinyin": "hòu",
+    "definition": "thick; deep or profound; kind; generous; rich or strong in flavor; to favor; to stress"
+  },
+  {
+    "id": "hsk4_0310",
+    "level": 4,
+    "simplified": "呼吸",
+    "pinyin": "hū xī",
+    "definition": "to breathe"
+  },
+  {
+    "id": "hsk4_0311",
+    "level": 4,
+    "simplified": "忽视",
+    "pinyin": "hū shì",
+    "definition": "to neglect; to overlook; to disregard; to ignore"
+  },
+  {
+    "id": "hsk4_0312",
+    "level": 4,
+    "simplified": "户",
+    "pinyin": "hù",
+    "definition": "a household; door; family"
+  },
+  {
+    "id": "hsk4_0313",
+    "level": 4,
+    "simplified": "护士",
+    "pinyin": "hù shi",
+    "definition": "nurse"
+  },
+  {
+    "id": "hsk4_0314",
+    "level": 4,
+    "simplified": "划",
+    "pinyin": "huá",
+    "definition": "to row; to paddle; profitable; worth (the effort); it pays (to do sth)"
+  },
+  {
+    "id": "hsk4_0315",
+    "level": 4,
+    "simplified": "怀念",
+    "pinyin": "huái niàn",
+    "definition": "to cherish the memory of; to think of; to reminisce"
+  },
+  {
+    "id": "hsk4_0316",
+    "level": 4,
+    "simplified": "怀疑",
+    "pinyin": "huái yí",
+    "definition": "to doubt (sth); to be skeptical of; to have one's doubts; to harbor suspicions; to suspect that"
+  },
+  {
+    "id": "hsk4_0317",
+    "level": 4,
+    "simplified": "缓解",
+    "pinyin": "huǎn jiě",
+    "definition": "to bring relief; to alleviate (a crisis); to dull (a pain)"
+  },
+  {
+    "id": "hsk4_0318",
+    "level": 4,
+    "simplified": "黄瓜",
+    "pinyin": "huáng guā",
+    "definition": "cucumber"
+  },
+  {
+    "id": "hsk4_0319",
+    "level": 4,
+    "simplified": "黄金",
+    "pinyin": "huáng jīn",
+    "definition": "gold; golden (opportunity); prime (time)"
+  },
+  {
+    "id": "hsk4_0320",
+    "level": 4,
+    "simplified": "回复",
+    "pinyin": "huí fù",
+    "definition": "to reply; to recover; to return (to a previous condition); Re: in reply to (email)"
+  },
+  {
+    "id": "hsk4_0321",
+    "level": 4,
+    "simplified": "汇",
+    "pinyin": "huì",
+    "definition": "to remit; to converge (of rivers); to exchange"
+  },
+  {
+    "id": "hsk4_0322",
+    "level": 4,
+    "simplified": "汇报",
+    "pinyin": "huì bào",
+    "definition": "to report; to give an account of; to collect information and report back"
+  },
+  {
+    "id": "hsk4_0323",
+    "level": 4,
+    "simplified": "汇率",
+    "pinyin": "huì lǜ",
+    "definition": "exchange rate"
+  },
+  {
+    "id": "hsk4_0324",
+    "level": 4,
+    "simplified": "会计",
+    "pinyin": "kuài jì",
+    "definition": "accountant; accountancy; accounting"
+  },
+  {
+    "id": "hsk4_0325",
+    "level": 4,
+    "simplified": "婚礼",
+    "pinyin": "hūn lǐ",
+    "definition": "wedding ceremony; wedding"
+  },
+  {
+    "id": "hsk4_0326",
+    "level": 4,
+    "simplified": "伙",
+    "pinyin": "huǒ",
+    "definition": "meals (abbr. for 食); variant of 伙"
+  },
+  {
+    "id": "hsk4_0327",
+    "level": 4,
+    "simplified": "伙伴",
+    "pinyin": "huǒ bàn",
+    "definition": "partner; companion; comrade"
+  },
+  {
+    "id": "hsk4_0328",
+    "level": 4,
+    "simplified": "或许",
+    "pinyin": "huò xǔ",
+    "definition": "perhaps; maybe"
+  },
+  {
+    "id": "hsk4_0329",
+    "level": 4,
+    "simplified": "货",
+    "pinyin": "huò",
+    "definition": "goods; money; commodity"
+  },
+  {
+    "id": "hsk4_0330",
+    "level": 4,
+    "simplified": "获",
+    "pinyin": "huò",
+    "definition": "(literary) to catch; to capture; (literary) to get; to obtain; to win"
+  },
+  {
+    "id": "hsk4_0331",
+    "level": 4,
+    "simplified": "获得",
+    "pinyin": "huò dé",
+    "definition": "to obtain; to receive; to get"
+  },
+  {
+    "id": "hsk4_0332",
+    "level": 4,
+    "simplified": "获奖",
+    "pinyin": "huò jiǎng",
+    "definition": "to win an award"
+  },
+  {
+    "id": "hsk4_0333",
+    "level": 4,
+    "simplified": "获取",
+    "pinyin": "huò qǔ",
+    "definition": "to gain; to get; to acquire"
+  },
+  {
+    "id": "hsk4_0334",
+    "level": 4,
+    "simplified": "机构",
+    "pinyin": "jī gòu",
+    "definition": "mechanism; structure; organization; agency; institution"
+  },
+  {
+    "id": "hsk4_0335",
+    "level": 4,
+    "simplified": "机遇",
+    "pinyin": "jī yù",
+    "definition": "opportunity; favorable circumstance; stroke of luck"
+  },
+  {
+    "id": "hsk4_0336",
+    "level": 4,
+    "simplified": "积累",
+    "pinyin": "jī lěi",
+    "definition": "to accumulate; accumulation; cumulative; cumulatively"
+  },
+  {
+    "id": "hsk4_0337",
+    "level": 4,
+    "simplified": "激动",
+    "pinyin": "jī dòng",
+    "definition": "to move emotionally; to stir up (emotions); to excite"
+  },
+  {
+    "id": "hsk4_0338",
+    "level": 4,
+    "simplified": "激烈",
+    "pinyin": "jī liè",
+    "definition": "(of competition or fighting) intense; fierce; (of pain) acute; (of an expression of opinion) impassioned; vehement; (of a course of action) drastic; extreme"
+  },
+  {
+    "id": "hsk4_0339",
+    "level": 4,
+    "simplified": "及格",
+    "pinyin": "jí gé",
+    "definition": "to pass an exam or a test; to meet a minimum standard"
+  },
+  {
+    "id": "hsk4_0340",
+    "level": 4,
+    "simplified": "即将",
+    "pinyin": "jí jiāng",
+    "definition": "on the eve of; to be about to; to be on the verge of"
+  },
+  {
+    "id": "hsk4_0341",
+    "level": 4,
+    "simplified": "极",
+    "pinyin": "jí",
+    "definition": "extremely; pole (geography, physics); utmost; top"
+  },
+  {
+    "id": "hsk4_0342",
+    "level": 4,
+    "simplified": "极其",
+    "pinyin": "jí qí",
+    "definition": "extremely"
+  },
+  {
+    "id": "hsk4_0343",
+    "level": 4,
+    "simplified": "急忙",
+    "pinyin": "jí máng",
+    "definition": "hastily"
+  },
+  {
+    "id": "hsk4_0344",
+    "level": 4,
+    "simplified": "集合",
+    "pinyin": "jí hé",
+    "definition": "to gather; to assemble; (math.) set"
+  },
+  {
+    "id": "hsk4_0345",
+    "level": 4,
+    "simplified": "几乎",
+    "pinyin": "jī hū",
+    "definition": "almost; nearly; practically"
+  },
+  {
+    "id": "hsk4_0346",
+    "level": 4,
+    "simplified": "记载",
+    "pinyin": "jì zǎi",
+    "definition": "to write down; to record; written account"
+  },
+  {
+    "id": "hsk4_0347",
+    "level": 4,
+    "simplified": "纪律",
+    "pinyin": "jì lǜ",
+    "definition": "discipline"
+  },
+  {
+    "id": "hsk4_0348",
+    "level": 4,
+    "simplified": "技巧",
+    "pinyin": "jì qiǎo",
+    "definition": "skill; technique"
+  },
+  {
+    "id": "hsk4_0350",
+    "level": 4,
+    "simplified": "季度",
+    "pinyin": "jì dù",
+    "definition": "quarter of a year; season (sports)"
+  },
+  {
+    "id": "hsk4_0351",
+    "level": 4,
+    "simplified": "季节",
+    "pinyin": "jì jié",
+    "definition": "time; season; period"
+  },
+  {
+    "id": "hsk4_0352",
+    "level": 4,
+    "simplified": "既",
+    "pinyin": "jì",
+    "definition": "already; since; both... (and...)"
+  },
+  {
+    "id": "hsk4_0353",
+    "level": 4,
+    "simplified": "既然",
+    "pinyin": "jì rán",
+    "definition": "since; as; this being the case"
+  },
+  {
+    "id": "hsk4_0354",
+    "level": 4,
+    "simplified": "寄",
+    "pinyin": "jì",
+    "definition": "to send; to mail; to entrust; to depend on; to attach oneself to; to live (in a house); to lodge; foster (son etc)"
+  },
+  {
+    "id": "hsk4_0355",
+    "level": 4,
+    "simplified": "加班",
+    "pinyin": "jiā bān",
+    "definition": "to work overtime"
+  },
+  {
+    "id": "hsk4_0356",
+    "level": 4,
+    "simplified": "加入",
+    "pinyin": "jiā rù",
+    "definition": "to become a member; to join; to mix into; to participate in; to add in"
+  },
+  {
+    "id": "hsk4_0357",
+    "level": 4,
+    "simplified": "加油站",
+    "pinyin": "jiā yóu zhàn",
+    "definition": "gas station"
+  },
+  {
+    "id": "hsk4_0358",
+    "level": 4,
+    "simplified": "家务",
+    "pinyin": "jiā wù",
+    "definition": "household duties; housework"
+  },
+  {
+    "id": "hsk4_0359",
+    "level": 4,
+    "simplified": "假如",
+    "pinyin": "jiǎ rú",
+    "definition": "if"
+  },
+  {
+    "id": "hsk4_0360",
+    "level": 4,
+    "simplified": "坚固",
+    "pinyin": "jiān gù",
+    "definition": "firm; firmly; hard; stable"
+  },
+  {
+    "id": "hsk4_0361",
+    "level": 4,
+    "simplified": "减",
+    "pinyin": "jiǎn",
+    "definition": "to lower; to decrease; to reduce; to subtract; to diminish"
+  },
+  {
+    "id": "hsk4_0362",
+    "level": 4,
+    "simplified": "减肥",
+    "pinyin": "jiǎn féi",
+    "definition": "to lose weight"
+  },
+  {
+    "id": "hsk4_0363",
+    "level": 4,
+    "simplified": "减少",
+    "pinyin": "jiǎn shǎo",
+    "definition": "to lessen; to decrease; to reduce; to lower"
+  },
+  {
+    "id": "hsk4_0364",
+    "level": 4,
+    "simplified": "检测",
+    "pinyin": "jiǎn cè",
+    "definition": "to detect; to test; detection; sensing"
+  },
+  {
+    "id": "hsk4_0365",
+    "level": 4,
+    "simplified": "简历",
+    "pinyin": "jiǎn lì",
+    "definition": "curriculum vitae (CV); résumé; biographical notes"
+  },
+  {
+    "id": "hsk4_0366",
+    "level": 4,
+    "simplified": "健身",
+    "pinyin": "jiàn shēn",
+    "definition": "to exercise; to keep fit; to work out; physical exercise"
+  },
+  {
+    "id": "hsk4_0367",
+    "level": 4,
+    "simplified": "渐渐",
+    "pinyin": "jiàn jiàn",
+    "definition": "gradually"
+  },
+  {
+    "id": "hsk4_0369",
+    "level": 4,
+    "simplified": "讲究",
+    "pinyin": "jiǎng jiu",
+    "definition": "to pay particular attention to; carefully selected for quality; tastefully chosen"
+  },
+  {
+    "id": "hsk4_0370",
+    "level": 4,
+    "simplified": "讲座",
+    "pinyin": "jiǎng zuò",
+    "definition": "a course of lectures"
+  },
+  {
+    "id": "hsk4_0371",
+    "level": 4,
+    "simplified": "奖",
+    "pinyin": "jiǎng",
+    "definition": "prize; award; encouragement"
+  },
+  {
+    "id": "hsk4_0372",
+    "level": 4,
+    "simplified": "奖金",
+    "pinyin": "jiǎng jīn",
+    "definition": "premium; award money; bonus"
+  },
+  {
+    "id": "hsk4_0373",
+    "level": 4,
+    "simplified": "奖学金",
+    "pinyin": "jiǎng xué jīn",
+    "definition": "scholarship"
+  },
+  {
+    "id": "hsk4_0374",
+    "level": 4,
+    "simplified": "降",
+    "pinyin": "jiàng",
+    "definition": "to drop; to fall; to come down; to descend"
+  },
+  {
+    "id": "hsk4_0375",
+    "level": 4,
+    "simplified": "降低",
+    "pinyin": "jiàng dī",
+    "definition": "to reduce; to lower; to bring down"
+  },
+  {
+    "id": "hsk4_0376",
+    "level": 4,
+    "simplified": "降价",
+    "pinyin": "jiàng jià",
+    "definition": "to cut the price; to drive down the price; to get cheaper"
+  },
+  {
+    "id": "hsk4_0377",
+    "level": 4,
+    "simplified": "降落",
+    "pinyin": "jiàng luò",
+    "definition": "to descend; to land"
+  },
+  {
+    "id": "hsk4_0378",
+    "level": 4,
+    "simplified": "降温",
+    "pinyin": "jiàng wēn",
+    "definition": "to become cooler; to lower the temperature; cooling; (of interest, activity etc) to decline"
+  },
+  {
+    "id": "hsk4_0379",
+    "level": 4,
+    "simplified": "交换",
+    "pinyin": "jiāo huàn",
+    "definition": "to exchange; to swap; to switch (telecom); commutative (math); to commute"
+  },
+  {
+    "id": "hsk4_0380",
+    "level": 4,
+    "simplified": "交际",
+    "pinyin": "jiāo jì",
+    "definition": "communication; social intercourse"
+  },
+  {
+    "id": "hsk4_0381",
+    "level": 4,
+    "simplified": "角色",
+    "pinyin": "jué sè",
+    "definition": "role; character in a novel; persona; also pr. [jiǎo sè]"
+  },
+  {
+    "id": "hsk4_0382",
+    "level": 4,
+    "simplified": "教授",
+    "pinyin": "jiào shòu",
+    "definition": "professor; to instruct; to lecture on"
+  },
+  {
+    "id": "hsk4_0383",
+    "level": 4,
+    "simplified": "教训",
+    "pinyin": "jiào xun",
+    "definition": "to provide guidance; to lecture sb; to upbraid; a talking-to; a bitter lesson"
+  },
+  {
+    "id": "hsk4_0384",
+    "level": 4,
+    "simplified": "阶段",
+    "pinyin": "jiē duàn",
+    "definition": "stage; section; phase; period"
+  },
+  {
+    "id": "hsk4_0385",
+    "level": 4,
+    "simplified": "街道",
+    "pinyin": "jiē dào",
+    "definition": "street; subdistrict; residential district"
+  },
+  {
+    "id": "hsk4_0386",
+    "level": 4,
+    "simplified": "节省",
+    "pinyin": "jié shěng",
+    "definition": "saving; to save; to use sparingly; to cut down on"
+  },
+  {
+    "id": "hsk4_0387",
+    "level": 4,
+    "simplified": "结",
+    "pinyin": "jiē",
+    "definition": "(of a plant) to produce (fruit or seeds); Taiwan pr. [jié]"
+  },
+  {
+    "id": "hsk4_0388",
+    "level": 4,
+    "simplified": "结构",
+    "pinyin": "jié gòu",
+    "definition": "structure; composition; makeup; architecture"
+  },
+  {
+    "id": "hsk4_0389",
+    "level": 4,
+    "simplified": "结论",
+    "pinyin": "jié lùn",
+    "definition": "conclusion; verdict; to conclude; to reach a verdict"
+  },
+  {
+    "id": "hsk4_0390",
+    "level": 4,
+    "simplified": "解释",
+    "pinyin": "jiě shì",
+    "definition": "explanation; to explain; to interpret; to resolve"
+  },
+  {
+    "id": "hsk4_0391",
+    "level": 4,
+    "simplified": "姐妹",
+    "pinyin": "jiě mèi",
+    "definition": "sisters; siblings; sister (school, city etc)"
+  },
+  {
+    "id": "hsk4_0392",
+    "level": 4,
+    "simplified": "尽快",
+    "pinyin": "jǐn kuài",
+    "definition": "as quickly as possible; as soon as possible"
+  },
+  {
+    "id": "hsk4_0393",
+    "level": 4,
+    "simplified": "尽力",
+    "pinyin": "jìn lì",
+    "definition": "to strive one's hardest; to spare no effort"
+  },
+  {
+    "id": "hsk4_0394",
+    "level": 4,
+    "simplified": "紧密",
+    "pinyin": "jǐn mì",
+    "definition": "inseparably close"
+  },
+  {
+    "id": "hsk4_0395",
+    "level": 4,
+    "simplified": "近代",
+    "pinyin": "jìn dài",
+    "definition": "the not-very-distant past; modern times, excluding recent decades; (in the context of Chinese history) the period from the Opium Wars until the May 4th Movement (mid-19th century to 1919); capitalist times (pre-1949)"
+  },
+  {
+    "id": "hsk4_0396",
+    "level": 4,
+    "simplified": "进口",
+    "pinyin": "jìn kǒu",
+    "definition": "to import; imported; entrance; inlet (for the intake of air, water etc)"
+  },
+  {
+    "id": "hsk4_0397",
+    "level": 4,
+    "simplified": "禁止",
+    "pinyin": "jìn zhǐ",
+    "definition": "to prohibit; to forbid; to ban"
+  },
+  {
+    "id": "hsk4_0398",
+    "level": 4,
+    "simplified": "经典",
+    "pinyin": "jīng diǎn",
+    "definition": "the classics; scriptures; classical; classic (example, case etc); typical"
+  },
+  {
+    "id": "hsk4_0399",
+    "level": 4,
+    "simplified": "精力",
+    "pinyin": "jīng lì",
+    "definition": "energy"
+  },
+  {
+    "id": "hsk4_0400",
+    "level": 4,
+    "simplified": "竟然",
+    "pinyin": "jìng rán",
+    "definition": "unexpectedly; to one's surprise; in spite of everything; in that crazy way; actually; to go as far as to"
+  },
+  {
+    "id": "hsk4_0401",
+    "level": 4,
+    "simplified": "镜头",
+    "pinyin": "jìng tóu",
+    "definition": "camera lens; camera shot (in a movie etc); scene"
+  },
+  {
+    "id": "hsk4_0402",
+    "level": 4,
+    "simplified": "镜子",
+    "pinyin": "jìng zi",
+    "definition": "mirror"
+  },
+  {
+    "id": "hsk4_0403",
+    "level": 4,
+    "simplified": "究竟",
+    "pinyin": "jiū jìng",
+    "definition": "to go to the bottom of a matter; after all; when all is said and done; (in an interrogative sentence) finally; outcome; result"
+  },
+  {
+    "id": "hsk4_0404",
+    "level": 4,
+    "simplified": "酒吧",
+    "pinyin": "jiǔ bā",
+    "definition": "bar; pub; saloon"
+  },
+  {
+    "id": "hsk4_0405",
+    "level": 4,
+    "simplified": "居民",
+    "pinyin": "jū mín",
+    "definition": "resident; inhabitant"
+  },
+  {
+    "id": "hsk4_0406",
+    "level": 4,
+    "simplified": "居住",
+    "pinyin": "jū zhù",
+    "definition": "to reside; to dwell; to live in a place; resident in"
+  },
+  {
+    "id": "hsk4_0407",
+    "level": 4,
+    "simplified": "局",
+    "pinyin": "jú",
+    "definition": "narrow"
+  },
+  {
+    "id": "hsk4_0408",
+    "level": 4,
+    "simplified": "巨大",
+    "pinyin": "jù dà",
+    "definition": "huge; immense; very large; tremendous; gigantic; enormous"
+  },
+  {
+    "id": "hsk4_0409",
+    "level": 4,
+    "simplified": "具备",
+    "pinyin": "jù bèi",
+    "definition": "to possess; to have; equipped with; able to fulfill (conditions or requirements)"
+  },
+  {
+    "id": "hsk4_0410",
+    "level": 4,
+    "simplified": "距离",
+    "pinyin": "jù lí",
+    "definition": "distance; to be apart from"
+  },
+  {
+    "id": "hsk4_0411",
+    "level": 4,
+    "simplified": "聚",
+    "pinyin": "jù",
+    "definition": "to congregate; to assemble; to mass; to gather together; to amass; to polymerize"
+  },
+  {
+    "id": "hsk4_0412",
+    "level": 4,
+    "simplified": "聚会",
+    "pinyin": "jù huì",
+    "definition": "party; gathering; to meet; to get together"
+  },
+  {
+    "id": "hsk4_0413",
+    "level": 4,
+    "simplified": "卷",
+    "pinyin": "juǎn",
+    "definition": "to roll up; roll; classifier for small rolled things (wad of paper money, movie reel etc)"
+  },
+  {
+    "id": "hsk4_0414",
+    "level": 4,
+    "simplified": "开花",
+    "pinyin": "kāi huā",
+    "definition": "to bloom; to blossom; to flower; (fig.) to burst; to split open; (fig.) to burst with joy; (fig.) to spring up everywhere; to flourish"
+  },
+  {
+    "id": "hsk4_0415",
+    "level": 4,
+    "simplified": "开水",
+    "pinyin": "kāi shuǐ",
+    "definition": "boiled water; boiling water"
+  },
+  {
+    "id": "hsk4_0416",
+    "level": 4,
+    "simplified": "看不起",
+    "pinyin": "kàn bu qǐ",
+    "definition": "to look down upon; to despise"
+  },
+  {
+    "id": "hsk4_0417",
+    "level": 4,
+    "simplified": "看来",
+    "pinyin": "kàn lai",
+    "definition": "apparently; it seems that"
+  },
+  {
+    "id": "hsk4_0418",
+    "level": 4,
+    "simplified": "看望",
+    "pinyin": "kàn wàng",
+    "definition": "to pay a visit to; to see (sb)"
+  },
+  {
+    "id": "hsk4_0419",
+    "level": 4,
+    "simplified": "考察",
+    "pinyin": "kǎo chá",
+    "definition": "to inspect; to observe and study; on-the-spot investigation"
+  },
+  {
+    "id": "hsk4_0420",
+    "level": 4,
+    "simplified": "考虑",
+    "pinyin": "kǎo lǜ",
+    "definition": "to think over; to consider; consideration"
+  },
+  {
+    "id": "hsk4_0421",
+    "level": 4,
+    "simplified": "棵",
+    "pinyin": "kē",
+    "definition": "classifier for trees, cabbages, plants etc"
+  },
+  {
+    "id": "hsk4_0422",
+    "level": 4,
+    "simplified": "可见",
+    "pinyin": "kě jiàn",
+    "definition": "it can clearly be seen (that this is the case); it is (thus) clear; clear; visible"
+  },
+  {
+    "id": "hsk4_0423",
+    "level": 4,
+    "simplified": "空间",
+    "pinyin": "kōng jiān",
+    "definition": "space; room; (fig.) scope; leeway; (astronomy) outer space; (physics, math.) space"
+  },
+  {
+    "id": "hsk4_0424",
+    "level": 4,
+    "simplified": "口袋",
+    "pinyin": "kǒu dài",
+    "definition": "pocket; bag; sack"
+  },
+  {
+    "id": "hsk4_0425",
+    "level": 4,
+    "simplified": "口语",
+    "pinyin": "kǒu yǔ",
+    "definition": "colloquial speech; spoken language; vernacular language; slander; gossip"
+  },
+  {
+    "id": "hsk4_0426",
+    "level": 4,
+    "simplified": "苦",
+    "pinyin": "kǔ",
+    "definition": "bitter; hardship; pain; to suffer; to bring suffering to; painstakingly"
+  },
+  {
+    "id": "hsk4_0427",
+    "level": 4,
+    "simplified": "快递",
+    "pinyin": "kuài dì",
+    "definition": "express delivery"
+  },
+  {
+    "id": "hsk4_0429",
+    "level": 4,
+    "simplified": "宽广",
+    "pinyin": "kuān guǎng",
+    "definition": "wide; broad; extensive; vast"
+  },
+  {
+    "id": "hsk4_0430",
+    "level": 4,
+    "simplified": "矿泉水",
+    "pinyin": "kuàng quán shuǐ",
+    "definition": "mineral water"
+  },
+  {
+    "id": "hsk4_0431",
+    "level": 4,
+    "simplified": "扩大",
+    "pinyin": "kuò dà",
+    "definition": "to expand; to enlarge; to broaden one's scope"
+  },
+  {
+    "id": "hsk4_0432",
+    "level": 4,
+    "simplified": "扩展",
+    "pinyin": "kuò zhǎn",
+    "definition": "to extend; to expand; extension; expansion"
+  },
+  {
+    "id": "hsk4_0433",
+    "level": 4,
+    "simplified": "括号",
+    "pinyin": "kuò hào",
+    "definition": "parentheses; brackets"
+  },
+  {
+    "id": "hsk4_0434",
+    "level": 4,
+    "simplified": "垃圾",
+    "pinyin": "lā jī",
+    "definition": "trash; refuse; garbage; (coll.) of poor quality; Taiwan pr. [lè sè]"
+  },
+  {
+    "id": "hsk4_0435",
+    "level": 4,
+    "simplified": "拉开",
+    "pinyin": "lā kāi",
+    "definition": "to pull open; to pull apart; to space out; to increase"
+  },
+  {
+    "id": "hsk4_0436",
+    "level": 4,
+    "simplified": "辣",
+    "pinyin": "là",
+    "definition": "old variant of 辣"
+  },
+  {
+    "id": "hsk4_0437",
+    "level": 4,
+    "simplified": "来不及",
+    "pinyin": "lái bu jí",
+    "definition": "there's not enough time (to do sth); it's too late (to do sth)"
+  },
+  {
+    "id": "hsk4_0438",
+    "level": 4,
+    "simplified": "来得及",
+    "pinyin": "lái de jí",
+    "definition": "to have enough time; can do it in time; can still make it"
+  },
+  {
+    "id": "hsk4_0439",
+    "level": 4,
+    "simplified": "来源",
+    "pinyin": "lái yuán",
+    "definition": "source (of information etc); origin"
+  },
+  {
+    "id": "hsk4_0440",
+    "level": 4,
+    "simplified": "老公",
+    "pinyin": "lǎo gōng",
+    "definition": "(coll.) husband"
+  },
+  {
+    "id": "hsk4_0441",
+    "level": 4,
+    "simplified": "老家",
+    "pinyin": "lǎo jiā",
+    "definition": "native place; place of origin; home state or region"
+  },
+  {
+    "id": "hsk4_0442",
+    "level": 4,
+    "simplified": "老婆",
+    "pinyin": "lǎo pó",
+    "definition": "(coll.) wife"
+  },
+  {
+    "id": "hsk4_0443",
+    "level": 4,
+    "simplified": "老实",
+    "pinyin": "lǎo shi",
+    "definition": "honest; sincere; well-behaved; naive; gullible"
+  },
+  {
+    "id": "hsk4_0444",
+    "level": 4,
+    "simplified": "乐趣",
+    "pinyin": "lè qù",
+    "definition": "delight; pleasure; joy"
+  },
+  {
+    "id": "hsk4_0445",
+    "level": 4,
+    "simplified": "了不起",
+    "pinyin": "liǎo bu qǐ",
+    "definition": "amazing; terrific; extraordinary"
+  },
+  {
+    "id": "hsk4_0446",
+    "level": 4,
+    "simplified": "了解",
+    "pinyin": "liǎo jiě",
+    "definition": "to understand; to realize; to find out"
+  },
+  {
+    "id": "hsk4_0447",
+    "level": 4,
+    "simplified": "泪",
+    "pinyin": "lèi",
+    "definition": "tears"
+  },
+  {
+    "id": "hsk4_0448",
+    "level": 4,
+    "simplified": "泪水",
+    "pinyin": "lèi shuǐ",
+    "definition": "teardrop; tears"
+  },
+  {
+    "id": "hsk4_0449",
+    "level": 4,
+    "simplified": "类型",
+    "pinyin": "lèi xíng",
+    "definition": "type; kind; category; (computer programming) type"
+  },
+  {
+    "id": "hsk4_0450",
+    "level": 4,
+    "simplified": "冷静",
+    "pinyin": "lěng jìng",
+    "definition": "calm; cool-headed; dispassionate; (of a place) deserted; quiet"
+  },
+  {
+    "id": "hsk4_0451",
+    "level": 4,
+    "simplified": "厘米",
+    "pinyin": "lí mǐ",
+    "definition": "centimeter"
+  },
+  {
+    "id": "hsk4_0452",
+    "level": 4,
+    "simplified": "离不开",
+    "pinyin": "lí bu kāi",
+    "definition": "inseparable; inevitably linked to"
+  },
+  {
+    "id": "hsk4_0453",
+    "level": 4,
+    "simplified": "力气",
+    "pinyin": "lì qi",
+    "definition": "strength"
+  },
+  {
+    "id": "hsk4_0454",
+    "level": 4,
+    "simplified": "历史",
+    "pinyin": "lì shǐ",
+    "definition": "history"
+  },
+  {
+    "id": "hsk4_0455",
+    "level": 4,
+    "simplified": "立即",
+    "pinyin": "lì jí",
+    "definition": "immediately"
+  },
+  {
+    "id": "hsk4_0456",
+    "level": 4,
+    "simplified": "利息",
+    "pinyin": "lì xī",
+    "definition": "interest (on a loan)"
+  },
+  {
+    "id": "hsk4_0457",
+    "level": 4,
+    "simplified": "利益",
+    "pinyin": "lì yì",
+    "definition": "benefit; (in sb's) interest"
+  },
+  {
+    "id": "hsk4_0458",
+    "level": 4,
+    "simplified": "俩",
+    "pinyin": "liǎ",
+    "definition": "two (colloquial equivalent of 两个); both; some"
+  },
+  {
+    "id": "hsk4_0459",
+    "level": 4,
+    "simplified": "良好",
+    "pinyin": "liáng hǎo",
+    "definition": "good; favorable; well; fine"
+  },
+  {
+    "id": "hsk4_0460",
+    "level": 4,
+    "simplified": "粮食",
+    "pinyin": "liáng shi",
+    "definition": "foodstuff; cereals"
+  },
+  {
+    "id": "hsk4_0461",
+    "level": 4,
+    "simplified": "两边",
+    "pinyin": "liǎng bian",
+    "definition": "either side; both sides"
+  },
+  {
+    "id": "hsk4_0462",
+    "level": 4,
+    "simplified": "量",
+    "pinyin": "liáng",
+    "definition": "to measure"
+  },
+  {
+    "id": "hsk4_0463",
+    "level": 4,
+    "simplified": "疗养",
+    "pinyin": "liáo yǎng",
+    "definition": "to get well; to heal; to recuperate; to convalesce; convalescence; to nurse"
+  },
+  {
+    "id": "hsk4_0464",
+    "level": 4,
+    "simplified": "列",
+    "pinyin": "liè",
+    "definition": "to arrange; to line up; file; series; (in data tables) column; (Tw) row"
+  },
+  {
+    "id": "hsk4_0465",
+    "level": 4,
+    "simplified": "列车",
+    "pinyin": "liè chē",
+    "definition": "(railway) train"
+  },
+  {
+    "id": "hsk4_0466",
+    "level": 4,
+    "simplified": "列入",
+    "pinyin": "liè rù",
+    "definition": "to include on a list"
+  },
+  {
+    "id": "hsk4_0467",
+    "level": 4,
+    "simplified": "列为",
+    "pinyin": "liè wéi",
+    "definition": "to be classified as"
+  },
+  {
+    "id": "hsk4_0468",
+    "level": 4,
+    "simplified": "临时",
+    "pinyin": "lín shí",
+    "definition": "as the time draws near; at the last moment; temporary; interim; ad hoc"
+  },
+  {
+    "id": "hsk4_0469",
+    "level": 4,
+    "simplified": "零食",
+    "pinyin": "líng shí",
+    "definition": "between-meal nibbles; snacks"
+  },
+  {
+    "id": "hsk4_0470",
+    "level": 4,
+    "simplified": "流传",
+    "pinyin": "liú chuán",
+    "definition": "to spread; to circulate; to hand down"
+  },
+  {
+    "id": "hsk4_0471",
+    "level": 4,
+    "simplified": "楼梯",
+    "pinyin": "lóu tī",
+    "definition": "stair; staircase"
+  },
+  {
+    "id": "hsk4_0472",
+    "level": 4,
+    "simplified": "陆地",
+    "pinyin": "lù dì",
+    "definition": "dry land (as opposed to the sea)"
+  },
+  {
+    "id": "hsk4_0473",
+    "level": 4,
+    "simplified": "陆续",
+    "pinyin": "lù xù",
+    "definition": "in turn; successively; one after the other; bit by bit"
+  },
+  {
+    "id": "hsk4_0474",
+    "level": 4,
+    "simplified": "录取",
+    "pinyin": "lù qǔ",
+    "definition": "to accept an applicant (prospective student, employee etc) who passes an entrance exam; to admit (a student); to hire (a job candidate)"
+  },
+  {
+    "id": "hsk4_0475",
+    "level": 4,
+    "simplified": "律师",
+    "pinyin": "lǜ shī",
+    "definition": "lawyer"
+  },
+  {
+    "id": "hsk4_0476",
+    "level": 4,
+    "simplified": "率先",
+    "pinyin": "shuài xiān",
+    "definition": "to take the lead; to show initiative"
+  },
+  {
+    "id": "hsk4_0477",
+    "level": 4,
+    "simplified": "轮",
+    "pinyin": "lún",
+    "definition": "wheel; disk; ring; steamship; to take turns; to rotate; classifier for big round objects: disk, or recurring events: round, turn"
+  },
+  {
+    "id": "hsk4_0478",
+    "level": 4,
+    "simplified": "轮船",
+    "pinyin": "lún chuán",
+    "definition": "steamship; steamer; steamboat"
+  },
+  {
+    "id": "hsk4_0479",
+    "level": 4,
+    "simplified": "轮椅",
+    "pinyin": "lún yǐ",
+    "definition": "wheelchair"
+  },
+  {
+    "id": "hsk4_0480",
+    "level": 4,
+    "simplified": "轮子",
+    "pinyin": "lún zi",
+    "definition": "wheel; (derog.) Falun Gong practitioner"
+  },
+  {
+    "id": "hsk4_0481",
+    "level": 4,
+    "simplified": "论文",
+    "pinyin": "lùn wén",
+    "definition": "paper; treatise; thesis; to discuss a paper or thesis (old)"
+  },
+  {
+    "id": "hsk4_0482",
+    "level": 4,
+    "simplified": "落",
+    "pinyin": "là",
+    "definition": "to leave out; to be missing; to leave behind or forget to bring; to lag or fall behind"
+  },
+  {
+    "id": "hsk4_0483",
+    "level": 4,
+    "simplified": "毛巾",
+    "pinyin": "máo jīn",
+    "definition": "towel"
+  },
+  {
+    "id": "hsk4_0484",
+    "level": 4,
+    "simplified": "毛衣",
+    "pinyin": "máo yī",
+    "definition": "(wool) sweater"
+  },
+  {
+    "id": "hsk4_0485",
+    "level": 4,
+    "simplified": "帽子",
+    "pinyin": "mào zi",
+    "definition": "hat; cap; (fig.) label; bad name"
+  },
+  {
+    "id": "hsk4_0486",
+    "level": 4,
+    "simplified": "没错",
+    "pinyin": "méi cuò",
+    "definition": "that's right; sure!; rest assured!; that's good; can't go wrong"
+  },
+  {
+    "id": "hsk4_0487",
+    "level": 4,
+    "simplified": "没法儿",
+    "pinyin": "méifǎr5",
+    "definition": "Can't"
+  },
+  {
+    "id": "hsk4_0488",
+    "level": 4,
+    "simplified": "没想到",
+    "pinyin": "méi xiǎng dào",
+    "definition": "didn't expect"
+  },
+  {
+    "id": "hsk4_0489",
+    "level": 4,
+    "simplified": "美金",
+    "pinyin": "Měi jīn",
+    "definition": "US dollar; USD"
+  },
+  {
+    "id": "hsk4_0490",
+    "level": 4,
+    "simplified": "美女",
+    "pinyin": "měi nǚ",
+    "definition": "beautiful woman"
+  },
+  {
+    "id": "hsk4_0491",
+    "level": 4,
+    "simplified": "梦",
+    "pinyin": "mèng",
+    "definition": "dream; (bound form) to dream"
+  },
+  {
+    "id": "hsk4_0492",
+    "level": 4,
+    "simplified": "梦见",
+    "pinyin": "mèng jiàn",
+    "definition": "to dream about (sth or sb); to see in a dream"
+  },
+  {
+    "id": "hsk4_0493",
+    "level": 4,
+    "simplified": "梦想",
+    "pinyin": "mèng xiǎng",
+    "definition": "(fig.) to dream of; dream"
+  },
+  {
+    "id": "hsk4_0494",
+    "level": 4,
+    "simplified": "秘密",
+    "pinyin": "mì mì",
+    "definition": "secret; private; confidential; clandestine; a secret"
+  },
+  {
+    "id": "hsk4_0495",
+    "level": 4,
+    "simplified": "秘书",
+    "pinyin": "mì shū",
+    "definition": "secretary"
+  },
+  {
+    "id": "hsk4_0496",
+    "level": 4,
+    "simplified": "密",
+    "pinyin": "Mì",
+    "definition": "surname Mi; name of an ancient state"
+  },
+  {
+    "id": "hsk4_0497",
+    "level": 4,
+    "simplified": "密码",
+    "pinyin": "mì mǎ",
+    "definition": "cipher; secret code; password; PIN"
+  },
+  {
+    "id": "hsk4_0498",
+    "level": 4,
+    "simplified": "密切",
+    "pinyin": "mì qiè",
+    "definition": "close; familiar; intimate; closely (related); to foster close ties; to pay close attention"
+  },
+  {
+    "id": "hsk4_0499",
+    "level": 4,
+    "simplified": "免费",
+    "pinyin": "miǎn fèi",
+    "definition": "free (of charge)"
+  },
+  {
+    "id": "hsk4_0500",
+    "level": 4,
+    "simplified": "面临",
+    "pinyin": "miàn lín",
+    "definition": "to face sth; to be confronted with"
+  },
+  {
+    "id": "hsk4_0501",
+    "level": 4,
+    "simplified": "面试",
+    "pinyin": "miàn shì",
+    "definition": "to be interviewed (as a candidate); interview"
+  },
+  {
+    "id": "hsk4_0502",
+    "level": 4,
+    "simplified": "描述",
+    "pinyin": "miáo shù",
+    "definition": "to describe; description"
+  },
+  {
+    "id": "hsk4_0503",
+    "level": 4,
+    "simplified": "描写",
+    "pinyin": "miáo xiě",
+    "definition": "to describe; to depict; to portray; description"
+  },
+  {
+    "id": "hsk4_0504",
+    "level": 4,
+    "simplified": "名牌儿",
+    "pinyin": "míngpáir5",
+    "definition": "Famous brand"
+  },
+  {
+    "id": "hsk4_0505",
+    "level": 4,
+    "simplified": "名片",
+    "pinyin": "míng piàn",
+    "definition": "(business) card"
+  },
+  {
+    "id": "hsk4_0506",
+    "level": 4,
+    "simplified": "名人",
+    "pinyin": "míng rén",
+    "definition": "personage; celebrity"
+  },
+  {
+    "id": "hsk4_0507",
+    "level": 4,
+    "simplified": "摸",
+    "pinyin": "mō",
+    "definition": "to feel with the hand; to touch; to stroke; to grope; to steal; to abstract"
+  },
+  {
+    "id": "hsk4_0508",
+    "level": 4,
+    "simplified": "模特儿",
+    "pinyin": "mó tè r",
+    "definition": "(fashion) model (loanword)"
+  },
+  {
+    "id": "hsk4_0509",
+    "level": 4,
+    "simplified": "模型",
+    "pinyin": "mó xíng",
+    "definition": "model; mold; matrix; pattern"
+  },
+  {
+    "id": "hsk4_0510",
+    "level": 4,
+    "simplified": "末",
+    "pinyin": "mò",
+    "definition": "tip; end; final stage; latter part; inessential detail; powder; dust; opera role of old man"
+  },
+  {
+    "id": "hsk4_0511",
+    "level": 4,
+    "simplified": "默默",
+    "pinyin": "mò mò",
+    "definition": "in silence; not speaking"
+  },
+  {
+    "id": "hsk4_0512",
+    "level": 4,
+    "simplified": "哪怕",
+    "pinyin": "nǎ pà",
+    "definition": "even; even if; even though; no matter how"
+  },
+  {
+    "id": "hsk4_0513",
+    "level": 4,
+    "simplified": "男女",
+    "pinyin": "nán nǚ",
+    "definition": "male-female; male and female"
+  },
+  {
+    "id": "hsk4_0514",
+    "level": 4,
+    "simplified": "男士",
+    "pinyin": "nán shì",
+    "definition": "man; gentleman"
+  },
+  {
+    "id": "hsk4_0515",
+    "level": 4,
+    "simplified": "难免",
+    "pinyin": "nán miǎn",
+    "definition": "hard to avoid; difficult to escape from; will inevitably"
+  },
+  {
+    "id": "hsk4_0516",
+    "level": 4,
+    "simplified": "脑袋",
+    "pinyin": "nǎo dai",
+    "definition": "head; skull; brains; mental capability"
+  },
+  {
+    "id": "hsk4_0517",
+    "level": 4,
+    "simplified": "闹",
+    "pinyin": "nào",
+    "definition": "variant of 闹"
+  },
+  {
+    "id": "hsk4_0518",
+    "level": 4,
+    "simplified": "闹钟",
+    "pinyin": "nào zhōng",
+    "definition": "alarm clock"
+  },
+  {
+    "id": "hsk4_0519",
+    "level": 4,
+    "simplified": "内部",
+    "pinyin": "nèi bù",
+    "definition": "interior; inside (part, section); internal"
+  },
+  {
+    "id": "hsk4_0520",
+    "level": 4,
+    "simplified": "内科",
+    "pinyin": "nèi kē",
+    "definition": "internal medicine; general medicine"
+  },
+  {
+    "id": "hsk4_0521",
+    "level": 4,
+    "simplified": "能干",
+    "pinyin": "néng gàn",
+    "definition": "capable; competent"
+  },
+  {
+    "id": "hsk4_0522",
+    "level": 4,
+    "simplified": "宁静",
+    "pinyin": "níng jìng",
+    "definition": "tranquil; tranquility; serenity"
+  },
+  {
+    "id": "hsk4_0523",
+    "level": 4,
+    "simplified": "浓",
+    "pinyin": "nóng",
+    "definition": "concentrated; dense; strong (smell etc)"
+  },
+  {
+    "id": "hsk4_0524",
+    "level": 4,
+    "simplified": "女士",
+    "pinyin": "nǚ shì",
+    "definition": "lady; madam; Miss; Ms"
+  },
+  {
+    "id": "hsk4_0525",
+    "level": 4,
+    "simplified": "暖气",
+    "pinyin": "nuǎn qì",
+    "definition": "central heating; heater; warm air"
+  },
+  {
+    "id": "hsk4_0526",
+    "level": 4,
+    "simplified": "拍照",
+    "pinyin": "pāi zhào",
+    "definition": "to take a picture"
+  },
+  {
+    "id": "hsk4_0527",
+    "level": 4,
+    "simplified": "排列",
+    "pinyin": "pái liè",
+    "definition": "to arrange in order; (math.) permutation"
+  },
+  {
+    "id": "hsk4_0528",
+    "level": 4,
+    "simplified": "牌",
+    "pinyin": "pái",
+    "definition": "mahjong tile; playing card; game pieces; signboard; plate; tablet; medal"
+  },
+  {
+    "id": "hsk4_0529",
+    "level": 4,
+    "simplified": "盘",
+    "pinyin": "pán",
+    "definition": "plate; dish; tray; board; hard drive (computing); to build; to coil; to check; to examine; to transfer (property); to make over; classifier for food: dish, helping; to coil; classifier for coils of wire; classifier for games of chess"
+  },
+  {
+    "id": "hsk4_0530",
+    "level": 4,
+    "simplified": "盘子",
+    "pinyin": "pán zi",
+    "definition": "tray; plate; dish"
+  },
+  {
+    "id": "hsk4_0531",
+    "level": 4,
+    "simplified": "胖子",
+    "pinyin": "pàng zi",
+    "definition": "fat person; fatty"
+  },
+  {
+    "id": "hsk4_0532",
+    "level": 4,
+    "simplified": "培训",
+    "pinyin": "péi xùn",
+    "definition": "to cultivate; to train; to groom; training"
+  },
+  {
+    "id": "hsk4_0533",
+    "level": 4,
+    "simplified": "培训班",
+    "pinyin": "péi xùn bān",
+    "definition": "training class"
+  },
+  {
+    "id": "hsk4_0534",
+    "level": 4,
+    "simplified": "培养",
+    "pinyin": "péi yǎng",
+    "definition": "to cultivate; to breed; to foster; to nurture; to educate; to groom (for a position); education; fostering; culture (biology)"
+  },
+  {
+    "id": "hsk4_0535",
+    "level": 4,
+    "simplified": "培育",
+    "pinyin": "péi yù",
+    "definition": "to train; to breed"
+  },
+  {
+    "id": "hsk4_0536",
+    "level": 4,
+    "simplified": "批",
+    "pinyin": "pī",
+    "definition": "to ascertain; to act on; to criticize; to pass on; classifier for batches, lots, military flights; tier (for the ranking of universities and colleges)"
+  },
+  {
+    "id": "hsk4_0537",
+    "level": 4,
+    "simplified": "片面",
+    "pinyin": "piàn miàn",
+    "definition": "unilateral; one-sided"
+  },
+  {
+    "id": "hsk4_0538",
+    "level": 4,
+    "simplified": "品质",
+    "pinyin": "pǐn zhì",
+    "definition": "character; intrinsic quality (of a person); quality (of a product or service, or as in \"quality of life\", \"air quality\" etc)"
+  },
+  {
+    "id": "hsk4_0539",
+    "level": 4,
+    "simplified": "平方",
+    "pinyin": "píng fāng",
+    "definition": "square (as in square foot, square mile, square root)"
+  },
+  {
+    "id": "hsk4_0540",
+    "level": 4,
+    "simplified": "平静",
+    "pinyin": "píng jìng",
+    "definition": "tranquil; undisturbed; serene"
+  },
+  {
+    "id": "hsk4_0541",
+    "level": 4,
+    "simplified": "平均",
+    "pinyin": "píng jūn",
+    "definition": "average; on average; evenly; in equal proportions"
+  },
+  {
+    "id": "hsk4_0542",
+    "level": 4,
+    "simplified": "平稳",
+    "pinyin": "píng wěn",
+    "definition": "smooth; steady"
+  },
+  {
+    "id": "hsk4_0543",
+    "level": 4,
+    "simplified": "迫切",
+    "pinyin": "pò qiè",
+    "definition": "urgent; pressing"
+  },
+  {
+    "id": "hsk4_0544",
+    "level": 4,
+    "simplified": "破产",
+    "pinyin": "pò chǎn",
+    "definition": "to go bankrupt; to become impoverished; bankruptcy"
+  },
+  {
+    "id": "hsk4_0545",
+    "level": 4,
+    "simplified": "妻子",
+    "pinyin": "qī zǐ",
+    "definition": "wife and children"
+  },
+  {
+    "id": "hsk4_0546",
+    "level": 4,
+    "simplified": "期待",
+    "pinyin": "qī dài",
+    "definition": "to look forward to; to await; expectation"
+  },
+  {
+    "id": "hsk4_0547",
+    "level": 4,
+    "simplified": "期间",
+    "pinyin": "qī jiān",
+    "definition": "period of time; time; time period; period"
+  },
+  {
+    "id": "hsk4_0548",
+    "level": 4,
+    "simplified": "期末",
+    "pinyin": "qī mò",
+    "definition": "end of term"
+  },
+  {
+    "id": "hsk4_0549",
+    "level": 4,
+    "simplified": "期限",
+    "pinyin": "qī xiàn",
+    "definition": "time limit; deadline; allotted time"
+  },
+  {
+    "id": "hsk4_0550",
+    "level": 4,
+    "simplified": "期中",
+    "pinyin": "qī zhōng",
+    "definition": "interim; midterm"
+  },
+  {
+    "id": "hsk4_0551",
+    "level": 4,
+    "simplified": "其余",
+    "pinyin": "qí yú",
+    "definition": "the rest; the others; remaining; remainder; apart from them"
+  },
+  {
+    "id": "hsk4_0552",
+    "level": 4,
+    "simplified": "企业",
+    "pinyin": "qǐ yè",
+    "definition": "company; firm; enterprise; corporation"
+  },
+  {
+    "id": "hsk4_0553",
+    "level": 4,
+    "simplified": "气球",
+    "pinyin": "qì qiú",
+    "definition": "balloon"
+  },
+  {
+    "id": "hsk4_0554",
+    "level": 4,
+    "simplified": "汽水",
+    "pinyin": "qì shuǐ",
+    "definition": "soda pop; carbonated soft drink"
+  },
+  {
+    "id": "hsk4_0555",
+    "level": 4,
+    "simplified": "汽油",
+    "pinyin": "qì yóu",
+    "definition": "gasoline"
+  },
+  {
+    "id": "hsk4_0556",
+    "level": 4,
+    "simplified": "器官",
+    "pinyin": "qì guān",
+    "definition": "(physiology) organ; apparatus"
+  },
+  {
+    "id": "hsk4_0557",
+    "level": 4,
+    "simplified": "前头",
+    "pinyin": "qián tou",
+    "definition": "in front; at the head; ahead; above"
+  },
+  {
+    "id": "hsk4_0558",
+    "level": 4,
+    "simplified": "前途",
+    "pinyin": "qián tú",
+    "definition": "prospects; future outlook; journey"
+  },
+  {
+    "id": "hsk4_0559",
+    "level": 4,
+    "simplified": "浅",
+    "pinyin": "jiān",
+    "definition": "sound of moving water"
+  },
+  {
+    "id": "hsk4_0560",
+    "level": 4,
+    "simplified": "巧克力",
+    "pinyin": "qiǎo kè lì",
+    "definition": "chocolate (loanword)"
+  },
+  {
+    "id": "hsk4_0561",
+    "level": 4,
+    "simplified": "切",
+    "pinyin": "qiē",
+    "definition": "to cut; to slice; to carve; (math) tangential"
+  },
+  {
+    "id": "hsk4_0562",
+    "level": 4,
+    "simplified": "亲爱",
+    "pinyin": "qīn ài",
+    "definition": "dear; beloved; darling"
+  },
+  {
+    "id": "hsk4_0563",
+    "level": 4,
+    "simplified": "亲密",
+    "pinyin": "qīn mì",
+    "definition": "intimate; close"
+  },
+  {
+    "id": "hsk4_0564",
+    "level": 4,
+    "simplified": "青春",
+    "pinyin": "qīng chūn",
+    "definition": "youth; youthfulness"
+  },
+  {
+    "id": "hsk4_0565",
+    "level": 4,
+    "simplified": "轻松",
+    "pinyin": "qīng sōng",
+    "definition": "light; gentle; relaxed; effortless; uncomplicated; to relax; to take things less seriously"
+  },
+  {
+    "id": "hsk4_0566",
+    "level": 4,
+    "simplified": "轻易",
+    "pinyin": "qīng yì",
+    "definition": "easily; lightly; rashly"
+  },
+  {
+    "id": "hsk4_0567",
+    "level": 4,
+    "simplified": "清醒",
+    "pinyin": "qīng xǐng",
+    "definition": "clear-headed; sober; awake"
+  },
+  {
+    "id": "hsk4_0568",
+    "level": 4,
+    "simplified": "情景",
+    "pinyin": "qíng jǐng",
+    "definition": "scene; spectacle; circumstances; situation"
+  },
+  {
+    "id": "hsk4_0569",
+    "level": 4,
+    "simplified": "穷",
+    "pinyin": "qióng",
+    "definition": "poor; destitute; to use up; to exhaust; thoroughly; extremely; (coll.) persistently and pointlessly"
+  },
+  {
+    "id": "hsk4_0570",
+    "level": 4,
+    "simplified": "穷人",
+    "pinyin": "qióng rén",
+    "definition": "poor people; the poor"
+  },
+  {
+    "id": "hsk4_0571",
+    "level": 4,
+    "simplified": "秋季",
+    "pinyin": "qiū jì",
+    "definition": "autumn; fall"
+  },
+  {
+    "id": "hsk4_0572",
+    "level": 4,
+    "simplified": "趋势",
+    "pinyin": "qū shì",
+    "definition": "trend; tendency"
+  },
+  {
+    "id": "hsk4_0573",
+    "level": 4,
+    "simplified": "圈",
+    "pinyin": "juān",
+    "definition": "to confine; to lock up; to pen in"
+  },
+  {
+    "id": "hsk4_0574",
+    "level": 4,
+    "simplified": "权利",
+    "pinyin": "quán lì",
+    "definition": "right (i.e. an entitlement to sth); (classical) power and wealth"
+  },
+  {
+    "id": "hsk4_0575",
+    "level": 4,
+    "simplified": "却",
+    "pinyin": "què",
+    "definition": "old variant of 却"
+  },
+  {
+    "id": "hsk4_0576",
+    "level": 4,
+    "simplified": "确认",
+    "pinyin": "què rèn",
+    "definition": "to confirm; to verify; confirmation"
+  },
+  {
+    "id": "hsk4_0577",
+    "level": 4,
+    "simplified": "然而",
+    "pinyin": "rán ér",
+    "definition": "however; yet; but"
+  },
+  {
+    "id": "hsk4_0578",
+    "level": 4,
+    "simplified": "燃料",
+    "pinyin": "rán liào",
+    "definition": "fuel"
+  },
+  {
+    "id": "hsk4_0579",
+    "level": 4,
+    "simplified": "燃烧",
+    "pinyin": "rán shāo",
+    "definition": "to ignite; to combust; to burn; combustion; flaming"
+  },
+  {
+    "id": "hsk4_0580",
+    "level": 4,
+    "simplified": "热闹",
+    "pinyin": "rè nao",
+    "definition": "bustling with noise and excitement; lively"
+  },
+  {
+    "id": "hsk4_0581",
+    "level": 4,
+    "simplified": "热心",
+    "pinyin": "rè xīn",
+    "definition": "enthusiastic; ardent; zealous"
+  },
+  {
+    "id": "hsk4_0582",
+    "level": 4,
+    "simplified": "人家",
+    "pinyin": "rén jiā",
+    "definition": "household; dwelling; family; sb else's house; household business; house of woman's husband-to-be"
+  },
+  {
+    "id": "hsk4_0583",
+    "level": 4,
+    "simplified": "日记",
+    "pinyin": "rì jì",
+    "definition": "diary"
+  },
+  {
+    "id": "hsk4_0584",
+    "level": 4,
+    "simplified": "日历",
+    "pinyin": "rì lì",
+    "definition": "calendar"
+  },
+  {
+    "id": "hsk4_0585",
+    "level": 4,
+    "simplified": "如今",
+    "pinyin": "rú jīn",
+    "definition": "nowadays; now"
+  },
+  {
+    "id": "hsk4_0586",
+    "level": 4,
+    "simplified": "弱",
+    "pinyin": "ruò",
+    "definition": "weak; feeble; young; inferior; not as good as; (following a decimal or fraction) slightly less than"
+  },
+  {
+    "id": "hsk4_0587",
+    "level": 4,
+    "simplified": "伞",
+    "pinyin": "sǎn",
+    "definition": "umbrella; parasol"
+  },
+  {
+    "id": "hsk4_0588",
+    "level": 4,
+    "simplified": "散",
+    "pinyin": "sàn",
+    "definition": "variant of 散"
+  },
+  {
+    "id": "hsk4_0589",
+    "level": 4,
+    "simplified": "扫",
+    "pinyin": "sǎo",
+    "definition": "to sweep"
+  },
+  {
+    "id": "hsk4_0590",
+    "level": 4,
+    "simplified": "色",
+    "pinyin": "sè",
+    "definition": "color; look; appearance; sex"
+  },
+  {
+    "id": "hsk4_0591",
+    "level": 4,
+    "simplified": "色彩",
+    "pinyin": "sè cǎi",
+    "definition": "tint; coloring; coloration; (fig.) flavor; character"
+  },
+  {
+    "id": "hsk4_0592",
+    "level": 4,
+    "simplified": "晒",
+    "pinyin": "shài",
+    "definition": "variant of 晒"
+  },
+  {
+    "id": "hsk4_0594",
+    "level": 4,
+    "simplified": "闪电",
+    "pinyin": "shǎn diàn",
+    "definition": "lightning"
+  },
+  {
+    "id": "hsk4_0595",
+    "level": 4,
+    "simplified": "善良",
+    "pinyin": "shàn liáng",
+    "definition": "good and honest; kindhearted"
+  },
+  {
+    "id": "hsk4_0596",
+    "level": 4,
+    "simplified": "善于",
+    "pinyin": "shàn yú",
+    "definition": "to be good at; to be adept at"
+  },
+  {
+    "id": "hsk4_0597",
+    "level": 4,
+    "simplified": "伤害",
+    "pinyin": "shāng hài",
+    "definition": "to injure; to harm"
+  },
+  {
+    "id": "hsk4_0598",
+    "level": 4,
+    "simplified": "商务",
+    "pinyin": "shāng wù",
+    "definition": "commercial affairs; commercial; commerce; business"
+  },
+  {
+    "id": "hsk4_0599",
+    "level": 4,
+    "simplified": "赏",
+    "pinyin": "shǎng",
+    "definition": "to bestow (a reward); to give (to an inferior); to hand down; a reward (bestowed by a superior); to appreciate (beauty)"
+  },
+  {
+    "id": "hsk4_0600",
+    "level": 4,
+    "simplified": "上个月",
+    "pinyin": "shàng gè yuè",
+    "definition": "last month"
+  },
+  {
+    "id": "hsk4_0601",
+    "level": 4,
+    "simplified": "上楼",
+    "pinyin": "shàng lóu",
+    "definition": "to go upstairs"
+  },
+  {
+    "id": "hsk4_0602",
+    "level": 4,
+    "simplified": "上门",
+    "pinyin": "shàng mén",
+    "definition": "to drop in; to visit; to lock a door; (of a shop) to close; to go and live with one's wife's family, in effect becoming a member of her family"
+  },
+  {
+    "id": "hsk4_0603",
+    "level": 4,
+    "simplified": "烧",
+    "pinyin": "shāo",
+    "definition": "to burn; to cook; to stew; to bake; to roast; to heat; to boil (tea, water etc); fever; to run a temperature; (coll.) to let things go to one's head"
+  },
+  {
+    "id": "hsk4_0604",
+    "level": 4,
+    "simplified": "设施",
+    "pinyin": "shè shī",
+    "definition": "facilities; installation"
+  },
+  {
+    "id": "hsk4_0605",
+    "level": 4,
+    "simplified": "设置",
+    "pinyin": "shè zhì",
+    "definition": "to set up; to install"
+  },
+  {
+    "id": "hsk4_0606",
+    "level": 4,
+    "simplified": "申请",
+    "pinyin": "shēn qǐng",
+    "definition": "to apply for sth; application form"
+  },
+  {
+    "id": "hsk4_0607",
+    "level": 4,
+    "simplified": "身材",
+    "pinyin": "shēn cái",
+    "definition": "stature; build (height and weight); figure"
+  },
+  {
+    "id": "hsk4_0608",
+    "level": 4,
+    "simplified": "身份",
+    "pinyin": "shēn fèn",
+    "definition": "identity; aspect of one's identity (i.e. sth that one is – mayor, father, permanent resident etc); role; capacity (as in \"in his capacity as a ...\" 以…份); status (social, legal etc); position; rank"
+  },
+  {
+    "id": "hsk4_0609",
+    "level": 4,
+    "simplified": "身高",
+    "pinyin": "shēn gāo",
+    "definition": "(a person's) height"
+  },
+  {
+    "id": "hsk4_0610",
+    "level": 4,
+    "simplified": "深厚",
+    "pinyin": "shēn hòu",
+    "definition": "deep; profound"
+  },
+  {
+    "id": "hsk4_0611",
+    "level": 4,
+    "simplified": "甚至",
+    "pinyin": "shèn zhì",
+    "definition": "even; so much so that"
+  },
+  {
+    "id": "hsk4_0612",
+    "level": 4,
+    "simplified": "神话",
+    "pinyin": "shén huà",
+    "definition": "legend; fairy tale; myth; mythology"
+  },
+  {
+    "id": "hsk4_0613",
+    "level": 4,
+    "simplified": "神秘",
+    "pinyin": "shén mì",
+    "definition": "mysterious; mystery"
+  },
+  {
+    "id": "hsk4_0614",
+    "level": 4,
+    "simplified": "失败",
+    "pinyin": "shī bài",
+    "definition": "to be defeated; to lose; to fail (e.g. experiments); failure; defeat"
+  },
+  {
+    "id": "hsk4_0615",
+    "level": 4,
+    "simplified": "失望",
+    "pinyin": "shī wàng",
+    "definition": "disappointed; to lose hope; to despair"
+  },
+  {
+    "id": "hsk4_0616",
+    "level": 4,
+    "simplified": "失业",
+    "pinyin": "shī yè",
+    "definition": "unemployment; to lose one's job"
+  },
+  {
+    "id": "hsk4_0617",
+    "level": 4,
+    "simplified": "诗",
+    "pinyin": "Shī",
+    "definition": "abbr. for Shijing 诗经, the Book of Songs"
+  },
+  {
+    "id": "hsk4_0618",
+    "level": 4,
+    "simplified": "诗人",
+    "pinyin": "shī rén",
+    "definition": "bard; poet"
+  },
+  {
+    "id": "hsk4_0619",
+    "level": 4,
+    "simplified": "湿",
+    "pinyin": "shī",
+    "definition": "variant of 湿"
+  },
+  {
+    "id": "hsk4_0620",
+    "level": 4,
+    "simplified": "实施",
+    "pinyin": "shí shī",
+    "definition": "to implement; to carry out"
+  },
+  {
+    "id": "hsk4_0621",
+    "level": 4,
+    "simplified": "实用",
+    "pinyin": "shí yòng",
+    "definition": "practical; functional; pragmatic; applied (science)"
+  },
+  {
+    "id": "hsk4_0622",
+    "level": 4,
+    "simplified": "食堂",
+    "pinyin": "shí táng",
+    "definition": "dining hall; cafeteria"
+  },
+  {
+    "id": "hsk4_0623",
+    "level": 4,
+    "simplified": "使劲",
+    "pinyin": "shǐ jìn",
+    "definition": "to exert all one's strength"
+  },
+  {
+    "id": "hsk4_0624",
+    "level": 4,
+    "simplified": "士兵",
+    "pinyin": "shì bīng",
+    "definition": "soldier"
+  },
+  {
+    "id": "hsk4_0625",
+    "level": 4,
+    "simplified": "市区",
+    "pinyin": "shì qū",
+    "definition": "urban district; downtown; city center"
+  },
+  {
+    "id": "hsk4_0626",
+    "level": 4,
+    "simplified": "似的",
+    "pinyin": "shì de",
+    "definition": "seems as if; rather like; Taiwan pr. [sì de]"
+  },
+  {
+    "id": "hsk4_0627",
+    "level": 4,
+    "simplified": "似乎",
+    "pinyin": "sì hū",
+    "definition": "it seems; seemingly; as if"
+  },
+  {
+    "id": "hsk4_0628",
+    "level": 4,
+    "simplified": "事物",
+    "pinyin": "shì wù",
+    "definition": "thing; object"
+  },
+  {
+    "id": "hsk4_0629",
+    "level": 4,
+    "simplified": "事先",
+    "pinyin": "shì xiān",
+    "definition": "in advance; before the event; beforehand; prior"
+  },
+  {
+    "id": "hsk4_0630",
+    "level": 4,
+    "simplified": "试卷",
+    "pinyin": "shì juàn",
+    "definition": "examination paper; test paper"
+  },
+  {
+    "id": "hsk4_0631",
+    "level": 4,
+    "simplified": "是否",
+    "pinyin": "shì fǒu",
+    "definition": "whether (or not); if; is or isn't"
+  },
+  {
+    "id": "hsk4_0632",
+    "level": 4,
+    "simplified": "收回",
+    "pinyin": "shōu huí",
+    "definition": "to regain; to retake; to take back; to withdraw; to revoke"
+  },
+  {
+    "id": "hsk4_0633",
+    "level": 4,
+    "simplified": "收获",
+    "pinyin": "shōu huò",
+    "definition": "variant of 收获"
+  },
+  {
+    "id": "hsk4_0634",
+    "level": 4,
+    "simplified": "收益",
+    "pinyin": "shōu yì",
+    "definition": "earnings; profit"
+  },
+  {
+    "id": "hsk4_0635",
+    "level": 4,
+    "simplified": "手工",
+    "pinyin": "shǒu gōng",
+    "definition": "handwork; manual"
+  },
+  {
+    "id": "hsk4_0636",
+    "level": 4,
+    "simplified": "手里",
+    "pinyin": "shǒu lǐ",
+    "definition": "in hand; (a situation is) in sb's hands"
+  },
+  {
+    "id": "hsk4_0637",
+    "level": 4,
+    "simplified": "手术",
+    "pinyin": "shǒu shù",
+    "definition": "(surgical) operation; surgery"
+  },
+  {
+    "id": "hsk4_0638",
+    "level": 4,
+    "simplified": "手套",
+    "pinyin": "shǒu tào",
+    "definition": "glove; mitten"
+  },
+  {
+    "id": "hsk4_0639",
+    "level": 4,
+    "simplified": "守",
+    "pinyin": "shǒu",
+    "definition": "to guard; to defend; to keep watch; to abide by the law; to observe (rules or ritual); nearby; adjoining"
+  },
+  {
+    "id": "hsk4_0640",
+    "level": 4,
+    "simplified": "首",
+    "pinyin": "shǒu",
+    "definition": "head; chief; first (occasion, thing etc); classifier for poems, songs etc"
+  },
+  {
+    "id": "hsk4_0641",
+    "level": 4,
+    "simplified": "受不了",
+    "pinyin": "shòu bù liǎo",
+    "definition": "unbearable; unable to endure; can't stand"
+  },
+  {
+    "id": "hsk4_0642",
+    "level": 4,
+    "simplified": "售货员",
+    "pinyin": "shòu huò yuán",
+    "definition": "salesperson"
+  },
+  {
+    "id": "hsk4_0643",
+    "level": 4,
+    "simplified": "叔叔",
+    "pinyin": "shū shu",
+    "definition": "father's younger brother; uncle; Taiwan pr. [shú shu]"
+  },
+  {
+    "id": "hsk4_0644",
+    "level": 4,
+    "simplified": "舒适",
+    "pinyin": "shū shì",
+    "definition": "cozy; snug"
+  },
+  {
+    "id": "hsk4_0645",
+    "level": 4,
+    "simplified": "熟练",
+    "pinyin": "shú liàn",
+    "definition": "practiced; proficient; skilled; skillful"
+  },
+  {
+    "id": "hsk4_0646",
+    "level": 4,
+    "simplified": "暑假",
+    "pinyin": "shǔ jià",
+    "definition": "summer vacation"
+  },
+  {
+    "id": "hsk4_0647",
+    "level": 4,
+    "simplified": "树林",
+    "pinyin": "Shù lín",
+    "definition": "Shulin city in New Taipei City 市, Taiwan"
+  },
+  {
+    "id": "hsk4_0648",
+    "level": 4,
+    "simplified": "树叶",
+    "pinyin": "shù yè",
+    "definition": "tree leaves"
+  },
+  {
+    "id": "hsk4_0649",
+    "level": 4,
+    "simplified": "数据",
+    "pinyin": "shù jù",
+    "definition": "data"
+  },
+  {
+    "id": "hsk4_0650",
+    "level": 4,
+    "simplified": "数码",
+    "pinyin": "shù mǎ",
+    "definition": "number; numerals; figures; digital; amount; numerical code"
+  },
+  {
+    "id": "hsk4_0651",
+    "level": 4,
+    "simplified": "刷",
+    "pinyin": "shuā",
+    "definition": "to brush; to paint; to daub; to paste up; to skip class (of students); to fire from a job"
+  },
+  {
+    "id": "hsk4_0652",
+    "level": 4,
+    "simplified": "刷牙",
+    "pinyin": "shuā yá",
+    "definition": "to brush one's teeth"
+  },
+  {
+    "id": "hsk4_0653",
+    "level": 4,
+    "simplified": "刷子",
+    "pinyin": "shuā zi",
+    "definition": "brush; scrub"
+  },
+  {
+    "id": "hsk4_0655",
+    "level": 4,
+    "simplified": "帅哥",
+    "pinyin": "shuài gē",
+    "definition": "handsome guy; lady-killer; handsome (form of address)"
+  },
+  {
+    "id": "hsk4_0656",
+    "level": 4,
+    "simplified": "睡着",
+    "pinyin": "shuì zháo",
+    "definition": "to fall asleep"
+  },
+  {
+    "id": "hsk4_0657",
+    "level": 4,
+    "simplified": "顺序",
+    "pinyin": "shùn xù",
+    "definition": "sequence; order"
+  },
+  {
+    "id": "hsk4_0658",
+    "level": 4,
+    "simplified": "说不定",
+    "pinyin": "shuō bu dìng",
+    "definition": "can't say for sure; maybe"
+  },
+  {
+    "id": "hsk4_0659",
+    "level": 4,
+    "simplified": "说服",
+    "pinyin": "shuō fú",
+    "definition": "to persuade; to convince; to talk sb over; Taiwan pr. [shuì fú]"
+  },
+  {
+    "id": "hsk4_0660",
+    "level": 4,
+    "simplified": "思考",
+    "pinyin": "sī kǎo",
+    "definition": "to reflect on; to ponder over"
+  },
+  {
+    "id": "hsk4_0662",
+    "level": 4,
+    "simplified": "松树",
+    "pinyin": "sōng shù",
+    "definition": "pine; pine tree"
+  },
+  {
+    "id": "hsk4_0663",
+    "level": 4,
+    "simplified": "塑料",
+    "pinyin": "sù liào",
+    "definition": "plastics"
+  },
+  {
+    "id": "hsk4_0664",
+    "level": 4,
+    "simplified": "塑料袋",
+    "pinyin": "sù liào dài",
+    "definition": "plastic bag"
+  },
+  {
+    "id": "hsk4_0665",
+    "level": 4,
+    "simplified": "酸",
+    "pinyin": "suān",
+    "definition": "sour; tart; sick at heart; grieved; sore; aching; pedantic; impractical; to make sarcastic remarks about sb; an acid"
+  },
+  {
+    "id": "hsk4_0666",
+    "level": 4,
+    "simplified": "酸奶",
+    "pinyin": "suān nǎi",
+    "definition": "yogurt"
+  },
+  {
+    "id": "hsk4_0667",
+    "level": 4,
+    "simplified": "随手",
+    "pinyin": "suí shǒu",
+    "definition": "conveniently; without extra trouble; while doing it; in passing"
+  },
+  {
+    "id": "hsk4_0668",
+    "level": 4,
+    "simplified": "孙女",
+    "pinyin": "sūn nǚ",
+    "definition": "son's daughter; granddaughter"
+  },
+  {
+    "id": "hsk4_0669",
+    "level": 4,
+    "simplified": "孙子",
+    "pinyin": "Sūn zǐ",
+    "definition": "Sun Tzu, also known as Sun Wu 孙武 (c. 500 BC, dates of birth and death uncertain), general, strategist and philosopher of the Spring and Autumn Period (700-475 BC), believed to be the author of the “Art of War” 孙子兵法, one of the Seven Military Classics of ancient China 武经七书"
+  },
+  {
+    "id": "hsk4_0670",
+    "level": 4,
+    "simplified": "缩短",
+    "pinyin": "suō duǎn",
+    "definition": "to curtail; to cut down"
+  },
+  {
+    "id": "hsk4_0671",
+    "level": 4,
+    "simplified": "缩小",
+    "pinyin": "suō xiǎo",
+    "definition": "to reduce; to decrease; to shrink"
+  },
+  {
+    "id": "hsk4_0672",
+    "level": 4,
+    "simplified": "台阶",
+    "pinyin": "tái jiē",
+    "definition": "steps; flight of steps; step (over obstacle); fig. way out of an embarrassing situation; bench (geology)"
+  },
+  {
+    "id": "hsk4_0673",
+    "level": 4,
+    "simplified": "台上",
+    "pinyin": "tái shàng",
+    "definition": "on stage"
+  },
+  {
+    "id": "hsk4_0674",
+    "level": 4,
+    "simplified": "躺",
+    "pinyin": "tǎng",
+    "definition": "to recline; to lie down"
+  },
+  {
+    "id": "hsk4_0675",
+    "level": 4,
+    "simplified": "套餐",
+    "pinyin": "tào cān",
+    "definition": "set meal; (fig.) product or service package (e.g. for a cell phone subscription)"
+  },
+  {
+    "id": "hsk4_0676",
+    "level": 4,
+    "simplified": "特价",
+    "pinyin": "tè jià",
+    "definition": "special price"
+  },
+  {
+    "id": "hsk4_0677",
+    "level": 4,
+    "simplified": "特殊",
+    "pinyin": "tè shū",
+    "definition": "special; particular; unusual; extraordinary"
+  },
+  {
+    "id": "hsk4_0678",
+    "level": 4,
+    "simplified": "特征",
+    "pinyin": "tè zhēng",
+    "definition": "characteristic; diagnostic property; distinctive feature; trait"
+  },
+  {
+    "id": "hsk4_0679",
+    "level": 4,
+    "simplified": "提供",
+    "pinyin": "tí gōng",
+    "definition": "to offer; to supply; to provide; to furnish"
+  },
+  {
+    "id": "hsk4_0680",
+    "level": 4,
+    "simplified": "提醒",
+    "pinyin": "tí xǐng",
+    "definition": "to remind; to call attention to; to warn of"
+  },
+  {
+    "id": "hsk4_0681",
+    "level": 4,
+    "simplified": "体操",
+    "pinyin": "tǐ cāo",
+    "definition": "gymnastic; gymnastics"
+  },
+  {
+    "id": "hsk4_0682",
+    "level": 4,
+    "simplified": "体检",
+    "pinyin": "tǐ jiǎn",
+    "definition": "abbr. for 体格检查"
+  },
+  {
+    "id": "hsk4_0683",
+    "level": 4,
+    "simplified": "体重",
+    "pinyin": "tǐ zhòng",
+    "definition": "body weight"
+  },
+  {
+    "id": "hsk4_0684",
+    "level": 4,
+    "simplified": "替",
+    "pinyin": "tì",
+    "definition": "to substitute for; to take the place of; to replace; for; on behalf of; to stand in for"
+  },
+  {
+    "id": "hsk4_0685",
+    "level": 4,
+    "simplified": "替代",
+    "pinyin": "tì dài",
+    "definition": "to substitute for; to replace; to supersede"
+  },
+  {
+    "id": "hsk4_0686",
+    "level": 4,
+    "simplified": "天真",
+    "pinyin": "tiān zhēn",
+    "definition": "naive; innocent; artless"
+  },
+  {
+    "id": "hsk4_0687",
+    "level": 4,
+    "simplified": "填",
+    "pinyin": "tián",
+    "definition": "to fill or stuff; (of a form etc) to fill in"
+  },
+  {
+    "id": "hsk4_0688",
+    "level": 4,
+    "simplified": "填空",
+    "pinyin": "tián kòng",
+    "definition": "to fill a job vacancy; to fill in a blank (e.g. on questionnaire or exam paper)"
+  },
+  {
+    "id": "hsk4_0689",
+    "level": 4,
+    "simplified": "挑",
+    "pinyin": "tiāo",
+    "definition": "to carry on a shoulder pole; to choose; to pick; to nitpick"
+  },
+  {
+    "id": "hsk4_0690",
+    "level": 4,
+    "simplified": "挑选",
+    "pinyin": "tiāo xuǎn",
+    "definition": "to choose; to select"
+  },
+  {
+    "id": "hsk4_0691",
+    "level": 4,
+    "simplified": "挑战",
+    "pinyin": "tiǎo zhàn",
+    "definition": "to challenge; challenge"
+  },
+  {
+    "id": "hsk4_0692",
+    "level": 4,
+    "simplified": "贴",
+    "pinyin": "tiē",
+    "definition": "to stick; to paste; to post (e.g. on a blog); to keep close to; to fit snugly; to subsidize; allowance (e.g. money for food or housing); sticker; classifier for sticking plaster: strip"
+  },
+  {
+    "id": "hsk4_0693",
+    "level": 4,
+    "simplified": "停下",
+    "pinyin": "tíng xià",
+    "definition": "to stop"
+  },
+  {
+    "id": "hsk4_0694",
+    "level": 4,
+    "simplified": "通知书",
+    "pinyin": "tōng zhī shū",
+    "definition": "written notice"
+  },
+  {
+    "id": "hsk4_0695",
+    "level": 4,
+    "simplified": "同情",
+    "pinyin": "tóng qíng",
+    "definition": "to sympathize with; sympathy"
+  },
+  {
+    "id": "hsk4_0696",
+    "level": 4,
+    "simplified": "童话",
+    "pinyin": "tóng huà",
+    "definition": "children's fairy tales"
+  },
+  {
+    "id": "hsk4_0697",
+    "level": 4,
+    "simplified": "童年",
+    "pinyin": "tóng nián",
+    "definition": "childhood"
+  },
+  {
+    "id": "hsk4_0698",
+    "level": 4,
+    "simplified": "统计",
+    "pinyin": "tǒng jì",
+    "definition": "statistics; to count; to add up"
+  },
+  {
+    "id": "hsk4_0699",
+    "level": 4,
+    "simplified": "统一",
+    "pinyin": "tǒng yī",
+    "definition": "to unify; to integrate; unified; integrated"
+  },
+  {
+    "id": "hsk4_0700",
+    "level": 4,
+    "simplified": "痛快",
+    "pinyin": "tòng kuài",
+    "definition": "delighted; to one's heart's content; straightforward; also pr. [tòng kuai]"
+  },
+  {
+    "id": "hsk4_0701",
+    "level": 4,
+    "simplified": "投",
+    "pinyin": "tóu",
+    "definition": "to cast; to send; to throw oneself (into the river etc); to seek refuge; to place oneself into the hands of"
+  },
+  {
+    "id": "hsk4_0702",
+    "level": 4,
+    "simplified": "投入",
+    "pinyin": "tóu rù",
+    "definition": "to throw into; to put into; to throw oneself into; to participate in; to invest in; absorbed; engrossed"
+  },
+  {
+    "id": "hsk4_0703",
+    "level": 4,
+    "simplified": "投诉",
+    "pinyin": "tóu sù",
+    "definition": "complaint; to complain; to register a complaint (esp. as a customer)"
+  },
+  {
+    "id": "hsk4_0704",
+    "level": 4,
+    "simplified": "投资",
+    "pinyin": "tóu zī",
+    "definition": "investment; to invest"
+  },
+  {
+    "id": "hsk4_0705",
+    "level": 4,
+    "simplified": "透",
+    "pinyin": "tòu",
+    "definition": "(bound form) to penetrate; to seep through; to tell secretly; to leak; thoroughly; through and through; to appear; to show"
+  },
+  {
+    "id": "hsk4_0706",
+    "level": 4,
+    "simplified": "透明",
+    "pinyin": "tòu míng",
+    "definition": "transparent; (fig.) transparent; open to scrutiny"
+  },
+  {
+    "id": "hsk4_0707",
+    "level": 4,
+    "simplified": "图案",
+    "pinyin": "tú àn",
+    "definition": "design; pattern"
+  },
+  {
+    "id": "hsk4_0708",
+    "level": 4,
+    "simplified": "途中",
+    "pinyin": "tú zhōng",
+    "definition": "en route"
+  },
+  {
+    "id": "hsk4_0709",
+    "level": 4,
+    "simplified": "土地",
+    "pinyin": "tǔ dì",
+    "definition": "land; soil; territory"
+  },
+  {
+    "id": "hsk4_0710",
+    "level": 4,
+    "simplified": "推迟",
+    "pinyin": "tuī chí",
+    "definition": "to postpone; to put off; to defer"
+  },
+  {
+    "id": "hsk4_0711",
+    "level": 4,
+    "simplified": "推销",
+    "pinyin": "tuī xiāo",
+    "definition": "to market; to sell"
+  },
+  {
+    "id": "hsk4_0712",
+    "level": 4,
+    "simplified": "脱",
+    "pinyin": "tuō",
+    "definition": "to shed; to take off; to escape; to get away from"
+  },
+  {
+    "id": "hsk4_0713",
+    "level": 4,
+    "simplified": "袜子",
+    "pinyin": "wà zi",
+    "definition": "socks; stockings"
+  },
+  {
+    "id": "hsk4_0714",
+    "level": 4,
+    "simplified": "外汇",
+    "pinyin": "wài huì",
+    "definition": "foreign (currency) exchange"
+  },
+  {
+    "id": "hsk4_0715",
+    "level": 4,
+    "simplified": "外交官",
+    "pinyin": "wài jiāo guān",
+    "definition": "diplomat"
+  },
+  {
+    "id": "hsk4_0716",
+    "level": 4,
+    "simplified": "外套",
+    "pinyin": "wài tào",
+    "definition": "coat; jacket"
+  },
+  {
+    "id": "hsk4_0717",
+    "level": 4,
+    "simplified": "弯",
+    "pinyin": "wān",
+    "definition": "to bend; bent; a bend; a turn (in a road etc)"
+  },
+  {
+    "id": "hsk4_0718",
+    "level": 4,
+    "simplified": "晚点",
+    "pinyin": "wǎn diǎn",
+    "definition": "(of trains etc) late; delayed; behind schedule; light dinner"
+  },
+  {
+    "id": "hsk4_0719",
+    "level": 4,
+    "simplified": "万一",
+    "pinyin": "wàn yī",
+    "definition": "just in case; if by any chance; contingency"
+  },
+  {
+    "id": "hsk4_0721",
+    "level": 4,
+    "simplified": "网络",
+    "pinyin": "Wǎng luò",
+    "definition": "Internet"
+  },
+  {
+    "id": "hsk4_0722",
+    "level": 4,
+    "simplified": "网址",
+    "pinyin": "wǎng zhǐ",
+    "definition": "website; web address; URL"
+  },
+  {
+    "id": "hsk4_0723",
+    "level": 4,
+    "simplified": "微笑",
+    "pinyin": "wēi xiào",
+    "definition": "smile; to smile"
+  },
+  {
+    "id": "hsk4_0724",
+    "level": 4,
+    "simplified": "微信",
+    "pinyin": "Wēi xìn",
+    "definition": "Weixin or WeChat (mobile text and voice messaging service developed by Tencent 腾讯)"
+  },
+  {
+    "id": "hsk4_0725",
+    "level": 4,
+    "simplified": "围巾",
+    "pinyin": "wéi jīn",
+    "definition": "scarf; shawl"
+  },
+  {
+    "id": "hsk4_0726",
+    "level": 4,
+    "simplified": "维持",
+    "pinyin": "wéi chí",
+    "definition": "to keep; to maintain; to preserve"
+  },
+  {
+    "id": "hsk4_0727",
+    "level": 4,
+    "simplified": "维护",
+    "pinyin": "wéi hù",
+    "definition": "to defend; to safeguard; to protect; to uphold; to maintain"
+  },
+  {
+    "id": "hsk4_0728",
+    "level": 4,
+    "simplified": "维修",
+    "pinyin": "wéi xiū",
+    "definition": "maintenance (of equipment); to protect and maintain"
+  },
+  {
+    "id": "hsk4_0729",
+    "level": 4,
+    "simplified": "尾巴",
+    "pinyin": "wěi ba",
+    "definition": "tail; colloquial pr. [yǐ ba]"
+  },
+  {
+    "id": "hsk4_0730",
+    "level": 4,
+    "simplified": "未必",
+    "pinyin": "wèi bì",
+    "definition": "not necessarily; maybe not"
+  },
+  {
+    "id": "hsk4_0731",
+    "level": 4,
+    "simplified": "未来",
+    "pinyin": "wèi lái",
+    "definition": "future; tomorrow; approaching; coming; pending"
+  },
+  {
+    "id": "hsk4_0732",
+    "level": 4,
+    "simplified": "位于",
+    "pinyin": "wèi yú",
+    "definition": "to be located at; to be situated at; to lie"
+  },
+  {
+    "id": "hsk4_0733",
+    "level": 4,
+    "simplified": "位置",
+    "pinyin": "wèi zhi",
+    "definition": "position; place; seat"
+  },
+  {
+    "id": "hsk4_0734",
+    "level": 4,
+    "simplified": "味儿",
+    "pinyin": "wèi r",
+    "definition": "taste"
+  },
+  {
+    "id": "hsk4_0735",
+    "level": 4,
+    "simplified": "稳",
+    "pinyin": "wěn",
+    "definition": "settled; steady; stable"
+  },
+  {
+    "id": "hsk4_0736",
+    "level": 4,
+    "simplified": "稳定",
+    "pinyin": "wěn dìng",
+    "definition": "steady; stable; stability; to stabilize; to pacify"
+  },
+  {
+    "id": "hsk4_0737",
+    "level": 4,
+    "simplified": "问候",
+    "pinyin": "wèn hòu",
+    "definition": "to give one's respects; to send a greeting; (fig.) (coll.) to make offensive reference to (somebody dear to the person to whom one is speaking)"
+  },
+  {
+    "id": "hsk4_0738",
+    "level": 4,
+    "simplified": "无",
+    "pinyin": "wú",
+    "definition": "not to have; no; none; not; to lack; un-; -less"
+  },
+  {
+    "id": "hsk4_0739",
+    "level": 4,
+    "simplified": "无法",
+    "pinyin": "wú fǎ",
+    "definition": "unable; incapable"
+  },
+  {
+    "id": "hsk4_0740",
+    "level": 4,
+    "simplified": "无聊",
+    "pinyin": "wú liáo",
+    "definition": "bored; boring; senseless"
+  },
+  {
+    "id": "hsk4_0741",
+    "level": 4,
+    "simplified": "无论",
+    "pinyin": "wú lùn",
+    "definition": "no matter what or how; regardless of whether..."
+  },
+  {
+    "id": "hsk4_0742",
+    "level": 4,
+    "simplified": "无数",
+    "pinyin": "wú shù",
+    "definition": "countless; numberless; innumerable"
+  },
+  {
+    "id": "hsk4_0743",
+    "level": 4,
+    "simplified": "无所谓",
+    "pinyin": "wú suǒ wèi",
+    "definition": "to be indifferent; not to matter; cannot be said to be"
+  },
+  {
+    "id": "hsk4_0744",
+    "level": 4,
+    "simplified": "无限",
+    "pinyin": "wú xiàn",
+    "definition": "unlimited; unbounded"
+  },
+  {
+    "id": "hsk4_0745",
+    "level": 4,
+    "simplified": "五颜六色",
+    "pinyin": "wǔ yán liù sè",
+    "definition": "multicolored; every color under the sun"
+  },
+  {
+    "id": "hsk4_0746",
+    "level": 4,
+    "simplified": "误会",
+    "pinyin": "wù huì",
+    "definition": "to misunderstand; to mistake; misunderstanding"
+  },
+  {
+    "id": "hsk4_0747",
+    "level": 4,
+    "simplified": "吸",
+    "pinyin": "xī",
+    "definition": "to breathe; to suck in; to absorb; to inhale"
+  },
+  {
+    "id": "hsk4_0748",
+    "level": 4,
+    "simplified": "吸管",
+    "pinyin": "xī guǎn",
+    "definition": "(drinking) straw; pipette; eyedropper; snorkel"
+  },
+  {
+    "id": "hsk4_0749",
+    "level": 4,
+    "simplified": "吸收",
+    "pinyin": "xī shōu",
+    "definition": "to absorb; to assimilate; to ingest; to recruit"
+  },
+  {
+    "id": "hsk4_0750",
+    "level": 4,
+    "simplified": "吸烟",
+    "pinyin": "xī yān",
+    "definition": "to smoke"
+  },
+  {
+    "id": "hsk4_0751",
+    "level": 4,
+    "simplified": "吸引",
+    "pinyin": "xī yǐn",
+    "definition": "to attract; to appeal to; to fascinate"
+  },
+  {
+    "id": "hsk4_0752",
+    "level": 4,
+    "simplified": "喜爱",
+    "pinyin": "xǐ ài",
+    "definition": "to like; to love; to be fond of; favorite"
+  },
+  {
+    "id": "hsk4_0753",
+    "level": 4,
+    "simplified": "系列",
+    "pinyin": "xì liè",
+    "definition": "series; set"
+  },
+  {
+    "id": "hsk4_0754",
+    "level": 4,
+    "simplified": "系统",
+    "pinyin": "xì tǒng",
+    "definition": "system"
+  },
+  {
+    "id": "hsk4_0755",
+    "level": 4,
+    "simplified": "细",
+    "pinyin": "xì",
+    "definition": "thin or slender; finely particulate; thin and soft; fine; delicate; trifling; (of a sound) quiet; frugal"
+  },
+  {
+    "id": "hsk4_0756",
+    "level": 4,
+    "simplified": "细节",
+    "pinyin": "xì jié",
+    "definition": "details; particulars"
+  },
+  {
+    "id": "hsk4_0757",
+    "level": 4,
+    "simplified": "细致",
+    "pinyin": "xì zhì",
+    "definition": "delicate; fine; careful; meticulous; painstaking"
+  },
+  {
+    "id": "hsk4_0758",
+    "level": 4,
+    "simplified": "西瓜",
+    "pinyin": "xī guā",
+    "definition": "watermelon"
+  },
+  {
+    "id": "hsk4_0759",
+    "level": 4,
+    "simplified": "下个月",
+    "pinyin": "xià gè yuè",
+    "definition": "next month"
+  },
+  {
+    "id": "hsk4_0760",
+    "level": 4,
+    "simplified": "下降",
+    "pinyin": "xià jiàng",
+    "definition": "to decline; to drop; to fall; to go down; to decrease"
+  },
+  {
+    "id": "hsk4_0761",
+    "level": 4,
+    "simplified": "下楼",
+    "pinyin": "xià lóu",
+    "definition": "to go downstairs"
+  },
+  {
+    "id": "hsk4_0762",
+    "level": 4,
+    "simplified": "下载",
+    "pinyin": "xià zǎi",
+    "definition": "to download; also pr. [xià zài]"
+  },
+  {
+    "id": "hsk4_0763",
+    "level": 4,
+    "simplified": "夏季",
+    "pinyin": "xià jì",
+    "definition": "summer"
+  },
+  {
+    "id": "hsk4_0764",
+    "level": 4,
+    "simplified": "鲜",
+    "pinyin": "xiǎn",
+    "definition": "variant of 鲜"
+  },
+  {
+    "id": "hsk4_0765",
+    "level": 4,
+    "simplified": "鲜花",
+    "pinyin": "xiān huā",
+    "definition": "flower; fresh flowers"
+  },
+  {
+    "id": "hsk4_0766",
+    "level": 4,
+    "simplified": "鲜明",
+    "pinyin": "xiān míng",
+    "definition": "bright; clear-cut; distinct"
+  },
+  {
+    "id": "hsk4_0768",
+    "level": 4,
+    "simplified": "显著",
+    "pinyin": "xiǎn zhù",
+    "definition": "outstanding; notable; remarkable; statistically significant"
+  },
+  {
+    "id": "hsk4_0769",
+    "level": 4,
+    "simplified": "县",
+    "pinyin": "xiàn",
+    "definition": "county"
+  },
+  {
+    "id": "hsk4_0770",
+    "level": 4,
+    "simplified": "限制",
+    "pinyin": "xiàn zhì",
+    "definition": "to restrict; to limit; to confine; restriction; limit"
+  },
+  {
+    "id": "hsk4_0771",
+    "level": 4,
+    "simplified": "相处",
+    "pinyin": "xiāng chǔ",
+    "definition": "to be in contact (with sb); to associate; to interact; to get along (well, poorly)"
+  },
+  {
+    "id": "hsk4_0772",
+    "level": 4,
+    "simplified": "相反",
+    "pinyin": "xiāng fǎn",
+    "definition": "opposite; contrary"
+  },
+  {
+    "id": "hsk4_0773",
+    "level": 4,
+    "simplified": "相片",
+    "pinyin": "xiàng piàn",
+    "definition": "image; photograph"
+  },
+  {
+    "id": "hsk4_0774",
+    "level": 4,
+    "simplified": "箱",
+    "pinyin": "xiāng",
+    "definition": "box; trunk; chest"
+  },
+  {
+    "id": "hsk4_0775",
+    "level": 4,
+    "simplified": "箱子",
+    "pinyin": "xiāng zi",
+    "definition": "suitcase; chest; box; case; trunk"
+  },
+  {
+    "id": "hsk4_0776",
+    "level": 4,
+    "simplified": "想念",
+    "pinyin": "xiǎng niàn",
+    "definition": "to miss; to remember with longing; to long to see again"
+  },
+  {
+    "id": "hsk4_0777",
+    "level": 4,
+    "simplified": "想象",
+    "pinyin": "xiǎng xiàng",
+    "definition": "to imagine; to envision; imagination"
+  },
+  {
+    "id": "hsk4_0779",
+    "level": 4,
+    "simplified": "项目",
+    "pinyin": "xiàng mù",
+    "definition": "item; project; (sports) event"
+  },
+  {
+    "id": "hsk4_0780",
+    "level": 4,
+    "simplified": "消化",
+    "pinyin": "xiāo huà",
+    "definition": "to digest (food); (fig.) to absorb (information etc); to assimilate; to process"
+  },
+  {
+    "id": "hsk4_0781",
+    "level": 4,
+    "simplified": "销售",
+    "pinyin": "xiāo shòu",
+    "definition": "to sell; to market; sales (representative, agreement etc)"
+  },
+  {
+    "id": "hsk4_0782",
+    "level": 4,
+    "simplified": "小吃",
+    "pinyin": "xiǎo chī",
+    "definition": "snack; refreshments"
+  },
+  {
+    "id": "hsk4_0783",
+    "level": 4,
+    "simplified": "小伙子",
+    "pinyin": "xiǎo huǒ zi",
+    "definition": "young man; young guy; lad; youngster"
+  },
+  {
+    "id": "hsk4_0784",
+    "level": 4,
+    "simplified": "小型",
+    "pinyin": "xiǎo xíng",
+    "definition": "small scale; small size"
+  },
+  {
+    "id": "hsk4_0785",
+    "level": 4,
+    "simplified": "效率",
+    "pinyin": "xiào lǜ",
+    "definition": "efficiency"
+  },
+  {
+    "id": "hsk4_0786",
+    "level": 4,
+    "simplified": "些",
+    "pinyin": "xiē",
+    "definition": "classifier indicating a small amount or small number greater than 1: some, a few, several"
+  },
+  {
+    "id": "hsk4_0787",
+    "level": 4,
+    "simplified": "心理",
+    "pinyin": "xīn lǐ",
+    "definition": "psychology; mentality"
+  },
+  {
+    "id": "hsk4_0788",
+    "level": 4,
+    "simplified": "新郎",
+    "pinyin": "xīn láng",
+    "definition": "bridegroom; groom"
+  },
+  {
+    "id": "hsk4_0789",
+    "level": 4,
+    "simplified": "新娘",
+    "pinyin": "xīn niáng",
+    "definition": "bride"
+  },
+  {
+    "id": "hsk4_0790",
+    "level": 4,
+    "simplified": "新鲜",
+    "pinyin": "xīn xiān",
+    "definition": "fresh (experience, food etc); freshness; novel; uncommon"
+  },
+  {
+    "id": "hsk4_0791",
+    "level": 4,
+    "simplified": "新型",
+    "pinyin": "xīn xíng",
+    "definition": "new type; new kind"
+  },
+  {
+    "id": "hsk4_0792",
+    "level": 4,
+    "simplified": "行业",
+    "pinyin": "háng yè",
+    "definition": "trade; profession; industry; business"
+  },
+  {
+    "id": "hsk4_0793",
+    "level": 4,
+    "simplified": "形容",
+    "pinyin": "xíng róng",
+    "definition": "to describe; (literary) countenance; appearance"
+  },
+  {
+    "id": "hsk4_0794",
+    "level": 4,
+    "simplified": "形势",
+    "pinyin": "xíng shì",
+    "definition": "circumstances; situation; terrain"
+  },
+  {
+    "id": "hsk4_0795",
+    "level": 4,
+    "simplified": "型",
+    "pinyin": "xíng",
+    "definition": "mold; type; style; model"
+  },
+  {
+    "id": "hsk4_0796",
+    "level": 4,
+    "simplified": "型号",
+    "pinyin": "xíng hào",
+    "definition": "model (particular version of a manufactured article); type (product specification in terms of color, size etc)"
+  },
+  {
+    "id": "hsk4_0797",
+    "level": 4,
+    "simplified": "醒",
+    "pinyin": "xǐng",
+    "definition": "to wake up; to be awake; to become aware; to sober up; to come to"
+  },
+  {
+    "id": "hsk4_0798",
+    "level": 4,
+    "simplified": "兴奋",
+    "pinyin": "xīng fèn",
+    "definition": "excited; excitement; (physiology) excitation"
+  },
+  {
+    "id": "hsk4_0799",
+    "level": 4,
+    "simplified": "兴趣",
+    "pinyin": "xìng qù",
+    "definition": "interest (desire to know about sth); interest (thing in which one is interested); hobby"
+  },
+  {
+    "id": "hsk4_0800",
+    "level": 4,
+    "simplified": "性质",
+    "pinyin": "xìng zhì",
+    "definition": "nature; characteristic"
+  },
+  {
+    "id": "hsk4_0801",
+    "level": 4,
+    "simplified": "兄弟",
+    "pinyin": "xiōng dì",
+    "definition": "brothers; younger brother; I, me (humble term used by men in public speech); brotherly; fraternal"
+  },
+  {
+    "id": "hsk4_0802",
+    "level": 4,
+    "simplified": "胸部",
+    "pinyin": "xiōng bù",
+    "definition": "chest; bosom"
+  },
+  {
+    "id": "hsk4_0803",
+    "level": 4,
+    "simplified": "修理",
+    "pinyin": "xiū lǐ",
+    "definition": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+  },
+  {
+    "id": "hsk4_0804",
+    "level": 4,
+    "simplified": "选择",
+    "pinyin": "xuǎn zé",
+    "definition": "to select; to pick; choice; option; alternative"
+  },
+  {
+    "id": "hsk4_0805",
+    "level": 4,
+    "simplified": "学分",
+    "pinyin": "xué fēn",
+    "definition": "course credit"
+  },
+  {
+    "id": "hsk4_0806",
+    "level": 4,
+    "simplified": "学年",
+    "pinyin": "xué nián",
+    "definition": "academic year"
+  },
+  {
+    "id": "hsk4_0807",
+    "level": 4,
+    "simplified": "学时",
+    "pinyin": "xué shí",
+    "definition": "class hour; period"
+  },
+  {
+    "id": "hsk4_0808",
+    "level": 4,
+    "simplified": "学术",
+    "pinyin": "xué shù",
+    "definition": "learning; science; academic"
+  },
+  {
+    "id": "hsk4_0809",
+    "level": 4,
+    "simplified": "学问",
+    "pinyin": "xué wèn",
+    "definition": "learning; knowledge"
+  },
+  {
+    "id": "hsk4_0810",
+    "level": 4,
+    "simplified": "寻找",
+    "pinyin": "xún zhǎo",
+    "definition": "to seek; to look for"
+  },
+  {
+    "id": "hsk4_0811",
+    "level": 4,
+    "simplified": "迅速",
+    "pinyin": "xùn sù",
+    "definition": "rapid; speedy; fast"
+  },
+  {
+    "id": "hsk4_0812",
+    "level": 4,
+    "simplified": "牙",
+    "pinyin": "yá",
+    "definition": "tooth; ivory"
+  },
+  {
+    "id": "hsk4_0813",
+    "level": 4,
+    "simplified": "牙刷",
+    "pinyin": "yá shuā",
+    "definition": "toothbrush"
+  },
+  {
+    "id": "hsk4_0814",
+    "level": 4,
+    "simplified": "亚运会",
+    "pinyin": "Yà yùn huì",
+    "definition": "Asian Games"
+  },
+  {
+    "id": "hsk4_0815",
+    "level": 4,
+    "simplified": "呀",
+    "pinyin": "ya",
+    "definition": "(particle equivalent to 啊 after a vowel, expressing surprise or doubt)"
+  },
+  {
+    "id": "hsk4_0816",
+    "level": 4,
+    "simplified": "延期",
+    "pinyin": "yán qī",
+    "definition": "to delay; to extend; to postpone; to defer"
+  },
+  {
+    "id": "hsk4_0817",
+    "level": 4,
+    "simplified": "延续",
+    "pinyin": "yán xù",
+    "definition": "to continue; to go on; to last"
+  },
+  {
+    "id": "hsk4_0818",
+    "level": 4,
+    "simplified": "延长",
+    "pinyin": "Yán cháng",
+    "definition": "Yanchang county in Yan'an 安, Shaanxi"
+  },
+  {
+    "id": "hsk4_0820",
+    "level": 4,
+    "simplified": "严格",
+    "pinyin": "yán gé",
+    "definition": "strict; stringent; tight; rigorous"
+  },
+  {
+    "id": "hsk4_0821",
+    "level": 4,
+    "simplified": "严重",
+    "pinyin": "yán zhòng",
+    "definition": "grave; serious; severe; critical"
+  },
+  {
+    "id": "hsk4_0822",
+    "level": 4,
+    "simplified": "研究",
+    "pinyin": "yán jiū",
+    "definition": "research; a study; to research; to look into"
+  },
+  {
+    "id": "hsk4_0823",
+    "level": 4,
+    "simplified": "研究生",
+    "pinyin": "yán jiū shēng",
+    "definition": "graduate student; postgraduate student; research student"
+  },
+  {
+    "id": "hsk4_0824",
+    "level": 4,
+    "simplified": "研制",
+    "pinyin": "yán zhì",
+    "definition": "to research and manufacture; to research and to develop"
+  },
+  {
+    "id": "hsk4_0825",
+    "level": 4,
+    "simplified": "盐",
+    "pinyin": "yán",
+    "definition": "salt"
+  },
+  {
+    "id": "hsk4_0826",
+    "level": 4,
+    "simplified": "眼镜",
+    "pinyin": "yǎn jìng",
+    "definition": "spectacles; eyeglasses"
+  },
+  {
+    "id": "hsk4_0827",
+    "level": 4,
+    "simplified": "眼泪",
+    "pinyin": "yǎn lèi",
+    "definition": "tears; crying"
+  },
+  {
+    "id": "hsk4_0828",
+    "level": 4,
+    "simplified": "眼里",
+    "pinyin": "yǎnli",
+    "definition": "In the eyes"
+  },
+  {
+    "id": "hsk4_0829",
+    "level": 4,
+    "simplified": "演讲",
+    "pinyin": "yǎn jiǎng",
+    "definition": "lecture; to make a speech"
+  },
+  {
+    "id": "hsk4_0830",
+    "level": 4,
+    "simplified": "阳台",
+    "pinyin": "yáng tái",
+    "definition": "variant of 阳台"
+  },
+  {
+    "id": "hsk4_0831",
+    "level": 4,
+    "simplified": "养成",
+    "pinyin": "yǎng chéng",
+    "definition": "to cultivate; to raise; to form (a habit); to acquire"
+  },
+  {
+    "id": "hsk4_0832",
+    "level": 4,
+    "simplified": "腰",
+    "pinyin": "yāo",
+    "definition": "waist; lower back; pocket; middle; loins"
+  },
+  {
+    "id": "hsk4_0834",
+    "level": 4,
+    "simplified": "药物",
+    "pinyin": "yào wù",
+    "definition": "medicaments; pharmaceuticals; medication; medicine; drug"
+  },
+  {
+    "id": "hsk4_0835",
+    "level": 4,
+    "simplified": "业余",
+    "pinyin": "yè yú",
+    "definition": "in one's spare time; outside working hours; amateur (historian etc)"
+  },
+  {
+    "id": "hsk4_0836",
+    "level": 4,
+    "simplified": "叶子",
+    "pinyin": "yè zi",
+    "definition": "leaf; (slang) marijuana"
+  },
+  {
+    "id": "hsk4_0837",
+    "level": 4,
+    "simplified": "一般来说",
+    "pinyin": "yī bān lái shuō",
+    "definition": "generally speaking"
+  },
+  {
+    "id": "hsk4_0838",
+    "level": 4,
+    "simplified": "一律",
+    "pinyin": "yī lǜ",
+    "definition": "same; uniformly; all; without exception"
+  },
+  {
+    "id": "hsk4_0839",
+    "level": 4,
+    "simplified": "一再",
+    "pinyin": "yī zài",
+    "definition": "repeatedly"
+  },
+  {
+    "id": "hsk4_0840",
+    "level": 4,
+    "simplified": "一致",
+    "pinyin": "yī zhì",
+    "definition": "unanimous; identical (views or opinions)"
+  },
+  {
+    "id": "hsk4_0841",
+    "level": 4,
+    "simplified": "医疗",
+    "pinyin": "yī liáo",
+    "definition": "medical treatment"
+  },
+  {
+    "id": "hsk4_0842",
+    "level": 4,
+    "simplified": "医学",
+    "pinyin": "yī xué",
+    "definition": "medicine; medical science; study of medicine"
+  },
+  {
+    "id": "hsk4_0843",
+    "level": 4,
+    "simplified": "依靠",
+    "pinyin": "yī kào",
+    "definition": "to rely on sth (for support etc); to depend on"
+  },
+  {
+    "id": "hsk4_0844",
+    "level": 4,
+    "simplified": "依然",
+    "pinyin": "yī rán",
+    "definition": "still; as before"
+  },
+  {
+    "id": "hsk4_0845",
+    "level": 4,
+    "simplified": "移",
+    "pinyin": "yí",
+    "definition": "to move; to shift; to change; to alter; to remove"
+  },
+  {
+    "id": "hsk4_0846",
+    "level": 4,
+    "simplified": "移动",
+    "pinyin": "yí dòng",
+    "definition": "to move; movement; migration; mobile; portable"
+  },
+  {
+    "id": "hsk4_0847",
+    "level": 4,
+    "simplified": "移民",
+    "pinyin": "yí mín",
+    "definition": "to immigrate; to migrate; emigrant; immigrant"
+  },
+  {
+    "id": "hsk4_0848",
+    "level": 4,
+    "simplified": "遗产",
+    "pinyin": "yí chǎn",
+    "definition": "heritage; legacy; inheritance; bequest"
+  },
+  {
+    "id": "hsk4_0849",
+    "level": 4,
+    "simplified": "遗传",
+    "pinyin": "yí chuán",
+    "definition": "heredity; to inherit (a trait); to pass on (to one's offspring)"
+  },
+  {
+    "id": "hsk4_0850",
+    "level": 4,
+    "simplified": "疑问",
+    "pinyin": "yí wèn",
+    "definition": "question; interrogation; doubt"
+  },
+  {
+    "id": "hsk4_0851",
+    "level": 4,
+    "simplified": "以及",
+    "pinyin": "yǐ jí",
+    "definition": "as well as; too; and"
+  },
+  {
+    "id": "hsk4_0852",
+    "level": 4,
+    "simplified": "以内",
+    "pinyin": "yǐ nèi",
+    "definition": "within; less than"
+  },
+  {
+    "id": "hsk4_0853",
+    "level": 4,
+    "simplified": "义务",
+    "pinyin": "yì wù",
+    "definition": "duty; obligation; volunteer (work etc)"
+  },
+  {
+    "id": "hsk4_0854",
+    "level": 4,
+    "simplified": "议论",
+    "pinyin": "yì lùn",
+    "definition": "to comment; to talk about; to discuss; discussion"
+  },
+  {
+    "id": "hsk4_0855",
+    "level": 4,
+    "simplified": "引",
+    "pinyin": "yǐn",
+    "definition": "to draw (e.g. a bow); to pull; to stretch sth; to extend; to lengthen; to involve or implicate in; to attract; to lead; to guide; to leave; to provide evidence or justification for; old unit of distance equal to 10 丈, one-thirtieth of a km or 33.33 meters"
+  },
+  {
+    "id": "hsk4_0856",
+    "level": 4,
+    "simplified": "引导",
+    "pinyin": "yǐn dǎo",
+    "definition": "to guide; to lead (around); to conduct; to boot; introduction; primer"
+  },
+  {
+    "id": "hsk4_0857",
+    "level": 4,
+    "simplified": "引进",
+    "pinyin": "yǐn jìn",
+    "definition": "to recommend; to introduce (from outside)"
+  },
+  {
+    "id": "hsk4_0858",
+    "level": 4,
+    "simplified": "引起",
+    "pinyin": "yǐn qǐ",
+    "definition": "to give rise to; to lead to; to cause; to arouse"
+  },
+  {
+    "id": "hsk4_0859",
+    "level": 4,
+    "simplified": "应",
+    "pinyin": "Yīng",
+    "definition": "surname Ying; Taiwan pr. [Yìng]"
+  },
+  {
+    "id": "hsk4_0860",
+    "level": 4,
+    "simplified": "英勇",
+    "pinyin": "yīng yǒng",
+    "definition": "heroic; gallant; valiant"
+  },
+  {
+    "id": "hsk4_0861",
+    "level": 4,
+    "simplified": "营业",
+    "pinyin": "yíng yè",
+    "definition": "to do business; to trade"
+  },
+  {
+    "id": "hsk4_0862",
+    "level": 4,
+    "simplified": "赢得",
+    "pinyin": "yíng dé",
+    "definition": "to win; to gain"
+  },
+  {
+    "id": "hsk4_0863",
+    "level": 4,
+    "simplified": "影子",
+    "pinyin": "yǐng zi",
+    "definition": "shadow; reflection; (fig.) hint; indication; influence"
+  },
+  {
+    "id": "hsk4_0864",
+    "level": 4,
+    "simplified": "勇敢",
+    "pinyin": "yǒng gǎn",
+    "definition": "brave; courageous"
+  },
+  {
+    "id": "hsk4_0865",
+    "level": 4,
+    "simplified": "勇气",
+    "pinyin": "yǒng qì",
+    "definition": "courage; valor"
+  },
+  {
+    "id": "hsk4_0866",
+    "level": 4,
+    "simplified": "用途",
+    "pinyin": "yòng tú",
+    "definition": "use; application"
+  },
+  {
+    "id": "hsk4_0867",
+    "level": 4,
+    "simplified": "优良",
+    "pinyin": "yōu liáng",
+    "definition": "fine; good; first-rate"
+  },
+  {
+    "id": "hsk4_0868",
+    "level": 4,
+    "simplified": "优美",
+    "pinyin": "yōu měi",
+    "definition": "graceful; fine; elegant"
+  },
+  {
+    "id": "hsk4_0869",
+    "level": 4,
+    "simplified": "优秀",
+    "pinyin": "yōu xiù",
+    "definition": "outstanding; excellent"
+  },
+  {
+    "id": "hsk4_0870",
+    "level": 4,
+    "simplified": "邮局",
+    "pinyin": "yóu jú",
+    "definition": "post office"
+  },
+  {
+    "id": "hsk4_0871",
+    "level": 4,
+    "simplified": "有劲儿",
+    "pinyin": "yǒujìnr5",
+    "definition": "Strength"
+  },
+  {
+    "id": "hsk4_0872",
+    "level": 4,
+    "simplified": "有趣",
+    "pinyin": "yǒu qù",
+    "definition": "interesting; fascinating; amusing"
+  },
+  {
+    "id": "hsk4_0873",
+    "level": 4,
+    "simplified": "有限",
+    "pinyin": "yǒu xiàn",
+    "definition": "limited; finite"
+  },
+  {
+    "id": "hsk4_0874",
+    "level": 4,
+    "simplified": "幼儿园",
+    "pinyin": "yòu ér yuán",
+    "definition": "kindergarten; nursery school"
+  },
+  {
+    "id": "hsk4_0875",
+    "level": 4,
+    "simplified": "于是",
+    "pinyin": "yú shì",
+    "definition": "thereupon; as a result; consequently; thus; hence"
+  },
+  {
+    "id": "hsk4_0876",
+    "level": 4,
+    "simplified": "语法",
+    "pinyin": "yǔ fǎ",
+    "definition": "grammar"
+  },
+  {
+    "id": "hsk4_0877",
+    "level": 4,
+    "simplified": "语音",
+    "pinyin": "yǔ yīn",
+    "definition": "speech sounds; pronunciation; colloquial (rather than literary) pronunciation of a Chinese character; phonetic; audio; voice; (Internet) to voice chat; voice message"
+  },
+  {
+    "id": "hsk4_0878",
+    "level": 4,
+    "simplified": "玉",
+    "pinyin": "yù",
+    "definition": "jade"
+  },
+  {
+    "id": "hsk4_0879",
+    "level": 4,
+    "simplified": "玉米",
+    "pinyin": "yù mǐ",
+    "definition": "corn; maize"
+  },
+  {
+    "id": "hsk4_0880",
+    "level": 4,
+    "simplified": "预测",
+    "pinyin": "yù cè",
+    "definition": "to forecast; to predict"
+  },
+  {
+    "id": "hsk4_0881",
+    "level": 4,
+    "simplified": "预订",
+    "pinyin": "yù dìng",
+    "definition": "to place an order; to book ahead"
+  },
+  {
+    "id": "hsk4_0883",
+    "level": 4,
+    "simplified": "遇到",
+    "pinyin": "yù dào",
+    "definition": "to meet; to run into; to come across"
+  },
+  {
+    "id": "hsk4_0884",
+    "level": 4,
+    "simplified": "遇见",
+    "pinyin": "yù jiàn",
+    "definition": "to meet"
+  },
+  {
+    "id": "hsk4_0885",
+    "level": 4,
+    "simplified": "原料",
+    "pinyin": "yuán liào",
+    "definition": "raw material"
+  },
+  {
+    "id": "hsk4_0886",
+    "level": 4,
+    "simplified": "原则",
+    "pinyin": "yuán zé",
+    "definition": "principle; doctrine"
+  },
+  {
+    "id": "hsk4_0887",
+    "level": 4,
+    "simplified": "圆",
+    "pinyin": "yuán",
+    "definition": "circle; round; circular; spherical; (of the moon) full; unit of Chinese currency (yuan); tactful; to make consistent and whole (the narrative of a dream or a lie)"
+  },
+  {
+    "id": "hsk4_0888",
+    "level": 4,
+    "simplified": "圆满",
+    "pinyin": "yuán mǎn",
+    "definition": "satisfactory; consummate; perfect"
+  },
+  {
+    "id": "hsk4_0889",
+    "level": 4,
+    "simplified": "约会",
+    "pinyin": "yuē huì",
+    "definition": "appointment; engagement; date; to arrange to meet"
+  },
+  {
+    "id": "hsk4_0890",
+    "level": 4,
+    "simplified": "月底",
+    "pinyin": "yuè dǐ",
+    "definition": "end of the month"
+  },
+  {
+    "id": "hsk4_0891",
+    "level": 4,
+    "simplified": "阅读",
+    "pinyin": "yuè dú",
+    "definition": "to read; reading"
+  },
+  {
+    "id": "hsk4_0892",
+    "level": 4,
+    "simplified": "运动会",
+    "pinyin": "yùn dòng huì",
+    "definition": "sports competition"
+  },
+  {
+    "id": "hsk4_0893",
+    "level": 4,
+    "simplified": "运动员",
+    "pinyin": "yùn dòng yuán",
+    "definition": "athlete"
+  },
+  {
+    "id": "hsk4_0894",
+    "level": 4,
+    "simplified": "运气",
+    "pinyin": "yùn qi",
+    "definition": "luck (good or bad)"
+  },
+  {
+    "id": "hsk4_0895",
+    "level": 4,
+    "simplified": "运用",
+    "pinyin": "yùn yòng",
+    "definition": "to use; to put to use"
+  },
+  {
+    "id": "hsk4_0896",
+    "level": 4,
+    "simplified": "再三",
+    "pinyin": "zài sān",
+    "definition": "over and over again; again and again"
+  },
+  {
+    "id": "hsk4_0897",
+    "level": 4,
+    "simplified": "在乎",
+    "pinyin": "zài hu",
+    "definition": "to care about; equivalent of 在于"
+  },
+  {
+    "id": "hsk4_0898",
+    "level": 4,
+    "simplified": "在于",
+    "pinyin": "zài yú",
+    "definition": "to be in; to lie in; to consist in; to depend on; to rest with"
+  },
+  {
+    "id": "hsk4_0899",
+    "level": 4,
+    "simplified": "赞成",
+    "pinyin": "zàn chéng",
+    "definition": "to approve; to endorse; (literary) to assist"
+  },
+  {
+    "id": "hsk4_0900",
+    "level": 4,
+    "simplified": "赞赏",
+    "pinyin": "zàn shǎng",
+    "definition": "to admire; to praise; to appreciate"
+  },
+  {
+    "id": "hsk4_0901",
+    "level": 4,
+    "simplified": "赞助",
+    "pinyin": "zàn zhù",
+    "definition": "to support; to assist; to sponsor"
+  },
+  {
+    "id": "hsk4_0902",
+    "level": 4,
+    "simplified": "造型",
+    "pinyin": "zào xíng",
+    "definition": "to model; to shape; appearance; style; design; form; pose"
+  },
+  {
+    "id": "hsk4_0903",
+    "level": 4,
+    "simplified": "战斗",
+    "pinyin": "zhàn dòu",
+    "definition": "to fight; to engage in combat; struggle; battle"
+  },
+  {
+    "id": "hsk4_0904",
+    "level": 4,
+    "simplified": "战胜",
+    "pinyin": "zhàn shèng",
+    "definition": "to prevail over; to defeat; to surmount"
+  },
+  {
+    "id": "hsk4_0905",
+    "level": 4,
+    "simplified": "战士",
+    "pinyin": "zhàn shì",
+    "definition": "fighter; soldier; warrior"
+  },
+  {
+    "id": "hsk4_0906",
+    "level": 4,
+    "simplified": "战争",
+    "pinyin": "zhàn zhēng",
+    "definition": "war; conflict"
+  },
+  {
+    "id": "hsk4_0907",
+    "level": 4,
+    "simplified": "长途",
+    "pinyin": "cháng tú",
+    "definition": "long distance"
+  },
+  {
+    "id": "hsk4_0908",
+    "level": 4,
+    "simplified": "丈夫",
+    "pinyin": "zhàng fu",
+    "definition": "husband"
+  },
+  {
+    "id": "hsk4_0909",
+    "level": 4,
+    "simplified": "招呼",
+    "pinyin": "zhāo hu",
+    "definition": "to call out to; to greet; to say hello to; to inform; to take care of; to take care that one does not"
+  },
+  {
+    "id": "hsk4_0910",
+    "level": 4,
+    "simplified": "召开",
+    "pinyin": "zhào kāi",
+    "definition": "to convene (a conference or meeting); to convoke; to call together"
+  },
+  {
+    "id": "hsk4_0911",
+    "level": 4,
+    "simplified": "折",
+    "pinyin": "shé",
+    "definition": "to snap; to break (a stick, a bone etc); (bound form) to sustain a loss (in business)"
+  },
+  {
+    "id": "hsk4_0912",
+    "level": 4,
+    "simplified": "着火",
+    "pinyin": "zháo huǒ",
+    "definition": "to catch fire"
+  },
+  {
+    "id": "hsk4_0913",
+    "level": 4,
+    "simplified": "着急",
+    "pinyin": "zháo jí",
+    "definition": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhāo jí]"
+  },
+  {
+    "id": "hsk4_0914",
+    "level": 4,
+    "simplified": "著名",
+    "pinyin": "zhù míng",
+    "definition": "famous; noted; well-known; celebrated"
+  },
+  {
+    "id": "hsk4_0915",
+    "level": 4,
+    "simplified": "著作",
+    "pinyin": "zhù zuò",
+    "definition": "to write; literary work; book; article; writings"
+  },
+  {
+    "id": "hsk4_0916",
+    "level": 4,
+    "simplified": "针",
+    "pinyin": "zhēn",
+    "definition": "needle; pin; injection; stitch"
+  },
+  {
+    "id": "hsk4_0917",
+    "level": 4,
+    "simplified": "针对",
+    "pinyin": "zhēn duì",
+    "definition": "to target; to focus on; to be aimed at or against; in response to"
+  },
+  {
+    "id": "hsk4_0918",
+    "level": 4,
+    "simplified": "阵",
+    "pinyin": "zhèn",
+    "definition": "disposition of troops; wave; spate; burst; spell; short period of time; classifier for events or states of short duration"
+  },
+  {
+    "id": "hsk4_0919",
+    "level": 4,
+    "simplified": "争论",
+    "pinyin": "zhēng lùn",
+    "definition": "to argue; to debate; to contend; argument; contention; controversy; debate"
+  },
+  {
+    "id": "hsk4_0920",
+    "level": 4,
+    "simplified": "征服",
+    "pinyin": "zhēng fú",
+    "definition": "to conquer; to subdue; to vanquish"
+  },
+  {
+    "id": "hsk4_0921",
+    "level": 4,
+    "simplified": "征求",
+    "pinyin": "zhēng qiú",
+    "definition": "to solicit; to seek; to request (opinions, feedback etc); to petition"
+  },
+  {
+    "id": "hsk4_0922",
+    "level": 4,
+    "simplified": "政府",
+    "pinyin": "zhèng fǔ",
+    "definition": "government"
+  },
+  {
+    "id": "hsk4_0923",
+    "level": 4,
+    "simplified": "政治",
+    "pinyin": "zhèng zhì",
+    "definition": "politics; political"
+  },
+  {
+    "id": "hsk4_0924",
+    "level": 4,
+    "simplified": "之后",
+    "pinyin": "zhī hòu",
+    "definition": "after; behind; (at the beginning of a sentence) afterwards; since then"
+  },
+  {
+    "id": "hsk4_0925",
+    "level": 4,
+    "simplified": "之间",
+    "pinyin": "zhī jiān",
+    "definition": "(after a noun) between; among; amid; (used after certain bisyllabic words to form expressions indicating a short period of time, e.g. 弹指之间)"
+  },
+  {
+    "id": "hsk4_0926",
+    "level": 4,
+    "simplified": "之前",
+    "pinyin": "zhī qián",
+    "definition": "before; prior to; ago; previously; beforehand"
+  },
+  {
+    "id": "hsk4_0927",
+    "level": 4,
+    "simplified": "之一",
+    "pinyin": "zhī yī",
+    "definition": "one of (sth); one out of a multitude; one (third, quarter, percent etc)"
+  },
+  {
+    "id": "hsk4_0928",
+    "level": 4,
+    "simplified": "植物",
+    "pinyin": "zhí wù",
+    "definition": "plant; vegetation"
+  },
+  {
+    "id": "hsk4_0929",
+    "level": 4,
+    "simplified": "指挥",
+    "pinyin": "zhǐ huī",
+    "definition": "to conduct; to command; to direct; conductor (of an orchestra)"
+  },
+  {
+    "id": "hsk4_0930",
+    "level": 4,
+    "simplified": "制订",
+    "pinyin": "zhì dìng",
+    "definition": "to work out; to formulate"
+  },
+  {
+    "id": "hsk4_0931",
+    "level": 4,
+    "simplified": "治",
+    "pinyin": "zhì",
+    "definition": "to rule; to govern; to manage; to control; to harness (a river); to treat (a disease); to wipe out (a pest); to punish; to research"
+  },
+  {
+    "id": "hsk4_0932",
+    "level": 4,
+    "simplified": "治疗",
+    "pinyin": "zhì liáo",
+    "definition": "to treat (an illness); medical treatment; therapy"
+  },
+  {
+    "id": "hsk4_0933",
+    "level": 4,
+    "simplified": "质量",
+    "pinyin": "zhì liàng",
+    "definition": "quality; (physics) mass"
+  },
+  {
+    "id": "hsk4_0934",
+    "level": 4,
+    "simplified": "智力",
+    "pinyin": "zhì lì",
+    "definition": "intelligence; intellect"
+  },
+  {
+    "id": "hsk4_0935",
+    "level": 4,
+    "simplified": "智能",
+    "pinyin": "zhì néng",
+    "definition": "intelligent; able; smart (phone, system, bomb etc)"
+  },
+  {
+    "id": "hsk4_0936",
+    "level": 4,
+    "simplified": "中奖",
+    "pinyin": "zhòng jiǎng",
+    "definition": "to win a prize (in a lottery etc)"
+  },
+  {
+    "id": "hsk4_0937",
+    "level": 4,
+    "simplified": "中介",
+    "pinyin": "zhōng jiè",
+    "definition": "to act as intermediary; to link; intermediate; inter-; agency; agent"
+  },
+  {
+    "id": "hsk4_0938",
+    "level": 4,
+    "simplified": "种类",
+    "pinyin": "zhǒng lèi",
+    "definition": "kind; genus; type; category; variety; species; sort; class"
+  },
+  {
+    "id": "hsk4_0939",
+    "level": 4,
+    "simplified": "种植",
+    "pinyin": "zhòng zhí",
+    "definition": "to plant; to grow (a crop); to cultivate"
+  },
+  {
+    "id": "hsk4_0940",
+    "level": 4,
+    "simplified": "重量",
+    "pinyin": "zhòng liàng",
+    "definition": "weight"
+  },
+  {
+    "id": "hsk4_0941",
+    "level": 4,
+    "simplified": "逐步",
+    "pinyin": "zhú bù",
+    "definition": "progressively; step by step"
+  },
+  {
+    "id": "hsk4_0942",
+    "level": 4,
+    "simplified": "逐渐",
+    "pinyin": "zhú jiàn",
+    "definition": "gradually"
+  },
+  {
+    "id": "hsk4_0943",
+    "level": 4,
+    "simplified": "主题",
+    "pinyin": "zhǔ tí",
+    "definition": "theme; subject"
+  },
+  {
+    "id": "hsk4_0944",
+    "level": 4,
+    "simplified": "主席",
+    "pinyin": "zhǔ xí",
+    "definition": "chairperson; premier; chairman"
+  },
+  {
+    "id": "hsk4_0945",
+    "level": 4,
+    "simplified": "祝福",
+    "pinyin": "zhù fú",
+    "definition": "blessings; to wish sb well"
+  },
+  {
+    "id": "hsk4_0946",
+    "level": 4,
+    "simplified": "抓紧",
+    "pinyin": "zhuā jǐn",
+    "definition": "to keep a firm grip on; to pay close attention to; to lose no time in (doing sth)"
+  },
+  {
+    "id": "hsk4_0947",
+    "level": 4,
+    "simplified": "专心",
+    "pinyin": "zhuān xīn",
+    "definition": "to focus one's attention; to concentrate on (doing sth)"
+  },
+  {
+    "id": "hsk4_0948",
+    "level": 4,
+    "simplified": "转动",
+    "pinyin": "zhuǎn dòng",
+    "definition": "to turn sth around; to swivel"
+  },
+  {
+    "id": "hsk4_0949",
+    "level": 4,
+    "simplified": "转告",
+    "pinyin": "zhuǎn gào",
+    "definition": "to pass on; to communicate; to transmit"
+  },
+  {
+    "id": "hsk4_0950",
+    "level": 4,
+    "simplified": "转身",
+    "pinyin": "zhuǎn shēn",
+    "definition": "(of a person) to turn round; to face about; (of a widow) to remarry (archaic)"
+  },
+  {
+    "id": "hsk4_0951",
+    "level": 4,
+    "simplified": "转弯",
+    "pinyin": "zhuǎn wān",
+    "definition": "to turn; to go around a corner"
+  },
+  {
+    "id": "hsk4_0952",
+    "level": 4,
+    "simplified": "转移",
+    "pinyin": "zhuǎn yí",
+    "definition": "to shift; to relocate; to transfer; (fig.) to shift (attention); to change (the subject etc); (medicine) to metastasize"
+  },
+  {
+    "id": "hsk4_0953",
+    "level": 4,
+    "simplified": "装修",
+    "pinyin": "zhuāng xiū",
+    "definition": "to decorate; interior decoration; to fit up; to renovate"
+  },
+  {
+    "id": "hsk4_0954",
+    "level": 4,
+    "simplified": "装置",
+    "pinyin": "zhuāng zhì",
+    "definition": "to install; installation; equipment; system; unit; device"
+  },
+  {
+    "id": "hsk4_0955",
+    "level": 4,
+    "simplified": "追求",
+    "pinyin": "zhuī qiú",
+    "definition": "to pursue (a goal etc) stubbornly; to seek after; to woo"
+  },
+  {
+    "id": "hsk4_0956",
+    "level": 4,
+    "simplified": "准时",
+    "pinyin": "zhǔn shí",
+    "definition": "on time; punctual; on schedule"
+  },
+  {
+    "id": "hsk4_0957",
+    "level": 4,
+    "simplified": "资料",
+    "pinyin": "zī liào",
+    "definition": "material; resources; data; information; profile (Internet)"
+  },
+  {
+    "id": "hsk4_0958",
+    "level": 4,
+    "simplified": "资源",
+    "pinyin": "Zī yuán",
+    "definition": "Ziyuan county in Guilin 林, Guangxi"
+  },
+  {
+    "id": "hsk4_0959",
+    "level": 4,
+    "simplified": "字母",
+    "pinyin": "zì mǔ",
+    "definition": "letter (of the alphabet)"
+  },
+  {
+    "id": "hsk4_0960",
+    "level": 4,
+    "simplified": "自",
+    "pinyin": "zì",
+    "definition": "self; oneself; from; since; naturally; surely"
+  },
+  {
+    "id": "hsk4_0961",
+    "level": 4,
+    "simplified": "自信",
+    "pinyin": "zì xìn",
+    "definition": "to have confidence in oneself; self-confidence"
+  },
+  {
+    "id": "hsk4_0962",
+    "level": 4,
+    "simplified": "综合",
+    "pinyin": "zōng hé",
+    "definition": "comprehensive; composite; synthesized; mixed; to sum up; to integrate; to synthesize"
+  },
+  {
+    "id": "hsk4_0963",
+    "level": 4,
+    "simplified": "总共",
+    "pinyin": "zǒng gòng",
+    "definition": "altogether; in sum; in all; in total"
+  },
+  {
+    "id": "hsk4_0964",
+    "level": 4,
+    "simplified": "总理",
+    "pinyin": "zǒng lǐ",
+    "definition": "premier; prime minister"
+  },
+  {
+    "id": "hsk4_0965",
+    "level": 4,
+    "simplified": "总统",
+    "pinyin": "zǒng tǒng",
+    "definition": "president (of a country)"
+  },
+  {
+    "id": "hsk4_0966",
+    "level": 4,
+    "simplified": "总之",
+    "pinyin": "zǒng zhī",
+    "definition": "in a word; in short; in brief"
+  },
+  {
+    "id": "hsk4_0967",
+    "level": 4,
+    "simplified": "阻止",
+    "pinyin": "zǔ zhǐ",
+    "definition": "to prevent; to block"
+  },
+  {
+    "id": "hsk4_0968",
+    "level": 4,
+    "simplified": "嘴巴",
+    "pinyin": "zuǐ ba",
+    "definition": "mouth; slap in the face"
+  },
+  {
+    "id": "hsk4_0969",
+    "level": 4,
+    "simplified": "最初",
+    "pinyin": "zuì chū",
+    "definition": "first; primary; initial; original; at first; initially; originally"
+  },
+  {
+    "id": "hsk4_0970",
+    "level": 4,
+    "simplified": "作出",
+    "pinyin": "zuò chū",
+    "definition": "to put out; to come up with; to make (a choice, decision, proposal, response, comment etc); to issue (a permit, statement, explanation, apology, reassurance to the public etc); to draw (conclusion); to deliver (speech, judgment); to devise (explanation); to extract"
+  },
+  {
+    "id": "hsk4_0971",
+    "level": 4,
+    "simplified": "作为",
+    "pinyin": "zuò wéi",
+    "definition": "one's conduct; deed; activity; accomplishment; achievement; to act as; as (in the capacity of); qua; to view as; to look upon (sth as); to take sth to be"
+  },
+  {
+    "id": "hsk4_0972",
+    "level": 4,
+    "simplified": "做梦",
+    "pinyin": "zuò mèng",
+    "definition": "to dream; to have a dream; fig. illusion; fantasy; pipe dream"
+  }
+]
