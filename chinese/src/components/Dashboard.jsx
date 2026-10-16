@@ -17,7 +17,13 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col">
       {/* Header */}
-      <header className="px-4 pt-8 pb-4 text-center">
+      <header className="relative px-4 pt-8 pb-4 text-center">
+        <a
+          href="/"
+          className="absolute left-4 top-4 text-sm text-slate-400 hover:text-white transition-colors"
+        >
+          ← Langues
+        </a>
         <h1 className="text-3xl font-bold text-white tracking-tight">
           HSK 汉语水平考试
         </h1>

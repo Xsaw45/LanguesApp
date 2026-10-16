@@ -1,4 +1,6 @@
-const CACHE_NAME = 'italienapp-v10';
+// Caches are shared by the whole origin (Italian, Chinese and home page workers): only touch ours.
+const CACHE_PREFIX = 'italienapp-';
+const CACHE_NAME = `${CACHE_PREFIX}v11`;
 
 const ASSETS_TO_CACHE = [
   './',
@@ -79,7 +81,8 @@ const ASSETS_TO_CACHE = [
   './data/scheda-19bis.json',
   './data/vocab.json',
   './data/conjugation.json',
-  './data/translations.json'
+  './data/translations.json',
+  '../shared/sync.js'
 ];
 
 self.addEventListener('install', (event) => {
@@ -92,13 +95,15 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((k) => k.startsWith(CACHE_PREFIX) && k !== CACHE_NAME).map((k) => caches.delete(k)))
     )
   );
   self.clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {
+  // Progress sync must always reach the server, never the cache
+  if (event.request.method !== 'GET' || new URL(event.request.url).pathname.startsWith('/api/')) return;
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;

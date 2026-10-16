@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { getAllProgress, saveManyProgress } from '../db/index.js'
+import { getAllProgress, saveManyProgress, REMOTE_PROGRESS_EVENT } from '../db/index.js'
 import { createInitialProgress } from '../utils/spacedrep.js'
 
 /**
@@ -10,10 +10,14 @@ export function useProgress() {
   const [progressMap, setProgressMap] = useState(null) // null = loading
 
   useEffect(() => {
-    getAllProgress().then(list => {
+    const load = () => getAllProgress().then(list => {
       const map = new Map(list.map(p => [p.wordId, p]))
       setProgressMap(map)
     })
+    load()
+    // progression modifiee depuis un autre appareil (synchronisation)
+    window.addEventListener(REMOTE_PROGRESS_EVENT, load)
+    return () => window.removeEventListener(REMOTE_PROGRESS_EVENT, load)
   }, [])
 
   const getProgress = useCallback((wordId, level) => {

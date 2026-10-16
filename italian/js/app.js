@@ -9,7 +9,7 @@ import { renderStatsView } from './views/stats.js';
 import { renderVocabView } from './views/vocab.js';
 import { renderConjugationView } from './views/conjugation.js';
 import { renderTranslationView } from './views/translation.js';
-import { getSettings, updateSettings, getSchedaProgress, loadState, saveState } from './state.js';
+import { getSettings, updateSettings, getSchedaProgress, loadState, saveState, sync } from './state.js';
 import { t, getLanguage, setLanguage, localName } from './i18n.js';
 import { el, clearElement } from './utils/dom.js';
 
@@ -68,6 +68,9 @@ function renderCurrentView() {
 
 // Initialize
 async function init() {
+  // Pull this user's progress from the server first (bounded wait: offline, local data is used)
+  await sync.start();
+
   // Apply saved settings
   const settings = getSettings();
   if (settings.darkMode) {
@@ -119,6 +122,20 @@ async function buildSidebar() {
 
   try {
     const manifest = await loadManifest();
+
+    // Back to the LanguesApp home page (Italian / Chinese)
+    nav.appendChild(el('a', {
+      href: '/',
+      className: 'sidebar-scheda-link',
+      style: {
+        paddingLeft: 'var(--space-sm)',
+        fontWeight: '600',
+        marginBottom: 'var(--space-md)',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 'var(--space-sm)'
+      }
+    }, '\u2190 Langues'));
 
     // Home link
     const homeLink = el('a', {

@@ -3,36 +3,22 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
+// Servie sous /zh/ par le serveur LanguesApp. Le manifeste PWA est celui de l'accueil (/manifest.webmanifest) :
+// une seule app installee, ce service worker ne gere que le hors-ligne de /zh/.
 export default defineConfig({
+  base: '/zh/',
+  server: {
+    fs: { allow: ['..'] }, // ../shared/sync.js
+  },
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.png', 'icons/*.svg'],
-      manifest: {
-        name: 'HSK Vocabulaire Chinois',
-        short_name: 'HSK Vocab',
-        description: 'Apprenez le vocabulaire chinois HSK 1-9',
-        theme_color: '#1e293b',
-        background_color: '#0f172a',
-        display: 'standalone',
-        start_url: '/',
-        icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
-        ]
-      },
+      manifest: false,
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
-        runtimeCaching: [
-          {
-            urlPattern: /\/src\/data\/.*\.json$/,
-            handler: 'CacheFirst',
-            options: { cacheName: 'hsk-data' }
-          }
-        ]
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       }
     })
   ],

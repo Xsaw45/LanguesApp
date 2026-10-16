@@ -1,8 +1,13 @@
 /**
- * Progress and state management using localStorage.
+ * Progress and state management using localStorage, synchronised per Tailscale user (shared/sync.js).
  */
+import { createSync } from '../../shared/sync.js';
 
 const STORAGE_KEY = 'italienapp-progress';
+
+// One sync record per entry of these maps ("vocab/casa", "conjugation/parlare_presente_lui/lei"...),
+// one record per other top-level field ("settings", "lastActive").
+const COLLECTIONS = ['schede', 'vocab', 'conjugation', 'translation'];
 
 function createDefaultState() {
   return {
@@ -29,12 +34,66 @@ export function loadState() {
   }
 }
 
+function toRecords(state) {
+  const records = new Map();
+  const add = (key, value) => {
+    if (value !== undefined) records.set(key, JSON.stringify(value));
+  };
+  for (const [field, value] of Object.entries(state)) {
+    if (field === 'version') continue;
+    if (COLLECTIONS.includes(field)) {
+      for (const [id, entry] of Object.entries(value || {})) add(`${field}/${id}`, entry);
+    } else {
+      add(field, value);
+    }
+  }
+  return records;
+}
+
+function applyRemote(records) {
+  const state = loadState();
+  const defaults = createDefaultState();
+  for (const { key, value } of records) {
+    const slash = key.indexOf('/');
+    const field = slash > 0 ? key.slice(0, slash) : key;
+    if (COLLECTIONS.includes(field) && slash > 0) {
+      const id = key.slice(slash + 1);
+      state[field] = state[field] || {};
+      if (value === null) delete state[field][id];
+      else state[field][id] = value;
+    } else if (value === null) {
+      if (field in defaults) state[field] = defaults[field];
+      else delete state[field];
+    } else {
+      state[field] = value;
+    }
+  }
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+export const sync = createSync({
+  app: 'it',
+  applyRemote,
+  resetLocal: () => localStorage.removeItem(STORAGE_KEY),
+});
+
 export function saveState(state) {
+  const before = toRecords(loadState());
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
     console.warn('Could not save state to localStorage');
+    return;
   }
+  const after = toRecords(state);
+  const changes = [];
+  for (const [key, json] of after) {
+    if (before.get(key) !== json) changes.push({ key, value: JSON.parse(json) });
+  }
+  for (const key of before.keys()) {
+    if (!after.has(key)) changes.push({ key, value: null });
+  }
+  sync.track(changes);
 }
 
 export function getSchedaState(schedaId) {
