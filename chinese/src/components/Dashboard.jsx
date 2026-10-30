@@ -10,7 +10,7 @@ function countActiveWords(progressMap, unlockedLevels) {
   }).length
 }
 
-export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary }) {
+export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary, onOpenClassifiers }) {
   const activeCount = countActiveWords(progressMap, unlockedLevels)
   const canStart = activeCount > 0
 
@@ -55,6 +55,12 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
           className="w-full mt-2 py-3 rounded-2xl text-sm font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-white transition-all"
         >
           Voir le vocabulaire →
+        </button>
+        <button
+          onClick={onOpenClassifiers}
+          className="w-full mt-2 py-3 rounded-2xl text-sm font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-white transition-all"
+        >
+          Classificateurs <span className="chinese-text">量词</span> →
         </button>
       </div>
 

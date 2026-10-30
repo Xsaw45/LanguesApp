@@ -6,9 +6,10 @@ import { Dashboard } from './components/Dashboard.jsx'
 import { QuizScreen } from './components/QuizScreen.jsx'
 import { Results } from './components/Results.jsx'
 import { VocabularyPage } from './components/VocabularyPage.jsx'
+import { ClassifiersPage } from './components/ClassifiersPage.jsx'
 
 export default function App() {
-  const [screen, setScreen] = useState('home') // 'home' | 'vocabulary'
+  const [screen, setScreen] = useState('home') // 'home' | 'vocabulary' | 'classifiers'
   const { progressMap, getProgress, applyUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
   const {
@@ -64,6 +65,12 @@ export default function App() {
     return <VocabularyPage onBack={() => setScreen('home')} />
   }
 
+  if (screen === 'classifiers') {
+    return (
+      <ClassifiersPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={() => setScreen('home')} />
+    )
+  }
+
   return (
     <Dashboard
       levelStats={levelStats}
@@ -71,6 +78,7 @@ export default function App() {
       progressMap={progressMap}
       onStartQuiz={() => startQuiz(unlockedLevels)}
       onOpenVocabulary={() => setScreen('vocabulary')}
+      onOpenClassifiers={() => setScreen('classifiers')}
     />
   )
 }
