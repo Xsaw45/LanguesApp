@@ -137,7 +137,7 @@
     "level": 6,
     "simplified": "暴露",
     "pinyin": "bào lù",
-    "definition": "to expose; to reveal; to lay bare; also pr. [pù lù]"
+    "definition": "to expose; to reveal; to lay bare"
   },
   {
     "id": "hsk6_0021",
@@ -242,7 +242,7 @@
     "level": 6,
     "simplified": "逼",
     "pinyin": "bī",
-    "definition": "variant of 逼; to compel; to pressure"
+    "definition": "to compel; to pressure; to force (sb to do sth); to press for; to extort; to press on towards; to press up to; to close in on"
   },
   {
     "id": "hsk6_0036",
@@ -284,7 +284,14 @@
     "level": 6,
     "simplified": "编制",
     "pinyin": "biān zhì",
-    "definition": "to establish (a unit or department); staffing structure (excluding temporary and casual staff)"
+    "definition": "to establish (a unit or department); staffing structure (excluding temporary and casual staff); to weave; to plait; to compile; to put together (a lesson plan, budget etc)"
+  },
+  {
+    "id": "hsk6_0042",
+    "level": 6,
+    "simplified": "扁",
+    "pinyin": "biǎn",
+    "definition": "flat; (coll.) to beat (sb) up"
   },
   {
     "id": "hsk6_0043",
@@ -375,7 +382,7 @@
     "level": 6,
     "simplified": "播",
     "pinyin": "bō",
-    "definition": "to sow; to scatter; to spread; to broadcast; Taiwan pr. [bò]"
+    "definition": "to sow; to scatter; to spread; to broadcast"
   },
   {
     "id": "hsk6_0056",
@@ -522,7 +529,7 @@
     "level": 6,
     "simplified": "踩",
     "pinyin": "cǎi",
-    "definition": "variant of 踩"
+    "definition": "to step on; to tread; to stamp; to press a pedal; to pedal (a bike); (online) to downvote"
   },
   {
     "id": "hsk6_0077",
@@ -584,8 +591,8 @@
     "id": "hsk6_0085",
     "level": 6,
     "simplified": "藏",
-    "pinyin": "Zàng",
-    "definition": "Tibet; abbr. for Xizang or Tibet Autonomous Region 藏"
+    "pinyin": "cáng",
+    "definition": "to conceal; to hide away; to harbor; to store; to collect"
   },
   {
     "id": "hsk6_0086",
@@ -858,7 +865,7 @@
     "level": 6,
     "simplified": "冲击",
     "pinyin": "chōng jī",
-    "definition": "variant of 冲击"
+    "definition": "to attack; to batter; (of waves) to pound against; shock; impact"
   },
   {
     "id": "hsk6_0125",
@@ -1075,7 +1082,7 @@
     "level": 6,
     "simplified": "此处",
     "pinyin": "cǐ chù",
-    "definition": "this place; here (literary)"
+    "definition": "this place"
   },
   {
     "id": "hsk6_0156",
@@ -1152,7 +1159,7 @@
     "level": 6,
     "simplified": "搭",
     "pinyin": "dā",
-    "definition": "to put up; to build (scaffolding); to hang (clothes on a pole); to connect; to join; to arrange in pairs; to match; to add; to throw in (resources); to take (boat, train); variant of 褡"
+    "definition": "to put up; to build (scaffolding); to hang (clothes on a pole); to connect; to join; to arrange in pairs; to match; to add; to throw in (resources); to take (boat, train)"
   },
   {
     "id": "hsk6_0167",
@@ -1278,7 +1285,7 @@
     "level": 6,
     "simplified": "待会儿",
     "pinyin": "dāi huì r",
-    "definition": "in a moment; later; also pr. [dāi huǐ r] or [dāi hui r]"
+    "definition": "in a moment; later"
   },
   {
     "id": "hsk6_0185",
@@ -1323,11 +1330,18 @@
     "definition": "to treat as; to regard as"
   },
   {
+    "id": "hsk6_0191",
+    "level": 6,
+    "simplified": "党",
+    "pinyin": "dǎng",
+    "definition": "party; association; club; society"
+  },
+  {
     "id": "hsk6_0192",
     "level": 6,
     "simplified": "档",
-    "pinyin": "dǎng",
-    "definition": "(Tw) variant of 挡, gear"
+    "pinyin": "dàng",
+    "definition": "official records; grade (of goods); file; records; shelves; slot; gap; crosspiece; classifier for crosspieces; classifier for events, affairs etc"
   },
   {
     "id": "hsk6_0193",
@@ -1341,7 +1355,7 @@
     "level": 6,
     "simplified": "岛",
     "pinyin": "dǎo",
-    "definition": "variant of 岛"
+    "definition": "island"
   },
   {
     "id": "hsk6_0195",
@@ -1355,7 +1369,7 @@
     "level": 6,
     "simplified": "盗版",
     "pinyin": "dào bǎn",
-    "definition": "pirated; illegal; see also 版"
+    "definition": "pirated; illegal"
   },
   {
     "id": "hsk6_0197",
@@ -1460,7 +1474,7 @@
     "level": 6,
     "simplified": "吊",
     "pinyin": "diào",
-    "definition": "to suspend; to hang up; to hang a person"
+    "definition": "to suspend; to hang up; to hang a person; a string of 100 cash (arch.); to lament; to condole with"
   },
   {
     "id": "hsk6_0212",
@@ -1474,7 +1488,7 @@
     "level": 6,
     "simplified": "跌",
     "pinyin": "diē",
-    "definition": "to fall; to tumble; to trip; (of prices etc) to drop; Taiwan pr. [dié]"
+    "definition": "to fall; to tumble; to trip; (of prices etc) to drop"
   },
   {
     "id": "hsk6_0214",
@@ -1551,7 +1565,7 @@
     "level": 6,
     "simplified": "端",
     "pinyin": "duān",
-    "definition": "end; extremity; item; port; to hold sth level with both hands; to carry; regular"
+    "definition": "end; extremity; item; port; to hold sth level with both hands; to carry; regular; start; origin"
   },
   {
     "id": "hsk6_0225",
@@ -1708,6 +1722,13 @@
     "definition": "French (language)"
   },
   {
+    "id": "hsk6_0247",
+    "level": 6,
+    "simplified": "番",
+    "pinyin": "fān",
+    "definition": "foreign (non-Chinese); barbarian; classifier for occurrences (of an event, action or speech utterance); classifier for iterations: times, -fold (as in twofold etc); classifier for situations: kind, sort"
+  },
+  {
     "id": "hsk6_0248",
     "level": 6,
     "simplified": "番茄",
@@ -1796,7 +1817,7 @@
     "level": 6,
     "simplified": "仿佛",
     "pinyin": "fǎng fú",
-    "definition": "variant of 仿佛"
+    "definition": "to seem; as if; alike; similar"
   },
   {
     "id": "hsk6_0261",
@@ -1865,8 +1886,8 @@
     "id": "hsk6_0270",
     "level": 6,
     "simplified": "佛",
-    "pinyin": "Fó",
-    "definition": "Buddha; Buddhism (abbr. for 陀)"
+    "pinyin": "fú",
+    "definition": "seemingly; (female) head ornament"
   },
   {
     "id": "hsk6_0271",
@@ -1929,7 +1950,7 @@
     "level": 6,
     "simplified": "副",
     "pinyin": "fù",
-    "definition": "secondary; auxiliary; deputy; assistant; vice-; abbr. for 副词 adverb; classifier for pairs, sets of things & facial expressions"
+    "definition": "secondary; auxiliary; deputy; assistant; vice-; classifier for pairs, sets of things & facial expressions"
   },
   {
     "id": "hsk6_0280",
@@ -2114,13 +2135,6 @@
     "definition": "to innovate; innovation"
   },
   {
-    "id": "hsk6_0306",
-    "level": 6,
-    "simplified": "给予",
-    "pinyin": "jǐ yǔ",
-    "definition": "(literary) to give; to accord; to render"
-  },
-  {
     "id": "hsk6_0307",
     "level": 6,
     "simplified": "更是",
@@ -2182,6 +2196,13 @@
     "simplified": "供给",
     "pinyin": "gōng jǐ",
     "definition": "to furnish; to provide; supply (as in supply and demand)"
+  },
+  {
+    "id": "hsk6_0316",
+    "level": 6,
+    "simplified": "宫",
+    "pinyin": "gōng",
+    "definition": "palace; temple; castration (as corporal punishment); first note in pentatonic scale"
   },
   {
     "id": "hsk6_0317",
@@ -2261,18 +2282,25 @@
     "definition": "malfunction; breakdown; defect; shortcoming; fault; failure; impediment; error; bug (in software)"
   },
   {
+    "id": "hsk6_0328",
+    "level": 6,
+    "simplified": "顾",
+    "pinyin": "gù",
+    "definition": "to look after; to take into consideration; to attend to"
+  },
+  {
     "id": "hsk6_0329",
     "level": 6,
     "simplified": "刮",
     "pinyin": "guā",
-    "definition": "to scrape; to blow; to shave; to plunder; to extort"
+    "definition": "to scrape; to blow; to shave; to plunder; to extort; to blow (of the wind)"
   },
   {
     "id": "hsk6_0330",
     "level": 6,
     "simplified": "拐",
     "pinyin": "guǎi",
-    "definition": "to turn (a corner etc); to kidnap; to swindle; to misappropriate; seven (used as a substitute for 七); variant of 拐"
+    "definition": "to turn (a corner etc); to kidnap; to swindle; to misappropriate; seven (used as a substitute for 七); cane; walking stick; crutch; old man's staff"
   },
   {
     "id": "hsk6_0331",
@@ -2446,8 +2474,8 @@
     "id": "hsk6_0355",
     "level": 6,
     "simplified": "海湾",
-    "pinyin": "Hǎi wān",
-    "definition": "(Persian) Gulf"
+    "pinyin": "hǎi wān",
+    "definition": "bay; gulf"
   },
   {
     "id": "hsk6_0356",
@@ -2531,7 +2559,7 @@
     "level": 6,
     "simplified": "狠",
     "pinyin": "hěn",
-    "definition": "ruthless; fierce; ferocious; determined; to harden (one's heart); old variant of 很"
+    "definition": "ruthless; fierce; ferocious; determined; to harden (one's heart)"
   },
   {
     "id": "hsk6_0368",
@@ -2657,7 +2685,7 @@
     "level": 6,
     "simplified": "毁",
     "pinyin": "huǐ",
-    "definition": "to destroy; to ruin; to defame; to slander"
+    "definition": "to destroy; to ruin; to defame; to slander; to destroy by fire"
   },
   {
     "id": "hsk6_0386",
@@ -2692,7 +2720,7 @@
     "level": 6,
     "simplified": "混",
     "pinyin": "hún",
-    "definition": "confused; dirty; to mix; muddy; variant of 浑"
+    "definition": "confused; dirty; to mix; muddy"
   },
   {
     "id": "hsk6_0391",
@@ -2761,8 +2789,8 @@
     "id": "hsk6_0400",
     "level": 6,
     "simplified": "吉利",
-    "pinyin": "Jí lì",
-    "definition": "Geely, Chinese car make"
+    "pinyin": "jí lì",
+    "definition": "auspicious; lucky; propitious"
   },
   {
     "id": "hsk6_0401",
@@ -2818,7 +2846,7 @@
     "level": 6,
     "simplified": "家电",
     "pinyin": "jiā diàn",
-    "definition": "household electric appliance; abbr. for 家用电器"
+    "definition": "household electric appliance"
   },
   {
     "id": "hsk6_0409",
@@ -2901,8 +2929,8 @@
     "id": "hsk6_0420",
     "level": 6,
     "simplified": "将军",
-    "pinyin": "Jiāng jūn",
-    "definition": "(common place name)"
+    "pinyin": "jiāng jūn",
+    "definition": "general; high-ranking military officer; to check or checkmate; fig. to embarrass; to challenge; to put sb on the spot"
   },
   {
     "id": "hsk6_0421",
@@ -2968,6 +2996,13 @@
     "definition": "reception (of transmitted signal); to receive; to accept; to admit; to take over (e.g. a factory); to expropriate"
   },
   {
+    "id": "hsk6_0430",
+    "level": 6,
+    "simplified": "揭",
+    "pinyin": "jiē",
+    "definition": "to take the lid off; to expose; to unmask"
+  },
+  {
     "id": "hsk6_0431",
     "level": 6,
     "simplified": "街头",
@@ -3015,6 +3050,13 @@
     "simplified": "截至",
     "pinyin": "jié zhì",
     "definition": "up to (a time); by (a time)"
+  },
+  {
+    "id": "hsk6_0438",
+    "level": 6,
+    "simplified": "解",
+    "pinyin": "jiě",
+    "definition": "to divide; to break up; to split; to separate; to dissolve; to solve; to melt; to remove; to untie; to loosen; to open; to emancipate; to explain; to understand; to know; a solution; a dissection"
   },
   {
     "id": "hsk6_0439",
@@ -3125,8 +3167,15 @@
     "id": "hsk6_0454",
     "level": 6,
     "simplified": "井",
-    "pinyin": "Jǐng",
-    "definition": "Jing, one of the 28 constellations of Chinese astronomy; surname Jing"
+    "pinyin": "jǐng",
+    "definition": "a well; neat; orderly"
+  },
+  {
+    "id": "hsk6_0455",
+    "level": 6,
+    "simplified": "景",
+    "pinyin": "jǐng",
+    "definition": "(bound form) scenery; circumstance; situation; scene (of a play)"
   },
   {
     "id": "hsk6_0456",
@@ -3140,7 +3189,7 @@
     "level": 6,
     "simplified": "净",
     "pinyin": "jìng",
-    "definition": "variant of 净"
+    "definition": "clean; completely; only; net (income, exports etc); (Chinese opera) painted face male role"
   },
   {
     "id": "hsk6_0458",
@@ -3210,7 +3259,7 @@
     "level": 6,
     "simplified": "据",
     "pinyin": "jù",
-    "definition": "variant of 据"
+    "definition": "according to; to act in accordance with; to depend on; to seize; to occupy"
   },
   {
     "id": "hsk6_0468",
@@ -3420,7 +3469,7 @@
     "level": 6,
     "simplified": "肯",
     "pinyin": "kěn",
-    "definition": "old variant of 肯"
+    "definition": "to agree; to consent; to be willing to"
   },
   {
     "id": "hsk6_0498",
@@ -3483,7 +3532,7 @@
     "level": 6,
     "simplified": "阔",
     "pinyin": "kuò",
-    "definition": "variant of 阔"
+    "definition": "rich; wide; broad"
   },
   {
     "id": "hsk6_0507",
@@ -3503,8 +3552,8 @@
     "id": "hsk6_0509",
     "level": 6,
     "simplified": "赖",
-    "pinyin": "Lài",
-    "definition": "surname Lai; (Tw) (coll.) LINE messaging app"
+    "pinyin": "lài",
+    "definition": "to depend on; to hang on in a place; bad; to renege (on promise); to disclaim; to rat (on debts); rascally; to blame; to put the blame on"
   },
   {
     "id": "hsk6_0510",
@@ -3532,7 +3581,7 @@
     "level": 6,
     "simplified": "懒",
     "pinyin": "lǎn",
-    "definition": "variant of 懒"
+    "definition": "lazy"
   },
   {
     "id": "hsk6_0514",
@@ -3598,6 +3647,13 @@
     "definition": "reason; intellect; rationality; rational"
   },
   {
+    "id": "hsk6_0523",
+    "level": 6,
+    "simplified": "利",
+    "pinyin": "lì",
+    "definition": "sharp; favorable; advantage; benefit; profit; interest; to do good to; to benefit"
+  },
+  {
     "id": "hsk6_0524",
     "level": 6,
     "simplified": "联盟",
@@ -3644,14 +3700,14 @@
     "level": 6,
     "simplified": "聊",
     "pinyin": "liáo",
-    "definition": "to chat; to depend upon (literary); temporarily; just; slightly"
+    "definition": "to chat; temporarily; just; slightly"
   },
   {
     "id": "hsk6_0531",
     "level": 6,
     "simplified": "聊天儿",
     "pinyin": "liáo tiān r",
-    "definition": "erhua variant of 聊天; to chat; to gossip"
+    "definition": "to chat; to gossip"
   },
   {
     "id": "hsk6_0532",
@@ -3752,6 +3808,13 @@
     "definition": "to pass by or through"
   },
   {
+    "id": "hsk6_0546",
+    "level": 6,
+    "simplified": "露",
+    "pinyin": "lòu",
+    "definition": "to show; to reveal; to betray; to expose"
+  },
+  {
     "id": "hsk6_0547",
     "level": 6,
     "simplified": "旅店",
@@ -3777,7 +3840,7 @@
     "level": 6,
     "simplified": "嘛",
     "pinyin": "má",
-    "definition": "used in 吽; (Tw) (coll.) what?"
+    "definition": "(Tw) (coll.) what?"
   },
   {
     "id": "hsk6_0551",
@@ -3833,7 +3896,7 @@
     "level": 6,
     "simplified": "蒙",
     "pinyin": "méng",
-    "definition": "drizzle; mist"
+    "definition": "drizzle; mist; blind; dim-sighted; to cover; ignorant; to suffer (misfortune); to receive (a favor); to cheat"
   },
   {
     "id": "hsk6_0559",
@@ -3910,7 +3973,7 @@
     "level": 6,
     "simplified": "民警",
     "pinyin": "mín jǐng",
-    "definition": "civil police; PRC police; abbr. for 人民警察"
+    "definition": "civil police; PRC police"
   },
   {
     "id": "hsk6_0570",
@@ -4056,8 +4119,8 @@
     "id": "hsk6_0590",
     "level": 6,
     "simplified": "内地",
-    "pinyin": "Nèi dì",
-    "definition": "mainland China (PRC excluding Hong Kong and Macau, but including islands such as Hainan); Japan (used in Taiwan during Japanese colonization)"
+    "pinyin": "nèi dì",
+    "definition": "inland; interior; hinterland"
   },
   {
     "id": "hsk6_0591",
@@ -4162,7 +4225,7 @@
     "level": 6,
     "simplified": "偏",
     "pinyin": "piān",
-    "definition": "to lean; to slant; oblique; prejudiced; to deviate from average; to stray from the intended line; stubbornly; contrary to expectations"
+    "definition": "to lean; to slant; oblique; prejudiced; to deviate from average; to stray from the intended line; contrary to expectations"
   },
   {
     "id": "hsk6_0606",
@@ -4253,7 +4316,7 @@
     "level": 6,
     "simplified": "铺",
     "pinyin": "pù",
-    "definition": "variant of 铺; store"
+    "definition": "store; plank bed; place to sleep; shop; (old) relay station"
   },
   {
     "id": "hsk6_0619",
@@ -4441,8 +4504,8 @@
     "id": "hsk6_0645",
     "level": 6,
     "simplified": "清",
-    "pinyin": "Qīng",
-    "definition": "Qing (Wade-Giles: Ch'ing) dynasty of imperial China (1644-1911); surname Qing"
+    "pinyin": "qīng",
+    "definition": "(of water etc) clear; clean; quiet; still; pure; uncorrupted; clear; distinct; to clear; to settle (accounts)"
   },
   {
     "id": "hsk6_0646",
@@ -4555,6 +4618,13 @@
     "simplified": "全新",
     "pinyin": "quán xīn",
     "definition": "all new; completely new"
+  },
+  {
+    "id": "hsk6_0662",
+    "level": 6,
+    "simplified": "权",
+    "pinyin": "quán",
+    "definition": "authority; power; right; expedient; temporary"
   },
   {
     "id": "hsk6_0663",
@@ -4687,7 +4757,7 @@
     "level": 6,
     "simplified": "入",
     "pinyin": "rù",
-    "definition": "to enter; to go into; to join; to become a member of; to confirm or agree with; abbr. for 入声"
+    "definition": "to enter; to go into; to join; to become a member of; to confirm or agree with"
   },
   {
     "id": "hsk6_0682",
@@ -4707,8 +4777,8 @@
     "id": "hsk6_0684",
     "level": 6,
     "simplified": "塞",
-    "pinyin": "Sāi",
-    "definition": "Serbia; Serbian; abbr. for 塞尔维亚"
+    "pinyin": "sāi",
+    "definition": "to stop up; to squeeze in; to stuff; cork; stopper"
   },
   {
     "id": "hsk6_0685",
@@ -4784,8 +4854,8 @@
     "id": "hsk6_0695",
     "level": 6,
     "simplified": "商城",
-    "pinyin": "Shāng chéng",
-    "definition": "see 商城县"
+    "pinyin": "shāng chéng",
+    "definition": "shopping center; department store"
   },
   {
     "id": "hsk6_0696",
@@ -4834,7 +4904,7 @@
     "level": 6,
     "simplified": "勺",
     "pinyin": "sháo",
-    "definition": "spoon; ladle; abbr. for 勺, centiliter (unit of volume)"
+    "definition": "spoon; ladle"
   },
   {
     "id": "hsk6_0703",
@@ -5030,7 +5100,7 @@
     "level": 6,
     "simplified": "识",
     "pinyin": "shí",
-    "definition": "to know; knowledge; Taiwan pr. [shì]"
+    "definition": "to know; knowledge"
   },
   {
     "id": "hsk6_0731",
@@ -5253,15 +5323,15 @@
     "id": "hsk6_0762",
     "level": 6,
     "simplified": "踏",
-    "pinyin": "tā",
-    "definition": "see 踏实"
+    "pinyin": "tà",
+    "definition": "to tread; to stamp; to step on; to press a pedal; to investigate on the spot"
   },
   {
     "id": "hsk6_0763",
     "level": 6,
     "simplified": "踏实",
     "pinyin": "tā shi",
-    "definition": "firmly-based; steady; steadfast; to have peace of mind; free from anxiety; Taiwan pr. [tà shí]"
+    "definition": "firmly-based; steady; steadfast; to have peace of mind; free from anxiety"
   },
   {
     "id": "hsk6_0764",
@@ -5303,7 +5373,7 @@
     "level": 6,
     "simplified": "趟",
     "pinyin": "tāng",
-    "definition": "old variant of 趟"
+    "definition": "to wade; to trample; to turn the soil"
   },
   {
     "id": "hsk6_0770",
@@ -5317,7 +5387,7 @@
     "level": 6,
     "simplified": "特",
     "pinyin": "tè",
-    "definition": "special; unique; distinguished; especially; unusual; very; abbr. for 斯, tex"
+    "definition": "special; unique; distinguished; especially; unusual; very"
   },
   {
     "id": "hsk6_0772",
@@ -5404,6 +5474,13 @@
     "definition": "to add; to increase; to replenish"
   },
   {
+    "id": "hsk6_0784",
+    "level": 6,
+    "simplified": "田",
+    "pinyin": "tián",
+    "definition": "field; farm"
+  },
+  {
     "id": "hsk6_0785",
     "level": 6,
     "simplified": "田径",
@@ -5435,8 +5512,8 @@
     "id": "hsk6_0789",
     "level": 6,
     "simplified": "通道",
-    "pinyin": "Tōng dào",
-    "definition": "Tongdao Dong autonomous county in Huaihua 怀化, Hunan"
+    "pinyin": "tōng dào",
+    "definition": "(communications) channel; thoroughfare; passage"
   },
   {
     "id": "hsk6_0790",
@@ -5583,14 +5660,14 @@
     "level": 6,
     "simplified": "托",
     "pinyin": "tuō",
-    "definition": "prop; support (for weight); rest (e.g. arm rest); thanks to; to hold in one's hand; to support in one's palm; to give; to base; to commit; to set; torr (unit of pressure)"
+    "definition": "prop; support (for weight); rest (e.g. arm rest); thanks to; to hold in one's hand; to support in one's palm; to give; to base; to commit; to set; torr (unit of pressure); to trust; to entrust; to be entrusted with; to act as trustee"
   },
   {
     "id": "hsk6_0811",
     "level": 6,
     "simplified": "拖",
     "pinyin": "tuō",
-    "definition": "variant of 拖"
+    "definition": "to drag; to tow; to trail; to hang down; to mop (the floor); to delay; to drag on"
   },
   {
     "id": "hsk6_0812",
@@ -5926,7 +6003,7 @@
     "level": 6,
     "simplified": "嫌",
     "pinyin": "xián",
-    "definition": "to dislike; suspicion; resentment; enmity; abbr. for 犯, criminal suspect"
+    "definition": "to dislike; suspicion; resentment; enmity"
   },
   {
     "id": "hsk6_0860",
@@ -6114,8 +6191,8 @@
     "id": "hsk6_0886",
     "level": 6,
     "simplified": "新兴",
-    "pinyin": "Xīn xīng",
-    "definition": "Xinxing county in Yunfu 云浮, Guangdong; Xinxing or Hsinhsing district of Kaohsiung city 市, south Taiwan"
+    "pinyin": "xīn xīng",
+    "definition": "(of markets, industries, infectious diseases etc) rising; emerging; in the ascendant"
   },
   {
     "id": "hsk6_0887",
@@ -6136,7 +6213,7 @@
     "level": 6,
     "simplified": "信用",
     "pinyin": "xìn yòng",
-    "definition": "trustworthiness; (commerce) credit; (literary) to trust and appoint"
+    "definition": "trustworthiness; (commerce) credit"
   },
   {
     "id": "hsk6_0890",
@@ -6164,7 +6241,7 @@
     "level": 6,
     "simplified": "凶",
     "pinyin": "xiōng",
-    "definition": "terrible; fearful"
+    "definition": "terrible; fearful; vicious; fierce; ominous; inauspicious; famine"
   },
   {
     "id": "hsk6_0894",
@@ -6321,6 +6398,13 @@
     "definition": "ocean; vast; foreign; silver dollar or coin"
   },
   {
+    "id": "hsk6_0916",
+    "level": 6,
+    "simplified": "仰",
+    "pinyin": "yǎng",
+    "definition": "to face upward; to look up; to admire; to rely on"
+  },
+  {
     "id": "hsk6_0917",
     "level": 6,
     "simplified": "养老",
@@ -6339,7 +6423,7 @@
     "level": 6,
     "simplified": "样",
     "pinyin": "yàng",
-    "definition": "manner; pattern; way; appearance; shape; classifier: kind, type"
+    "definition": "way; shape; classifier: kind, type"
   },
   {
     "id": "hsk6_0920",
@@ -6381,7 +6465,7 @@
     "level": 6,
     "simplified": "野",
     "pinyin": "yě",
-    "definition": "old variant of 野"
+    "definition": "field; plain; open space; limit; boundary; rude; feral"
   },
   {
     "id": "hsk6_0926",
@@ -6437,7 +6521,7 @@
     "level": 6,
     "simplified": "一模一样",
     "pinyin": "yī mú yī yàng",
-    "definition": "exactly the same (idiom); carbon copy; also pr. [yī mó yī yàng]"
+    "definition": "exactly the same (idiom); carbon copy"
   },
   {
     "id": "hsk6_0934",
@@ -6549,7 +6633,7 @@
     "level": 6,
     "simplified": "因",
     "pinyin": "yīn",
-    "definition": "old variant of 因"
+    "definition": "cause; reason; because"
   },
   {
     "id": "hsk6_0950",
@@ -6604,8 +6688,8 @@
     "id": "hsk6_0957",
     "level": 6,
     "simplified": "印",
-    "pinyin": "Yìn",
-    "definition": "surname Yin; abbr. for 度"
+    "pinyin": "yìn",
+    "definition": "to print; to mark; to engrave; a seal; a print; a stamp; a mark; a trace; image"
   },
   {
     "id": "hsk6_0958",
@@ -6748,6 +6832,13 @@
     "definition": "to be occupied with sth; to have sth on one's mind; there is something the matter"
   },
   {
+    "id": "hsk6_0978",
+    "level": 6,
+    "simplified": "于",
+    "pinyin": "yú",
+    "definition": "to go; to take; sentence-final interrogative particle; (of time or place) in; at; on; (indicating any indirect relation) to; toward; vis-à-vis; with regard to; for; (indicating a source) from; out of; (used in comparison) than; (used in the passive voice) by"
+  },
+  {
     "id": "hsk6_0979",
     "level": 6,
     "simplified": "娱乐",
@@ -6765,8 +6856,8 @@
     "id": "hsk6_0981",
     "level": 6,
     "simplified": "与",
-    "pinyin": "yú",
-    "definition": "variant of 欤"
+    "pinyin": "yǔ",
+    "definition": "and; to give; together with"
   },
   {
     "id": "hsk6_0982",
@@ -6797,6 +6888,13 @@
     "definition": "element (key component of sth); (chemistry) element; (math.) element (member of a set)"
   },
   {
+    "id": "hsk6_0986",
+    "level": 6,
+    "simplified": "园",
+    "pinyin": "yuán",
+    "definition": "land used for growing plants; site used for public recreation"
+  },
+  {
     "id": "hsk6_0987",
     "level": 6,
     "simplified": "园地",
@@ -6807,8 +6905,8 @@
     "id": "hsk6_0988",
     "level": 6,
     "simplified": "原",
-    "pinyin": "Yuán",
-    "definition": "surname Yuan; (Japanese surname) Hara"
+    "pinyin": "yuán",
+    "definition": "former; original; primary; raw; level; cause; source"
   },
   {
     "id": "hsk6_0989",
@@ -6906,7 +7004,7 @@
     "level": 6,
     "simplified": "杂",
     "pinyin": "zá",
-    "definition": "variant of 杂"
+    "definition": "mixed; miscellaneous; various; to mix"
   },
   {
     "id": "hsk6_1003",
@@ -6969,7 +7067,7 @@
     "level": 6,
     "simplified": "扎",
     "pinyin": "zhā",
-    "definition": "to prick; to run or stick (a needle etc) into; mug or jug used for serving beer (loanword from \"jar\")"
+    "definition": "to prick; to run or stick (a needle etc) into; mug or jug used for serving beer (loanword from \"jar\"); (of troops) to be stationed (at)"
   },
   {
     "id": "hsk6_1012",
@@ -6983,7 +7081,7 @@
     "level": 6,
     "simplified": "炸",
     "pinyin": "zhá",
-    "definition": "to deep fry; Taiwan pr. [zhà]"
+    "definition": "to deep fry"
   },
   {
     "id": "hsk6_1014",
@@ -7047,6 +7145,13 @@
     "simplified": "站台",
     "pinyin": "zhàn tái",
     "definition": "platform (at a railway station); (Tw) (of an influential person) to publicly lend one's support (e.g. for an election candidate); (Tw) website"
+  },
+  {
+    "id": "hsk6_1023",
+    "level": 6,
+    "simplified": "章",
+    "pinyin": "zhāng",
+    "definition": "chapter; section; clause; movement (of symphony); seal; badge; regulation; order"
   },
   {
     "id": "hsk6_1024",
@@ -7423,8 +7528,8 @@
     "id": "hsk6_1077",
     "level": 6,
     "simplified": "粥",
-    "pinyin": "yù",
-    "definition": "used in 荤粥"
+    "pinyin": "zhōu",
+    "definition": "congee; gruel; porridge"
   },
   {
     "id": "hsk6_1078",
@@ -7466,7 +7571,7 @@
     "level": 6,
     "simplified": "煮",
     "pinyin": "zhǔ",
-    "definition": "variant of 煮"
+    "definition": "to cook; to boil"
   },
   {
     "id": "hsk6_1084",
@@ -7689,8 +7794,8 @@
     "id": "hsk6_1115",
     "level": 6,
     "simplified": "钻",
-    "pinyin": "zuàn",
-    "definition": "variant of 钻"
+    "pinyin": "zuān",
+    "definition": "to drill; to bore; to get into; to make one's way into; to enter (a hole); to thread one's way through; to study intensively; to dig into; to curry favor for personal gain"
   },
   {
     "id": "hsk6_1116",

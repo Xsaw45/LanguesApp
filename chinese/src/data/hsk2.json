@@ -116,7 +116,7 @@
     "level": 2,
     "simplified": "背",
     "pinyin": "bēi",
-    "definition": "variant of 背"
+    "definition": "to be burdened; to carry on the back or shoulder"
   },
   {
     "id": "hsk2_0018",
@@ -193,14 +193,14 @@
     "level": 2,
     "simplified": "遍",
     "pinyin": "biàn",
-    "definition": "variant of 遍"
+    "definition": "everywhere; all over; classifier for actions: one time"
   },
   {
     "id": "hsk2_0029",
     "level": 2,
     "simplified": "表",
     "pinyin": "biǎo",
-    "definition": "exterior surface; family relationship via females; to show (one's opinion); a model; a table (listing information); a form; a meter (measuring sth)"
+    "definition": "exterior surface; family relationship via females; to show (one's opinion); a model; a table (listing information); a form; a meter (measuring sth); watch (timepiece); meter; gauge"
   },
   {
     "id": "hsk2_0030",
@@ -319,7 +319,7 @@
     "level": 2,
     "simplified": "才",
     "pinyin": "cái",
-    "definition": "ability; talent; sb of a certain type; a capable individual; then and only then; just now; (before an expression of quantity) only"
+    "definition": "ability; talent; sb of a certain type; a capable individual; then and only then; just now; (before an expression of quantity) only; (variant of 才) just now; (variant of 才) (before an expression of quantity) only"
   },
   {
     "id": "hsk2_0047",
@@ -347,7 +347,7 @@
     "level": 2,
     "simplified": "草",
     "pinyin": "cǎo",
-    "definition": "variant of 草"
+    "definition": "grass; straw; manuscript; draft (of a document); careless; rough"
   },
   {
     "id": "hsk2_0051",
@@ -362,6 +362,13 @@
     "simplified": "层",
     "pinyin": "céng",
     "definition": "to pile on top of one another; layer; stratum; floor (of a building); story; (math.) sheaf; classifier for layers"
+  },
+  {
+    "id": "hsk2_0053",
+    "level": 2,
+    "simplified": "查",
+    "pinyin": "chá",
+    "definition": "to research; to check; to investigate; to examine; to refer to; to look up (e.g. a word in a dictionary)"
   },
   {
     "id": "hsk2_0054",
@@ -418,6 +425,13 @@
     "simplified": "称",
     "pinyin": "chèn",
     "definition": "to fit; balanced; suitable"
+  },
+  {
+    "id": "hsk2_0062",
+    "level": 2,
+    "simplified": "成",
+    "pinyin": "chéng",
+    "definition": "to succeed; to finish; to complete; to accomplish; to become; to turn into; to be all right; OK!; one tenth"
   },
   {
     "id": "hsk2_0063",
@@ -501,7 +515,7 @@
     "level": 2,
     "simplified": "船",
     "pinyin": "chuán",
-    "definition": "variant of 船"
+    "definition": "boat; vessel; ship"
   },
   {
     "id": "hsk2_0075",
@@ -529,14 +543,14 @@
     "level": 2,
     "simplified": "词",
     "pinyin": "cí",
-    "definition": "old variant of 词"
+    "definition": "word; statement; speech; lyrics; a form of lyric poetry, flourishing in the Song dynasty 宋朝"
   },
   {
     "id": "hsk2_0079",
     "level": 2,
     "simplified": "词典",
     "pinyin": "cí diǎn",
-    "definition": "dictionary; also written 辞典"
+    "definition": "dictionary"
   },
   {
     "id": "hsk2_0080",
@@ -626,8 +640,8 @@
     "id": "hsk2_0092",
     "level": 2,
     "simplified": "大门",
-    "pinyin": "Dà mén",
-    "definition": "the Doors, US rock band"
+    "pinyin": "dà mén",
+    "definition": "entrance; door; gate; large and influential family"
   },
   {
     "id": "hsk2_0093",
@@ -703,15 +717,15 @@
     "id": "hsk2_0103",
     "level": 2,
     "simplified": "蛋",
-    "pinyin": "Dàn",
-    "definition": "variant of 蜑"
+    "pinyin": "dàn",
+    "definition": "egg; oval-shaped thing"
   },
   {
     "id": "hsk2_0104",
     "level": 2,
     "simplified": "当",
     "pinyin": "dāng",
-    "definition": "(onom.) dong; ding dong (bell)"
+    "definition": "(onom.) dong; ding dong (bell); to be; to act as; manage; withstand; when; during; ought; should; match equally; equal; same; obstruct; just at (a time or place); on the spot; right; just at"
   },
   {
     "id": "hsk2_0105",
@@ -850,15 +864,15 @@
     "id": "hsk2_0124",
     "level": 2,
     "simplified": "东北",
-    "pinyin": "Dōng běi",
-    "definition": "Northeast China; Manchuria"
+    "pinyin": "dōng běi",
+    "definition": "northeast"
   },
   {
     "id": "hsk2_0125",
     "level": 2,
     "simplified": "东方",
-    "pinyin": "Dōng fāng",
-    "definition": "the East; the Orient; two-character surname Dongfang"
+    "pinyin": "dōng fāng",
+    "definition": "east"
   },
   {
     "id": "hsk2_0126",
@@ -929,6 +943,13 @@
     "simplified": "短信",
     "pinyin": "duǎn xìn",
     "definition": "text message; SMS"
+  },
+  {
+    "id": "hsk2_0136",
+    "level": 2,
+    "simplified": "段",
+    "pinyin": "duàn",
+    "definition": "paragraph; section; segment; stage (of a process); classifier for stories, periods of time, lengths of thread etc"
   },
   {
     "id": "hsk2_0137",
@@ -1089,7 +1110,14 @@
     "level": 2,
     "simplified": "份",
     "pinyin": "fèn",
-    "definition": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc; variant of 分"
+    "definition": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc"
+  },
+  {
+    "id": "hsk2_0160",
+    "level": 2,
+    "simplified": "封",
+    "pinyin": "fēng",
+    "definition": "to confer; to grant; to bestow a title; to seal; classifier for sealed objects, esp. letters"
   },
   {
     "id": "hsk2_0161",
@@ -1166,7 +1194,7 @@
     "level": 2,
     "simplified": "干活儿",
     "pinyin": "gàn huó r",
-    "definition": "erhua variant of 干活; (coll.) to work; (coll.) to be employed"
+    "definition": "(coll.) to work; (coll.) to be employed"
   },
   {
     "id": "hsk2_0172",
@@ -1180,7 +1208,7 @@
     "level": 2,
     "simplified": "刚才",
     "pinyin": "gāng cái",
-    "definition": "just now; a moment ago"
+    "definition": "just now; a moment ago; just now (variant of 刚才)"
   },
   {
     "id": "hsk2_0174",
@@ -1201,7 +1229,7 @@
     "level": 2,
     "simplified": "高中",
     "pinyin": "gāo zhōng",
-    "definition": "senior high school; abbr. for 高级中学"
+    "definition": "senior high school"
   },
   {
     "id": "hsk2_0177",
@@ -1372,6 +1400,13 @@
     "definition": "(in the) past; former; previous; to go over; to pass by"
   },
   {
+    "id": "hsk2_0201",
+    "level": 2,
+    "simplified": "海",
+    "pinyin": "hǎi",
+    "definition": "ocean; sea; great number of people or things; (dialect) numerous"
+  },
+  {
     "id": "hsk2_0202",
     "level": 2,
     "simplified": "海边",
@@ -1445,8 +1480,8 @@
     "id": "hsk2_0212",
     "level": 2,
     "simplified": "黑",
-    "pinyin": "Hēi",
-    "definition": "abbr. for Heilongjiang province 黑龙江"
+    "pinyin": "hēi",
+    "definition": "black; dark; sinister; secret; shady; illegal; to hide (sth) away; to vilify; (loanword) to hack (computing)"
   },
   {
     "id": "hsk2_0213",
@@ -1461,6 +1496,13 @@
     "simplified": "黑色",
     "pinyin": "hēi sè",
     "definition": "black"
+  },
+  {
+    "id": "hsk2_0215",
+    "level": 2,
+    "simplified": "红",
+    "pinyin": "hóng",
+    "definition": "red; popular; revolutionary; bonus"
   },
   {
     "id": "hsk2_0216",
@@ -1509,7 +1551,7 @@
     "level": 2,
     "simplified": "画",
     "pinyin": "huà",
-    "definition": "to draw; to paint; picture; painting; to draw (a line) (variant of 划); stroke of a Chinese character (variant of 划); (calligraphy) horizontal stroke (variant of 划)"
+    "definition": "to draw; to paint; to draw (a line) (variant of 划); stroke of a Chinese character (variant of 划); (calligraphy) horizontal stroke (variant of 划)"
   },
   {
     "id": "hsk2_0223",
@@ -1552,6 +1594,13 @@
     "simplified": "欢迎",
     "pinyin": "huān yíng",
     "definition": "to welcome; welcome"
+  },
+  {
+    "id": "hsk2_0229",
+    "level": 2,
+    "simplified": "黄",
+    "pinyin": "huáng",
+    "definition": "yellow; pornographic; to fall through"
   },
   {
     "id": "hsk2_0230",
@@ -1634,8 +1683,8 @@
     "id": "hsk2_0241",
     "level": 2,
     "simplified": "加",
-    "pinyin": "Jiā",
-    "definition": "Canada (abbr. for 大); surname Jia"
+    "pinyin": "jiā",
+    "definition": "to add; plus; (used after an adverb such as 不, 大, 稍 etc, and before a disyllabic verb, to indicate that the action of the verb is applied to sth or sb previously mentioned); to apply (restrictions etc) to (sb); to give (support, consideration etc) to (sth)"
   },
   {
     "id": "hsk2_0242",
@@ -1662,8 +1711,8 @@
     "id": "hsk2_0245",
     "level": 2,
     "simplified": "假",
-    "pinyin": "gēi",
-    "definition": "used in 掰"
+    "pinyin": "jiǎ",
+    "definition": "fake; false; artificial; to borrow; if; suppose"
   },
   {
     "id": "hsk2_0246",
@@ -1726,7 +1775,7 @@
     "level": 2,
     "simplified": "交",
     "pinyin": "jiāo",
-    "definition": "to hand over; to deliver; to pay (money); to turn over; to make friends; to intersect (lines); variant of 跤"
+    "definition": "to hand over; to deliver; to pay (money); to turn over; to make friends; to intersect (lines)"
   },
   {
     "id": "hsk2_0255",
@@ -1748,6 +1797,13 @@
     "simplified": "交通",
     "pinyin": "jiāo tōng",
     "definition": "to be connected; traffic; transportation; communications; liaison"
+  },
+  {
+    "id": "hsk2_0258",
+    "level": 2,
+    "simplified": "角",
+    "pinyin": "jiǎo",
+    "definition": "angle; corner; horn; horn-shaped; unit of money equal to 0.1 yuan, or 10 cents (a dime)"
   },
   {
     "id": "hsk2_0259",
@@ -1851,8 +1907,8 @@
     "id": "hsk2_0273",
     "level": 2,
     "simplified": "节",
-    "pinyin": "jiē",
-    "definition": "see 节骨眼"
+    "pinyin": "jié",
+    "definition": "joint; node; (bound form) section; segment; solar term (one of the 24 divisions of the year in the traditional Chinese calendar); seasonal festival; (bound form) to economize; to save; (bound form) moral integrity; chastity; classifier for segments: lessons, train wagons, biblical verses etc; knot (nautical miles per hour)"
   },
   {
     "id": "hsk2_0274",
@@ -1964,7 +2020,7 @@
     "level": 2,
     "simplified": "举",
     "pinyin": "jǔ",
-    "definition": "variant of 举"
+    "definition": "to lift; to hold up; to cite; to enumerate; to act; to raise; to choose; to elect; act; move; deed"
   },
   {
     "id": "hsk2_0290",
@@ -1984,8 +2040,8 @@
     "id": "hsk2_0292",
     "level": 2,
     "simplified": "句",
-    "pinyin": "gōu",
-    "definition": "variant of 勾"
+    "pinyin": "jù",
+    "definition": "clause; phrase; classifier for phrases or lines of verse"
   },
   {
     "id": "hsk2_0293",
@@ -2103,8 +2159,8 @@
     "id": "hsk2_0309",
     "level": 2,
     "simplified": "克",
-    "pinyin": "Kè",
-    "definition": "abbr. for 克罗地亚, Croatia; (Tw) abbr. for 克罗埃西亚, Croatia"
+    "pinyin": "kè",
+    "definition": "to be able to; to subdue; to restrain; to overcome; gram; Tibetan unit of land area, about 6 ares; to overthrow"
   },
   {
     "id": "hsk2_0310",
@@ -2153,7 +2209,7 @@
     "level": 2,
     "simplified": "快点儿",
     "pinyin": "kuài diǎn r",
-    "definition": "erhua variant of 快点; to do smh more quickly; Hurry up!"
+    "definition": "to do smh more quickly; Hurry up!"
   },
   {
     "id": "hsk2_0317",
@@ -2189,6 +2245,13 @@
     "simplified": "来自",
     "pinyin": "lái zì",
     "definition": "to come from (a place); From: (in email header)"
+  },
+  {
+    "id": "hsk2_0322",
+    "level": 2,
+    "simplified": "蓝",
+    "pinyin": "lán",
+    "definition": "blue; indigo plant"
   },
   {
     "id": "hsk2_0323",
@@ -2286,7 +2349,7 @@
     "level": 2,
     "simplified": "练",
     "pinyin": "liàn",
-    "definition": "to practice; to train; to drill; to perfect (one's skill); exercise; (literary) white silk; to boil and scour raw silk"
+    "definition": "to practice; to train; to drill; to perfect (one's skill); exercise; to boil and scour raw silk"
   },
   {
     "id": "hsk2_0337",
@@ -2299,8 +2362,8 @@
     "id": "hsk2_0338",
     "level": 2,
     "simplified": "凉",
-    "pinyin": "Liáng",
-    "definition": "the five Liang of the Sixteen Kingdoms, namely: Former Liang 前凉 (314-376), Later Liang 后凉 (386-403), Northern Liang 北凉 (398-439), Southern Liang 南凉 (397-414), Western Liang 西凉 (400-421)"
+    "pinyin": "liáng",
+    "definition": "cool; cold"
   },
   {
     "id": "hsk2_0339",
@@ -2356,7 +2419,7 @@
     "level": 2,
     "simplified": "留",
     "pinyin": "liú",
-    "definition": "old variant of 留"
+    "definition": "to leave (a message etc); to retain; to stay; to remain; to keep; to preserve"
   },
   {
     "id": "hsk2_0347",
@@ -2425,8 +2488,8 @@
     "id": "hsk2_0356",
     "level": 2,
     "simplified": "满",
-    "pinyin": "Mǎn",
-    "definition": "Manchu ethnic group"
+    "pinyin": "mǎn",
+    "definition": "to fill; full; filled; packed; fully; completely; quite; to reach the limit; to satisfy; satisfied; contented"
   },
   {
     "id": "hsk2_0357",
@@ -2443,11 +2506,18 @@
     "definition": "cat; (dialect) to hide oneself; (coll.) modem"
   },
   {
+    "id": "hsk2_0359",
+    "level": 2,
+    "simplified": "米",
+    "pinyin": "mǐ",
+    "definition": "rice; meter (classifier)"
+  },
+  {
     "id": "hsk2_0360",
     "level": 2,
     "simplified": "面",
     "pinyin": "miàn",
-    "definition": "face; side; surface; aspect; top; classifier for objects with flat surfaces such as drums, mirrors, flags etc"
+    "definition": "side; surface; aspect; top; classifier for objects with flat surfaces such as drums, mirrors, flags etc; flour; noodles; (of food) soft (not crunchy); (slang) (of a person) ineffectual; spineless"
   },
   {
     "id": "hsk2_0361",
@@ -2510,7 +2580,7 @@
     "level": 2,
     "simplified": "那会儿",
     "pinyin": "nà huì r",
-    "definition": "at that time (in the past or the future); also pr. [nèi huì r]"
+    "definition": "at that time (in the past or the future)"
   },
   {
     "id": "hsk2_0370",
@@ -2608,7 +2678,7 @@
     "level": 2,
     "simplified": "鸟",
     "pinyin": "diǎo",
-    "definition": "variant of 屌; penis"
+    "definition": "penis"
   },
   {
     "id": "hsk2_0384",
@@ -2639,6 +2709,13 @@
     "definition": "to climb a mountain; to mountaineer; hiking; mountaineering"
   },
   {
+    "id": "hsk2_0388",
+    "level": 2,
+    "simplified": "怕",
+    "pinyin": "pà",
+    "definition": "to be afraid; to fear; to dread; to be unable to endure; perhaps"
+  },
+  {
     "id": "hsk2_0389",
     "level": 2,
     "simplified": "排",
@@ -2664,7 +2741,7 @@
     "level": 2,
     "simplified": "碰",
     "pinyin": "pèng",
-    "definition": "variant of 碰"
+    "definition": "to touch; to meet with; to bump"
   },
   {
     "id": "hsk2_0393",
@@ -2702,6 +2779,13 @@
     "definition": "pretty; beautiful"
   },
   {
+    "id": "hsk2_0398",
+    "level": 2,
+    "simplified": "平",
+    "pinyin": "píng",
+    "definition": "flat; level; equal; to tie (make the same score); to draw (score); calm; peaceful"
+  },
+  {
     "id": "hsk2_0399",
     "level": 2,
     "simplified": "平安",
@@ -2734,7 +2818,7 @@
     "level": 2,
     "simplified": "瓶",
     "pinyin": "píng",
-    "definition": "bottle; vase; pitcher; classifier for wine and liquids"
+    "definition": "vase; pitcher; classifier for wine and liquids"
   },
   {
     "id": "hsk2_0404",
@@ -2832,7 +2916,7 @@
     "level": 2,
     "simplified": "墙",
     "pinyin": "qiáng",
-    "definition": "variant of 墙, wall"
+    "definition": "wall"
   },
   {
     "id": "hsk2_0418",
@@ -2938,6 +3022,13 @@
     "simplified": "取得",
     "pinyin": "qǔ dé",
     "definition": "to acquire; to get; to obtain"
+  },
+  {
+    "id": "hsk2_0433",
+    "level": 2,
+    "simplified": "全",
+    "pinyin": "quán",
+    "definition": "all; whole; entire; every; complete"
   },
   {
     "id": "hsk2_0434",
@@ -3084,7 +3175,7 @@
     "level": 2,
     "simplified": "少年",
     "pinyin": "shào nián",
-    "definition": "early youth; youngster; (literary) youth; young man"
+    "definition": "early youth; youngster; young man"
   },
   {
     "id": "hsk2_0455",
@@ -3259,7 +3350,7 @@
     "level": 2,
     "simplified": "熟",
     "pinyin": "shú",
-    "definition": "ripe; mature; thoroughly cooked; done; familiar; acquainted; experienced; skilled; (of sleep etc) deep; profound; also pr. [shóu]"
+    "definition": "ripe; mature; thoroughly cooked; done; familiar; acquainted; experienced; skilled; (of sleep etc) deep; profound"
   },
   {
     "id": "hsk2_0480",
@@ -3385,7 +3476,7 @@
     "level": 2,
     "simplified": "太阳",
     "pinyin": "tài yang",
-    "definition": "sun; abbr. for 太阳穴"
+    "definition": "sun"
   },
   {
     "id": "hsk2_0498",
@@ -3433,8 +3524,8 @@
     "id": "hsk2_0504",
     "level": 2,
     "simplified": "提",
-    "pinyin": "dī",
-    "definition": "used in 防 and 溜"
+    "pinyin": "tí",
+    "definition": "to carry (hanging down from the hand); to lift; to put forward; to mention; to raise (an issue); upwards character stroke; lifting brush stroke (in painting); scoop for measuring liquid"
   },
   {
     "id": "hsk2_0505",
@@ -3456,6 +3547,13 @@
     "simplified": "提高",
     "pinyin": "tí gāo",
     "definition": "to raise; to increase; to improve"
+  },
+  {
+    "id": "hsk2_0508",
+    "level": 2,
+    "simplified": "题",
+    "pinyin": "tí",
+    "definition": "topic; problem for discussion; exam question; subject; to inscribe; to mention"
   },
   {
     "id": "hsk2_0509",
@@ -3497,7 +3595,7 @@
     "level": 2,
     "simplified": "条件",
     "pinyin": "tiáo jiàn",
-    "definition": "condition; circumstance; term; factor; requirement; prerequisite; qualification; situation; state; condition"
+    "definition": "condition; circumstance; term; factor; requirement; prerequisite; qualification; situation; state"
   },
   {
     "id": "hsk2_0515",
@@ -3623,7 +3721,7 @@
     "level": 2,
     "simplified": "腿",
     "pinyin": "tuǐ",
-    "definition": "leg"
+    "definition": "leg; hip bone"
   },
   {
     "id": "hsk2_0533",
@@ -3693,14 +3791,14 @@
     "level": 2,
     "simplified": "碗",
     "pinyin": "wǎn",
-    "definition": "variant of 碗"
+    "definition": "bowl; cup"
   },
   {
     "id": "hsk2_0543",
     "level": 2,
     "simplified": "万",
-    "pinyin": "mò",
-    "definition": "used in 俟"
+    "pinyin": "wàn",
+    "definition": "ten thousand; a great number"
   },
   {
     "id": "hsk2_0544",
@@ -3749,7 +3847,7 @@
     "level": 2,
     "simplified": "位",
     "pinyin": "wèi",
-    "definition": "position; location; place; seat; classifier for people (honorific); classifier for binary bits (e.g. 十六位 16-bit or 2 bytes); (physics) potential"
+    "definition": "position; location; classifier for people (honorific); classifier for binary bits (e.g. 十六位 16-bit or 2 bytes); (physics) potential"
   },
   {
     "id": "hsk2_0551",
@@ -3771,6 +3869,13 @@
     "simplified": "温度",
     "pinyin": "wēn dù",
     "definition": "temperature"
+  },
+  {
+    "id": "hsk2_0554",
+    "level": 2,
+    "simplified": "闻",
+    "pinyin": "wén",
+    "definition": "to hear; news; well-known; famous; reputation; fame; to smell; to sniff at"
   },
   {
     "id": "hsk2_0555",
@@ -3825,8 +3930,8 @@
     "id": "hsk2_0562",
     "level": 2,
     "simplified": "西北",
-    "pinyin": "Xī běi",
-    "definition": "Northwest China (Shaanxi, Gansu, Qinghai, Ningxia, Xinjiang)"
+    "pinyin": "xī běi",
+    "definition": "northwest"
   },
   {
     "id": "hsk2_0563",
@@ -3925,6 +4030,13 @@
     "simplified": "想起",
     "pinyin": "xiǎng qǐ",
     "definition": "to recall; to think of; to call to mind"
+  },
+  {
+    "id": "hsk2_0577",
+    "level": 2,
+    "simplified": "向",
+    "pinyin": "xiàng",
+    "definition": "towards; to face; to turn towards; direction; to support; to side with; shortly before; formerly; always; all along; (suffix) suitable for ...; oriented to ...; to tend toward; to guide; orientation; to turn toward; to"
   },
   {
     "id": "hsk2_0578",
@@ -4137,6 +4249,13 @@
     "definition": "term; semester"
   },
   {
+    "id": "hsk2_0608",
+    "level": 2,
+    "simplified": "雪",
+    "pinyin": "xuě",
+    "definition": "snow"
+  },
+  {
     "id": "hsk2_0609",
     "level": 2,
     "simplified": "颜色",
@@ -4176,7 +4295,7 @@
     "level": 2,
     "simplified": "药",
     "pinyin": "yào",
-    "definition": "leaf of the iris; variant of 药"
+    "definition": "leaf of the iris; medicine; drug; substance used for a specific purpose (e.g. poisoning, explosion, fermenting); to poison"
   },
   {
     "id": "hsk2_0615",
@@ -4196,8 +4315,8 @@
     "id": "hsk2_0617",
     "level": 2,
     "simplified": "药水",
-    "pinyin": "Yào shuǐ",
-    "definition": "Yaksu in North Korea, near the border with Liaoning and Jiling province"
+    "pinyin": "yào shuǐ",
+    "definition": "medicine in liquid form; bottled medicine; lotion"
   },
   {
     "id": "hsk2_0618",
@@ -4218,7 +4337,7 @@
     "level": 2,
     "simplified": "夜",
     "pinyin": "yè",
-    "definition": "variant of 夜"
+    "definition": "night"
   },
   {
     "id": "hsk2_0621",
@@ -4375,6 +4494,13 @@
     "definition": "because; owing to; on account of"
   },
   {
+    "id": "hsk2_0643",
+    "level": 2,
+    "simplified": "阴",
+    "pinyin": "yīn",
+    "definition": "overcast (weather); cloudy; shady; Yin (the negative principle of Yin and Yang); negative (electric.); feminine; moon; implicit; hidden; genitalia"
+  },
+  {
     "id": "hsk2_0644",
     "level": 2,
     "simplified": "阴天",
@@ -4518,8 +4644,15 @@
     "id": "hsk2_0664",
     "level": 2,
     "simplified": "友好",
-    "pinyin": "Yǒu hǎo",
-    "definition": "Youhao district of Yichun city 市, Heilongjiang"
+    "pinyin": "yǒu hǎo",
+    "definition": "friendly; amicable; close friend"
+  },
+  {
+    "id": "hsk2_0665",
+    "level": 2,
+    "simplified": "鱼",
+    "pinyin": "yú",
+    "definition": "fish"
   },
   {
     "id": "hsk2_0666",
@@ -4547,7 +4680,7 @@
     "level": 2,
     "simplified": "院",
     "pinyin": "yuàn",
-    "definition": "courtyard; institution"
+    "definition": "institution"
   },
   {
     "id": "hsk2_0670",
@@ -4588,8 +4721,8 @@
     "id": "hsk2_0675",
     "level": 2,
     "simplified": "越",
-    "pinyin": "Yuè",
-    "definition": "generic word for peoples or states of south China or south Asia at different historical periods; abbr. for Vietnam 越南"
+    "pinyin": "yuè",
+    "definition": "to exceed; to climb over; to surpass; the more... the more"
   },
   {
     "id": "hsk2_0676",
@@ -4603,7 +4736,7 @@
     "level": 2,
     "simplified": "云",
     "pinyin": "yún",
-    "definition": "(classical) to say"
+    "definition": "cloud"
   },
   {
     "id": "hsk2_0678",
@@ -4617,14 +4750,14 @@
     "level": 2,
     "simplified": "咱",
     "pinyin": "zán",
-    "definition": "variant of 咱"
+    "definition": "I or me; we (including both the speaker and the person spoken to)"
   },
   {
     "id": "hsk2_0680",
     "level": 2,
     "simplified": "咱们",
     "pinyin": "zán men",
-    "definition": "we or us (including both the speaker and the person(s) spoken to); (dialect) I or me; (dialect) (in a coaxing or familiar way) you; also pr. [zá men]"
+    "definition": "we or us (including both the speaker and the person(s) spoken to); (dialect) I or me; (dialect) (in a coaxing or familiar way) you"
   },
   {
     "id": "hsk2_0681",
@@ -4645,7 +4778,7 @@
     "level": 2,
     "simplified": "早晨",
     "pinyin": "zǎo chén",
-    "definition": "early morning; also pr. [zǎo chen]"
+    "definition": "early morning"
   },
   {
     "id": "hsk2_0684",
@@ -4679,8 +4812,8 @@
     "id": "hsk2_0688",
     "level": 2,
     "simplified": "占",
-    "pinyin": "zhàn",
-    "definition": "variant of 占"
+    "pinyin": "zhān",
+    "definition": "to observe; to divine"
   },
   {
     "id": "hsk2_0689",
@@ -4827,7 +4960,7 @@
     "level": 2,
     "simplified": "纸",
     "pinyin": "zhǐ",
-    "definition": "variant of 纸"
+    "definition": "paper; classifier for documents, letter etc"
   },
   {
     "id": "hsk2_0710",
@@ -4903,8 +5036,8 @@
     "id": "hsk2_0720",
     "level": 2,
     "simplified": "周",
-    "pinyin": "Zhōu",
-    "definition": "surname Zhou; Zhou Dynasty (1046-256 BC)"
+    "pinyin": "zhōu",
+    "definition": "to make a circuit; to circle; circle; circumference; lap; cycle; complete; all; all over; thorough; to help financially; week; weekly"
   },
   {
     "id": "hsk2_0721",
@@ -5017,6 +5150,13 @@
     "simplified": "租",
     "pinyin": "zū",
     "definition": "to hire; to rent; to charter; to rent out; to lease out; rent; land tax"
+  },
+  {
+    "id": "hsk2_0737",
+    "level": 2,
+    "simplified": "组",
+    "pinyin": "zǔ",
+    "definition": "to form; to organize; group; team; classifier for sets, series, groups of people, batteries"
   },
   {
     "id": "hsk2_0738",

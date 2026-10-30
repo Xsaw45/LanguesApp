@@ -94,8 +94,8 @@
     "id": "hsk3_0014",
     "level": 3,
     "simplified": "保",
-    "pinyin": "Bǎo",
-    "definition": "Bulgaria; Bulgarian; abbr. for 保加利亚"
+    "pinyin": "bǎo",
+    "definition": "to defend; to protect; to keep; to guarantee; to ensure; civil administration unit in the baojia 甲 system (old)"
   },
   {
     "id": "hsk3_0015",
@@ -193,7 +193,7 @@
     "level": 3,
     "simplified": "被",
     "pinyin": "bèi",
-    "definition": "quilt; to cover (with); (literary) to suffer (a misfortune); used to indicate passive voice (placed before the doer of the action like \"by\" in English passive-voice sentences, or, if the doer is not mentioned, before the verb); (since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游 to \"go on a trip\", for example)"
+    "definition": "to cover (with); used to indicate passive voice (placed before the doer of the action like \"by\" in English passive-voice sentences, or, if the doer is not mentioned, before the verb); (since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游 to \"go on a trip\", for example)"
   },
   {
     "id": "hsk3_0029",
@@ -333,7 +333,7 @@
     "level": 3,
     "simplified": "并",
     "pinyin": "bìng",
-    "definition": "and; furthermore; also; together with; (not) at all; simultaneously; to combine; to join; to merge"
+    "definition": "and; furthermore; also; together with; (not) at all; simultaneously; to combine; to join; to merge; to amalgamate"
   },
   {
     "id": "hsk3_0049",
@@ -424,7 +424,14 @@
     "level": 3,
     "simplified": "布",
     "pinyin": "bù",
-    "definition": "variant of 布; to announce; to spread"
+    "definition": "to announce; to spread; cloth; to declare; to make known"
+  },
+  {
+    "id": "hsk3_0062",
+    "level": 3,
+    "simplified": "步",
+    "pinyin": "bù",
+    "definition": "a step; a pace; walk; march; stages in a process; situation"
   },
   {
     "id": "hsk3_0063",
@@ -521,8 +528,8 @@
     "id": "hsk3_0076",
     "level": 3,
     "simplified": "朝",
-    "pinyin": "Cháo",
-    "definition": "abbr. for 朝鲜 Korea"
+    "pinyin": "cháo",
+    "definition": "imperial or royal court; government; dynasty; reign of a sovereign or emperor; court or assembly held by a sovereign or emperor; to make a pilgrimage to; facing; towards"
   },
   {
     "id": "hsk3_0077",
@@ -563,8 +570,8 @@
     "id": "hsk3_0082",
     "level": 3,
     "simplified": "成功",
-    "pinyin": "Chéng gōng",
-    "definition": "Chenggong or Chengkung town in Taitung County 台东县, southeast Taiwan"
+    "pinyin": "chéng gōng",
+    "definition": "success; to succeed"
   },
   {
     "id": "hsk3_0083",
@@ -592,7 +599,7 @@
     "level": 3,
     "simplified": "成熟",
     "pinyin": "chéng shú",
-    "definition": "mature; ripe; to mature; to ripen; Taiwan pr. [chéng shóu]"
+    "definition": "mature; ripe; to mature; to ripen"
   },
   {
     "id": "hsk3_0087",
@@ -917,6 +924,13 @@
     "definition": "among; in the middle; in the center"
   },
   {
+    "id": "hsk3_0133",
+    "level": 3,
+    "simplified": "刀",
+    "pinyin": "dāo",
+    "definition": "knife; blade; single-edged sword; cutlass; (slang) dollar (loanword); classifier for sets of one hundred sheets (of paper); classifier for knife cuts or stabs"
+  },
+  {
     "id": "hsk3_0134",
     "level": 3,
     "simplified": "导演",
@@ -1145,7 +1159,7 @@
     "level": 3,
     "simplified": "发达",
     "pinyin": "fā dá",
-    "definition": "well-developed; flourishing; to develop; to promote; to expand; (literary) to achieve fame and fortune; to prosper"
+    "definition": "well-developed; flourishing; to develop; to promote; to expand"
   },
   {
     "id": "hsk3_0167",
@@ -1201,7 +1215,7 @@
     "level": 3,
     "simplified": "反复",
     "pinyin": "fǎn fù",
-    "definition": "variant of 反复"
+    "definition": "repeatedly; over and over; to upend; unstable; to come and go; (of an illness) to return"
   },
   {
     "id": "hsk3_0175",
@@ -1288,6 +1302,13 @@
     "definition": "(of planes etc) to fly; flying; flight; aviation"
   },
   {
+    "id": "hsk3_0187",
+    "level": 3,
+    "simplified": "费",
+    "pinyin": "fèi",
+    "definition": "to cost; to spend; fee; wasteful; expenses"
+  },
+  {
     "id": "hsk3_0188",
     "level": 3,
     "simplified": "费用",
@@ -1361,8 +1382,8 @@
     "id": "hsk3_0198",
     "level": 3,
     "simplified": "福",
-    "pinyin": "Fú",
-    "definition": "surname Fu; abbr. for Fujian province 省"
+    "pinyin": "fú",
+    "definition": "good fortune; happiness; luck"
   },
   {
     "id": "hsk3_0199",
@@ -1376,7 +1397,14 @@
     "level": 3,
     "simplified": "父亲",
     "pinyin": "fù qīn",
-    "definition": "father; also pr. [fù qin]"
+    "definition": "father"
+  },
+  {
+    "id": "hsk3_0201",
+    "level": 3,
+    "simplified": "付",
+    "pinyin": "fù",
+    "definition": "to pay; to hand over to; classifier for pairs or sets of things"
   },
   {
     "id": "hsk3_0202",
@@ -1398,6 +1426,13 @@
     "simplified": "复杂",
     "pinyin": "fù zá",
     "definition": "complicated; complex"
+  },
+  {
+    "id": "hsk3_0205",
+    "level": 3,
+    "simplified": "富",
+    "pinyin": "fù",
+    "definition": "rich; abundant; wealthy"
   },
   {
     "id": "hsk3_0206",
@@ -1475,13 +1510,6 @@
     "simplified": "感受",
     "pinyin": "gǎn shòu",
     "definition": "to sense; perception; to feel (through the senses); to experience; a feeling; an impression; an experience"
-  },
-  {
-    "id": "hsk3_0217",
-    "level": 3,
-    "simplified": "干吗",
-    "pinyin": "gàn má",
-    "definition": "see 干嘛"
   },
   {
     "id": "hsk3_0218",
@@ -1708,6 +1736,13 @@
     "definition": "girl; young woman; young lady; daughter; paternal aunt (old)"
   },
   {
+    "id": "hsk3_0250",
+    "level": 3,
+    "simplified": "古",
+    "pinyin": "gǔ",
+    "definition": "ancient; old; paleo-"
+  },
+  {
     "id": "hsk3_0251",
     "level": 3,
     "simplified": "古代",
@@ -1775,7 +1810,7 @@
     "level": 3,
     "simplified": "管",
     "pinyin": "guǎn",
-    "definition": "variant of 管"
+    "definition": "to take care (of); to control; to manage; to be in charge of; to look after; to run; to care about; woodwind; classifier for tube-shaped objects; particle similar to 把 in 管...叫 constructions; writing brush; (coll.) to; towards"
   },
   {
     "id": "hsk3_0261",
@@ -1935,8 +1970,8 @@
     "id": "hsk3_0283",
     "level": 3,
     "simplified": "和平",
-    "pinyin": "Hé píng",
-    "definition": "Heping District of Shenyang city 沈阳市, Liaoning; Heping or Hoping Township in Taichung County 台中县, Taiwan"
+    "pinyin": "hé píng",
+    "definition": "peace; peaceful"
   },
   {
     "id": "hsk3_0284",
@@ -1998,8 +2033,8 @@
     "id": "hsk3_0292",
     "level": 3,
     "simplified": "化",
-    "pinyin": "huā",
-    "definition": "variant of 花"
+    "pinyin": "huà",
+    "definition": "to make into; to change into; -ization; to ... -ize; to transform"
   },
   {
     "id": "hsk3_0293",
@@ -2023,11 +2058,18 @@
     "definition": "subject (of a talk or conversation); topic"
   },
   {
+    "id": "hsk3_0296",
+    "level": 3,
+    "simplified": "环",
+    "pinyin": "huán",
+    "definition": "ring; hoop; loop; (chain) link; classifier for scores in archery etc; to surround; to encircle; to hem in"
+  },
+  {
     "id": "hsk3_0297",
     "level": 3,
     "simplified": "环保",
     "pinyin": "huán bǎo",
-    "definition": "environmental protection; environmentally friendly; abbr. for 环境保护"
+    "definition": "environmental protection; environmentally friendly"
   },
   {
     "id": "hsk3_0298",
@@ -2062,7 +2104,14 @@
     "level": 3,
     "simplified": "活",
     "pinyin": "huó",
-    "definition": "to live; alive; living; work; workmanship"
+    "definition": "to live; alive; living; workmanship"
+  },
+  {
+    "id": "hsk3_0303",
+    "level": 3,
+    "simplified": "火",
+    "pinyin": "huǒ",
+    "definition": "fire; urgent; ammunition; fiery or flaming; internal heat (Chinese medicine); hot (popular); classifier for military units (old); Kangxi radical 86"
   },
   {
     "id": "hsk3_0304",
@@ -2156,13 +2205,6 @@
     "definition": "reporter; journalist"
   },
   {
-    "id": "hsk3_0317",
-    "level": 3,
-    "simplified": "纪录",
-    "pinyin": "jì lù",
-    "definition": "variant of 记录 (but in Taiwan, not for the verb sense \"to record\")"
-  },
-  {
     "id": "hsk3_0318",
     "level": 3,
     "simplified": "纪念",
@@ -2251,7 +2293,7 @@
     "level": 3,
     "simplified": "架",
     "pinyin": "jià",
-    "definition": "to support; frame; rack; framework; classifier for planes, large vehicles, radios etc"
+    "definition": "to support; rack; classifier for planes, large vehicles, radios etc"
   },
   {
     "id": "hsk3_0331",
@@ -2377,7 +2419,7 @@
     "level": 3,
     "simplified": "较",
     "pinyin": "jiào",
-    "definition": "to compare; to dispute; compared to; (before adj.) relatively; comparatively; rather; also pr. [jiǎo]"
+    "definition": "to compare; to dispute; compared to; (before adj.) relatively; comparatively; rather"
   },
   {
     "id": "hsk3_0349",
@@ -2460,8 +2502,8 @@
     "id": "hsk3_0360",
     "level": 3,
     "simplified": "金",
-    "pinyin": "Jīn",
-    "definition": "surname Jin; surname Kim (Korean); Jurchen Jin dynasty (1115-1234)"
+    "pinyin": "jīn",
+    "definition": "chemical element Au; generic term for lustrous and ductile metals; money; golden; highly respected; one of the eight categories of ancient musical instruments 音"
   },
   {
     "id": "hsk3_0361",
@@ -2469,13 +2511,6 @@
     "simplified": "金牌",
     "pinyin": "jīn pái",
     "definition": "gold medal"
-  },
-  {
-    "id": "hsk3_0362",
-    "level": 3,
-    "simplified": "仅",
-    "pinyin": "jǐn",
-    "definition": "barely; only; merely"
   },
   {
     "id": "hsk3_0363",
@@ -2629,7 +2664,7 @@
     "level": 3,
     "simplified": "救",
     "pinyin": "jiù",
-    "definition": "variant of 救"
+    "definition": "to save; to assist; to rescue"
   },
   {
     "id": "hsk3_0385",
@@ -2846,7 +2881,7 @@
     "level": 3,
     "simplified": "裤子",
     "pinyin": "kù zi",
-    "definition": "variant of 裤子, trousers; pants"
+    "definition": "pants; trousers"
   },
   {
     "id": "hsk3_0416",
@@ -2860,7 +2895,7 @@
     "level": 3,
     "simplified": "困",
     "pinyin": "kùn",
-    "definition": "to trap; to surround; hard-pressed; stranded; destitute"
+    "definition": "to trap; to surround; hard-pressed; stranded; destitute; sleepy; tired"
   },
   {
     "id": "hsk3_0418",
@@ -2888,7 +2923,7 @@
     "level": 3,
     "simplified": "老板",
     "pinyin": "lǎo bǎn",
-    "definition": "variant of 老板"
+    "definition": "boss; business proprietor"
   },
   {
     "id": "hsk3_0422",
@@ -2898,11 +2933,11 @@
     "definition": "elderly lady (respectful); esteemed mother"
   },
   {
-    "id": "hsk3_0423",
+    "id": "hsk3_0424",
     "level": 3,
-    "simplified": "老头儿",
-    "pinyin": "lǎo tóu r",
-    "definition": "see 老头子"
+    "simplified": "乐",
+    "pinyin": "lè",
+    "definition": "happy; cheerful; to laugh"
   },
   {
     "id": "hsk3_0425",
@@ -2944,7 +2979,7 @@
     "level": 3,
     "simplified": "里面",
     "pinyin": "lǐ miàn",
-    "definition": "inside; interior; also pr. [lǐ mian]"
+    "definition": "inside; interior"
   },
   {
     "id": "hsk3_0431",
@@ -2975,6 +3010,13 @@
     "definition": "reason; grounds; justification"
   },
   {
+    "id": "hsk3_0435",
+    "level": 3,
+    "simplified": "力",
+    "pinyin": "lì",
+    "definition": "power; force; strength; ability; strenuously"
+  },
+  {
     "id": "hsk3_0436",
     "level": 3,
     "simplified": "力量",
@@ -2994,6 +3036,13 @@
     "simplified": "利用",
     "pinyin": "lì yòng",
     "definition": "to exploit; to make use of; to use; to take advantage of; to utilize"
+  },
+  {
+    "id": "hsk3_0439",
+    "level": 3,
+    "simplified": "连",
+    "pinyin": "lián",
+    "definition": "to link; to join; to connect; continuously; in succession; including; (used with 也, 都 etc) even; company (military)"
   },
   {
     "id": "hsk3_0440",
@@ -3035,7 +3084,7 @@
     "level": 3,
     "simplified": "联系",
     "pinyin": "lián xì",
-    "definition": "variant of 联系"
+    "definition": "connection; contact; relation; to get in touch with; to integrate; to link; to touch"
   },
   {
     "id": "hsk3_0446",
@@ -3087,11 +3136,18 @@
     "definition": "to study abroad"
   },
   {
+    "id": "hsk3_0453",
+    "level": 3,
+    "simplified": "龙",
+    "pinyin": "lóng",
+    "definition": "dragon; imperial"
+  },
+  {
     "id": "hsk3_0454",
     "level": 3,
     "simplified": "录",
     "pinyin": "lù",
-    "definition": "to carve wood"
+    "definition": "to carve wood; diary; record; to hit; to copy"
   },
   {
     "id": "hsk3_0455",
@@ -3153,8 +3209,8 @@
     "id": "hsk3_0463",
     "level": 3,
     "simplified": "马",
-    "pinyin": "Mǎ",
-    "definition": "surname Ma; abbr. for Malaysia 马来西亚"
+    "pinyin": "mǎ",
+    "definition": "horse; horse or cavalry piece in Chinese chess; knight in Western chess"
   },
   {
     "id": "hsk3_0464",
@@ -3202,8 +3258,8 @@
     "id": "hsk3_0470",
     "level": 3,
     "simplified": "美",
-    "pinyin": "Měi",
-    "definition": "(bound form) the Americas (abbr. for 洲); (bound form) USA (abbr. for 美国)"
+    "pinyin": "měi",
+    "definition": "beautiful; very satisfactory; good; to beautify; to be pleased with oneself"
   },
   {
     "id": "hsk3_0471",
@@ -3308,7 +3364,7 @@
     "level": 3,
     "simplified": "母亲",
     "pinyin": "mǔ qīn",
-    "definition": "mother; also pr. [mǔ qin]"
+    "definition": "mother"
   },
   {
     "id": "hsk3_0486",
@@ -3434,7 +3490,14 @@
     "level": 3,
     "simplified": "念",
     "pinyin": "niàn",
-    "definition": "variant of 念, to read aloud"
+    "definition": "to read; to study (a subject); to attend (a school); to read aloud; to give (sb) a tongue-lashing; to miss (sb); idea; remembrance; twenty (banker's anti-fraud numeral corresponding to 廿)"
+  },
+  {
+    "id": "hsk3_0504",
+    "level": 3,
+    "simplified": "牛",
+    "pinyin": "niú",
+    "definition": "ox; cow; bull; newton (abbr. for 牛顿); (slang) awesome"
   },
   {
     "id": "hsk3_0505",
@@ -3549,6 +3612,13 @@
     "definition": "to approve; to ratify"
   },
   {
+    "id": "hsk3_0521",
+    "level": 3,
+    "simplified": "皮",
+    "pinyin": "pí",
+    "definition": "leather; skin; fur; pico- (one trillionth); naughty"
+  },
+  {
     "id": "hsk3_0522",
     "level": 3,
     "simplified": "皮包",
@@ -3616,14 +3686,14 @@
     "level": 3,
     "simplified": "期",
     "pinyin": "qī",
-    "definition": "variant of 期; period; cycle"
+    "definition": "period; cycle; a period of time; phase; stage; classifier for issues of a periodical, courses of study; time; term; to hope"
   },
   {
     "id": "hsk3_0532",
     "level": 3,
     "simplified": "齐",
-    "pinyin": "Qí",
-    "definition": "(name of states and dynasties at several different periods); surname Qi"
+    "pinyin": "qí",
+    "definition": "neat; even; level with; identical; simultaneous; all together; to even sth out"
   },
   {
     "id": "hsk3_0533",
@@ -3679,7 +3749,7 @@
     "level": 3,
     "simplified": "前面",
     "pinyin": "qián miàn",
-    "definition": "ahead; in front; preceding; above; also pr. [qián mian]"
+    "definition": "ahead; in front; preceding; above"
   },
   {
     "id": "hsk3_0541",
@@ -3687,6 +3757,13 @@
     "simplified": "前往",
     "pinyin": "qián wǎng",
     "definition": "to leave for; to proceed towards; to go to"
+  },
+  {
+    "id": "hsk3_0542",
+    "level": 3,
+    "simplified": "强",
+    "pinyin": "jiàng",
+    "definition": "stubborn; unyielding"
   },
   {
     "id": "hsk3_0543",
@@ -3787,6 +3864,13 @@
     "definition": "fan (ball sports)"
   },
   {
+    "id": "hsk3_0557",
+    "level": 3,
+    "simplified": "区",
+    "pinyin": "qū",
+    "definition": "area; region; district; small; distinguish"
+  },
+  {
     "id": "hsk3_0558",
     "level": 3,
     "simplified": "区别",
@@ -3882,7 +3966,7 @@
     "level": 3,
     "simplified": "群",
     "pinyin": "qún",
-    "definition": "variant of 群"
+    "definition": "group; crowd; flock, herd, pack etc"
   },
   {
     "id": "hsk3_0572",
@@ -3979,8 +4063,8 @@
     "id": "hsk3_0585",
     "level": 3,
     "simplified": "任",
-    "pinyin": "Rén",
-    "definition": "surname Ren; Ren County 任县 in Hebei"
+    "pinyin": "rèn",
+    "definition": "to assign; to appoint; to take up a post; office; responsibility; to let; to allow; to give free rein to; no matter (how, what etc); classifier for terms served in office, or for spouses, girlfriends etc (as in 前任男友)"
   },
   {
     "id": "hsk3_0586",
@@ -4001,7 +4085,7 @@
     "level": 3,
     "simplified": "仍",
     "pinyin": "réng",
-    "definition": "still; yet; to remain; (literary) frequently; often"
+    "definition": "still; yet; to remain"
   },
   {
     "id": "hsk3_0589",
@@ -4092,7 +4176,7 @@
     "level": 3,
     "simplified": "上面",
     "pinyin": "shàng miàn",
-    "definition": "on top of; above-mentioned; also pr. [shàng mian]"
+    "definition": "on top of; above-mentioned"
   },
   {
     "id": "hsk3_0602",
@@ -4149,13 +4233,6 @@
     "simplified": "身份证",
     "pinyin": "shēn fèn zhèng",
     "definition": "identity card; ID"
-  },
-  {
-    "id": "hsk3_0610",
-    "level": 3,
-    "simplified": "深",
-    "pinyin": "shēn",
-    "definition": "old variant of 深"
   },
   {
     "id": "hsk3_0611",
@@ -4232,7 +4309,7 @@
     "level": 3,
     "simplified": "胜",
     "pinyin": "shèng",
-    "definition": "victory; success; to beat; to defeat; to surpass; victorious; superior to; to get the better of; better than; surpassing; superb (of vista); beautiful (scenery); wonderful (view); (Taiwan pr. [shēng]) able to bear; equal to (a task)"
+    "definition": "victory; success; to beat; to defeat; to surpass; victorious; superior to; to get the better of; better than; surpassing; superb (of vista); beautiful (scenery); wonderful (view); equal to (a task)"
   },
   {
     "id": "hsk3_0622",
@@ -4267,14 +4344,14 @@
     "level": 3,
     "simplified": "时",
     "pinyin": "shí",
-    "definition": "old variant of 时"
+    "definition": "o'clock; time; when; hour; season; period"
   },
   {
     "id": "hsk3_0627",
     "level": 3,
     "simplified": "时代",
-    "pinyin": "Shí dài",
-    "definition": "Time, US weekly news magazine"
+    "pinyin": "shí dài",
+    "definition": "age; era; epoch; period (in one's life)"
   },
   {
     "id": "hsk3_0628",
@@ -4417,6 +4494,13 @@
     "definition": "experiment; test; to experiment; experimental"
   },
   {
+    "id": "hsk3_0648",
+    "level": 3,
+    "simplified": "室",
+    "pinyin": "shì",
+    "definition": "room; work unit; grave; scabbard; family or clan; one of the 28 constellations of Chinese astronomy"
+  },
+  {
     "id": "hsk3_0649",
     "level": 3,
     "simplified": "适合",
@@ -4519,7 +4603,7 @@
     "level": 3,
     "simplified": "输",
     "pinyin": "shū",
-    "definition": "to lose; to be beaten; (bound form) to transport; (literary) to donate; to contribute; (coll.) to enter (a password)"
+    "definition": "to lose; to be beaten; (bound form) to transport; (coll.) to enter (a password)"
   },
   {
     "id": "hsk3_0664",
@@ -4550,11 +4634,25 @@
     "definition": "to be classified as; to belong to; to be part of"
   },
   {
+    "id": "hsk3_0668",
+    "level": 3,
+    "simplified": "束",
+    "pinyin": "shù",
+    "definition": "to bind; bunch; bundle; classifier for bunches, bundles, beams of light etc; to control"
+  },
+  {
     "id": "hsk3_0669",
     "level": 3,
     "simplified": "数量",
     "pinyin": "shù liàng",
     "definition": "amount; quantity; quantitative"
+  },
+  {
+    "id": "hsk3_0670",
+    "level": 3,
+    "simplified": "双",
+    "pinyin": "shuāng",
+    "definition": "two; double; pair; both; even (number)"
   },
   {
     "id": "hsk3_0671",
@@ -4585,6 +4683,13 @@
     "definition": "speed; rate; velocity; (music) tempo"
   },
   {
+    "id": "hsk3_0675",
+    "level": 3,
+    "simplified": "随",
+    "pinyin": "suí",
+    "definition": "to follow; to comply with; varying according to...; to allow; subsequently"
+  },
+  {
     "id": "hsk3_0676",
     "level": 3,
     "simplified": "所",
@@ -4602,8 +4707,15 @@
     "id": "hsk3_0678",
     "level": 3,
     "simplified": "台",
-    "pinyin": "Tái",
-    "definition": "Taiwan (abbr.); surname Tai"
+    "pinyin": "tái",
+    "definition": "desk; table; counter; platform; stage; terrace; stand; support; station; broadcasting station; classifier for vehicles or machines; typhoon"
+  },
+  {
+    "id": "hsk3_0679",
+    "level": 3,
+    "simplified": "谈",
+    "pinyin": "tán",
+    "definition": "to speak; to talk; to converse; to chat; to discuss"
   },
   {
     "id": "hsk3_0680",
@@ -4618,6 +4730,13 @@
     "simplified": "谈判",
     "pinyin": "tán pàn",
     "definition": "to negotiate; negotiation; talks; conference"
+  },
+  {
+    "id": "hsk3_0682",
+    "level": 3,
+    "simplified": "汤",
+    "pinyin": "shāng",
+    "definition": "rushing current"
   },
   {
     "id": "hsk3_0683",
@@ -4716,6 +4835,13 @@
     "simplified": "跳远",
     "pinyin": "tiào yuǎn",
     "definition": "long jump (athletics)"
+  },
+  {
+    "id": "hsk3_0697",
+    "level": 3,
+    "simplified": "铁",
+    "pinyin": "tiě",
+    "definition": "iron (metal); arms; weapons; hard; strong; violent; unshakeable; determined; close; tight (slang)"
   },
   {
     "id": "hsk3_0698",
@@ -4819,15 +4945,15 @@
     "id": "hsk3_0712",
     "level": 3,
     "simplified": "土",
-    "pinyin": "Tǔ",
-    "definition": "Tu (ethnic group); surname Tu"
+    "pinyin": "tǔ",
+    "definition": "earth; dust; clay; local; indigenous; crude opium; unsophisticated; one of the eight categories of ancient musical instruments 音"
   },
   {
     "id": "hsk3_0713",
     "level": 3,
     "simplified": "团",
     "pinyin": "tuán",
-    "definition": "round; lump; ball; to roll into a ball; to gather; regiment; group; society; classifier for a lump or a soft mass: wad (of paper), ball (of wool), cloud (of smoke)"
+    "definition": "round; lump; ball; to roll into a ball; to gather; regiment; group; society; classifier for a lump or a soft mass: wad (of paper), ball (of wool), cloud (of smoke); dumpling"
   },
   {
     "id": "hsk3_0714",
@@ -4963,6 +5089,13 @@
     "definition": "danger; dangerous"
   },
   {
+    "id": "hsk3_0733",
+    "level": 3,
+    "simplified": "围",
+    "pinyin": "wéi",
+    "definition": "to encircle; to surround; all around; to wear by wrapping around (scarf, shawl)"
+  },
+  {
     "id": "hsk3_0734",
     "level": 3,
     "simplified": "伟大",
@@ -5086,7 +5219,7 @@
     "level": 3,
     "simplified": "系",
     "pinyin": "xì",
-    "definition": "to connect; to relate to; to tie up; to bind; to be (literary)"
+    "definition": "to connect; to relate to; to tie up; to bind; system; department; faculty; to arrest; to worry"
   },
   {
     "id": "hsk3_0752",
@@ -5107,7 +5240,7 @@
     "level": 3,
     "simplified": "下面",
     "pinyin": "xià miàn",
-    "definition": "below; under; next; the following; also pr. [xià mian]"
+    "definition": "below; under; next; the following; to boil noodles"
   },
   {
     "id": "hsk3_0755",
@@ -5155,8 +5288,8 @@
     "id": "hsk3_0761",
     "level": 3,
     "simplified": "现代",
-    "pinyin": "Xiàn dài",
-    "definition": "Hyundai, South Korean company"
+    "pinyin": "xiàn dài",
+    "definition": "modern times; modern age; modern era"
   },
   {
     "id": "hsk3_0762",
@@ -5191,7 +5324,7 @@
     "level": 3,
     "simplified": "线",
     "pinyin": "xiàn",
-    "definition": "variant of 线"
+    "definition": "thread; string; wire; line; (after a number) tier (unofficial ranking of a Chinese city)"
   },
   {
     "id": "hsk3_0767",
@@ -5369,6 +5502,13 @@
     "definition": "nature; disposition; temperament; character"
   },
   {
+    "id": "hsk3_0792",
+    "level": 3,
+    "simplified": "修",
+    "pinyin": "xiū",
+    "definition": "to decorate; to embellish; to repair; to build; to write; to cultivate; to study; to take (a class)"
+  },
+  {
     "id": "hsk3_0793",
     "level": 3,
     "simplified": "修改",
@@ -5493,6 +5633,13 @@
     "simplified": "演员",
     "pinyin": "yǎn yuán",
     "definition": "actor or actress; performer"
+  },
+  {
+    "id": "hsk3_0811",
+    "level": 3,
+    "simplified": "羊",
+    "pinyin": "yáng",
+    "definition": "sheep; goat"
   },
   {
     "id": "hsk3_0812",
@@ -5684,6 +5831,13 @@
     "definition": "mailbox; post office box; email; email inbox"
   },
   {
+    "id": "hsk3_0839",
+    "level": 3,
+    "simplified": "游",
+    "pinyin": "yóu",
+    "definition": "to swim; to walk; to tour; to roam; to travel"
+  },
+  {
     "id": "hsk3_0840",
     "level": 3,
     "simplified": "游戏",
@@ -5838,6 +5992,13 @@
     "definition": "to unfold; to spread out; to open up; to launch; to carry out"
   },
   {
+    "id": "hsk3_0862",
+    "level": 3,
+    "simplified": "张",
+    "pinyin": "zhāng",
+    "definition": "to open up; to spread; sheet of paper; classifier for flat objects, sheet; classifier for votes"
+  },
+  {
     "id": "hsk3_0863",
     "level": 3,
     "simplified": "长城",
@@ -5863,7 +6024,7 @@
     "level": 3,
     "simplified": "照",
     "pinyin": "zhào",
-    "definition": "variant of 照; to shine; to illuminate"
+    "definition": "to shine; to illuminate; according to; in accordance with; to reflect; to look at (one's reflection); to take (a photo); photo; as requested; as before"
   },
   {
     "id": "hsk3_0867",
@@ -5884,7 +6045,7 @@
     "level": 3,
     "simplified": "争",
     "pinyin": "zhēng",
-    "definition": "to strive for; to vie for; to argue or debate; deficient or lacking (dialect); how or what (literary)"
+    "definition": "to strive for; to vie for; to argue or debate; deficient or lacking (dialect)"
   },
   {
     "id": "hsk3_0870",
@@ -5898,7 +6059,7 @@
     "level": 3,
     "simplified": "整",
     "pinyin": "zhěng",
-    "definition": "exactly; in good order; whole; complete; entire; in order; orderly; to repair; to mend; to renovate; (coll.) to fix sb; to give sb a hard time; to mess with sb"
+    "definition": "exactly; in good order; complete; entire; in order; orderly; to repair; to mend; to renovate; (coll.) to fix sb; to give sb a hard time; to mess with sb"
   },
   {
     "id": "hsk3_0872",
@@ -5954,7 +6115,7 @@
     "level": 3,
     "simplified": "证",
     "pinyin": "zhèng",
-    "definition": "to admonish; variant of 证"
+    "definition": "to admonish; certificate; proof; to prove; to demonstrate; to confirm"
   },
   {
     "id": "hsk3_0880",
@@ -5978,6 +6139,13 @@
     "definition": "proof; certificate; identification; testimonial; to prove; to testify; to confirm the truth of"
   },
   {
+    "id": "hsk3_0883",
+    "level": 3,
+    "simplified": "支",
+    "pinyin": "zhī",
+    "definition": "to support; to sustain; to erect; to raise; branch; division; to draw money; classifier for rods such as pens and guns, for army divisions and for songs or compositions"
+  },
+  {
     "id": "hsk3_0884",
     "level": 3,
     "simplified": "支持",
@@ -5995,8 +6163,8 @@
     "id": "hsk3_0886",
     "level": 3,
     "simplified": "直",
-    "pinyin": "Zhí",
-    "definition": "surname Zhi; Zhi (c. 2000 BC), fifth of the legendary Flame Emperors 帝 descended from Shennong 神农 Farmer God"
+    "pinyin": "zhí",
+    "definition": "straight; to straighten; fair and reasonable; frank; straightforward; (indicates continuing motion or action); vertical; vertical downward stroke in Chinese characters"
   },
   {
     "id": "hsk3_0887",
@@ -6160,11 +6328,18 @@
     "definition": "at last; in the end; finally; eventually"
   },
   {
+    "id": "hsk3_0910",
+    "level": 3,
+    "simplified": "钟",
+    "pinyin": "zhōng",
+    "definition": "handleless cup; goblet; to concentrate; clock; o'clock; time as measured in hours and minutes; bell"
+  },
+  {
     "id": "hsk3_0911",
     "level": 3,
     "simplified": "种",
     "pinyin": "zhǒng",
-    "definition": "seed; species; kind; type; classifier for types, kinds, sorts"
+    "definition": "species; kind; type; classifier for types, kinds, sorts"
   },
   {
     "id": "hsk3_0912",
@@ -6237,6 +6412,13 @@
     "definition": "to take note of; to pay attention to"
   },
   {
+    "id": "hsk3_0922",
+    "level": 3,
+    "simplified": "祝",
+    "pinyin": "zhù",
+    "definition": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies"
+  },
+  {
     "id": "hsk3_0923",
     "level": 3,
     "simplified": "抓",
@@ -6282,8 +6464,8 @@
     "id": "hsk3_0929",
     "level": 3,
     "simplified": "转",
-    "pinyin": "zhuǎi",
-    "definition": "see 转文"
+    "pinyin": "zhuǎn",
+    "definition": "to turn; to change direction; to transfer; to forward (mail); (Internet) to share (sb else's content)"
   },
   {
     "id": "hsk3_0930",
@@ -6318,7 +6500,7 @@
     "level": 3,
     "simplified": "准",
     "pinyin": "zhǔn",
-    "definition": "to allow; to grant; in accordance with; in the light of"
+    "definition": "to allow; to grant; in accordance with; in the light of; accurate; standard; definitely; certainly; about to become (bride, son-in-law etc); quasi-; para-"
   },
   {
     "id": "hsk3_0935",
@@ -6388,7 +6570,7 @@
     "level": 3,
     "simplified": "总",
     "pinyin": "zǒng",
-    "definition": "general; overall; to sum up; in every case; always; invariably; anyway; after all; eventually; sooner or later; surely; (after a person's name) abbr. for 总经理 or 总编 etc"
+    "definition": "general; overall; to sum up; in every case; always; invariably; anyway; after all; eventually; sooner or later; surely"
   },
   {
     "id": "hsk3_0945",

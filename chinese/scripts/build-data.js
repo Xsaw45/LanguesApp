@@ -7,6 +7,7 @@
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { stripParens } from '../src/utils/validate.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT_DIR = join(__dirname, '..', 'src', 'data')
@@ -28,44 +29,89 @@ async function fetchLevel(level) {
   return res.json()
 }
 
-function normalizeEntry(raw, level, index) {
-  // Format: { simplified, forms: [{ transcriptions: { pinyin }, meanings: [...] }] }
-  const simplified = (raw.simplified || '').trim()
-  const form = raw.forms && raw.forms[0]
-  const pinyin = form ? (form.transcriptions?.pinyin || '') : ''
-  const meanings = form ? (form.meanings || []) : []
-  const definition = meanings.join('; ')
+const CJK = '[\\u3400-\\u9fff]'
 
+// Meaning (upstream string, may hold several "; " senses) dropped whole: literary register.
+const LITERARY = /\((literary|classical|poetic)\)/i
+
+// Senses that are not something to learn, tested outside parentheses.
+const NOT_A_DEFINITION = [
+  /\bvariant of\b/i,                                // old / erhua / … variant of X
+  new RegExp(`\\bused in ${CJK}`),                  // used in 自个儿
+  /^abbr\.|\babbr\. (for|of)\b/i,                   // abbr. for 日本 (word-level abbreviations)
+  /^(surname|family name) [A-Z]/, /^surname of\b/i, // surname Wang
+  /^(also pr\.|also written|taiwan pr\.|see also\b|cl:)/i,
+  new RegExp(`^see ${CJK}`),                        // see 节骨眼 (but not "see you")
+]
+// Same, tested on the raw sense.
+const NOT_A_DEFINITION_RAW = [/\((?:[\w ]+ )?surname\)$/i, /^\((also|taiwan) pr\./i]
+
+function cleanSenses(meanings) {
+  return meanings
+    .filter(m => !LITERARY.test(m))
+    .flatMap(m => m.split(/;\s*/))
+    .map(s => s.trim())
+    .filter(s => s
+      && !NOT_A_DEFINITION_RAW.some(re => re.test(s))
+      && !NOT_A_DEFINITION.some(re => re.test(stripParens(s))))
+}
+
+// First reading with something left to learn; capitalised pinyin = proper noun (比 Bǐ = Belgium, 日 Rì = Japan),
+// only used when the word has nothing else. Entries with the same pinyin are one reading (后 hòu: empress + behind).
+function pickForm(entry) {
+  const readings = new Map()
+  for (const f of entry.forms || []) {
+    const pinyin = (f.transcriptions?.pinyin || '').trim()
+    const senses = cleanSenses(f.meanings || [])
+    if (senses.length) readings.set(pinyin, [...(readings.get(pinyin) || []), ...senses])
+  }
+  const forms = [...readings].map(([pinyin, senses]) => ({ pinyin, senses: [...new Set(senses)] }))
+  return forms.find(f => f.pinyin[0] === f.pinyin[0]?.toLowerCase()) || forms[0] || null
+}
+
+// Ids follow the upstream index (progress is keyed by id): dropping a word never renumbers the others.
+function normalizeEntry(entry, level, index) {
+  const form = pickForm(entry)
   return {
     id: padId(level, index),
     level,
-    simplified,
-    pinyin: pinyin.trim(),
-    definition: definition.trim(),
+    simplified: (entry.simplified || '').trim(),
+    pinyin: form?.pinyin || '',
+    senses: form?.senses || [],
   }
 }
 
-function isSurname(word) {
-  if (!word.definition) return false
-  const parts = word.definition.split(/[;|]/).map(s => s.trim().toLowerCase())
-  return parts.every(p => p.startsWith('surname') || p.startsWith('family name'))
+// A single character is not asked for a meaning its two-character form has (弟 → 弟弟, 箱 → 箱子, 画 → 画儿).
+function dropTwoCharacterMeanings(words) {
+  const key = s => stripParens(s).toLowerCase().replace(/\belder\b/g, 'older')
+  const bySimplified = new Map(words.map(w => [w.simplified, w]))
+  for (const w of words) {
+    if ([...w.simplified].length !== 1) continue
+    const longer = [w.simplified + w.simplified, w.simplified + '子', w.simplified + '儿']
+      .map(s => bySimplified.get(s))
+      .filter(Boolean)
+    const taken = new Set(longer.flatMap(l => l.senses.map(key)))
+    w.senses = w.senses.filter(s => !taken.has(key(s)))
+  }
 }
 
 async function main() {
   console.log('Building HSK data files (exclusive per-level words)...\n')
 
+  const levels = []
   for (let level = 1; level <= 7; level++) {
-    try {
-      const raw = await fetchLevel(level)
-      const words = raw.map((entry, i) => normalizeEntry(entry, level, i))
-        .filter(w => w.simplified && !isSurname(w))
-      const outPath = join(OUT_DIR, `hsk${level}.json`)
-      writeFileSync(outPath, JSON.stringify(words, null, 2), 'utf8')
-      const sample = words[0]
-      console.log(`  ✓ hsk${level}.json — ${words.length} mots | ex: ${sample.simplified} [${sample.pinyin}] = ${sample.definition.slice(0, 40)}`)
-    } catch (err) {
-      console.error(`  ✗ Level ${level}: ${err.message}`)
-    }
+    const raw = await fetchLevel(level)
+    levels.push({ level, words: raw.map((entry, i) => normalizeEntry(entry, level, i)) })
+  }
+  dropTwoCharacterMeanings(levels.flatMap(l => l.words))
+
+  for (const { level, words: all } of levels) {
+    const words = all
+      .filter(w => w.simplified && w.senses.length > 0)
+      .map(({ senses, ...w }) => ({ ...w, definition: senses.join('; ') }))
+    writeFileSync(join(OUT_DIR, `hsk${level}.json`), JSON.stringify(words, null, 2), 'utf8')
+    const sample = words[0]
+    console.log(`  ✓ hsk${level}.json — ${words.length} mots | ex: ${sample.simplified} [${sample.pinyin}] = ${sample.definition.slice(0, 40)}`)
   }
 
   // Levels 8-9: not in source; generate meaningful placeholders

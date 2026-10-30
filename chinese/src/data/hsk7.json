@@ -53,7 +53,7 @@
     "level": 7,
     "simplified": "癌",
     "pinyin": "ái",
-    "definition": "cancer; carcinoma; also pr. [yán]"
+    "definition": "cancer; carcinoma"
   },
   {
     "id": "hsk7_0009",
@@ -108,8 +108,8 @@
     "id": "hsk7_0016",
     "level": 7,
     "simplified": "安定",
-    "pinyin": "Ān dìng",
-    "definition": "Anting township in Tainan county 台南县, Taiwan"
+    "pinyin": "ān dìng",
+    "definition": "stable; calm; settled; to stabilize; Valium; diazepam"
   },
   {
     "id": "hsk7_0017",
@@ -129,8 +129,8 @@
     "id": "hsk7_0019",
     "level": 7,
     "simplified": "安宁",
-    "pinyin": "Ān níng",
-    "definition": "Anning District of Lanzhou City 兰州市, Gansu; Anning City, to the west of Kunming 明, Yunnan"
+    "pinyin": "ān níng",
+    "definition": "peaceful; tranquil; calm; composed; free from worry"
   },
   {
     "id": "hsk7_0020",
@@ -256,7 +256,7 @@
     "level": 7,
     "simplified": "奥运会",
     "pinyin": "Aò yùn huì",
-    "definition": "abbr. for 奥林匹克运动会; Olympic Games; the Olympics"
+    "definition": "Olympic Games; the Olympics"
   },
   {
     "id": "hsk7_0038",
@@ -382,7 +382,7 @@
     "level": 7,
     "simplified": "柏树",
     "pinyin": "bǎi shù",
-    "definition": "cypress tree; Taiwan pr. [bó shù]"
+    "definition": "cypress tree"
   },
   {
     "id": "hsk7_0056",
@@ -648,7 +648,7 @@
     "level": 7,
     "simplified": "包扎",
     "pinyin": "bāo zā",
-    "definition": "variant of 包扎"
+    "definition": "to wrap up; to pack; to bind up (a wound)"
   },
   {
     "id": "hsk7_0094",
@@ -907,7 +907,7 @@
     "level": 7,
     "simplified": "贝壳",
     "pinyin": "bèi ké",
-    "definition": "shell; conch; cowry; mother of pearl; hard outer skin; also pr. [bèi qiào]"
+    "definition": "shell; conch; cowry; mother of pearl; hard outer skin"
   },
   {
     "id": "hsk7_0131",
@@ -1054,7 +1054,7 @@
     "level": 7,
     "simplified": "绷",
     "pinyin": "bēng",
-    "definition": "variant of 绷; variant of 绷"
+    "definition": "to draw tight; to stretch taut; to tack (with thread or pin); embroidery hoop; woven bed mat"
   },
   {
     "id": "hsk7_0152",
@@ -1431,8 +1431,8 @@
     "id": "hsk7_0205",
     "level": 7,
     "simplified": "标致",
-    "pinyin": "Biāo zhì",
-    "definition": "Peugeot"
+    "pinyin": "biāo zhi",
+    "definition": "beautiful (of woman); pretty"
   },
   {
     "id": "hsk7_0206",
@@ -1550,8 +1550,8 @@
     "id": "hsk7_0222",
     "level": 7,
     "simplified": "滨海",
-    "pinyin": "Bīn hǎi",
-    "definition": "Binhai (place name); Binhai New District, subprovincial district of Tianjin; Binhai county in Yancheng 盐城, Jiangsu; fictitious city Binhai in political satire; Primorsky, a territory in the far east of Russia"
+    "pinyin": "bīn hǎi",
+    "definition": "coastal; bordering the sea"
   },
   {
     "id": "hsk7_0223",
@@ -2244,7 +2244,7 @@
     "level": 7,
     "simplified": "采",
     "pinyin": "cǎi",
-    "definition": "to pick; to pluck; to collect; to select; to choose; to gather"
+    "definition": "to pick; to pluck; to collect; to select; to choose; to gather; color; complexion; looks"
   },
   {
     "id": "hsk7_0322",
@@ -2293,7 +2293,7 @@
     "level": 7,
     "simplified": "参见",
     "pinyin": "cān jiàn",
-    "definition": "to refer to; see also; compare (cf.); to pay respect to"
+    "definition": "to refer to; compare (cf.); to pay respect to"
   },
   {
     "id": "hsk7_0329",
@@ -2391,14 +2391,14 @@
     "level": 7,
     "simplified": "掺",
     "pinyin": "chān",
-    "definition": "variant of 搀; to mix"
+    "definition": "to mix"
   },
   {
     "id": "hsk7_0343",
     "level": 7,
     "simplified": "沧桑",
     "pinyin": "cāng sāng",
-    "definition": "great changes; ups and downs; vicissitudes; abbr. of 沧海桑田"
+    "definition": "great changes; ups and downs; vicissitudes"
   },
   {
     "id": "hsk7_0344",
@@ -2671,7 +2671,7 @@
     "level": 7,
     "simplified": "铲",
     "pinyin": "chǎn",
-    "definition": "to level off; to root up"
+    "definition": "to level off; to root up; to shovel; to remove"
   },
   {
     "id": "hsk7_0383",
@@ -3258,8 +3258,8 @@
     "id": "hsk7_0466",
     "level": 7,
     "simplified": "秤",
-    "pinyin": "chēng",
-    "definition": "variant of 称, to weigh"
+    "pinyin": "chèng",
+    "definition": "steelyard; Roman balance"
   },
   {
     "id": "hsk7_0467",
@@ -3505,6 +3505,13 @@
     "simplified": "抽象",
     "pinyin": "chōu xiàng",
     "definition": "abstract; abstraction"
+  },
+  {
+    "id": "hsk7_0502",
+    "level": 7,
+    "simplified": "仇",
+    "pinyin": "chóu",
+    "definition": "hatred; animosity; enmity; foe; enemy; to feel animosity toward (the wealthy, foreigners etc)"
   },
   {
     "id": "hsk7_0503",
@@ -3945,7 +3952,7 @@
     "level": 7,
     "simplified": "揣",
     "pinyin": "chuāi",
-    "definition": "to put into (one's pockets, clothes); Taiwan pr. [chuǎi]"
+    "definition": "to put into (one's pockets, clothes)"
   },
   {
     "id": "hsk7_0566",
@@ -4112,8 +4119,8 @@
     "id": "hsk7_0589",
     "level": 7,
     "simplified": "创",
-    "pinyin": "chuàng",
-    "definition": "variant of 创"
+    "pinyin": "chuāng",
+    "definition": "a wound; cut; injury; trauma"
   },
   {
     "id": "hsk7_0590",
@@ -4193,13 +4200,6 @@
     "definition": "pure; clean and honest; to purify"
   },
   {
-    "id": "hsk7_0601",
-    "level": 7,
-    "simplified": "纯朴",
-    "pinyin": "chún pǔ",
-    "definition": "variant of 淳朴"
-  },
-  {
     "id": "hsk7_0602",
     "level": 7,
     "simplified": "醇厚",
@@ -4211,7 +4211,7 @@
     "level": 7,
     "simplified": "蠢",
     "pinyin": "chǔn",
-    "definition": "variant of 蠢; stupid"
+    "definition": "stupid; sluggish; clumsy; to wiggle (of worms); to move in a disorderly fashion"
   },
   {
     "id": "hsk7_0604",
@@ -4260,7 +4260,7 @@
     "level": 7,
     "simplified": "辞",
     "pinyin": "cí",
-    "definition": "old variant of 辞"
+    "definition": "to resign; to dismiss; to decline; to take leave; ballad (archaic poetic genre)"
   },
   {
     "id": "hsk7_0611",
@@ -4358,7 +4358,7 @@
     "level": 7,
     "simplified": "赐",
     "pinyin": "cì",
-    "definition": "to confer; to bestow; to grant; Taiwan pr. [sì]"
+    "definition": "to confer; to bestow; to grant"
   },
   {
     "id": "hsk7_0625",
@@ -4407,7 +4407,7 @@
     "level": 7,
     "simplified": "从容",
     "pinyin": "cóng róng",
-    "definition": "to go easy; unhurried; calm; Taiwan pr. [cōng róng]"
+    "definition": "to go easy; unhurried; calm"
   },
   {
     "id": "hsk7_0632",
@@ -4694,7 +4694,7 @@
     "level": 7,
     "simplified": "打盹儿",
     "pinyin": "dǎ dǔn r",
-    "definition": "erhua variant of 打盹; to doze off"
+    "definition": "to doze off"
   },
   {
     "id": "hsk7_0673",
@@ -4876,7 +4876,7 @@
     "level": 7,
     "simplified": "大模大样",
     "pinyin": "dà mú dà yàng",
-    "definition": "boldly; ostentatiously; poised; self-assured; Taiwan pr. [dà mó dà yàng]"
+    "definition": "boldly; ostentatiously; poised; self-assured"
   },
   {
     "id": "hsk7_0699",
@@ -4946,7 +4946,7 @@
     "level": 7,
     "simplified": "大腕儿",
     "pinyin": "dà wàn r",
-    "definition": "erhua variant of 大腕; (coll.) big name; (coll.) big shot"
+    "definition": "(coll.) big name; (coll.) big shot"
   },
   {
     "id": "hsk7_0709",
@@ -5184,7 +5184,7 @@
     "level": 7,
     "simplified": "淡季",
     "pinyin": "dàn jì",
-    "definition": "off season; slow business season; see also 季"
+    "definition": "off season; slow business season"
   },
   {
     "id": "hsk7_0743",
@@ -5289,7 +5289,7 @@
     "level": 7,
     "simplified": "荡漾",
     "pinyin": "dàng yàng",
-    "definition": "to ripple; to undulate; also written 荡漾"
+    "definition": "to ripple; to undulate"
   },
   {
     "id": "hsk7_0758",
@@ -5442,8 +5442,8 @@
     "id": "hsk7_0779",
     "level": 7,
     "simplified": "德",
-    "pinyin": "Dé",
-    "definition": "Germany; German; abbr. for 德国"
+    "pinyin": "dé",
+    "definition": "virtue; goodness; morality; ethics; kindness; favor; character; kind"
   },
   {
     "id": "hsk7_0780",
@@ -5565,13 +5565,6 @@
     "definition": "to benefit from; thanks to"
   },
   {
-    "id": "hsk7_0797",
-    "level": 7,
-    "simplified": "得意扬扬",
-    "pinyin": "dé yì yáng yáng",
-    "definition": "variant of 洋"
-  },
-  {
     "id": "hsk7_0798",
     "level": 7,
     "simplified": "得知",
@@ -5583,7 +5576,7 @@
     "level": 7,
     "simplified": "得罪",
     "pinyin": "dé zuì",
-    "definition": "to commit an offense; to violate the law; excuse me! (formal); see also 罪"
+    "definition": "to commit an offense; to violate the law; excuse me! (formal)"
   },
   {
     "id": "hsk7_0800",
@@ -5597,7 +5590,7 @@
     "level": 7,
     "simplified": "灯泡",
     "pinyin": "dēng pào",
-    "definition": "light bulb; see also 电灯泡; third-wheel or unwanted third party spoiling a couple's date (slang)"
+    "definition": "light bulb; third-wheel or unwanted third party spoiling a couple's date (slang)"
   },
   {
     "id": "hsk7_0802",
@@ -5618,7 +5611,7 @@
     "level": 7,
     "simplified": "蹬",
     "pinyin": "dēng",
-    "definition": "to step on; to tread on; to wear (shoes); (slang) to dump (sb); Taiwan pr. [dèng]"
+    "definition": "to step on; to tread on; to wear (shoes); (slang) to dump (sb)"
   },
   {
     "id": "hsk7_0805",
@@ -5688,7 +5681,7 @@
     "level": 7,
     "simplified": "堤",
     "pinyin": "dī",
-    "definition": "dike; Taiwan pr. [tí]"
+    "definition": "dike"
   },
   {
     "id": "hsk7_0815",
@@ -5933,7 +5926,7 @@
     "level": 7,
     "simplified": "垫",
     "pinyin": "diàn",
-    "definition": "pad; cushion; mat; to pad out; to fill a gap; to pay for sb; to advance (money)"
+    "definition": "to pad out; to fill a gap; to pay for sb; to advance (money)"
   },
   {
     "id": "hsk7_0850",
@@ -5982,7 +5975,7 @@
     "level": 7,
     "simplified": "刁难",
     "pinyin": "diāo nàn",
-    "definition": "to be hard on sb; to deliberately make things difficult; Taiwan pr. [diāo nán]"
+    "definition": "to be hard on sb; to deliberately make things difficult"
   },
   {
     "id": "hsk7_0857",
@@ -5996,7 +5989,7 @@
     "level": 7,
     "simplified": "雕",
     "pinyin": "diāo",
-    "definition": "variant of 雕, to engrave"
+    "definition": "to carve; to engrave; shrewd; bird of prey"
   },
   {
     "id": "hsk7_0859",
@@ -6094,7 +6087,14 @@
     "level": 7,
     "simplified": "叠",
     "pinyin": "dié",
-    "definition": "variant of 叠"
+    "definition": "to fold; to fold over in layers; to furl; to layer; to pile up; to repeat; to duplicate"
+  },
+  {
+    "id": "hsk7_0873",
+    "level": 7,
+    "simplified": "丁",
+    "pinyin": "dīng",
+    "definition": "male adult; the 4th of the 10 Heavenly Stems 干; fourth (used like \"4\" or \"D\"); small cube of meat or vegetable; (archaic) ancient Chinese compass point: 195°; (chemistry) butyl"
   },
   {
     "id": "hsk7_0874",
@@ -6115,7 +6115,7 @@
     "level": 7,
     "simplified": "钉",
     "pinyin": "dīng",
-    "definition": "nail; to follow closely; to keep at sb (to do sth); variant of 盯"
+    "definition": "to follow closely; to keep at sb (to do sth)"
   },
   {
     "id": "hsk7_0877",
@@ -6332,7 +6332,7 @@
     "level": 7,
     "simplified": "动荡",
     "pinyin": "dòng dàng",
-    "definition": "variant of 动荡"
+    "definition": "unrest (social or political); turmoil; upheaval; commotion"
   },
   {
     "id": "hsk7_0908",
@@ -6423,14 +6423,14 @@
     "level": 7,
     "simplified": "兜",
     "pinyin": "dōu",
-    "definition": "pocket; bag; to wrap up or hold in a bag; to move in a circle; to canvas or solicit; to take responsibility for; to disclose in detail; combat armor (old)"
+    "definition": "to wrap up or hold in a bag; to move in a circle; to canvas or solicit; to take responsibility for; to disclose in detail; combat armor (old)"
   },
   {
     "id": "hsk7_0921",
     "level": 7,
     "simplified": "兜儿",
     "pinyin": "dōu r",
-    "definition": "erhua variant of 兜; pocket; bag"
+    "definition": "pocket; bag"
   },
   {
     "id": "hsk7_0922",
@@ -6457,8 +6457,8 @@
     "id": "hsk7_0925",
     "level": 7,
     "simplified": "斗",
-    "pinyin": "Dǒu",
-    "definition": "abbr. for the Big Dipper constellation 星"
+    "pinyin": "dǒu",
+    "definition": "dry measure for grain equal to ten 升 or one-tenth of a 石; decaliter; peck; cup or dipper shaped object"
   },
   {
     "id": "hsk7_0926",
@@ -6864,7 +6864,7 @@
     "level": 7,
     "simplified": "鹅",
     "pinyin": "é",
-    "definition": "variant of 鹅"
+    "definition": "goose"
   },
   {
     "id": "hsk7_0984",
@@ -6884,8 +6884,8 @@
     "id": "hsk7_0986",
     "level": 7,
     "simplified": "恶",
-    "pinyin": "ě",
-    "definition": "used in 恶心"
+    "pinyin": "è",
+    "definition": "evil; fierce; vicious; ugly; coarse; to harm"
   },
   {
     "id": "hsk7_0987",
@@ -7193,7 +7193,7 @@
     "level": 7,
     "simplified": "帆",
     "pinyin": "fān",
-    "definition": "variant of 帆"
+    "definition": "sail; to gallop"
   },
   {
     "id": "hsk7_1031",
@@ -7423,8 +7423,8 @@
     "id": "hsk7_1063",
     "level": 7,
     "simplified": "方言",
-    "pinyin": "Fāng yán",
-    "definition": "the first Chinese dialect dictionary, edited by Yang Xiong 扬雄 in 1st century, containing over 9000 characters"
+    "pinyin": "fāng yán",
+    "definition": "topolect; dialect"
   },
   {
     "id": "hsk7_1064",
@@ -7508,7 +7508,7 @@
     "level": 7,
     "simplified": "仿",
     "pinyin": "fǎng",
-    "definition": "to imitate; to copy"
+    "definition": "to imitate; to copy; seemingly"
   },
   {
     "id": "hsk7_1076",
@@ -7676,7 +7676,7 @@
     "level": 7,
     "simplified": "废",
     "pinyin": "fèi",
-    "definition": "to abolish; to abandon; to abrogate; to discard; to depose; to oust; crippled; abandoned; waste"
+    "definition": "to abolish; to abandon; to abrogate; to discard; to depose; to oust; crippled; abandoned; waste; disabled"
   },
   {
     "id": "hsk7_1100",
@@ -7948,8 +7948,8 @@
     "id": "hsk7_1138",
     "level": 7,
     "simplified": "丰满",
-    "pinyin": "Fēng mǎn",
-    "definition": "Fengman district of Jilin city 吉林市, Jilin province"
+    "pinyin": "fēng mǎn",
+    "definition": "ample; well developed; fully rounded"
   },
   {
     "id": "hsk7_1139",
@@ -8172,8 +8172,8 @@
     "id": "hsk7_1170",
     "level": 7,
     "simplified": "凤凰",
-    "pinyin": "Fèng huáng",
-    "definition": "Fenghuang County in Xiangxi Tujia and Miao Autonomous Prefecture 州"
+    "pinyin": "fèng huáng",
+    "definition": "phoenix"
   },
   {
     "id": "hsk7_1171",
@@ -8404,7 +8404,7 @@
     "level": 7,
     "simplified": "附",
     "pinyin": "fù",
-    "definition": "variant of 附"
+    "definition": "to add; to attach; to be close to; to be attached"
   },
   {
     "id": "hsk7_1204",
@@ -8453,7 +8453,7 @@
     "level": 7,
     "simplified": "复合",
     "pinyin": "fù hé",
-    "definition": "(of people who were estranged) to be reconciled; (of a couple) to get back together"
+    "definition": "(of people who were estranged) to be reconciled; (of a couple) to get back together; complex; compound; composite; hybrid; to compound; to combine"
   },
   {
     "id": "hsk7_1211",
@@ -8466,8 +8466,8 @@
     "id": "hsk7_1212",
     "level": 7,
     "simplified": "复兴",
-    "pinyin": "Fù xīng",
-    "definition": "Fuxing district of Handan city 邯郸市, Hebei; Fuxing or Fuhsing township in Taoyuan county 桃园县, north Taiwan"
+    "pinyin": "fù xīng",
+    "definition": "to revive; to rejuvenate"
   },
   {
     "id": "hsk7_1213",
@@ -8522,8 +8522,8 @@
     "id": "hsk7_1220",
     "level": 7,
     "simplified": "富裕",
-    "pinyin": "Fù yù",
-    "definition": "Fuyu county in Qiqihar 齐齐哈尔, Heilongjiang"
+    "pinyin": "fù yù",
+    "definition": "prosperous; well-to-do; well-off"
   },
   {
     "id": "hsk7_1221",
@@ -8844,8 +8844,8 @@
     "id": "hsk7_1266",
     "level": 7,
     "simplified": "港",
-    "pinyin": "Gǎng",
-    "definition": "Hong Kong (abbr. for 港); surname Gang"
+    "pinyin": "gǎng",
+    "definition": "harbor; port"
   },
   {
     "id": "hsk7_1267",
@@ -8928,8 +8928,8 @@
     "id": "hsk7_1278",
     "level": 7,
     "simplified": "高明",
-    "pinyin": "Gāo míng",
-    "definition": "Gaoming District of Foshan City 市, Guangdong"
+    "pinyin": "gāo míng",
+    "definition": "brilliant; superior; wise"
   },
   {
     "id": "hsk7_1279",
@@ -9125,7 +9125,7 @@
     "level": 7,
     "simplified": "格",
     "pinyin": "gé",
-    "definition": "square; frame; rule; (legal) case; style; character; standard; pattern; (grammar) case; (classical) to obstruct; to hinder; (classical) to arrive; to come; (classical) to investigate; to study exhaustively"
+    "definition": "square; frame; rule; (legal) case; style; character; standard; pattern; (grammar) case; to hinder; to come; to study exhaustively"
   },
   {
     "id": "hsk7_1307",
@@ -9317,6 +9317,13 @@
     "definition": "workload; volume of work"
   },
   {
+    "id": "hsk7_1334",
+    "level": 7,
+    "simplified": "弓",
+    "pinyin": "gōng",
+    "definition": "a bow (weapon); to bend; to arch (one's back etc)"
+  },
+  {
     "id": "hsk7_1335",
     "level": 7,
     "simplified": "公安局",
@@ -9328,7 +9335,7 @@
     "level": 7,
     "simplified": "公车",
     "pinyin": "gōng chē",
-    "definition": "bus; abbr. for 公共汽车; car belonging to an organization and used by its members (government car, police car, company car etc); abbr. for 公务用车"
+    "definition": "bus; car belonging to an organization and used by its members (government car, police car, company car etc)"
   },
   {
     "id": "hsk7_1337",
@@ -9660,6 +9667,13 @@
     "definition": "overall character"
   },
   {
+    "id": "hsk7_1384",
+    "level": 7,
+    "simplified": "勾",
+    "pinyin": "gōu",
+    "definition": "to attract; to arouse; to tick; to strike out; to delineate; to collude"
+  },
+  {
     "id": "hsk7_1385",
     "level": 7,
     "simplified": "勾画",
@@ -9678,7 +9692,7 @@
     "level": 7,
     "simplified": "钩",
     "pinyin": "gōu",
-    "definition": "variant of 钩"
+    "definition": "to hook; to sew; to crochet; check mark or tick; window catch"
   },
   {
     "id": "hsk7_1388",
@@ -9804,7 +9818,7 @@
     "level": 7,
     "simplified": "古人",
     "pinyin": "gǔ rén",
-    "definition": "people of ancient times; the ancients; extinct human species such as Homo erectus or Homo neanderthalensis; (literary) deceased person"
+    "definition": "people of ancient times; the ancients; extinct human species such as Homo erectus or Homo neanderthalensis"
   },
   {
     "id": "hsk7_1406",
@@ -9923,7 +9937,7 @@
     "level": 7,
     "simplified": "雇",
     "pinyin": "gù",
-    "definition": "variant of 雇"
+    "definition": "to employ; to hire; to rent"
   },
   {
     "id": "hsk7_1423",
@@ -10202,8 +10216,8 @@
     "id": "hsk7_1462",
     "level": 7,
     "simplified": "管子",
-    "pinyin": "Guǎn zǐ",
-    "definition": "Guanzi or Guan Zhong 管仲 (-645 BC), famous politician of Qi 齐国 of Spring and Autumn period; Guanzi, classical book containing writings of Guan Zhong and his school"
+    "pinyin": "guǎn zi",
+    "definition": "tube; pipe; drinking straw"
   },
   {
     "id": "hsk7_1463",
@@ -10342,8 +10356,8 @@
     "id": "hsk7_1482",
     "level": 7,
     "simplified": "光泽",
-    "pinyin": "Guāng zé",
-    "definition": "Guangze county in Nanping 平 Fujian"
+    "pinyin": "guāng zé",
+    "definition": "luster; gloss"
   },
   {
     "id": "hsk7_1483",
@@ -10434,7 +10448,7 @@
     "level": 7,
     "simplified": "瑰宝",
     "pinyin": "guī bǎo",
-    "definition": "gem; (fig.) rare and valuable item; gem; treasure"
+    "definition": "gem; (fig.) rare and valuable item; treasure"
   },
   {
     "id": "hsk7_1496",
@@ -10448,7 +10462,7 @@
     "level": 7,
     "simplified": "柜台",
     "pinyin": "guì tái",
-    "definition": "variant of 柜台"
+    "definition": "sales counter; front desk; bar; (of markets, medicines etc) OTC (over-the-counter)"
   },
   {
     "id": "hsk7_1498",
@@ -10490,7 +10504,7 @@
     "level": 7,
     "simplified": "棍",
     "pinyin": "gùn",
-    "definition": "stick; rod; truncheon"
+    "definition": "truncheon"
   },
   {
     "id": "hsk7_1504",
@@ -10524,8 +10538,8 @@
     "id": "hsk7_1508",
     "level": 7,
     "simplified": "国徽",
-    "pinyin": "Guó huī",
-    "definition": "the national emblem of the PRC (a red circle containing the five stars of the PRC flag over Tiananmen 天安门)"
+    "pinyin": "guó huī",
+    "definition": "national emblem; national coat of arms"
   },
   {
     "id": "hsk7_1509",
@@ -11316,7 +11330,7 @@
     "level": 7,
     "simplified": "核",
     "pinyin": "hé",
-    "definition": "pit; stone; nucleus; nuclear; to examine; to check; to verify"
+    "definition": "pit; stone; nucleus; nuclear; to examine; to check; to verify; to investigate"
   },
   {
     "id": "hsk7_1622",
@@ -11833,8 +11847,8 @@
     "id": "hsk7_1695",
     "level": 7,
     "simplified": "互助",
-    "pinyin": "Hù zhù",
-    "definition": "Huzhu Tuzu autonomous county in Haidong prefecture 海东地区, Qinghai"
+    "pinyin": "hù zhù",
+    "definition": "to help each other"
   },
   {
     "id": "hsk7_1696",
@@ -11848,7 +11862,7 @@
     "level": 7,
     "simplified": "糊",
     "pinyin": "hú",
-    "definition": "variant of 糊"
+    "definition": "muddled; paste; scorched; congee; making a living"
   },
   {
     "id": "hsk7_1698",
@@ -12352,7 +12366,7 @@
     "level": 7,
     "simplified": "晃",
     "pinyin": "huǎng",
-    "definition": "variant of 晃"
+    "definition": "to dazzle; to flash past"
   },
   {
     "id": "hsk7_1770",
@@ -12492,7 +12506,7 @@
     "level": 7,
     "simplified": "汇集",
     "pinyin": "huì jí",
-    "definition": "to collect; to compile; to converge; also written 汇集"
+    "definition": "to collect; to compile; to converge"
   },
   {
     "id": "hsk7_1790",
@@ -12583,7 +12597,7 @@
     "level": 7,
     "simplified": "魂",
     "pinyin": "hún",
-    "definition": "old variant of 魂"
+    "definition": "soul; spirit; immortal soul (that can be detached from the body)"
   },
   {
     "id": "hsk7_1803",
@@ -12649,13 +12663,6 @@
     "definition": "(banking) current (account); checking (account); demand (deposit etc)"
   },
   {
-    "id": "hsk7_1812",
-    "level": 7,
-    "simplified": "火暴",
-    "pinyin": "huǒ bào",
-    "definition": "variant of 爆"
-  },
-  {
     "id": "hsk7_1813",
     "level": 7,
     "simplified": "火锅",
@@ -12688,7 +12695,7 @@
     "level": 7,
     "simplified": "火辣辣",
     "pinyin": "huǒ là là",
-    "definition": "painful heat; scorching; painful heat; rude and forthright; provocative; hot; sexy"
+    "definition": "painful heat; scorching; rude and forthright; provocative; hot; sexy"
   },
   {
     "id": "hsk7_1818",
@@ -13129,7 +13136,7 @@
     "level": 7,
     "simplified": "脊梁",
     "pinyin": "jǐ liáng",
-    "definition": "backbone; spine; Taiwan pr. [jǐ liang]"
+    "definition": "backbone; spine"
   },
   {
     "id": "hsk7_1881",
@@ -13193,6 +13200,13 @@
     "simplified": "挤压",
     "pinyin": "jǐ yā",
     "definition": "to squeeze; to press; to extrude"
+  },
+  {
+    "id": "hsk7_1890",
+    "level": 7,
+    "simplified": "计",
+    "pinyin": "jì",
+    "definition": "to calculate; to compute; to count; to regard as important; to plan; ruse; meter; gauge"
   },
   {
     "id": "hsk7_1891",
@@ -13349,6 +13363,13 @@
     "definition": "to entrust (to sb); to place (one's hope, energy etc) in; a thing in which you invest (your hope, energy etc)"
   },
   {
+    "id": "hsk7_1913",
+    "level": 7,
+    "simplified": "祭",
+    "pinyin": "jì",
+    "definition": "to offer a sacrifice to (gods or ancestors); memorial ceremony; (in classical novels) to recite an incantation to activate a magic weapon; (lit. and fig.) to wield"
+  },
+  {
     "id": "hsk7_1914",
     "level": 7,
     "simplified": "祭奠",
@@ -13402,7 +13423,7 @@
     "level": 7,
     "simplified": "家伙",
     "pinyin": "jiā huo",
-    "definition": "variant of 伙"
+    "definition": "household dish, implement or furniture; domestic animal; (coll.) guy; chap; weapon"
   },
   {
     "id": "hsk7_1922",
@@ -13515,6 +13536,13 @@
     "simplified": "价值观",
     "pinyin": "jià zhí guān",
     "definition": "system of values"
+  },
+  {
+    "id": "hsk7_1938",
+    "level": 7,
+    "simplified": "驾",
+    "pinyin": "jià",
+    "definition": "to harness; to draw (a cart etc); to drive; to pilot; to sail; to ride; your good self; prefixed word denoting respect (polite 敬辞)"
   },
   {
     "id": "hsk7_1939",
@@ -13983,7 +14011,7 @@
     "level": 7,
     "simplified": "健美",
     "pinyin": "jiàn měi",
-    "definition": "healthy and beautiful; to do fitness exercises; abbr. for 健美运动"
+    "definition": "healthy and beautiful; to do fitness exercises"
   },
   {
     "id": "hsk7_2006",
@@ -14019,6 +14047,13 @@
     "simplified": "鉴于",
     "pinyin": "jiàn yú",
     "definition": "in view of; seeing that; considering; whereas"
+  },
+  {
+    "id": "hsk7_2011",
+    "level": 7,
+    "simplified": "姜",
+    "pinyin": "jiāng",
+    "definition": "ginger"
   },
   {
     "id": "hsk7_2012",
@@ -14236,6 +14271,13 @@
     "simplified": "胶片",
     "pinyin": "jiāo piàn",
     "definition": "(photographic) film"
+  },
+  {
+    "id": "hsk7_2043",
+    "level": 7,
+    "simplified": "焦",
+    "pinyin": "jiāo",
+    "definition": "burnt; scorched; charred; worried; anxious; coke; joule (abbr. for 耳)"
   },
   {
     "id": "hsk7_2044",
@@ -14578,7 +14620,7 @@
     "level": 7,
     "simplified": "劫",
     "pinyin": "jié",
-    "definition": "variant of 劫"
+    "definition": "to rob; to plunder; to seize by force; to coerce; calamity"
   },
   {
     "id": "hsk7_2093",
@@ -14843,8 +14885,8 @@
     "id": "hsk7_2130",
     "level": 7,
     "simplified": "金子",
-    "pinyin": "Jīn zǐ",
-    "definition": "Kaneko (Japanese surname)"
+    "pinyin": "jīn zi",
+    "definition": "gold"
   },
   {
     "id": "hsk7_2131",
@@ -15043,6 +15085,13 @@
     "definition": "restricted area; forbidden region"
   },
   {
+    "id": "hsk7_2159",
+    "level": 7,
+    "simplified": "经",
+    "pinyin": "jīng",
+    "definition": "classics; sacred book; scripture; to pass through; to undergo; to bear; to endure; warp (textile); longitude; menstruation; channel (TCM)"
+  },
+  {
     "id": "hsk7_2160",
     "level": 7,
     "simplified": "经度",
@@ -15208,7 +15257,7 @@
     "level": 7,
     "simplified": "精练",
     "pinyin": "jīng liàn",
-    "definition": "(textiles) to scour; to degum (silk); variant of 精炼"
+    "definition": "(textiles) to scour; to degum (silk)"
   },
   {
     "id": "hsk7_2184",
@@ -15537,7 +15586,7 @@
     "level": 7,
     "simplified": "酒精",
     "pinyin": "jiǔ jīng",
-    "definition": "alcohol; ethanol CH3CH2OH; ethyl alcohol; also written 乙醇; grain alcohol"
+    "definition": "alcohol; ethanol CH3CH2OH; ethyl alcohol; grain alcohol"
   },
   {
     "id": "hsk7_2231",
@@ -15670,7 +15719,7 @@
     "level": 7,
     "simplified": "鞠躬",
     "pinyin": "jū gōng",
-    "definition": "to bow; (literary) to bend down"
+    "definition": "to bow"
   },
   {
     "id": "hsk7_2250",
@@ -15691,7 +15740,7 @@
     "level": 7,
     "simplified": "局限",
     "pinyin": "jú xiàn",
-    "definition": "variant of 限"
+    "definition": "to limit; to confine; to restrict sth within set boundaries"
   },
   {
     "id": "hsk7_2253",
@@ -15879,8 +15928,8 @@
     "id": "hsk7_2279",
     "level": 7,
     "simplified": "锯",
-    "pinyin": "jū",
-    "definition": "variant of 锔"
+    "pinyin": "jù",
+    "definition": "a saw; to cut with a saw"
   },
   {
     "id": "hsk7_2280",
@@ -15970,8 +16019,8 @@
     "id": "hsk7_2292",
     "level": 7,
     "simplified": "倔",
-    "pinyin": "jué",
-    "definition": "used in 倔强"
+    "pinyin": "juè",
+    "definition": "gruff; surly"
   },
   {
     "id": "hsk7_2293",
@@ -15999,7 +16048,7 @@
     "level": 7,
     "simplified": "嚼",
     "pinyin": "jiáo",
-    "definition": "to chew; also pr. [jué]"
+    "definition": "to chew"
   },
   {
     "id": "hsk7_2297",
@@ -16034,7 +16083,7 @@
     "level": 7,
     "simplified": "俊",
     "pinyin": "jùn",
-    "definition": "old variant of 俊"
+    "definition": "smart; eminent; handsome; talented"
   },
   {
     "id": "hsk7_2302",
@@ -16419,7 +16468,7 @@
     "level": 7,
     "simplified": "科幻",
     "pinyin": "kē huàn",
-    "definition": "science fiction; abbr. for 科学幻想"
+    "definition": "science fiction"
   },
   {
     "id": "hsk7_2357",
@@ -16433,7 +16482,7 @@
     "level": 7,
     "simplified": "科普",
     "pinyin": "kē pǔ",
-    "definition": "(attributive) popular science; (coll.) to explain in layperson's terms; abbr. for 科学普及"
+    "definition": "(attributive) popular science; (coll.) to explain in layperson's terms"
   },
   {
     "id": "hsk7_2359",
@@ -16447,7 +16496,7 @@
     "level": 7,
     "simplified": "壳",
     "pinyin": "qiào",
-    "definition": "shell; carapace; crust (earth's crust etc); also pr. [ké]"
+    "definition": "shell; carapace; crust (earth's crust etc)"
   },
   {
     "id": "hsk7_2361",
@@ -16762,7 +16811,7 @@
     "level": 7,
     "simplified": "口吃",
     "pinyin": "kǒu chī",
-    "definition": "to stammer; to stutter; Taiwan pr. [kǒu jí]"
+    "definition": "to stammer; to stutter"
   },
   {
     "id": "hsk7_2406",
@@ -16965,7 +17014,7 @@
     "level": 7,
     "simplified": "夸",
     "pinyin": "kuā",
-    "definition": "used in 克"
+    "definition": "to boast; to exaggerate; to praise"
   },
   {
     "id": "hsk7_2435",
@@ -17098,7 +17147,7 @@
     "level": 7,
     "simplified": "框",
     "pinyin": "kuàng",
-    "definition": "frame (e.g. door frame); casing; fig. framework; template; to circle (i.e. draw a circle around sth); to frame; to restrict; Taiwan pr. [kuāng]"
+    "definition": "frame (e.g. door frame); casing; fig. framework; template; to circle (i.e. draw a circle around sth); to frame; to restrict"
   },
   {
     "id": "hsk7_2454",
@@ -17307,8 +17356,8 @@
     "id": "hsk7_2483",
     "level": 7,
     "simplified": "来宾",
-    "pinyin": "Lái bīn",
-    "definition": "Laibin prefecture-level city in Guangxi"
+    "pinyin": "lái bīn",
+    "definition": "guest; visitor"
   },
   {
     "id": "hsk7_2484",
@@ -17518,7 +17567,7 @@
     "level": 7,
     "simplified": "老伴儿",
     "pinyin": "lǎo bàn r",
-    "definition": "erhua variant of 老伴; (coll.) (of an old couple) husband or wife"
+    "definition": "(coll.) (of an old couple) husband or wife"
   },
   {
     "id": "hsk7_2514",
@@ -17637,7 +17686,7 @@
     "level": 7,
     "simplified": "勒",
     "pinyin": "lè",
-    "definition": "to rein in; to compel; to force; to carve; to engrave; (literary) to command; to lead; bridle; (physics) abbr. for 斯, lux"
+    "definition": "to rein in; to compel; to force; to carve; to engrave; to lead; bridle"
   },
   {
     "id": "hsk7_2531",
@@ -17734,8 +17783,8 @@
     "id": "hsk7_2544",
     "level": 7,
     "simplified": "冷战",
-    "pinyin": "Lěng zhàn",
-    "definition": "(US-Soviet) Cold War"
+    "pinyin": "lěng zhàn",
+    "definition": "cold war; (fig.) strained relationship; to be barely on speaking terms"
   },
   {
     "id": "hsk7_2545",
@@ -17833,7 +17882,7 @@
     "level": 7,
     "simplified": "理事",
     "pinyin": "lǐ shì",
-    "definition": "member of council; (literary) to take care of matters"
+    "definition": "member of council"
   },
   {
     "id": "hsk7_2559",
@@ -17931,7 +17980,7 @@
     "level": 7,
     "simplified": "立方",
     "pinyin": "lì fāng",
-    "definition": "cube (math.); abbr. for 立方体; abbr. for 米"
+    "definition": "cube (math.)"
   },
   {
     "id": "hsk7_2573",
@@ -18316,7 +18365,7 @@
     "level": 7,
     "simplified": "拎",
     "pinyin": "līn",
-    "definition": "to lift up; to carry in one's hand; Taiwan pr. [līng]"
+    "definition": "to lift up; to carry in one's hand"
   },
   {
     "id": "hsk7_2628",
@@ -19033,6 +19082,13 @@
     "definition": "to prove a point; to expound on; to demonstrate or prove (through argument); proof"
   },
   {
+    "id": "hsk7_2730",
+    "level": 7,
+    "simplified": "罗",
+    "pinyin": "luó",
+    "definition": "gauze; to collect; to gather; to catch; to sift"
+  },
+  {
     "id": "hsk7_2731",
     "level": 7,
     "simplified": "萝卜",
@@ -19051,7 +19107,7 @@
     "level": 7,
     "simplified": "裸",
     "pinyin": "luǒ",
-    "definition": "variant of 裸"
+    "definition": "naked"
   },
   {
     "id": "hsk7_2734",
@@ -19100,7 +19156,7 @@
     "level": 7,
     "simplified": "麻",
     "pinyin": "má",
-    "definition": "variant of 麻; hemp"
+    "definition": "hemp; generic name for hemp, flax etc; hemp or flax fiber for textile materials; sesame; (of materials) rough or coarse; pocked; pitted; to have pins and needles or tingling; to feel numb"
   },
   {
     "id": "hsk7_2741",
@@ -19450,7 +19506,14 @@
     "level": 7,
     "simplified": "没准儿",
     "pinyin": "méi zhǔn r",
-    "definition": "erhua variant of 没准; not sure; maybe"
+    "definition": "not sure; maybe"
+  },
+  {
+    "id": "hsk7_2791",
+    "level": 7,
+    "simplified": "枚",
+    "pinyin": "méi",
+    "definition": "classifier for coins, rings, badges, pearls, sporting medals, rockets, satellites etc; tree trunk; whip; wooden peg, used as a gag for marching soldiers (old)"
   },
   {
     "id": "hsk7_2792",
@@ -19505,8 +19568,8 @@
     "id": "hsk7_2799",
     "level": 7,
     "simplified": "美德",
-    "pinyin": "Měi Dé",
-    "definition": "USA and Germany"
+    "pinyin": "měi dé",
+    "definition": "virtue"
   },
   {
     "id": "hsk7_2800",
@@ -19635,13 +19698,6 @@
     "definition": "ally"
   },
   {
-    "id": "hsk7_2818",
-    "level": 7,
-    "simplified": "朦胧",
-    "pinyin": "méng lóng",
-    "definition": "(literary) (of moonlight) dim; (literary) murky; indistinct"
-  },
-  {
     "id": "hsk7_2819",
     "level": 7,
     "simplified": "猛烈",
@@ -19715,8 +19771,8 @@
     "id": "hsk7_2829",
     "level": 7,
     "simplified": "谜",
-    "pinyin": "mèi",
-    "definition": "see 谜儿, riddle"
+    "pinyin": "mí",
+    "definition": "riddle"
   },
   {
     "id": "hsk7_2830",
@@ -19897,8 +19953,8 @@
     "id": "hsk7_2855",
     "level": 7,
     "simplified": "苗",
-    "pinyin": "Miáo",
-    "definition": "Hmong or Miao ethnic group of southwest China; surname Miao"
+    "pinyin": "miáo",
+    "definition": "sprout"
   },
   {
     "id": "hsk7_2856",
@@ -20163,8 +20219,8 @@
     "id": "hsk7_2893",
     "level": 7,
     "simplified": "末日",
-    "pinyin": "Mò rì",
-    "definition": "Judgment Day (in Christian eschatology)"
+    "pinyin": "mò rì",
+    "definition": "last day; end; final days; doomsday"
   },
   {
     "id": "hsk7_2894",
@@ -20205,8 +20261,8 @@
     "id": "hsk7_2899",
     "level": 7,
     "simplified": "墨",
-    "pinyin": "Mò",
-    "definition": "surname Mo; abbr. for 哥, Mexico"
+    "pinyin": "mò",
+    "definition": "ink stick; China ink; corporal punishment consisting of tattooing characters on the victim's forehead"
   },
   {
     "id": "hsk7_2900",
@@ -20255,14 +20311,14 @@
     "level": 7,
     "simplified": "亩",
     "pinyin": "mǔ",
-    "definition": "old variant of 亩"
+    "definition": "classifier for fields; unit of area equal to one fifteenth of a hectare"
   },
   {
     "id": "hsk7_2907",
     "level": 7,
     "simplified": "牡丹",
-    "pinyin": "Mǔ dan",
-    "definition": "Mudan District of Heze City 菏泽市, Shandong; Mutan township in Pingtung County 屏东县, Taiwan"
+    "pinyin": "mǔ dan",
+    "definition": "tree peony (Paeonia suffruticosa)"
   },
   {
     "id": "hsk7_2908",
@@ -20381,7 +20437,7 @@
     "level": 7,
     "simplified": "幕",
     "pinyin": "mù",
-    "definition": "curtain or screen; canopy or tent; headquarters of a general; act (of a play)"
+    "definition": "curtain or screen; canopy or tent; headquarters of a general; act (of a play); curtain; screen"
   },
   {
     "id": "hsk7_2925",
@@ -20416,7 +20472,7 @@
     "level": 7,
     "simplified": "纳闷儿",
     "pinyin": "nà mèn r",
-    "definition": "erhua variant of 纳闷; puzzled; bewildered"
+    "definition": "puzzled; bewildered"
   },
   {
     "id": "hsk7_2930",
@@ -20710,7 +20766,7 @@
     "level": 7,
     "simplified": "拟",
     "pinyin": "nǐ",
-    "definition": "doubtful; suspicious; variant of 拟; to emulate; to imitate"
+    "definition": "doubtful; suspicious; to emulate; to imitate; to plan to; to draft (a plan); to assess; to compare; pseudo-"
   },
   {
     "id": "hsk7_2972",
@@ -20948,7 +21004,7 @@
     "level": 7,
     "simplified": "浓缩",
     "pinyin": "nóng suō",
-    "definition": "to concentrate (a liquid); concentration; espresso coffee; abbr. for 意式浓缩咖啡"
+    "definition": "to concentrate (a liquid); concentration; espresso coffee"
   },
   {
     "id": "hsk7_3006",
@@ -21571,7 +21627,7 @@
     "level": 7,
     "simplified": "飘",
     "pinyin": "piāo",
-    "definition": "variant of 飘"
+    "definition": "to float"
   },
   {
     "id": "hsk7_3095",
@@ -21710,8 +21766,8 @@
     "id": "hsk7_3114",
     "level": 7,
     "simplified": "平和",
-    "pinyin": "Píng hé",
-    "definition": "Pinghe county in Zhangzhou 州, Fujian"
+    "pinyin": "píng hé",
+    "definition": "gentle; mild; moderate; placid"
   },
   {
     "id": "hsk7_3115",
@@ -21822,8 +21878,8 @@
     "id": "hsk7_3130",
     "level": 7,
     "simplified": "颇",
-    "pinyin": "Pō",
-    "definition": "surname Po; Taiwan pr. [Pǒ]"
+    "pinyin": "pō",
+    "definition": "rather; quite; considerably; oblique; inclined; slanting"
   },
   {
     "id": "hsk7_3131",
@@ -21977,7 +22033,7 @@
     "level": 7,
     "simplified": "曝光",
     "pinyin": "bào guāng",
-    "definition": "to expose (photography); (fig.) to expose (a scandal); (advertising) exposure; Taiwan pr. [pù guāng]"
+    "definition": "to expose (photography); (fig.) to expose (a scandal); (advertising) exposure"
   },
   {
     "id": "hsk7_3153",
@@ -21998,7 +22054,7 @@
     "level": 7,
     "simplified": "凄凉",
     "pinyin": "qī liáng",
-    "definition": "mournful; miserable"
+    "definition": "mournful; miserable; desolate (place)"
   },
   {
     "id": "hsk7_3156",
@@ -22089,7 +22145,7 @@
     "level": 7,
     "simplified": "棋",
     "pinyin": "qí",
-    "definition": "variant of 棋"
+    "definition": "chess; chess-like game; a game of chess"
   },
   {
     "id": "hsk7_3169",
@@ -22152,7 +22208,7 @@
     "level": 7,
     "simplified": "启蒙",
     "pinyin": "qǐ méng",
-    "definition": "variant of 启蒙; to instruct the young"
+    "definition": "to instruct the young; to initiate; to awake sb from ignorance; to free sb from prejudice or superstition; primer; enlightened; the Enlightenment; Western learning from the late Qing dynasty"
   },
   {
     "id": "hsk7_3178",
@@ -22467,7 +22523,7 @@
     "level": 7,
     "simplified": "铅",
     "pinyin": "qiān",
-    "definition": "old variant of 铅"
+    "definition": "lead (chemistry)"
   },
   {
     "id": "hsk7_3223",
@@ -22705,7 +22761,7 @@
     "level": 7,
     "simplified": "强行",
     "pinyin": "qiáng xíng",
-    "definition": "to do sth by force; Taiwan pr. [qiǎng xíng]"
+    "definition": "to do sth by force"
   },
   {
     "id": "hsk7_3257",
@@ -22726,7 +22782,7 @@
     "level": 7,
     "simplified": "强制",
     "pinyin": "qiáng zhì",
-    "definition": "to force; to compel; to coerce; forced; compulsory; Taiwan pr. [qiǎng zhì]"
+    "definition": "to force; to compel; to coerce; forced; compulsory"
   },
   {
     "id": "hsk7_3260",
@@ -23069,7 +23125,7 @@
     "level": 7,
     "simplified": "清脆",
     "pinyin": "qīng cuì",
-    "definition": "sharp and clear; crisp; melodious; ringing; tinkling; silvery (of sound); fragile; frail; also written 轻脆"
+    "definition": "sharp and clear; crisp; melodious; ringing; tinkling; silvery (of sound); fragile; frail"
   },
   {
     "id": "hsk7_3309",
@@ -23103,8 +23159,8 @@
     "id": "hsk7_3313",
     "level": 7,
     "simplified": "清明",
-    "pinyin": "Qīng míng",
-    "definition": "Qingming or Pure Brightness, 5th of the 24 solar terms 二十四节气 5th-19th April; Pure Brightness Festival or Tomb Sweeping Day (in early April)"
+    "pinyin": "qīng míng",
+    "definition": "clear and bright; sober and calm; (of a government or administration) well ordered"
   },
   {
     "id": "hsk7_3314",
@@ -23117,8 +23173,8 @@
     "id": "hsk7_3315",
     "level": 7,
     "simplified": "清新",
-    "pinyin": "Qīng xīn",
-    "definition": "Qingxin county in Qingyuan 清远, Guangdong"
+    "pinyin": "qīng xīn",
+    "definition": "fresh and clean"
   },
   {
     "id": "hsk7_3316",
@@ -23287,6 +23343,13 @@
     "simplified": "求助",
     "pinyin": "qiú zhù",
     "definition": "to request help; to appeal (for help)"
+  },
+  {
+    "id": "hsk7_3340",
+    "level": 7,
+    "simplified": "曲",
+    "pinyin": "qū",
+    "definition": "bent; crooked; wrong; yeast; Aspergillus (includes many common molds)"
   },
   {
     "id": "hsk7_3341",
@@ -23587,7 +23650,7 @@
     "level": 7,
     "simplified": "确凿",
     "pinyin": "què záo",
-    "definition": "definite; conclusive; undeniable; authentic; also pr. [què zuò]"
+    "definition": "definite; conclusive; undeniable; authentic"
   },
   {
     "id": "hsk7_3384",
@@ -23630,6 +23693,13 @@
     "simplified": "让步",
     "pinyin": "ràng bù",
     "definition": "to concede; to give in; to yield; a concession; (linguistics) concessive"
+  },
+  {
+    "id": "hsk7_3390",
+    "level": 7,
+    "simplified": "饶",
+    "pinyin": "ráo",
+    "definition": "rich; abundant; exuberant; to add for free; to throw in as bonus; to spare; to forgive; despite; although"
   },
   {
     "id": "hsk7_3391",
@@ -23692,7 +23762,7 @@
     "level": 7,
     "simplified": "热腾腾",
     "pinyin": "rè téng téng",
-    "definition": "steaming hot; (fig.) bustling; hectic; (fig.) excited; stirred up; (fig.) created only a short time before; freshly minted; hot off the press; (coll.) also pr. [rè tēng tēng]"
+    "definition": "steaming hot; (fig.) bustling; hectic; (fig.) excited; stirred up; (fig.) created only a short time before; freshly minted; hot off the press"
   },
   {
     "id": "hsk7_3400",
@@ -23825,7 +23895,7 @@
     "level": 7,
     "simplified": "人缘儿",
     "pinyin": "rén yuán r",
-    "definition": "erhua variant of 人缘; relations with other people"
+    "definition": "relations with other people"
   },
   {
     "id": "hsk7_3419",
@@ -24133,7 +24203,7 @@
     "level": 7,
     "simplified": "如醉如痴",
     "pinyin": "rú zuì rú chī",
-    "definition": "lit. as if drunk and stupefied (idiom); intoxicated by sth; obsessed with; mad about sth; also written 如痴如醉"
+    "definition": "lit. as if drunk and stupefied (idiom); intoxicated by sth; obsessed with; mad about sth"
   },
   {
     "id": "hsk7_3463",
@@ -24766,6 +24836,13 @@
     "definition": "upper reaches (of a river); upper level; upper echelon; upstream"
   },
   {
+    "id": "hsk7_3553",
+    "level": 7,
+    "simplified": "尚",
+    "pinyin": "shàng",
+    "definition": "still; yet; to value; to esteem"
+  },
+  {
     "id": "hsk7_3554",
     "level": 7,
     "simplified": "尚未",
@@ -25368,6 +25445,13 @@
     "definition": "qualified; competent (professionally); to be up to a task"
   },
   {
+    "id": "hsk7_3640",
+    "level": 7,
+    "simplified": "盛",
+    "pinyin": "chéng",
+    "definition": "to hold; to contain; to ladle; to pick up with a utensil"
+  },
+  {
     "id": "hsk7_3641",
     "level": 7,
     "simplified": "盛大",
@@ -25539,8 +25623,8 @@
     "id": "hsk7_3665",
     "level": 7,
     "simplified": "狮子",
-    "pinyin": "Shī zǐ",
-    "definition": "Leo (star sign); Shihtzu township in Pingtung County 屏东县, Taiwan"
+    "pinyin": "shī zi",
+    "definition": "lion"
   },
   {
     "id": "hsk7_3666",
@@ -25708,7 +25792,7 @@
     "level": 7,
     "simplified": "使唤",
     "pinyin": "shǐ huan",
-    "definition": "to order sb around; (coll.) to handle (a draught animal, tool, machine etc); Taiwan pr. [shǐ huàn]"
+    "definition": "to order sb around; (coll.) to handle (a draught animal, tool, machine etc)"
   },
   {
     "id": "hsk7_3690",
@@ -26492,7 +26576,7 @@
     "level": 7,
     "simplified": "树荫",
     "pinyin": "shù yīn",
-    "definition": "shade of a tree; Taiwan pr. [shù yìn]"
+    "definition": "shade of a tree"
   },
   {
     "id": "hsk7_3802",
@@ -26506,7 +26590,7 @@
     "level": 7,
     "simplified": "竖",
     "pinyin": "shù",
-    "definition": "variant of 竖"
+    "definition": "to erect; vertical; vertical stroke (in Chinese characters)"
   },
   {
     "id": "hsk7_3804",
@@ -26528,6 +26612,13 @@
     "simplified": "刷新",
     "pinyin": "shuā xīn",
     "definition": "to renovate; to refurbish; to refresh (computer window); to write a new page (in history); to break (a record)"
+  },
+  {
+    "id": "hsk7_3807",
+    "level": 7,
+    "simplified": "耍",
+    "pinyin": "shuǎ",
+    "definition": "to play with; to wield; to act (cool etc); to display (a skill, one's temper etc)"
   },
   {
     "id": "hsk7_3808",
@@ -26703,13 +26794,6 @@
     "simplified": "水利",
     "pinyin": "shuǐ lì",
     "definition": "water conservancy; irrigation works"
-  },
-  {
-    "id": "hsk7_3833",
-    "level": 7,
-    "simplified": "水灵灵",
-    "pinyin": "shuǐ líng líng",
-    "definition": "see 水灵"
   },
   {
     "id": "hsk7_3834",
@@ -27220,7 +27304,7 @@
     "level": 7,
     "simplified": "艘",
     "pinyin": "sōu",
-    "definition": "classifier for ships; Taiwan pr. [sāo]"
+    "definition": "classifier for ships"
   },
   {
     "id": "hsk7_3907",
@@ -27465,7 +27549,7 @@
     "level": 7,
     "simplified": "缩",
     "pinyin": "suō",
-    "definition": "to withdraw; to pull back; to contract; to shrink; to reduce; abbreviation; also pr. [sù]"
+    "definition": "to withdraw; to pull back; to contract; to shrink; to reduce; abbreviation"
   },
   {
     "id": "hsk7_3942",
@@ -27570,7 +27654,7 @@
     "level": 7,
     "simplified": "胎",
     "pinyin": "tāi",
-    "definition": "fetus; classifier for litters (of puppies etc); padding (in clothing or bedding); womb carrying a fetus; (fig.) origin; source; (loanword) tire"
+    "definition": "classifier for litters (of puppies etc); padding (in clothing or bedding); womb carrying a fetus; (fig.) origin; source; (loanword) tire"
   },
   {
     "id": "hsk7_3957",
@@ -27604,8 +27688,8 @@
     "id": "hsk7_3961",
     "level": 7,
     "simplified": "太平",
-    "pinyin": "Tài píng",
-    "definition": "place name"
+    "pinyin": "tài píng",
+    "definition": "peace and security"
   },
   {
     "id": "hsk7_3962",
@@ -27668,7 +27752,7 @@
     "level": 7,
     "simplified": "坛",
     "pinyin": "tán",
-    "definition": "platform; rostrum; altar"
+    "definition": "platform; rostrum; altar; earthen jar"
   },
   {
     "id": "hsk7_3971",
@@ -28046,7 +28130,7 @@
     "level": 7,
     "simplified": "提防",
     "pinyin": "dī fang",
-    "definition": "to guard against; to be vigilant; watch you don't (slip); Taiwan pr. [tí fáng]"
+    "definition": "to guard against; to be vigilant; watch you don't (slip)"
   },
   {
     "id": "hsk7_4025",
@@ -28151,7 +28235,7 @@
     "level": 7,
     "simplified": "剃",
     "pinyin": "tì",
-    "definition": "to shave"
+    "definition": "to shave; shave; to weed"
   },
   {
     "id": "hsk7_4040",
@@ -28213,8 +28297,8 @@
     "id": "hsk7_4048",
     "level": 7,
     "simplified": "天桥",
-    "pinyin": "Tiān qiáo",
-    "definition": "Tianqiao district of Jinan city 济南市, Shandong; Tianqiao district in Beijing, formerly a center of folk culture"
+    "pinyin": "tiān qiáo",
+    "definition": "overhead walkway; pedestrian bridge"
   },
   {
     "id": "hsk7_4049",
@@ -28620,7 +28704,7 @@
     "level": 7,
     "simplified": "铜",
     "pinyin": "tóng",
-    "definition": "copper (chemistry); see also 红铜"
+    "definition": "copper (chemistry)"
   },
   {
     "id": "hsk7_4107",
@@ -28717,8 +28801,8 @@
     "id": "hsk7_4120",
     "level": 7,
     "simplified": "头条",
-    "pinyin": "Tóu tiáo",
-    "definition": "Toutiao, personalized content recommendation app (abbr. for 今日头条)"
+    "pinyin": "tóu tiáo",
+    "definition": "lead story (on the news)"
   },
   {
     "id": "hsk7_4121",
@@ -28816,7 +28900,7 @@
     "level": 7,
     "simplified": "凸",
     "pinyin": "tū",
-    "definition": "to stick out; protruding; convex; male (connector etc); Taiwan pr. [tú]"
+    "definition": "to stick out; protruding; convex; male (connector etc)"
   },
   {
     "id": "hsk7_4135",
@@ -28928,7 +29012,7 @@
     "level": 7,
     "simplified": "涂",
     "pinyin": "tú",
-    "definition": "to apply (paint etc); to smear; to daub; to blot out; to scribble; to scrawl; (literary) mud; street"
+    "definition": "to apply (paint etc); to smear; to daub; to blot out; to scribble; to scrawl; street"
   },
   {
     "id": "hsk7_4151",
@@ -29165,8 +29249,8 @@
     "id": "hsk7_4184",
     "level": 7,
     "simplified": "驮",
-    "pinyin": "tuó",
-    "definition": "variant of 驮"
+    "pinyin": "duò",
+    "definition": "load carried by a pack animal"
   },
   {
     "id": "hsk7_4185",
@@ -29215,14 +29299,14 @@
     "level": 7,
     "simplified": "挖苦",
     "pinyin": "wā kǔ",
-    "definition": "to speak sarcastically; to make cutting remarks; also pr. [wā ku]"
+    "definition": "to speak sarcastically; to make cutting remarks"
   },
   {
     "id": "hsk7_4192",
     "level": 7,
     "simplified": "瓦",
     "pinyin": "wǎ",
-    "definition": "roof tile; abbr. for 特"
+    "definition": "roof tile"
   },
   {
     "id": "hsk7_4193",
@@ -29292,7 +29376,7 @@
     "level": 7,
     "simplified": "外企",
     "pinyin": "wài qǐ",
-    "definition": "foreign enterprise; company established in mainland China with direct investment from foreign entities or from investors in Taiwan, Macao or Hong Kong; abbr. for 外资企业"
+    "definition": "foreign enterprise; company established in mainland China with direct investment from foreign entities or from investors in Taiwan, Macao or Hong Kong"
   },
   {
     "id": "hsk7_4203",
@@ -29369,7 +29453,7 @@
     "level": 7,
     "simplified": "玩意儿",
     "pinyin": "wán yì r",
-    "definition": "erhua variant of 玩意; toy; thing; trick"
+    "definition": "toy; thing; trick"
   },
   {
     "id": "hsk7_4214",
@@ -29383,7 +29467,7 @@
     "level": 7,
     "simplified": "挽",
     "pinyin": "wǎn",
-    "definition": "to pull; to draw (a cart or a bow); to roll up; to coil; to carry on the arm; to lament the dead; (fig.) to pull against; to recover"
+    "definition": "to pull; to draw (a cart or a bow); to roll up; to coil; to carry on the arm; to lament the dead; (fig.) to pull against; to recover; to draw (a cart)"
   },
   {
     "id": "hsk7_4216",
@@ -29565,7 +29649,7 @@
     "level": 7,
     "simplified": "旺季",
     "pinyin": "wàng jì",
-    "definition": "busy season; peak period; see also 季"
+    "definition": "busy season; peak period"
   },
   {
     "id": "hsk7_4242",
@@ -29579,7 +29663,7 @@
     "level": 7,
     "simplified": "望",
     "pinyin": "wàng",
-    "definition": "full moon; to hope; to expect; to visit; to gaze (into the distance); to look towards; towards"
+    "definition": "full moon; to hope; to expect; to visit; to gaze (into the distance); to look towards; towards; 15th day of month (lunar calendar)"
   },
   {
     "id": "hsk7_4244",
@@ -29627,8 +29711,8 @@
     "id": "hsk7_4250",
     "level": 7,
     "simplified": "威信",
-    "pinyin": "Wēi xìn",
-    "definition": "Weixin county in Zhaotong 通, Yunnan"
+    "pinyin": "wēi xìn",
+    "definition": "prestige; reputation; trust; credit with the people"
   },
   {
     "id": "hsk7_4251",
@@ -29886,8 +29970,8 @@
     "id": "hsk7_4287",
     "level": 7,
     "simplified": "温泉",
-    "pinyin": "Wēn quán",
-    "definition": "Arishang Nahiyisi or Wenquan county in Börtala Mongol autonomous prefecture 博尔塔拉蒙古自治州, Xinjiang"
+    "pinyin": "wēn quán",
+    "definition": "hot spring; spa; onsen"
   },
   {
     "id": "hsk7_4288",
@@ -29923,6 +30007,13 @@
     "simplified": "瘟疫",
     "pinyin": "wēn yì",
     "definition": "plague; pestilence"
+  },
+  {
+    "id": "hsk7_4293",
+    "level": 7,
+    "simplified": "文",
+    "pinyin": "wén",
+    "definition": "language; culture; writing; formal; literary; gentle; (old) classifier for coins; Kangxi radical 67"
   },
   {
     "id": "hsk7_4294",
@@ -30205,18 +30296,11 @@
     "definition": "(idiom) \"no comment\""
   },
   {
-    "id": "hsk7_4334",
-    "level": 7,
-    "simplified": "无可厚非",
-    "pinyin": "wú kě hòu fēi",
-    "definition": "see 非"
-  },
-  {
     "id": "hsk7_4335",
     "level": 7,
     "simplified": "无可奈何",
     "pinyin": "wú kě nài hé",
-    "definition": "have no way out; have no alternative; abbr. to 无奈"
+    "definition": "have no way out; have no alternative"
   },
   {
     "id": "hsk7_4336",
@@ -30538,7 +30622,7 @@
     "level": 7,
     "simplified": "稀罕",
     "pinyin": "xī han",
-    "definition": "rare; uncommon; rare thing; rarity; to value as a rarity; to cherish; Taiwan pr. [xī hǎn]"
+    "definition": "rare; uncommon; rare thing; rarity; to value as a rarity; to cherish"
   },
   {
     "id": "hsk7_4382",
@@ -30559,7 +30643,7 @@
     "level": 7,
     "simplified": "锡",
     "pinyin": "xī",
-    "definition": "tin (chemistry); to bestow; to confer; to grant; Taiwan pr. [xí]"
+    "definition": "tin (chemistry); to bestow; to confer; to grant"
   },
   {
     "id": "hsk7_4385",
@@ -30595,6 +30679,13 @@
     "simplified": "习俗",
     "pinyin": "xí sú",
     "definition": "custom; tradition; local tradition; convention"
+  },
+  {
+    "id": "hsk7_4390",
+    "level": 7,
+    "simplified": "席",
+    "pinyin": "xí",
+    "definition": "woven mat; seat; banquet; place in a democratic assembly; classifier for banquets, conversations etc"
   },
   {
     "id": "hsk7_4391",
@@ -30726,8 +30817,8 @@
     "id": "hsk7_4409",
     "level": 7,
     "simplified": "虾",
-    "pinyin": "há",
-    "definition": "used in 虾蟆"
+    "pinyin": "xiā",
+    "definition": "shrimp; prawn"
   },
   {
     "id": "hsk7_4410",
@@ -30798,13 +30889,6 @@
     "simplified": "下岗",
     "pinyin": "xià gǎng",
     "definition": "(of a guard, sentry etc) to come off duty; (of a worker) be to laid off"
-  },
-  {
-    "id": "hsk7_4420",
-    "level": 7,
-    "simplified": "下功夫",
-    "pinyin": "xià gōng fu",
-    "definition": "see 夫"
   },
   {
     "id": "hsk7_4421",
@@ -31147,7 +31231,7 @@
     "level": 7,
     "simplified": "馅儿",
     "pinyin": "xiàn r",
-    "definition": "erhua variant of 馅; (of food) filling; stuffing"
+    "definition": "(of food) filling; stuffing"
   },
   {
     "id": "hsk7_4470",
@@ -31545,8 +31629,8 @@
     "id": "hsk7_4526",
     "level": 7,
     "simplified": "小康",
-    "pinyin": "Xiǎo kāng",
-    "definition": "Xiaokang, a Confucian near-ideal state of society, second only to Datong 同"
+    "pinyin": "xiǎo kāng",
+    "definition": "moderately affluent; well-off; a period of peace and prosperity"
   },
   {
     "id": "hsk7_4527",
@@ -31640,13 +31724,6 @@
     "definition": "portrait (painting, photo etc); (in a general sense) representation of a person; likeness"
   },
   {
-    "id": "hsk7_4540",
-    "level": 7,
-    "simplified": "效仿",
-    "pinyin": "xiào fǎng",
-    "definition": "see 仿效"
-  },
-  {
     "id": "hsk7_4541",
     "level": 7,
     "simplified": "效力",
@@ -31693,7 +31770,7 @@
     "level": 7,
     "simplified": "邪",
     "pinyin": "xié",
-    "definition": "old variant of 邪"
+    "definition": "demonic; iniquitous; nefarious; evil; unhealthy influences that cause disease (Chinese medicine); (coll.) strange; abnormal"
   },
   {
     "id": "hsk7_4548",
@@ -31714,7 +31791,7 @@
     "level": 7,
     "simplified": "携带",
     "pinyin": "xié dài",
-    "definition": "to carry (on one's person); to support (old); Taiwan pr. [xī dài]"
+    "definition": "to carry (on one's person); to support (old)"
   },
   {
     "id": "hsk7_4551",
@@ -31735,7 +31812,7 @@
     "level": 7,
     "simplified": "泄",
     "pinyin": "xiè",
-    "definition": "variant of 泄"
+    "definition": "(bound form) to leak out; to discharge; (fig.) to divulge"
   },
   {
     "id": "hsk7_4554",
@@ -31749,7 +31826,7 @@
     "level": 7,
     "simplified": "泄露",
     "pinyin": "xiè lù",
-    "definition": "to leak (information); to divulge; also pr. [xiè lòu]"
+    "definition": "to leak (information); to divulge"
   },
   {
     "id": "hsk7_4556",
@@ -32186,6 +32263,13 @@
     "definition": "mood; spirits; interest"
   },
   {
+    "id": "hsk7_4618",
+    "level": 7,
+    "simplified": "姓氏",
+    "pinyin": "xìng shì",
+    "definition": "family name"
+  },
+  {
     "id": "hsk7_4619",
     "level": 7,
     "simplified": "幸存",
@@ -32253,7 +32337,7 @@
     "level": 7,
     "simplified": "凶狠",
     "pinyin": "xiōng hěn",
-    "definition": "variant of 狠"
+    "definition": "cruel; vicious; fierce and malicious; vengeful"
   },
   {
     "id": "hsk7_4629",
@@ -32379,7 +32463,7 @@
     "level": 7,
     "simplified": "绣",
     "pinyin": "xiù",
-    "definition": "variant of 绣"
+    "definition": "to embroider; embroidery"
   },
   {
     "id": "hsk7_4647",
@@ -32393,7 +32477,7 @@
     "level": 7,
     "simplified": "锈",
     "pinyin": "xiù",
-    "definition": "variant of 锈"
+    "definition": "to rust"
   },
   {
     "id": "hsk7_4649",
@@ -32407,7 +32491,7 @@
     "level": 7,
     "simplified": "须",
     "pinyin": "xū",
-    "definition": "must; to have to; to wait"
+    "definition": "must; to have to; to wait; beard; mustache; feeler (of an insect etc); tassel"
   },
   {
     "id": "hsk7_4651",
@@ -32471,6 +32555,13 @@
     "simplified": "徐徐",
     "pinyin": "xú xú",
     "definition": "slowly; gently"
+  },
+  {
+    "id": "hsk7_4660",
+    "level": 7,
+    "simplified": "许",
+    "pinyin": "xǔ",
+    "definition": "to allow; to permit; to promise; to praise; somewhat; perhaps"
   },
   {
     "id": "hsk7_4661",
@@ -32750,7 +32841,7 @@
     "level": 7,
     "simplified": "学子",
     "pinyin": "xué zǐ",
-    "definition": "(literary) student; scholar"
+    "definition": "scholar"
   },
   {
     "id": "hsk7_4701",
@@ -32806,7 +32897,7 @@
     "level": 7,
     "simplified": "熏",
     "pinyin": "xūn",
-    "definition": "to smoke; to fumigate; to assail the nostrils; to perfume"
+    "definition": "to smoke; to fumigate; to assail the nostrils; to perfume; fragrance; warm; to educate"
   },
   {
     "id": "hsk7_4709",
@@ -32848,7 +32939,7 @@
     "level": 7,
     "simplified": "驯",
     "pinyin": "xùn",
-    "definition": "to attain gradually; to tame; Taiwan pr. [xún]"
+    "definition": "to attain gradually; to tame"
   },
   {
     "id": "hsk7_4715",
@@ -32911,7 +33002,7 @@
     "level": 7,
     "simplified": "押",
     "pinyin": "yā",
-    "definition": "to mortgage; to pawn; to detain in custody; to escort and protect; (literary) to sign"
+    "definition": "to mortgage; to pawn; to detain in custody; to escort and protect"
   },
   {
     "id": "hsk7_4724",
@@ -32946,7 +33037,7 @@
     "level": 7,
     "simplified": "哑",
     "pinyin": "yā",
-    "definition": "(onom.) sound of cawing; sound of infant learning to talk; variant of 呀"
+    "definition": "(onom.) sound of cawing; sound of infant learning to talk"
   },
   {
     "id": "hsk7_4729",
@@ -32968,6 +33059,13 @@
     "simplified": "淹",
     "pinyin": "yān",
     "definition": "to flood; to submerge; to drown; to irritate the skin (of liquids); to delay"
+  },
+  {
+    "id": "hsk7_4732",
+    "level": 7,
+    "simplified": "延",
+    "pinyin": "yán",
+    "definition": "to prolong; to extend; to delay"
   },
   {
     "id": "hsk7_4733",
@@ -33261,7 +33359,7 @@
     "level": 7,
     "simplified": "验",
     "pinyin": "yàn",
-    "definition": "variant of 验"
+    "definition": "to examine; to test; to check"
   },
   {
     "id": "hsk7_4775",
@@ -33302,8 +33400,8 @@
     "id": "hsk7_4780",
     "level": 7,
     "simplified": "扬",
-    "pinyin": "Yáng",
-    "definition": "abbr. for 扬州; surname Yang"
+    "pinyin": "yáng",
+    "definition": "to raise; to hoist; the action of tossing or winnowing; scattering (in the wind); to flutter; to propagate"
   },
   {
     "id": "hsk7_4781",
@@ -33373,7 +33471,7 @@
     "level": 7,
     "simplified": "痒",
     "pinyin": "yǎng",
-    "definition": "variant of 痒; to itch; to tickle"
+    "definition": "to itch; to tickle"
   },
   {
     "id": "hsk7_4791",
@@ -33614,6 +33712,13 @@
     "definition": "to camp; field lodgings"
   },
   {
+    "id": "hsk7_4825",
+    "level": 7,
+    "simplified": "业",
+    "pinyin": "yè",
+    "definition": "line of business; industry; occupation; job; employment; school studies; enterprise; property; (Buddhism) karma; deed; to engage in; already"
+  },
+  {
     "id": "hsk7_4826",
     "level": 7,
     "simplified": "业绩",
@@ -33758,7 +33863,7 @@
     "level": 7,
     "simplified": "一个劲儿",
     "pinyin": "yī gè jìn r",
-    "definition": "erhua variant of 一个劲; continuously"
+    "definition": "continuously"
   },
   {
     "id": "hsk7_4847",
@@ -34220,7 +34325,7 @@
     "level": 7,
     "simplified": "以",
     "pinyin": "yǐ",
-    "definition": "old variant of 以"
+    "definition": "to use; by means of; according to; in order to; because of; at (a certain date or place)"
   },
   {
     "id": "hsk7_4913",
@@ -34342,13 +34447,6 @@
     "definition": "objection; dissent"
   },
   {
-    "id": "hsk7_4930",
-    "level": 7,
-    "simplified": "抑扬顿挫",
-    "pinyin": "yì yáng dùn cuò",
-    "definition": "see 顿挫抑扬"
-  },
-  {
     "id": "hsk7_4931",
     "level": 7,
     "simplified": "抑郁",
@@ -34430,7 +34528,7 @@
     "level": 7,
     "simplified": "溢",
     "pinyin": "yì",
-    "definition": "to overflow; (literary) excessive; old variant of 镒"
+    "definition": "to overflow"
   },
   {
     "id": "hsk7_4943",
@@ -34472,7 +34570,7 @@
     "level": 7,
     "simplified": "音响",
     "pinyin": "yīn xiǎng",
-    "definition": "sound; acoustics; audio; hi-fi system; stereo sound system; abbr. for 组合音响"
+    "definition": "sound; acoustics; audio; hi-fi system; stereo sound system"
   },
   {
     "id": "hsk7_4949",
@@ -34983,7 +35081,7 @@
     "level": 7,
     "simplified": "悠闲",
     "pinyin": "yōu xián",
-    "definition": "variant of 悠闲; leisurely"
+    "definition": "leisurely; carefree; relaxed"
   },
   {
     "id": "hsk7_5022",
@@ -35236,6 +35334,13 @@
     "simplified": "友善",
     "pinyin": "yǒu shàn",
     "definition": "friendly"
+  },
+  {
+    "id": "hsk7_5058",
+    "level": 7,
+    "simplified": "余",
+    "pinyin": "yú",
+    "definition": "extra; surplus; remaining; remainder after division; (following numerical value) or more; in excess of (some number); residue (math.); after; I; me"
   },
   {
     "id": "hsk7_5059",
@@ -35949,7 +36054,7 @@
     "level": 7,
     "simplified": "暂",
     "pinyin": "zàn",
-    "definition": "temporary; Taiwan pr. [zhàn]"
+    "definition": "temporary; to scurry"
   },
   {
     "id": "hsk7_5161",
@@ -36005,7 +36110,7 @@
     "level": 7,
     "simplified": "葬",
     "pinyin": "zàng",
-    "definition": "old variant of 葬"
+    "definition": "to bury (the dead); to inter"
   },
   {
     "id": "hsk7_5169",
@@ -36026,7 +36131,7 @@
     "level": 7,
     "simplified": "凿",
     "pinyin": "záo",
-    "definition": "chisel; to bore a hole; to chisel or dig; (literary) (bound form) certain; authentic; irrefutable; also pr. [zuò]"
+    "definition": "chisel; to bore a hole; to chisel or dig; authentic; irrefutable"
   },
   {
     "id": "hsk7_5172",
@@ -36103,7 +36208,7 @@
     "level": 7,
     "simplified": "则",
     "pinyin": "zé",
-    "definition": "(literary) (conjunction used to express contrast with a previous clause) but; then; (bound form) standard; norm; (bound form) principle; (literary) to imitate; to follow; classifier for written items"
+    "definition": "(bound form) standard; norm; (bound form) principle; classifier for written items"
   },
   {
     "id": "hsk7_5183",
@@ -36166,7 +36271,7 @@
     "level": 7,
     "simplified": "闸",
     "pinyin": "zhá",
-    "definition": "old variant of 闸; sluice; lock (on waterway)"
+    "definition": "sluice; lock (on waterway); gear; brake; electric switch or circuit breaker"
   },
   {
     "id": "hsk7_5192",
@@ -36187,7 +36292,7 @@
     "level": 7,
     "simplified": "榨",
     "pinyin": "zhà",
-    "definition": "variant of 榨; to press; to extract (juice)"
+    "definition": "to press; to extract (juice); device for extracting juice, oils etc"
   },
   {
     "id": "hsk7_5195",
@@ -36221,8 +36326,8 @@
     "id": "hsk7_5199",
     "level": 7,
     "simplified": "粘",
-    "pinyin": "nián",
-    "definition": "variant of 黏"
+    "pinyin": "zhān",
+    "definition": "to glue; to paste; to adhere; to stick to"
   },
   {
     "id": "hsk7_5200",
@@ -36333,8 +36438,8 @@
     "id": "hsk7_5215",
     "level": 7,
     "simplified": "张扬",
-    "pinyin": "Zhāng Yáng",
-    "definition": "Zhang Yang (1967-), PRC film director and screenwriter"
+    "pinyin": "zhāng yáng",
+    "definition": "to display ostentatiously; to bring out into the open; to make public; to spread around; flamboyant; brash"
   },
   {
     "id": "hsk7_5216",
@@ -36375,8 +36480,8 @@
     "id": "hsk7_5221",
     "level": 7,
     "simplified": "长征",
-    "pinyin": "Cháng zhēng",
-    "definition": "Long March (retreat of the Red Army 1934-1935)"
+    "pinyin": "cháng zhēng",
+    "definition": "expedition; long journey"
   },
   {
     "id": "hsk7_5222",
@@ -36621,7 +36726,7 @@
     "level": 7,
     "simplified": "这会儿",
     "pinyin": "zhè huì r",
-    "definition": "(coll.) now; this moment; also pr. [zhè huǐ r]"
+    "definition": "(coll.) now; this moment"
   },
   {
     "id": "hsk7_5257",
@@ -36670,7 +36775,7 @@
     "level": 7,
     "simplified": "着想",
     "pinyin": "zhuó xiǎng",
-    "definition": "to give thought (to others); to consider (other people's needs); also pr. [zháo xiǎng]"
+    "definition": "to give thought (to others); to consider (other people's needs)"
   },
   {
     "id": "hsk7_5264",
@@ -36816,8 +36921,8 @@
     "id": "hsk7_5284",
     "level": 7,
     "simplified": "振兴",
-    "pinyin": "Zhèn xīng",
-    "definition": "Zhengxing district of Dandong city 丹东市, Liaoning"
+    "pinyin": "zhèn xīng",
+    "definition": "to revive; to revitalize; to invigorate; to re-energize"
   },
   {
     "id": "hsk7_5285",
@@ -36908,7 +37013,7 @@
     "level": 7,
     "simplified": "征",
     "pinyin": "zhēng",
-    "definition": "journey; trip; expedition; to go on long campaign; to attack"
+    "definition": "journey; trip; expedition; to go on long campaign; to attack; to invite; to recruit; to levy (taxes); to draft (troops); phenomenon; symptom; characteristic sign (used as proof); evidence"
   },
   {
     "id": "hsk7_5298",
@@ -37349,7 +37454,7 @@
     "level": 7,
     "simplified": "制",
     "pinyin": "zhì",
-    "definition": "system; to control; to regulate; variant of 制"
+    "definition": "system; to control; to regulate; to manufacture; to make"
   },
   {
     "id": "hsk7_5361",
@@ -37433,7 +37538,7 @@
     "level": 7,
     "simplified": "致",
     "pinyin": "zhì",
-    "definition": "(bound form) fine; delicate; exquisite"
+    "definition": "(bound form) fine; delicate; exquisite; to send; to devote; to deliver; to cause; to convey"
   },
   {
     "id": "hsk7_5373",
@@ -37558,8 +37663,8 @@
     "id": "hsk7_5390",
     "level": 7,
     "simplified": "中庸",
-    "pinyin": "Zhōng yōng",
-    "definition": "the Doctrine of the Mean, one of the Four Books 四书"
+    "pinyin": "zhōng yōng",
+    "definition": "golden mean (Confucianism); ordinary"
   },
   {
     "id": "hsk7_5391",
@@ -37769,7 +37874,7 @@
     "level": 7,
     "simplified": "周到",
     "pinyin": "zhōu dào",
-    "definition": "thoughtful; considerate; attentive; thorough; also pr. [zhōu dao]"
+    "definition": "thoughtful; considerate; attentive; thorough"
   },
   {
     "id": "hsk7_5421",
@@ -37993,7 +38098,7 @@
     "level": 7,
     "simplified": "注",
     "pinyin": "zhù",
-    "definition": "to inject; to pour into; to concentrate; to pay attention; stake (gambling); classifier for sums of money; variant of 注"
+    "definition": "to inject; to pour into; to concentrate; to pay attention; stake (gambling); classifier for sums of money; to register; to annotate; note; comment"
   },
   {
     "id": "hsk7_5453",
@@ -38020,8 +38125,8 @@
     "id": "hsk7_5456",
     "level": 7,
     "simplified": "筑",
-    "pinyin": "Zhù",
-    "definition": "short name for Guiyang 贵阳"
+    "pinyin": "zhù",
+    "definition": "five-string lute; to build; to construct; to ram; to hit"
   },
   {
     "id": "hsk7_5457",
@@ -38112,7 +38217,7 @@
     "level": 7,
     "simplified": "砖",
     "pinyin": "zhuān",
-    "definition": "variant of 砖"
+    "definition": "brick"
   },
   {
     "id": "hsk7_5470",
@@ -38175,7 +38280,7 @@
     "level": 7,
     "simplified": "转载",
     "pinyin": "zhuǎn zǎi",
-    "definition": "to forward (a shipment); to reprint sth published elsewhere; Taiwan pr. [zhuǎn zài]"
+    "definition": "to forward (a shipment); to reprint sth published elsewhere"
   },
   {
     "id": "hsk7_5479",
@@ -38237,8 +38342,8 @@
     "id": "hsk7_5487",
     "level": 7,
     "simplified": "壮",
-    "pinyin": "Zhuàng",
-    "definition": "Zhuang ethnic group of Guangxi, the PRC's second most numerous ethnic group"
+    "pinyin": "zhuàng",
+    "definition": "to strengthen; strong; robust"
   },
   {
     "id": "hsk7_5488",
@@ -38273,7 +38378,7 @@
     "level": 7,
     "simplified": "状元",
     "pinyin": "zhuàng yuán",
-    "definition": "top scorer in the palace examination (highest rank of the Imperial examination system); see 眼 and 花; top scorer in college entrance examination 考; (fig.) the most brilliantly talented person in the field; leading light"
+    "definition": "top scorer in the palace examination (highest rank of the Imperial examination system); top scorer in college entrance examination 考; (fig.) the most brilliantly talented person in the field; leading light"
   },
   {
     "id": "hsk7_5493",
@@ -38675,6 +38780,13 @@
     "definition": "offspring; posterity"
   },
   {
+    "id": "hsk7_5550",
+    "level": 7,
+    "simplified": "宗",
+    "pinyin": "zōng",
+    "definition": "school; sect; purpose; model; ancestor; clan; to take as one's model (in academic or artistic work); classifier for batches, items, cases (medical or legal), reservoirs"
+  },
+  {
     "id": "hsk7_5551",
     "level": 7,
     "simplified": "宗旨",
@@ -39058,12 +39170,5 @@
     "simplified": "做生意",
     "pinyin": "zuò shēng yì",
     "definition": "to do business"
-  },
-  {
-    "id": "hsk7_5606",
-    "level": 7,
-    "simplified": "做证",
-    "pinyin": "zuò zhèng",
-    "definition": "variant of 作证"
   }
 ]

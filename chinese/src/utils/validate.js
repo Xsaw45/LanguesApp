@@ -19,8 +19,27 @@ function normalizePinyin(str) {
   return result
 }
 
+/** Removes parenthesised text, nested included: "(coll.) to be inclined (to do sth)" → "to be inclined". */
+export function stripParens(s) {
+  let prev
+  do { prev = s; s = s.replace(/\([^()]*\)/g, ' ') } while (s !== prev)
+  return s.replace(/\s+/g, ' ').trim()
+}
+
+// Case, curly apostrophes, final punctuation and spacing never make an answer wrong.
 function normalizeText(str) {
-  return str.toLowerCase().trim()
+  return str.toLowerCase().replace(/[’‘`]/g, "'").replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim()
+}
+
+/**
+ * Answers accepted for one sense: the sense itself, without its parentheses (optional precisions), and each of
+ * its comma-separated parts ("Beijing, capital of …" → "beijing"). A sense that is only a parenthesis
+ * ("(question particle)") is accepted without the brackets. Hyphenated words match with or without the hyphen.
+ */
+function acceptedAnswers(sense) {
+  const bare = stripParens(sense) || sense.replace(/[()]/g, '')
+  const forms = [sense, bare, ...bare.split(',')].map(normalizeText).filter(Boolean)
+  return forms.flatMap(f => [f.replaceAll('-', ' '), f.replaceAll('-', '')])
 }
 
 export function validateAnswer(input, word, questionType) {
@@ -28,13 +47,8 @@ export function validateAnswer(input, word, questionType) {
   if (!trimmed) return false
 
   if (questionType === 'char-to-def') {
-    // Any single sense (split by ; or |) is a valid answer
-    const accepted = word.definition
-      .split(/[;|]/)
-      .map(normalizeText)
-      .filter(Boolean)
-    const userAnswer = normalizeText(trimmed)
-    return accepted.some(a => a === userAnswer)
+    const accepted = new Set(word.definition.split(/[;|]/).flatMap(acceptedAnswers))
+    return accepted.has(normalizeText(trimmed).replaceAll('-', ' '))
   }
 
   if (questionType === 'def-to-char') {
