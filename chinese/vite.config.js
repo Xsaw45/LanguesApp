@@ -17,8 +17,17 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
+        // La page (index.html) n'est pas pre-cachee : reseau d'abord, donc chaque ouverture charge la derniere
+        // version deployee ; le cache ne sert que hors ligne. Les assets ont un nom hashe, ils restent pre-caches.
+        globPatterns: ['**/*.{js,css,ico,png,svg,json}'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        navigateFallback: null,
+        importScripts: ['sw-reload.js'],
+        runtimeCaching: [{
+          urlPattern: ({ request }) => request.mode === 'navigate',
+          handler: 'NetworkFirst',
+          options: { cacheName: 'zh-pages', networkTimeoutSeconds: 4 },
+        }],
       }
     })
   ],
