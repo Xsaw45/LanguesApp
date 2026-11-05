@@ -7,9 +7,11 @@ import { QuizScreen } from './components/QuizScreen.jsx'
 import { Results } from './components/Results.jsx'
 import { VocabularyPage } from './components/VocabularyPage.jsx'
 import { ClassifiersPage } from './components/ClassifiersPage.jsx'
+import { ModulesHome } from './components/ModulesHome.jsx'
 
 export default function App() {
-  const [screen, setScreen] = useState('home') // 'home' | 'vocabulary' | 'classifiers'
+  // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers'
+  const [screen, setScreen] = useState('home')
   const { progressMap, getProgress, applyUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
   const {
@@ -62,7 +64,7 @@ export default function App() {
   }
 
   if (screen === 'vocabulary') {
-    return <VocabularyPage onBack={() => setScreen('home')} />
+    return <VocabularyPage onBack={() => setScreen('hsk')} />
   }
 
   if (screen === 'classifiers') {
@@ -71,13 +73,24 @@ export default function App() {
     )
   }
 
+  if (screen === 'hsk') {
+    return (
+      <Dashboard
+        levelStats={levelStats}
+        unlockedLevels={unlockedLevels}
+        progressMap={progressMap}
+        onStartQuiz={() => startQuiz(unlockedLevels)}
+        onOpenVocabulary={() => setScreen('vocabulary')}
+        onBack={() => setScreen('home')}
+      />
+    )
+  }
+
   return (
-    <Dashboard
+    <ModulesHome
       levelStats={levelStats}
-      unlockedLevels={unlockedLevels}
       progressMap={progressMap}
-      onStartQuiz={() => startQuiz(unlockedLevels)}
-      onOpenVocabulary={() => setScreen('vocabulary')}
+      onOpenVocabulary={() => setScreen('hsk')}
       onOpenClassifiers={() => setScreen('classifiers')}
     />
   )

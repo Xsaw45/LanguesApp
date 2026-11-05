@@ -10,7 +10,7 @@ function countActiveWords(progressMap, unlockedLevels) {
   }).length
 }
 
-export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary, onOpenClassifiers }) {
+export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary, onBack }) {
   const activeCount = countActiveWords(progressMap, unlockedLevels)
   const canStart = activeCount > 0
 
@@ -18,12 +18,12 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
     <div className="min-h-screen bg-slate-950 flex flex-col">
       {/* Header */}
       <header className="relative px-4 pt-8 pb-4 text-center">
-        <a
-          href="/"
+        <button
+          onClick={onBack}
           className="absolute left-4 top-4 text-sm text-slate-400 hover:text-white transition-colors"
         >
-          ← Langues
-        </a>
+          ← Modules
+        </button>
         <h1 className="text-3xl font-bold text-white tracking-tight">
           HSK 汉语水平考试
         </h1>
@@ -55,12 +55,6 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
           className="w-full mt-2 py-3 rounded-2xl text-sm font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-white transition-all"
         >
           Voir le vocabulaire →
-        </button>
-        <button
-          onClick={onOpenClassifiers}
-          className="w-full mt-2 py-3 rounded-2xl text-sm font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-white transition-all"
-        >
-          Classificateurs <span className="chinese-text">量词</span> →
         </button>
       </div>
 
