@@ -1,7 +1,9 @@
 import { CLASSIFIERS } from '../data/classifiers.js'
+import { PINYIN_LESSONS } from '../data/pinyinLessons.js'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
+import { getLessonProgress, PASS_THRESHOLD } from '../utils/pinyinQuiz.js'
 
-function ModuleCard({ title, chinese, description, known, total, onOpen }) {
+function ModuleCard({ title, chinese, description, known, total, unit = 'maîtrisés', onOpen }) {
   const pct = total > 0 ? Math.round((known / total) * 100) : 0
   return (
     <button
@@ -18,15 +20,16 @@ function ModuleCard({ title, chinese, description, known, total, onOpen }) {
       <div className="w-full bg-slate-800 rounded-full h-2 mb-2">
         <div className="bg-red-500 h-2 rounded-full transition-all duration-500" style={{ width: `${pct}%` }} />
       </div>
-      <p className="text-xs text-slate-500">{known}/{total} maîtrisés · {pct}%</p>
+      <p className="text-xs text-slate-500">{known}/{total} {unit} · {pct}%</p>
     </button>
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenVocabulary, onOpenClassifiers }) {
+export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenClassifiers }) {
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
   const classifiersKnown = CLASSIFIERS.filter(cl => getClassifierProgress(progressMap, cl).known).length
+  const lessonsPassed = PINYIN_LESSONS.filter(l => getLessonProgress(progressMap, l).bestPct >= PASS_THRESHOLD).length
 
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col">
@@ -39,6 +42,15 @@ export function ModulesHome({ levelStats, progressMap, onOpenVocabulary, onOpenC
       </header>
 
       <div className="px-4 pb-8 flex flex-col gap-4">
+        <ModuleCard
+          title="Pinyin et tons"
+          chinese="拼音"
+          description="Pour bien commencer : les tons, les sons et la lecture du pinyin, avec l'audio"
+          known={lessonsPassed}
+          total={PINYIN_LESSONS.length}
+          unit="leçons réussies"
+          onOpen={onOpenPinyin}
+        />
         <ModuleCard
           title="Vocabulaire"
           chinese="词汇"

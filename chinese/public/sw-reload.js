@@ -10,3 +10,10 @@ self.addEventListener('activate', (event) => {
     for (const client of outdated) client.navigate(client.url).catch(() => {})
   })())
 })
+
+// La page est servie « réseau d'abord » (cache zh-pages, vite.config.js) : elle n'entre dans le cache qu'en passant
+// par ce service worker, donc pas au tout premier chargement. On l'y met dès l'installation pour que l'app
+// fonctionne hors ligne même si elle n'a été ouverte qu'une fois.
+self.addEventListener('install', (event) => {
+  event.waitUntil(caches.open('zh-pages').then((cache) => cache.add(self.registration.scope)).catch(() => {}))
+})

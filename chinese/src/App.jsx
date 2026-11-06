@@ -8,9 +8,10 @@ import { Results } from './components/Results.jsx'
 import { VocabularyPage } from './components/VocabularyPage.jsx'
 import { ClassifiersPage } from './components/ClassifiersPage.jsx'
 import { ModulesHome } from './components/ModulesHome.jsx'
+import { PinyinPage } from './components/PinyinPage.jsx'
 
 export default function App() {
-  // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers'
+  // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers' | 'pinyin'
   const [screen, setScreen] = useState('home')
   const { progressMap, getProgress, applyUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
@@ -73,6 +74,10 @@ export default function App() {
     )
   }
 
+  if (screen === 'pinyin') {
+    return <PinyinPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={() => setScreen('home')} />
+  }
+
   if (screen === 'hsk') {
     return (
       <Dashboard
@@ -90,6 +95,7 @@ export default function App() {
     <ModulesHome
       levelStats={levelStats}
       progressMap={progressMap}
+      onOpenPinyin={() => setScreen('pinyin')}
       onOpenVocabulary={() => setScreen('hsk')}
       onOpenClassifiers={() => setScreen('classifiers')}
     />

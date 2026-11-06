@@ -27,6 +27,11 @@ export default defineConfig({
           urlPattern: ({ request }) => request.mode === 'navigate',
           handler: 'NetworkFirst',
           options: { cacheName: 'zh-pages', networkTimeoutSeconds: 4 },
+        }, {
+          // Enregistrements (36 Mo au total) : gardés une fois écoutés, pas téléchargés d'avance.
+          urlPattern: ({ url }) => url.pathname.startsWith('/zh/audio/'),
+          handler: 'CacheFirst',
+          options: { cacheName: 'zh-audio', expiration: { maxEntries: 5000 } },
         }],
       }
     })

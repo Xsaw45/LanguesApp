@@ -11,7 +11,7 @@ export function createInitialProgress(wordId, level) {
   }
 }
 
-function addDays(date, days) {
+export function addDays(date, days) {
   const d = new Date(date)
   d.setDate(d.getDate() + days)
   return d.toISOString().split('T')[0]

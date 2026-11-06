@@ -43,6 +43,11 @@ cd server && npm install && npm test
 Italien : son service worker sert tout depuis le cache. Après une modification de `italian/` ou `shared/`,
 incrémenter `CACHE_NAME` dans `italian/sw.js` (et ajouter les nouveaux fichiers à `ASSETS_TO_CACHE`).
 
+Chinois, données : `node scripts/build-data.js` (vocabulaire HSK) puis `node scripts/fetch-audio.js` (dans
+`chinese/`) : copie dans `public/audio/` les enregistrements de [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn)
+(syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ; licence CC BY-SA) et écrit `src/data/audio.json`. Les mots
+sans enregistrement sont lus par la voix chinoise du téléphone, s'il en a une.
+
 ## Production
 
 VPS, `/srv/services/langues` (configuration dans le dépôt `vps-config`) : conteneur `app` + conteneur Tailscale
