@@ -1,3 +1,6 @@
+import { SpeakButton } from './SpeakButton.jsx'
+import { wordSrc } from '../utils/audio.js'
+
 export function Results({ results, onRestart, onHome }) {
   const correct = results.filter(r => r.correct).length
   const total = results.length
@@ -31,7 +34,10 @@ export function Results({ results, onRestart, onHome }) {
           <div className="flex flex-col gap-2">
             {wrongWords.map(({ word }) => (
               <div key={word.id} className="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 flex items-center justify-between">
-                <span className="chinese-text text-xl text-white">{word.simplified}</span>
+                <span className="flex items-center gap-2">
+                  <span className="chinese-text text-xl text-white">{word.simplified}</span>
+                  <SpeakButton src={wordSrc(word)} text={word.simplified} className="w-8 h-8 text-sm" />
+                </span>
                 <div className="text-right">
                   <p className="text-slate-400 text-sm">{word.pinyin}</p>
                   <p className="text-slate-300 text-xs">{word.definition.slice(0, 40)}{word.definition.length > 40 ? '…' : ''}</p>

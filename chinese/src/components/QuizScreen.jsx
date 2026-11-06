@@ -1,6 +1,8 @@
 import { QuestionCard } from './QuestionCard.jsx'
 import { AnswerInput } from './AnswerInput.jsx'
 import { QUIZ_STATES } from '../hooks/useQuiz.js'
+import { SpeakButton } from './SpeakButton.jsx'
+import { wordSrc } from '../utils/audio.js'
 
 function FeedbackBanner({ correct, word }) {
   const senses = word.definition.split(/[;|]/).map(s => s.trim()).filter(Boolean)
@@ -11,10 +13,11 @@ function FeedbackBanner({ correct, word }) {
         {correct ? '✓ Correct !' : '✗ Incorrect'}
       </p>
       <div className="text-slate-300 text-sm space-y-1">
-        <p>
+        <p className="flex items-center gap-2">
           <span className="text-slate-400">Caractère : </span>
           <span className="chinese-text font-medium text-base">{word.simplified}</span>
-          <span className="text-slate-400 ml-2">[{word.pinyin}]</span>
+          <span className="text-slate-400">[{word.pinyin}]</span>
+          <SpeakButton src={wordSrc(word)} text={word.simplified} className="w-8 h-8 text-sm" />
         </p>
         <div>
           <span className="text-slate-400">Définitions :</span>

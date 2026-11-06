@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react'
 import { ALL_LEVELS, getWordsForLevel } from '../data/index.js'
+import { SpeakButton } from './SpeakButton.jsx'
+import { wordSrc } from '../utils/audio.js'
 
 export function VocabularyPage({ onBack }) {
   const [selectedLevel, setSelectedLevel] = useState(ALL_LEVELS[0])
@@ -51,6 +53,7 @@ export function VocabularyPage({ onBack }) {
                   <span className="chinese-text text-2xl font-bold text-white">{word.simplified}</span>
                   <p className="text-slate-500 text-xs mt-0.5">{word.pinyin}</p>
                 </div>
+                <SpeakButton src={wordSrc(word)} text={word.simplified} className="w-8 h-8 text-sm" />
                 <div className="flex-1 min-w-0">
                   {senses.length === 1 ? (
                     <p className="text-slate-300 text-sm">{senses[0]}</p>
