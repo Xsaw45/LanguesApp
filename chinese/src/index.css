@@ -3,7 +3,7 @@
 
 /*
  * Direction : un carnet d'étude patient et précis. Surfaces graphite neutres, encre claire, et une seule couleur :
- * le vermillon des sceaux chinois (印章), pour l'action en cours, la progression et le sceau des modules.
+ * le rouge des sceaux chinois (印章), pour l'action principale, la progression et le sceau des modules.
  * Source Sans 3 (latin, pinyin avec tous ses tons) s'accorde aux polices chinoises Source Han / PingFang.
  */
 @theme {
@@ -18,8 +18,9 @@
   --color-fg-3: #85858b;
   --color-line: rgb(237 237 237 / 0.08);
   --color-line-2: rgb(237 237 237 / 0.14);
-  --color-seal: #c23a2b;
-  --color-accent: #e0604c;
+  --color-seal: #dc2626;
+  --color-seal-hover: #b91c1c;
+  --color-accent: #ef4444;
   --color-good: #4cc38a;
   --color-bad: #e5484d;
 
@@ -48,7 +49,7 @@
   }
 
   ::selection {
-    background: rgb(224 96 76 / 0.35);
+    background: rgb(239 68 68 / 0.35);
   }
 }
 

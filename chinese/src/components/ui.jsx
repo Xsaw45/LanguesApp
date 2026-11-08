@@ -27,7 +27,7 @@ export function TopBar({ onBack, backHref, backLabel = 'Retour', title, aside, b
 }
 
 const BUTTON = {
-  primary: 'bg-fg text-page hover:bg-white',
+  primary: 'bg-seal text-white hover:bg-seal-hover',
   secondary: 'border border-line bg-raised text-fg hover:bg-raised-2',
 }
 
@@ -59,7 +59,7 @@ export function SectionLabel({ children, className = '' }) {
 /** Sceau vermillon : la marque de chaque module. */
 export function Seal({ children, className = '' }) {
   return (
-    <span className={`hanzi-display inline-flex size-9 shrink-0 items-center justify-center rounded-md bg-seal text-xl leading-none text-[#fbefe9] ${className}`}>
+    <span className={`hanzi-display inline-flex size-9 shrink-0 items-center justify-center rounded-md bg-seal text-xl leading-none text-white ${className}`}>
       {children}
     </span>
   )

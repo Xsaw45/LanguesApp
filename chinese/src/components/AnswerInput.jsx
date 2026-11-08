@@ -39,7 +39,7 @@ export function AnswerInput({ onSubmit, disabled, placeholder }) {
         type="button"
         onClick={() => ready && onSubmit(value)}
         disabled={!ready}
-        className="h-12 shrink-0 rounded-[10px] bg-fg px-5 text-base font-medium text-page transition-[background-color,color,transform] duration-150 ease-out hover:bg-white active:scale-[0.98] disabled:bg-raised disabled:text-fg-3 disabled:active:scale-100"
+        className="h-12 shrink-0 rounded-[10px] bg-seal px-5 text-base font-medium text-white transition-[background-color,color,transform] duration-150 ease-out hover:bg-seal-hover active:scale-[0.98] disabled:bg-raised disabled:text-fg-3 disabled:active:scale-100"
       >
         Valider
       </button>
