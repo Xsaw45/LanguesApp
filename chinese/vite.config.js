@@ -19,7 +19,8 @@ export default defineConfig({
       workbox: {
         // La page (index.html) n'est pas pre-cachee : reseau d'abord, donc chaque ouverture charge la derniere
         // version deployee ; le cache ne sert que hors ligne. Les assets ont un nom hashe, ils restent pre-caches.
-        globPatterns: ['**/*.{js,css,ico,png,svg,json}'],
+        // Police : seuls les sous-ensembles latins (français + pinyin) sont utiles, les autres ne sont jamais chargés.
+        globPatterns: ['**/*.{js,css,ico,png,svg,json}', '**/*latin*.woff2'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: null,
         importScripts: ['sw-reload.js'],

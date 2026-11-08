@@ -3,28 +3,20 @@ export function QuestionCard({ question }) {
 
   if (type === 'char-to-def') {
     return (
-      <div className="text-center py-6">
-        <p className="text-slate-400 text-sm mb-4 uppercase tracking-wider">
-          Quelle est la définition ?
-        </p>
-        <div className="chinese-text text-7xl font-bold text-white mb-4 leading-none">
-          {word.simplified}
-        </div>
-        <p className="text-slate-600 text-sm">HSK {word.level}</p>
+      <div className="py-10 text-center">
+        <p className="mb-6 text-[15px] text-fg-2">Que veut dire ce mot ?</p>
+        <div className="hanzi-display text-[72px] leading-none text-fg">{word.simplified}</div>
+        <p className="mt-6 text-sm text-fg-3">HSK {word.level}</p>
       </div>
     )
   }
 
   // def-to-char
   return (
-    <div className="text-center py-6">
-      <p className="text-slate-400 text-sm mb-4 uppercase tracking-wider">
-        Écrivez le caractère ou le pinyin (avec tons)
-      </p>
-      <div className="text-2xl font-medium text-white mb-4 px-4 leading-snug">
-        {word.definition}
-      </div>
-      <p className="text-slate-600 text-sm">HSK {word.level}</p>
+    <div className="py-10 text-center">
+      <p className="mb-6 text-[15px] text-fg-2">Écris ce mot en caractères ou en pinyin avec les tons</p>
+      <div className="text-2xl font-medium leading-snug text-fg">{word.definition}</div>
+      <p className="mt-6 text-sm text-fg-3">HSK {word.level}</p>
     </div>
   )
 }

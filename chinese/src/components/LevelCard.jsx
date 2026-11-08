@@ -1,36 +1,29 @@
-export function LevelCard({ stat, unlocked }) {
-  const pct = Math.round(stat.pct * 100)
+import { Check, Lock } from 'lucide-react'
+import { ProgressBar } from './ui.jsx'
+import { ICON_SM, percent } from './uiStyles.js'
+
+export function LevelCard({ stat, unlocked, last }) {
+  const remaining = Math.ceil(stat.total * 0.8) - stat.known
 
   return (
-    <div className={`rounded-2xl border p-4 transition-all ${
-      unlocked
-        ? 'border-slate-700 bg-slate-900'
-        : 'border-slate-800 bg-slate-950 opacity-50'
-    }`}>
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-white">HSK {stat.level}</span>
-          {!unlocked && (
-            <span className="text-slate-500 text-sm">🔒</span>
-          )}
-        </div>
-        <span className="text-sm text-slate-400">{stat.known}/{stat.total}</span>
+    <div className={`rounded-2xl border border-line p-4 ${unlocked ? 'bg-card' : 'bg-page opacity-60'}`}>
+      <div className="mb-3 flex items-center justify-between">
+        <span className="inline-flex items-center gap-2 text-base font-medium text-fg">
+          HSK {stat.level}
+          {!unlocked && <Lock {...ICON_SM} className="text-fg-3" />}
+        </span>
+        <span className="text-sm tabular-nums text-fg-3">{stat.known} / {stat.total}</span>
       </div>
 
-      <div className="w-full bg-slate-800 rounded-full h-2 mb-2">
-        <div
-          className="bg-red-500 h-2 rounded-full transition-all duration-500"
-          style={{ width: `${pct}%` }}
-        />
-      </div>
+      <ProgressBar value={stat.pct} />
 
-      <div className="flex justify-between text-xs text-slate-500">
-        <span>{pct}% maîtrisés</span>
-        {unlocked && pct < 80 && (
-          <span className="text-slate-400">{Math.ceil(stat.total * 0.8) - stat.known} restants pour débloquer le suivant</span>
+      <div className="mt-2 flex justify-between gap-3 text-sm text-fg-3">
+        <span className="tabular-nums">{percent(stat.pct)} maîtrisés</span>
+        {unlocked && !last && remaining > 0 && (
+          <span className="tabular-nums">encore {remaining} pour débloquer HSK {stat.level + 1}</span>
         )}
-        {unlocked && pct >= 80 && stat.level < 9 && (
-          <span className="text-green-500">✓ Niveau suivant débloqué</span>
+        {unlocked && !last && remaining <= 0 && (
+          <span className="inline-flex items-center gap-1 text-good"><Check {...ICON_SM} />HSK {stat.level + 1} débloqué</span>
         )}
       </div>
     </div>

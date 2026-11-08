@@ -1,68 +1,51 @@
 import { SpeakButton } from './SpeakButton.jsx'
 import { wordSrc } from '../utils/audio.js'
+import { Button, Score, Screen, SectionLabel } from './ui.jsx'
+import { percent } from './uiStyles.js'
+
+function message(ratio) {
+  if (ratio >= 0.8) return 'Excellent travail'
+  if (ratio >= 0.5) return 'Continue comme ça'
+  return 'Encore un peu d\'entraînement'
+}
 
 export function Results({ results, onRestart, onHome }) {
   const correct = results.filter(r => r.correct).length
   const total = results.length
-  const pct = Math.round((correct / total) * 100)
-
+  const ratio = correct / total
   const wrongWords = results.filter(r => !r.correct)
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col px-4 py-8">
-      {/* Score */}
-      <div className="text-center mb-8">
-        <div className={`text-7xl font-bold mb-2 ${pct >= 80 ? 'text-green-400' : pct >= 50 ? 'text-yellow-400' : 'text-red-400'}`}>
-          {correct}/{total}
-        </div>
-        <p className="text-slate-400 text-lg">{pct}% de réussite</p>
-        <p className="text-slate-500 text-sm mt-2">
-          {pct >= 80
-            ? '🎉 Excellent travail !'
-            : pct >= 50
-            ? '👍 Continuez ainsi !'
-            : '💪 Entraînez-vous encore !'}
-        </p>
+    <Screen className="px-5 pb-8">
+      {/* score et liste groupés, centrés dans l'espace au-dessus des boutons */}
+      <div className="my-auto">
+        <Score value={`${correct} / ${total}`} label={`${percent(ratio)} de réussite`} caption={message(ratio)} good={ratio >= 0.8} />
+
+        {wrongWords.length > 0 && (
+          <section className="mb-8">
+            <SectionLabel>Mots à retravailler · {wrongWords.length}</SectionLabel>
+            <ul className="divide-y divide-line rounded-2xl border border-line bg-card">
+              {wrongWords.map(({ word }) => (
+                <li key={word.id} className="flex items-center gap-3 px-4 py-3">
+                  <div className="min-w-0 flex-1">
+                    <p className="flex items-baseline gap-2">
+                      <span className="chinese-text text-xl text-fg">{word.simplified}</span>
+                      <span className="text-sm text-fg-2">{word.pinyin}</span>
+                    </p>
+                    <p className="truncate text-sm text-fg-3">{word.definition.split(/[;|]/)[0]}</p>
+                  </div>
+                  <SpeakButton src={wordSrc(word)} text={word.simplified} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
 
-      {/* Wrong words */}
-      {wrongWords.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
-            Mots à retravailler ({wrongWords.length})
-          </h2>
-          <div className="flex flex-col gap-2">
-            {wrongWords.map(({ word }) => (
-              <div key={word.id} className="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 flex items-center justify-between">
-                <span className="flex items-center gap-2">
-                  <span className="chinese-text text-xl text-white">{word.simplified}</span>
-                  <SpeakButton src={wordSrc(word)} text={word.simplified} className="w-8 h-8 text-sm" />
-                </span>
-                <div className="text-right">
-                  <p className="text-slate-400 text-sm">{word.pinyin}</p>
-                  <p className="text-slate-300 text-xs">{word.definition.slice(0, 40)}{word.definition.length > 40 ? '…' : ''}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Actions */}
-      <div className="flex flex-col gap-3 mt-auto">
-        <button
-          onClick={onRestart}
-          className="w-full py-4 bg-red-600 hover:bg-red-500 text-white rounded-2xl font-semibold transition-all"
-        >
-          Nouveau test
-        </button>
-        <button
-          onClick={onHome}
-          className="w-full py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-2xl font-semibold transition-all"
-        >
-          Retour au tableau de bord
-        </button>
+      <div className="flex flex-col gap-2">
+        <Button onClick={onRestart}>Nouveau test</Button>
+        <Button variant="secondary" onClick={onHome}>Retour au vocabulaire</Button>
       </div>
-    </div>
+    </Screen>
   )
 }

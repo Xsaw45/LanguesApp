@@ -17,6 +17,8 @@ export function AnswerInput({ onSubmit, disabled, placeholder }) {
     }
   }
 
+  const ready = !disabled && value.trim()
+
   return (
     <div className="flex gap-2">
       <input
@@ -27,24 +29,19 @@ export function AnswerInput({ onSubmit, disabled, placeholder }) {
         onKeyDown={handleKeyDown}
         disabled={disabled}
         placeholder={placeholder}
-        className={`flex-1 bg-slate-800 border rounded-xl px-4 py-3 text-white text-base outline-none transition-colors
-          ${disabled ? 'border-slate-700 text-slate-500' : 'border-slate-600 focus:border-red-500'}
-        `}
+        className="h-12 min-w-0 flex-1 rounded-[10px] border border-line bg-card px-4 text-base text-fg outline-none transition-colors duration-150 ease-out placeholder:text-fg-3 focus:border-line-2 focus:bg-raised disabled:text-fg-3"
         autoCapitalize="none"
         autoCorrect="off"
         autoComplete="off"
         spellCheck={false}
       />
       <button
-        onClick={() => value.trim() && !disabled && onSubmit(value)}
-        disabled={disabled || !value.trim()}
-        className={`px-5 py-3 rounded-xl font-semibold transition-all ${
-          !disabled && value.trim()
-            ? 'bg-red-600 hover:bg-red-500 text-white'
-            : 'bg-slate-800 text-slate-500 cursor-not-allowed'
-        }`}
+        type="button"
+        onClick={() => ready && onSubmit(value)}
+        disabled={!ready}
+        className="h-12 shrink-0 rounded-[10px] bg-fg px-5 text-base font-medium text-page transition-[background-color,color,transform] duration-150 ease-out hover:bg-white active:scale-[0.98] disabled:bg-raised disabled:text-fg-3 disabled:active:scale-100"
       >
-        OK
+        Valider
       </button>
     </div>
   )

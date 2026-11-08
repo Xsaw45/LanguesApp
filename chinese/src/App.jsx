@@ -30,8 +30,8 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-        <p className="text-slate-400">Chargement…</p>
+      <div className="flex min-h-dvh items-center justify-center bg-page">
+        <p className="text-[15px] text-fg-3">Chargement…</p>
       </div>
     )
   }

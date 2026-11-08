@@ -1,16 +1,64 @@
 @import "tailwindcss";
+@import "@fontsource-variable/source-sans-3";
+
+/*
+ * Direction : un carnet d'étude patient et précis. Surfaces graphite neutres, encre claire, et une seule couleur :
+ * le vermillon des sceaux chinois (印章), pour l'action en cours, la progression et le sceau des modules.
+ * Source Sans 3 (latin, pinyin avec tous ses tons) s'accorde aux polices chinoises Source Han / PingFang.
+ */
+@theme {
+  --font-sans: 'Source Sans 3 Variable', 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', system-ui, sans-serif;
+
+  --color-page: #141415;
+  --color-card: #19191b;
+  --color-raised: #232325;
+  --color-raised-2: #2b2b2e;
+  --color-fg: #ededed;
+  --color-fg-2: #a1a1a6;
+  --color-fg-3: #85858b;
+  --color-line: rgb(237 237 237 / 0.08);
+  --color-line-2: rgb(237 237 237 / 0.14);
+  --color-seal: #c23a2b;
+  --color-accent: #e0604c;
+  --color-good: #4cc38a;
+  --color-bad: #e5484d;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
 
 @layer base {
   html {
-    font-family: system-ui, sans-serif;
+    color-scheme: dark;
     -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
-    @apply bg-slate-950 text-slate-200 min-h-screen m-0;
+    @apply bg-page text-fg font-sans antialiased m-0;
+  }
+
+  button:not(:disabled),
+  select {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: rgb(224 96 76 / 0.35);
   }
 }
 
+/* Caractères chinois dans le texte courant */
 .chinese-text {
-  font-family: 'Noto Sans SC', 'Source Han Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* Caractères mis en avant (question, réponse, sceau) : style imprimé, comme dans un dictionnaire */
+.hanzi-display {
+  font-family: 'Songti SC', 'STSong', 'Source Han Serif SC', 'Noto Serif SC', 'Noto Serif CJK SC', 'SimSun', serif;
+  font-weight: 400;
 }

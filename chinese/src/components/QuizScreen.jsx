@@ -3,35 +3,28 @@ import { AnswerInput } from './AnswerInput.jsx'
 import { QUIZ_STATES } from '../hooks/useQuiz.js'
 import { SpeakButton } from './SpeakButton.jsx'
 import { wordSrc } from '../utils/audio.js'
+import { Button, Feedback, ProgressBar, Screen, TopBar } from './ui.jsx'
+
+function senses(word) {
+  return word.definition.split(/[;|]/).map(s => s.trim()).filter(Boolean)
+}
 
 function FeedbackBanner({ correct, word }) {
-  const senses = word.definition.split(/[;|]/).map(s => s.trim()).filter(Boolean)
-
   return (
-    <div className={`rounded-2xl p-4 mb-4 ${correct ? 'bg-green-900/40 border border-green-700' : 'bg-red-900/40 border border-red-700'}`}>
-      <p className={`font-semibold text-lg mb-2 ${correct ? 'text-green-400' : 'text-red-400'}`}>
-        {correct ? '✓ Correct !' : '✗ Incorrect'}
+    <Feedback correct={correct} aside={<SpeakButton src={wordSrc(word)} text={word.simplified} />}>
+      <p className="flex items-baseline gap-3">
+        <span className="chinese-text text-2xl text-fg">{word.simplified}</span>
+        <span className="text-[15px] text-fg-2">{word.pinyin}</span>
       </p>
-      <div className="text-slate-300 text-sm space-y-1">
-        <p className="flex items-center gap-2">
-          <span className="text-slate-400">Caractère : </span>
-          <span className="chinese-text font-medium text-base">{word.simplified}</span>
-          <span className="text-slate-400">[{word.pinyin}]</span>
-          <SpeakButton src={wordSrc(word)} text={word.simplified} className="w-8 h-8 text-sm" />
-        </p>
-        <div>
-          <span className="text-slate-400">Définitions :</span>
-          <ul className="mt-1 space-y-0.5 pl-3">
-            {senses.map((s, i) => (
-              <li key={i} className="flex gap-1.5">
-                <span className="text-slate-600 shrink-0">·</span>
-                <span>{s}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
+      <ul className="mt-3 space-y-1 text-[15px] text-fg">
+        {senses(word).map((s, i) => (
+          <li key={i} className="flex gap-2">
+            <span className="shrink-0 text-fg-3">·</span>
+            <span>{s}</span>
+          </li>
+        ))}
+      </ul>
+    </Feedback>
   )
 }
 
@@ -39,65 +32,27 @@ export function QuizScreen({ quizState, currentQuestion, currentIndex, totalQues
   const inFeedback = quizState === QUIZ_STATES.FEEDBACK
   const { word, type } = currentQuestion
 
-  const placeholder = type === 'char-to-def'
-    ? 'Définition en français…'
-    : 'Caractère chinois ou pinyin avec tons…'
+  // Les définitions viennent d'un dictionnaire anglais (CC-CEDICT) : la réponse se tape en anglais.
+  const placeholder = type === 'char-to-def' ? 'Sens en anglais' : 'Caractères ou pinyin : nǐ hǎo, ni3 hao3'
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col">
-      {/* Top bar */}
-      <div className="flex items-center justify-between px-4 pt-6 pb-2">
-        <button
-          onClick={onQuit}
-          className="text-slate-400 hover:text-white transition-colors text-sm"
-        >
-          ← Quitter
-        </button>
-        <span className="text-slate-400 text-sm font-medium">
-          {currentIndex + 1} / {totalQuestions}
-        </span>
-        <div className="w-12" />
-      </div>
+    <Screen>
+      <TopBar onBack={onQuit} backLabel="Quitter" aside={`${currentIndex + 1} / ${totalQuestions}`} />
+      <ProgressBar value={(currentIndex + (inFeedback ? 1 : 0)) / totalQuestions} className="mx-5" />
 
-      {/* Progress bar */}
-      <div className="px-4 mb-2">
-        <div className="w-full bg-slate-800 rounded-full h-1.5">
-          <div
-            className="bg-red-500 h-1.5 rounded-full transition-all duration-300"
-            style={{ width: `${((currentIndex + (inFeedback ? 1 : 0)) / totalQuestions) * 100}%` }}
-          />
-        </div>
-      </div>
-
-      {/* Question */}
-      <div className="flex-1 px-4 flex flex-col">
+      <div className="flex flex-1 flex-col px-5 pb-8">
         <QuestionCard question={currentQuestion} />
 
-        {/* Feedback */}
-        {inFeedback && (
-          <FeedbackBanner correct={lastCorrect} word={word} />
-        )}
-
-        {/* Input — key forces remount (and clear) on each new question */}
-        {!inFeedback && (
-          <AnswerInput
-            key={currentIndex}
-            onSubmit={onSubmit}
-            disabled={false}
-            placeholder={placeholder}
-          />
-        )}
-
-        {/* Next button */}
-        {inFeedback && (
-          <button
-            onClick={onNext}
-            className="w-full py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-2xl font-semibold transition-all mt-2"
-          >
-            Suivant →
-          </button>
+        {inFeedback ? (
+          <div className="flex flex-col gap-4">
+            <FeedbackBanner correct={lastCorrect} word={word} />
+            <Button onClick={onNext}>Suivant</Button>
+          </div>
+        ) : (
+          // key : nouveau champ (vide) à chaque question
+          <AnswerInput key={currentIndex} onSubmit={onSubmit} disabled={false} placeholder={placeholder} />
         )}
       </div>
-    </div>
+    </Screen>
   )
 }
