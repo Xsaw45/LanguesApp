@@ -51,6 +51,9 @@ Chinois, données (dans `chinese/`) :
   [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn) (syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ;
   licence CC BY-SA) et écrit `src/data/audio.json`. Les mots sans enregistrement sont lus par la voix chinoise du
   téléphone, s'il en a une.
+- puis `node scripts/build-hanzi.js` : caractères par niveau (krmanik/HSK-3.0, « HSK Hanzi »), clé (Unihan), sens
+  (CC-CEDICT, CFDICT) dans `src/data/hanzi.json` ; copie les tracés de `hanzi-writer-data` (Make Me a Hanzi, Arphic
+  Public License, texte joint dans `public/hanzi/`) dans `public/hanzi/`.
 
 Chinois, langues : l'utilisateur choisit français ou anglais dans les paramètres (réglage synchronisé). Textes
 d'interface dans `src/i18n/strings.js` ; contenus (leçons, grammaire, classificateurs) en `{ fr, en }` dans

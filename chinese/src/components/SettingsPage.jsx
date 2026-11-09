@@ -9,6 +9,8 @@ const CREDITS = [
   { key: 'settings.credit.cfdict', href: 'https://chine.in/mandarin/dictionnaire/CFDICT/' },
   { key: 'settings.credit.hsk', href: 'https://github.com/krmanik/HSK-3.0' },
   { key: 'settings.credit.audio', href: 'https://github.com/hugolpz/audio-cmn' },
+  { key: 'settings.credit.strokes', href: 'https://github.com/chanind/hanzi-writer-data' },
+  { key: 'settings.credit.unihan', href: 'https://www.unicode.org/charts/unihan.html' },
 ]
 
 export function SettingsPage({ onBack }) {

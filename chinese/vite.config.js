@@ -21,6 +21,7 @@ export default defineConfig({
         // version deployee ; le cache ne sert que hors ligne. Les assets ont un nom hashe, ils restent pre-caches.
         // Police : seuls les sous-ensembles latins (français + pinyin) sont utiles, les autres ne sont jamais chargés.
         globPatterns: ['**/*.{js,css,ico,png,svg,json}', '**/*latin*.woff2'],
+        globIgnores: ['hanzi/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: null,
         importScripts: ['sw-reload.js'],
@@ -33,6 +34,11 @@ export default defineConfig({
           urlPattern: ({ url }) => url.pathname.startsWith('/zh/audio/'),
           handler: 'CacheFirst',
           options: { cacheName: 'zh-audio', expiration: { maxEntries: 5000 } },
+        }, {
+          // Tracés des caractères (3 000 fichiers, 8 Mo) : gardés une fois ouverts, comme les enregistrements.
+          urlPattern: ({ url }) => url.pathname.startsWith('/zh/hanzi/'),
+          handler: 'CacheFirst',
+          options: { cacheName: 'zh-hanzi', expiration: { maxEntries: 5000 } },
         }],
       }
     })

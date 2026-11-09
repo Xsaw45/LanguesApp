@@ -5,7 +5,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 ## Fait
 
 - Modules : Pinyin et tons (7 leçons, audio, tableau des sons), Vocabulaire HSK 1–9 (répétition espacée),
-  Grammaire (25 points HSK 1–2), Classificateurs (56).
+  Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (25 points HSK 1–2),
+  Classificateurs (56).
 - Bouton écouter sur les mots (enregistrements CC BY-SA, voix du téléphone sinon).
 - Design (passe unslop), icônes lucide, mises à jour visibles sans fermer l'app, hors ligne.
 - Langue de l'utilisateur (français / anglais) dans les paramètres ; définitions du vocabulaire en français
@@ -18,8 +19,10 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    Reste : mots sans définition française dans CFDICT (environ 4 %, affichés en anglais).
 2. **Tests de vocabulaire plus variés** — fait : le type de question suit la progression du mot (QCM de sens, puis
    écoute → caractère et pinyin avec les tons, puis saisie quand le mot est presque connu).
-3. **Caractères** : ordre des traits (animation puis tracé au doigt corrigé, bibliothèque Hanzi Writer, MIT ;
-   données de traits Make Me a Hanzi, licence Arphic à vérifier pour la vente) ; clés (radicaux) avec leur sens.
+3. **Caractères** — fait : 300 caractères par niveau HSK 1 à 6 et 1 200 pour le 7–9 (liste officielle) ; ordre des
+   traits animé, clé en couleur ; un caractère nouveau se trace sur le modèle, puis s'écrit de mémoire (Hanzi Writer) ;
+   les 125 clés courantes avec leur sens et un test. Données de traits : licence Arphic, vente autorisée en
+   fournissant le texte de la licence (`public/hanzi/LICENSE-ARPHIC.txt`).
 4. **Lire et écouter des phrases** : petits textes gradués par niveau HSK (pinyin et traduction affichables,
    questions de compréhension) ; dialogues du quotidien (se présenter, commander, demander son chemin), écoutés
    puis reconstitués.
@@ -53,6 +56,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
     l'app et sur les pages de présentation.
   - Liste HSK : drkameleon/complete-hsk-vocabulary (MIT) ; lectures : krmanik/HSK-3.0 (Pleco, MIT / CC BY-SA 4.0).
   - Enregistrements : hugolpz/audio-cmn (Chen Wang, Yue Tan / Shtooka), CC BY-SA.
+  - Tracés des caractères : Make Me a Hanzi via hanzi-writer-data, Arphic Public License (joindre la licence) ;
+    bibliothèque Hanzi Writer : MIT ; clés : Unihan (licence Unicode).
   - Le partage à l'identique (BY-SA) s'applique aux données, pas au code de l'app : publier les données modifiées
     (définitions nettoyées) sous la même licence.
 - **Légal** : mentions légales, CGV / CGU, politique de confidentialité (RGPD), gestion des données de compte.

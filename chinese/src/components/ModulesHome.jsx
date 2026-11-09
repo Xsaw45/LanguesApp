@@ -2,9 +2,11 @@ import { ChevronRight, Settings } from 'lucide-react'
 import { CLASSIFIERS } from '../data/classifiers.js'
 import { PINYIN_LESSONS } from '../data/pinyinLessons.js'
 import { GRAMMAR_POINTS } from '../data/grammar.js'
+import { HANZI } from '../data/hanzi.js'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
 import { getLessonProgress } from '../utils/pinyinQuiz.js'
 import { getPointProgress } from '../utils/grammarQuiz.js'
+import { getCharProgress } from '../utils/hanziQuiz.js'
 import { isLessonPassed } from '../utils/lessonProgress.js'
 import { useLang } from '../i18n/useLang.js'
 import { ProgressBar, Screen, Seal, TopBar } from './ui.jsx'
@@ -32,13 +34,14 @@ function ModuleCard({ id, seal, chinese, known, total, onOpen }) {
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenGrammar, onOpenClassifiers, onOpenSettings }) {
+export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenCharacters, onOpenGrammar, onOpenClassifiers, onOpenSettings }) {
   const { t } = useLang()
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
   const classifiersKnown = CLASSIFIERS.filter(cl => getClassifierProgress(progressMap, cl).known).length
   const lessonsPassed = PINYIN_LESSONS.filter(l => isLessonPassed(getLessonProgress(progressMap, l))).length
   const pointsPassed = GRAMMAR_POINTS.filter(p => isLessonPassed(getPointProgress(progressMap, p))).length
+  const charsKnown = HANZI.filter(ch => getCharProgress(progressMap, ch).known).length
 
   const settings = (
     <button
@@ -67,6 +70,7 @@ export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocab
         <div className="flex flex-col gap-3">
           <ModuleCard id="pinyin" seal="拼" chinese="拼音" known={lessonsPassed} total={PINYIN_LESSONS.length} onOpen={onOpenPinyin} />
           <ModuleCard id="vocab" seal="词" chinese="词汇" known={wordsKnown} total={wordsTotal} onOpen={onOpenVocabulary} />
+          <ModuleCard id="hanzi" seal="字" chinese="汉字" known={charsKnown} total={HANZI.length} onOpen={onOpenCharacters} />
           <ModuleCard id="grammar" seal="语" chinese="语法" known={pointsPassed} total={GRAMMAR_POINTS.length} onOpen={onOpenGrammar} />
           <ModuleCard id="classifiers" seal="量" chinese="量词" known={classifiersKnown} total={CLASSIFIERS.length} onOpen={onOpenClassifiers} />
         </div>
