@@ -10,7 +10,7 @@ import { Button, Score, Screen, SectionLabel, TopBar } from './ui.jsx'
 
 const LEVELS = [1, 2]
 
-function ReviewResults({ results, onAgain, onExit }) {
+function ReviewResults({ results, onAgain, onExit, exitLabel }) {
   const { t, l, pct } = useLang()
   const correct = results.filter(r => r.correct).length
   const ratio = correct / results.length
@@ -35,30 +35,42 @@ function ReviewResults({ results, onAgain, onExit }) {
       </div>
       <div className="flex flex-col gap-2">
         <Button onClick={onAgain}>{t('gr.newReview')}</Button>
-        <Button variant="secondary" onClick={onExit}>{t('gr.backToPoints')}</Button>
+        <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('gr.backToPoints')}</Button>
       </div>
     </Screen>
   )
 }
 
-export function GrammarPage({ progressMap, applyUpdates, onBack }) {
-  const { t, l, pct } = useLang()
-  // null : liste ; nombre : index du point ouvert ; { review, questions, results? } : révision
-  const [view, setView] = useState(null)
-
-  const startReview = () => setView(v => ({ review: (v?.review ?? 0) + 1, questions: buildReviewQuiz(progressMap) }))
+/** Révision des points réussis (ceux à revoir d'abord), puis son résultat ; « Nouvelle révision » en relance une. */
+export function GrammarReview({ progressMap, applyUpdates, onExit, exitLabel }) {
+  const [run, setRun] = useState(() => ({ id: 1, questions: buildReviewQuiz(progressMap) }))
+  const [results, setResults] = useState(null)
 
   // Seuls les points dont la révision est due changent : les autres gardent leur prochaine échéance.
-  function finishReview(results) {
+  function finish(answers) {
     const updates = []
-    for (const [pointId, ratio] of scoreByPoint(results)) {
+    for (const [pointId, ratio] of scoreByPoint(answers)) {
       const point = GRAMMAR_POINTS.find(p => p.id === pointId)
       const progress = getPointProgress(progressMap, point)
       if (isLessonDue(progress)) updates.push(applyLessonResult(progress, ratio))
     }
     if (updates.length) applyUpdates(updates)
-    setView(v => ({ ...v, results }))
+    setResults(answers)
   }
+
+  function again() {
+    setResults(null)
+    setRun(r => ({ id: r.id + 1, questions: buildReviewQuiz(progressMap) }))
+  }
+
+  if (results) return <ReviewResults results={results} onAgain={again} onExit={onExit} exitLabel={exitLabel} />
+  return <GrammarQuiz key={run.id} questions={run.questions} onExit={onExit} onFinish={finish} />
+}
+
+export function GrammarPage({ progressMap, applyUpdates, onBack }) {
+  const { t, l, pct } = useLang()
+  // null : liste ; nombre : index du point ouvert ; 'review' : révision
+  const [view, setView] = useState(null)
 
   if (typeof view === 'number') {
     return (
@@ -74,10 +86,7 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
     )
   }
 
-  if (view?.results) return <ReviewResults results={view.results} onAgain={startReview} onExit={() => setView(null)} />
-  if (view) {
-    return <GrammarQuiz key={view.review} questions={view.questions} onExit={() => setView(null)} onFinish={finishReview} />
-  }
+  if (view === 'review') return <GrammarReview progressMap={progressMap} applyUpdates={applyUpdates} onExit={() => setView(null)} />
 
   const progresses = GRAMMAR_POINTS.map(p => getPointProgress(progressMap, p))
   const passed = progresses.filter(isLessonPassed).length
@@ -90,7 +99,7 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
       <div className="flex flex-col px-5 py-6">
         <p className="text-[15px] leading-relaxed text-fg">{t('gr.intro', { n: POINT_QUIZ_SIZE, pct: pct(PASS_THRESHOLD) })}</p>
 
-        <Button variant="secondary" className="mt-5" disabled={passed === 0} onClick={startReview}>
+        <Button variant="secondary" className="mt-5" disabled={passed === 0} onClick={() => setView('review')}>
           {passed === 0 ? t('gr.reviewNone') : passed === 1 ? t('gr.reviewOne') : t('gr.review', { n: passed })}
         </Button>
         <p className="mt-3 text-center text-sm text-fg-3">{due > 0 ? t('gr.due', { n: due }) : t('gr.dueNone')}</p>

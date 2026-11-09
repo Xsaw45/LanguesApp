@@ -1,7 +1,11 @@
-import { CHARS_BY_RADICAL, HANZI, charsForLevel, hanziKey } from '../data/hanzi.js'
+import { CHARS_BY_RADICAL, HANZI, HANZI_LEVELS, charsForLevel, hanziKey } from '../data/hanzi.js'
 import { RADICALS, radicalForms } from '../data/radicals.js'
 import { LANGS } from '../i18n/text.js'
 import { createInitialProgress, isDueForReview } from './spacedrep.js'
+
+/** Niveau en cours : le premier qui n'est pas entièrement maîtrisé. */
+export const currentHanziLevel = progressMap =>
+  HANZI_LEVELS.find(lv => charsForLevel(lv).some(ch => !getCharProgress(progressMap, ch).known)) ?? HANZI_LEVELS[0]
 
 export const HANZI_PRACTICE_SIZE = 10
 export const RADICAL_QUIZ_SIZE = 10

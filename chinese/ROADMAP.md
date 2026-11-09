@@ -31,8 +31,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 
 ## Secondaire
 
-- Page « Aujourd'hui » : tout ce qui est à réviser dans tous les modules, en une session.
-- Suivi : jours d'affilée, mots appris par semaine, temps passé.
+- Suivi : temps passé (fait : page « Aujourd'hui » avec toutes les révisions dues en une séance, jours d'affilée,
+  éléments maîtrisés sur 7 jours).
 - Grammaire HSK 3 (把, 被, compléments de résultat et de direction, 越来越, 是…的…), puis HSK 4+.
 - Recherche dans la liste des mots (caractère, pinyin, sens).
 - Relecture du contenu écrit sans source (grammaire, classificateurs, leçons pinyin) par un locuteur natif,

@@ -10,7 +10,8 @@ function messageKey(ratio) {
   return 'vocab.result.more'
 }
 
-export function Results({ results, onRestart, onHome }) {
+/** homeLabel : texte du bouton de retour (vocabulaire, ou séance du jour). */
+export function Results({ results, onRestart, onHome, homeLabel }) {
   const { lang, t, pct } = useLang()
   const correct = results.filter(r => r.correct).length
   const total = results.length
@@ -46,7 +47,7 @@ export function Results({ results, onRestart, onHome }) {
 
       <div className="flex flex-col gap-2">
         <Button onClick={onRestart}>{t('common.newTest')}</Button>
-        <Button variant="secondary" onClick={onHome}>{t('vocab.backToVocab')}</Button>
+        <Button variant="secondary" onClick={onHome}>{homeLabel}</Button>
       </div>
     </Screen>
   )

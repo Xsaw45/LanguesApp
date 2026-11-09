@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 import { HANZI_LEVELS, charsForLevel, getChar, hanziLevelLabel } from '../data/hanzi.js'
-import { HANZI_PRACTICE_SIZE, buildHanziPractice, getCharProgress } from '../utils/hanziQuiz.js'
+import { HANZI_PRACTICE_SIZE, buildHanziPractice, currentHanziLevel, getCharProgress } from '../utils/hanziQuiz.js'
 import { isDueForReview } from '../utils/spacedrep.js'
 import { useLang } from '../i18n/useLang.js'
 import { CharacterDetail } from './CharacterDetail.jsx'
@@ -32,9 +32,8 @@ function CharTile({ ch, progress, onOpen }) {
 
 export function CharactersPage({ progressMap, applyUpdates, onBack }) {
   const { t } = useLang()
-  // Niveau affiché : le premier qui n'est pas entièrement maîtrisé.
-  const [level, setLevel] = useState(() =>
-    HANZI_LEVELS.find(lv => charsForLevel(lv).some(ch => !getCharProgress(progressMap, ch).known)) ?? HANZI_LEVELS[0])
+  // Niveau affiché : le niveau en cours.
+  const [level, setLevel] = useState(() => currentHanziLevel(progressMap))
   // 'list' | 'radicals' | { char } | { practice, id }
   const [view, setView] = useState('list')
 

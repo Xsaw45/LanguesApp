@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { withActivity, markStepDone } from './utils/activity.js'
 import { useProgress } from './hooks/useProgress.js'
 import { useLevels } from './hooks/useLevels.js'
 import { useQuiz, QUIZ_STATES } from './hooks/useQuiz.js'
@@ -14,14 +15,17 @@ import { ModulesHome } from './components/ModulesHome.jsx'
 import { PinyinPage } from './components/PinyinPage.jsx'
 import { GrammarPage } from './components/GrammarPage.jsx'
 import { ReadingPage } from './components/ReadingPage.jsx'
+import { TodayPage } from './components/TodayPage.jsx'
 import { SettingsPage } from './components/SettingsPage.jsx'
 
 export default function App() {
   // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers'
-  // | 'pinyin' | 'hanzi' | 'grammar' | 'reading' | 'settings'
+  // | 'pinyin' | 'hanzi' | 'grammar' | 'reading' | 'today' (séance du jour) | 'settings'
   const [screen, setScreen] = useState('home')
-  const { progressMap, getProgress, applyUpdates, loading } = useProgress()
+  const { progressMap, getProgress, applyUpdates: saveUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
+  // Toute progression enregistrée compte aussi dans l'activité du jour (série, éléments maîtrisés).
+  const applyUpdates = useCallback(updates => saveUpdates(withActivity(progressMap, updates)), [saveUpdates, progressMap])
 
   // Langue : réglage synchronisé (enregistrement « settings »), sinon celle du navigateur.
   const lang = progressMap?.get(SETTINGS_KEY)?.lang || defaultLang()
@@ -67,7 +71,11 @@ export default function App() {
           resetQuiz()
           setTimeout(() => startQuiz(unlockedLevels), 0)
         }}
-        onHome={resetQuiz}
+        onHome={() => {
+          if (screen === 'today') applyUpdates([markStepDone(progressMap, 'vocab')])
+          resetQuiz()
+        }}
+        homeLabel={translate(lang, screen === 'today' ? 'today.back' : 'vocab.backToVocab')}
       />
     )
   } else if (state === QUIZ_STATES.QUESTION || state === QUIZ_STATES.FEEDBACK) {
@@ -99,6 +107,8 @@ export default function App() {
     content = <ReadingPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={home} />
   } else if (screen === 'settings') {
     content = <SettingsPage onBack={home} />
+  } else if (screen === 'today') {
+    content = <TodayPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={home} onStartVocab={() => startQuiz(unlockedLevels)} />
   } else if (screen === 'hsk') {
     content = (
       <Dashboard
@@ -115,6 +125,7 @@ export default function App() {
       <ModulesHome
         levelStats={levelStats}
         progressMap={progressMap}
+        onOpenToday={() => setScreen('today')}
         onOpenPinyin={() => setScreen('pinyin')}
         onOpenVocabulary={() => setScreen('hsk')}
         onOpenCharacters={() => setScreen('hanzi')}

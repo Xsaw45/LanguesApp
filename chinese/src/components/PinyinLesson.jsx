@@ -12,11 +12,11 @@ import { ICON_SM, optionClass } from './uiStyles.js'
 
 const soundSrc = s => (s.syl ? syllableSrc(s.syl) : recordedWordSrc(s.word))
 
-function Intro({ lesson, onStart, onBack }) {
+function Intro({ lesson, onStart, onBack, backLabel }) {
   const { t, l } = useLang()
   return (
     <Screen>
-      <TopBar onBack={onBack} backLabel={t('py.lessons')} />
+      <TopBar onBack={onBack} backLabel={backLabel ?? t('py.lessons')} />
       <div className="flex flex-1 flex-col px-5 pb-8">
         <header className="pt-4 pb-6">
           <h1 className="text-[28px] font-medium leading-tight text-fg">{l(lesson.title)}</h1>
@@ -172,7 +172,7 @@ function Quiz({ questions, onExit, onFinish }) {
   )
 }
 
-function Results({ lesson, score, hasNext, onRetry, onNext, onExit }) {
+function Results({ lesson, score, hasNext, onRetry, onNext, onExit, exitLabel }) {
   const { t, l, pct } = useLang()
   const passed = score >= PASS_THRESHOLD
   const caption = passed
@@ -186,13 +186,14 @@ function Results({ lesson, score, hasNext, onRetry, onNext, onExit }) {
       <div className="flex flex-col gap-2">
         {passed && hasNext && <Button onClick={onNext}>{t('py.nextLesson')}</Button>}
         <Button variant={passed && hasNext ? 'secondary' : 'primary'} onClick={onRetry}>{t('common.retry')}</Button>
-        <Button variant="secondary" onClick={onExit}>{t('py.backToLessons')}</Button>
+        <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('py.backToLessons')}</Button>
       </div>
     </Screen>
   )
 }
 
-export function PinyinLesson({ lesson, hasNext, progressMap, applyUpdates, onExit, onNextLesson }) {
+/** backLabel / exitLabel : retour ailleurs que vers la liste des leçons (séance du jour). */
+export function PinyinLesson({ lesson, hasNext, progressMap, applyUpdates, onExit, onNextLesson, backLabel, exitLabel }) {
   const [quiz, setQuiz] = useState(null) // { id, questions }
   const [score, setScore] = useState(null)
 
@@ -209,10 +210,10 @@ export function PinyinLesson({ lesson, hasNext, progressMap, applyUpdates, onExi
   }
 
   if (score !== null) {
-    return <Results lesson={lesson} score={score} hasNext={hasNext} onRetry={start} onNext={onNextLesson} onExit={onExit} />
+    return <Results lesson={lesson} score={score} hasNext={hasNext} onRetry={start} onNext={onNextLesson} onExit={onExit} exitLabel={exitLabel} />
   }
   if (quiz) {
     return <Quiz key={quiz.id} questions={quiz.questions} onExit={() => setQuiz(null)} onFinish={finish} />
   }
-  return <Intro lesson={lesson} onStart={start} onBack={onExit} />
+  return <Intro lesson={lesson} onStart={start} onBack={onExit} backLabel={backLabel} />
 }

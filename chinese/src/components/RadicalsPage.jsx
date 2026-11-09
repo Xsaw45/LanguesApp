@@ -20,7 +20,7 @@ function Status({ progress }) {
 /** Exemples d'une clé : ses caractères les plus courants (ordre des listes HSK). */
 const examples = (radical, n = 8) => CHARS_BY_RADICAL.get(radical.n).slice(0, n).map(ch => ch.c).join(' ')
 
-function RadicalQuiz({ questions, progressMap, applyUpdates, onExit, onRestart }) {
+export function RadicalQuiz({ questions, progressMap, applyUpdates, onExit, onRestart, exitLabel }) {
   const { t, l, lang, pct } = useLang()
   const [index, setIndex] = useState(0)
   const [chosen, setChosen] = useState(null)
@@ -51,7 +51,7 @@ function RadicalQuiz({ questions, progressMap, applyUpdates, onExit, onRestart }
         </div>
         <div className="flex flex-col gap-2">
           <Button onClick={onRestart}>{t('common.newTest')}</Button>
-          <Button variant="secondary" onClick={onExit}>{t('rad.back')}</Button>
+          <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('rad.back')}</Button>
         </div>
       </Screen>
     )

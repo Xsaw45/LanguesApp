@@ -11,6 +11,7 @@ import { getCharProgress } from '../utils/hanziQuiz.js'
 import { getReadingProgress } from '../utils/readingQuiz.js'
 import { isLessonPassed } from '../utils/lessonProgress.js'
 import { useLang } from '../i18n/useLang.js'
+import { TodayCard } from './TodayPage.jsx'
 import { ProgressBar, Screen, Seal, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
@@ -36,7 +37,7 @@ function ModuleCard({ id, seal, chinese, known, total, onOpen }) {
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenCharacters, onOpenGrammar, onOpenReading, onOpenClassifiers, onOpenSettings }) {
+export function ModulesHome({ levelStats, progressMap, onOpenToday, onOpenPinyin, onOpenVocabulary, onOpenCharacters, onOpenGrammar, onOpenReading, onOpenClassifiers, onOpenSettings }) {
   const { t } = useLang()
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
@@ -70,7 +71,9 @@ export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocab
           <p className="mt-1 text-[17px] text-fg-2">{t('home.subtitle')}</p>
         </header>
 
-        <div className="flex flex-col gap-3">
+        <TodayCard progressMap={progressMap} onOpen={onOpenToday} />
+
+        <div className="mt-6 flex flex-col gap-3">
           <ModuleCard id="pinyin" seal="拼" chinese="拼音" known={lessonsPassed} total={PINYIN_LESSONS.length} onOpen={onOpenPinyin} />
           <ModuleCard id="vocab" seal="词" chinese="词汇" known={wordsKnown} total={wordsTotal} onOpen={onOpenVocabulary} />
           <ModuleCard id="hanzi" seal="字" chinese="汉字" known={charsKnown} total={HANZI.length} onOpen={onOpenCharacters} />

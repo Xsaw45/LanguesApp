@@ -34,7 +34,7 @@ export function Examples({ cl, highlight }) {
   )
 }
 
-export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, onRestart }) {
+export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, onRestart, exitLabel }) {
   const { t, l, pct } = useLang()
   const [index, setIndex] = useState(0)
   const [chosen, setChosen] = useState(null)
@@ -68,7 +68,7 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
         </div>
         <div className="flex flex-col gap-2">
           <Button onClick={onRestart}>{t('common.newTest')}</Button>
-          <Button variant="secondary" onClick={onExit}>{t('cl.back')}</Button>
+          <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('cl.back')}</Button>
         </div>
       </Screen>
     )

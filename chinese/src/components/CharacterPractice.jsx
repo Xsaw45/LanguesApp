@@ -12,7 +12,7 @@ import { Button, Feedback, ProgressBar, Score, Screen, SectionLabel, TopBar } fr
  * sa lecture. Réussi avec au plus allowedMistakes(ch) erreurs ; sinon (ou « Je ne sais pas ») l'ordre des traits
  * est montré.
  */
-export function CharacterPractice({ items, progressMap, applyUpdates, onExit, onRestart }) {
+export function CharacterPractice({ items, progressMap, applyUpdates, onExit, onRestart, exitLabel }) {
   const { t, l, lang, pct } = useLang()
   const [index, setIndex] = useState(0)
   const [mistakes, setMistakes] = useState(0)
@@ -44,7 +44,7 @@ export function CharacterPractice({ items, progressMap, applyUpdates, onExit, on
         </div>
         <div className="flex flex-col gap-2">
           <Button onClick={onRestart}>{t('common.newTest')}</Button>
-          <Button variant="secondary" onClick={onExit}>{t('hz.back')}</Button>
+          <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('hz.back')}</Button>
         </div>
       </Screen>
     )

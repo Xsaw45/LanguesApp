@@ -71,7 +71,7 @@ function Line({ reading, line, index, showPinyin, showTr, selected, onSelect }) 
   )
 }
 
-function Reader({ reading, onStart, onBack }) {
+function Reader({ reading, onStart, onBack, backLabel }) {
   const { t, l } = useLang()
   const [showPinyin, setShowPinyin] = useState(false)
   const [showTr, setShowTr] = useState(false)
@@ -79,7 +79,7 @@ function Reader({ reading, onStart, onBack }) {
 
   return (
     <Screen>
-      <TopBar onBack={onBack} backLabel={t('rd.texts')} aside={`HSK ${reading.level}`} />
+      <TopBar onBack={onBack} backLabel={backLabel ?? t('rd.texts')} aside={`HSK ${reading.level}`} />
       <div className="flex flex-1 flex-col px-5 pb-8">
         <header className="pt-4 pb-5">
           <h1 className="text-[28px] font-medium leading-tight text-fg">
@@ -107,7 +107,7 @@ function Reader({ reading, onStart, onBack }) {
   )
 }
 
-function Results({ score, title, onRetry, onRead, onExit }) {
+function Results({ score, title, onRetry, onRead, onExit, exitLabel }) {
   const { t, l, pct } = useLang()
   const passed = score >= PASS_THRESHOLD
   return (
@@ -118,14 +118,17 @@ function Results({ score, title, onRetry, onRead, onExit }) {
       <div className="flex flex-col gap-2">
         {!passed && <Button onClick={onRead}>{t('rd.readAgain')}</Button>}
         <Button variant={passed ? 'primary' : 'secondary'} onClick={onRetry}>{t('common.retry')}</Button>
-        <Button variant="secondary" onClick={onExit}>{t('rd.back')}</Button>
+        <Button variant="secondary" onClick={onExit}>{exitLabel ?? t('rd.back')}</Button>
       </div>
     </Screen>
   )
 }
 
-/** Un texte : lecture, questions, résultat (enregistré comme une leçon : 80 % pour réussir, puis révisions). */
-export function ReadingText({ reading, progressMap, applyUpdates, onExit }) {
+/**
+ * Un texte : lecture, questions, résultat (enregistré comme une leçon : 80 % pour réussir, puis révisions).
+ * backLabel / exitLabel : retour ailleurs que vers la liste des textes (séance du jour).
+ */
+export function ReadingText({ reading, progressMap, applyUpdates, onExit, backLabel, exitLabel }) {
   const [quiz, setQuiz] = useState(null) // { id, questions }
   const [score, setScore] = useState(null)
 
@@ -142,8 +145,8 @@ export function ReadingText({ reading, progressMap, applyUpdates, onExit }) {
   }
 
   if (score !== null) {
-    return <Results score={score} title={reading.title} onRetry={start} onRead={() => setScore(null)} onExit={onExit} />
+    return <Results score={score} title={reading.title} onRetry={start} onRead={() => setScore(null)} onExit={onExit} exitLabel={exitLabel} />
   }
   if (quiz) return <GrammarQuiz key={quiz.id} questions={quiz.questions} onExit={() => setQuiz(null)} onFinish={finish} />
-  return <Reader reading={reading} onStart={start} onBack={onExit} />
+  return <Reader reading={reading} onStart={start} onBack={onExit} backLabel={backLabel} />
 }
