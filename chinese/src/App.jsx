@@ -9,9 +9,10 @@ import { VocabularyPage } from './components/VocabularyPage.jsx'
 import { ClassifiersPage } from './components/ClassifiersPage.jsx'
 import { ModulesHome } from './components/ModulesHome.jsx'
 import { PinyinPage } from './components/PinyinPage.jsx'
+import { GrammarPage } from './components/GrammarPage.jsx'
 
 export default function App() {
-  // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers' | 'pinyin'
+  // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers' | 'pinyin' | 'grammar'
   const [screen, setScreen] = useState('home')
   const { progressMap, getProgress, applyUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
@@ -78,6 +79,10 @@ export default function App() {
     return <PinyinPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={() => setScreen('home')} />
   }
 
+  if (screen === 'grammar') {
+    return <GrammarPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={() => setScreen('home')} />
+  }
+
   if (screen === 'hsk') {
     return (
       <Dashboard
@@ -97,6 +102,7 @@ export default function App() {
       progressMap={progressMap}
       onOpenPinyin={() => setScreen('pinyin')}
       onOpenVocabulary={() => setScreen('hsk')}
+      onOpenGrammar={() => setScreen('grammar')}
       onOpenClassifiers={() => setScreen('classifiers')}
     />
   )

@@ -1,21 +1,13 @@
 import { useState } from 'react'
-import { Check, ChevronRight, Lock } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { PINYIN_LESSONS } from '../data/pinyinLessons.js'
-import { getLessonProgress, isLessonUnlocked, isLessonDue, PASS_THRESHOLD } from '../utils/pinyinQuiz.js'
+import { getLessonProgress, isLessonUnlocked } from '../utils/pinyinQuiz.js'
+import { PASS_THRESHOLD } from '../utils/lessonProgress.js'
 import { PinyinLesson } from './PinyinLesson.jsx'
 import { PinyinChart } from './PinyinChart.jsx'
+import { LessonStatus } from './LessonStatus.jsx'
 import { Screen, TopBar } from './ui.jsx'
-import { ICON, ICON_SM, percent } from './uiStyles.js'
-
-function LessonStatus({ progress, unlocked }) {
-  if (!unlocked) return <Lock {...ICON_SM} className="text-fg-3" />
-  if (progress.known && isLessonDue(progress)) return <span className="text-sm text-accent">À revoir</span>
-  if (progress.bestPct >= PASS_THRESHOLD) {
-    return <span className="inline-flex items-center gap-1 text-sm tabular-nums text-good"><Check {...ICON_SM} />{percent(progress.bestPct)}</span>
-  }
-  if (progress.bestPct > 0) return <span className="text-sm tabular-nums text-fg-3">{percent(progress.bestPct)}</span>
-  return <span className="text-sm text-accent">À faire</span>
-}
+import { ICON, percent } from './uiStyles.js'
 
 export function PinyinPage({ progressMap, applyUpdates, onBack }) {
   const [view, setView] = useState(null) // null | 'chart' | index de leçon

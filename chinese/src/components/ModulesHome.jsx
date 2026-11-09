@@ -2,7 +2,10 @@ import { ChevronRight } from 'lucide-react'
 import { CLASSIFIERS } from '../data/classifiers.js'
 import { PINYIN_LESSONS } from '../data/pinyinLessons.js'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
-import { getLessonProgress, PASS_THRESHOLD } from '../utils/pinyinQuiz.js'
+import { getLessonProgress } from '../utils/pinyinQuiz.js'
+import { isLessonPassed } from '../utils/lessonProgress.js'
+import { GRAMMAR_POINTS } from '../data/grammar.js'
+import { getPointProgress } from '../utils/grammarQuiz.js'
 import { ProgressBar, Screen, Seal, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
@@ -27,11 +30,12 @@ function ModuleCard({ seal, title, chinese, description, known, total, unit, onO
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenClassifiers }) {
+export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenGrammar, onOpenClassifiers }) {
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
   const classifiersKnown = CLASSIFIERS.filter(cl => getClassifierProgress(progressMap, cl).known).length
-  const lessonsPassed = PINYIN_LESSONS.filter(l => getLessonProgress(progressMap, l).bestPct >= PASS_THRESHOLD).length
+  const lessonsPassed = PINYIN_LESSONS.filter(l => isLessonPassed(getLessonProgress(progressMap, l))).length
+  const pointsPassed = GRAMMAR_POINTS.filter(p => isLessonPassed(getPointProgress(progressMap, p))).length
 
   return (
     <Screen>
@@ -65,6 +69,16 @@ export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocab
             total={wordsTotal}
             unit="mots maîtrisés"
             onOpen={onOpenVocabulary}
+          />
+          <ModuleCard
+            seal="语"
+            title="Grammaire"
+            chinese="语法"
+            description="Les structures de phrase du HSK 1 et 2, avec des exercices"
+            known={pointsPassed}
+            total={GRAMMAR_POINTS.length}
+            unit="points réussis"
+            onOpen={onOpenGrammar}
           />
           <ModuleCard
             seal="量"

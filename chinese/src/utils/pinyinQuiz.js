@@ -5,10 +5,9 @@ import {
 import { getWordsForLevel } from '../data/index.js'
 import { syllableSrc, recordedWordSrc } from './audio.js'
 import { parseSyllable, splitPinyin, splitInitial, withTone, markIndex, vowelIndexes } from './pinyin.js'
-import { REVIEW_INTERVALS, addDays, today, isDueForReview } from './spacedrep.js'
+import { lessonProgress, PASS_THRESHOLD } from './lessonProgress.js'
 
 export const LESSON_QUIZ_SIZE = 10
-export const PASS_THRESHOLD = 0.8
 
 /*
  * Question :
@@ -238,30 +237,9 @@ export function buildLessonQuiz(lesson) {
 export const lessonKey = lesson => `py_${lesson.id}`
 
 export function getLessonProgress(progressMap, lesson) {
-  return progressMap?.get(lessonKey(lesson)) || {
-    wordId: lessonKey(lesson),
-    level: 'py',
-    bestPct: 0,
-    passes: 0,
-    known: false,
-    nextReview: null,
-    reviewInterval: null,
-  }
+  return lessonProgress(progressMap, lessonKey(lesson), 'py')
 }
 
 export function isLessonUnlocked(progressMap, index) {
   return index === 0 || getLessonProgress(progressMap, PINYIN_LESSONS[index - 1]).bestPct >= PASS_THRESHOLD
-}
-
-export const isLessonDue = progress => isDueForReview(progress)
-
-/** Réussite (≥ 80 %) : leçon validée, prochaine révision de plus en plus espacée. Échec : seul le record change. */
-export function applyLessonResult(progress, pct) {
-  const next = { ...progress, bestPct: Math.max(progress.bestPct, pct) }
-  if (pct < PASS_THRESHOLD) return next
-  next.passes = progress.passes + 1
-  next.known = true
-  next.reviewInterval = REVIEW_INTERVALS[Math.min(next.passes, REVIEW_INTERVALS.length) - 1]
-  next.nextReview = addDays(today(), next.reviewInterval)
-  return next
 }
