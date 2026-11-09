@@ -12,7 +12,8 @@ const REVIEW_POINTS = 5
  *   key         unique dans un test ; pointId : point de grammaire testé
  *   prompt      consigne ; tr : traduction affichée sous la phrase
  *   order       tokens [{ id, text }] mélangés ; answers : phrases acceptées (mots collés)
- *   choice      layout 'grid3' (trou à compléter, gap { before, after }) | 'two' (correcte ou pas) | 'list' (traduction) ;
+ *   choice      layout 'grid3' (trou à compléter, gap { before, after }) | 'two' (correcte ou pas) | 'list' (traduction)
+ *               | 'text' (réponses en français ou en anglais : compréhension d'un texte, voir readingQuiz.js) ;
  *               display (displayChinese) ; options [{ key, label, correct }]
  *   solution    { zh, pinyin, tr } affichée après la réponse ; explanation : règle (phrase incorrecte)
  */

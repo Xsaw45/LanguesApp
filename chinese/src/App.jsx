@@ -13,11 +13,12 @@ import { CharactersPage } from './components/CharactersPage.jsx'
 import { ModulesHome } from './components/ModulesHome.jsx'
 import { PinyinPage } from './components/PinyinPage.jsx'
 import { GrammarPage } from './components/GrammarPage.jsx'
+import { ReadingPage } from './components/ReadingPage.jsx'
 import { SettingsPage } from './components/SettingsPage.jsx'
 
 export default function App() {
   // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers'
-  // | 'pinyin' | 'hanzi' | 'grammar' | 'settings'
+  // | 'pinyin' | 'hanzi' | 'grammar' | 'reading' | 'settings'
   const [screen, setScreen] = useState('home')
   const { progressMap, getProgress, applyUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
@@ -94,6 +95,8 @@ export default function App() {
     content = <CharactersPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={home} />
   } else if (screen === 'grammar') {
     content = <GrammarPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={home} />
+  } else if (screen === 'reading') {
+    content = <ReadingPage progressMap={progressMap} applyUpdates={applyUpdates} onBack={home} />
   } else if (screen === 'settings') {
     content = <SettingsPage onBack={home} />
   } else if (screen === 'hsk') {
@@ -116,6 +119,7 @@ export default function App() {
         onOpenVocabulary={() => setScreen('hsk')}
         onOpenCharacters={() => setScreen('hanzi')}
         onOpenGrammar={() => setScreen('grammar')}
+        onOpenReading={() => setScreen('reading')}
         onOpenClassifiers={() => setScreen('classifiers')}
         onOpenSettings={() => setScreen('settings')}
       />

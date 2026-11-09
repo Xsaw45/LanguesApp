@@ -92,14 +92,17 @@ export function chineseVoice() {
     || null
 }
 
+/** Lit un texte avec la voix chinoise du téléphone, ou une liste de textes à la suite (un dialogue entier). */
 export function speak(text) {
   const voice = chineseVoice()
   if (!voice) return
   audioElement().pause()
-  const utterance = new SpeechSynthesisUtterance(text)
-  utterance.voice = voice
-  utterance.lang = voice.lang
-  utterance.rate = 0.8
   window.speechSynthesis.cancel()
-  window.speechSynthesis.speak(utterance)
+  for (const part of [].concat(text)) {
+    const utterance = new SpeechSynthesisUtterance(part)
+    utterance.voice = voice
+    utterance.lang = voice.lang
+    utterance.rate = 0.8
+    window.speechSynthesis.speak(utterance)
+  }
 }

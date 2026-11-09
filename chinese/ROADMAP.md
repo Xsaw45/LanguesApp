@@ -6,7 +6,7 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 
 - Modules : Pinyin et tons (7 leçons, audio, tableau des sons), Vocabulaire HSK 1–9 (répétition espacée),
   Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (25 points HSK 1–2),
-  Classificateurs (56).
+  Lecture (10 textes et dialogues HSK 1–2), Classificateurs (56).
 - Bouton écouter sur les mots (enregistrements CC BY-SA, voix du téléphone sinon).
 - Design (passe unslop), icônes lucide, mises à jour visibles sans fermer l'app, hors ligne.
 - Langue de l'utilisateur (français / anglais) dans les paramètres ; définitions du vocabulaire en français
@@ -23,9 +23,11 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    traits animé, clé en couleur ; un caractère nouveau se trace sur le modèle, puis s'écrit de mémoire (Hanzi Writer) ;
    les 125 clés courantes avec leur sens et un test. Données de traits : licence Arphic, vente autorisée en
    fournissant le texte de la licence (`public/hanzi/LICENSE-ARPHIC.txt`).
-4. **Lire et écouter des phrases** : petits textes gradués par niveau HSK (pinyin et traduction affichables,
-   questions de compréhension) ; dialogues du quotidien (se présenter, commander, demander son chemin), écoutés
-   puis reconstitués.
+4. **Lire et écouter des phrases** — fait pour les HSK 1 et 2 : 10 textes et dialogues (se présenter, restaurant,
+   chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois) ; pinyin et traduction
+   affichables, sens de chaque mot au toucher, lecture par la voix du téléphone ; questions de compréhension et
+   phrases à remettre dans l'ordre. Reste : textes HSK 3 et plus ; enregistrements des phrases (voix humaine ou
+   synthèse côté serveur), car tous les téléphones n'ont pas de voix chinoise ; relecture par un locuteur natif.
 
 ## Secondaire
 

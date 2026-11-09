@@ -56,6 +56,7 @@ const OPTIONS_LAYOUT = {
   grid3: { list: 'grid grid-cols-3 gap-3', option: 'h-20 hanzi-display text-[32px]' },
   two: { list: 'grid grid-cols-2 gap-3', option: 'h-14 text-base font-medium' },
   list: { list: 'flex flex-col gap-2', option: 'min-h-12 px-4 py-3 text-left chinese-text text-xl' },
+  text: { list: 'flex flex-col gap-2', option: 'min-h-12 px-4 py-3 text-left text-[15px]' },
 }
 
 function ChoiceQuestion({ question, chosen, onChoose }) {
