@@ -16,8 +16,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 1. **Vocabulaire juste** — fait : définitions dans la langue de l'utilisateur, bonne lecture des caractères à
    plusieurs prononciations (听 tīng, 说 shuō, 吗 ma…).
    Reste : mots sans définition française dans CFDICT (environ 4 %, affichés en anglais).
-2. **Tests de vocabulaire plus variés** : écouter un mot → choisir le caractère ; voir un caractère → choisir le
-   pinyin avec les tons ; QCM pour les mots nouveaux, saisie seulement quand le mot est presque connu.
+2. **Tests de vocabulaire plus variés** — fait : le type de question suit la progression du mot (QCM de sens, puis
+   écoute → caractère et pinyin avec les tons, puis saisie quand le mot est presque connu).
 3. **Caractères** : ordre des traits (animation puis tracé au doigt corrigé, bibliothèque Hanzi Writer, MIT ;
    données de traits Make Me a Hanzi, licence Arphic à vérifier pour la vente) ; clés (radicaux) avec leur sens.
 4. **Lire et écouter des phrases** : petits textes gradués par niveau HSK (pinyin et traduction affichables,

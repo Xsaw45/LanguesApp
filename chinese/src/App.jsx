@@ -36,9 +36,11 @@ export default function App() {
   const {
     state,
     currentQuestion,
+    upcoming,
     currentIndex,
     totalQuestions,
     lastCorrect,
+    lastAnswer,
     results,
     startQuiz,
     submitAnswer,
@@ -74,6 +76,8 @@ export default function App() {
         currentIndex={currentIndex}
         totalQuestions={totalQuestions}
         lastCorrect={lastCorrect}
+        lastAnswer={lastAnswer}
+        upcoming={upcoming}
         onSubmit={submitAnswer}
         onNext={nextQuestion}
         onQuit={resetQuiz}

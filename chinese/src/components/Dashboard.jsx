@@ -36,6 +36,7 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
           </Button>
           {!canStart && <p className="text-center text-sm text-fg-3">{t('vocab.nothingHint')}</p>}
           <Button variant="secondary" onClick={onOpenVocabulary}>{t('vocab.list')}</Button>
+          <p className="mt-1 text-center text-sm text-fg-3">{t('vocab.howItWorks')}</p>
         </div>
 
         <SectionLabel className="mt-10">{t('vocab.progress')}</SectionLabel>
