@@ -1,15 +1,17 @@
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Settings } from 'lucide-react'
 import { CLASSIFIERS } from '../data/classifiers.js'
 import { PINYIN_LESSONS } from '../data/pinyinLessons.js'
+import { GRAMMAR_POINTS } from '../data/grammar.js'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
 import { getLessonProgress } from '../utils/pinyinQuiz.js'
-import { isLessonPassed } from '../utils/lessonProgress.js'
-import { GRAMMAR_POINTS } from '../data/grammar.js'
 import { getPointProgress } from '../utils/grammarQuiz.js'
+import { isLessonPassed } from '../utils/lessonProgress.js'
+import { useLang } from '../i18n/useLang.js'
 import { ProgressBar, Screen, Seal, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
-function ModuleCard({ seal, title, chinese, description, known, total, unit, onOpen }) {
+function ModuleCard({ id, seal, chinese, known, total, onOpen }) {
+  const { t } = useLang()
   return (
     <button
       type="button"
@@ -19,77 +21,54 @@ function ModuleCard({ seal, title, chinese, description, known, total, unit, onO
       <div className="flex items-center gap-3">
         <Seal>{seal}</Seal>
         <span className="flex-1 text-lg font-medium text-fg">
-          {title} <span className="chinese-text text-fg-2">{chinese}</span>
+          {t(`module.${id}.title`)} <span className="chinese-text text-fg-2">{chinese}</span>
         </span>
         <ChevronRight {...ICON} className="text-fg-3" />
       </div>
-      <p className="mt-3 text-[15px] leading-snug text-fg-2">{description}</p>
+      <p className="mt-3 text-[15px] leading-snug text-fg-2">{t(`module.${id}.desc`)}</p>
       <ProgressBar value={total ? known / total : 0} className="mt-4" />
-      <p className="mt-2 text-sm tabular-nums text-fg-3">{known} / {total} {unit}</p>
+      <p className="mt-2 text-sm tabular-nums text-fg-3">{known} / {total} {t(`module.${id}.unit`)}</p>
     </button>
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenGrammar, onOpenClassifiers }) {
+export function ModulesHome({ levelStats, progressMap, onOpenPinyin, onOpenVocabulary, onOpenGrammar, onOpenClassifiers, onOpenSettings }) {
+  const { t } = useLang()
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
   const classifiersKnown = CLASSIFIERS.filter(cl => getClassifierProgress(progressMap, cl).known).length
   const lessonsPassed = PINYIN_LESSONS.filter(l => isLessonPassed(getLessonProgress(progressMap, l))).length
   const pointsPassed = GRAMMAR_POINTS.filter(p => isLessonPassed(getPointProgress(progressMap, p))).length
 
+  const settings = (
+    <button
+      type="button"
+      onClick={onOpenSettings}
+      aria-label={t('home.settings')}
+      title={t('home.settings')}
+      className="-mr-2 inline-flex size-9 items-center justify-center rounded-lg text-fg-2 transition-colors duration-150 ease-out hover:bg-raised hover:text-fg"
+    >
+      <Settings {...ICON} />
+    </button>
+  )
+
   return (
     <Screen>
-      <TopBar backHref="/" backLabel="Langues" />
+      <TopBar backHref="/" backLabel={t('nav.languages')} aside={settings} />
 
       <div className="px-5 pb-8">
         <header className="pt-4 pb-8">
           <h1 className="text-[32px] font-medium leading-tight text-fg">
-            Chinois <span className="hanzi-display text-fg-2">中文</span>
+            {t('home.title')} <span className="hanzi-display text-fg-2">中文</span>
           </h1>
-          <p className="mt-1 text-[17px] text-fg-2">Que veux-tu travailler ?</p>
+          <p className="mt-1 text-[17px] text-fg-2">{t('home.subtitle')}</p>
         </header>
 
         <div className="flex flex-col gap-3">
-          <ModuleCard
-            seal="拼"
-            title="Pinyin et tons"
-            chinese="拼音"
-            description="Pour bien commencer : les tons, les sons et la lecture du pinyin, avec l'audio"
-            known={lessonsPassed}
-            total={PINYIN_LESSONS.length}
-            unit="leçons réussies"
-            onOpen={onOpenPinyin}
-          />
-          <ModuleCard
-            seal="词"
-            title="Vocabulaire"
-            chinese="词汇"
-            description="Les mots du HSK, niveau par niveau, en répétition espacée"
-            known={wordsKnown}
-            total={wordsTotal}
-            unit="mots maîtrisés"
-            onOpen={onOpenVocabulary}
-          />
-          <ModuleCard
-            seal="语"
-            title="Grammaire"
-            chinese="语法"
-            description="Les structures de phrase du HSK 1 et 2, avec des exercices"
-            known={pointsPassed}
-            total={GRAMMAR_POINTS.length}
-            unit="points réussis"
-            onOpen={onOpenGrammar}
-          />
-          <ModuleCard
-            seal="量"
-            title="Classificateurs"
-            chinese="量词"
-            description="个, 张, 本, 只… : lesquels vont avec quels noms"
-            known={classifiersKnown}
-            total={CLASSIFIERS.length}
-            unit="maîtrisés"
-            onOpen={onOpenClassifiers}
-          />
+          <ModuleCard id="pinyin" seal="拼" chinese="拼音" known={lessonsPassed} total={PINYIN_LESSONS.length} onOpen={onOpenPinyin} />
+          <ModuleCard id="vocab" seal="词" chinese="词汇" known={wordsKnown} total={wordsTotal} onOpen={onOpenVocabulary} />
+          <ModuleCard id="grammar" seal="语" chinese="语法" known={pointsPassed} total={GRAMMAR_POINTS.length} onOpen={onOpenGrammar} />
+          <ModuleCard id="classifiers" seal="量" chinese="量词" known={classifiersKnown} total={CLASSIFIERS.length} onOpen={onOpenClassifiers} />
         </div>
       </div>
     </Screen>

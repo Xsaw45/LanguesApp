@@ -1,19 +1,20 @@
 import { GRAMMAR_POINTS } from '../data/grammar.js'
 import { lessonProgress, PASS_THRESHOLD, isLessonDue, isLessonPassed } from './lessonProgress.js'
+import { message } from '../i18n/text.js'
 
 export const POINT_QUIZ_SIZE = 8
 export const REVIEW_QUIZ_SIZE = 10
 const REVIEW_POINTS = 5
 
 /*
- * Question :
+ * Question (textes affichés : { fr, en }, voir i18n/text.js) :
  *   type        'order' (remettre les mots dans l'ordre) | 'choice' (QCM)
  *   key         unique dans un test ; pointId : point de grammaire testé
- *   prompt      consigne ; fr : traduction affichée sous la phrase
+ *   prompt      consigne ; tr : traduction affichée sous la phrase
  *   order       tokens [{ id, text }] mélangés ; answers : phrases acceptées (mots collés)
  *   choice      layout 'grid3' (trou à compléter, gap { before, after }) | 'two' (correcte ou pas) | 'list' (traduction) ;
  *               display (displayChinese) ; options [{ key, label, correct }]
- *   solution    { zh, pinyin, fr } affichée après la réponse ; explanation : règle (phrase incorrecte)
+ *   solution    { zh, pinyin, tr } affichée après la réponse ; explanation : règle (phrase incorrecte)
  */
 
 function shuffle(arr) {
@@ -46,11 +47,11 @@ const BUILDERS = {
       type: 'order',
       key: `${point.id}:order:${index}`,
       pointId: point.id,
-      prompt: 'Remets les mots dans l\'ordre',
-      fr: item.fr,
+      prompt: message('gr.q.order'),
+      tr: item.tr,
       tokens: order,
       answers,
-      solution: { zh: item.words.join(''), pinyin: item.pinyin, fr: item.fr },
+      solution: { zh: item.words.join(''), pinyin: item.pinyin, tr: item.tr },
     }
   },
 
@@ -60,11 +61,11 @@ const BUILDERS = {
       layout: 'grid3',
       key: `${point.id}:fill:${index}`,
       pointId: point.id,
-      prompt: 'Complète la phrase',
+      prompt: message('gr.q.fill'),
       gap: { before: item.before, after: item.after },
-      fr: item.fr,
+      tr: item.tr,
       options: choices(item.answer, item.wrong),
-      solution: { zh: item.before + item.answer + item.after, pinyin: item.pinyin, fr: item.fr },
+      solution: { zh: item.before + item.answer + item.after, pinyin: item.pinyin, tr: item.tr },
     }
   },
 
@@ -74,17 +75,17 @@ const BUILDERS = {
       layout: 'two',
       key: `${point.id}:judge:${index}`,
       pointId: point.id,
-      prompt: 'Cette phrase est-elle correcte ?',
+      prompt: message('gr.q.judge'),
       display: item.zh,
       displayChinese: true,
-      fr: item.fr,
+      tr: item.tr,
       options: [
-        { key: 'ok', label: 'Correcte', correct: item.ok },
-        { key: 'ko', label: 'Incorrecte', correct: !item.ok },
+        { key: 'ok', label: message('gr.ok'), correct: item.ok },
+        { key: 'ko', label: message('gr.ko'), correct: !item.ok },
       ],
       solution: item.ok
-        ? { zh: item.zh, pinyin: item.pinyin, fr: item.fr }
-        : { zh: item.fix, pinyin: item.fixPinyin, fr: item.fr },
+        ? { zh: item.zh, pinyin: item.pinyin, tr: item.tr }
+        : { zh: item.fix, pinyin: item.fixPinyin, tr: item.tr },
       explanation: item.ok ? null : item.why,
     }
   },
@@ -95,10 +96,10 @@ const BUILDERS = {
       layout: 'list',
       key: `${point.id}:translate:${index}`,
       pointId: point.id,
-      prompt: 'Comment dit-on en chinois ?',
-      display: item.fr,
+      prompt: message('gr.q.translate'),
+      display: item.tr,
       options: choices(item.answer, item.wrong),
-      solution: { zh: item.answer, pinyin: item.pinyin, fr: item.fr },
+      solution: { zh: item.answer, pinyin: item.pinyin, tr: item.tr },
     }
   },
 }

@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
 import { applySuccess, applyFailure, isActive } from '../utils/spacedrep.js'
+import { useLang } from '../i18n/useLang.js'
 import { Button, Feedback, ProgressBar, Score, Screen, SectionLabel, TopBar } from './ui.jsx'
-import { optionClass, percent } from './uiStyles.js'
+import { optionClass } from './uiStyles.js'
 
 function Phrase({ example, char, revealed }) {
   const i = example.zh.indexOf(char)
@@ -18,6 +19,7 @@ function Phrase({ example, char, revealed }) {
 }
 
 export function Examples({ cl, highlight }) {
+  const { l } = useLang()
   return (
     <ul className="space-y-1">
       {cl.examples.map(ex => (
@@ -25,7 +27,7 @@ export function Examples({ cl, highlight }) {
           <span className="chinese-text text-fg">{ex.zh}</span>
           <span className="ml-2 text-fg-3">{ex.pinyin}</span>
           <span className="mx-1.5 text-fg-3">—</span>
-          <span>{ex.fr}</span>
+          <span>{l(ex.tr)}</span>
         </li>
       ))}
     </ul>
@@ -33,6 +35,7 @@ export function Examples({ cl, highlight }) {
 }
 
 export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, onRestart }) {
+  const { t, l, pct } = useLang()
   const [index, setIndex] = useState(0)
   const [chosen, setChosen] = useState(null)
   const [results, setResults] = useState([])
@@ -44,10 +47,10 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
     return (
       <Screen className="px-5 pb-8">
         <div className="my-auto">
-          <Score value={`${correct} / ${results.length}`} label={`${percent(ratio)} de réussite`} good={ratio >= 0.8} />
+          <Score value={`${correct} / ${results.length}`} label={t('common.success', { pct: pct(ratio) })} good={ratio >= 0.8} />
           {missed.length > 0 && (
             <section className="mb-8">
-              <SectionLabel>À retravailler · {missed.length}</SectionLabel>
+              <SectionLabel>{t('common.toRework', { n: missed.length })}</SectionLabel>
               <div className="flex flex-col gap-3">
                 {missed.map(cl => (
                   <div key={cl.char} className="rounded-2xl border border-line bg-card p-4">
@@ -55,7 +58,7 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
                       <span className="hanzi-display text-2xl text-fg">{cl.char}</span>
                       <span className="text-sm text-fg-2">{cl.pinyin}</span>
                     </p>
-                    <p className="mt-1 mb-3 text-[15px] text-fg">{cl.usage}</p>
+                    <p className="mt-1 mb-3 text-[15px] text-fg">{l(cl.usage)}</p>
                     <Examples cl={cl} />
                   </div>
                 ))}
@@ -64,8 +67,8 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
           )}
         </div>
         <div className="flex flex-col gap-2">
-          <Button onClick={onRestart}>Nouveau test</Button>
-          <Button variant="secondary" onClick={onExit}>Retour aux classificateurs</Button>
+          <Button onClick={onRestart}>{t('common.newTest')}</Button>
+          <Button variant="secondary" onClick={onExit}>{t('cl.back')}</Button>
         </div>
       </Screen>
     )
@@ -93,22 +96,22 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
 
   return (
     <Screen>
-      <TopBar onBack={onExit} backLabel="Quitter" aside={`${index + 1} / ${questions.length}`} />
+      <TopBar onBack={onExit} backLabel={t('nav.quit')} aside={`${index + 1} / ${questions.length}`} />
       <ProgressBar value={(index + (answered ? 1 : 0)) / questions.length} className="mx-5" />
 
       <div className="flex flex-1 flex-col px-5 pb-8">
         {type === 'fill' ? (
           <div className="py-10 text-center">
-            <p className="mb-6 text-[15px] text-fg-2">Quel classificateur ?</p>
+            <p className="mb-6 text-[15px] text-fg-2">{t('cl.askFill')}</p>
             <div className={`${example.zh.length > 5 ? 'text-[32px]' : 'text-5xl'} leading-tight text-fg`}>
               <Phrase example={example} char={cl.char} revealed={answered} />
             </div>
-            <p className="mt-4 text-[17px] text-fg-2">{example.fr}</p>
+            <p className="mt-4 text-[17px] text-fg-2">{l(example.tr)}</p>
             {answered && <p className="mt-1 text-[15px] text-fg-3">{example.pinyin}</p>}
           </div>
         ) : (
           <div className="py-10 text-center">
-            <p className="mb-6 text-[15px] text-fg-2">À quoi sert ce classificateur ?</p>
+            <p className="mb-6 text-[15px] text-fg-2">{t('cl.askUsage')}</p>
             <div className="hanzi-display text-[72px] leading-none text-fg">{cl.char}</div>
             <p className="mt-4 text-[17px] text-fg-2">{cl.pinyin}</p>
           </div>
@@ -130,7 +133,7 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
                   <span className="hanzi-display text-[32px] leading-none">{o.label}</span>
                   {answered && <span className="mt-1 text-sm text-fg-2">{o.sub}</span>}
                 </>
-              ) : o.label}
+              ) : l(o.label)}
             </button>
           ))}
         </div>
@@ -142,13 +145,13 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
                 <span className="hanzi-display text-2xl text-fg">{cl.char}</span>
                 <span className="text-[15px] text-fg-2">{cl.pinyin}</span>
               </p>
-              <p className="mt-1 text-[15px] text-fg">{cl.usage}</p>
-              {cl.note && <p className="mt-1 text-sm text-fg-3">{cl.note}</p>}
+              <p className="mt-1 text-[15px] text-fg">{l(cl.usage)}</p>
+              {cl.note && <p className="mt-1 text-sm text-fg-3">{l(cl.note)}</p>}
               <div className="mt-3">
                 <Examples cl={cl} highlight={example} />
               </div>
             </Feedback>
-            <Button onClick={next}>{index + 1 < questions.length ? 'Suivant' : 'Voir le résultat'}</Button>
+            <Button onClick={next}>{t(index + 1 < questions.length ? 'common.next' : 'common.seeResult')}</Button>
           </div>
         )}
       </div>

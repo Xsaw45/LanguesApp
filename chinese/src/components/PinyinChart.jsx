@@ -3,6 +3,7 @@ import manifest from '../data/audio.json'
 import { ALL_INITIALS, splitInitial, withTone } from '../utils/pinyin.js'
 import { play, syllableSrc } from '../utils/audio.js'
 import { ToneCurve } from './ToneCurve.jsx'
+import { useLang } from '../i18n/useLang.js'
 import { Screen, TopBar } from './ui.jsx'
 
 // Syllabes enregistrées, regroupées par consonne initiale : base → tons disponibles.
@@ -20,6 +21,7 @@ function useSyllablesByInitial() {
 }
 
 export function PinyinChart({ onBack }) {
+  const { t } = useLang()
   const { byInitial, tones } = useSyllablesByInitial()
   const [initial, setInitial] = useState('b')
   const [selected, setSelected] = useState(null)
@@ -29,10 +31,10 @@ export function PinyinChart({ onBack }) {
 
   return (
     <Screen>
-      <TopBar onBack={onBack} title="Tableau des sons" bordered />
+      <TopBar onBack={onBack} title={t('py.chart')} bordered />
 
       <div className="border-b border-line px-5 py-4">
-        <p className="mb-3 text-sm text-fg-2">Consonne de départ</p>
+        <p className="mb-3 text-sm text-fg-2">{t('py.chartInitial')}</p>
         <div className="flex flex-wrap gap-2">
           {ALL_INITIALS.map(i => (
             <button
@@ -41,7 +43,7 @@ export function PinyinChart({ onBack }) {
               onClick={() => { setInitial(i); setSelected(null) }}
               className={`h-9 min-w-10 rounded-lg border px-3 text-[15px] font-medium transition-colors duration-150 ease-out ${i === initial ? selectedClass : idleClass}`}
             >
-              {i || 'aucune'}
+              {i || t('py.chartNone')}
             </button>
           ))}
         </div>
@@ -50,23 +52,23 @@ export function PinyinChart({ onBack }) {
       <div className="sticky top-0 z-10 border-b border-line bg-page px-5 py-4">
         {selected ? (
           <>
-            <p className="mb-3 text-sm text-fg-2">Touche un ton pour l'écouter</p>
+            <p className="mb-3 text-sm text-fg-2">{t('py.chartTapTone')}</p>
             <div className="grid grid-cols-4 gap-2">
-              {[1, 2, 3, 4].map(t => tones.get(selected).includes(t) && (
+              {[1, 2, 3, 4].map(tone => tones.get(selected).includes(tone) && (
                 <button
-                  key={t}
+                  key={tone}
                   type="button"
-                  onClick={() => play(syllableSrc(`${selected}${t}`))}
+                  onClick={() => play(syllableSrc(`${selected}${tone}`))}
                   className="flex h-20 flex-col items-center justify-center gap-1 rounded-xl border border-line bg-card transition-colors duration-150 ease-out hover:bg-raised active:bg-raised-2"
                 >
-                  <span className="text-xl font-medium text-fg">{withTone(selected, t)}</span>
-                  <ToneCurve tone={t} className="h-6 w-8 text-accent" />
+                  <span className="text-xl font-medium text-fg">{withTone(selected, tone)}</span>
+                  <ToneCurve tone={tone} className="h-6 w-8 text-accent" />
                 </button>
               ))}
             </div>
           </>
         ) : (
-          <p className="text-sm text-fg-3">Choisis une syllabe pour l'écouter à chaque ton</p>
+          <p className="text-sm text-fg-3">{t('py.chartPick')}</p>
         )}
       </div>
 

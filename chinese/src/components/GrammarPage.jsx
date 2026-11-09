@@ -5,27 +5,28 @@ import { applyLessonResult, isLessonDue, isLessonPassed, PASS_THRESHOLD } from '
 import { GrammarPoint } from './GrammarPoint.jsx'
 import { GrammarQuiz } from './GrammarQuiz.jsx'
 import { LessonStatus } from './LessonStatus.jsx'
+import { useLang } from '../i18n/useLang.js'
 import { Button, Score, Screen, SectionLabel, TopBar } from './ui.jsx'
-import { fr, percent } from './uiStyles.js'
 
 const LEVELS = [1, 2]
 
 function ReviewResults({ results, onAgain, onExit }) {
+  const { t, l, pct } = useLang()
   const correct = results.filter(r => r.correct).length
   const ratio = correct / results.length
   const missed = GRAMMAR_POINTS.filter(p => results.some(r => r.pointId === p.id && !r.correct))
   return (
     <Screen className="px-5 pb-8">
       <div className="my-auto">
-        <Score value={`${correct} / ${results.length}`} label={`${percent(ratio)} de réussite`} good={ratio >= PASS_THRESHOLD} />
+        <Score value={`${correct} / ${results.length}`} label={t('common.success', { pct: pct(ratio) })} good={ratio >= PASS_THRESHOLD} />
         {missed.length > 0 && (
           <section className="mb-8">
-            <SectionLabel>À retravailler · {missed.length}</SectionLabel>
+            <SectionLabel>{t('common.toRework', { n: missed.length })}</SectionLabel>
             <ul className="divide-y divide-line rounded-2xl border border-line bg-card">
               {missed.map(p => (
                 <li key={p.id} className="px-4 py-3">
-                  <p className="text-base font-medium text-fg">{fr(p.title)}</p>
-                  <p className="mt-0.5 text-sm text-fg-2">{fr(p.pattern)}</p>
+                  <p className="text-base font-medium text-fg">{l(p.title)}</p>
+                  <p className="mt-0.5 text-sm text-fg-2">{l(p.pattern)}</p>
                 </li>
               ))}
             </ul>
@@ -33,14 +34,15 @@ function ReviewResults({ results, onAgain, onExit }) {
         )}
       </div>
       <div className="flex flex-col gap-2">
-        <Button onClick={onAgain}>Nouvelle révision</Button>
-        <Button variant="secondary" onClick={onExit}>Retour aux points</Button>
+        <Button onClick={onAgain}>{t('gr.newReview')}</Button>
+        <Button variant="secondary" onClick={onExit}>{t('gr.backToPoints')}</Button>
       </div>
     </Screen>
   )
 }
 
 export function GrammarPage({ progressMap, applyUpdates, onBack }) {
+  const { t, l, pct } = useLang()
   // null : liste ; nombre : index du point ouvert ; { review, questions, results? } : révision
   const [view, setView] = useState(null)
 
@@ -83,20 +85,15 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
 
   return (
     <Screen>
-      <TopBar onBack={onBack} title={<>Grammaire <span className="chinese-text text-fg-2">语法</span></>} bordered />
+      <TopBar onBack={onBack} title={<>{t('gr.title')} <span className="chinese-text text-fg-2">语法</span></>} bordered />
 
       <div className="flex flex-col px-5 py-6">
-        <p className="text-[15px] leading-relaxed text-fg">
-          Chaque point a une fiche et un test de {POINT_QUIZ_SIZE} questions. Il faut {percent(PASS_THRESHOLD)} pour
-          débloquer le suivant.
-        </p>
+        <p className="text-[15px] leading-relaxed text-fg">{t('gr.intro', { n: POINT_QUIZ_SIZE, pct: pct(PASS_THRESHOLD) })}</p>
 
         <Button variant="secondary" className="mt-5" disabled={passed === 0} onClick={startReview}>
-          Réviser · {passed} {passed > 1 ? 'points vus' : 'point vu'}
+          {passed === 0 ? t('gr.reviewNone') : passed === 1 ? t('gr.reviewOne') : t('gr.review', { n: passed })}
         </Button>
-        <p className="mt-3 text-center text-sm text-fg-3">
-          {due > 0 ? `${due} à revoir` : 'Les points réussis reviennent en révision de plus en plus espacée'}
-        </p>
+        <p className="mt-3 text-center text-sm text-fg-3">{due > 0 ? t('gr.due', { n: due }) : t('gr.dueNone')}</p>
 
         {LEVELS.map(level => (
           <section key={level} className="mt-8">
@@ -115,8 +112,8 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
                     >
                       <span className={`w-5 shrink-0 text-right text-[15px] tabular-nums ${unlocked ? 'text-fg-3' : 'text-fg-3/60'}`}>{i + 1}</span>
                       <span className="min-w-0 flex-1">
-                        <span className={`block text-base font-medium ${unlocked ? 'text-fg' : 'text-fg-3'}`}>{fr(point.title)}</span>
-                        <span className={`mt-0.5 block text-sm ${unlocked ? 'text-fg-2' : 'text-fg-3/70'}`}>{fr(point.pattern)}</span>
+                        <span className={`block text-base font-medium ${unlocked ? 'text-fg' : 'text-fg-3'}`}>{l(point.title)}</span>
+                        <span className={`mt-0.5 block text-sm ${unlocked ? 'text-fg-2' : 'text-fg-3/70'}`}>{l(point.pattern)}</span>
                       </span>
                       <LessonStatus progress={progresses[i]} unlocked={unlocked} />
                     </button>

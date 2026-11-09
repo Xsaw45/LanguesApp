@@ -26,10 +26,15 @@ export function stripParens(s) {
   return s.replace(/\s+/g, ' ').trim()
 }
 
-// Case, curly apostrophes, final punctuation and spacing never make an answer wrong.
+// Case, accents, curly apostrophes, final punctuation and spacing never make an answer wrong.
 function normalizeText(str) {
-  return str.toLowerCase().replace(/[’‘`]/g, "'").replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim()
+  return str.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[’‘`]/g, "'")
+    .replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim()
 }
+
+// A leading article or "to" is optional: "le jour" = "jour", "to love" = "love".
+const LEADING_WORD = /^(?:(?:le|la|les|un|une|des|du|de la|to|a|an|the) |l'|de l')/
+const withoutLeadingWord = s => s.replace(LEADING_WORD, '').trim()
 
 /**
  * Answers accepted for one sense: the sense itself, without its parentheses (optional precisions), and each of
@@ -39,16 +44,18 @@ function normalizeText(str) {
 function acceptedAnswers(sense) {
   const bare = stripParens(sense) || sense.replace(/[()]/g, '')
   const forms = [sense, bare, ...bare.split(',')].map(normalizeText).filter(Boolean)
-  return forms.flatMap(f => [f.replaceAll('-', ' '), f.replaceAll('-', '')])
+  return forms.flatMap(f => [f, withoutLeadingWord(f)]).flatMap(f => [f.replaceAll('-', ' '), f.replaceAll('-', '')])
 }
 
-export function validateAnswer(input, word, questionType) {
+/** senses : meanings shown to the learner, in their language (char-to-def). */
+export function validateAnswer(input, word, questionType, senses) {
   const trimmed = input.trim()
   if (!trimmed) return false
 
   if (questionType === 'char-to-def') {
-    const accepted = new Set(word.definition.split(/[;|]/).flatMap(acceptedAnswers))
-    return accepted.has(normalizeText(trimmed).replaceAll('-', ' '))
+    const accepted = new Set(senses.flatMap(acceptedAnswers))
+    const answer = normalizeText(trimmed).replaceAll('-', ' ')
+    return accepted.has(answer) || accepted.has(withoutLeadingWord(answer))
   }
 
   if (questionType === 'def-to-char') {

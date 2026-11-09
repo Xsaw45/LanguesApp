@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
 import { Volume2 } from 'lucide-react'
 import { play, speak, chineseVoice } from '../utils/audio.js'
+import { useLang } from '../i18n/useLang.js'
 import { ICON_SM } from './uiStyles.js'
 
 /**
  * Bouton écouter : joue l'enregistrement src ; sans enregistrement, lit text avec la voix chinoise du téléphone s'il en
  * a une ; sinon rien n'est affiché.
  */
-export function SpeakButton({ src, text, label }) {
+export function SpeakButton({ src, text }) {
+  const { t } = useLang()
   const [hasVoice, setHasVoice] = useState(() => !src && !!chineseVoice())
 
   useEffect(() => {
@@ -27,8 +29,8 @@ export function SpeakButton({ src, text, label }) {
         if (src) play(src)
         else speak(text)
       }}
-      aria-label={label || 'Écouter'}
-      title={src ? 'Écouter' : 'Écouter (voix du téléphone)'}
+      aria-label={t('audio.listen')}
+      title={t(src ? 'audio.listen' : 'audio.listenDevice')}
       className="inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-line text-fg-2 transition-colors duration-150 ease-out hover:bg-raised hover:text-fg active:bg-raised-2"
     >
       <Volume2 {...ICON_SM} />

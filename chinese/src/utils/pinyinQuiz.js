@@ -2,15 +2,16 @@ import manifest from '../data/audio.json'
 import {
   PINYIN_LESSONS, TONES, TONE_BASES, PLACEMENT_BASES, INITIAL_GROUPS, FINAL_PAIRS, RULE_QUESTIONS, SANDHI_ITEMS,
 } from '../data/pinyinLessons.js'
-import { getWordsForLevel } from '../data/index.js'
+import { getWordsForLevel, wordSenses } from '../data/index.js'
 import { syllableSrc, recordedWordSrc } from './audio.js'
 import { parseSyllable, splitPinyin, splitInitial, withTone, markIndex, vowelIndexes } from './pinyin.js'
 import { lessonProgress, PASS_THRESHOLD } from './lessonProgress.js'
+import { localize, message, perLang, translate } from '../i18n/text.js'
 
 export const LESSON_QUIZ_SIZE = 10
 
 /*
- * Question :
+ * Question (textes affichés : { fr, en }, voir i18n/text.js) :
  *   prompt        consigne
  *   display       texte affiché en grand (displayChinese : en caractères chinois)
  *   audio         son joué à l'affichage (bouton « réécouter »)
@@ -66,17 +67,19 @@ function syllableOptions(bases, tone, target) {
 }
 
 const TONE_NAMES = Object.fromEntries(TONES.map(t => [t.tone, t.name]))
+const toneAnswer = (base, tone) =>
+  perLang(lang => translate(lang, 'py.a.tone', { syllable: withTone(base, tone), tone: localize(TONE_NAMES[tone], lang) }))
 
 const GENERATORS = {
   'listen-tone'() {
     const [base, tone] = pickToneSyllable()
     return {
       key: `${base}${tone}`,
-      prompt: 'Quel ton entends-tu ?',
+      prompt: message('py.q.listenTone'),
       audio: syllableSrc(`${base}${tone}`),
       layout: 'tones',
       options: toneOptions(base, tone),
-      answer: `${withTone(base, tone)} : ${TONE_NAMES[tone]}`,
+      answer: toneAnswer(base, tone),
     }
   },
 
@@ -84,12 +87,12 @@ const GENERATORS = {
     const [base, tone] = pickToneSyllable()
     return {
       key: `${base}${tone}`,
-      prompt: 'Quel ton indique cet accent ?',
+      prompt: message('py.q.readTone'),
       display: withTone(base, tone),
       revealAudio: syllableSrc(`${base}${tone}`),
       layout: 'tones',
       options: toneOptions(base, tone),
-      answer: `${withTone(base, tone)} : ${TONE_NAMES[tone]}`,
+      answer: toneAnswer(base, tone),
     }
   },
 
@@ -98,12 +101,12 @@ const GENERATORS = {
     const tone = pick(tonesOf(base))
     const right = markIndex(base)
     const labels = new Map(vowelIndexes(base).map(i => [withTone(base, tone, i), i]))
-    const explanation = /[ae]/.test(base)
-      ? 'S\'il y a un a ou un e, c\'est lui qui porte l\'accent.'
-      : base.includes('ou') ? 'Dans « ou », l\'accent va sur le o.' : 'Sinon, l\'accent va sur la dernière voyelle.'
+    const explanation = message(/[ae]/.test(base)
+      ? 'py.e.placementAE'
+      : base.includes('ou') ? 'py.e.placementOU' : 'py.e.placementLast')
     return {
       key: `${base}${tone}`,
-      prompt: 'Où se place l\'accent ?',
+      prompt: message('py.q.placement'),
       display: `${base.replaceAll('v', 'ü')}${tone}`,
       revealAudio: syllableSrc(`${base}${tone}`),
       layout: 'grid',
@@ -122,7 +125,7 @@ const GENERATORS = {
     const target = pick(pair)
     return {
       key: `${target}${tone}`,
-      prompt: 'Quelle syllabe entends-tu ?',
+      prompt: message('py.q.listenSyllable'),
       audio: syllableSrc(`${target}${tone}`),
       layout: 'grid',
       options: syllableOptions(pair, tone, target),
@@ -133,11 +136,11 @@ const GENERATORS = {
   rule() {
     const item = pick(RULE_QUESTIONS)
     return {
-      key: item.q,
+      key: item.q.fr,
       prompt: item.q,
       revealAudio: syllableSrc(item.syl),
       layout: 'list',
-      options: shuffle(item.options.map((label, i) => ({ key: label, label, correct: i === 0 }))),
+      options: shuffle(item.options.map((label, i) => ({ key: label.fr, label, correct: i === 0 }))),
       answer: item.options[0],
     }
   },
@@ -146,13 +149,13 @@ const GENERATORS = {
     const item = pick(SANDHI_ITEMS)
     return {
       key: item.hanzi,
-      prompt: `Comment se dit « ${item.fr} » ?`,
+      prompt: perLang(lang => translate(lang, 'py.q.sandhi', { meaning: localize(item.tr, lang) })),
       display: item.hanzi,
       displayChinese: true,
       revealAudio: recordedWordSrc(item.hanzi),
       layout: 'list',
       options: shuffle([item.said, ...item.options].map(label => ({ key: label, label, correct: label === item.said }))),
-      answer: `${item.hanzi} se dit ${item.said}`,
+      answer: message('py.a.sandhi', { hanzi: item.hanzi, said: item.said }),
       explanation: item.explanation,
     }
   },
@@ -169,14 +172,13 @@ const GENERATORS = {
       }
     })
     const wrong = shuffle([...variants]).slice(0, 3)
-    const meaning = word.definition.split(';')[0].trim()
     return {
       key: word.id,
-      prompt: 'Quel est le pinyin de ce mot ?',
+      prompt: message('py.q.listenWord'),
       audio: recordedWordSrc(word.simplified),
       layout: 'list',
       options: shuffle([correct, ...wrong].map(label => ({ key: label, label, correct: label === correct }))),
-      answer: `${word.simplified} ${correct} : ${meaning}`,
+      answer: perLang(lang => translate(lang, 'py.a.word', { hanzi: word.simplified, pinyin: correct, meaning: wordSenses(word, lang)[0] })),
     }
   },
 }
@@ -193,7 +195,7 @@ function listenInitial(groups) {
     const target = pick(bases)
     return {
       key: `${target}${tone}`,
-      prompt: 'Quelle syllabe entends-tu ?',
+      prompt: message('py.q.listenSyllable'),
       audio: syllableSrc(`${target}${tone}`),
       layout: 'grid',
       options: syllableOptions(bases, tone, target),

@@ -20,3 +20,8 @@ export function getWordById(id) {
   const level = parseInt(id.split('_')[0].replace('hsk', ''))
   return (HSK_DATA[level] || []).find(w => w.id === id) || null
 }
+
+/** Sens d'un mot dans la langue de l'utilisateur ; en anglais quand le dictionnaire n'en a pas dans cette langue. */
+export function wordSenses(word, lang) {
+  return word.senses[lang] || word.senses.en
+}

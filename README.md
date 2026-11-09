@@ -43,10 +43,18 @@ cd server && npm install && npm test
 Italien : son service worker sert tout depuis le cache. Après une modification de `italian/` ou `shared/`,
 incrémenter `CACHE_NAME` dans `italian/sw.js` (et ajouter les nouveaux fichiers à `ASSETS_TO_CACHE`).
 
-Chinois, données : `node scripts/build-data.js` (vocabulaire HSK) puis `node scripts/fetch-audio.js` (dans
-`chinese/`) : copie dans `public/audio/` les enregistrements de [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn)
-(syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ; licence CC BY-SA) et écrit `src/data/audio.json`. Les mots
-sans enregistrement sont lus par la voix chinoise du téléphone, s'il en a une.
+Chinois, données (dans `chinese/`) :
+- `node scripts/build-data.js` : vocabulaire HSK (drkameleon/complete-hsk-vocabulary), lecture enseignée par le HSK
+  (krmanik/HSK-3.0), définitions anglaises (CC-CEDICT) et françaises ([CFDICT](https://chine.in/mandarin/dictionnaire/CFDICT/),
+  CC BY-SA 3.0 : citer la source dans l'app et sur les pages de présentation).
+- puis `node scripts/fetch-audio.js` : copie dans `public/audio/` les enregistrements de
+  [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn) (syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ;
+  licence CC BY-SA) et écrit `src/data/audio.json`. Les mots sans enregistrement sont lus par la voix chinoise du
+  téléphone, s'il en a une.
+
+Chinois, langues : l'utilisateur choisit français ou anglais dans les paramètres (réglage synchronisé). Textes
+d'interface dans `src/i18n/strings.js` ; contenus (leçons, grammaire, classificateurs) en `{ fr, en }` dans
+`src/data`. Feuille de route et prérequis pour la vente : `chinese/ROADMAP.md`.
 
 ## Production
 

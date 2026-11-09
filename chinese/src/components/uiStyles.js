@@ -9,8 +9,3 @@ export function optionClass({ answered, correct, chosen }) {
   if (chosen) return 'border-bad/40 bg-bad/10 text-fg'
   return 'border-line bg-card text-fg-3'
 }
-
-export const percent = ratio => `${Math.round(ratio * 100)}\u00a0%`
-
-/** Espaces insécables du français : « mot », mot :, mot ? — pour que la ponctuation ne passe pas seule à la ligne. */
-export const fr = text => text.replace(/« /g, '«\u00a0').replace(/ ([»:?!;])/g, '\u00a0$1')

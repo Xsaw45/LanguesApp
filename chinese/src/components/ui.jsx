@@ -1,4 +1,5 @@
 import { ArrowLeft, Check, X } from 'lucide-react'
+import { useLang } from '../i18n/useLang.js'
 import { ICON } from './uiStyles.js'
 
 // Avec la barre d'état iOS translucide (index.html), le contenu passe sous l'encoche : marges de zone sûre.
@@ -13,10 +14,12 @@ export function Screen({ children, className = '' }) {
 const backClass = 'inline-flex h-9 items-center gap-2 rounded-lg px-2 -ml-2 text-[15px] text-fg-2 transition-colors duration-150 ease-out hover:bg-raised hover:text-fg'
 
 /** Barre du haut : retour à gauche, titre au centre, information à droite (compteur). */
-export function TopBar({ onBack, backHref, backLabel = 'Retour', title, aside, bordered = false }) {
+export function TopBar({ onBack, backHref, backLabel, title, aside, bordered = false }) {
+  const { t } = useLang()
+  const label = backLabel ?? t('nav.back')
   const back = backHref
-    ? <a href={backHref} className={backClass}><ArrowLeft {...ICON} />{backLabel}</a>
-    : <button type="button" onClick={onBack} className={backClass}><ArrowLeft {...ICON} />{backLabel}</button>
+    ? <a href={backHref} className={backClass}><ArrowLeft {...ICON} />{label}</a>
+    : <button type="button" onClick={onBack} className={backClass}><ArrowLeft {...ICON} />{label}</button>
   return (
     <header className={`grid h-14 shrink-0 grid-cols-[1fr_auto_1fr] items-center gap-2 px-5 ${bordered ? 'border-b border-line' : ''}`}>
       <div className="justify-self-start">{back}</div>
@@ -67,12 +70,13 @@ export function Seal({ children, className = '' }) {
 
 /** Résultat d'une réponse : « Correct » / « Incorrect », puis le détail. */
 export function Feedback({ correct, aside, children }) {
+  const { t } = useLang()
   return (
     <section className="rounded-2xl border border-line bg-card p-4">
       <div className="mb-2 flex items-center justify-between gap-3">
         <p className={`inline-flex items-center gap-2 text-base font-medium ${correct ? 'text-good' : 'text-bad'}`}>
           {correct ? <Check {...ICON} /> : <X {...ICON} />}
-          {correct ? 'Correct' : 'Incorrect'}
+          {t(correct ? 'common.correct' : 'common.incorrect')}
         </p>
         {aside}
       </div>

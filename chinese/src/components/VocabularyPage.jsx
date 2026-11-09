@@ -1,29 +1,31 @@
 import { useState, useMemo } from 'react'
 import { ChevronDown } from 'lucide-react'
-import { ALL_LEVELS, getWordsForLevel } from '../data/index.js'
+import { ALL_LEVELS, getWordsForLevel, wordSenses } from '../data/index.js'
 import { SpeakButton } from './SpeakButton.jsx'
 import { wordSrc } from '../utils/audio.js'
+import { useLang } from '../i18n/useLang.js'
 import { Screen, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
 export function VocabularyPage({ onBack }) {
+  const { lang, t } = useLang()
   const [selectedLevel, setSelectedLevel] = useState(ALL_LEVELS[0])
   const words = useMemo(() => getWordsForLevel(selectedLevel), [selectedLevel])
 
   return (
     <Screen>
-      <TopBar onBack={onBack} title="Liste des mots" bordered />
+      <TopBar onBack={onBack} title={t('vocab.list')} bordered />
 
       <div className="border-b border-line px-5 py-4">
         <div className="relative">
           <select
             value={selectedLevel}
             onChange={e => setSelectedLevel(Number(e.target.value))}
-            aria-label="Niveau"
+            aria-label={t('vocab.level')}
             className="h-12 w-full appearance-none rounded-[10px] border border-line bg-card px-4 text-base text-fg outline-none transition-colors duration-150 ease-out hover:bg-raised"
           >
             {ALL_LEVELS.map(l => (
-              <option key={l} value={l}>HSK {l} · {getWordsForLevel(l).length} mots</option>
+              <option key={l} value={l}>{t('vocab.levelOption', { level: l, n: getWordsForLevel(l).length })}</option>
             ))}
           </select>
           <ChevronDown {...ICON} className="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 text-fg-3" />
@@ -32,7 +34,7 @@ export function VocabularyPage({ onBack }) {
 
       <ul className="flex-1 divide-y divide-line px-5 pb-8">
         {words.map(word => {
-          const senses = word.definition.split(/[;|]/).map(s => s.trim()).filter(Boolean)
+          const senses = wordSenses(word, lang)
           return (
             <li key={word.id} className="flex items-start gap-4 py-4">
               <div className="w-16 shrink-0">

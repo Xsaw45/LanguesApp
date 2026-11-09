@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
+import { useLang } from '../i18n/useLang.js'
 
 export function AnswerInput({ onSubmit, disabled, placeholder }) {
+  const { t } = useLang()
   const [value, setValue] = useState('')
   const inputRef = useRef(null)
 
@@ -41,7 +43,7 @@ export function AnswerInput({ onSubmit, disabled, placeholder }) {
         disabled={!ready}
         className="h-12 shrink-0 rounded-[10px] bg-seal px-5 text-base font-medium text-white transition-[background-color,color,transform] duration-150 ease-out hover:bg-seal-hover active:scale-[0.98] disabled:bg-raised disabled:text-fg-3 disabled:active:scale-100"
       >
-        Valider
+        {t('common.validate')}
       </button>
     </div>
   )
