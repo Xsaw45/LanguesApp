@@ -7,9 +7,10 @@ import { checkAnswer } from '../utils/normalize.js';
 import {
   getSettings,
   saveTranslationResult, getTranslationState,
-  getTranslationPhase, isTranslationOnCooldown, isTranslationDue,
+  isTranslationOnCooldown, isTranslationDue, translationDaysUntilReview,
   isTranslationMastered, getVocabState
 } from '../state.js';
+import { buildPool } from '../srs.js';
 import { t } from '../i18n.js';
 
 const QUIZ_SIZE = 10;
@@ -37,47 +38,20 @@ function isPhraseUnlocked(phrase, vocabState) {
   return phrase.vocabTags.every(id => (vocabState[id]?.phase ?? 0) >= 2);
 }
 
-function cooldownDaysLeft(phraseId) {
-  const entry = getTranslationState()[phraseId];
-  if (!entry || !entry.cooldownUntil) return 0;
-  const diff = new Date(entry.cooldownUntil) - new Date();
-  if (diff <= 0) return 0;
-  return Math.ceil(diff / (1000 * 60 * 60 * 24));
-}
-
+/** Due reviews, phrases being learned, then new unlocked phrases (srs.js). */
 function buildQuizPool(phrases, vocabState) {
-  const due = [];
-  const fresh = [];
-
-  for (const phrase of phrases) {
-    if (!isPhraseUnlocked(phrase, vocabState)) continue;
-    const phase = getTranslationPhase(phrase.id);
-    if (phase >= 3) continue;
-    if (isTranslationOnCooldown(phrase.id)) continue;
-
-    if (isTranslationDue(phrase.id)) {
-      due.push(phrase);
-    } else {
-      fresh.push(phrase);
-    }
-  }
-
-  return [
-    ...due.sort(() => Math.random() - 0.5),
-    ...fresh.sort(() => Math.random() - 0.5)
-  ].slice(0, QUIZ_SIZE);
+  const translationState = getTranslationState();
+  const unlocked = phrases.filter(phrase => isPhraseUnlocked(phrase, vocabState));
+  return buildPool(unlocked, phrase => translationState[phrase.id], QUIZ_SIZE);
 }
 
 function getStatusInfo(phraseId) {
-  const phase = getTranslationPhase(phraseId);
-  const onCooldown = isTranslationOnCooldown(phraseId);
-  const due = isTranslationDue(phraseId);
   const entry = getTranslationState()[phraseId];
   const seen = entry && entry.attempts > 0;
-
-  if (phase >= 3) return { text: t('transl.status.archived'), color: 'var(--color-correct)' };
-  if (onCooldown) return { text: t('transl.status.cooldown', { n: cooldownDaysLeft(phraseId) }), color: 'var(--color-accent)' };
-  if (due) return { text: t('transl.status.due'), color: 'var(--color-primary)' };
+  if (isTranslationOnCooldown(phraseId)) {
+    return { text: t('transl.status.cooldown', { n: translationDaysUntilReview(phraseId) }), color: 'var(--color-correct)' };
+  }
+  if (isTranslationDue(phraseId)) return { text: t('transl.status.due'), color: 'var(--color-primary)' };
   if (seen) return { text: t('transl.status.learning'), color: 'var(--color-accent)' };
   return { text: t('transl.status.new'), color: 'var(--color-text-muted)' };
 }
@@ -131,17 +105,13 @@ function renderPhraseList(phrases, vocabState, container) {
   const unlocked = phrases.filter(p => isPhraseUnlocked(p, vocabState));
   const locked = phrases.filter(p => !isPhraseUnlocked(p, vocabState));
 
-  // Sort: due → new/learning → cooldown → archived
+  // Sort: due → new → learning → waiting for their next review
+  const translationState = getTranslationState();
   unlocked.sort((a, b) => {
     function key(id) {
       if (isTranslationDue(id)) return 0;
-      const phase = getTranslationPhase(id);
-      const entry = getTranslationState()[id];
-      if (phase === 0 && !(entry?.attempts > 0)) return 1;
-      if (phase === 0) return 2;
       if (isTranslationOnCooldown(id)) return 3;
-      if (phase >= 3) return 4;
-      return 2;
+      return translationState[id]?.attempts > 0 ? 2 : 1;
     }
     return key(a.id) - key(b.id);
   });

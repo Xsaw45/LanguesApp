@@ -7,8 +7,9 @@ import { checkAnswer } from '../utils/normalize.js';
 import {
   getSettings, saveConjugationResult, getConjugationState,
   isConjugationMastered, isConjugationOnCooldown, isConjugationDue,
-  getConjugationPhase, getUnlockedConjugationLevels
+  conjugationDaysUntilReview, getUnlockedConjugationLevels
 } from '../state.js';
+import { buildPool } from '../srs.js';
 import { t, getLanguage } from '../i18n.js';
 
 const QUIZ_SIZE = 20;
@@ -59,14 +60,6 @@ function getTenseName(tense) {
 /** cardId from components */
 function cardId(verbId, tenseId, person) {
   return `${verbId}_${tenseId}_${person}`;
-}
-
-/** Days remaining on cooldown */
-function cooldownDaysLeft(cid) {
-  const entry = getConjugationState()[cid];
-  if (!entry || !entry.cooldownUntil) return 0;
-  const diff = new Date(entry.cooldownUntil) - new Date();
-  return diff <= 0 ? 0 : Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
 // ---------------------------------------------------------------------------
@@ -228,7 +221,6 @@ function renderVerbList(container, conjData, unlockedLevels, selectedLevelId) {
         for (const tense of level.tenses) {
           const cid = cardId(verb.id, tense.id, person);
           const form = verb.forms?.[tense.id]?.[person] || '—';
-          const phase = getConjugationPhase(cid);
           const onCooldown = isConjugationOnCooldown(cid);
           const due = isConjugationDue(cid);
           const entry = conjState[cid];
@@ -236,13 +228,9 @@ function renderVerbList(container, conjData, unlockedLevels, selectedLevelId) {
 
           let statusClass = 'conj-cell-new';
           let statusBadge = t('conj.status.new');
-          if (phase >= 3) {
-            statusClass = 'conj-cell-archived';
-            statusBadge = t('conj.status.archived');
-          } else if (onCooldown) {
+          if (onCooldown) {
             statusClass = 'conj-cell-cooldown';
-            const days = cooldownDaysLeft(cid);
-            statusBadge = t('conj.status.cooldown', { n: days });
+            statusBadge = t('conj.status.cooldown', { n: conjugationDaysUntilReview(cid) });
           } else if (due) {
             statusClass = 'conj-cell-due';
             statusBadge = t('conj.status.due');
@@ -350,28 +338,14 @@ function createStat(value, label) {
 // Quiz pool builder
 // ---------------------------------------------------------------------------
 
+/** Due reviews, cards being learned, then new cards (srs.js). */
 function buildQuizPool(conjData, unlockedLevels) {
-  const due = [];
-  const fresh = [];
-
-  for (const level of conjData.levels) {
-    if (!unlockedLevels.includes(level.id)) continue;
-    for (const card of getLevelCards(level)) {
-      const cid = cardId(card.verbId, card.tenseId, card.person);
-      if (getConjugationPhase(cid) >= 3) continue;     // archived
-      if (isConjugationOnCooldown(cid)) continue;      // on cooldown
-
-      if (isConjugationDue(cid)) {
-        due.push({ ...card, cardId: cid });
-      } else {
-        fresh.push({ ...card, cardId: cid });
-      }
-    }
-  }
-
-  const shuffleDue   = due.sort(() => Math.random() - 0.5);
-  const shuffleFresh = fresh.sort(() => Math.random() - 0.5);
-  return [...shuffleDue, ...shuffleFresh].slice(0, QUIZ_SIZE);
+  const cards = conjData.levels
+    .filter(level => unlockedLevels.includes(level.id))
+    .flatMap(level => getLevelCards(level))
+    .map(card => ({ ...card, cardId: cardId(card.verbId, card.tenseId, card.person) }));
+  const conjState = getConjugationState();
+  return buildPool(cards, card => conjState[card.cardId], QUIZ_SIZE);
 }
 
 // ---------------------------------------------------------------------------

@@ -9,7 +9,7 @@ import { renderStatsView } from './views/stats.js';
 import { renderVocabView } from './views/vocab.js';
 import { renderConjugationView } from './views/conjugation.js';
 import { renderTranslationView } from './views/translation.js';
-import { getSettings, updateSettings, getSchedaProgress, loadState, saveState, sync } from './state.js';
+import { getSettings, updateSettings, getSchedaProgress, loadState, saveState, sync, migrateProgress } from './state.js';
 import { t, getLanguage, setLanguage, localName } from './i18n.js';
 import { el, clearElement } from './utils/dom.js';
 
@@ -70,6 +70,8 @@ function renderCurrentView() {
 async function init() {
   // Pull this user's progress from the server first (bounded wait: offline, local data is used)
   await sync.start();
+  // Progress saved before the FSRS scheduler: converted once
+  migrateProgress();
 
   // Apply saved settings
   const settings = getSettings();

@@ -2,6 +2,9 @@
  * Progress and state management using localStorage, synchronised per Tailscale user (shared/sync.js).
  */
 import { createSync } from '../../shared/sync.js';
+import {
+  applyResult, daysUntilReview, isDue, isMastered, isOnCooldown, migrateEntry, normalizeEntry,
+} from './srs.js';
 
 const STORAGE_KEY = 'italienapp-progress';
 
@@ -60,7 +63,7 @@ function applyRemote(records) {
       const id = key.slice(slash + 1);
       state[field] = state[field] || {};
       if (value === null) delete state[field][id];
-      else state[field][id] = value;
+      else state[field][id] = migrateEntry(value); // from a device still on the pre-FSRS version
     } else if (value === null) {
       if (field in defaults) state[field] = defaults[field];
       else delete state[field];
@@ -215,146 +218,51 @@ export function getLastActive() {
 }
 
 // -------------------------------------------------------------------------
-// Spaced-repetition constants
+// Spaced repetition (vocabulary, conjugation, translation): see srs.js (FSRS).
+// Entries live in state.vocab / state.conjugation / state.translation, keyed by
+// word id, conjugation card id ("parlare_presente_io") or phrase id ("ph001").
 // -------------------------------------------------------------------------
-// Phase transitions:
-//   0 → 1 : cycleAttempts ≥ 3 AND cycleCorrect/cycleAttempts ≥ 80%  → cooldown 2 days
-//   1 → 2 : cycleAttempts ≥ 2 AND cycleCorrect/cycleAttempts ≥ 80%  → cooldown 7 days
-//   2 → 3 : cycleAttempts ≥ 1 AND isCorrect                          → archived (no more quiz)
-const PHASE_COOLDOWN_DAYS = [0, 2, 7];
-const PHASE_MIN_ATTEMPTS   = [3, 2, 1];
 const UNLOCK_THRESHOLD = 0.75; // 75% of level mastered to unlock next level
+const SRS_VERSION = 2; // 2: FSRS (entries carry a card), no more archived phase
 
 /**
- * Get a normalized vocab entry with all phase fields defaulted.
- * Handles backward compat with old entries that only have attempts/correct.
+ * One-time conversion of pre-FSRS entries (phases with 2- and 7-day pauses, archived phase 3), called at startup
+ * after the first sync. Saved (and synchronised) once; srsVersion marks it done.
  */
-function normalizeVocabEntry(raw) {
-  const entry = raw || { attempts: 0, correct: 0 };
-  // Backward compat: infer phase 1 from old mastery if phase missing
-  let phase = entry.phase ?? (
-    (entry.attempts >= 3 && entry.attempts > 0 && (entry.correct / entry.attempts) >= 0.8)
-      ? 1
-      : 0
-  );
-  return {
-    attempts: entry.attempts || 0,
-    correct: entry.correct || 0,
-    lastAttempt: entry.lastAttempt || null,
-    phase,
-    cooldownUntil: entry.cooldownUntil || null,
-    cycleAttempts: entry.cycleAttempts || 0,
-    cycleCorrect: entry.cycleCorrect || 0
-  };
-}
-
-/**
- * Save the result of a vocabulary word attempt.
- * Handles phase transitions and cooldown scheduling.
- * @param {string} wordId
- * @param {boolean} isCorrect
- */
-export function saveVocabResult(wordId, isCorrect) {
+export function migrateProgress() {
   const state = loadState();
-  if (!state.vocab) state.vocab = {};
-
-  const entry = normalizeVocabEntry(state.vocab[wordId]);
-
-  // If cooldown just expired, reset the cycle counters
-  if (entry.cooldownUntil && new Date(entry.cooldownUntil) <= new Date()) {
-    entry.cooldownUntil = null;
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
+  if (state.srsVersion === SRS_VERSION) return;
+  for (const collection of ['vocab', 'conjugation', 'translation']) {
+    for (const [id, entry] of Object.entries(state[collection] || {})) state[collection][id] = migrateEntry(entry);
   }
-
-  // Don't update archived words
-  if (entry.phase >= 3) {
-    state.vocab[wordId] = entry;
-    saveState(state);
-    return;
-  }
-
-  // Record this attempt in current cycle
-  entry.attempts += 1;
-  entry.correct += isCorrect ? 1 : 0;
-  entry.lastAttempt = new Date().toISOString();
-  entry.cycleAttempts += 1;
-  entry.cycleCorrect += isCorrect ? 1 : 0;
-
-  // Check if current cycle meets the mastery threshold for current phase
-  const minAttempts = PHASE_MIN_ATTEMPTS[entry.phase] || 1;
-  const accuracy = entry.cycleAttempts > 0 ? entry.cycleCorrect / entry.cycleAttempts : 0;
-  const meetsThreshold = entry.cycleAttempts >= minAttempts && accuracy >= 0.8;
-
-  if (meetsThreshold) {
-    entry.phase += 1;
-    if (entry.phase < 3) {
-      // Set cooldown
-      const daysAhead = PHASE_COOLDOWN_DAYS[entry.phase - 1] || 2;
-      const until = new Date();
-      until.setDate(until.getDate() + daysAhead);
-      entry.cooldownUntil = until.toISOString();
-    }
-    // Reset cycle for next round
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
-  }
-
-  state.vocab[wordId] = entry;
+  state.srsVersion = SRS_VERSION;
   saveState(state);
 }
 
-/**
- * Get the full vocabulary progress state.
- * @returns {Object} Map of wordId → normalized entry
- */
+const entryOf = (collection, id) => loadState()[collection]?.[id];
+
+function saveResult(collection, id, isCorrect) {
+  const state = loadState();
+  state[collection] = state[collection] || {};
+  state[collection][id] = applyResult(state[collection][id], isCorrect);
+  saveState(state);
+}
+
+// --- Vocabulary -----------------------------------------------------------
+
+export function saveVocabResult(wordId, isCorrect) {
+  saveResult('vocab', wordId, isCorrect);
+}
+
+/** Map of wordId → raw entry. */
 export function getVocabState() {
   return loadState().vocab || {};
 }
 
-/**
- * Get the current phase of a word (0–3).
- * @param {string} wordId
- * @returns {number}
- */
-export function getWordPhase(wordId) {
-  const state = loadState();
-  return normalizeVocabEntry(state.vocab?.[wordId]).phase;
-}
-
-/**
- * Check if a word's cooldown is still active (not yet expired).
- * @param {string} wordId
- * @returns {boolean}
- */
-export function isWordOnCooldown(wordId) {
-  const state = loadState();
-  const entry = normalizeVocabEntry(state.vocab?.[wordId]);
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) > new Date();
-}
-
-/**
- * Check if a word's cooldown has expired and it needs re-learning.
- * (phase > 0, phase < 3, cooldown expired)
- * @param {string} wordId
- * @returns {boolean}
- */
-export function isWordDue(wordId) {
-  const entry = normalizeVocabEntry(getVocabState()[wordId]);
-  if (entry.phase === 0 || entry.phase >= 3) return false;
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) <= new Date();
-}
-
-/**
- * Check if a word is mastered (phase >= 1).
- * @param {string} wordId
- * @returns {boolean}
- */
-export function isWordMastered(wordId) {
-  return getWordPhase(wordId) >= 1;
-}
+export const isWordOnCooldown = wordId => isOnCooldown(entryOf('vocab', wordId));
+export const isWordDue = wordId => isDue(entryOf('vocab', wordId));
+export const isWordMastered = wordId => isMastered(entryOf('vocab', wordId));
+export const wordDaysUntilReview = wordId => daysUntilReview(entryOf('vocab', wordId));
 
 /**
  * Get the unlocked level IDs based on mastery progress.
@@ -364,32 +272,16 @@ export function isWordMastered(wordId) {
 export function getUnlockedLevels(vocabData) {
   const levels = vocabData.levels || [];
   const unlocked = [];
-
   for (let i = 0; i < levels.length; i++) {
-    const level = levels[i];
-    const prevLevel = levels[i - 1];
-
-    if (i === 0) {
-      unlocked.push(level.id);
-      continue;
-    }
-
-    // Check if previous level has 75%+ words mastered
-    const prevWords = prevLevel.categories.flatMap(cat => cat.words);
+    if (i === 0) { unlocked.push(levels[i].id); continue; }
+    const prevWords = levels[i - 1].categories.flatMap(cat => cat.words);
     const masteredCount = prevWords.filter(w => isWordMastered(w.id)).length;
-    if (prevWords.length > 0 && masteredCount / prevWords.length >= UNLOCK_THRESHOLD) {
-      unlocked.push(level.id);
-    }
+    if (prevWords.length > 0 && masteredCount / prevWords.length >= UNLOCK_THRESHOLD) unlocked.push(levels[i].id);
   }
-
   return unlocked;
 }
 
-// -------------------------------------------------------------------------
-// Conjugation spaced-repetition
-// (reuses PHASE_COOLDOWN_DAYS, PHASE_MIN_ATTEMPTS, UNLOCK_THRESHOLD)
-// Card ID format: "${verbId}_${tenseId}_${person}" e.g. "parlare_presente_io"
-// -------------------------------------------------------------------------
+// --- Conjugation (card id: "${verbId}_${tenseId}_${person}") ---------------
 
 const CONJ_PERSONS = ['io', 'tu', 'lui/lei', 'noi', 'voi', 'loro'];
 
@@ -398,107 +290,24 @@ function getConjLevelCardIds(level) {
   const ids = [];
   for (const verb of level.verbs) {
     for (const tense of level.tenses) {
-      for (const person of CONJ_PERSONS) {
-        ids.push(`${verb.id}_${tense.id}_${person}`);
-      }
+      for (const person of CONJ_PERSONS) ids.push(`${verb.id}_${tense.id}_${person}`);
     }
   }
   return ids;
 }
 
-function normalizeConjEntry(raw) {
-  const entry = raw || { attempts: 0, correct: 0 };
-  return {
-    attempts: entry.attempts || 0,
-    correct: entry.correct || 0,
-    lastAttempt: entry.lastAttempt || null,
-    phase: entry.phase || 0,
-    cooldownUntil: entry.cooldownUntil || null,
-    cycleAttempts: entry.cycleAttempts || 0,
-    cycleCorrect: entry.cycleCorrect || 0
-  };
-}
-
-/**
- * Save the result of a conjugation card attempt.
- * @param {string} cardId  e.g. "parlare_presente_io"
- * @param {boolean} isCorrect
- */
 export function saveConjugationResult(cardId, isCorrect) {
-  const state = loadState();
-  if (!state.conjugation) state.conjugation = {};
-
-  const entry = normalizeConjEntry(state.conjugation[cardId]);
-
-  if (entry.cooldownUntil && new Date(entry.cooldownUntil) <= new Date()) {
-    entry.cooldownUntil = null;
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
-  }
-
-  if (entry.phase >= 3) {
-    state.conjugation[cardId] = entry;
-    saveState(state);
-    return;
-  }
-
-  entry.attempts += 1;
-  entry.correct += isCorrect ? 1 : 0;
-  entry.lastAttempt = new Date().toISOString();
-  entry.cycleAttempts += 1;
-  entry.cycleCorrect += isCorrect ? 1 : 0;
-
-  const minAttempts = PHASE_MIN_ATTEMPTS[entry.phase] || 1;
-  const accuracy = entry.cycleAttempts > 0 ? entry.cycleCorrect / entry.cycleAttempts : 0;
-  const meetsThreshold = entry.cycleAttempts >= minAttempts && accuracy >= 0.8;
-
-  if (meetsThreshold) {
-    entry.phase += 1;
-    if (entry.phase < 3) {
-      const daysAhead = PHASE_COOLDOWN_DAYS[entry.phase - 1] || 2;
-      const until = new Date();
-      until.setDate(until.getDate() + daysAhead);
-      entry.cooldownUntil = until.toISOString();
-    }
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
-  }
-
-  state.conjugation[cardId] = entry;
-  saveState(state);
+  saveResult('conjugation', cardId, isCorrect);
 }
 
-/** Get the full conjugation progress state. */
 export function getConjugationState() {
   return loadState().conjugation || {};
 }
 
-/** Get current phase (0–3) of a conjugation card. */
-export function getConjugationPhase(cardId) {
-  const state = loadState();
-  return normalizeConjEntry(state.conjugation?.[cardId]).phase;
-}
-
-/** True if cooldown is still active. */
-export function isConjugationOnCooldown(cardId) {
-  const state = loadState();
-  const entry = normalizeConjEntry(state.conjugation?.[cardId]);
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) > new Date();
-}
-
-/** True if cooldown expired and card needs review (phase 1–2). */
-export function isConjugationDue(cardId) {
-  const entry = normalizeConjEntry(getConjugationState()[cardId]);
-  if (entry.phase === 0 || entry.phase >= 3) return false;
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) <= new Date();
-}
-
-/** True if card has been mastered at least once (phase >= 1). */
-export function isConjugationMastered(cardId) {
-  return getConjugationPhase(cardId) >= 1;
-}
+export const isConjugationOnCooldown = cardId => isOnCooldown(entryOf('conjugation', cardId));
+export const isConjugationDue = cardId => isDue(entryOf('conjugation', cardId));
+export const isConjugationMastered = cardId => isMastered(entryOf('conjugation', cardId));
+export const conjugationDaysUntilReview = cardId => daysUntilReview(entryOf('conjugation', cardId));
 
 /**
  * Get unlocked conjugation level IDs based on mastery progress.
@@ -508,116 +317,26 @@ export function isConjugationMastered(cardId) {
 export function getUnlockedConjugationLevels(conjData) {
   const levels = conjData.levels || [];
   const unlocked = [];
-
   for (let i = 0; i < levels.length; i++) {
     if (i === 0) { unlocked.push(levels[i].id); continue; }
-
     const prevCardIds = getConjLevelCardIds(levels[i - 1]);
     const masteredCount = prevCardIds.filter(id => isConjugationMastered(id)).length;
-    if (prevCardIds.length > 0 && masteredCount / prevCardIds.length >= UNLOCK_THRESHOLD) {
-      unlocked.push(levels[i].id);
-    }
+    if (prevCardIds.length > 0 && masteredCount / prevCardIds.length >= UNLOCK_THRESHOLD) unlocked.push(levels[i].id);
   }
-
   return unlocked;
 }
 
-// -------------------------------------------------------------------------
-// Translation spaced-repetition
-// (reuses PHASE_COOLDOWN_DAYS, PHASE_MIN_ATTEMPTS)
-// Phrase ID format: "ph001", "ph002", etc.
-// -------------------------------------------------------------------------
+// --- Translation (phrase id: "ph001") ---------------------------------------
 
-function normalizeTranslEntry(raw) {
-  const entry = raw || { attempts: 0, correct: 0 };
-  return {
-    attempts: entry.attempts || 0,
-    correct: entry.correct || 0,
-    lastAttempt: entry.lastAttempt || null,
-    phase: entry.phase || 0,
-    cooldownUntil: entry.cooldownUntil || null,
-    cycleAttempts: entry.cycleAttempts || 0,
-    cycleCorrect: entry.cycleCorrect || 0
-  };
-}
-
-/**
- * Save the result of a translation phrase attempt.
- * @param {string} phraseId  e.g. "ph001"
- * @param {boolean} isCorrect
- */
 export function saveTranslationResult(phraseId, isCorrect) {
-  const state = loadState();
-  if (!state.translation) state.translation = {};
-
-  const entry = normalizeTranslEntry(state.translation[phraseId]);
-
-  if (entry.cooldownUntil && new Date(entry.cooldownUntil) <= new Date()) {
-    entry.cooldownUntil = null;
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
-  }
-
-  if (entry.phase >= 3) {
-    state.translation[phraseId] = entry;
-    saveState(state);
-    return;
-  }
-
-  entry.attempts += 1;
-  entry.correct += isCorrect ? 1 : 0;
-  entry.lastAttempt = new Date().toISOString();
-  entry.cycleAttempts += 1;
-  entry.cycleCorrect += isCorrect ? 1 : 0;
-
-  const minAttempts = PHASE_MIN_ATTEMPTS[entry.phase] || 1;
-  const accuracy = entry.cycleAttempts > 0 ? entry.cycleCorrect / entry.cycleAttempts : 0;
-  const meetsThreshold = entry.cycleAttempts >= minAttempts && accuracy >= 0.8;
-
-  if (meetsThreshold) {
-    entry.phase += 1;
-    if (entry.phase < 3) {
-      const daysAhead = PHASE_COOLDOWN_DAYS[entry.phase - 1] || 2;
-      const until = new Date();
-      until.setDate(until.getDate() + daysAhead);
-      entry.cooldownUntil = until.toISOString();
-    }
-    entry.cycleAttempts = 0;
-    entry.cycleCorrect = 0;
-  }
-
-  state.translation[phraseId] = entry;
-  saveState(state);
+  saveResult('translation', phraseId, isCorrect);
 }
 
-/** Get the full translation progress state. */
 export function getTranslationState() {
   return loadState().translation || {};
 }
 
-/** Get current phase (0–3) of a translation phrase. */
-export function getTranslationPhase(phraseId) {
-  const state = loadState();
-  return normalizeTranslEntry(state.translation?.[phraseId]).phase;
-}
-
-/** True if cooldown is still active. */
-export function isTranslationOnCooldown(phraseId) {
-  const state = loadState();
-  const entry = normalizeTranslEntry(state.translation?.[phraseId]);
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) > new Date();
-}
-
-/** True if cooldown expired and phrase needs review (phase 1–2). */
-export function isTranslationDue(phraseId) {
-  const entry = normalizeTranslEntry(getTranslationState()[phraseId]);
-  if (entry.phase === 0 || entry.phase >= 3) return false;
-  if (!entry.cooldownUntil) return false;
-  return new Date(entry.cooldownUntil) <= new Date();
-}
-
-/** True if phrase has been mastered at least once (phase >= 1). */
-export function isTranslationMastered(phraseId) {
-  return getTranslationPhase(phraseId) >= 1;
-}
+export const isTranslationOnCooldown = phraseId => isOnCooldown(entryOf('translation', phraseId));
+export const isTranslationDue = phraseId => isDue(entryOf('translation', phraseId));
+export const isTranslationMastered = phraseId => isMastered(entryOf('translation', phraseId));
+export const translationDaysUntilReview = phraseId => daysUntilReview(entryOf('translation', phraseId));

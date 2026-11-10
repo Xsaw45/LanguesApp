@@ -5,8 +5,9 @@ import { el, clearElement } from '../utils/dom.js';
 import { checkAnswer } from '../utils/normalize.js';
 import {
   getSettings, saveVocabResult, getVocabState,
-  isWordMastered, isWordOnCooldown, isWordDue, getWordPhase, getUnlockedLevels
+  isWordMastered, isWordOnCooldown, isWordDue, wordDaysUntilReview, getUnlockedLevels
 } from '../state.js';
+import { buildPool } from '../srs.js';
 import { t, getLanguage } from '../i18n.js';
 
 const QUIZ_SIZE = 20;
@@ -37,15 +38,6 @@ function getLevelName(level) {
   return getLanguage() === 'fr' ? (level.name_fr || level.name) : level.name;
 }
 
-// Days remaining on cooldown (0 if expired or none)
-function cooldownDaysLeft(wordId) {
-  const vocabState = getVocabState();
-  const entry = vocabState[wordId];
-  if (!entry || !entry.cooldownUntil) return 0;
-  const diff = new Date(entry.cooldownUntil) - new Date();
-  if (diff <= 0) return 0;
-  return Math.ceil(diff / (1000 * 60 * 60 * 24));
-}
 
 // ---------------------------------------------------------------------------
 // Main entry point
@@ -179,7 +171,6 @@ function renderWordList(vocabData, unlockedLevels, selectedLevelId, container) {
       });
 
       for (const word of cat.words) {
-        const phase = getWordPhase(word.id);
         const onCooldown = isWordOnCooldown(word.id);
         const due = isWordDue(word.id);
         const ws = vocabState[word.id];
@@ -188,13 +179,9 @@ function renderWordList(vocabData, unlockedLevels, selectedLevelId, container) {
         // Status badge
         let statusText = '';
         let statusColor = 'var(--color-text-muted)';
-        if (phase >= 3) {
-          statusText = t('vocab.status.archived');
+        if (onCooldown) {
+          statusText = t('vocab.status.cooldown', { n: wordDaysUntilReview(word.id) });
           statusColor = 'var(--color-correct)';
-        } else if (onCooldown) {
-          const days = cooldownDaysLeft(word.id);
-          statusText = t('vocab.status.cooldown', { n: days });
-          statusColor = 'var(--color-accent)';
         } else if (due) {
           statusText = t('vocab.status.due');
           statusColor = 'var(--color-primary)';
@@ -373,36 +360,15 @@ function renderQuizStart(vocabData, unlockedLevels, container) {
 }
 
 // ---------------------------------------------------------------------------
-// Build quiz pool (all unlocked levels, exclude cooldown & archived)
+// Build quiz pool: due reviews, words being learned, then new words (srs.js)
 // ---------------------------------------------------------------------------
 
 function buildQuizPool(vocabData, unlockedLevels) {
-  const due = [];
-  const fresh = [];
-
-  for (const level of vocabData.levels) {
-    if (!unlockedLevels.includes(level.id)) continue;
-    for (const cat of level.categories) {
-      for (const word of cat.words) {
-        const phase = getWordPhase(word.id);
-        if (phase >= 3) continue;          // archived
-        if (isWordOnCooldown(word.id)) continue; // on cooldown
-
-        const wordWithLevel = { ...word, levelId: level.id };
-        if (isWordDue(word.id)) {
-          due.push(wordWithLevel);          // prioritize "due" words
-        } else {
-          fresh.push(wordWithLevel);
-        }
-      }
-    }
-  }
-
-  // Shuffle each group, then put due words first
-  const shuffleDue = due.sort(() => Math.random() - 0.5);
-  const shuffleFresh = fresh.sort(() => Math.random() - 0.5);
-  const combined = [...shuffleDue, ...shuffleFresh];
-  return combined.slice(0, QUIZ_SIZE);
+  const words = vocabData.levels
+    .filter(level => unlockedLevels.includes(level.id))
+    .flatMap(level => getLevelWords(level).map(word => ({ ...word, levelId: level.id })));
+  const vocabState = getVocabState();
+  return buildPool(words, word => vocabState[word.id], QUIZ_SIZE);
 }
 
 // ---------------------------------------------------------------------------
