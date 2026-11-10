@@ -1,18 +1,21 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { getAllProgress, saveManyProgress, REMOTE_PROGRESS_EVENT } from '../db/index.js'
 import { createInitialProgress } from '../utils/spacedrep.js'
 
 /**
  * Loads all user progress from IndexedDB and exposes helpers to read/update it.
  * progressMap: Map<wordId, progressObject>
+ * latestMap(): la Map à jour, modifications pas encore affichées comprises (pour calculer une modification à partir
+ * d'une autre faite juste avant, sans attendre le rendu).
  */
 export function useProgress() {
   const [progressMap, setProgressMap] = useState(null) // null = loading
+  const current = useRef(null)
 
   useEffect(() => {
     const load = () => getAllProgress().then(list => {
-      const map = new Map(list.map(p => [p.wordId, p]))
-      setProgressMap(map)
+      current.current = new Map(list.map(p => [p.wordId, p]))
+      setProgressMap(current.current)
     })
     load()
     // progression modifiee depuis un autre appareil (synchronisation)
@@ -25,15 +28,16 @@ export function useProgress() {
     return progressMap.get(wordId) || createInitialProgress(wordId, level)
   }, [progressMap])
 
+  const latestMap = useCallback(() => current.current, [])
+
   const applyUpdates = useCallback(async (updates) => {
     // updates: array of progress objects
+    const next = new Map(current.current)
+    for (const p of updates) next.set(p.wordId, p)
+    current.current = next
     await saveManyProgress(updates)
-    setProgressMap(prev => {
-      const next = new Map(prev)
-      for (const p of updates) next.set(p.wordId, p)
-      return next
-    })
+    setProgressMap(current.current)
   }, [])
 
-  return { progressMap, getProgress, applyUpdates, loading: progressMap === null }
+  return { progressMap, latestMap, getProgress, applyUpdates, loading: progressMap === null }
 }

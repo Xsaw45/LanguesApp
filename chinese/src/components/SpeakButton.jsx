@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Volume2 } from 'lucide-react'
-import { play, playAll, speak, chineseVoice, sentenceSrc } from '../utils/audio.js'
+import { play, playAll, speak, chineseVoice, ttsSrc } from '../utils/audio.js'
 import { useLang } from '../i18n/useLang.js'
 import { ICON_SM } from './uiStyles.js'
 
@@ -11,7 +11,7 @@ import { ICON_SM } from './uiStyles.js'
  */
 export function SpeakButton({ src, text, voice }) {
   const { t } = useLang()
-  const recorded = src || (typeof text === 'string' ? sentenceSrc(text, voice) : null)
+  const recorded = src || (typeof text === 'string' ? ttsSrc(text, voice) : null)
   const [hasVoice, setHasVoice] = useState(() => !recorded && !!chineseVoice())
 
   useEffect(() => {

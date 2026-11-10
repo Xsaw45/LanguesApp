@@ -28,6 +28,7 @@ export const GLOSSARY = {
   聊天: { pinyin: 'liáotiān', tr: { fr: 'bavarder, discuter', en: 'to chat' } },
   羊肉: { pinyin: 'yángròu', tr: { fr: 'viande de mouton, d\'agneau', en: 'mutton, lamb' } },
   烤鸭: { pinyin: 'kǎoyā', tr: { fr: 'canard laqué', en: 'roast duck' } },
+  拍: { pinyin: 'pāi', tr: { fr: 'taper ; prendre (une photo)', en: 'to pat; to take (a photo)' } },
 }
 
 export const READINGS = [
@@ -272,6 +273,81 @@ export const READINGS = [
       { q: { fr: 'Qu\'est-ce qui est le plus difficile pour lui ?', en: 'What does he find hardest?' }, a: [{ fr: 'Les caractères', en: 'Characters' }, { fr: 'La grammaire', en: 'Grammar' }, { fr: 'La prononciation', en: 'Pronunciation' }, { fr: 'Les tons', en: 'Tones' }], line: 3 },
       { q: { fr: 'Combien de temps écrit-il chaque soir ?', en: 'How long does he write every evening?' }, a: [{ fr: 'Une demi-heure', en: 'Half an hour' }, { fr: 'Une heure', en: 'An hour' }, { fr: 'Deux heures', en: 'Two hours' }, { fr: 'Dix minutes', en: 'Ten minutes' }], line: 4 },
       { q: { fr: 'Que veut-il faire l\'année prochaine ?', en: 'What does he want to do next year?' }, a: [{ fr: 'Travailler à Shanghai', en: 'Work in Shanghai' }, { fr: 'Rentrer en France', en: 'Go back to France' }, { fr: 'Étudier à Pékin', en: 'Study in Beijing' }, { fr: 'Voyager en Chine', en: 'Travel around China' }], line: 6 },
+    ],
+  },
+
+  {
+    id: 'jiudian',
+    level: 3,
+    kind: 'dialogue',
+    title: { fr: 'À l\'hôtel', en: 'At the hotel' },
+    zh: '在酒店',
+    speakers: { A: { zh: '服务员', pinyin: 'fúwùyuán', voice: 'f2' }, B: { zh: '大卫', pinyin: 'Dàwèi', voice: 'm2' } },
+    lines: [
+      { s: 'A', zh: '您好！ 请问， 您 要 住 几 天？', pinyin: 'Nín hǎo! Qǐngwèn, nín yào zhù jǐ tiān?', tr: { fr: 'Bonjour. Vous restez combien de nuits ?', en: 'Hello. How many nights are you staying?' } },
+      { s: 'B', zh: '我 要 住 三 天。 有 没有 安静 一点儿 的 房间？', pinyin: 'Wǒ yào zhù sān tiān. Yǒu méiyǒu ānjìng yìdiǎnr de fángjiān?', tr: { fr: 'Trois nuits. Vous avez une chambre un peu plus calme ?', en: 'Three nights. Do you have a slightly quieter room?' } },
+      { s: 'A', zh: '有。 这个 房间 在 十二 层， 比较 安静。', pinyin: 'Yǒu. Zhège fángjiān zài shí\'èr céng, bǐjiào ānjìng.', tr: { fr: 'Oui. Cette chambre est au douzième étage, elle est assez calme.', en: 'Yes. This room is on the twelfth floor, it\'s fairly quiet.' } },
+      { s: 'B', zh: '房间 里 能 上网 吗？', pinyin: 'Fángjiān li néng shàngwǎng ma?', tr: { fr: 'On peut aller sur Internet dans la chambre ?', en: 'Can I get online in the room?' }, reorder: true },
+      { s: 'A', zh: '能， 密码 在 桌子 上。', pinyin: 'Néng, mìmǎ zài zhuōzi shang.', tr: { fr: 'Oui, le mot de passe est sur la table.', en: 'Yes, the password is on the table.' } },
+      { s: 'B', zh: '早饭 是 几 点？', pinyin: 'Zǎofàn shì jǐ diǎn?', tr: { fr: 'Le petit-déjeuner est à quelle heure ?', en: 'What time is breakfast?' }, reorder: true },
+      { s: 'A', zh: '早上 七 点 到 十 点， 在 二 层。', pinyin: 'Zǎoshang qī diǎn dào shí diǎn, zài èr céng.', tr: { fr: 'De sept à dix heures, au deuxième étage.', en: 'From seven to ten, on the second floor.' } },
+      { s: 'B', zh: '好 的， 谢谢。 我 的 行李 可以 先 放 在 这儿 吗？', pinyin: 'Hǎo de, xièxie. Wǒ de xíngli kěyǐ xiān fàng zài zhèr ma?', tr: { fr: 'D\'accord, merci. Je peux d\'abord laisser mes bagages ici ?', en: 'OK, thanks. Can I leave my luggage here first?' } },
+      { s: 'A', zh: '当然 可以。', pinyin: 'Dāngrán kěyǐ.', tr: { fr: 'Bien sûr.', en: 'Of course.' } },
+    ],
+    questions: [
+      { q: { fr: 'Combien de nuits David reste-t-il ?', en: 'How many nights is David staying?' }, a: [{ fr: 'Trois', en: 'Three' }, { fr: 'Deux', en: 'Two' }, { fr: 'Une', en: 'One' }, { fr: 'Cinq', en: 'Five' }], line: 1 },
+      { q: { fr: 'À quel étage est la chambre ?', en: 'Which floor is the room on?' }, a: [{ fr: 'Au douzième', en: 'The twelfth' }, { fr: 'Au deuxième', en: 'The second' }, { fr: 'Au dixième', en: 'The tenth' }, { fr: 'Au vingtième', en: 'The twentieth' }], line: 2 },
+      { q: { fr: 'Où se prend le petit-déjeuner ?', en: 'Where is breakfast served?' }, a: [{ fr: 'Au deuxième étage', en: 'On the second floor' }, { fr: 'Dans la chambre', en: 'In the room' }, { fr: 'Au douzième étage', en: 'On the twelfth floor' }, { fr: 'Dans un restaurant à côté', en: 'In a restaurant next door' }], line: 6 },
+      { q: { fr: 'Que demande David à la fin ?', en: 'What does David ask at the end?' }, a: [{ fr: 'S\'il peut laisser ses bagages', en: 'If he can leave his luggage' }, { fr: 'Un taxi pour l\'aéroport', en: 'A taxi to the airport' }, { fr: 'Le mot de passe d\'Internet', en: 'The Internet password' }, { fr: 'Une autre chambre', en: 'Another room' }], line: 7 },
+    ],
+  },
+
+  {
+    id: 'shanghai',
+    level: 3,
+    kind: 'text',
+    title: { fr: 'Un voyage à Shanghai', en: 'A trip to Shanghai' },
+    zh: '去上海旅游',
+    voice: 'f',
+    lines: [
+      { zh: '去年 夏天， 我 和 朋友 一起 去 上海 旅游 了。', pinyin: 'Qùnián xiàtiān, wǒ hé péngyou yìqǐ qù Shànghǎi lǚyóu le.', tr: { fr: 'L\'été dernier, je suis partie en voyage à Shanghai avec une amie.', en: 'Last summer, I went on a trip to Shanghai with a friend.' } },
+      { zh: '我们 是 坐 火车 去 的， 用 了 五 个 小时。', pinyin: 'Wǒmen shì zuò huǒchē qù de, yòng le wǔ ge xiǎoshí.', tr: { fr: 'Nous y sommes allées en train, le trajet a pris cinq heures.', en: 'We went by train, and it took five hours.' } },
+      { zh: '上海 的 楼 很 高， 晚上 特别 漂亮。', pinyin: 'Shànghǎi de lóu hěn gāo, wǎnshang tèbié piàoliang.', tr: { fr: 'À Shanghai, les immeubles sont très hauts, et c\'est particulièrement beau le soir.', en: 'Shanghai\'s buildings are very tall, and it\'s especially beautiful at night.' } },
+      { zh: '我们 每天 都 走 很 多 路， 也 吃 了 很 多 好吃 的。', pinyin: 'Wǒmen měitiān dōu zǒu hěn duō lù, yě chī le hěn duō hǎochī de.', tr: { fr: 'Chaque jour, nous avons beaucoup marché et mangé plein de bonnes choses.', en: 'Every day we walked a lot and ate lots of delicious food.' } },
+      { zh: '可是 第三 天 下 大 雨， 我们 只 能 在 酒店 里 休息。', pinyin: 'Kěshì dì-sān tiān xià dà yǔ, wǒmen zhǐ néng zài jiǔdiàn li xiūxi.', tr: { fr: 'Mais le troisième jour, il a beaucoup plu, et nous n\'avons pu que nous reposer à l\'hôtel.', en: 'But on the third day it rained heavily, so all we could do was rest at the hotel.' } },
+      { zh: '这 次 旅游 我 拍 了 两百 多 张 照片。', pinyin: 'Zhè cì lǚyóu wǒ pāi le liǎngbǎi duō zhāng zhàopiàn.', tr: { fr: 'Pendant ce voyage, j\'ai pris plus de deux cents photos.', en: 'On this trip I took more than two hundred photos.' } },
+      { zh: '我 越来越 喜欢 旅游 了。', pinyin: 'Wǒ yuè lái yuè xǐhuan lǚyóu le.', tr: { fr: 'J\'aime voyager de plus en plus.', en: 'I like travelling more and more.' }, reorder: true },
+    ],
+    questions: [
+      { q: { fr: 'Avec qui est-elle partie ?', en: 'Who did she travel with?' }, a: [{ fr: 'Avec une amie', en: 'With a friend' }, { fr: 'Avec ses parents', en: 'With her parents' }, { fr: 'Seule', en: 'Alone' }, { fr: 'Avec ses collègues', en: 'With her colleagues' }], line: 0 },
+      { q: { fr: 'Comment y sont-elles allées ?', en: 'How did they get there?' }, a: [{ fr: 'En train', en: 'By train' }, { fr: 'En avion', en: 'By plane' }, { fr: 'En bus', en: 'By bus' }, { fr: 'En voiture', en: 'By car' }], line: 1 },
+      { q: { fr: 'Qu\'ont-elles fait le troisième jour ?', en: 'What did they do on the third day?' }, a: [{ fr: 'Elles se sont reposées à l\'hôtel', en: 'They rested at the hotel' }, { fr: 'Elles ont visité la ville', en: 'They visited the city' }, { fr: 'Elles ont fait les magasins', en: 'They went shopping' }, { fr: 'Elles sont rentrées chez elles', en: 'They went home' }], line: 4 },
+      { q: { fr: 'Combien de photos a-t-elle prises ?', en: 'How many photos did she take?' }, a: [{ fr: 'Plus de 200', en: 'More than 200' }, { fr: 'Une vingtaine', en: 'About 20' }, { fr: 'Une centaine', en: 'About 100' }, { fr: 'Plus de 2 000', en: 'More than 2,000' }], line: 5 },
+    ],
+  },
+
+  {
+    id: 'shengri',
+    level: 3,
+    kind: 'dialogue',
+    title: { fr: 'Préparer un anniversaire', en: 'Planning a birthday' },
+    zh: '过生日',
+    speakers: { A: { zh: '马丽', pinyin: 'Mǎ Lì', voice: 'f' }, B: { zh: '小王', pinyin: 'Xiǎo Wáng', voice: 'm' } },
+    lines: [
+      { s: 'A', zh: '小王， 下 个 星期六 是 我 的 生日， 你 能 来 吗？', pinyin: 'Xiǎo Wáng, xià ge xīngqīliù shì wǒ de shēngrì, nǐ néng lái ma?', tr: { fr: 'Xiao Wang, samedi prochain c\'est mon anniversaire, tu peux venir ?', en: 'Xiao Wang, next Saturday is my birthday, can you come?' } },
+      { s: 'B', zh: '当然 能！ 你 打算 怎么 过？', pinyin: 'Dāngrán néng! Nǐ dǎsuàn zěnme guò?', tr: { fr: 'Bien sûr. Tu comptes le fêter comment ?', en: 'Of course! How are you going to celebrate?' } },
+      { s: 'A', zh: '我 想 请 几 个 朋友 来 我 家 吃饭。', pinyin: 'Wǒ xiǎng qǐng jǐ ge péngyou lái wǒ jiā chīfàn.', tr: { fr: 'J\'aimerais inviter quelques amis à manger chez moi.', en: 'I\'d like to invite a few friends over for dinner.' } },
+      { s: 'B', zh: '要 我 帮 你 做 菜 吗？', pinyin: 'Yào wǒ bāng nǐ zuò cài ma?', tr: { fr: 'Tu veux que je t\'aide à cuisiner ?', en: 'Do you want me to help you cook?' }, reorder: true },
+      { s: 'A', zh: '太 好 了！ 你 做 的 鱼 特别 好吃。', pinyin: 'Tài hǎo le! Nǐ zuò de yú tèbié hǎochī.', tr: { fr: 'Super ! Ton poisson est vraiment délicieux.', en: 'Great! The fish you make is really delicious.' } },
+      { s: 'B', zh: '那 我 下午 三 点 就 去 你 家。', pinyin: 'Nà wǒ xiàwǔ sān diǎn jiù qù nǐ jiā.', tr: { fr: 'Alors je viens chez toi dès trois heures de l\'après-midi.', en: 'Then I\'ll come to your place at three in the afternoon.' } },
+      { s: 'A', zh: '好！ 别 忘了 带 你 的 女朋友。', pinyin: 'Hǎo! Bié wàng le dài nǐ de nǚpéngyou.', tr: { fr: 'D\'accord. N\'oublie pas d\'amener ta copine.', en: 'Great! Don\'t forget to bring your girlfriend.' } },
+      { s: 'B', zh: '没 问题， 她 也 很 想 认识 你 的 朋友们。', pinyin: 'Méi wèntí, tā yě hěn xiǎng rènshi nǐ de péngyoumen.', tr: { fr: 'Pas de problème, elle a très envie de rencontrer tes amis, elle aussi.', en: 'No problem, she really wants to meet your friends too.' } },
+    ],
+    questions: [
+      { q: { fr: 'Quand est l\'anniversaire de Ma Li ?', en: 'When is Ma Li\'s birthday?' }, a: [{ fr: 'Samedi prochain', en: 'Next Saturday' }, { fr: 'Dimanche prochain', en: 'Next Sunday' }, { fr: 'Ce samedi', en: 'This Saturday' }, { fr: 'Vendredi prochain', en: 'Next Friday' }], line: 0 },
+      { q: { fr: 'Que veut faire Ma Li ?', en: 'What does Ma Li want to do?' }, a: [{ fr: 'Inviter des amis à manger chez elle', en: 'Invite friends over for dinner' }, { fr: 'Aller au restaurant', en: 'Go to a restaurant' }, { fr: 'Aller au cinéma', en: 'Go to the cinema' }, { fr: 'Partir en voyage', en: 'Go on a trip' }], line: 2 },
+      { q: { fr: 'Que propose Xiao Wang ?', en: 'What does Xiao Wang offer?' }, a: [{ fr: 'De l\'aider à cuisiner', en: 'To help her cook' }, { fr: 'D\'acheter un gâteau', en: 'To buy a cake' }, { fr: 'De faire les courses', en: 'To do the shopping' }, { fr: 'De chanter', en: 'To sing' }], line: 3 },
+      { q: { fr: 'À quelle heure arrive-t-il ?', en: 'What time is he coming?' }, a: [{ fr: 'À 15 heures', en: 'At 3 p.m.' }, { fr: 'À 13 heures', en: 'At 1 p.m.' }, { fr: 'À 17 heures', en: 'At 5 p.m.' }, { fr: 'À 19 heures', en: 'At 7 p.m.' }], line: 5 },
     ],
   },
 ]

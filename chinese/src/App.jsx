@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { withActivity, markStepDone } from './utils/activity.js'
+import { withActivity, markStepDone, addPracticeTime } from './utils/activity.js'
 import { useProgress } from './hooks/useProgress.js'
 import { useLevels } from './hooks/useLevels.js'
+import { usePracticeTime } from './hooks/usePracticeTime.js'
 import { useQuiz, QUIZ_STATES } from './hooks/useQuiz.js'
 import { LangContext, SETTINGS_KEY, makeLang } from './i18n/useLang.js'
 import { defaultLang, translate } from './i18n/text.js'
@@ -22,10 +23,10 @@ export default function App() {
   // 'home' (choix du module) | 'hsk' (vocabulaire : tests et niveaux) | 'vocabulary' (liste des mots) | 'classifiers'
   // | 'pinyin' | 'hanzi' | 'grammar' | 'reading' | 'today' (séance du jour) | 'settings'
   const [screen, setScreen] = useState('home')
-  const { progressMap, getProgress, applyUpdates: saveUpdates, loading } = useProgress()
+  const { progressMap, latestMap, getProgress, applyUpdates: saveUpdates, loading } = useProgress()
   const { levelStats, unlockedLevels } = useLevels(progressMap)
   // Toute progression enregistrée compte aussi dans l'activité du jour (série, éléments maîtrisés).
-  const applyUpdates = useCallback(updates => saveUpdates(withActivity(progressMap, updates)), [saveUpdates, progressMap])
+  const applyUpdates = useCallback(updates => saveUpdates(withActivity(latestMap(), updates)), [saveUpdates, latestMap])
 
   // Langue : réglage synchronisé (enregistrement « settings »), sinon celle du navigateur.
   const lang = progressMap?.get(SETTINGS_KEY)?.lang || defaultLang()
@@ -53,6 +54,10 @@ export default function App() {
     nextQuestion,
     resetQuiz,
   } = useQuiz(progressMap, getProgress, applyUpdates, lang)
+
+  // Temps de pratique : dans un module ou un test, pas sur l'accueil ni dans les paramètres.
+  const practicing = !loading && (state !== QUIZ_STATES.IDLE || !['home', 'settings'].includes(screen))
+  usePracticeTime(practicing, seconds => saveUpdates([addPracticeTime(latestMap(), seconds)]))
 
   const home = () => setScreen('home')
   let content

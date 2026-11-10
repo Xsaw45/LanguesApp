@@ -1,5 +1,5 @@
-// Voix des phrases enregistrées (Google Cloud Text-to-Speech, Chirp 3 HD) : scripts/fetch-sentence-audio.js les
-// génère une fois, l'app lit les fichiers. Sans import : le script Node utilise aussi ce fichier.
+// Voix de synthèse (Google Cloud Text-to-Speech, Chirp 3 HD) : scripts/fetch-tts-audio.js enregistre une fois les
+// phrases et les mots sans enregistrement humain, l'app lit les fichiers. Sans import : le script Node l'utilise aussi.
 // Une voix par personnage des dialogues (data/reading.js : speakers[].voice, voice des textes) ; 'f' ailleurs.
 
 export const VOICES = {
@@ -10,8 +10,8 @@ export const VOICES = {
 }
 export const DEFAULT_VOICE = 'f'
 
-/** Nom du fichier d'une phrase dite par une voix : empreinte FNV-1a du texte (les phrases ont de la ponctuation). */
-export function sentenceFile(text, voice) {
+/** Nom du fichier d'un texte dit par une voix : empreinte FNV-1a du texte (les phrases ont de la ponctuation). */
+export function ttsFile(text, voice) {
   let hash = 0x811c9dc5
   for (const ch of `${voice}|${text}`) {
     hash ^= ch.codePointAt(0)

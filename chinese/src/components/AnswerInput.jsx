@@ -6,11 +6,9 @@ export function AnswerInput({ onSubmit, disabled, placeholder }) {
   const [value, setValue] = useState('')
   const inputRef = useRef(null)
 
+  // Champ vide à chaque question : le parent le recrée (key) ; il reste à lui donner le focus.
   useEffect(() => {
-    if (!disabled) {
-      setValue('')
-      inputRef.current?.focus()
-    }
+    if (!disabled) inputRef.current?.focus()
   }, [disabled])
 
   function handleKeyDown(e) {

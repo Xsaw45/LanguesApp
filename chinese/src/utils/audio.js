@@ -1,28 +1,29 @@
 import manifest from '../data/audio.json'
-import sentences from '../data/sentenceAudio.json'
-import { DEFAULT_VOICE, sentenceFile } from '../data/voices.js'
+import tts from '../data/ttsAudio.json'
+import { DEFAULT_VOICE, ttsFile } from '../data/voices.js'
 import { splitPinyin, toNumeric } from './pinyin.js'
 
-// Enregistrements (scripts/fetch-audio.js) : syllabes aux tons 1-4, mots HSK enregistrés.
-// Phrases (scripts/fetch-sentence-audio.js) : grammaire, classificateurs, lecture, une voix par personnage.
+// Enregistrements humains (scripts/fetch-audio.js) : syllabes aux tons 1-4, mots HSK enregistrés.
+// Synthèse (scripts/fetch-tts-audio.js) : phrases (grammaire, classificateurs, lecture, une voix par personnage) et
+// mots HSK de plusieurs caractères sans enregistrement humain.
 const SYLLABLES = new Set(manifest.syllables)
 const WORDS = new Set(manifest.words)
 const BASE = `${import.meta.env.BASE_URL}audio/`
 
 export const syllableSrc = numeric => (SYLLABLES.has(numeric) ? `${BASE}syllables/${numeric}.mp3` : null)
-export const hasWordRecording = hanzi => WORDS.has(hanzi)
 export const recordedWordSrc = hanzi => (WORDS.has(hanzi) ? `${BASE}words/${encodeURIComponent(hanzi)}.mp3` : null)
 
-/** Phrase enregistrée, dite par la voix demandée si elle l'a été, sinon par une autre ; null si pas enregistrée. */
-export function sentenceSrc(text, voice = DEFAULT_VOICE) {
-  const voices = sentences[text]
+/** Texte synthétisé, dit par la voix demandée si elle l'a été, sinon par une autre ; null s'il n'existe pas. */
+export function ttsSrc(text, voice = DEFAULT_VOICE) {
+  const voices = tts[text]
   if (!voices) return null
-  return `${BASE}sentences/${sentenceFile(text, voices.includes(voice) ? voice : voices[0])}`
+  return `${BASE}tts/${ttsFile(text, voices.includes(voice) ? voice : voices[0])}`
 }
 
 /**
  * Son d'un mot HSK. Un caractère seul prend l'enregistrement de sa syllabe (même lecture que le pinyin affiché,
- * même pour les caractères à plusieurs lectures) ; sinon l'enregistrement du mot. null : pas d'enregistrement.
+ * même pour les caractères à plusieurs lectures) ; sinon l'enregistrement humain du mot, sinon sa synthèse.
+ * null : rien d'enregistré.
  */
 export function wordSrc(word) {
   const syllables = splitPinyin(word.pinyin)
@@ -30,7 +31,7 @@ export function wordSrc(word) {
     const src = syllableSrc(toNumeric(syllables[0]))
     if (src) return src
   }
-  return recordedWordSrc(word.simplified)
+  return recordedWordSrc(word.simplified) || ttsSrc(word.simplified)
 }
 
 // Un seul élément <audio> pour toute l'app : une fois débloqué par un geste (iOS), il peut rejouer depuis le code

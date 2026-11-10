@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { lineText, lineVoice, lineWords } from '../data/reading.js'
-import { sentenceSrc } from '../utils/audio.js'
+import { ttsSrc } from '../utils/audio.js'
 import { buildReadingQuiz, getReadingProgress, lookupWord, readingQuizSize } from '../utils/readingQuiz.js'
 import { applyLessonResult, PASS_THRESHOLD } from '../utils/lessonProgress.js'
 import { useLang } from '../i18n/useLang.js'
@@ -74,7 +74,7 @@ function Line({ reading, line, index, showPinyin, showTr, selected, onSelect }) 
 
 /** Tout le texte enregistré, chaque ligne avec sa voix ; null s'il manque une ligne (voix du téléphone). */
 function allRecorded(reading) {
-  const srcs = reading.lines.map(line => sentenceSrc(lineText(line), lineVoice(reading, line)))
+  const srcs = reading.lines.map(line => ttsSrc(lineText(line), lineVoice(reading, line)))
   return srcs.every(Boolean) ? srcs : null
 }
 

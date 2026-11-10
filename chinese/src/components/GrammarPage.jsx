@@ -8,7 +8,7 @@ import { LessonStatus } from './LessonStatus.jsx'
 import { useLang } from '../i18n/useLang.js'
 import { Button, Score, Screen, SectionLabel, TopBar } from './ui.jsx'
 
-const LEVELS = [1, 2]
+const LEVELS = [...new Set(GRAMMAR_POINTS.map(p => p.level))]
 
 function ReviewResults({ results, onAgain, onExit, exitLabel }) {
   const { t, l, pct } = useLang()

@@ -34,6 +34,13 @@ function buildStep(id, progressMap) {
   return null
 }
 
+/** 75 s → « 1 min » ; 3 900 s → « 1 h 05 » (minutes entières). */
+function duration(seconds) {
+  const minutes = Math.floor(seconds / 60)
+  if (minutes < 60) return `${minutes} min`
+  return `${Math.floor(minutes / 60)} h ${String(minutes % 60).padStart(2, '0')}`
+}
+
 function Streak({ stats }) {
   const { t, lang } = useLang()
   const weekday = new Intl.DateTimeFormat(lang, { weekday: 'narrow', timeZone: 'UTC' })
@@ -58,6 +65,16 @@ function Streak({ stats }) {
           </li>
         ))}
       </ol>
+      <dl className="mt-4 grid grid-cols-2 gap-3 border-t border-line pt-3">
+        <div>
+          <dt className="text-xs text-fg-3">{t('today.timeToday')}</dt>
+          <dd className="text-base font-medium tabular-nums text-fg">{duration(stats.secondsToday)}</dd>
+        </div>
+        <div>
+          <dt className="text-xs text-fg-3">{t('today.timeWeek')}</dt>
+          <dd className="text-base font-medium tabular-nums text-fg">{duration(stats.secondsThisWeek)}</dd>
+        </div>
+      </dl>
       <p className="mt-3 text-sm text-fg-2">{caption}</p>
     </section>
   )

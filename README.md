@@ -50,11 +50,11 @@ Chinois, données (dans `chinese/`) :
 - puis `node scripts/fetch-audio.js` : copie dans `public/audio/` les enregistrements de
   [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn) (syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ;
   licence CC BY-SA) et écrit `src/data/audio.json`.
-- puis `node scripts/fetch-sentence-audio.js` : enregistre les phrases (grammaire, classificateurs, lecture) avec
-  Google Cloud Text-to-Speech (voix Chirp 3 HD, une par personnage des dialogues) dans `public/audio/sentences/` et
-  écrit `src/data/sentenceAudio.json`. Clé `GOOGLE_TTS_KEY` dans `chinese/.env.local` (non commitée) ; seules les
-  phrases nouvelles sont demandées (environ 3 500 caractères en tout, gratuit). Les mots sans enregistrement sont lus
-  par la voix chinoise du téléphone, s'il en a une.
+- puis `node scripts/fetch-tts-audio.js` : enregistre avec Google Cloud Text-to-Speech (voix Chirp 3 HD) les phrases
+  (grammaire, classificateurs, lecture, une voix par personnage des dialogues) et les mots HSK de plusieurs caractères
+  sans enregistrement humain, dans `public/audio/tts/`, et écrit `src/data/ttsAudio.json`. Clé `GOOGLE_TTS_KEY` dans
+  `chinese/.env.local` (non commitée) ; seuls les textes nouveaux sont demandés (environ 12 500 caractères en tout,
+  gratuit). Restent lus par la voix chinoise du téléphone : les caractères seuls au ton neutre sans enregistrement.
 - puis `node scripts/build-hanzi.js` : caractères par niveau (krmanik/HSK-3.0, « HSK Hanzi »), clé (Unihan), sens
   (CC-CEDICT, CFDICT) dans `src/data/hanzi.json` ; copie les tracés de `hanzi-writer-data` (Make Me a Hanzi, Arphic
   Public License, texte joint dans `public/hanzi/`) dans `public/hanzi/`.

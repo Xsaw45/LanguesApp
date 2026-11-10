@@ -5,13 +5,16 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 ## Fait
 
 - Modules : Pinyin et tons (7 leçons, audio, tableau des sons), Vocabulaire HSK 1–9 (répétition espacée),
-  Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (25 points HSK 1–2),
-  Lecture (10 textes et dialogues HSK 1–2), Classificateurs (56).
-- Bouton écouter sur les mots (enregistrements CC BY-SA, voix du téléphone sinon) et sur toutes les phrases
-  (grammaire, classificateurs, lecture : Google Cloud Text-to-Speech, une voix par personnage des dialogues).
+  Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (33 points HSK 1–3),
+  Lecture (13 textes et dialogues HSK 1–3), Classificateurs (56).
+- Bouton écouter sur les mots (enregistrements CC BY-SA, sinon synthèse Google pour les mots de plusieurs
+  caractères) et sur toutes les phrases (grammaire, classificateurs, lecture : une voix par personnage des dialogues).
 - Design (passe unslop), icônes lucide, mises à jour visibles sans fermer l'app, hors ligne.
 - Langue de l'utilisateur (français / anglais) dans les paramètres ; définitions du vocabulaire en français
   (CFDICT) et en anglais (CC-CEDICT) ; lecture des caractères corrigée d'après la liste HSK 3.0.
+- Recherche dans la liste des mots, tous niveaux : caractères, pinyin avec ou sans tons, sens.
+- Page « Aujourd'hui » : toutes les révisions dues en une séance ; jours d'affilée (un jour compte dès une réponse),
+  éléments maîtrisés et temps de pratique (aujourd'hui, 7 jours ; pauses de plus de 90 s non comptées).
 
 ## Priorités
 
@@ -24,24 +27,19 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    traits animé, clé en couleur ; un caractère nouveau se trace sur le modèle, puis s'écrit de mémoire (Hanzi Writer) ;
    les 125 clés courantes avec leur sens et un test. Données de traits : licence Arphic, vente autorisée en
    fournissant le texte de la licence (`public/hanzi/LICENSE-ARPHIC.txt`).
-4. **Lire et écouter des phrases** — fait pour les HSK 1 et 2 : 10 textes et dialogues (se présenter, restaurant,
-   chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois) ; pinyin et traduction
-   affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension et
-   phrases à remettre dans l'ordre. Reste : textes HSK 3 et plus ; relecture par un locuteur natif.
+4. **Lire et écouter des phrases** — fait du HSK 1 au 3 : 13 textes et dialogues (se présenter, restaurant,
+   chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois, hôtel, voyage, anniversaire) ;
+   pinyin et traduction affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension
+   et phrases à remettre dans l'ordre. Reste : textes HSK 4 et plus ; relecture par un locuteur natif.
 
 ## Secondaire
 
-- Suivi : temps passé (fait : page « Aujourd'hui » avec toutes les révisions dues en une séance, jours d'affilée,
-  éléments maîtrisés sur 7 jours).
-- Grammaire HSK 3 (把, 被, compléments de résultat et de direction, 越来越, 是…的…), puis HSK 4+.
-- Recherche dans la liste des mots (caractère, pinyin, sens).
+- Grammaire HSK 4 et plus (fait jusqu'au HSK 3 : 把, 被, compléments de résultat, de direction et de possibilité,
+  越来越, 是…的, 有点儿 / 一点儿).
 - Relecture du contenu écrit sans source (grammaire, classificateurs, leçons pinyin) par un locuteur natif,
   dans les deux langues.
-- Audio des mots sans enregistrement (environ 15 % des HSK 1–5, davantage au-delà) : même synthèse que les phrases,
-  au lieu de la voix du téléphone.
 - Prononciation : enregistrement de sa voix et comparaison avec le modèle (sans note automatique des tons, peu
   fiable).
-- Erreur de lint connue : `src/components/AnswerInput.jsx` (setState dans un effet).
 
 ## Avant de vendre
 

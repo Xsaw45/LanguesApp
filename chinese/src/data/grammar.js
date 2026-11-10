@@ -1,9 +1,9 @@
-// Module Grammaire : points du HSK 1 et 2, dans l'ordre d'apprentissage (un point se débloque avec 80 % au précédent).
+// Module Grammaire : points du HSK 1 à 3, dans l'ordre d'apprentissage (un point se débloque avec 80 % au précédent).
 // Données pures, sans import. Progression : clé gr_<id>.
 // Textes affichés : { fr, en } (langue de l'utilisateur) ; tr : traduction de la phrase chinoise.
 //
 // Point :
-//   id, level (1 | 2), title, pattern (structure), explanation [paragraphes], examples [{ zh, pinyin, tr }],
+//   id, level (1 | 2 | 3), title, pattern (structure), explanation [paragraphes], examples [{ zh, pinyin, tr }],
 //   pitfall (erreur courante)
 //   order      [{ words, pinyin, tr, alt? }]  remettre les mots dans l'ordre ; alt : autres ordres acceptés
 //   fill       [{ before, after, answer, wrong, pinyin, tr }]  compléter le trou (phrase = before + answer + after)
@@ -3057,6 +3057,907 @@ export const GRAMMAR_POINTS = [
         pinyin: 'diànyǐng hái méi kāishǐ ne',
         wrong: ['电影开始了', '电影还没开始了'],
         tr: { fr: 'le film n\'a pas encore commencé', en: 'the film hasn\'t started yet' },
+      },
+    ],
+  },
+  {
+    id: 'ba',
+    level: 3,
+    title: { fr: '把 : agir sur un objet', en: '把: acting on an object' },
+    pattern: { fr: 'Sujet + 把 + objet + verbe + complément', en: 'Subject + 把 + object + verb + complement' },
+    explanation: [
+      {
+        fr: '把 sert à dire ce qu\'on fait à un objet précis, et ce qu\'il devient : 我把作业做完了 (« mes devoirs, je les ai finis »). L\'objet passe devant le verbe, juste après 把.',
+        en: '把 says what you do to a specific object and what becomes of it: 我把作业做完了 ("my homework, I finished it"). The object moves before the verb, right after 把.',
+      },
+      {
+        fr: 'Le verbe ne reste jamais seul : il est suivi d\'un résultat (完, 好, 走), d\'une direction (上, 回来), d\'un lieu (在桌子上) ou de 给 + personne.',
+        en: 'The verb never stands alone: it is followed by a result (完, 好, 走), a direction (上, 回来), a place (在桌子上) or 给 + person.',
+      },
+      {
+        fr: 'La négation se place devant 把 : 我没把作业做完.',
+        en: 'The negative goes before 把: 我没把作业做完.',
+      },
+    ],
+    examples: [
+      { zh: '我把作业做完了。', pinyin: 'wǒ bǎ zuòyè zuò wán le', tr: { fr: 'j\'ai fini mes devoirs', en: 'I finished my homework' } },
+      { zh: '请把门关上。', pinyin: 'qǐng bǎ mén guān shang', tr: { fr: 'ferme la porte, s\'il te plaît', en: 'please close the door' } },
+      { zh: '他把我的书拿走了。', pinyin: 'tā bǎ wǒ de shū ná zǒu le', tr: { fr: 'il a emporté mon livre', en: 'he took my book away' } },
+      {
+        zh: '你把手机放在哪儿了？',
+        pinyin: 'nǐ bǎ shǒujī fàng zài nǎr le',
+        tr: { fr: 'où as-tu mis ton téléphone ?', en: 'where did you put your phone?' },
+      },
+    ],
+    pitfall: {
+      fr: 'On s\'arrête souvent au verbe (我把作业做) : avec 把, il faut toujours dire ce que devient l\'objet (做完, 做好).',
+      en: 'People often stop at the verb (我把作业做): with 把 you always have to say what becomes of the object (做完, 做好).',
+    },
+    order: [
+      {
+        words: ['我', '把', '作业', '做完了'],
+        pinyin: 'wǒ bǎ zuòyè zuò wán le',
+        tr: { fr: 'j\'ai fini mes devoirs', en: 'I finished my homework' },
+      },
+      {
+        words: ['请', '把', '门', '关上'],
+        pinyin: 'qǐng bǎ mén guān shang',
+        tr: { fr: 'ferme la porte, s\'il te plaît', en: 'please close the door' },
+      },
+      {
+        words: ['他', '把', '书', '放在', '桌子上'],
+        pinyin: 'tā bǎ shū fàng zài zhuōzi shang',
+        tr: { fr: 'il pose le livre sur la table', en: 'he puts the book on the table' },
+      },
+    ],
+    fill: [
+      {
+        before: '我',
+        after: '作业做完了',
+        answer: '把',
+        wrong: ['被', '比'],
+        pinyin: 'wǒ bǎ zuòyè zuò wán le',
+        tr: { fr: 'j\'ai fini mes devoirs', en: 'I finished my homework' },
+      },
+      {
+        before: '请把门',
+        after: '',
+        answer: '关上',
+        wrong: ['关门', '在'],
+        pinyin: 'qǐng bǎ mén guān shang',
+        tr: { fr: 'ferme la porte, s\'il te plaît', en: 'please close the door' },
+      },
+      {
+        before: '你把手机放',
+        after: '哪儿了？',
+        answer: '在',
+        wrong: ['是', '和'],
+        pinyin: 'nǐ bǎ shǒujī fàng zài nǎr le',
+        tr: { fr: 'où as-tu mis ton téléphone ?', en: 'where did you put your phone?' },
+      },
+    ],
+    judge: [
+      {
+        zh: '我把作业做。',
+        ok: false,
+        fix: '我把作业做完了。',
+        fixPinyin: 'wǒ bǎ zuòyè zuò wán le',
+        why: {
+          fr: 'Avec 把, le verbe a besoin d\'un complément qui dit ce que devient l\'objet (完, 好…).',
+          en: 'With 把, the verb needs a complement saying what becomes of the object (完, 好…).',
+        },
+        tr: { fr: 'j\'ai fini mes devoirs', en: 'I finished my homework' },
+      },
+      {
+        zh: '请把这本书给我。',
+        pinyin: 'qǐng bǎ zhè běn shū gěi wǒ',
+        ok: true,
+        tr: { fr: 'donne-moi ce livre, s\'il te plaît', en: 'please give me this book' },
+      },
+      {
+        zh: '我把作业没做完。',
+        ok: false,
+        fix: '我没把作业做完。',
+        fixPinyin: 'wǒ méi bǎ zuòyè zuò wán',
+        why: { fr: 'La négation se place devant 把.', en: 'The negative goes before 把.' },
+        tr: { fr: 'je n\'ai pas fini mes devoirs', en: 'I didn\'t finish my homework' },
+      },
+    ],
+    translate: [
+      {
+        answer: '我把作业做完了',
+        pinyin: 'wǒ bǎ zuòyè zuò wán le',
+        wrong: ['我把作业做了完', '作业把我做完了'],
+        tr: { fr: 'j\'ai fini mes devoirs', en: 'I finished my homework' },
+      },
+      {
+        answer: '请把门关上',
+        pinyin: 'qǐng bǎ mén guān shang',
+        wrong: ['请门把关上', '请关上把门'],
+        tr: { fr: 'ferme la porte, s\'il te plaît', en: 'please close the door' },
+      },
+      {
+        answer: '我没把作业做完',
+        pinyin: 'wǒ méi bǎ zuòyè zuò wán',
+        wrong: ['我不把作业做完', '我没作业把做完'],
+        tr: { fr: 'je n\'ai pas fini mes devoirs', en: 'I didn\'t finish my homework' },
+      },
+    ],
+  },
+  {
+    id: 'bei',
+    level: 3,
+    title: { fr: '被 : le passif', en: '被: the passive' },
+    pattern: { fr: 'A + 被 + (B) + verbe + complément', en: 'A + 被 + (B) + verb + complement' },
+    explanation: [
+      {
+        fr: '被 indique que le sujet subit l\'action : 我的自行车被偷了 (« mon vélo a été volé »). Celui qui fait l\'action se place après 被, et peut être omis.',
+        en: '被 shows that the subject undergoes the action: 我的自行车被偷了 ("my bike was stolen"). Whoever does the action comes after 被, and can be left out.',
+      },
+      {
+        fr: 'Comme avec 把, le verbe a besoin d\'un complément ou de 了. On l\'emploie surtout pour un événement subi, souvent désagréable.',
+        en: 'As with 把, the verb needs a complement or 了. It is mostly used for something that happens to you, often unpleasant.',
+      },
+      {
+        fr: 'La négation 没 se place devant 被 : 我的手机没被拿走.',
+        en: 'The negative 没 goes before 被: 我的手机没被拿走.',
+      },
+    ],
+    examples: [
+      { zh: '我的自行车被偷了。', pinyin: 'wǒ de zìxíngchē bèi tōu le', tr: { fr: 'mon vélo a été volé', en: 'my bike was stolen' } },
+      {
+        zh: '蛋糕被弟弟吃完了。',
+        pinyin: 'dàngāo bèi dìdi chī wán le',
+        tr: { fr: 'mon petit frère a mangé tout le gâteau', en: 'the cake was eaten up by my little brother' },
+      },
+      {
+        zh: '他被老师批评了。',
+        pinyin: 'tā bèi lǎoshī pīpíng le',
+        tr: { fr: 'il s\'est fait gronder par le professeur', en: 'he was told off by the teacher' },
+      },
+      {
+        zh: '我的手机没被拿走。',
+        pinyin: 'wǒ de shǒujī méi bèi ná zǒu',
+        tr: { fr: 'mon téléphone n\'a pas été emporté', en: 'my phone wasn\'t taken' },
+      },
+    ],
+    pitfall: {
+      fr: 'Le français met le passif partout (« ce livre est écrit en chinois ») ; en chinois, 被 sert surtout pour un événement subi. Pour le reste, on tourne la phrase à l\'actif.',
+      en: 'English uses the passive a lot ("this book is written in Chinese"); in Chinese, 被 is mostly for something that happens to you. Otherwise, use an active sentence.',
+    },
+    order: [
+      {
+        words: ['我的', '自行车', '被', '偷了'],
+        pinyin: 'wǒ de zìxíngchē bèi tōu le',
+        tr: { fr: 'mon vélo a été volé', en: 'my bike was stolen' },
+      },
+      {
+        words: ['蛋糕', '被', '弟弟', '吃完了'],
+        pinyin: 'dàngāo bèi dìdi chī wán le',
+        tr: { fr: 'mon petit frère a mangé tout le gâteau', en: 'the cake was eaten up by my little brother' },
+      },
+      {
+        words: ['他', '被', '老师', '批评了'],
+        pinyin: 'tā bèi lǎoshī pīpíng le',
+        tr: { fr: 'il s\'est fait gronder par le professeur', en: 'he was told off by the teacher' },
+      },
+    ],
+    fill: [
+      {
+        before: '我的钱包',
+        after: '偷了',
+        answer: '被',
+        wrong: ['把', '比'],
+        pinyin: 'wǒ de qiánbāo bèi tōu le',
+        tr: { fr: 'mon portefeuille a été volé', en: 'my wallet was stolen' },
+      },
+      {
+        before: '我的手机',
+        after: '被拿走',
+        answer: '没',
+        wrong: ['不', '了'],
+        pinyin: 'wǒ de shǒujī méi bèi ná zǒu',
+        tr: { fr: 'mon téléphone n\'a pas été emporté', en: 'my phone wasn\'t taken' },
+      },
+      {
+        before: '蛋糕被弟弟吃',
+        after: '了',
+        answer: '完',
+        wrong: ['在', '是'],
+        pinyin: 'dàngāo bèi dìdi chī wán le',
+        tr: { fr: 'mon petit frère a mangé tout le gâteau', en: 'the cake was eaten up by my little brother' },
+      },
+    ],
+    judge: [
+      {
+        zh: '我的自行车被偷。',
+        ok: false,
+        fix: '我的自行车被偷了。',
+        fixPinyin: 'wǒ de zìxíngchē bèi tōu le',
+        why: {
+          fr: 'Après 被, le verbe a besoin d\'un complément ou de 了.',
+          en: 'After 被, the verb needs a complement or 了.',
+        },
+        tr: { fr: 'mon vélo a été volé', en: 'my bike was stolen' },
+      },
+      {
+        zh: '我被他打了一下。',
+        pinyin: 'wǒ bèi tā dǎ le yí xià',
+        ok: true,
+        tr: { fr: 'il m\'a donné un coup', en: 'I got hit by him' },
+      },
+      {
+        zh: '他不被老师批评了。',
+        ok: false,
+        fix: '他没被老师批评。',
+        fixPinyin: 'tā méi bèi lǎoshī pīpíng',
+        why: {
+          fr: 'Pour une action passée, la négation est 没, devant 被, et sans 了.',
+          en: 'For a past action, the negative is 没, before 被, and without 了.',
+        },
+        tr: { fr: 'il ne s\'est pas fait gronder par le professeur', en: 'he wasn\'t told off by the teacher' },
+      },
+    ],
+    translate: [
+      {
+        answer: '我的自行车被偷了',
+        pinyin: 'wǒ de zìxíngchē bèi tōu le',
+        wrong: ['我的自行车把偷了', '我被自行车偷了'],
+        tr: { fr: 'mon vélo a été volé', en: 'my bike was stolen' },
+      },
+      {
+        answer: '他被老师批评了',
+        pinyin: 'tā bèi lǎoshī pīpíng le',
+        wrong: ['老师被他批评了', '他把老师批评了'],
+        tr: { fr: 'il s\'est fait gronder par le professeur', en: 'he was told off by the teacher' },
+      },
+    ],
+  },
+  {
+    id: 'resultat',
+    level: 3,
+    title: { fr: 'Le complément de résultat', en: 'Result complements' },
+    pattern: { fr: 'Verbe + résultat (完, 懂, 到, 错, 好)', en: 'Verb + result (完, 懂, 到, 错, 好)' },
+    explanation: [
+      {
+        fr: 'Après un verbe, un second mot dit ce qu\'a donné l\'action : 看完 (lire jusqu\'au bout), 听懂 (écouter et comprendre), 找到 (chercher et trouver), 写错 (mal écrire), 做好 (bien faire, terminer).',
+        en: 'After a verb, a second word says what the action led to: 看完 (read to the end), 听懂 (listen and understand), 找到 (look for and find), 写错 (write wrongly), 做好 (do well, get done).',
+      },
+      {
+        fr: 'Pour dire que le résultat n\'a pas été atteint, on met 没 devant : 我没听懂 (« je n\'ai pas compris »).',
+        en: 'To say the result wasn\'t reached, put 没 in front: 我没听懂 ("I didn\'t understand").',
+      },
+    ],
+    examples: [
+      { zh: '我看完这本书了。', pinyin: 'wǒ kàn wán zhè běn shū le', tr: { fr: 'j\'ai fini de lire ce livre', en: 'I finished reading this book' } },
+      { zh: '你听懂了吗？', pinyin: 'nǐ tīng dǒng le ma', tr: { fr: 'tu as compris ?', en: 'did you understand?' } },
+      { zh: '我找到我的钥匙了。', pinyin: 'wǒ zhǎo dào wǒ de yàoshi le', tr: { fr: 'j\'ai trouvé mes clés', en: 'I found my keys' } },
+      { zh: '这个字我写错了。', pinyin: 'zhège zì wǒ xiě cuò le', tr: { fr: 'j\'ai mal écrit ce caractère', en: 'I wrote this character wrong' } },
+      { zh: '我没听懂。', pinyin: 'wǒ méi tīng dǒng', tr: { fr: 'je n\'ai pas compris', en: 'I didn\'t understand' } },
+    ],
+    pitfall: {
+      fr: '找 veut dire « chercher », 找到 « trouver » : 我找了我的钥匙 dit seulement que tu les as cherchées.',
+      en: '找 means "to look for", 找到 "to find": 我找了我的钥匙 only says you looked for them.',
+    },
+    order: [
+      {
+        words: ['我', '看完', '这本书', '了'],
+        pinyin: 'wǒ kàn wán zhè běn shū le',
+        tr: { fr: 'j\'ai fini de lire ce livre', en: 'I finished reading this book' },
+        alt: [['这本书', '我', '看完', '了']],
+      },
+      {
+        words: ['我', '没', '听懂'],
+        pinyin: 'wǒ méi tīng dǒng',
+        tr: { fr: 'je n\'ai pas compris', en: 'I didn\'t understand' },
+      },
+      {
+        words: ['我', '找到', '钥匙', '了'],
+        pinyin: 'wǒ zhǎo dào yàoshi le',
+        tr: { fr: 'j\'ai trouvé les clés', en: 'I found the keys' },
+        alt: [['钥匙', '我', '找到', '了']],
+      },
+    ],
+    fill: [
+      {
+        before: '你听',
+        after: '了吗？',
+        answer: '懂',
+        wrong: ['完', '是'],
+        pinyin: 'nǐ tīng dǒng le ma',
+        tr: { fr: 'tu as compris ?', en: 'did you understand?' },
+      },
+      {
+        before: '我找',
+        after: '我的钥匙了',
+        answer: '到',
+        wrong: ['在', '是'],
+        pinyin: 'wǒ zhǎo dào wǒ de yàoshi le',
+        tr: { fr: 'j\'ai trouvé mes clés', en: 'I found my keys' },
+      },
+      {
+        before: '这个字我写',
+        after: '了',
+        answer: '错',
+        wrong: ['很', '是'],
+        pinyin: 'zhège zì wǒ xiě cuò le',
+        tr: { fr: 'j\'ai mal écrit ce caractère', en: 'I wrote this character wrong' },
+      },
+    ],
+    judge: [
+      {
+        zh: '我找我的钥匙了，可是没找到。',
+        pinyin: 'wǒ zhǎo wǒ de yàoshi le, kěshì méi zhǎo dào',
+        ok: true,
+        tr: { fr: 'j\'ai cherché mes clés, mais je ne les ai pas trouvées', en: 'I looked for my keys, but I didn\'t find them' },
+      },
+      {
+        zh: '我不听懂。',
+        ok: false,
+        fix: '我没听懂。',
+        fixPinyin: 'wǒ méi tīng dǒng',
+        why: {
+          fr: 'Un résultat qui n\'a pas été atteint se nie avec 没, pas 不.',
+          en: 'A result that wasn\'t reached is negated with 没, not 不.',
+        },
+        tr: { fr: 'je n\'ai pas compris', en: 'I didn\'t understand' },
+      },
+    ],
+    translate: [
+      {
+        answer: '我看完这本书了',
+        pinyin: 'wǒ kàn wán zhè běn shū le',
+        wrong: ['我看这本书了', '我完看这本书了'],
+        tr: { fr: 'j\'ai fini de lire ce livre', en: 'I finished reading this book' },
+      },
+      {
+        answer: '我找到我的钥匙了',
+        pinyin: 'wǒ zhǎo dào wǒ de yàoshi le',
+        wrong: ['我找我的钥匙了', '我到找我的钥匙了'],
+        tr: { fr: 'j\'ai trouvé mes clés', en: 'I found my keys' },
+      },
+    ],
+  },
+  {
+    id: 'direction',
+    level: 3,
+    title: { fr: 'Le complément de direction', en: 'Direction complements' },
+    pattern: { fr: 'Verbe + (上 / 下 / 进 / 出 / 回) + 来 / 去', en: 'Verb + (上 / 下 / 进 / 出 / 回) + 来 / 去' },
+    explanation: [
+      {
+        fr: 'Après un verbe, 来 indique un mouvement vers celui qui parle, 去 un mouvement qui s\'en éloigne : 进来 (« entre », vers moi), 出去 (« sors », loin de moi).',
+        en: 'After a verb, 来 shows movement towards the speaker and 去 movement away: 进来 ("come in", towards me), 出去 ("go out", away from me).',
+      },
+      {
+        fr: '上, 下, 进, 出, 回, 过 précisent le sens et se combinent : 走进来, 跑出去, 拿回来.',
+        en: '上, 下, 进, 出, 回, 过 give the direction and combine with them: 走进来, 跑出去, 拿回来.',
+      },
+      {
+        fr: 'Un lieu se place avant 来 ou 去 : 他回家去了.',
+        en: 'A place goes before 来 or 去: 他回家去了.',
+      },
+    ],
+    examples: [
+      { zh: '请进来！', pinyin: 'qǐng jìn lai', tr: { fr: 'entre, je t\'en prie', en: 'please come in' } },
+      { zh: '他出去了。', pinyin: 'tā chū qu le', tr: { fr: 'il est sorti', en: 'he went out' } },
+      { zh: '我把书拿回来了。', pinyin: 'wǒ bǎ shū ná huí lai le', tr: { fr: 'j\'ai rapporté le livre', en: 'I brought the book back' } },
+      { zh: '他回家去了。', pinyin: 'tā huí jiā qu le', tr: { fr: 'il est rentré chez lui', en: 'he went back home' } },
+    ],
+    pitfall: {
+      fr: 'Tout dépend d\'où l\'on parle : quelqu\'un à l\'intérieur te dit 进来 ; toi, dehors, tu dis 我进去.',
+      en: 'It all depends on where you are: someone inside tells you 进来; you, outside, say 我进去.',
+    },
+    order: [
+      {
+        words: ['他', '回家', '去', '了'],
+        pinyin: 'tā huí jiā qu le',
+        tr: { fr: 'il est rentré chez lui', en: 'he went back home' },
+      },
+      {
+        words: ['老师', '请', '你', '进来'],
+        pinyin: 'lǎoshī qǐng nǐ jìn lai',
+        tr: { fr: 'le professeur te demande d\'entrer', en: 'the teacher asks you to come in' },
+      },
+      {
+        words: ['我', '把', '书', '拿回来了'],
+        pinyin: 'wǒ bǎ shū ná huí lai le',
+        tr: { fr: 'j\'ai rapporté le livre', en: 'I brought the book back' },
+      },
+    ],
+    fill: [
+      {
+        before: '外面很冷，你快进',
+        after: '吧',
+        answer: '来',
+        wrong: ['到', '是'],
+        pinyin: 'wàimiàn hěn lěng, nǐ kuài jìn lai ba',
+        tr: { fr: 'il fait froid dehors, entre vite', en: 'it\'s cold outside, come in quickly' },
+      },
+      {
+        before: '他已经回家',
+        after: '了',
+        answer: '去',
+        wrong: ['在', '是'],
+        pinyin: 'tā yǐjīng huí jiā qu le',
+        tr: { fr: 'il est déjà rentré chez lui', en: 'he has already gone home' },
+      },
+      {
+        before: '我把书拿',
+        after: '来了',
+        answer: '回',
+        wrong: ['在', '是'],
+        pinyin: 'wǒ bǎ shū ná huí lai le',
+        tr: { fr: 'j\'ai rapporté le livre', en: 'I brought the book back' },
+      },
+    ],
+    judge: [
+      {
+        zh: '他回去家了。',
+        ok: false,
+        fix: '他回家去了。',
+        fixPinyin: 'tā huí jiā qu le',
+        why: { fr: 'Le lieu se place avant 来 ou 去.', en: 'The place goes before 来 or 去.' },
+        tr: { fr: 'il est rentré chez lui', en: 'he went back home' },
+      },
+      {
+        zh: '你下来吧！',
+        pinyin: 'nǐ xià lai ba',
+        ok: true,
+        tr: { fr: 'descends (vers moi) !', en: 'come down (to me)!' },
+      },
+    ],
+    translate: [
+      {
+        answer: '他出去了',
+        pinyin: 'tā chū qu le',
+        wrong: ['他去出了', '他出了去'],
+        tr: { fr: 'il est sorti', en: 'he went out' },
+      },
+      {
+        answer: '请进来',
+        pinyin: 'qǐng jìn lai',
+        wrong: ['请来进', '进来请'],
+        tr: { fr: 'entre, je t\'en prie', en: 'please come in' },
+      },
+    ],
+  },
+  {
+    id: 'potentiel',
+    level: 3,
+    title: { fr: '得 / 不 : pouvoir ou pas', en: '得 / 不: can or can\'t' },
+    pattern: { fr: 'Verbe + 得 / 不 + résultat', en: 'Verb + 得 / 不 + result' },
+    explanation: [
+      {
+        fr: 'Entre un verbe et son résultat, 得 dit qu\'on y arrive, 不 qu\'on n\'y arrive pas : 听得懂 (« je comprends », en écoutant), 听不懂 (« je ne comprends pas »).',
+        en: 'Between a verb and its result, 得 says you can manage it and 不 that you can\'t: 听得懂 ("I can understand", by listening), 听不懂 ("I can\'t understand").',
+      },
+      {
+        fr: 'Très courant : 看不见 (ne pas arriver à voir), 买不到 (ne pas trouver à acheter), 吃不完 (ne pas pouvoir tout manger). Question : 你听得懂吗 ?',
+        en: 'Very common: 看不见 (can\'t see), 买不到 (can\'t find to buy), 吃不完 (can\'t eat it all). Question: 你听得懂吗?',
+      },
+    ],
+    examples: [
+      {
+        zh: '我听不懂他说的话。',
+        pinyin: 'wǒ tīng bu dǒng tā shuō de huà',
+        tr: { fr: 'je ne comprends pas ce qu\'il dit', en: 'I can\'t understand what he says' },
+      },
+      { zh: '你看得见吗？', pinyin: 'nǐ kàn de jiàn ma', tr: { fr: 'tu arrives à voir ?', en: 'can you see?' } },
+      {
+        zh: '菜太多了，我吃不完。',
+        pinyin: 'cài tài duō le, wǒ chī bu wán',
+        tr: { fr: 'il y a trop de plats, je ne peux pas tout manger', en: 'there\'s too much food, I can\'t eat it all' },
+      },
+      {
+        zh: '这本书在这儿买不到。',
+        pinyin: 'zhè běn shū zài zhèr mǎi bu dào',
+        tr: { fr: 'on ne trouve pas ce livre ici', en: 'you can\'t buy this book here' },
+      },
+    ],
+    pitfall: {
+      fr: '« Je n\'arrive pas à comprendre » ne se dit pas 我不能听懂 mais 我听不懂 ; et on écrit 看得见 avec 得, pas 的.',
+      en: '"I can\'t understand" isn\'t 我不能听懂 but 我听不懂; and 看得见 is written with 得, not 的.',
+    },
+    order: [
+      {
+        words: ['我', '听不懂', '他', '说的话'],
+        pinyin: 'wǒ tīng bu dǒng tā shuō de huà',
+        tr: { fr: 'je ne comprends pas ce qu\'il dit', en: 'I can\'t understand what he says' },
+        alt: [['他', '说的话', '我', '听不懂']],
+      },
+      {
+        words: ['菜', '太多了', '我', '吃不完'],
+        pinyin: 'cài tài duō le, wǒ chī bu wán',
+        tr: { fr: 'il y a trop de plats, je ne peux pas tout manger', en: 'there\'s too much food, I can\'t eat it all' },
+      },
+      {
+        words: ['你', '看得见', '吗'],
+        pinyin: 'nǐ kàn de jiàn ma',
+        tr: { fr: 'tu arrives à voir ?', en: 'can you see?' },
+      },
+    ],
+    fill: [
+      {
+        before: '我听',
+        after: '懂，你说慢一点儿',
+        answer: '不',
+        wrong: ['没', '很'],
+        pinyin: 'wǒ tīng bu dǒng, nǐ shuō màn yìdiǎnr',
+        tr: { fr: 'je ne comprends pas, parle plus lentement', en: 'I can\'t understand, speak more slowly' },
+      },
+      {
+        before: '你看',
+        after: '见黑板吗？',
+        answer: '得',
+        wrong: ['的', '了'],
+        pinyin: 'nǐ kàn de jiàn hēibǎn ma',
+        tr: { fr: 'tu arrives à voir le tableau ?', en: 'can you see the blackboard?' },
+      },
+      {
+        before: '菜太多了，我吃不',
+        after: '',
+        answer: '完',
+        wrong: ['在', '是'],
+        pinyin: 'cài tài duō le, wǒ chī bu wán',
+        tr: { fr: 'il y a trop de plats, je ne peux pas tout manger', en: 'there\'s too much food, I can\'t eat it all' },
+      },
+    ],
+    judge: [
+      {
+        zh: '我听得不懂。',
+        ok: false,
+        fix: '我听不懂。',
+        fixPinyin: 'wǒ tīng bu dǒng',
+        why: {
+          fr: 'À la forme négative, c\'est verbe + 不 + résultat, sans 得.',
+          en: 'In the negative it\'s verb + 不 + result, without 得.',
+        },
+        tr: { fr: 'je ne comprends pas', en: 'I can\'t understand' },
+      },
+      {
+        zh: '这么多作业，你做得完吗？',
+        pinyin: 'zhème duō zuòyè, nǐ zuò de wán ma',
+        ok: true,
+        tr: { fr: 'avec autant de devoirs, tu vas pouvoir tout finir ?', en: 'with so much homework, can you get it all done?' },
+      },
+    ],
+    translate: [
+      {
+        answer: '我听不懂他说的话',
+        pinyin: 'wǒ tīng bu dǒng tā shuō de huà',
+        wrong: ['我不听懂他说的话', '我听得懂他说的话'],
+        tr: { fr: 'je ne comprends pas ce qu\'il dit', en: 'I can\'t understand what he says' },
+      },
+      {
+        answer: '你看得见吗',
+        pinyin: 'nǐ kàn de jiàn ma',
+        wrong: ['你看的见吗', '你见得看吗'],
+        tr: { fr: 'tu arrives à voir ?', en: 'can you see?' },
+      },
+    ],
+  },
+  {
+    id: 'yuelaiyue',
+    level: 3,
+    title: { fr: '越来越 : de plus en plus', en: '越来越: more and more' },
+    pattern: { fr: '越来越 + adjectif / verbe', en: '越来越 + adjective / verb' },
+    explanation: [
+      {
+        fr: '越来越 devant un adjectif ou un verbe de sentiment dit que quelque chose augmente avec le temps : 天气越来越冷 (« il fait de plus en plus froid »).',
+        en: '越来越 before an adjective or a feeling verb says that something keeps increasing: 天气越来越冷 ("it\'s getting colder and colder").',
+      },
+      {
+        fr: '了 en fin de phrase souligne le changement. Pas de 很 après 越来越.',
+        en: '了 at the end stresses the change. No 很 after 越来越.',
+      },
+    ],
+    examples: [
+      { zh: '天气越来越冷了。', pinyin: 'tiānqì yuè lái yuè lěng le', tr: { fr: 'il fait de plus en plus froid', en: 'it\'s getting colder and colder' } },
+      {
+        zh: '你的汉语越来越好了。',
+        pinyin: 'nǐ de Hànyǔ yuè lái yuè hǎo le',
+        tr: { fr: 'ton chinois est de mieux en mieux', en: 'your Chinese keeps getting better' },
+      },
+      {
+        zh: '我越来越喜欢北京了。',
+        pinyin: 'wǒ yuè lái yuè xǐhuan Běijīng le',
+        tr: { fr: 'j\'aime Pékin de plus en plus', en: 'I like Beijing more and more' },
+      },
+      {
+        zh: '学汉语的人越来越多。',
+        pinyin: 'xué Hànyǔ de rén yuè lái yuè duō',
+        tr: { fr: 'de plus en plus de gens apprennent le chinois', en: 'more and more people are learning Chinese' },
+      },
+    ],
+    pitfall: {
+      fr: 'On ajoute souvent 很 par habitude (越来越很冷) : 越来越 remplace 很, on ne met pas les deux.',
+      en: 'People often add 很 out of habit (越来越很冷): 越来越 replaces 很, you don\'t use both.',
+    },
+    order: [
+      {
+        words: ['天气', '越来越', '冷', '了'],
+        pinyin: 'tiānqì yuè lái yuè lěng le',
+        tr: { fr: 'il fait de plus en plus froid', en: 'it\'s getting colder and colder' },
+      },
+      {
+        words: ['你的', '汉语', '越来越', '好了'],
+        pinyin: 'nǐ de Hànyǔ yuè lái yuè hǎo le',
+        tr: { fr: 'ton chinois est de mieux en mieux', en: 'your Chinese keeps getting better' },
+      },
+      {
+        words: ['我', '越来越', '喜欢', '北京'],
+        pinyin: 'wǒ yuè lái yuè xǐhuan Běijīng',
+        tr: { fr: 'j\'aime Pékin de plus en plus', en: 'I like Beijing more and more' },
+        alt: [['北京', '我', '越来越', '喜欢']],
+      },
+    ],
+    fill: [
+      {
+        before: '天气越来越',
+        after: '了',
+        answer: '热',
+        wrong: ['很热', '太热'],
+        pinyin: 'tiānqì yuè lái yuè rè le',
+        tr: { fr: 'il fait de plus en plus chaud', en: 'it\'s getting hotter and hotter' },
+      },
+      {
+        before: '我的汉语',
+        after: '好了',
+        answer: '越来越',
+        wrong: ['比', '越'],
+        pinyin: 'wǒ de Hànyǔ yuè lái yuè hǎo le',
+        tr: { fr: 'mon chinois est de mieux en mieux', en: 'my Chinese keeps getting better' },
+      },
+      {
+        before: '学汉语的人越来越',
+        after: '',
+        answer: '多',
+        wrong: ['很多', '多多'],
+        pinyin: 'xué Hànyǔ de rén yuè lái yuè duō',
+        tr: { fr: 'de plus en plus de gens apprennent le chinois', en: 'more and more people are learning Chinese' },
+      },
+    ],
+    judge: [
+      {
+        zh: '天气越来越很冷。',
+        ok: false,
+        fix: '天气越来越冷。',
+        fixPinyin: 'tiānqì yuè lái yuè lěng',
+        why: { fr: 'Pas de 很 après 越来越.', en: 'No 很 after 越来越.' },
+        tr: { fr: 'il fait de plus en plus froid', en: 'it\'s getting colder and colder' },
+      },
+      {
+        zh: '他越来越高了。',
+        pinyin: 'tā yuè lái yuè gāo le',
+        ok: true,
+        tr: { fr: 'il est de plus en plus grand', en: 'he\'s getting taller and taller' },
+      },
+    ],
+    translate: [
+      {
+        answer: '天气越来越冷了',
+        pinyin: 'tiānqì yuè lái yuè lěng le',
+        wrong: ['天气越来越很冷', '天气冷越来越了'],
+        tr: { fr: 'il fait de plus en plus froid', en: 'it\'s getting colder and colder' },
+      },
+      {
+        answer: '我越来越喜欢北京了',
+        pinyin: 'wǒ yuè lái yuè xǐhuan Běijīng le',
+        wrong: ['我喜欢越来越北京了', '北京越来越喜欢我了'],
+        tr: { fr: 'j\'aime Pékin de plus en plus', en: 'I like Beijing more and more' },
+      },
+    ],
+  },
+  {
+    id: 'shi-de',
+    level: 3,
+    title: { fr: '是…的 : quand, où, comment', en: '是…的: when, where, how' },
+    pattern: { fr: '是 + quand / où / comment + verbe + 的', en: '是 + when / where / how + verb + 的' },
+    explanation: [
+      {
+        fr: 'Pour une action déjà faite, 是…的 met en avant quand, où, comment ou avec qui elle s\'est faite : 我是昨天来的 (« c\'est hier que je suis venu »).',
+        en: 'For something that already happened, 是…的 highlights when, where, how or with whom: 我是昨天来的 ("it was yesterday that I came").',
+      },
+      {
+        fr: '是 se place devant l\'élément mis en avant, 的 à la fin. À l\'oral, 是 disparaît souvent : 我昨天来的. La négation est 不是…的.',
+        en: '是 goes before the highlighted part, 的 at the end. In speech, 是 is often dropped: 我昨天来的. The negative is 不是…的.',
+      },
+    ],
+    examples: [
+      { zh: '我是昨天到的。', pinyin: 'wǒ shì zuótiān dào de', tr: { fr: 'je suis arrivé hier', en: 'I arrived yesterday' } },
+      { zh: '你是怎么来的？', pinyin: 'nǐ shì zěnme lái de', tr: { fr: 'comment es-tu venu ?', en: 'how did you get here?' } },
+      { zh: '我是坐飞机来的。', pinyin: 'wǒ shì zuò fēijī lái de', tr: { fr: 'je suis venu en avion', en: 'I came by plane' } },
+      {
+        zh: '他是在北京学的汉语。',
+        pinyin: 'tā shì zài Běijīng xué de Hànyǔ',
+        tr: { fr: 'c\'est à Pékin qu\'il a appris le chinois', en: 'it was in Beijing that he learned Chinese' },
+      },
+      { zh: '我不是一个人去的。', pinyin: 'wǒ bú shì yí ge rén qù de', tr: { fr: 'je n\'y suis pas allé seul', en: 'I didn\'t go alone' } },
+    ],
+    pitfall: {
+      fr: 'On ajoute souvent 了 parce que l\'action est passée (我是昨天来了的) : avec 是…的, pas de 了.',
+      en: 'People often add 了 because the action is past (我是昨天来了的): with 是…的 there is no 了.',
+    },
+    order: [
+      {
+        words: ['我', '是', '昨天', '到', '的'],
+        pinyin: 'wǒ shì zuótiān dào de',
+        tr: { fr: 'je suis arrivé hier', en: 'I arrived yesterday' },
+      },
+      {
+        words: ['你', '是', '怎么', '来', '的'],
+        pinyin: 'nǐ shì zěnme lái de',
+        tr: { fr: 'comment es-tu venu ?', en: 'how did you get here?' },
+      },
+      {
+        words: ['我', '是', '坐飞机', '来', '的'],
+        pinyin: 'wǒ shì zuò fēijī lái de',
+        tr: { fr: 'je suis venu en avion', en: 'I came by plane' },
+      },
+    ],
+    fill: [
+      {
+        before: '我是坐火车来',
+        after: '',
+        answer: '的',
+        wrong: ['了', '吗'],
+        pinyin: 'wǒ shì zuò huǒchē lái de',
+        tr: { fr: 'je suis venu en train', en: 'I came by train' },
+      },
+      {
+        before: '你',
+        after: '什么时候到的？',
+        answer: '是',
+        wrong: ['了', '有'],
+        pinyin: 'nǐ shì shénme shíhou dào de',
+        tr: { fr: 'quand es-tu arrivé ?', en: 'when did you arrive?' },
+      },
+      {
+        before: '我',
+        after: '是一个人去的',
+        answer: '不',
+        wrong: ['没', '很'],
+        pinyin: 'wǒ bú shì yí ge rén qù de',
+        tr: { fr: 'je n\'y suis pas allé seul', en: 'I didn\'t go alone' },
+      },
+    ],
+    judge: [
+      {
+        zh: '我是昨天来了的。',
+        ok: false,
+        fix: '我是昨天来的。',
+        fixPinyin: 'wǒ shì zuótiān lái de',
+        why: { fr: 'Avec 是…的, pas de 了.', en: 'With 是…的 there is no 了.' },
+        tr: { fr: 'je suis venu hier', en: 'I came yesterday' },
+      },
+      {
+        zh: '你是在哪儿买的？',
+        pinyin: 'nǐ shì zài nǎr mǎi de',
+        ok: true,
+        tr: { fr: 'où l\'as-tu acheté ?', en: 'where did you buy it?' },
+      },
+      {
+        zh: '我没是坐飞机来的。',
+        ok: false,
+        fix: '我不是坐飞机来的。',
+        fixPinyin: 'wǒ bú shì zuò fēijī lái de',
+        why: { fr: 'La négation de 是…的 est 不是…的.', en: 'The negative of 是…的 is 不是…的.' },
+        tr: { fr: 'je ne suis pas venu en avion', en: 'I didn\'t come by plane' },
+      },
+    ],
+    translate: [
+      {
+        answer: '我是坐飞机来的',
+        pinyin: 'wǒ shì zuò fēijī lái de',
+        wrong: ['我是坐飞机来了', '我坐飞机是来的'],
+        tr: { fr: 'je suis venu en avion', en: 'I came by plane' },
+      },
+      {
+        answer: '你是怎么来的',
+        pinyin: 'nǐ shì zěnme lái de',
+        wrong: ['你怎么是来的', '你是怎么来了'],
+        tr: { fr: 'comment es-tu venu ?', en: 'how did you get here?' },
+      },
+    ],
+  },
+  {
+    id: 'youdianr',
+    level: 3,
+    title: { fr: '有点儿 et 一点儿', en: '有点儿 and 一点儿' },
+    pattern: { fr: '有点儿 + adjectif · adjectif + 一点儿', en: '有点儿 + adjective · adjective + 一点儿' },
+    explanation: [
+      {
+        fr: '有点儿 se place devant un adjectif et veut dire « un peu », souvent pour quelque chose qui ne plaît pas : 有点儿贵 (« un peu cher »).',
+        en: '有点儿 goes before an adjective and means "a bit", often for something you don\'t like: 有点儿贵 ("a bit expensive").',
+      },
+      {
+        fr: '一点儿 se place après un adjectif pour demander ou comparer (便宜一点儿, « un peu moins cher »), ou devant un nom (喝一点儿水).',
+        en: '一点儿 goes after an adjective to ask or compare (便宜一点儿, "a bit cheaper"), or before a noun (喝一点儿水).',
+      },
+    ],
+    examples: [
+      { zh: '这件衣服有点儿贵。', pinyin: 'zhè jiàn yīfu yǒudiǎnr guì', tr: { fr: 'ce vêtement est un peu cher', en: 'this piece of clothing is a bit expensive' } },
+      { zh: '便宜一点儿吧。', pinyin: 'piányi yìdiǎnr ba', tr: { fr: 'faites-moi un petit prix', en: 'make it a bit cheaper' } },
+      { zh: '我今天有点儿累。', pinyin: 'wǒ jīntiān yǒudiǎnr lèi', tr: { fr: 'aujourd\'hui je suis un peu fatigué', en: 'I\'m a bit tired today' } },
+      { zh: '请说慢一点儿。', pinyin: 'qǐng shuō màn yìdiǎnr', tr: { fr: 'parle un peu plus lentement, s\'il te plaît', en: 'please speak a bit more slowly' } },
+      { zh: '你喝一点儿水吧。', pinyin: 'nǐ hē yìdiǎnr shuǐ ba', tr: { fr: 'bois un peu d\'eau', en: 'drink some water' } },
+    ],
+    pitfall: {
+      fr: '« C\'est un peu cher » se dit 有点儿贵, pas 一点儿贵 : devant l\'adjectif, c\'est toujours 有点儿.',
+      en: '"It\'s a bit expensive" is 有点儿贵, not 一点儿贵: before the adjective it\'s always 有点儿.',
+    },
+    order: [
+      {
+        words: ['这件', '衣服', '有点儿', '贵'],
+        pinyin: 'zhè jiàn yīfu yǒudiǎnr guì',
+        tr: { fr: 'ce vêtement est un peu cher', en: 'this piece of clothing is a bit expensive' },
+      },
+      {
+        words: ['请', '说', '慢', '一点儿'],
+        pinyin: 'qǐng shuō màn yìdiǎnr',
+        tr: { fr: 'parle un peu plus lentement, s\'il te plaît', en: 'please speak a bit more slowly' },
+      },
+      {
+        words: ['我', '今天', '有点儿', '累'],
+        pinyin: 'wǒ jīntiān yǒudiǎnr lèi',
+        tr: { fr: 'aujourd\'hui je suis un peu fatigué', en: 'I\'m a bit tired today' },
+        alt: [['今天', '我', '有点儿', '累']],
+      },
+    ],
+    fill: [
+      {
+        before: '这个菜',
+        after: '辣',
+        answer: '有点儿',
+        wrong: ['一点儿', '点儿'],
+        pinyin: 'zhège cài yǒudiǎnr là',
+        tr: { fr: 'ce plat est un peu épicé', en: 'this dish is a bit spicy' },
+      },
+      {
+        before: '便宜',
+        after: '吧',
+        answer: '一点儿',
+        wrong: ['有点儿', '很'],
+        pinyin: 'piányi yìdiǎnr ba',
+        tr: { fr: 'faites-moi un petit prix', en: 'make it a bit cheaper' },
+      },
+      {
+        before: '你喝',
+        after: '水吧',
+        answer: '一点儿',
+        wrong: ['有点儿', '很'],
+        pinyin: 'nǐ hē yìdiǎnr shuǐ ba',
+        tr: { fr: 'bois un peu d\'eau', en: 'drink some water' },
+      },
+    ],
+    judge: [
+      {
+        zh: '今天一点儿冷。',
+        ok: false,
+        fix: '今天有点儿冷。',
+        fixPinyin: 'jīntiān yǒudiǎnr lěng',
+        why: { fr: 'Devant un adjectif, on dit 有点儿.', en: 'Before an adjective, you say 有点儿.' },
+        tr: { fr: 'il fait un peu froid aujourd\'hui', en: 'it\'s a bit cold today' },
+      },
+      {
+        zh: '你可以说慢一点儿吗？',
+        pinyin: 'nǐ kěyǐ shuō màn yìdiǎnr ma',
+        ok: true,
+        tr: { fr: 'tu peux parler un peu plus lentement ?', en: 'can you speak a bit more slowly?' },
+      },
+    ],
+    translate: [
+      {
+        answer: '这件衣服有点儿贵',
+        pinyin: 'zhè jiàn yīfu yǒudiǎnr guì',
+        wrong: ['这件衣服一点儿贵', '这件衣服贵有点儿'],
+        tr: { fr: 'ce vêtement est un peu cher', en: 'this piece of clothing is a bit expensive' },
+      },
+      {
+        answer: '请说慢一点儿',
+        pinyin: 'qǐng shuō màn yìdiǎnr',
+        wrong: ['请说有点儿慢', '请一点儿说慢'],
+        tr: { fr: 'parle un peu plus lentement, s\'il te plaît', en: 'please speak a bit more slowly' },
       },
     ],
   },
