@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { lineText, lineWords } from '../data/reading.js'
+import { lineText, lineVoice, lineWords } from '../data/reading.js'
+import { sentenceSrc } from '../utils/audio.js'
 import { buildReadingQuiz, getReadingProgress, lookupWord, readingQuizSize } from '../utils/readingQuiz.js'
 import { applyLessonResult, PASS_THRESHOLD } from '../utils/lessonProgress.js'
 import { useLang } from '../i18n/useLang.js'
@@ -66,9 +67,15 @@ function Line({ reading, line, index, showPinyin, showTr, selected, onSelect }) 
           </div>
         )}
       </div>
-      <SpeakButton text={lineText(line)} />
+      <SpeakButton text={lineText(line)} voice={lineVoice(reading, line)} />
     </li>
   )
+}
+
+/** Tout le texte enregistré, chaque ligne avec sa voix ; null s'il manque une ligne (voix du téléphone). */
+function allRecorded(reading) {
+  const srcs = reading.lines.map(line => sentenceSrc(lineText(line), lineVoice(reading, line)))
+  return srcs.every(Boolean) ? srcs : null
 }
 
 function Reader({ reading, onStart, onBack, backLabel }) {
@@ -92,7 +99,7 @@ function Reader({ reading, onStart, onBack, backLabel }) {
           <Toggle pressed={showPinyin} onClick={() => setShowPinyin(v => !v)}>{t('rd.pinyin')}</Toggle>
           <Toggle pressed={showTr} onClick={() => setShowTr(v => !v)}>{t('rd.translation')}</Toggle>
           <span className="flex-1" />
-          <SpeakButton text={reading.lines.map(lineText)} />
+          <SpeakButton src={allRecorded(reading)} text={reading.lines.map(lineText)} />
         </div>
 
         <ol className="mt-6 mb-8 flex flex-col gap-5">

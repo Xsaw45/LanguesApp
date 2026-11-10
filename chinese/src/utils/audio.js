@@ -1,7 +1,10 @@
 import manifest from '../data/audio.json'
+import sentences from '../data/sentenceAudio.json'
+import { DEFAULT_VOICE, sentenceFile } from '../data/voices.js'
 import { splitPinyin, toNumeric } from './pinyin.js'
 
 // Enregistrements (scripts/fetch-audio.js) : syllabes aux tons 1-4, mots HSK enregistrés.
+// Phrases (scripts/fetch-sentence-audio.js) : grammaire, classificateurs, lecture, une voix par personnage.
 const SYLLABLES = new Set(manifest.syllables)
 const WORDS = new Set(manifest.words)
 const BASE = `${import.meta.env.BASE_URL}audio/`
@@ -9,6 +12,13 @@ const BASE = `${import.meta.env.BASE_URL}audio/`
 export const syllableSrc = numeric => (SYLLABLES.has(numeric) ? `${BASE}syllables/${numeric}.mp3` : null)
 export const hasWordRecording = hanzi => WORDS.has(hanzi)
 export const recordedWordSrc = hanzi => (WORDS.has(hanzi) ? `${BASE}words/${encodeURIComponent(hanzi)}.mp3` : null)
+
+/** Phrase enregistrée, dite par la voix demandée si elle l'a été, sinon par une autre ; null si pas enregistrée. */
+export function sentenceSrc(text, voice = DEFAULT_VOICE) {
+  const voices = sentences[text]
+  if (!voices) return null
+  return `${BASE}sentences/${sentenceFile(text, voices.includes(voice) ? voice : voices[0])}`
+}
 
 /**
  * Son d'un mot HSK. Un caractère seul prend l'enregistrement de sa syllabe (même lecture que le pinyin affiché,
@@ -72,6 +82,7 @@ export function unlockAudio() {
 function start(url) {
   const el = audioElement()
   el.dataset.unlocked = '1'
+  el.onended = null // un autre son arrête la lecture d'un dialogue en cours
   el.pause()
   el.src = url
   return el.play().catch(() => {})
@@ -83,6 +94,17 @@ export function play(src) {
   window.speechSynthesis?.cancel()
   if (ready.has(src)) return start(ready.get(src))
   return load(src).then(start, () => {})
+}
+
+/** Joue des enregistrements à la suite (un dialogue entier) ; un autre son l'interrompt. */
+export function playAll(srcs) {
+  const [first, ...rest] = srcs.filter(Boolean)
+  if (!first) return
+  preload(rest)
+  play(first).then(() => {
+    const el = audioElement()
+    if (rest.length && el.src === ready.get(first)) el.onended = () => playAll(rest)
+  })
 }
 
 // Mots sans enregistrement : synthèse vocale du téléphone, seulement s'il a une voix chinoise.

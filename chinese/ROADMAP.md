@@ -7,7 +7,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 - Modules : Pinyin et tons (7 leçons, audio, tableau des sons), Vocabulaire HSK 1–9 (répétition espacée),
   Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (25 points HSK 1–2),
   Lecture (10 textes et dialogues HSK 1–2), Classificateurs (56).
-- Bouton écouter sur les mots (enregistrements CC BY-SA, voix du téléphone sinon).
+- Bouton écouter sur les mots (enregistrements CC BY-SA, voix du téléphone sinon) et sur toutes les phrases
+  (grammaire, classificateurs, lecture : Google Cloud Text-to-Speech, une voix par personnage des dialogues).
 - Design (passe unslop), icônes lucide, mises à jour visibles sans fermer l'app, hors ligne.
 - Langue de l'utilisateur (français / anglais) dans les paramètres ; définitions du vocabulaire en français
   (CFDICT) et en anglais (CC-CEDICT) ; lecture des caractères corrigée d'après la liste HSK 3.0.
@@ -25,9 +26,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    fournissant le texte de la licence (`public/hanzi/LICENSE-ARPHIC.txt`).
 4. **Lire et écouter des phrases** — fait pour les HSK 1 et 2 : 10 textes et dialogues (se présenter, restaurant,
    chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois) ; pinyin et traduction
-   affichables, sens de chaque mot au toucher, lecture par la voix du téléphone ; questions de compréhension et
-   phrases à remettre dans l'ordre. Reste : textes HSK 3 et plus ; enregistrements des phrases (voix humaine ou
-   synthèse côté serveur), car tous les téléphones n'ont pas de voix chinoise ; relecture par un locuteur natif.
+   affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension et
+   phrases à remettre dans l'ordre. Reste : textes HSK 3 et plus ; relecture par un locuteur natif.
 
 ## Secondaire
 
@@ -37,8 +37,8 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 - Recherche dans la liste des mots (caractère, pinyin, sens).
 - Relecture du contenu écrit sans source (grammaire, classificateurs, leçons pinyin) par un locuteur natif,
   dans les deux langues.
-- Audio des phrases d'exemple (grammaire, classificateurs) : service de synthèse vocale ou enregistrements, au lieu
-  de la voix du téléphone.
+- Audio des mots sans enregistrement (environ 15 % des HSK 1–5, davantage au-delà) : même synthèse que les phrases,
+  au lieu de la voix du téléphone.
 - Prononciation : enregistrement de sa voix et comparaison avec le modèle (sans note automatique des tons, peu
   fiable).
 - Erreur de lint connue : `src/components/AnswerInput.jsx` (setState dans un effet).

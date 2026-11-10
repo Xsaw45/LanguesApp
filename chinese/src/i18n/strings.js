@@ -78,6 +78,7 @@ export const STRINGS = {
     'settings.credit.cfdict': 'Définitions françaises : CFDICT, Chine Informations (CC BY-SA 3.0)',
     'settings.credit.hsk': 'Listes HSK : drkameleon/complete-hsk-vocabulary (MIT) et krmanik/HSK-3.0 (CC BY-SA 4.0)',
     'settings.credit.audio': 'Enregistrements : Chen Wang, Yue Tan / Shtooka, via hugolpz/audio-cmn (CC BY-SA)',
+    'settings.credit.tts': 'Phrases lues : voix de synthèse Google Cloud Text-to-Speech',
     'settings.credit.strokes': 'Ordre des traits : Hanzi Writer (MIT), données Make Me a Hanzi (Arphic Public License)',
     'settings.credit.unihan': 'Clés des caractères : Unihan, Unicode (licence Unicode)',
 
@@ -292,6 +293,7 @@ export const STRINGS = {
     'settings.credit.cfdict': 'French definitions: CFDICT, Chine Informations (CC BY-SA 3.0)',
     'settings.credit.hsk': 'HSK lists: drkameleon/complete-hsk-vocabulary (MIT) and krmanik/HSK-3.0 (CC BY-SA 4.0)',
     'settings.credit.audio': 'Recordings: Chen Wang, Yue Tan / Shtooka, via hugolpz/audio-cmn (CC BY-SA)',
+    'settings.credit.tts': 'Spoken sentences: Google Cloud Text-to-Speech synthetic voices',
     'settings.credit.strokes': 'Stroke order: Hanzi Writer (MIT), Make Me a Hanzi data (Arphic Public License)',
     'settings.credit.unihan': 'Character radicals: Unihan, Unicode (Unicode License)',
 

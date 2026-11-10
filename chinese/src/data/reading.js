@@ -1,8 +1,10 @@
 // Lecture : petits textes et dialogues du quotidien, gradués par niveau HSK (vocabulaire HSK 1–2 pour l'essentiel).
 // Textes affichés : { fr, en } (langue de l'utilisateur).
 //
-// Texte : { id, level, kind: 'dialogue' | 'text', title, zh (titre chinois), speakers?, lines, questions }
-//   speakers  { A: { zh, pinyin }, B: … } : qui parle (dialogues)
+// Texte : { id, level, kind: 'dialogue' | 'text', title, zh (titre chinois), speakers?, voice?, lines, questions }
+//   speakers  { A: { zh, pinyin, voice }, B: … } : qui parle (dialogues) ; voice : voix enregistrée (data/voices.js),
+//             la même pour un personnage dans tous les dialogues
+//   voice     voix du narrateur (textes)
 //   (GLOSSARY : mots des textes absents des listes HSK, noms propres compris : { mot: { pinyin, tr } })
 //   lines     [{ s?: 'A' | 'B', zh, pinyin, tr, reorder?, alt? }]
 //             zh : mots séparés par des espaces, la ponctuation collée au mot qui la précède (affiché sans espaces ;
@@ -35,7 +37,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Se présenter', en: 'Introducing yourself' },
     zh: '自我介绍',
-    speakers: { A: { zh: '王明', pinyin: 'Wáng Míng' }, B: { zh: '大卫', pinyin: 'Dàwèi' } },
+    speakers: { A: { zh: '王明', pinyin: 'Wáng Míng', voice: 'm' }, B: { zh: '大卫', pinyin: 'Dàwèi', voice: 'm2' } },
     lines: [
       { s: 'A', zh: '你好！ 我 叫 王明。 你 叫 什么 名字？', pinyin: 'Nǐ hǎo! Wǒ jiào Wáng Míng. Nǐ jiào shénme míngzi?', tr: { fr: 'Bonjour, je m\'appelle Wang Ming. Et toi, comment tu t\'appelles ?', en: 'Hi, my name is Wang Ming. What\'s your name?' } },
       { s: 'B', zh: '你好！ 我 叫 大卫。', pinyin: 'Nǐ hǎo! Wǒ jiào Dàwèi.', tr: { fr: 'Bonjour, je m\'appelle David.', en: 'Hi, my name is David.' } },
@@ -60,7 +62,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Au restaurant', en: 'At the restaurant' },
     zh: '在饭馆',
-    speakers: { A: { zh: '服务员', pinyin: 'fúwùyuán' }, B: { zh: '马丽', pinyin: 'Mǎ Lì' } },
+    speakers: { A: { zh: '服务员', pinyin: 'fúwùyuán', voice: 'f2' }, B: { zh: '马丽', pinyin: 'Mǎ Lì', voice: 'f' } },
     lines: [
       { s: 'A', zh: '你好， 你 想 吃 什么？', pinyin: 'Nǐ hǎo, nǐ xiǎng chī shénme?', tr: { fr: 'Bonjour, qu\'est-ce que vous voulez manger ?', en: 'Hello, what would you like to eat?' } },
       { s: 'B', zh: '我 想 吃 米饭 和 鸡蛋。', pinyin: 'Wǒ xiǎng chī mǐfàn hé jīdàn.', tr: { fr: 'Je voudrais du riz et des œufs.', en: 'I\'d like rice and eggs.' }, reorder: true, alt: ['我想吃鸡蛋和米饭。'] },
@@ -85,7 +87,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Demander son chemin', en: 'Asking the way' },
     zh: '问路',
-    speakers: { A: { zh: '大卫', pinyin: 'Dàwèi' }, B: { zh: '先生', pinyin: 'xiānsheng' } },
+    speakers: { A: { zh: '大卫', pinyin: 'Dàwèi', voice: 'm2' }, B: { zh: '先生', pinyin: 'xiānsheng', voice: 'm' } },
     lines: [
       { s: 'A', zh: '先生， 你好！ 请问， 火车站 在 哪儿？', pinyin: 'Xiānsheng, nǐ hǎo! Qǐngwèn, huǒchēzhàn zài nǎr?', tr: { fr: 'Bonjour monsieur. Excusez-moi, où est la gare ?', en: 'Hello, sir. Excuse me, where is the train station?' } },
       { s: 'B', zh: '火车站 在 前面。', pinyin: 'Huǒchēzhàn zài qiánmiàn.', tr: { fr: 'La gare est tout droit, devant.', en: 'The train station is straight ahead.' }, reorder: true },
@@ -109,6 +111,7 @@ export const READINGS = [
     kind: 'text',
     title: { fr: 'Ma famille', en: 'My family' },
     zh: '我的家',
+    voice: 'f',
     lines: [
       { zh: '我 叫 马丽， 今年 二十 岁。', pinyin: 'Wǒ jiào Mǎ Lì, jīnnián èrshí suì.', tr: { fr: 'Je m\'appelle Ma Li, j\'ai vingt ans.', en: 'My name is Ma Li, I\'m twenty.' } },
       { zh: '我 家 有 四 口 人： 爸爸、 妈妈、 哥哥 和 我。', pinyin: 'Wǒ jiā yǒu sì kǒu rén: bàba, māma, gēge hé wǒ.', tr: { fr: 'Nous sommes quatre dans ma famille : papa, maman, mon grand frère et moi.', en: 'There are four of us in my family: dad, mom, my older brother and me.' } },
@@ -133,6 +136,7 @@ export const READINGS = [
     kind: 'text',
     title: { fr: 'Ma journée', en: 'My day' },
     zh: '我的一天',
+    voice: 'm',
     lines: [
       { zh: '我 每天 早上 七 点 起床。', pinyin: 'Wǒ měitiān zǎoshang qī diǎn qǐchuáng.', tr: { fr: 'Tous les jours, je me lève à sept heures du matin.', en: 'I get up at seven every morning.' }, reorder: true, alt: ['每天早上七点我起床。'] },
       { zh: '我 喝 一 杯 牛奶， 吃 一点儿 面包。', pinyin: 'Wǒ hē yì bēi niúnǎi, chī yìdiǎnr miànbāo.', tr: { fr: 'Je bois un verre de lait et je mange un peu de pain.', en: 'I drink a glass of milk and eat some bread.' } },
@@ -155,7 +159,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Acheter un vêtement', en: 'Buying clothes' },
     zh: '买衣服',
-    speakers: { A: { zh: '马丽', pinyin: 'Mǎ Lì' }, B: { zh: '老板', pinyin: 'lǎobǎn' } },
+    speakers: { A: { zh: '马丽', pinyin: 'Mǎ Lì', voice: 'f' }, B: { zh: '老板', pinyin: 'lǎobǎn', voice: 'm' } },
     lines: [
       { s: 'A', zh: '老板， 这 件 衣服 多少 钱？', pinyin: 'Lǎobǎn, zhè jiàn yīfu duōshao qián?', tr: { fr: 'Bonjour monsieur, combien coûte ce haut ?', en: 'Excuse me, how much is this top?' } },
       { s: 'B', zh: '两百 块。', pinyin: 'Liǎngbǎi kuài.', tr: { fr: 'Deux cents yuans.', en: 'Two hundred yuan.' } },
@@ -179,7 +183,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Chez le médecin', en: 'At the doctor\'s' },
     zh: '看病',
-    speakers: { A: { zh: '医生', pinyin: 'yīshēng' }, B: { zh: '大卫', pinyin: 'Dàwèi' } },
+    speakers: { A: { zh: '医生', pinyin: 'yīshēng', voice: 'f2' }, B: { zh: '大卫', pinyin: 'Dàwèi', voice: 'm2' } },
     lines: [
       { s: 'A', zh: '你 哪儿 不 舒服？', pinyin: 'Nǐ nǎr bù shūfu?', tr: { fr: 'Qu\'est-ce qui ne va pas ?', en: 'What seems to be the problem?' }, reorder: true },
       { s: 'B', zh: '我 头 疼， 也 不 想 吃饭。', pinyin: 'Wǒ tóu téng, yě bù xiǎng chīfàn.', tr: { fr: 'J\'ai mal à la tête, et je n\'ai pas envie de manger.', en: 'I have a headache, and I don\'t feel like eating.' } },
@@ -205,7 +209,7 @@ export const READINGS = [
     kind: 'dialogue',
     title: { fr: 'Un rendez-vous au téléphone', en: 'Making plans on the phone' },
     zh: '打电话',
-    speakers: { A: { zh: '小王', pinyin: 'Xiǎo Wáng' }, B: { zh: '马丽', pinyin: 'Mǎ Lì' } },
+    speakers: { A: { zh: '小王', pinyin: 'Xiǎo Wáng', voice: 'm' }, B: { zh: '马丽', pinyin: 'Mǎ Lì', voice: 'f' } },
     lines: [
       { s: 'A', zh: '喂， 马丽， 你 在 做 什么 呢？', pinyin: 'Wéi, Mǎ Lì, nǐ zài zuò shénme ne?', tr: { fr: 'Allô, Ma Li, qu\'est-ce que tu fais ?', en: 'Hello, Ma Li, what are you doing?' } },
       { s: 'B', zh: '我 正在 看 书 呢。 有 什么 事？', pinyin: 'Wǒ zhèngzài kàn shū ne. Yǒu shénme shì?', tr: { fr: 'Je suis en train de lire. Qu\'est-ce qu\'il y a ?', en: 'I\'m reading. What\'s up?' } },
@@ -230,6 +234,7 @@ export const READINGS = [
     kind: 'text',
     title: { fr: 'Le week-end', en: 'The weekend' },
     zh: '我的周末',
+    voice: 'm',
     lines: [
       { zh: '上 个 周末 天气 很 好， 我 和 朋友 去 公园 玩儿 了。', pinyin: 'Shàng ge zhōumò tiānqì hěn hǎo, wǒ hé péngyou qù gōngyuán wánr le.', tr: { fr: 'Le week-end dernier, il faisait très beau : je suis allé au parc avec des amis.', en: 'Last weekend the weather was great, so I went to the park with friends.' } },
       { zh: '公园 里 人 很 多， 有 的 人 在 跑步， 有 的 人 在 唱歌。', pinyin: 'Gōngyuán li rén hěn duō, yǒu de rén zài pǎobù, yǒu de rén zài chànggē.', tr: { fr: 'Il y avait beaucoup de monde au parc : certains couraient, d\'autres chantaient.', en: 'The park was crowded: some people were running, others were singing.' } },
@@ -252,6 +257,7 @@ export const READINGS = [
     kind: 'text',
     title: { fr: 'J\'apprends le chinois', en: 'Learning Chinese' },
     zh: '学汉语',
+    voice: 'm2',
     lines: [
       { zh: '我 是 法国 人， 我 来 中国 已经 一 年 了。', pinyin: 'Wǒ shì Fǎguó rén, wǒ lái Zhōngguó yǐjīng yì nián le.', tr: { fr: 'Je suis français, je suis en Chine depuis déjà un an.', en: 'I\'m French, and I\'ve been in China for a year already.' } },
       { zh: '刚 来 的 时候， 我 只 会 说 “你好” 和 “谢谢”。', pinyin: 'Gāng lái de shíhou, wǒ zhǐ huì shuō "nǐ hǎo" hé "xièxie".', tr: { fr: 'Quand je suis arrivé, je savais seulement dire « bonjour » et « merci ».', en: 'When I first arrived, I could only say "hello" and "thank you".' } },
@@ -273,3 +279,5 @@ export const READINGS = [
 /** Mots d'une ligne (ponctuation comprise) et la ligne telle qu'elle s'affiche. */
 export const lineWords = line => line.zh.split(' ')
 export const lineText = line => line.zh.replaceAll(' ', '')
+/** Voix d'une ligne : celle du personnage qui parle, sinon celle du narrateur. */
+export const lineVoice = (reading, line) => (line.s ? reading.speakers[line.s].voice : reading.voice)

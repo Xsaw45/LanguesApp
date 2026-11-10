@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { getClassifierProgress } from '../utils/classifierQuiz.js'
 import { applySuccess, applyFailure, isActive } from '../utils/spacedrep.js'
 import { useLang } from '../i18n/useLang.js'
+import { SpeakButton } from './SpeakButton.jsx'
 import { Button, Feedback, ProgressBar, Score, Screen, SectionLabel, TopBar } from './ui.jsx'
 import { optionClass } from './uiStyles.js'
 
@@ -140,7 +141,7 @@ export function ClassifierQuiz({ questions, progressMap, applyUpdates, onExit, o
 
         {answered && (
           <div className="flex flex-col gap-4">
-            <Feedback correct={lastCorrect}>
+            <Feedback correct={lastCorrect} aside={<SpeakButton text={(example ?? cl.examples[0]).zh} />}>
               <p className="flex items-baseline gap-2">
                 <span className="hanzi-display text-2xl text-fg">{cl.char}</span>
                 <span className="text-[15px] text-fg-2">{cl.pinyin}</span>

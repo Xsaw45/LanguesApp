@@ -49,8 +49,12 @@ Chinois, données (dans `chinese/`) :
   CC BY-SA 3.0 : citer la source dans l'app et sur les pages de présentation).
 - puis `node scripts/fetch-audio.js` : copie dans `public/audio/` les enregistrements de
   [hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn) (syllabes : Chen Wang ; mots HSK : Yue Tan / Shtooka ;
-  licence CC BY-SA) et écrit `src/data/audio.json`. Les mots sans enregistrement sont lus par la voix chinoise du
-  téléphone, s'il en a une.
+  licence CC BY-SA) et écrit `src/data/audio.json`.
+- puis `node scripts/fetch-sentence-audio.js` : enregistre les phrases (grammaire, classificateurs, lecture) avec
+  Google Cloud Text-to-Speech (voix Chirp 3 HD, une par personnage des dialogues) dans `public/audio/sentences/` et
+  écrit `src/data/sentenceAudio.json`. Clé `GOOGLE_TTS_KEY` dans `chinese/.env.local` (non commitée) ; seules les
+  phrases nouvelles sont demandées (environ 3 500 caractères en tout, gratuit). Les mots sans enregistrement sont lus
+  par la voix chinoise du téléphone, s'il en a une.
 - puis `node scripts/build-hanzi.js` : caractères par niveau (krmanik/HSK-3.0, « HSK Hanzi »), clé (Unihan), sens
   (CC-CEDICT, CFDICT) dans `src/data/hanzi.json` ; copie les tracés de `hanzi-writer-data` (Make Me a Hanzi, Arphic
   Public License, texte joint dans `public/hanzi/`) dans `public/hanzi/`.
