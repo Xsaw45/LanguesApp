@@ -5,10 +5,11 @@
  *   - words, readings, English senses : drkameleon/complete-hsk-vocabulary (MIT ; senses from CC-CEDICT, CC BY-SA 4.0)
  *   - reading used by the HSK for words with several : krmanik/HSK-3.0 "correct pinyin" (CC BY-SA 4.0, from Pleco)
  *   - French senses : CFDICT (CC BY-SA 3.0, https://chine.in/mandarin/dictionnaire/CFDICT/)
+ *   - hand-made fixes : scripts/word-fixes.json (missing French senses, pinyin, misleading English senses)
  * Run: node scripts/build-data.js
  */
 
-import { writeFileSync, mkdirSync } from 'fs'
+import { readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { exit } from 'process'
 import { fileURLToPath } from 'url'
@@ -156,7 +157,8 @@ function normalizeEntry(entry, level, index, official, cfdict) {
     id: padId(level, index),
     level,
     simplified,
-    pinyin: form?.pinyin || '',
+    // La source écrit parfois ü « u: » (lu:è) et marque le ton neutre d'un point (guī ˙nu:).
+    pinyin: (form?.pinyin || '').replace(/u:/g, 'ü').replace(/˙/g, ''),
     en: form?.senses || [],
     fr: form ? frenchSenses(cfdict, simplified, form.numeric) : [],
   }
@@ -196,6 +198,9 @@ async function main() {
   const all = levels.flatMap(l => l.words)
   dropTwoCharacterMeanings(all, 'en')
   dropTwoCharacterMeanings(all, 'fr')
+  // Corrections faites à la main (scripts/word-fixes.json) : sens français manquants, pinyin, sens anglais trompeurs.
+  const fixes = JSON.parse(readFileSync(join(__dirname, 'word-fixes.json'), 'utf8'))
+  for (const w of all) Object.assign(w, fixes[w.simplified] || {})
 
   for (const { level, words: list } of levels) {
     const words = list

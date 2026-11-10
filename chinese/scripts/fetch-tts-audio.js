@@ -3,11 +3,11 @@
  * humain : public/audio/tts/<voix>-<empreinte>.mp3 et src/data/ttsAudio.json ({ texte: [voix] }).
  *   - phrases : exemples et exercices de grammaire, exemples des classificateurs, textes et dialogues de lecture
  *     (chaque personnage avec sa voix) ;
+ *   - caractères sans syllabe enregistrée, prononcés dans un mot qui fixe leur lecture ;
  *   - mots HSK de plusieurs caractères absents de hugolpz/audio-cmn (src/data/audio.json, lancer fetch-audio.js
- *     avant). Un caractère seul garde l'enregistrement de sa syllabe : la synthèse d'un caractère isolé choisit mal
- *     entre ses lectures (了 le / liǎo).
- * Les fichiers déjà là ne sont pas redemandés ; ceux qui ne servent plus sont supprimés. Environ 12 500 caractères
- * au total : bien en dessous du million gratuit chaque mois.
+ *     avant). Un autre caractère seul garde l'enregistrement de sa syllabe : la synthèse d'un caractère isolé choisit
+ *     mal entre ses lectures (了 le / liǎo).
+ * Les fichiers déjà là ne sont pas redemandés ; ceux qui ne servent plus sont supprimés.
  * Clé : GOOGLE_TTS_KEY dans chinese/.env.local (jamais commitée).
  * Lancer : node scripts/fetch-tts-audio.js
  */
@@ -21,6 +21,7 @@ import { fileURLToPath } from 'url'
 import { GRAMMAR_POINTS } from '../src/data/grammar.js'
 import { CLASSIFIER_GROUPS } from '../src/data/classifiers.js'
 import { READINGS, lineText, lineVoice } from '../src/data/reading.js'
+import { HANZI_AUDIO_CONTEXTS } from '../src/data/hanziAudio.js'
 import { DEFAULT_VOICE, VOICES, ttsFile } from '../src/data/voices.js'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -52,6 +53,7 @@ function texts() {
   }
   for (const group of CLASSIFIER_GROUPS) for (const cl of group.items) for (const ex of cl.examples) add(ex.zh)
   for (const reading of READINGS) for (const line of reading.lines) add(lineText(line), lineVoice(reading, line))
+  for (const context of Object.values(HANZI_AUDIO_CONTEXTS)) add(context.text)
   const recorded = new Set(JSON.parse(readFileSync(join(ROOT, 'src', 'data', 'audio.json'), 'utf8')).words)
   for (let level = 1; level <= 9; level++) {
     const path = join(ROOT, 'src', 'data', `hsk${level}.json`)

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { charRadical, charSenses, charSrc } from '../data/hanzi.js'
+import { charAudioContext, charRadical, charSenses, charSrc } from '../data/hanzi.js'
 import { allowedMistakes, getCharProgress } from '../utils/hanziQuiz.js'
 import { applyFailure, applySuccess, isActive } from '../utils/spacedrep.js'
 import { useLang } from '../i18n/useLang.js'
@@ -52,6 +52,7 @@ export function CharacterPractice({ items, progressMap, applyUpdates, onExit, on
 
   const { ch, trace } = items[index]
   const radical = charRadical(ch)
+  const audioContext = charAudioContext(ch)
 
   function finish(correct, total) {
     if (outcome) return
@@ -80,7 +81,7 @@ export function CharacterPractice({ items, progressMap, applyUpdates, onExit, on
           <p className="text-[15px] text-fg-2">{t(trace ? 'hz.askTrace' : 'hz.askWrite')}</p>
           <div className="mt-3 flex items-center justify-center gap-3">
             <p className="text-2xl text-fg">{ch.pinyin}</p>
-            <SpeakButton src={charSrc(ch)} text={ch.c} />
+            <SpeakButton src={charSrc(ch)} text={audioContext?.text ?? ch.c} />
           </div>
           <p className="mt-1 text-[15px] text-fg">{charSenses(ch, lang).slice(0, 3).join('; ')}</p>
         </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { PenLine, RotateCcw } from 'lucide-react'
-import { charRadical, charSenses, charSrc, hanziLevelLabel, wordsWithChar } from '../data/hanzi.js'
+import { charAudioContext, charRadical, charSenses, charSrc, hanziLevelLabel, wordsWithChar } from '../data/hanzi.js'
 import { wordSenses } from '../data/index.js'
 import { useLang } from '../i18n/useLang.js'
 import { HanziBoard } from './HanziBoard.jsx'
@@ -16,6 +16,7 @@ export function CharacterDetail({ ch, onBack }) {
   const [mistakes, setMistakes] = useState(null)
   const radical = charRadical(ch)
   const words = wordsWithChar(ch)
+  const audioContext = charAudioContext(ch)
 
   const replay = () => {
     setMode('animate')
@@ -44,8 +45,15 @@ export function CharacterDetail({ ch, onBack }) {
 
         <section className="mt-8">
           <div className="flex items-center gap-3">
-            <p className="text-2xl text-fg">{ch.pinyin}</p>
-            <SpeakButton src={charSrc(ch)} text={ch.c} />
+            <div>
+              <p className="text-2xl text-fg">{ch.pinyin}</p>
+              {audioContext && (
+                <p className="mt-1 text-sm text-fg-3">
+                  {t('hz.audioContext')} <span className="chinese-text text-fg">{audioContext.text}</span> · {audioContext.pinyin}
+                </p>
+              )}
+            </div>
+            <SpeakButton src={charSrc(ch)} text={audioContext?.text ?? ch.c} />
           </div>
           <ul className="mt-3 space-y-1 text-[15px] text-fg">
             {charSenses(ch, lang).map(s => <li key={s}>{s}</li>)}

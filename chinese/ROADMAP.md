@@ -5,10 +5,11 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 ## Fait
 
 - Modules : Pinyin et tons (7 leçons, audio, tableau des sons), Vocabulaire HSK 1–9 (répétition espacée),
-  Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (33 points HSK 1–3),
-  Lecture (13 textes et dialogues HSK 1–3), Classificateurs (56).
+  Caractères (2 998 caractères HSK 3.0, ordre des traits, tracé au doigt, 125 clés), Grammaire (41 points HSK 1–4),
+  Lecture (16 textes et dialogues HSK 1–4), Classificateurs (56).
 - Bouton écouter sur les mots (enregistrements CC BY-SA, sinon synthèse Google pour les mots de plusieurs
-  caractères) et sur toutes les phrases (grammaire, classificateurs, lecture : une voix par personnage des dialogues).
+  caractères), sur les caractères sans syllabe enregistrée dans un mot qui fixe leur lecture, et sur toutes les
+  phrases (grammaire, classificateurs, lecture : une voix par personnage des dialogues).
 - Design (passe unslop), icônes lucide, mises à jour visibles sans fermer l'app, hors ligne.
 - Langue de l'utilisateur (français / anglais) dans les paramètres ; définitions du vocabulaire en français
   (CFDICT) et en anglais (CC-CEDICT) ; lecture des caractères corrigée d'après la liste HSK 3.0.
@@ -23,33 +24,34 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 ## Priorités
 
 1. **Vocabulaire juste** — fait : définitions dans la langue de l'utilisateur, bonne lecture des caractères à
-   plusieurs prononciations (听 tīng, 说 shuō, 吗 ma…).
-   Reste : mots sans définition française dans CFDICT (environ 4 %, affichés en anglais).
+   plusieurs prononciations (听 tīng, 说 shuō, 吗 ma…) et définitions françaises complètes du HSK 1 à 6.
+   Reste : 412 mots sans définition française au HSK 7–9, affichés en anglais.
 2. **Tests de vocabulaire plus variés** — fait : le type de question suit la progression du mot (QCM de sens, puis
    écoute → caractère et pinyin avec les tons, puis saisie quand le mot est presque connu).
 3. **Caractères** — fait : 300 caractères par niveau HSK 1 à 6 et 1 200 pour le 7–9 (liste officielle) ; ordre des
    traits animé, clé en couleur ; un caractère nouveau se trace sur le modèle, puis s'écrit de mémoire (Hanzi Writer) ;
    les 125 clés courantes avec leur sens et un test. Données de traits : licence Arphic, vente autorisée en
    fournissant le texte de la licence (`public/hanzi/LICENSE-ARPHIC.txt`).
-4. **Lire et écouter des phrases** — fait du HSK 1 au 3 : 13 textes et dialogues (se présenter, restaurant,
-   chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois, hôtel, voyage, anniversaire) ;
-   pinyin et traduction affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension
-   et phrases à remettre dans l'ordre. Reste : textes HSK 4 et plus ; relecture par un locuteur natif.
+4. **Lire et écouter des phrases** — fait du HSK 1 au 4 : 16 textes et dialogues (se présenter, restaurant,
+   chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois, hôtel, voyage, anniversaire,
+   entretien d'embauche, location, santé) ; pinyin et traduction affichables, sens de chaque mot au toucher, phrases
+   enregistrées ; questions de compréhension et phrases à remettre dans l'ordre. Reste : textes HSK 5 et plus.
+   Les trois textes HSK 4 écrits pour l'app doivent être relus par un locuteur natif.
 5. **Test de niveau** — fait : test de placement (8 questions par niveau, du HSK 1 vers le haut tant que 75 % sont
    réussis), proposé sur l'accueil d'un nouvel utilisateur et sur la page Vocabulaire ; bouton « Passer le test » sur
    le premier niveau verrouillé (20 mots du niveau précédent, 80 %). Mots d'un niveau réussi planifiés en révision
    (réussis : 2 à 6 semaines ; non testés : 3 à 20 semaines), pas comptés comme appris. Grammaire : test d'un niveau,
    2 questions par point, un point sans faute est validé.
-6. **Contenu restant** : 132 définitions françaises manquantes du HSK 1 à 6 (412 au HSK 7–9) ; grammaire et
-   lecture HSK 4 ; son des particules au ton neutre (的, 了, 吗…), à présenter dans un mot ; phrases d'exemple pour
-   les mots du HSK 1 à 3 (en option).
+6. **Contenu restant** — fait : 132 définitions françaises ajoutées au HSK 1 à 6, 8 points de grammaire HSK 4,
+   3 lectures HSK 4 et son des particules au ton neutre présenté dans un mot (的 dans 我的, 了 dans 好了, 吗 dans
+   你好吗…). Reste, en option : phrases d'exemple pour les mots du HSK 1 à 3.
 
 ## Secondaire
 
-- Grammaire HSK 4 et plus (fait jusqu'au HSK 3 : 把, 被, compléments de résultat, de direction et de possibilité,
-  越来越, 是…的, 有点儿 / 一点儿).
-- Relecture du contenu écrit sans source (grammaire, classificateurs, leçons pinyin) par un locuteur natif,
-  dans les deux langues.
+- Grammaire HSK 5 et plus (fait jusqu'au HSK 4 : 把, 被, compléments de résultat, de direction et de possibilité,
+  越来越, 是…的, 有点儿 / 一点儿, 连…都, 不但…而且, 只要…就, 只有…才, 不管…都, 越…越).
+- Relecture par un locuteur natif du contenu écrit sans source, notamment les nouveaux points et textes HSK 4,
+  la grammaire, les classificateurs et les leçons pinyin, dans les deux langues.
 - Prononciation : enregistrement de sa voix et comparaison avec le modèle (sans note automatique des tons, peu
   fiable).
 

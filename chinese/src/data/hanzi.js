@@ -4,8 +4,9 @@
 
 import data from './hanzi.json'
 import { HSK_DATA } from './index.js'
+import { HANZI_AUDIO_CONTEXTS } from './hanziAudio.js'
 import { RADICALS, radicalForms } from './radicals.js'
-import { syllableSrc } from '../utils/audio.js'
+import { syllableSrc, ttsSrc } from '../utils/audio.js'
 import { splitPinyin, toNumeric } from '../utils/pinyin.js'
 
 export const HANZI = data
@@ -22,8 +23,12 @@ export const strokeDataUrl = c => `${import.meta.env.BASE_URL}hanzi/${encodeURIC
 /** Sens du caractère dans la langue de l'utilisateur, en anglais quand le dictionnaire n'en a pas. */
 export const charSenses = (ch, lang) => ch.senses[lang] || ch.senses.en
 
-/** Enregistrement de la syllabe (tons 1 à 4) ; ton neutre : null (voix du téléphone). */
+/** Son du caractère : mot de contexte pour un ton neutre ou une syllabe absente, sinon enregistrement humain. */
+export const charAudioContext = ch => HANZI_AUDIO_CONTEXTS[ch.c] || null
+
 export function charSrc(ch) {
+  const context = charAudioContext(ch)
+  if (context) return ttsSrc(context.text)
   const syllables = splitPinyin(ch.pinyin)
   return syllables.length === 1 ? syllableSrc(toNumeric(syllables[0])) : null
 }

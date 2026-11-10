@@ -1,11 +1,11 @@
-// Lecture : petits textes et dialogues du quotidien, gradués par niveau HSK (vocabulaire HSK 1–2 pour l'essentiel).
+// Lecture : petits textes et dialogues du quotidien, gradués par niveau HSK (vocabulaire du niveau visé pour l’essentiel).
 // Textes affichés : { fr, en } (langue de l'utilisateur).
 //
 // Texte : { id, level, kind: 'dialogue' | 'text', title, zh (titre chinois), speakers?, voice?, lines, questions }
 //   speakers  { A: { zh, pinyin, voice }, B: … } : qui parle (dialogues) ; voice : voix enregistrée (data/voices.js),
 //             la même pour un personnage dans tous les dialogues
 //   voice     voix du narrateur (textes)
-//   (GLOSSARY : mots des textes absents des listes HSK, noms propres compris : { mot: { pinyin, tr } })
+//   (GLOSSARY : noms propres et mots hors du niveau visé : { mot: { pinyin, tr } })
 //   lines     [{ s?: 'A' | 'B', zh, pinyin, tr, reorder?, alt? }]
 //             zh : mots séparés par des espaces, la ponctuation collée au mot qui la précède (affiché sans espaces ;
 //             chaque mot se touche pour voir son sens).
@@ -29,6 +29,13 @@ export const GLOSSARY = {
   羊肉: { pinyin: 'yángròu', tr: { fr: 'viande de mouton, d\'agneau', en: 'mutton, lamb' } },
   烤鸭: { pinyin: 'kǎoyā', tr: { fr: 'canard laqué', en: 'roast duck' } },
   拍: { pinyin: 'pāi', tr: { fr: 'taper ; prendre (une photo)', en: 'to pat; to take (a photo)' } },
+  厨房: { pinyin: 'chúfáng', tr: { fr: 'cuisine', en: 'kitchen' } },
+  水电费: { pinyin: 'shuǐdiànfèi', tr: { fr: 'frais d’eau et d’électricité', en: 'water and electricity charges' } },
+  签: { pinyin: 'qiān', tr: { fr: 'signer', en: 'to sign' } },
+  刮: { pinyin: 'guā', tr: { fr: 'souffler (pour le vent)', en: 'to blow (of wind)' } },
+  饮食: { pinyin: 'yǐnshí', tr: { fr: 'alimentation', en: 'diet' } },
+  蔬菜: { pinyin: 'shūcài', tr: { fr: 'légumes', en: 'vegetables' } },
+  瘦: { pinyin: 'shòu', tr: { fr: 'maigrir ; mince', en: 'to lose weight; thin' } },
 }
 
 export const READINGS = [
@@ -348,6 +355,84 @@ export const READINGS = [
       { q: { fr: 'Que veut faire Ma Li ?', en: 'What does Ma Li want to do?' }, a: [{ fr: 'Inviter des amis à manger chez elle', en: 'Invite friends over for dinner' }, { fr: 'Aller au restaurant', en: 'Go to a restaurant' }, { fr: 'Aller au cinéma', en: 'Go to the cinema' }, { fr: 'Partir en voyage', en: 'Go on a trip' }], line: 2 },
       { q: { fr: 'Que propose Xiao Wang ?', en: 'What does Xiao Wang offer?' }, a: [{ fr: 'De l\'aider à cuisiner', en: 'To help her cook' }, { fr: 'D\'acheter un gâteau', en: 'To buy a cake' }, { fr: 'De faire les courses', en: 'To do the shopping' }, { fr: 'De chanter', en: 'To sing' }], line: 3 },
       { q: { fr: 'À quelle heure arrive-t-il ?', en: 'What time is he coming?' }, a: [{ fr: 'À 15 heures', en: 'At 3 p.m.' }, { fr: 'À 13 heures', en: 'At 1 p.m.' }, { fr: 'À 17 heures', en: 'At 5 p.m.' }, { fr: 'À 19 heures', en: 'At 7 p.m.' }], line: 5 },
+    ],
+  },
+
+  {
+    id: 'mianshi',
+    level: 4,
+    kind: 'dialogue',
+    title: { fr: 'Un entretien d\'embauche', en: 'A job interview' },
+    zh: '面试',
+    speakers: { A: { zh: '经理', pinyin: 'jīnglǐ', voice: 'm' }, B: { zh: '马丽', pinyin: 'Mǎ Lì', voice: 'f' } },
+    lines: [
+      { s: 'A', zh: '你好， 请 坐。 先 介绍 一下 你 自己 吧。', pinyin: 'Nǐ hǎo, qǐng zuò. Xiān jièshào yíxià nǐ zìjǐ ba.', tr: { fr: 'Bonjour, asseyez-vous. Présentez-vous d\'abord.', en: 'Hello, have a seat. First, tell me about yourself.' } },
+      { s: 'B', zh: '我 叫 马丽， 今年 大学 毕业， 学 的 是 经济。', pinyin: 'Wǒ jiào Mǎ Lì, jīnnián dàxué bìyè, xué de shì jīngjì.', tr: { fr: 'Je m\'appelle Ma Li, je finis l\'université cette année, j\'ai étudié l\'économie.', en: 'My name is Ma Li, I\'m graduating this year, I studied economics.' } },
+      { s: 'A', zh: '你 为什么 想 来 我们 公司 工作？', pinyin: 'Nǐ wèi shénme xiǎng lái wǒmen gōngsī gōngzuò?', tr: { fr: 'Pourquoi voulez-vous travailler dans notre entreprise ?', en: 'Why do you want to work at our company?' }, reorder: true },
+      { s: 'B', zh: '因为 你们 公司 很 有名， 而且 我 对 这个 工作 很 感兴趣。', pinyin: 'Yīnwèi nǐmen gōngsī hěn yǒumíng, érqiě wǒ duì zhège gōngzuò hěn gǎn xìngqù.', tr: { fr: 'Parce que votre entreprise est connue, et ce poste m\'intéresse beaucoup.', en: 'Because your company is well known, and I\'m very interested in this job.' } },
+      { s: 'A', zh: '你 以前 有 工作 经验 吗？', pinyin: 'Nǐ yǐqián yǒu gōngzuò jīngyàn ma?', tr: { fr: 'Avez-vous déjà une expérience professionnelle ?', en: 'Do you have any work experience?' }, reorder: true, alt: ['以前你有工作经验吗？'] },
+      { s: 'B', zh: '我 在 一 家 银行 实习 过 三 个 月。', pinyin: 'Wǒ zài yì jiā yínháng shíxí guo sān ge yuè.', tr: { fr: 'J\'ai fait un stage de trois mois dans une banque.', en: 'I did a three-month internship at a bank.' } },
+      { s: 'A', zh: '你 会 说 英语 吗？', pinyin: 'Nǐ huì shuō Yīngyǔ ma?', tr: { fr: 'Vous parlez anglais ?', en: 'Can you speak English?' } },
+      { s: 'B', zh: '会， 我 的 英语 不但 说 得 流利， 而且 写 得 也 不错。', pinyin: 'Huì, wǒ de Yīngyǔ búdàn shuō de liúlì, érqiě xiě de yě búcuò.', tr: { fr: 'Oui, non seulement je le parle couramment, mais je l\'écris aussi assez bien.', en: 'Yes, I not only speak English fluently, I also write it quite well.' } },
+      { s: 'A', zh: '好 的， 我们 下 个 星期 给 你 打 电话。', pinyin: 'Hǎo de, wǒmen xià ge xīngqī gěi nǐ dǎ diànhuà.', tr: { fr: 'Très bien, nous vous appellerons la semaine prochaine.', en: 'All right, we\'ll call you next week.' } },
+      { s: 'B', zh: '谢谢 您， 我 等 您 的 电话。', pinyin: 'Xièxie nín, wǒ děng nín de diànhuà.', tr: { fr: 'Merci, j\'attends votre appel.', en: 'Thank you, I\'ll wait for your call.' } },
+    ],
+    questions: [
+      { q: { fr: 'Qu\'a étudié Ma Li ?', en: 'What did Ma Li study?' }, a: [{ fr: 'L\'économie', en: 'Economics' }, { fr: 'Le droit', en: 'Law' }, { fr: 'Le chinois', en: 'Chinese' }, { fr: 'La médecine', en: 'Medicine' }], line: 1 },
+      { q: { fr: 'Pourquoi veut-elle travailler dans cette entreprise ?', en: 'Why does she want to work at this company?' }, a: [{ fr: 'L\'entreprise est connue et le poste l\'intéresse', en: 'The company is well known and the job interests her' }, { fr: 'Le salaire est élevé', en: 'The salary is high' }, { fr: 'C\'est près de chez elle', en: 'It\'s close to her home' }, { fr: 'Une amie y travaille', en: 'A friend works there' }], line: 3 },
+      { q: { fr: 'Où a-t-elle fait un stage ?', en: 'Where did she do an internship?' }, a: [{ fr: 'Dans une banque', en: 'At a bank' }, { fr: 'Dans un hôpital', en: 'At a hospital' }, { fr: 'Dans une école', en: 'At a school' }, { fr: 'Dans un hôtel', en: 'At a hotel' }], line: 5 },
+      { q: { fr: 'Quand l\'entreprise va-t-elle la rappeler ?', en: 'When will the company call her back?' }, a: [{ fr: 'La semaine prochaine', en: 'Next week' }, { fr: 'Demain', en: 'Tomorrow' }, { fr: 'Dans un mois', en: 'In a month' }, { fr: 'Ce soir', en: 'Tonight' }], line: 8 },
+    ],
+  },
+
+  {
+    id: 'zufang',
+    level: 4,
+    kind: 'dialogue',
+    title: { fr: 'Louer un appartement', en: 'Renting a flat' },
+    zh: '租房子',
+    speakers: { A: { zh: '大卫', pinyin: 'Dàwèi', voice: 'm2' }, B: { zh: '房东', pinyin: 'fángdōng', voice: 'f2' } },
+    lines: [
+      { s: 'A', zh: '您好， 我 想 看看 这 套 房子。', pinyin: 'Nín hǎo, wǒ xiǎng kànkan zhè tào fángzi.', tr: { fr: 'Bonjour, je voudrais visiter cet appartement.', en: 'Hello, I\'d like to see this flat.' } },
+      { s: 'B', zh: '请 进。 这 套 房子 有 两 个 房间， 一 个 厨房 和 一 个 洗手间。', pinyin: 'Qǐng jìn. Zhè tào fángzi yǒu liǎng ge fángjiān, yí ge chúfáng hé yí ge xǐshǒujiān.', tr: { fr: 'Entrez. Il y a deux chambres, une cuisine et une salle de bains.', en: 'Come in. The flat has two rooms, a kitchen and a bathroom.' } },
+      { s: 'A', zh: '房租 一 个 月 多少 钱？', pinyin: 'Fángzū yí ge yuè duōshao qián?', tr: { fr: 'Le loyer est de combien par mois ?', en: 'How much is the rent per month?' }, reorder: true },
+      { s: 'B', zh: '一 个 月 三千五， 水电费 另外 付。', pinyin: 'Yí ge yuè sānqiān wǔ, shuǐdiànfèi lìngwài fù.', tr: { fr: 'Trois mille cinq cents par mois, l\'eau et l\'électricité en plus.', en: 'Three thousand five hundred a month, water and electricity extra.' } },
+      { s: 'A', zh: '离 地铁站 远 吗？', pinyin: 'Lí dìtiězhàn yuǎn ma?', tr: { fr: 'C\'est loin du métro ?', en: 'Is it far from the subway station?' }, reorder: true },
+      { s: 'B', zh: '不 远， 走路 只 要 五 分钟。 附近 还 有 超市 和 医院。', pinyin: 'Bù yuǎn, zǒulù zhǐ yào wǔ fēnzhōng. Fùjìn hái yǒu chāoshì hé yīyuàn.', tr: { fr: 'Non, cinq minutes à pied seulement. Il y a aussi un supermarché et un hôpital à côté.', en: 'No, only five minutes on foot. There\'s also a supermarket and a hospital nearby.' } },
+      { s: 'A', zh: '可以 养 猫 吗？', pinyin: 'Kěyǐ yǎng māo ma?', tr: { fr: 'On peut avoir un chat ?', en: 'Can I keep a cat?' } },
+      { s: 'B', zh: '对不起， 这里 不 能 养 动物。', pinyin: 'Duìbuqǐ, zhèli bù néng yǎng dòngwù.', tr: { fr: 'Désolée, les animaux ne sont pas autorisés ici.', en: 'Sorry, no pets allowed here.' } },
+      { s: 'A', zh: '没 关系， 我 没有 猫。 我 什么 时候 能 搬 进来？', pinyin: 'Méi guānxi, wǒ méiyǒu māo. Wǒ shénme shíhou néng bān jìnlai?', tr: { fr: 'Pas de problème, je n\'ai pas de chat. Quand est-ce que je peux emménager ?', en: 'That\'s fine, I don\'t have a cat. When can I move in?' } },
+      { s: 'B', zh: '只要 你 签 了 合同， 下 个 月 一 号 就 能 搬 进来。', pinyin: 'Zhǐyào nǐ qiān le hétong, xià ge yuè yī hào jiù néng bān jìnlai.', tr: { fr: 'Dès que vous aurez signé le contrat, vous pourrez emménager le 1er du mois prochain.', en: 'As soon as you sign the contract, you can move in on the first of next month.' } },
+    ],
+    questions: [
+      { q: { fr: 'Combien de chambres a l\'appartement ?', en: 'How many rooms does the flat have?' }, a: [{ fr: 'Deux', en: 'Two' }, { fr: 'Une', en: 'One' }, { fr: 'Trois', en: 'Three' }, { fr: 'Quatre', en: 'Four' }], line: 1 },
+      { q: { fr: 'Combien coûte le loyer ?', en: 'How much is the rent?' }, a: [{ fr: '3 500 yuans par mois, sans l\'eau ni l\'électricité', en: '3,500 yuan a month, water and electricity extra' }, { fr: '3 500 yuans par mois, tout compris', en: '3,500 yuan a month, all included' }, { fr: '3 000 yuans par mois', en: '3,000 yuan a month' }, { fr: '5 300 yuans par mois', en: '5,300 yuan a month' }], line: 3 },
+      { q: { fr: 'À quelle distance est le métro ?', en: 'How far is the subway?' }, a: [{ fr: 'Cinq minutes à pied', en: 'Five minutes on foot' }, { fr: 'Quinze minutes à pied', en: 'Fifteen minutes on foot' }, { fr: 'Cinq minutes en bus', en: 'Five minutes by bus' }, { fr: 'Une demi-heure', en: 'Half an hour' }], line: 5 },
+      { q: { fr: 'Quand David peut-il emménager ?', en: 'When can David move in?' }, a: [{ fr: 'Le 1er du mois prochain, après avoir signé', en: 'On the first of next month, after signing' }, { fr: 'Demain', en: 'Tomorrow' }, { fr: 'La semaine prochaine', en: 'Next week' }, { fr: 'Quand il veut', en: 'Whenever he wants' }], line: 9 },
+    ],
+  },
+
+  {
+    id: 'jiankang',
+    level: 4,
+    kind: 'text',
+    title: { fr: 'Retrouver la forme', en: 'Getting back in shape' },
+    zh: '健康的生活',
+    voice: 'm',
+    lines: [
+      { zh: '以前 我 工作 特别 忙， 经常 加班， 很 少 运动。', pinyin: 'Yǐqián wǒ gōngzuò tèbié máng, jīngcháng jiābān, hěn shǎo yùndòng.', tr: { fr: 'Avant, j\'étais très occupé au travail, je faisais souvent des heures supplémentaires et peu de sport.', en: 'I used to be very busy at work, often did overtime and rarely exercised.' } },
+      { zh: '那 时候 我 经常 感冒， 身体 越来越 差。', pinyin: 'Nà shíhou wǒ jīngcháng gǎnmào, shēntǐ yuè lái yuè chà.', tr: { fr: 'À l\'époque, j\'étais souvent enrhumé et ma santé se dégradait.', en: 'Back then I often caught colds, and my health kept getting worse.' }, reorder: true, alt: ['我那时候经常感冒，身体越来越差。'] },
+      { zh: '医生 告诉 我， 只有 多 运动， 身体 才 会 好 起来。', pinyin: 'Yīshēng gàosu wǒ, zhǐyǒu duō yùndòng, shēntǐ cái huì hǎo qǐlai.', tr: { fr: 'Le médecin m\'a dit que ce n\'est qu\'en faisant plus de sport que j\'irais mieux.', en: 'The doctor told me that only by exercising more would my health improve.' } },
+      { zh: '所以 我 每天 早上 都 去 公园 跑步， 不管 刮 风 还是 下 雨。', pinyin: 'Suǒyǐ wǒ měitiān zǎoshang dōu qù gōngyuán pǎobù, bùguǎn guā fēng háishi xià yǔ.', tr: { fr: 'Alors tous les matins, je vais courir au parc, qu\'il vente ou qu\'il pleuve.', en: 'So every morning I go running in the park, whether it\'s windy or rainy.' } },
+      { zh: '我 还 改变 了 饮食 习惯， 少 吃 肉， 多 吃 蔬菜 和 水果。', pinyin: 'Wǒ hái gǎibiàn le yǐnshí xíguàn, shǎo chī ròu, duō chī shūcài hé shuǐguǒ.', tr: { fr: 'J\'ai aussi changé mes habitudes alimentaires : moins de viande, plus de légumes et de fruits.', en: 'I also changed my eating habits: less meat, more vegetables and fruit.' } },
+      { zh: '半 年 以后， 我 不但 瘦 了 五 公斤， 而且 很 少 生病 了。', pinyin: 'Bàn nián yǐhòu, wǒ búdàn shòu le wǔ gōngjīn, érqiě hěn shǎo shēngbìng le.', tr: { fr: 'Six mois plus tard, non seulement j\'avais perdu cinq kilos, mais je n\'étais presque plus malade.', en: 'Six months later, I had not only lost five kilos, I hardly ever got ill any more.' } },
+      { zh: '现在 我 越来越 喜欢 运动 了。', pinyin: 'Xiànzài wǒ yuè lái yuè xǐhuan yùndòng le.', tr: { fr: 'Maintenant, j\'aime le sport de plus en plus.', en: 'Now I like exercising more and more.' }, reorder: true, alt: ['我现在越来越喜欢运动了。'] },
+    ],
+    questions: [
+      { q: { fr: 'Pourquoi était-il souvent malade ?', en: 'Why was he often ill?' }, a: [{ fr: 'Il travaillait trop et faisait peu de sport', en: 'He worked too much and rarely exercised' }, { fr: 'Il mangeait trop', en: 'He ate too much' }, { fr: 'Il dormait trop', en: 'He slept too much' }, { fr: 'Il habitait loin du travail', en: 'He lived far from work' }], line: 0 },
+      { q: { fr: 'Que lui a conseillé le médecin ?', en: 'What did the doctor advise?' }, a: [{ fr: 'Faire plus de sport', en: 'To exercise more' }, { fr: 'Prendre des médicaments', en: 'To take medicine' }, { fr: 'Arrêter de travailler', en: 'To stop working' }, { fr: 'Partir en vacances', en: 'To go on holiday' }], line: 2 },
+      { q: { fr: 'Que fait-il chaque matin ?', en: 'What does he do every morning?' }, a: [{ fr: 'Il court au parc', en: 'He runs in the park' }, { fr: 'Il nage', en: 'He swims' }, { fr: 'Il va au bureau à vélo', en: 'He cycles to the office' }, { fr: 'Il fait des courses', en: 'He goes shopping' }], line: 3 },
+      { q: { fr: 'Combien de kilos a-t-il perdus ?', en: 'How many kilos did he lose?' }, a: [{ fr: 'Cinq', en: 'Five' }, { fr: 'Deux', en: 'Two' }, { fr: 'Dix', en: 'Ten' }, { fr: 'Quinze', en: 'Fifteen' }], line: 5 },
     ],
   },
 ]

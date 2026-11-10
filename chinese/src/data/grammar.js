@@ -1,9 +1,9 @@
-// Module Grammaire : points du HSK 1 à 3, dans l'ordre d'apprentissage (un point se débloque avec 80 % au précédent).
+// Module Grammaire : points du HSK 1 à 4, dans l'ordre d'apprentissage (un point se débloque avec 80 % au précédent).
 // Données pures, sans import. Progression : clé gr_<id>.
 // Textes affichés : { fr, en } (langue de l'utilisateur) ; tr : traduction de la phrase chinoise.
 //
 // Point :
-//   id, level (1 | 2 | 3), title, pattern (structure), explanation [paragraphes], examples [{ zh, pinyin, tr }],
+//   id, level (1 à 4), title, pattern (structure), explanation [paragraphes], examples [{ zh, pinyin, tr }],
 //   pitfall (erreur courante)
 //   order      [{ words, pinyin, tr, alt? }]  remettre les mots dans l'ordre ; alt : autres ordres acceptés
 //   fill       [{ before, after, answer, wrong, pinyin, tr }]  compléter le trou (phrase = before + answer + after)
@@ -3958,6 +3958,820 @@ export const GRAMMAR_POINTS = [
         pinyin: 'qǐng shuō màn yìdiǎnr',
         wrong: ['请说有点儿慢', '请一点儿说慢'],
         tr: { fr: 'parle un peu plus lentement, s\'il te plaît', en: 'please speak a bit more slowly' },
+      },
+    ],
+  },
+  {
+    id: 'lian-dou',
+    level: 4,
+    title: { fr: '连…都 : même', en: '连…都: even' },
+    pattern: { fr: '连 + X + 都 / 也 + verbe', en: '连 + X + 都 / 也 + verb' },
+    explanation: [
+      {
+        fr: '连…都 (ou 连…也) met en avant quelque chose de surprenant, « même » : 连孩子都知道 (« même les enfants le savent »). Ce qu\'on met en avant se place après 连, avant le verbe.',
+        en: '连…都 (or 连…也) highlights something surprising, "even": 连孩子都知道 ("even children know it"). What is highlighted goes after 连, before the verb.',
+      },
+      {
+        fr: 'Très souvent à la négative, pour insister : 他连一个字都没写 (« il n\'a pas écrit un seul caractère »).',
+        en: 'Very often in the negative, for emphasis: 他连一个字都没写 ("he didn\'t write a single character").',
+      },
+    ],
+    examples: [
+      { zh: '连孩子都知道。', pinyin: 'lián háizi dōu zhīdào', tr: { fr: 'même les enfants le savent', en: 'even children know it' } },
+      { zh: '他连一个字都没写。', pinyin: 'tā lián yí ge zì dōu méi xiě', tr: { fr: 'il n\'a pas écrit un seul caractère', en: 'he didn\'t write a single character' } },
+      {
+        zh: '我忙得连饭都没吃。',
+        pinyin: 'wǒ máng de lián fàn dōu méi chī',
+        tr: { fr: 'j\'étais si occupé que je n\'ai même pas mangé', en: 'I was so busy I didn\'t even eat' },
+      },
+      {
+        zh: '这个问题连老师也不知道。',
+        pinyin: 'zhège wèntí lián lǎoshī yě bù zhīdào',
+        tr: { fr: 'même le professeur ne sait pas répondre à cette question', en: 'even the teacher doesn\'t know the answer to this' },
+      },
+    ],
+    pitfall: {
+      fr: 'On oublie souvent 都 ou 也 (连孩子知道) : 连 ne va jamais sans eux.',
+      en: 'People often forget 都 or 也 (连孩子知道): 连 never comes without them.',
+    },
+    order: [
+      { words: ['连', '孩子', '都', '知道'], pinyin: 'lián háizi dōu zhīdào', tr: { fr: 'même les enfants le savent', en: 'even children know it' } },
+      {
+        words: ['他', '连', '一个字', '都', '没写'],
+        pinyin: 'tā lián yí ge zì dōu méi xiě',
+        tr: { fr: 'il n\'a pas écrit un seul caractère', en: 'he didn\'t write a single character' },
+      },
+      {
+        words: ['我', '连', '早饭', '都', '没吃'],
+        pinyin: 'wǒ lián zǎofàn dōu méi chī',
+        tr: { fr: 'je n\'ai même pas pris de petit-déjeuner', en: 'I didn\'t even have breakfast' },
+      },
+    ],
+    fill: [
+      { before: '连孩子', after: '知道', answer: '都', wrong: ['才', '就'], pinyin: 'lián háizi dōu zhīdào', tr: { fr: 'même les enfants le savent', en: 'even children know it' } },
+      {
+        before: '他',
+        after: '一个字都没写',
+        answer: '连',
+        wrong: ['比', '把'],
+        pinyin: 'tā lián yí ge zì dōu méi xiě',
+        tr: { fr: 'il n\'a pas écrit un seul caractère', en: 'he didn\'t write a single character' },
+      },
+      {
+        before: '这个问题连老师',
+        after: '不知道',
+        answer: '也',
+        wrong: ['才', '很'],
+        pinyin: 'zhège wèntí lián lǎoshī yě bù zhīdào',
+        tr: { fr: 'même le professeur ne sait pas répondre à cette question', en: 'even the teacher doesn\'t know the answer to this' },
+      },
+    ],
+    judge: [
+      {
+        zh: '连孩子知道这个。',
+        ok: false,
+        fix: '连孩子都知道这个。',
+        fixPinyin: 'lián háizi dōu zhīdào zhège',
+        why: { fr: 'Après 连 + X, il faut 都 ou 也 devant le verbe.', en: 'After 连 + X, you need 都 or 也 before the verb.' },
+        tr: { fr: 'même les enfants savent ça', en: 'even children know this' },
+      },
+      {
+        zh: '他忙得连水都没喝。',
+        pinyin: 'tā máng de lián shuǐ dōu méi hē',
+        ok: true,
+        tr: { fr: 'il était si occupé qu\'il n\'a même pas bu d\'eau', en: 'he was so busy he didn\'t even drink water' },
+      },
+    ],
+    translate: [
+      {
+        answer: '连孩子都知道',
+        pinyin: 'lián háizi dōu zhīdào',
+        wrong: ['孩子都连知道', '连孩子知道'],
+        tr: { fr: 'même les enfants le savent', en: 'even children know it' },
+      },
+      {
+        answer: '他连一个字都没写',
+        pinyin: 'tā lián yí ge zì dōu méi xiě',
+        wrong: ['他一个字连没写', '他连一个字都写'],
+        tr: { fr: 'il n\'a pas écrit un seul caractère', en: 'he didn\'t write a single character' },
+      },
+    ],
+  },
+  {
+    id: 'budan-erqie',
+    level: 4,
+    title: { fr: '不但…而且 : non seulement… mais aussi', en: '不但…而且: not only… but also' },
+    pattern: { fr: '不但 A，而且 B', en: '不但 A，而且 B' },
+    explanation: [
+      {
+        fr: '不但 annonce une première idée, 而且 en ajoute une seconde, souvent plus forte : 这家饭馆不但便宜，而且好吃.',
+        en: '不但 introduces a first idea and 而且 adds a second, often stronger one: 这家饭馆不但便宜，而且好吃.',
+      },
+      {
+        fr: 'Avec le même sujet, il se place avant 不但 : 他不但会说汉语，而且说得很好. Avec deux sujets différents, 不但 se place avant le premier : 不但我喜欢，而且我妈妈也喜欢.',
+        en: 'With the same subject, it goes before 不但: 他不但会说汉语，而且说得很好. With two different subjects, 不但 goes before the first one: 不但我喜欢，而且我妈妈也喜欢.',
+      },
+    ],
+    examples: [
+      {
+        zh: '他不但会说汉语，而且说得很好。',
+        pinyin: 'tā búdàn huì shuō Hànyǔ, érqiě shuō de hěn hǎo',
+        tr: { fr: 'non seulement il parle chinois, mais il le parle très bien', en: 'not only does he speak Chinese, he speaks it very well' },
+      },
+      {
+        zh: '这家饭馆不但便宜，而且好吃。',
+        pinyin: 'zhè jiā fànguǎn búdàn piányi, érqiě hǎochī',
+        tr: { fr: 'ce restaurant est non seulement bon marché, mais aussi bon', en: 'this restaurant is not only cheap but also good' },
+      },
+      {
+        zh: '不但我喜欢，而且我妈妈也喜欢。',
+        pinyin: 'búdàn wǒ xǐhuan, érqiě wǒ māma yě xǐhuan',
+        tr: { fr: 'non seulement moi j\'aime, mais ma mère aussi', en: 'not only do I like it, my mother does too' },
+      },
+    ],
+    pitfall: {
+      fr: 'Avec un seul sujet, on le met souvent deux fois (不但他…，而且他…) : dis-le une fois, avant 不但.',
+      en: 'With a single subject, people often repeat it (不但他…，而且他…): say it once, before 不但.',
+    },
+    order: [
+      {
+        words: ['这家饭馆', '不但', '便宜，', '而且', '好吃'],
+        pinyin: 'zhè jiā fànguǎn búdàn piányi, érqiě hǎochī',
+        tr: { fr: 'ce restaurant est non seulement bon marché, mais aussi bon', en: 'this restaurant is not only cheap but also good' },
+      },
+      {
+        words: ['他', '不但', '会说汉语，', '而且', '说得很好'],
+        pinyin: 'tā búdàn huì shuō Hànyǔ, érqiě shuō de hěn hǎo',
+        tr: { fr: 'non seulement il parle chinois, mais il le parle très bien', en: 'not only does he speak Chinese, he speaks it very well' },
+      },
+      {
+        words: ['不但', '我', '喜欢，', '而且', '他也喜欢'],
+        pinyin: 'búdàn wǒ xǐhuan, érqiě tā yě xǐhuan',
+        tr: { fr: 'non seulement moi j\'aime, mais lui aussi', en: 'not only do I like it, he does too' },
+      },
+    ],
+    fill: [
+      {
+        before: '这家饭馆',
+        after: '便宜，而且好吃',
+        answer: '不但',
+        wrong: ['因为', '虽然'],
+        pinyin: 'zhè jiā fànguǎn búdàn piányi, érqiě hǎochī',
+        tr: { fr: 'ce restaurant est non seulement bon marché, mais aussi bon', en: 'this restaurant is not only cheap but also good' },
+      },
+      {
+        before: '他不但会说汉语，',
+        after: '说得很好',
+        answer: '而且',
+        wrong: ['所以', '但是'],
+        pinyin: 'tā búdàn huì shuō Hànyǔ, érqiě shuō de hěn hǎo',
+        tr: { fr: 'non seulement il parle chinois, mais il le parle très bien', en: 'not only does he speak Chinese, he speaks it very well' },
+      },
+      {
+        before: '不但我喜欢，而且我妈妈',
+        after: '喜欢',
+        answer: '也',
+        wrong: ['才', '被'],
+        pinyin: 'búdàn wǒ xǐhuan, érqiě wǒ māma yě xǐhuan',
+        tr: { fr: 'non seulement moi j\'aime, mais ma mère aussi', en: 'not only do I like it, my mother does too' },
+      },
+    ],
+    judge: [
+      {
+        zh: '不但他会说汉语，而且他说得很好。',
+        ok: false,
+        fix: '他不但会说汉语，而且说得很好。',
+        fixPinyin: 'tā búdàn huì shuō Hànyǔ, érqiě shuō de hěn hǎo',
+        why: {
+          fr: 'Avec le même sujet, on le dit une fois, avant 不但.',
+          en: 'With the same subject, say it once, before 不但.',
+        },
+        tr: { fr: 'non seulement il parle chinois, mais il le parle très bien', en: 'not only does he speak Chinese, he speaks it very well' },
+      },
+      {
+        zh: '这件衣服不但好看，而且很便宜。',
+        pinyin: 'zhè jiàn yīfu búdàn hǎokàn, érqiě hěn piányi',
+        ok: true,
+        tr: { fr: 'ce vêtement est non seulement joli, mais aussi très bon marché', en: 'this piece of clothing is not only nice but also very cheap' },
+      },
+    ],
+    translate: [
+      {
+        answer: '这家饭馆不但便宜，而且好吃',
+        pinyin: 'zhè jiā fànguǎn búdàn piányi, érqiě hǎochī',
+        wrong: ['这家饭馆虽然便宜，而且好吃', '这家饭馆不但便宜，所以好吃'],
+        tr: { fr: 'ce restaurant est non seulement bon marché, mais aussi bon', en: 'this restaurant is not only cheap but also good' },
+      },
+      {
+        answer: '不但我喜欢，而且我妈妈也喜欢',
+        pinyin: 'búdàn wǒ xǐhuan, érqiě wǒ māma yě xǐhuan',
+        wrong: ['我不但喜欢，而且妈妈喜欢', '不但我喜欢，但是我妈妈也喜欢'],
+        tr: { fr: 'non seulement moi j\'aime, mais ma mère aussi', en: 'not only do I like it, my mother does too' },
+      },
+    ],
+  },
+  {
+    id: 'chule',
+    level: 4,
+    title: { fr: '除了…以外 : sauf, en plus de', en: '除了…以外: except, besides' },
+    pattern: { fr: '除了 X (以外)，… 都 / 还 / 也', en: '除了 X (以外)，… 都 / 还 / 也' },
+    explanation: [
+      {
+        fr: '除了 X 以外 suivi de 都 veut dire « sauf X » : 除了他以外，我们都去了 (« on y est tous allés sauf lui »).',
+        en: '除了 X 以外 followed by 都 means "except X": 除了他以外，我们都去了 ("we all went except him").',
+      },
+      {
+        fr: 'Suivi de 还 ou 也, il veut dire « en plus de X » : 除了汉语以外，我还学英语. 以外 peut être omis.',
+        en: 'Followed by 还 or 也, it means "besides X": 除了汉语以外，我还学英语. 以外 can be left out.',
+      },
+    ],
+    examples: [
+      { zh: '除了他以外，我们都去了。', pinyin: 'chúle tā yǐwài, wǒmen dōu qù le', tr: { fr: 'on y est tous allés sauf lui', en: 'we all went except him' } },
+      {
+        zh: '除了汉语以外，我还学英语。',
+        pinyin: 'chúle Hànyǔ yǐwài, wǒ hái xué Yīngyǔ',
+        tr: { fr: 'en plus du chinois, j\'apprends aussi l\'anglais', en: 'besides Chinese, I also study English' },
+      },
+      {
+        zh: '除了星期天，他每天都工作。',
+        pinyin: 'chúle xīngqītiān, tā měitiān dōu gōngzuò',
+        tr: { fr: 'il travaille tous les jours sauf le dimanche', en: 'he works every day except Sunday' },
+      },
+      {
+        zh: '除了米饭，我们也吃面条。',
+        pinyin: 'chúle mǐfàn, wǒmen yě chī miàntiáo',
+        tr: { fr: 'en plus du riz, nous mangeons aussi des nouilles', en: 'besides rice, we also eat noodles' },
+      },
+    ],
+    pitfall: {
+      fr: 'Le sens dépend du mot qui suit : 都 donne « sauf », 还 ou 也 « en plus de ». Les confondre change toute la phrase.',
+      en: 'The meaning depends on the word that follows: 都 gives "except", 还 or 也 "besides". Mixing them up changes the whole sentence.',
+    },
+    order: [
+      {
+        words: ['除了', '他', '以外，', '我们', '都', '去了'],
+        pinyin: 'chúle tā yǐwài, wǒmen dōu qù le',
+        tr: { fr: 'on y est tous allés sauf lui', en: 'we all went except him' },
+        alt: [['我们', '除了', '他', '以外，', '都', '去了']],
+      },
+      {
+        words: ['除了', '汉语', '以外，', '我', '还', '学', '英语'],
+        pinyin: 'chúle Hànyǔ yǐwài, wǒ hái xué Yīngyǔ',
+        tr: { fr: 'en plus du chinois, j\'apprends aussi l\'anglais', en: 'besides Chinese, I also study English' },
+        alt: [['我', '除了', '汉语', '以外，', '还', '学', '英语']],
+      },
+      {
+        words: ['除了', '星期天，', '他', '每天', '都', '工作'],
+        pinyin: 'chúle xīngqītiān, tā měitiān dōu gōngzuò',
+        tr: { fr: 'il travaille tous les jours sauf le dimanche', en: 'he works every day except Sunday' },
+      },
+    ],
+    fill: [
+      {
+        before: '除了他以外，我们',
+        after: '去了',
+        answer: '都',
+        wrong: ['才', '很'],
+        pinyin: 'chúle tā yǐwài, wǒmen dōu qù le',
+        tr: { fr: 'on y est tous allés sauf lui', en: 'we all went except him' },
+      },
+      {
+        before: '除了汉语以外，我',
+        after: '学英语',
+        answer: '还',
+        wrong: ['都', '才'],
+        pinyin: 'chúle Hànyǔ yǐwài, wǒ hái xué Yīngyǔ',
+        tr: { fr: 'en plus du chinois, j\'apprends aussi l\'anglais', en: 'besides Chinese, I also study English' },
+      },
+      {
+        before: '',
+        after: '星期天，他每天都工作',
+        answer: '除了',
+        wrong: ['因为', '虽然'],
+        pinyin: 'chúle xīngqītiān, tā měitiān dōu gōngzuò',
+        tr: { fr: 'il travaille tous les jours sauf le dimanche', en: 'he works every day except Sunday' },
+      },
+    ],
+    judge: [
+      {
+        zh: '除了汉语以外，我都学英语。',
+        ok: false,
+        fix: '除了汉语以外，我还学英语。',
+        fixPinyin: 'chúle Hànyǔ yǐwài, wǒ hái xué Yīngyǔ',
+        why: { fr: 'Pour « en plus de », on dit 还 ou 也, pas 都.', en: 'For "besides", you say 还 or 也, not 都.' },
+        tr: { fr: 'en plus du chinois, j\'apprends aussi l\'anglais', en: 'besides Chinese, I also study English' },
+      },
+      {
+        zh: '除了星期天，他每天都工作。',
+        pinyin: 'chúle xīngqītiān, tā měitiān dōu gōngzuò',
+        ok: true,
+        tr: { fr: 'il travaille tous les jours sauf le dimanche', en: 'he works every day except Sunday' },
+      },
+    ],
+    translate: [
+      {
+        answer: '除了他以外，我们都去了',
+        pinyin: 'chúle tā yǐwài, wǒmen dōu qù le',
+        wrong: ['除了他以外，我们还去了', '我们除了都去了他以外'],
+        tr: { fr: 'on y est tous allés sauf lui', en: 'we all went except him' },
+      },
+      {
+        answer: '除了汉语以外，我还学英语',
+        pinyin: 'chúle Hànyǔ yǐwài, wǒ hái xué Yīngyǔ',
+        wrong: ['除了汉语以外，我都学英语', '除了英语以外，我还学汉语'],
+        tr: { fr: 'en plus du chinois, j\'apprends aussi l\'anglais', en: 'besides Chinese, I also study English' },
+      },
+    ],
+  },
+  {
+    id: 'jishi-ye',
+    level: 4,
+    title: { fr: '即使…也 : même si', en: '即使…也: even if' },
+    pattern: { fr: '即使 A，(sujet) 也 B', en: '即使 A，(subject) 也 B' },
+    explanation: [
+      {
+        fr: '即使 introduit une supposition (« même si »), et 也, dans la seconde partie, dit que le résultat ne change pas : 即使下雨，我也去 (« même s\'il pleut, j\'irai »).',
+        en: '即使 introduces a supposition ("even if"), and 也 in the second part says the outcome doesn\'t change: 即使下雨，我也去 ("even if it rains, I\'ll go").',
+      },
+      {
+        fr: '虽然 parle d\'un fait réel (« bien que »), 即使 d\'une hypothèse. 即使 ne s\'emploie pas avec 但是.',
+        en: '虽然 is about a real fact ("although"), 即使 about a hypothesis. 即使 isn\'t used with 但是.',
+      },
+    ],
+    examples: [
+      { zh: '即使下雨，我也去。', pinyin: 'jíshǐ xià yǔ, wǒ yě qù', tr: { fr: 'même s\'il pleut, j\'irai', en: 'even if it rains, I\'ll go' } },
+      {
+        zh: '即使很忙，他也每天运动。',
+        pinyin: 'jíshǐ hěn máng, tā yě měitiān yùndòng',
+        tr: { fr: 'même très occupé, il fait du sport tous les jours', en: 'even when he\'s very busy, he exercises every day' },
+      },
+      {
+        zh: '即使你不说，我也知道。',
+        pinyin: 'jíshǐ nǐ bù shuō, wǒ yě zhīdào',
+        tr: { fr: 'même si tu ne dis rien, je le sais', en: 'even if you don\'t say anything, I know' },
+      },
+    ],
+    pitfall: {
+      fr: 'Par habitude de 虽然…但是, on écrit 即使…但是 : avec 即使, c\'est 也 dans la seconde partie.',
+      en: 'Out of habit from 虽然…但是, people write 即使…但是: with 即使, use 也 in the second part.',
+    },
+    order: [
+      { words: ['即使', '下雨，', '我', '也', '去'], pinyin: 'jíshǐ xià yǔ, wǒ yě qù', tr: { fr: 'même s\'il pleut, j\'irai', en: 'even if it rains, I\'ll go' } },
+      {
+        words: ['即使', '你', '不说，', '我', '也', '知道'],
+        pinyin: 'jíshǐ nǐ bù shuō, wǒ yě zhīdào',
+        tr: { fr: 'même si tu ne dis rien, je le sais', en: 'even if you don\'t say anything, I know' },
+      },
+      {
+        words: ['即使', '很忙，', '他', '也', '每天', '运动'],
+        pinyin: 'jíshǐ hěn máng, tā yě měitiān yùndòng',
+        tr: { fr: 'même très occupé, il fait du sport tous les jours', en: 'even when he\'s very busy, he exercises every day' },
+        alt: [['即使', '很忙，', '他', '每天', '也', '运动']],
+      },
+    ],
+    fill: [
+      { before: '即使下雨，我', after: '去', answer: '也', wrong: ['才', '但是'], pinyin: 'jíshǐ xià yǔ, wǒ yě qù', tr: { fr: 'même s\'il pleut, j\'irai', en: 'even if it rains, I\'ll go' } },
+      {
+        before: '',
+        after: '你不说，我也知道',
+        answer: '即使',
+        wrong: ['因为', '所以'],
+        pinyin: 'jíshǐ nǐ bù shuō, wǒ yě zhīdào',
+        tr: { fr: 'même si tu ne dis rien, je le sais', en: 'even if you don\'t say anything, I know' },
+      },
+      {
+        before: '即使很贵，我',
+        after: '要买',
+        answer: '也',
+        wrong: ['才', '但是'],
+        pinyin: 'jíshǐ hěn guì, wǒ yě yào mǎi',
+        tr: { fr: 'même si c\'est très cher, je l\'achète', en: 'even if it\'s very expensive, I\'ll buy it' },
+      },
+    ],
+    judge: [
+      {
+        zh: '即使下雨，但是我去。',
+        ok: false,
+        fix: '即使下雨，我也去。',
+        fixPinyin: 'jíshǐ xià yǔ, wǒ yě qù',
+        why: { fr: '即使 va avec 也, pas avec 但是.', en: '即使 goes with 也, not with 但是.' },
+        tr: { fr: 'même s\'il pleut, j\'irai', en: 'even if it rains, I\'ll go' },
+      },
+      {
+        zh: '即使你不来，我也会等你。',
+        pinyin: 'jíshǐ nǐ bù lái, wǒ yě huì děng nǐ',
+        ok: true,
+        tr: { fr: 'même si tu ne viens pas, je t\'attendrai', en: 'even if you don\'t come, I\'ll wait for you' },
+      },
+    ],
+    translate: [
+      {
+        answer: '即使下雨，我也去',
+        pinyin: 'jíshǐ xià yǔ, wǒ yě qù',
+        wrong: ['即使下雨，我才去', '因为下雨，我也去'],
+        tr: { fr: 'même s\'il pleut, j\'irai', en: 'even if it rains, I\'ll go' },
+      },
+      {
+        answer: '即使你不说，我也知道',
+        pinyin: 'jíshǐ nǐ bù shuō, wǒ yě zhīdào',
+        wrong: ['即使你不说，但是我知道', '你不说即使，我也知道'],
+        tr: { fr: 'même si tu ne dis rien, je le sais', en: 'even if you don\'t say anything, I know' },
+      },
+    ],
+  },
+  {
+    id: 'zhiyao-jiu',
+    level: 4,
+    title: { fr: '只要…就 : il suffit que', en: '只要…就: as long as' },
+    pattern: { fr: '只要 A，(sujet) 就 B', en: '只要 A，(subject) 就 B' },
+    explanation: [
+      {
+        fr: '只要 pose une condition qui suffit : si A est vrai, B suit. 只要你努力，就能学好汉语 (« du moment que tu travailles, tu apprendras bien le chinois »).',
+        en: '只要 sets a condition that is enough: if A is true, B follows. 只要你努力，就能学好汉语 ("as long as you work hard, you\'ll learn Chinese well").',
+      },
+      {
+        fr: '就 se place après le sujet de la seconde partie, devant le verbe : 我就去.',
+        en: '就 goes after the subject of the second part, before the verb: 我就去.',
+      },
+    ],
+    examples: [
+      {
+        zh: '只要你努力，就能学好汉语。',
+        pinyin: 'zhǐyào nǐ nǔlì, jiù néng xué hǎo Hànyǔ',
+        tr: { fr: 'du moment que tu travailles, tu apprendras bien le chinois', en: 'as long as you work hard, you\'ll learn Chinese well' },
+      },
+      {
+        zh: '只要有时间，我就去看你。',
+        pinyin: 'zhǐyào yǒu shíjiān, wǒ jiù qù kàn nǐ',
+        tr: { fr: 'dès que j\'ai du temps, je viens te voir', en: 'whenever I have time, I\'ll come and see you' },
+      },
+      {
+        zh: '只要不下雨，我们就去爬山。',
+        pinyin: 'zhǐyào bú xià yǔ, wǒmen jiù qù pá shān',
+        tr: { fr: 's\'il ne pleut pas, on va faire de la montagne', en: 'as long as it doesn\'t rain, we\'ll go hiking' },
+      },
+    ],
+    pitfall: {
+      fr: '就 se place après le sujet (我就去), pas devant (就我去).',
+      en: '就 goes after the subject (我就去), not before it (就我去).',
+    },
+    order: [
+      {
+        words: ['只要', '有时间，', '我', '就', '去', '看你'],
+        pinyin: 'zhǐyào yǒu shíjiān, wǒ jiù qù kàn nǐ',
+        tr: { fr: 'dès que j\'ai du temps, je viens te voir', en: 'whenever I have time, I\'ll come and see you' },
+      },
+      {
+        words: ['只要', '不下雨，', '我们', '就', '去', '爬山'],
+        pinyin: 'zhǐyào bú xià yǔ, wǒmen jiù qù pá shān',
+        tr: { fr: 's\'il ne pleut pas, on va faire de la montagne', en: 'as long as it doesn\'t rain, we\'ll go hiking' },
+      },
+      {
+        words: ['只要', '你', '努力，', '就', '能', '学好'],
+        pinyin: 'zhǐyào nǐ nǔlì, jiù néng xué hǎo',
+        tr: { fr: 'du moment que tu travailles, tu y arriveras', en: 'as long as you work hard, you\'ll learn it well' },
+      },
+    ],
+    fill: [
+      {
+        before: '只要你努力，',
+        after: '能学好汉语',
+        answer: '就',
+        wrong: ['才', '都'],
+        pinyin: 'zhǐyào nǐ nǔlì, jiù néng xué hǎo Hànyǔ',
+        tr: { fr: 'du moment que tu travailles, tu apprendras bien le chinois', en: 'as long as you work hard, you\'ll learn Chinese well' },
+      },
+      {
+        before: '',
+        after: '有时间，我就去看你',
+        answer: '只要',
+        wrong: ['只有', '虽然'],
+        pinyin: 'zhǐyào yǒu shíjiān, wǒ jiù qù kàn nǐ',
+        tr: { fr: 'dès que j\'ai du temps, je viens te voir', en: 'whenever I have time, I\'ll come and see you' },
+      },
+      {
+        before: '只要不下雨，我们',
+        after: '去爬山',
+        answer: '就',
+        wrong: ['才', '但是'],
+        pinyin: 'zhǐyào bú xià yǔ, wǒmen jiù qù pá shān',
+        tr: { fr: 's\'il ne pleut pas, on va faire de la montagne', en: 'as long as it doesn\'t rain, we\'ll go hiking' },
+      },
+    ],
+    judge: [
+      {
+        zh: '只要有时间，就我去看你。',
+        ok: false,
+        fix: '只要有时间，我就去看你。',
+        fixPinyin: 'zhǐyào yǒu shíjiān, wǒ jiù qù kàn nǐ',
+        why: { fr: '就 se place après le sujet, devant le verbe.', en: '就 goes after the subject, before the verb.' },
+        tr: { fr: 'dès que j\'ai du temps, je viens te voir', en: 'whenever I have time, I\'ll come and see you' },
+      },
+      {
+        zh: '只要你喜欢，就买吧。',
+        pinyin: 'zhǐyào nǐ xǐhuan, jiù mǎi ba',
+        ok: true,
+        tr: { fr: 'du moment que ça te plaît, achète-le', en: 'as long as you like it, buy it' },
+      },
+    ],
+    translate: [
+      {
+        answer: '只要有时间，我就去看你',
+        pinyin: 'zhǐyào yǒu shíjiān, wǒ jiù qù kàn nǐ',
+        wrong: ['只要有时间，就我去看你', '只有有时间，我就去看你'],
+        tr: { fr: 'dès que j\'ai du temps, je viens te voir', en: 'whenever I have time, I\'ll come and see you' },
+      },
+      {
+        answer: '只要不下雨，我们就去爬山',
+        pinyin: 'zhǐyào bú xià yǔ, wǒmen jiù qù pá shān',
+        wrong: ['只要下雨，我们就去爬山', '只要不下雨，我们才去爬山'],
+        tr: { fr: 's\'il ne pleut pas, on va faire de la montagne', en: 'as long as it doesn\'t rain, we\'ll go hiking' },
+      },
+    ],
+  },
+  {
+    id: 'zhiyou-cai',
+    level: 4,
+    title: { fr: '只有…才 : seulement si', en: '只有…才: only if' },
+    pattern: { fr: '只有 A，(sujet) 才 B', en: '只有 A，(subject) 才 B' },
+    explanation: [
+      {
+        fr: '只有 pose la seule condition possible : B n\'arrive que si A. 只有多练习，才能说好汉语 (« ce n\'est qu\'en pratiquant beaucoup qu\'on parle bien chinois »).',
+        en: '只有 sets the only possible condition: B happens only if A. 只有多练习，才能说好汉语 ("only by practising a lot can you speak Chinese well").',
+      },
+      {
+        fr: 'Compare : 只要…就, la condition suffit ; 只有…才, la condition est indispensable.',
+        en: 'Compare: 只要…就, the condition is enough; 只有…才, the condition is essential.',
+      },
+    ],
+    examples: [
+      {
+        zh: '只有多练习，才能说好汉语。',
+        pinyin: 'zhǐyǒu duō liànxí, cái néng shuō hǎo Hànyǔ',
+        tr: { fr: 'ce n\'est qu\'en pratiquant beaucoup qu\'on parle bien chinois', en: 'only by practising a lot can you speak Chinese well' },
+      },
+      { zh: '只有你去，他才会去。', pinyin: 'zhǐyǒu nǐ qù, tā cái huì qù', tr: { fr: 'il n\'ira que si tu y vas', en: 'he\'ll only go if you go' } },
+      {
+        zh: '只有星期六，我才有时间。',
+        pinyin: 'zhǐyǒu xīngqīliù, wǒ cái yǒu shíjiān',
+        tr: { fr: 'je n\'ai du temps que le samedi', en: 'I only have time on Saturdays' },
+      },
+    ],
+    pitfall: {
+      fr: '只有 va avec 才, 只要 avec 就 : 只有…就 et 只要…才 sont des erreurs.',
+      en: '只有 goes with 才 and 只要 with 就: 只有…就 and 只要…才 are mistakes.',
+    },
+    order: [
+      { words: ['只有', '你', '去，', '他', '才', '会去'], pinyin: 'zhǐyǒu nǐ qù, tā cái huì qù', tr: { fr: 'il n\'ira que si tu y vas', en: 'he\'ll only go if you go' } },
+      {
+        words: ['只有', '多', '练习，', '才', '能', '说好'],
+        pinyin: 'zhǐyǒu duō liànxí, cái néng shuō hǎo',
+        tr: { fr: 'ce n\'est qu\'en pratiquant beaucoup qu\'on parle bien', en: 'only by practising a lot can you speak well' },
+      },
+      {
+        words: ['只有', '星期六，', '我', '才', '有时间'],
+        pinyin: 'zhǐyǒu xīngqīliù, wǒ cái yǒu shíjiān',
+        tr: { fr: 'je n\'ai du temps que le samedi', en: 'I only have time on Saturdays' },
+      },
+    ],
+    fill: [
+      { before: '只有你去，他', after: '会去', answer: '才', wrong: ['就', '都'], pinyin: 'zhǐyǒu nǐ qù, tā cái huì qù', tr: { fr: 'il n\'ira que si tu y vas', en: 'he\'ll only go if you go' } },
+      {
+        before: '',
+        after: '多练习，才能说好汉语',
+        answer: '只有',
+        wrong: ['只要', '虽然'],
+        pinyin: 'zhǐyǒu duō liànxí, cái néng shuō hǎo Hànyǔ',
+        tr: { fr: 'ce n\'est qu\'en pratiquant beaucoup qu\'on parle bien chinois', en: 'only by practising a lot can you speak Chinese well' },
+      },
+      {
+        before: '只有星期六，我',
+        after: '有时间',
+        answer: '才',
+        wrong: ['就', '也'],
+        pinyin: 'zhǐyǒu xīngqīliù, wǒ cái yǒu shíjiān',
+        tr: { fr: 'je n\'ai du temps que le samedi', en: 'I only have time on Saturdays' },
+      },
+    ],
+    judge: [
+      {
+        zh: '只有你去，他就会去。',
+        ok: false,
+        fix: '只有你去，他才会去。',
+        fixPinyin: 'zhǐyǒu nǐ qù, tā cái huì qù',
+        why: { fr: '只有 va avec 才, pas avec 就.', en: '只有 goes with 才, not with 就.' },
+        tr: { fr: 'il n\'ira que si tu y vas', en: 'he\'ll only go if you go' },
+      },
+      {
+        zh: '只有多听多说，才能学好外语。',
+        pinyin: 'zhǐyǒu duō tīng duō shuō, cái néng xué hǎo wàiyǔ',
+        ok: true,
+        tr: { fr: 'ce n\'est qu\'en écoutant et parlant beaucoup qu\'on apprend bien une langue', en: 'only by listening and speaking a lot can you learn a foreign language well' },
+      },
+    ],
+    translate: [
+      {
+        answer: '只有你去，他才会去',
+        pinyin: 'zhǐyǒu nǐ qù, tā cái huì qù',
+        wrong: ['只要你去，他才会去', '只有你去，他就会去'],
+        tr: { fr: 'il n\'ira que si tu y vas', en: 'he\'ll only go if you go' },
+      },
+      {
+        answer: '只有星期六，我才有时间',
+        pinyin: 'zhǐyǒu xīngqīliù, wǒ cái yǒu shíjiān',
+        wrong: ['只有星期六，我就有时间', '星期六只有，我才有时间'],
+        tr: { fr: 'je n\'ai du temps que le samedi', en: 'I only have time on Saturdays' },
+      },
+    ],
+  },
+  {
+    id: 'buguan-dou',
+    level: 4,
+    title: { fr: '不管…都 : quel que soit', en: '不管…都: no matter' },
+    pattern: { fr: '不管 + question，(sujet) 都 + verbe', en: '不管 + question，(subject) 都 + verb' },
+    explanation: [
+      {
+        fr: '不管 dit que le résultat est le même dans tous les cas. Il est suivi d\'une question (什么, 谁, 怎么, 多…) ou d\'un choix (忙不忙, A 还是 B), puis de 都 ou 也 : 不管天气怎么样，我都去跑步.',
+        en: '不管 says the outcome is the same in every case. It\'s followed by a question (什么, 谁, 怎么, 多…) or a choice (忙不忙, A 还是 B), then 都 or 也: 不管天气怎么样，我都去跑步.',
+      },
+    ],
+    examples: [
+      {
+        zh: '不管天气怎么样，我都去跑步。',
+        pinyin: 'bùguǎn tiānqì zěnmeyàng, wǒ dōu qù pǎobù',
+        tr: { fr: 'quel que soit le temps, je vais courir', en: 'whatever the weather, I go running' },
+      },
+      {
+        zh: '不管你说什么，他都不听。',
+        pinyin: 'bùguǎn nǐ shuō shénme, tā dōu bù tīng',
+        tr: { fr: 'quoi que tu dises, il n\'écoute pas', en: 'no matter what you say, he doesn\'t listen' },
+      },
+      {
+        zh: '不管忙不忙，他每天都给妈妈打电话。',
+        pinyin: 'bùguǎn máng bu máng, tā měitiān dōu gěi māma dǎ diànhuà',
+        tr: { fr: 'occupé ou pas, il appelle sa mère tous les jours', en: 'busy or not, he calls his mother every day' },
+      },
+    ],
+    pitfall: {
+      fr: 'Après 不管, il faut une question ou un choix : 不管天气很好 ne veut rien dire, 不管天气好不好 si.',
+      en: 'After 不管 you need a question or a choice: 不管天气很好 makes no sense, 不管天气好不好 does.',
+    },
+    order: [
+      {
+        words: ['不管', '你', '说', '什么，', '他', '都', '不听'],
+        pinyin: 'bùguǎn nǐ shuō shénme, tā dōu bù tīng',
+        tr: { fr: 'quoi que tu dises, il n\'écoute pas', en: 'no matter what you say, he doesn\'t listen' },
+      },
+      {
+        words: ['不管', '天气', '怎么样，', '我', '都', '去', '跑步'],
+        pinyin: 'bùguǎn tiānqì zěnmeyàng, wǒ dōu qù pǎobù',
+        tr: { fr: 'quel que soit le temps, je vais courir', en: 'whatever the weather, I go running' },
+      },
+      {
+        words: ['不管', '谁', '来，', '我们', '都', '欢迎'],
+        pinyin: 'bùguǎn shéi lái, wǒmen dōu huānyíng',
+        tr: { fr: 'qui que ce soit, il est le bienvenu', en: 'whoever comes is welcome' },
+      },
+    ],
+    fill: [
+      {
+        before: '不管你说什么，他',
+        after: '不听',
+        answer: '都',
+        wrong: ['才', '就'],
+        pinyin: 'bùguǎn nǐ shuō shénme, tā dōu bù tīng',
+        tr: { fr: 'quoi que tu dises, il n\'écoute pas', en: 'no matter what you say, he doesn\'t listen' },
+      },
+      {
+        before: '',
+        after: '天气怎么样，我都去跑步',
+        answer: '不管',
+        wrong: ['虽然', '因为'],
+        pinyin: 'bùguǎn tiānqì zěnmeyàng, wǒ dōu qù pǎobù',
+        tr: { fr: 'quel que soit le temps, je vais courir', en: 'whatever the weather, I go running' },
+      },
+      {
+        before: '不管',
+        after: '，他每天都给妈妈打电话',
+        answer: '忙不忙',
+        wrong: ['很忙', '忙了'],
+        pinyin: 'bùguǎn máng bu máng, tā měitiān dōu gěi māma dǎ diànhuà',
+        tr: { fr: 'occupé ou pas, il appelle sa mère tous les jours', en: 'busy or not, he calls his mother every day' },
+      },
+    ],
+    judge: [
+      {
+        zh: '不管天气很好，我都去跑步。',
+        ok: false,
+        fix: '不管天气好不好，我都去跑步。',
+        fixPinyin: 'bùguǎn tiānqì hǎo bu hǎo, wǒ dōu qù pǎobù',
+        why: { fr: 'Après 不管, il faut une question ou un choix (好不好).', en: 'After 不管 you need a question or a choice (好不好).' },
+        tr: { fr: 'qu\'il fasse beau ou non, je vais courir', en: 'good weather or not, I go running' },
+      },
+      {
+        zh: '不管多晚，他都会回家吃饭。',
+        pinyin: 'bùguǎn duō wǎn, tā dōu huì huí jiā chīfàn',
+        ok: true,
+        tr: { fr: 'aussi tard qu\'il soit, il rentre manger à la maison', en: 'however late it is, he comes home to eat' },
+      },
+    ],
+    translate: [
+      {
+        answer: '不管你说什么，他都不听',
+        pinyin: 'bùguǎn nǐ shuō shénme, tā dōu bù tīng',
+        wrong: ['不管你说什么，他才不听', '虽然你说什么，他都不听'],
+        tr: { fr: 'quoi que tu dises, il n\'écoute pas', en: 'no matter what you say, he doesn\'t listen' },
+      },
+      {
+        answer: '不管天气怎么样，我都去跑步',
+        pinyin: 'bùguǎn tiānqì zěnmeyàng, wǒ dōu qù pǎobù',
+        wrong: ['不管天气很好，我都去跑步', '天气不管怎么样，我才去跑步'],
+        tr: { fr: 'quel que soit le temps, je vais courir', en: 'whatever the weather, I go running' },
+      },
+    ],
+  },
+  {
+    id: 'yue-yue',
+    level: 4,
+    title: { fr: '越…越 : plus… plus', en: '越…越: the more… the more' },
+    pattern: { fr: '越 A 越 B', en: '越 A 越 B' },
+    explanation: [
+      {
+        fr: '越 A 越 B veut dire « plus A, plus B » : 雨越下越大 (« plus il pleut, plus ça tombe fort », il pleut de plus en plus fort).',
+        en: '越 A 越 B means "the more A, the more B": 雨越下越大 ("the more it rains, the harder it rains", it\'s raining harder and harder).',
+      },
+      {
+        fr: 'Avec deux sujets : 你越说，他越不高兴. Comme pour 越来越, pas de 很 après 越.',
+        en: 'With two subjects: 你越说，他越不高兴. As with 越来越, no 很 after 越.',
+      },
+    ],
+    examples: [
+      { zh: '雨越下越大。', pinyin: 'yǔ yuè xià yuè dà', tr: { fr: 'il pleut de plus en plus fort', en: 'it\'s raining harder and harder' } },
+      {
+        zh: '汉语越学越有意思。',
+        pinyin: 'Hànyǔ yuè xué yuè yǒu yìsi',
+        tr: { fr: 'plus on apprend le chinois, plus c\'est intéressant', en: 'the more you learn Chinese, the more interesting it gets' },
+      },
+      {
+        zh: '你越说，他越不高兴。',
+        pinyin: 'nǐ yuè shuō, tā yuè bù gāoxìng',
+        tr: { fr: 'plus tu parles, plus il est mécontent', en: 'the more you talk, the less happy he is' },
+      },
+      { zh: '他越跑越快。', pinyin: 'tā yuè pǎo yuè kuài', tr: { fr: 'il court de plus en plus vite', en: 'he runs faster and faster' } },
+    ],
+    pitfall: {
+      fr: 'On ajoute souvent 很 (越跑越很快) : 越 remplace 很, on ne met pas les deux.',
+      en: 'People often add 很 (越跑越很快): 越 replaces 很, you don\'t use both.',
+    },
+    order: [
+      { words: ['雨', '越', '下', '越', '大'], pinyin: 'yǔ yuè xià yuè dà', tr: { fr: 'il pleut de plus en plus fort', en: 'it\'s raining harder and harder' } },
+      { words: ['他', '越', '跑', '越', '快'], pinyin: 'tā yuè pǎo yuè kuài', tr: { fr: 'il court de plus en plus vite', en: 'he runs faster and faster' } },
+      {
+        words: ['你', '越', '说，', '他', '越', '不高兴'],
+        pinyin: 'nǐ yuè shuō, tā yuè bù gāoxìng',
+        tr: { fr: 'plus tu parles, plus il est mécontent', en: 'the more you talk, the less happy he is' },
+      },
+    ],
+    fill: [
+      { before: '雨越下', after: '大', answer: '越', wrong: ['很', '更'], pinyin: 'yǔ yuè xià yuè dà', tr: { fr: 'il pleut de plus en plus fort', en: 'it\'s raining harder and harder' } },
+      { before: '他越跑越', after: '', answer: '快', wrong: ['很快', '太快'], pinyin: 'tā yuè pǎo yuè kuài', tr: { fr: 'il court de plus en plus vite', en: 'he runs faster and faster' } },
+      {
+        before: '汉语越学',
+        after: '有意思',
+        answer: '越',
+        wrong: ['很', '也'],
+        pinyin: 'Hànyǔ yuè xué yuè yǒu yìsi',
+        tr: { fr: 'plus on apprend le chinois, plus c\'est intéressant', en: 'the more you learn Chinese, the more interesting it gets' },
+      },
+    ],
+    judge: [
+      {
+        zh: '他越跑越很快。',
+        ok: false,
+        fix: '他越跑越快。',
+        fixPinyin: 'tā yuè pǎo yuè kuài',
+        why: { fr: 'Pas de 很 après 越.', en: 'No 很 after 越.' },
+        tr: { fr: 'il court de plus en plus vite', en: 'he runs faster and faster' },
+      },
+      {
+        zh: '这本书我越看越喜欢。',
+        pinyin: 'zhè běn shū wǒ yuè kàn yuè xǐhuan',
+        ok: true,
+        tr: { fr: 'plus je lis ce livre, plus je l\'aime', en: 'the more I read this book, the more I like it' },
+      },
+    ],
+    translate: [
+      {
+        answer: '雨越下越大',
+        pinyin: 'yǔ yuè xià yuè dà',
+        wrong: ['雨越大越下', '雨越下很大'],
+        tr: { fr: 'il pleut de plus en plus fort', en: 'it\'s raining harder and harder' },
+      },
+      {
+        answer: '他越跑越快',
+        pinyin: 'tā yuè pǎo yuè kuài',
+        wrong: ['他越跑越很快', '他跑越越快'],
+        tr: { fr: 'il court de plus en plus vite', en: 'he runs faster and faster' },
       },
     ],
   },
