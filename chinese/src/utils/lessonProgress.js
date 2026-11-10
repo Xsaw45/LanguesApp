@@ -1,4 +1,4 @@
-import { REVIEW_INTERVALS, addDays, today, isDueForReview } from './spacedrep.js'
+import { isDueForReview, scheduleLesson } from './spacedrep.js'
 
 // Progression d'une leçon (pinyin, point de grammaire) : un enregistrement synchronisé par leçon.
 export const PASS_THRESHOLD = 0.8
@@ -19,13 +19,12 @@ export function lessonProgress(progressMap, key, level) {
 export const isLessonDue = progress => isDueForReview(progress)
 export const isLessonPassed = progress => progress.bestPct >= PASS_THRESHOLD
 
-/** Réussite (≥ 80 %) : leçon validée, prochaine révision de plus en plus espacée. Échec : seul le record change. */
+/**
+ * Réussite (≥ 80 %) : leçon validée, prochaine révision planifiée par FSRS (plus tard après un sans-faute, plus tôt
+ * de justesse). Échec : seul le record change ; une leçon à revoir le reste.
+ */
 export function applyLessonResult(progress, pct) {
   const next = { ...progress, bestPct: Math.max(progress.bestPct, pct) }
   if (pct < PASS_THRESHOLD) return next
-  next.passes = progress.passes + 1
-  next.known = true
-  next.reviewInterval = REVIEW_INTERVALS[Math.min(next.passes, REVIEW_INTERVALS.length) - 1]
-  next.nextReview = addDays(today(), next.reviewInterval)
-  return next
+  return { ...scheduleLesson(next, pct === 1 ? 'good' : 'hard'), passes: progress.passes + 1 }
 }

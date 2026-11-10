@@ -1,20 +1,27 @@
 import { LevelCard } from './LevelCard.jsx'
 import { ALL_LEVELS, getWordsForLevel } from '../data/index.js'
-import { isActive, createInitialProgress } from '../utils/spacedrep.js'
+import { isActive, isDueForReview, createInitialProgress } from '../utils/spacedrep.js'
+import { LEARNING_LIMIT } from '../utils/quiz.js'
 import { useLang } from '../i18n/useLang.js'
 import { Button, Screen, SectionLabel, TopBar } from './ui.jsx'
 
-function countActiveWords(progressMap, unlockedLevels) {
-  if (!progressMap) return 0
-  return unlockedLevels.flatMap(l => getWordsForLevel(l)).filter(w => {
+/** active : mots à proposer (nouveaux, en cours, à réviser) ; learning : en cours ; due : à réviser. */
+function countWords(progressMap, unlockedLevels) {
+  const counts = { active: 0, learning: 0, due: 0 }
+  if (!progressMap) return counts
+  for (const w of unlockedLevels.flatMap(l => getWordsForLevel(l))) {
     const p = progressMap.get(w.id) || createInitialProgress(w.id, w.level)
-    return isActive(p)
-  }).length
+    if (isActive(p)) counts.active++
+    if (progressMap.has(w.id) && !p.known) counts.learning++
+    if (isDueForReview(p)) counts.due++
+  }
+  return counts
 }
 
 export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary, onBack }) {
   const { t } = useLang()
-  const activeCount = countActiveWords(progressMap, unlockedLevels)
+  const counts = countWords(progressMap, unlockedLevels)
+  const activeCount = counts.active
   const canStart = activeCount > 0
   const stats = levelStats || ALL_LEVELS.map(l => ({ level: l, total: getWordsForLevel(l).length, known: 0, pct: 0 }))
 
@@ -36,7 +43,10 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
           </Button>
           {!canStart && <p className="text-center text-sm text-fg-3">{t('vocab.nothingHint')}</p>}
           <Button variant="secondary" onClick={onOpenVocabulary}>{t('vocab.list')}</Button>
-          <p className="mt-1 text-center text-sm text-fg-3">{t('vocab.howItWorks')}</p>
+          <p className="mt-1 text-center text-sm tabular-nums text-fg-2">
+            {t('vocab.status', { learning: counts.learning, limit: LEARNING_LIMIT, due: counts.due })}
+          </p>
+          <p className="text-center text-sm text-fg-3">{t('vocab.howItWorks', { limit: LEARNING_LIMIT })}</p>
         </div>
 
         <SectionLabel className="mt-10">{t('vocab.progress')}</SectionLabel>

@@ -1,11 +1,13 @@
 import { getWordsForLevel } from '../data/index.js'
-import { isActive, isDueForReview, createInitialProgress } from './spacedrep.js'
+import { isDueForReview, createInitialProgress } from './spacedrep.js'
 import { parseSyllable, splitPinyin, withTone } from './pinyin.js'
 import { stripParens } from './validate.js'
 import { wordSrc } from './audio.js'
 import { LANGS, perLang } from '../i18n/text.js'
 
 const QUIZ_SIZE = 20
+/** Mots en cours d'apprentissage à la fois, au plus : de nouveaux mots n'arrivent que quand des mots sont maîtrisés. */
+export const LEARNING_LIMIT = 20
 const CHOICES = 4
 
 /*
@@ -27,36 +29,29 @@ function shuffle(arr) {
 const pick = arr => arr[Math.floor(Math.random() * arr.length)]
 
 /**
- * Selects up to QUIZ_SIZE words from unlocked levels.
- * Priority: due reviews first, then unseen/in-progress words.
- * progressMap: Map<wordId, progressObject>
- * unlockedLevels: number[]
+ * Mots d'un test de QUIZ_SIZE, dans cet ordre de priorité :
+ *   1. révisions arrivées à échéance, les plus en retard d'abord ;
+ *   2. mots en cours d'apprentissage (déjà vus, pas encore maîtrisés) ;
+ *   3. mots nouveaux, du niveau débloqué le plus bas d'abord, tant que moins de LEARNING_LIMIT mots sont en cours.
+ * Le rythme s'adapte ainsi à l'utilisateur : qui retient vite maîtrise ses mots et en reçoit d'autres ; qui
+ * a du mal retravaille les mêmes ; quand les révisions s'accumulent, elles passent avant tout le reste.
  */
 export function selectQuizWords(progressMap, unlockedLevels) {
-  const allWords = unlockedLevels.flatMap(l => getWordsForLevel(l))
-
-  const dueReviews = []
+  const due = []
   const learning = []
-
-  for (const word of allWords) {
-    const progress = progressMap.get(word.id) || createInitialProgress(word.id, word.level)
-    if (!isActive(progress)) continue
-    if (progress.known && isDueForReview(progress)) {
-      dueReviews.push(word)
-    } else if (!progress.known) {
-      learning.push(word)
+  const fresh = new Map() // niveau → mots jamais vus
+  for (const level of unlockedLevels) {
+    for (const word of getWordsForLevel(level)) {
+      const progress = progressMap.get(word.id)
+      if (!progress) (fresh.get(level) || fresh.set(level, []).get(level)).push(word)
+      else if (progress.known) { if (isDueForReview(progress)) due.push({ word, nextReview: progress.nextReview }) }
+      else learning.push(word)
     }
   }
-
-  const shuffledReviews = shuffle(dueReviews)
-  const shuffledLearning = shuffle(learning)
-
-  const selected = [
-    ...shuffledReviews.slice(0, QUIZ_SIZE),
-    ...shuffledLearning,
-  ].slice(0, QUIZ_SIZE)
-
-  return shuffle(selected)
+  const reviews = shuffle(due).sort((a, b) => a.nextReview.localeCompare(b.nextReview)).map(d => d.word)
+  const newSlots = Math.max(0, LEARNING_LIMIT - learning.length)
+  const newWords = [...fresh.keys()].sort((a, b) => a - b).flatMap(level => shuffle(fresh.get(level))).slice(0, newSlots)
+  return shuffle([...reviews, ...shuffle(learning), ...newWords].slice(0, QUIZ_SIZE))
 }
 
 // --- Mauvaises réponses ---

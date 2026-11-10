@@ -15,6 +15,10 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 - Recherche dans la liste des mots, tous niveaux : caractères, pinyin avec ou sans tons, sens.
 - Page « Aujourd'hui » : toutes les révisions dues en une séance ; jours d'affilée (un jour compte dès une réponse),
   éléments maîtrisés et temps de pratique (aujourd'hui, 7 jours ; pauses de plus de 90 s non comptées).
+- Révision adaptative (FSRS, ts-fsrs, MIT) pour tous les modules : intervalles calculés selon la mémoire de chaque
+  élément (3, 14, 57… jours, un an au plus) ; une erreur raccourcit l'intervalle sans tout effacer, 4 oublis renvoient
+  en apprentissage ; 20 mots en cours au plus, les nouveaux arrivent quand on en maîtrise ; anciennes progressions
+  reprises sans perte.
 
 ## Priorités
 
@@ -31,6 +35,12 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois, hôtel, voyage, anniversaire) ;
    pinyin et traduction affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension
    et phrases à remettre dans l'ordre. Reste : textes HSK 4 et plus ; relecture par un locuteur natif.
+5. **Test de niveau** : au premier lancement (adaptatif, environ 5 minutes) et bouton « Passer le test » sur un niveau
+   verrouillé (30 mots, 80 %) ; les mots réussis sont planifiés en révision, pas marqués maîtrisés d'un coup. Même
+   principe pour sauter des points de grammaire.
+6. **Contenu restant** : 132 définitions françaises manquantes du HSK 1 à 6 (412 au HSK 7–9) ; grammaire et
+   lecture HSK 4 ; son des particules au ton neutre (的, 了, 吗…), à présenter dans un mot ; phrases d'exemple pour
+   les mots du HSK 1 à 3 (en option).
 
 ## Secondaire
 

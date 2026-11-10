@@ -59,7 +59,8 @@ export function CharacterPractice({ items, progressMap, applyUpdates, onExit, on
     setResults(prev => [...prev, { ch, correct }])
     const progress = getCharProgress(progressMap, ch)
     // Caractère déjà maîtrisé et pas encore à réviser (séance complétée) : seule une erreur compte.
-    const updated = !correct ? applyFailure(progress) : isActive(progress) ? applySuccess(progress) : null
+    // Tracé sans aucune erreur : révision suivante plus lointaine qu'avec des erreurs tolérées.
+    const updated = !correct ? applyFailure(progress) : isActive(progress) ? applySuccess(progress, total === 0 ? 'good' : 'hard') : null
     if (updated) applyUpdates([updated])
   }
 
