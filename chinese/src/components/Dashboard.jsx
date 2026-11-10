@@ -4,6 +4,7 @@ import { isActive, isDueForReview, createInitialProgress } from '../utils/spaced
 import { LEARNING_LIMIT } from '../utils/quiz.js'
 import { useLang } from '../i18n/useLang.js'
 import { Button, Screen, SectionLabel, TopBar } from './ui.jsx'
+import { PlacementInvite } from './PlacementInvite.jsx'
 
 /** active : mots à proposer (nouveaux, en cours, à réviser) ; learning : en cours ; due : à réviser. */
 function countWords(progressMap, unlockedLevels) {
@@ -18,12 +19,14 @@ function countWords(progressMap, unlockedLevels) {
   return counts
 }
 
-export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz, onOpenVocabulary, onBack }) {
+/** placementDone : test de niveau déjà fait ; sinon une invitation à le faire s'affiche en haut. */
+export function Dashboard({ levelStats, unlockedLevels, progressMap, placementDone, onStartPlacement, onStartUnlockTest, onStartQuiz, onOpenVocabulary, onBack }) {
   const { t } = useLang()
   const counts = countWords(progressMap, unlockedLevels)
   const activeCount = counts.active
   const canStart = activeCount > 0
   const stats = levelStats || ALL_LEVELS.map(l => ({ level: l, total: getWordsForLevel(l).length, known: 0, pct: 0 }))
+  const firstLocked = stats.find(s => !unlockedLevels.includes(s.level))?.level
 
   return (
     <Screen>
@@ -37,6 +40,7 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
           </p>
         </header>
 
+        {!placementDone && <PlacementInvite onStart={onStartPlacement} className="mb-6" />}
         <div className="flex flex-col gap-2">
           <Button onClick={onStartQuiz} disabled={!canStart}>
             {canStart ? t('vocab.start', { n: Math.min(activeCount, 20) }) : t('vocab.nothing')}
@@ -52,7 +56,13 @@ export function Dashboard({ levelStats, unlockedLevels, progressMap, onStartQuiz
         <SectionLabel className="mt-10">{t('vocab.progress')}</SectionLabel>
         <div className="flex flex-col gap-3">
           {stats.map(stat => (
-            <LevelCard key={stat.level} stat={stat} unlocked={unlockedLevels.includes(stat.level)} last={stat.level === ALL_LEVELS.at(-1)} />
+            <LevelCard
+              key={stat.level}
+              stat={stat}
+              unlocked={unlockedLevels.includes(stat.level)}
+              last={stat.level === ALL_LEVELS.at(-1)}
+              onUnlockTest={stat.level === firstLocked ? () => onStartUnlockTest(stat.level) : null}
+            />
           ))}
         </div>
       </div>

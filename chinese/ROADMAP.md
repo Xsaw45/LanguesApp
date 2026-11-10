@@ -35,9 +35,11 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
    chemin, achats, médecin, téléphone, famille, journée, week-end, apprendre le chinois, hôtel, voyage, anniversaire) ;
    pinyin et traduction affichables, sens de chaque mot au toucher, phrases enregistrées ; questions de compréhension
    et phrases à remettre dans l'ordre. Reste : textes HSK 4 et plus ; relecture par un locuteur natif.
-5. **Test de niveau** : au premier lancement (adaptatif, environ 5 minutes) et bouton « Passer le test » sur un niveau
-   verrouillé (30 mots, 80 %) ; les mots réussis sont planifiés en révision, pas marqués maîtrisés d'un coup. Même
-   principe pour sauter des points de grammaire.
+5. **Test de niveau** — fait : test de placement (8 questions par niveau, du HSK 1 vers le haut tant que 75 % sont
+   réussis), proposé sur l'accueil d'un nouvel utilisateur et sur la page Vocabulaire ; bouton « Passer le test » sur
+   le premier niveau verrouillé (20 mots du niveau précédent, 80 %). Mots d'un niveau réussi planifiés en révision
+   (réussis : 2 à 6 semaines ; non testés : 3 à 20 semaines), pas comptés comme appris. Grammaire : test d'un niveau,
+   2 questions par point, un point sans faute est validé.
 6. **Contenu restant** : 132 définitions françaises manquantes du HSK 1 à 6 (412 au HSK 7–9) ; grammaire et
    lecture HSK 4 ; son des particules au ton neutre (的, 了, 吗…), à présenter dans un mot ; phrases d'exemple pour
    les mots du HSK 1 à 3 (en option).
@@ -71,6 +73,8 @@ Modèle choisi (abonnement, web d'abord, 7 jours d'essai, parrainage), nom et do
   - Enregistrements : hugolpz/audio-cmn (Chen Wang, Yue Tan / Shtooka), CC BY-SA.
   - Tracés des caractères : Make Me a Hanzi via hanzi-writer-data, Arphic Public License (joindre la licence) ;
     bibliothèque Hanzi Writer : MIT ; clés : Unihan (licence Unicode).
+  - Révision espacée : ts-fsrs (MIT) et sa dépendance srs-kit (BSD 3-Clause : reproduire l'avis de copyright,
+    fait dans les crédits de l'app).
   - Le partage à l'identique (BY-SA) s'applique aux données, pas au code de l'app : publier les données modifiées
     (définitions nettoyées) sous la même licence.
 - **Légal** : mentions légales, CGV / CGU, politique de confidentialité (RGPD), gestion des données de compte.

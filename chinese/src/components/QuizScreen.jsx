@@ -37,7 +37,7 @@ const LAYOUT = {
   'meaning-choice': { list: 'flex flex-col gap-2', option: 'min-h-12 px-4 py-3 text-left', label: 'text-base' },
 }
 
-function Choices({ question, answered, chosen, onChoose }) {
+export function Choices({ question, answered, chosen, onChoose }) {
   const { l } = useLang()
   const layout = LAYOUT[question.type]
   return (

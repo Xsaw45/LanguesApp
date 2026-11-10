@@ -31,8 +31,11 @@ const pick = arr => arr[Math.floor(Math.random() * arr.length)]
 export const grammarKey = point => `gr_${point.id}`
 export const getPointProgress = (progressMap, point) => lessonProgress(progressMap, grammarKey(point), 'gr')
 
+/** Point ouvert : le premier, celui qui suit un point réussi, ou un point déjà réussi (test de niveau). */
 export function isPointUnlocked(progressMap, index) {
-  return index === 0 || getPointProgress(progressMap, GRAMMAR_POINTS[index - 1]).bestPct >= PASS_THRESHOLD
+  if (index === 0) return true
+  const passed = point => getPointProgress(progressMap, point).bestPct >= PASS_THRESHOLD
+  return passed(GRAMMAR_POINTS[index - 1]) || passed(GRAMMAR_POINTS[index])
 }
 
 const choices = (answer, wrong) =>
@@ -123,6 +126,17 @@ export function buildPointQuiz(point) {
     for (const { item, i } of chosen) questions.push(BUILDERS[type](point, item, i))
   }
   return shuffle(questions).slice(0, POINT_QUIZ_SIZE)
+}
+
+export const LEVEL_TEST_PER_POINT = 2
+
+/**
+ * Test d'un niveau de grammaire pour qui le connaît déjà : LEVEL_TEST_PER_POINT questions par point pas encore
+ * réussi, sans « correcte ou pas » (une chance sur deux de deviner). Un point réussi sans faute est validé.
+ */
+export function buildLevelTest(progressMap, level) {
+  const points = GRAMMAR_POINTS.filter(p => p.level === level && !isLessonPassed(getPointProgress(progressMap, p)))
+  return shuffle(points.flatMap(point => shuffle(allQuestions(point).filter(q => q.layout !== 'two')).slice(0, LEVEL_TEST_PER_POINT)))
 }
 
 /**

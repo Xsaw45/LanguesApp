@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { GRAMMAR_POINTS } from '../data/grammar.js'
-import { buildReviewQuiz, getPointProgress, isPointUnlocked, scoreByPoint, POINT_QUIZ_SIZE } from '../utils/grammarQuiz.js'
+import { buildLevelTest, buildReviewQuiz, getPointProgress, isPointUnlocked, scoreByPoint, POINT_QUIZ_SIZE } from '../utils/grammarQuiz.js'
 import { applyLessonResult, isLessonDue, isLessonPassed, PASS_THRESHOLD } from '../utils/lessonProgress.js'
 import { GrammarPoint } from './GrammarPoint.jsx'
 import { GrammarQuiz } from './GrammarQuiz.jsx'
@@ -67,10 +67,41 @@ export function GrammarReview({ progressMap, applyUpdates, onExit, exitLabel }) 
   return <GrammarQuiz key={run.id} questions={run.questions} onExit={onExit} onFinish={finish} />
 }
 
+/** Résultat du test d'un niveau : points validés. */
+function LevelTestResult({ passed, total, onExit }) {
+  const { t } = useLang()
+  return (
+    <Screen className="px-5 pb-8">
+      <div className="my-auto">
+        <Score
+          value={`${passed} / ${total}`}
+          label={t('gr.levelTestResult', { n: passed, total })}
+          caption={passed === 0 ? t('gr.levelTestNone') : null}
+          good={passed > 0}
+        />
+      </div>
+      <Button onClick={onExit}>{t('gr.backToPoints')}</Button>
+    </Screen>
+  )
+}
+
 export function GrammarPage({ progressMap, applyUpdates, onBack }) {
   const { t, l, pct } = useLang()
-  // null : liste ; nombre : index du point ouvert ; 'review' : révision
+  // null : liste ; nombre : index du point ouvert ; 'review' : révision ;
+  // { levelTest, questions } : test d'un niveau ; { passed, total } : son résultat
   const [view, setView] = useState(null)
+
+  // Un point est validé si toutes ses questions du test sont justes.
+  function finishLevelTest(results) {
+    const updates = []
+    for (const [pointId, ratio] of scoreByPoint(results)) {
+      if (ratio < 1) continue
+      const point = GRAMMAR_POINTS.find(p => p.id === pointId)
+      updates.push(applyLessonResult(getPointProgress(progressMap, point), 1))
+    }
+    if (updates.length) applyUpdates(updates)
+    setView({ passed: updates.length, total: scoreByPoint(results).size })
+  }
 
   if (typeof view === 'number') {
     return (
@@ -87,6 +118,10 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
   }
 
   if (view === 'review') return <GrammarReview progressMap={progressMap} applyUpdates={applyUpdates} onExit={() => setView(null)} />
+  if (view?.levelTest) {
+    return <GrammarQuiz key={view.levelTest} questions={view.questions} onExit={() => setView(null)} onFinish={finishLevelTest} />
+  }
+  if (view?.total !== undefined) return <LevelTestResult passed={view.passed} total={view.total} onExit={() => setView(null)} />
 
   const progresses = GRAMMAR_POINTS.map(p => getPointProgress(progressMap, p))
   const passed = progresses.filter(isLessonPassed).length
@@ -130,6 +165,18 @@ export function GrammarPage({ progressMap, applyUpdates, onBack }) {
                 )
               })}
             </ol>
+            {GRAMMAR_POINTS.some((p, i) => p.level === level && !isLessonPassed(progresses[i])) && (
+              <>
+                <Button
+                  variant="secondary"
+                  className="mt-3 h-10 text-sm"
+                  onClick={() => setView({ levelTest: level, questions: buildLevelTest(progressMap, level) })}
+                >
+                  {t('gr.levelTest', { level })}
+                </Button>
+                <p className="mt-2 text-center text-xs text-fg-3">{t('gr.levelTestHint')}</p>
+              </>
+            )}
           </section>
         ))}
       </div>

@@ -12,6 +12,7 @@ import { getReadingProgress } from '../utils/readingQuiz.js'
 import { isLessonPassed } from '../utils/lessonProgress.js'
 import { useLang } from '../i18n/useLang.js'
 import { TodayCard } from './TodayPage.jsx'
+import { PlacementInvite } from './PlacementInvite.jsx'
 import { ProgressBar, Screen, Seal, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
@@ -37,7 +38,8 @@ function ModuleCard({ id, seal, chinese, known, total, onOpen }) {
   )
 }
 
-export function ModulesHome({ levelStats, progressMap, onOpenToday, onOpenPinyin, onOpenVocabulary, onOpenCharacters, onOpenGrammar, onOpenReading, onOpenClassifiers, onOpenSettings }) {
+/** showPlacement : nouvel utilisateur, invité au test de niveau. */
+export function ModulesHome({ levelStats, progressMap, showPlacement, onStartPlacement, onOpenToday, onOpenPinyin, onOpenVocabulary, onOpenCharacters, onOpenGrammar, onOpenReading, onOpenClassifiers, onOpenSettings }) {
   const { t } = useLang()
   const wordsKnown = (levelStats || []).reduce((n, s) => n + s.known, 0)
   const wordsTotal = (levelStats || []).reduce((n, s) => n + s.total, 0)
@@ -72,6 +74,7 @@ export function ModulesHome({ levelStats, progressMap, onOpenToday, onOpenPinyin
         </header>
 
         <TodayCard progressMap={progressMap} onOpen={onOpenToday} />
+        {showPlacement && <PlacementInvite onStart={onStartPlacement} className="mt-3" />}
 
         <div className="mt-6 flex flex-col gap-3">
           <ModuleCard id="pinyin" seal="拼" chinese="拼音" known={lessonsPassed} total={PINYIN_LESSONS.length} onOpen={onOpenPinyin} />

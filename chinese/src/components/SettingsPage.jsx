@@ -12,6 +12,7 @@ const CREDITS = [
   { key: 'settings.credit.tts', href: 'https://cloud.google.com/text-to-speech' },
   { key: 'settings.credit.strokes', href: 'https://github.com/chanind/hanzi-writer-data' },
   { key: 'settings.credit.unihan', href: 'https://www.unicode.org/charts/unihan.html' },
+  { key: 'settings.credit.fsrs', href: 'https://github.com/open-spaced-repetition/ts-fsrs' },
 ]
 
 export function SettingsPage({ onBack }) {

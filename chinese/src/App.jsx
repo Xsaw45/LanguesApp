@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { withActivity, markStepDone, addPracticeTime } from './utils/activity.js'
+import { PLACEMENT_KEY } from './utils/levelTest.js'
+import { VocabLevelTest } from './components/VocabLevelTest.jsx'
 import { useProgress } from './hooks/useProgress.js'
 import { useLevels } from './hooks/useLevels.js'
 import { usePracticeTime } from './hooks/usePracticeTime.js'
@@ -28,12 +30,18 @@ export default function App() {
   // Toute progression enregistrée compte aussi dans l'activité du jour (série, éléments maîtrisés).
   const applyUpdates = useCallback(updates => saveUpdates(withActivity(latestMap(), updates)), [saveUpdates, latestMap])
 
-  // Langue : réglage synchronisé (enregistrement « settings »), sinon celle du navigateur.
-  const lang = progressMap?.get(SETTINGS_KEY)?.lang || defaultLang()
-  const setLang = useCallback(
-    next => applyUpdates([{ ...progressMap?.get(SETTINGS_KEY), wordId: SETTINGS_KEY, level: 'settings', lang: next }]),
-    [applyUpdates, progressMap],
+  // Réglages synchronisés (enregistrement « settings ») : langue, test de niveau fait.
+  const saveSetting = useCallback(
+    patch => applyUpdates([{ ...latestMap()?.get(SETTINGS_KEY), wordId: SETTINGS_KEY, level: 'settings', ...patch }]),
+    [applyUpdates, latestMap],
   )
+  // Langue : réglage synchronisé, sinon celle du navigateur.
+  const lang = progressMap?.get(SETTINGS_KEY)?.lang || defaultLang()
+  const setLang = useCallback(next => saveSetting({ lang: next }), [saveSetting])
+  const placementDone = !!progressMap?.get(SETTINGS_KEY)?.[PLACEMENT_KEY]
+  const newLearner = !placementDone && ![...(progressMap?.keys() || [])].some(k => k.startsWith('hsk'))
+  // Test de niveau du vocabulaire en cours : { mode: 'placement' } | { mode: 'unlock', level }
+  const [levelTest, setLevelTest] = useState(null)
   const langValue = useMemo(() => makeLang(lang, setLang), [lang, setLang])
   useEffect(() => {
     document.documentElement.lang = lang
@@ -83,6 +91,20 @@ export default function App() {
         homeLabel={translate(lang, screen === 'today' ? 'today.back' : 'vocab.backToVocab')}
       />
     )
+  } else if (levelTest) {
+    content = (
+      <VocabLevelTest
+        mode={levelTest.mode}
+        level={levelTest.level}
+        progressMap={progressMap}
+        applyUpdates={applyUpdates}
+        onPlaced={reached => saveSetting({ [PLACEMENT_KEY]: { level: reached, date: new Date().toISOString() } })}
+        onExit={() => {
+          setLevelTest(null)
+          setScreen('hsk')
+        }}
+      />
+    )
   } else if (state === QUIZ_STATES.QUESTION || state === QUIZ_STATES.FEEDBACK) {
     content = (
       <QuizScreen
@@ -120,6 +142,9 @@ export default function App() {
         levelStats={levelStats}
         unlockedLevels={unlockedLevels}
         progressMap={progressMap}
+        placementDone={placementDone}
+        onStartPlacement={() => setLevelTest({ mode: 'placement' })}
+        onStartUnlockTest={level => setLevelTest({ mode: 'unlock', level })}
         onStartQuiz={() => startQuiz(unlockedLevels)}
         onOpenVocabulary={() => setScreen('vocabulary')}
         onBack={home}
@@ -130,6 +155,8 @@ export default function App() {
       <ModulesHome
         levelStats={levelStats}
         progressMap={progressMap}
+        showPlacement={newLearner}
+        onStartPlacement={() => setLevelTest({ mode: 'placement' })}
         onOpenToday={() => setScreen('today')}
         onOpenPinyin={() => setScreen('pinyin')}
         onOpenVocabulary={() => setScreen('hsk')}

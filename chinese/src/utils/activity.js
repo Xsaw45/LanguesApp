@@ -23,12 +23,13 @@ const isPracticed = record => !!record && record.practiced !== false
 
 /**
  * Ajoute aux modifications de progression celle du jour : le jour devient pratiqué et compte ce qui vient d'être
- * maîtrisé. Rien n'est ajouté pour un réglage ou quand le jour est déjà pratiqué sans rien de nouveau.
+ * maîtrisé (pas les mots « placés » par un test de niveau). Rien n'est ajouté pour un réglage ou quand le jour est
+ * déjà pratiqué sans rien de nouveau.
  */
 export function withActivity(progressMap, updates) {
   const tracked = updates.filter(isTracked)
   if (!tracked.length) return updates
-  const learned = tracked.filter(u => ITEMS.test(u.wordId) && u.known && !progressMap?.get(u.wordId)?.known).length
+  const learned = tracked.filter(u => ITEMS.test(u.wordId) && u.known && !u.placed && !progressMap?.get(u.wordId)?.known).length
   const record = dayRecord(progressMap, today())
   if (isPracticed(progressMap?.get(record.wordId)) && !learned) return updates
   return [...updates, { ...record, practiced: true, learned: record.learned + learned }]
