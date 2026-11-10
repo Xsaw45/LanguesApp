@@ -43,6 +43,9 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 
 ## Avant de vendre
 
+Modèle choisi (abonnement, web d'abord, 7 jours d'essai, parrainage), nom et domaine, prix, paiement : voir
+[COMMERCIALISATION.md](COMMERCIALISATION.md).
+
 - **Séparer l'app de chinois** de LanguesApp : son propre dépôt ou dossier de déploiement, son domaine, sans
   l'italien ni la page d'accueil commune.
 - **Comptes et paiement** : aujourd'hui l'identité vient de Tailscale (réseau privé). Il faut des comptes
