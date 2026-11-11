@@ -57,14 +57,14 @@ Objectif à terme : vendre l'application de chinois seule (sans l'italien), en f
 
 ## Avant de vendre
 
-Modèle choisi (abonnement, web d'abord, 7 jours d'essai, parrainage), nom et domaine, prix, paiement : voir
-[COMMERCIALISATION.md](COMMERCIALISATION.md).
+Abonnement, web d'abord, essai de 7 jours, parrainage, entreprise individuelle au régime micro-entreprise et
+paiement Paddle décidés. Nom, domaine, prix et détails : voir [COMMERCIALISATION.md](COMMERCIALISATION.md).
 
 - **Séparer l'app de chinois** de LanguesApp : son propre dépôt ou dossier de déploiement, son domaine, sans
   l'italien ni la page d'accueil commune.
 - **Comptes et paiement** : aujourd'hui l'identité vient de Tailscale (réseau privé). Il faut des comptes
-  (e-mail / Apple / Google), un paiement (abonnement ou achat unique : Stripe sur le web, achats intégrés dans les
-  stores) et la synchronisation par compte.
+  (e-mail / Apple / Google), la synchronisation par compte, puis intégrer le checkout et les webhooks Paddle sur le
+  web ; les achats intégrés des stores viendront avec les applications mobiles.
 - **Distribution** : PWA sur le web, puis Play Store (TWA) et App Store (Capacitor) ; tests sur vrais iPhone et
   Android (son, encoche, hors ligne).
 - **Licences et mentions** (page « À propos / crédits » dans l'app et sur la page de vente) :
@@ -79,6 +79,7 @@ Modèle choisi (abonnement, web d'abord, 7 jours d'essai, parrainage), nom et do
     fait dans les crédits de l'app).
   - Le partage à l'identique (BY-SA) s'applique aux données, pas au code de l'app : publier les données modifiées
     (définitions nettoyées) sous la même licence.
-- **Légal** : mentions légales, CGV / CGU, politique de confidentialité (RGPD), gestion des données de compte.
+- **Légal** : entreprise individuelle au régime micro-entreprise retenue ; restent l'immatriculation, les mentions
+  légales, les CGV / CGU, la politique de confidentialité (RGPD) et la gestion des données de compte.
 - **Produit** : premier lancement guidé (niveau, objectif), page de présentation, captures, essai gratuit.
 - **Langues** : ajouter d'autres langues d'interface (espagnol, allemand…) avec le même système de traduction.

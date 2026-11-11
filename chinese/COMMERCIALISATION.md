@@ -1,12 +1,15 @@
 # Commercialisation — application de chinois
 
-Notes de la discussion du 10 novembre 2026. Décisions prises par Erwan, propositions en attente de décision.
+Notes de la discussion des 10 et 11 novembre 2026. Décisions prises par Erwan, propositions en attente de décision.
 
 ## Décidé
 
 - **Abonnement**, en **web d'abord** (PWA). Si ça marche : Android, puis Apple.
 - **Essai gratuit de 7 jours**, puis payant. Prix pas encore fixé.
 - **Parrainage** pour faire venir des utilisateurs.
+- **Statut juridique** : entreprise individuelle (EI) sous le régime micro-entreprise pour démarrer seul.
+- **Paiement web** : **Paddle**, vendeur officiel (« Merchant of Record ») qui encaisse les clients et gère les
+  abonnements, les taxes sur les ventes et le support lié aux paiements.
 - Il faut un **nom d'app** et un **domaine** assorti.
 
 ## Nom et domaine (disponibilités vérifiées le 10/11/2026 auprès des registres, RDAP)
@@ -32,13 +35,52 @@ redirection ; vérifier qu'aucune marque n'existe déjà (INPI, EUIPO).
 - **Parrainage**, récompense des deux côtés : le filleul a 14 jours d'essai au lieu de 7 ; le parrain gagne 1 mois
   offert quand le filleul paie son premier mois (après le délai de remboursement, contre les faux comptes) ;
   plafond 12 mois par an ; lien personnel et compteur d'amis parrainés dans l'app.
-- **Paiement** : un « vendeur officiel » (Merchant of Record) **Paddle** ou **Lemon Squeezy** plutôt que Stripe seul :
-  ≈ 5 % + 0,50 € par paiement, mais ils gèrent la TVA européenne, les factures, les remboursements et les litiges.
-  Stripe seul : ≈ 2 %, mais TVA à déclarer soi-même pays par pays (guichet OSS).
+
+## Statut juridique retenu
+
+**Entreprise individuelle (EI) sous le régime micro-entreprise**, sans société ni capital social au lancement.
+Il n'y a donc pas de statuts de société à rédiger. L'activité à déclarer au guichet unique de l'INPI :
+
+> Édition et exploitation d'une application web d'apprentissage linguistique ; fourniture, par abonnement, d'un
+> accès à un service numérique en ligne.
+
+- Immatriculation sur le [guichet unique des formalités](https://formalites.entreprises.gouv.fr/) avant la première
+  vente. Choix recommandé : déclaration mensuelle du chiffre d'affaires.
+- Le plafond 2026 du régime micro pour les prestations de services et activités libérales est de **83 600 € HT**.
+  Le classement exact BIC ou BNC et le taux social correspondant doivent être confirmés par l'INPI ou l'Urssaf lors
+  de l'immatriculation ; ils ne sont pas devinés dans l'application.
+- Le chiffre d'affaires à déclarer est la recette réellement encaissée. Paddle ne remplace ni les déclarations
+  Urssaf, ni l'impôt français, ni la CFE, ni la tenue du livre des recettes.
+- Revoir le choix avec un expert-comptable en approchant du plafond, avant d'embaucher ou de faire entrer un associé,
+  ou si les frais réels deviennent importants ; une EURL ou une SASU pourra alors être plus adaptée.
+
+Texte de base pour les mentions légales, à compléter après l'immatriculation sans inventer les champs manquants :
+
+> Éditeur : Erwan [nom complet], entrepreneur individuel sous le régime micro-entreprise, exerçant sous le nom
+> commercial [nom retenu], SIREN [numéro], domicilié [adresse professionnelle], contact : [adresse e-mail].
+
+Sources officielles : [régime micro-social](https://entreprendre.service-public.gouv.fr/vosdroits/F37353) et
+[régime micro-fiscal](https://entreprendre.service-public.gouv.fr/vosdroits/F23267), vérifiés en 2026.
+
+## Prestataire retenu : Paddle
+
+Paddle devient le vendeur officiel des abonnements web. Son offre sans abonnement mensuel est actuellement facturée
+**5 % + 0,50 $ par transaction**. Elle comprend le paiement, le checkout, la facturation récurrente, le calcul,
+l'encaissement et le reversement des taxes sur les ventes et de la TVA, les factures clients, la fraude, les
+contestations de paiement et l'assistance liée aux paiements.
+
+Pour l'application, il reste à intégrer le checkout Paddle, vérifier les webhooks côté serveur et ouvrir ou fermer
+l'accès premium selon l'état de l'abonnement. Paddle ne prend pas en charge l'immatriculation française, les
+déclarations Urssaf et fiscales, la CFE, les CGU/CGV, le RGPD ni la comptabilité propre de l'activité.
+
+Ce choix coûte plus cher qu'un simple encaissement Stripe, particulièrement sur l'abonnement mensuel à petit prix,
+mais évite de gérer la TVA consommateur pays par pays. Il est donc cohérent avec la demande d'un prestataire qui
+prend en charge le maximum. Source : [tarification et périmètre Paddle](https://www.paddle.com/pricing).
 
 ## Obligations légales (France, vente aux particuliers)
 
-- Statut : micro-entreprise suffisante au départ.
+- Statut retenu : entreprise individuelle au régime micro-entreprise ; immatriculation et champs légaux encore à
+  compléter avant la première vente.
 - CGV avec case à cocher de renonciation au délai de rétractation de 14 jours (contenu numérique fourni tout de suite).
 - Mentions légales, politique de confidentialité (RGPD), gestion et suppression des données de compte.
 - Médiateur de la consommation : obligatoire pour vendre aux particuliers.
@@ -54,16 +96,15 @@ redirection ; vérifier qu'aucune marque n'existe déjà (INPI, EUIPO).
 
 1. App séparée sur son domaine : sans l'italien ni la page d'accueil commune, sans l'identification Tailscale.
 2. Comptes : connexion par lien envoyé par e-mail et avec Google ; progression rattachée au compte.
-3. Essai, version gratuite, abonnement (Paddle ou Lemon Squeezy).
+3. Essai, version gratuite et abonnement avec Paddle.
 4. Parrainage.
 5. Page de présentation avec tarifs ; pages légales.
 6. Premier lancement guidé : niveau (test de placement), objectif par jour.
 
 Les étapes 1 et 2 ne dépendent d'aucune décision ; le nom s'ajoute quand il est choisi.
 
-## Décisions attendues
+## Décisions encore attendues
 
 1. Le nom.
-2. Le statut juridique (micro-entreprise existante ?).
-3. Le modèle : 7 jours puis tout payant, ou 7 jours puis version gratuite limitée.
-4. Paddle ou Lemon Squeezy (ou Stripe seul).
+2. Le modèle : 7 jours puis tout payant, ou 7 jours puis version gratuite limitée.
+3. Le prix final.
