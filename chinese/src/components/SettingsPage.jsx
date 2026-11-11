@@ -1,7 +1,8 @@
-import { Check } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Check, LogOut } from 'lucide-react'
 import { LANGS, LANG_NAMES } from '../i18n/text.js'
 import { useLang } from '../i18n/useLang.js'
-import { Screen, SectionLabel, TopBar } from './ui.jsx'
+import { Button, Screen, SectionLabel, TopBar } from './ui.jsx'
 import { ICON } from './uiStyles.js'
 
 const CREDITS = [
@@ -15,8 +16,26 @@ const CREDITS = [
   { key: 'settings.credit.fsrs', href: 'https://github.com/open-spaced-repetition/ts-fsrs' },
 ]
 
+/** Compte connecte par e-mail (acces public) ; null sur l'acces prive Tailscale ou hors ligne. */
+function useEmailAccount() {
+  const [account, setAccount] = useState(null)
+  useEffect(() => {
+    fetch('/api/me')
+      .then(res => (res.ok ? res.json() : null))
+      .then(me => setAccount(me?.method === 'email' ? me : null))
+      .catch(() => {})
+  }, [])
+  return account
+}
+
+async function logout() {
+  await fetch('/api/auth/logout', { method: 'POST' })
+  location.assign('/login/')
+}
+
 export function SettingsPage({ onBack }) {
   const { lang, setLang, t } = useLang()
+  const account = useEmailAccount()
 
   return (
     <Screen>
@@ -42,6 +61,14 @@ export function SettingsPage({ onBack }) {
             </li>
           ))}
         </ul>
+
+        {account && (
+          <>
+            <SectionLabel className="mt-10">{t('settings.account')}</SectionLabel>
+            <p className="mb-3 break-all text-[15px] text-fg">{account.login}</p>
+            <Button variant="secondary" onClick={logout}><LogOut {...ICON} />{t('settings.logout')}</Button>
+          </>
+        )}
 
         <SectionLabel className="mt-10">{t('settings.credits')}</SectionLabel>
         <p className="mb-3 text-sm text-fg-3">{t('settings.creditsIntro')}</p>

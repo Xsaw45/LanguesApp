@@ -1,5 +1,5 @@
 /**
- * Synchronisation de la progression avec le serveur (POST /api/sync/<app>), par utilisateur Tailscale.
+ * Synchronisation de la progression avec le serveur (POST /api/sync/<app>), par utilisateur (Tailscale ou e-mail).
  *
  * Chaque app decrit sa progression en enregistrements { key, value } (value null = supprime) :
  *  - track(changes)        : modifications locales, envoyees peu apres (et conservees hors ligne) ;
@@ -57,6 +57,12 @@ export function createSync({ app, applyRemote, resetLocal }) {
       meta = emptyMeta(user)
       saveMeta()
       return true
+    }
+    if (res.status === 401) {
+      // Acces public sans session : le serveur indique sa page de connexion (retour ensuite sur cette page).
+      const { login } = await res.json().catch(() => ({}))
+      if (login) location.assign(`${login}?next=${encodeURIComponent(location.pathname)}`)
+      throw new Error(`sync ${app} : connexion requise`)
     }
     if (!res.ok) throw new Error(`sync ${app} : HTTP ${res.status}`)
     const data = await res.json()

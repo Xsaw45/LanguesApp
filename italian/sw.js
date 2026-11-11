@@ -1,6 +1,6 @@
 // Caches are shared by the whole origin (Italian, Chinese and home page workers): only touch ours.
 const CACHE_PREFIX = 'italienapp-';
-const CACHE_NAME = `${CACHE_PREFIX}v12`;
+const CACHE_NAME = `${CACHE_PREFIX}v13`;
 
 const ASSETS_TO_CACHE = [
   './',

@@ -81,5 +81,5 @@ test('nom affiche decode depuis RFC 2047', async () => {
     url: '/api/me',
     headers: { 'tailscale-user-login': 'a@x', 'tailscale-user-name': '=?utf-8?q?Ferris_B=C3=BCller?=' },
   })
-  assert.deepEqual(res.json(), { login: 'a@x', name: 'Ferris Büller' })
+  assert.deepEqual(res.json(), { login: 'a@x', name: 'Ferris Büller', method: 'tailscale' })
 })
