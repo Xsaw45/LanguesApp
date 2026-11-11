@@ -82,5 +82,6 @@ paiement Paddle décidés. Nom, domaine, prix et détails : voir [COMMERCIALISAT
     (définitions nettoyées) sous la même licence.
 - **Légal** : entreprise individuelle au régime micro-entreprise retenue ; restent l'immatriculation, les mentions
   légales, les CGV / CGU, la politique de confidentialité (RGPD) et la gestion des données de compte.
-- **Produit** : premier lancement guidé (niveau, objectif), page de présentation, captures, essai gratuit.
+- **Produit** : premier lancement guidé fait (langue d'apprentissage, puis test de niveau directement) ; restent
+  l'objectif par jour, la page de présentation, les captures et l'essai gratuit.
 - **Langues** : ajouter d'autres langues d'interface (espagnol, allemand…) avec le même système de traduction.

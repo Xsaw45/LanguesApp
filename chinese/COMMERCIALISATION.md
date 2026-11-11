@@ -99,7 +99,7 @@ prend en charge le maximum. Source : [tarification et périmètre Paddle](https:
 3. Essai, version gratuite et abonnement avec Paddle.
 4. Parrainage.
 5. Page de présentation avec tarifs ; pages légales.
-6. Premier lancement guidé : niveau (test de placement), objectif par jour.
+6. Premier lancement guidé : langue puis test de placement (fait), objectif par jour (reste).
 
 Les étapes 1 et 2 ne dépendent d'aucune décision ; le nom s'ajoute quand il est choisi.
 

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { withActivity, markStepDone, addPracticeTime } from './utils/activity.js'
 import { PLACEMENT_KEY } from './utils/levelTest.js'
 import { VocabLevelTest } from './components/VocabLevelTest.jsx'
+import { LanguageChoice } from './components/LanguageChoice.jsx'
 import { useProgress } from './hooks/useProgress.js'
 import { useLevels } from './hooks/useLevels.js'
 import { usePracticeTime } from './hooks/usePracticeTime.js'
@@ -30,17 +31,21 @@ export default function App() {
   // Toute progression enregistrée compte aussi dans l'activité du jour (série, éléments maîtrisés).
   const applyUpdates = useCallback(updates => saveUpdates(withActivity(latestMap(), updates)), [saveUpdates, latestMap])
 
-  // Réglages synchronisés (enregistrement « settings ») : langue, test de niveau fait.
+  // Réglages synchronisés (enregistrement « settings ») : langue, premier lancement fait, test de niveau fait.
   const saveSetting = useCallback(
     patch => applyUpdates([{ ...latestMap()?.get(SETTINGS_KEY), wordId: SETTINGS_KEY, level: 'settings', ...patch }]),
     [applyUpdates, latestMap],
   )
+  const settings = progressMap?.get(SETTINGS_KEY)
   // Langue : réglage synchronisé, sinon celle du navigateur.
-  const lang = progressMap?.get(SETTINGS_KEY)?.lang || defaultLang()
+  const lang = settings?.lang || defaultLang()
   const setLang = useCallback(next => saveSetting({ lang: next }), [saveSetting])
-  const placementDone = !!progressMap?.get(SETTINGS_KEY)?.[PLACEMENT_KEY]
+  const placementDone = !!settings?.[PLACEMENT_KEY]
   const newLearner = !placementDone && ![...(progressMap?.keys() || [])].some(k => k.startsWith('hsk'))
-  // Test de niveau du vocabulaire en cours : { mode: 'placement' } | { mode: 'unlock', level }
+  // Premier lancement : choix de la langue, puis directement le test de niveau (une seule fois, même s'il est quitté).
+  const onboarding = newLearner && !settings?.onboarded
+  // Test de niveau du vocabulaire en cours : { mode: 'placement', from? } | { mode: 'unlock', level }
+  // from 'onboarding' : on revient ensuite à l'accueil, pas à la page Vocabulaire.
   const [levelTest, setLevelTest] = useState(null)
   const langValue = useMemo(() => makeLang(lang, setLang), [lang, setLang])
   useEffect(() => {
@@ -100,8 +105,17 @@ export default function App() {
         applyUpdates={applyUpdates}
         onPlaced={reached => saveSetting({ [PLACEMENT_KEY]: { level: reached, date: new Date().toISOString() } })}
         onExit={() => {
+          setScreen(levelTest.from === 'onboarding' ? 'home' : 'hsk')
           setLevelTest(null)
-          setScreen('hsk')
+        }}
+      />
+    )
+  } else if (onboarding) {
+    content = (
+      <LanguageChoice
+        onChoose={code => {
+          saveSetting({ lang: code, onboarded: true })
+          setLevelTest({ mode: 'placement', from: 'onboarding' })
         }}
       />
     )

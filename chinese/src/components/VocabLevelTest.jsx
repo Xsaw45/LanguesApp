@@ -80,7 +80,7 @@ export function VocabLevelTest({ mode, level, progressMap, applyUpdates, onPlace
   const question = block.questions[index]
   return (
     <Screen>
-      <TopBar onBack={onExit} backLabel={t('nav.quit')} aside={`HSK ${block.level} · ${index + 1} / ${block.questions.length}`} />
+      <TopBar onBack={onExit} backLabel={t('nav.quit')} title={placement ? t('lt.title') : undefined} aside={`HSK ${block.level} · ${index + 1} / ${block.questions.length}`} />
       <ProgressBar value={index / block.questions.length} className="mx-5" />
       <div className="flex flex-1 flex-col px-5 pb-8">
         <QuestionCard question={question} />
